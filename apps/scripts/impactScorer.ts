@@ -115,6 +115,7 @@ async function scorePatch(filePath: string) {
     }
 
     let count = 0;
+    // @ts-ignore
     for (const [heroName, changes] of heroGroups.entries()) {
         if (!isFullRun && count >= 3) {
             console.log(`[Impact Scorer] Stopping at 3 heroes (Prototype Mode).`);

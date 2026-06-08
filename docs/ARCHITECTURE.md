@@ -75,148 +75,81 @@ Rule-based logic handles the quantitative baseline (e.g., "Mana cost increased =
 
 # High-Level System Architecture
 
-Patch Source
+Patch Source (Steam/Valve)
 ↓
-Ingestion Layer
+Ingestion Layer (Datafeed JSON)
 ↓
-Parsing Engine
+Parsing & Normalization
 ↓
-Quantitative Classification Engine
+Tiered Classification Engine (Deterministic + Semantic)
 ↓
-Contextual Impact Engine (LLM)
+Impact Scoring (Balance Ontology + Archetypes)
 ↓
-Meta Analysis Engine
+Modeling Layer (Hero Feature Vectors)
 ↓
-Database
+Meta Simulation & Analysis
 ↓
-API
+Strategic Summary (LLM Narrative)
 ↓
-Frontend
+Database → API → Frontend
 
 ---
 
 # Changes pipeline
 
-Steam News → Discovery Layer → Valve JSON Datafeed API → ID Mapping Resolver → Structured Parser → Quantitative Classifications → Contextual Impact Scoring → Structured Changes
+Steam News → Discovery Layer → Valve JSON Datafeed API → ID Mapping Resolver → Structured Parser → Tiered Classifications (Numeric/Semantic) → Strategic Weighting (Balance Ontology) → Vector Modification (Hero Feature Vectors) → Meta Simulation → Meta Conclusions
 
 ---
 
-# Components
+# Core Architectural Components
 
-## Mappings Layer
+## 1. Tiered Classification Engine
+Ensures data integrity by separating deterministic facts from qualitative inferences.
+*   **Numeric:** 100% deterministic (e.g., Mana 100 → 80).
+*   **Semantic:** Rule-based matching against the **Semantic Ontology**.
+*   **Manual/Review:** Human-in-the-loop for unknown patterns.
 
-Responsibilities:
-* Fetch hero, ability, and item lists from Valve API.
-* Build numerical ID to human-readable name mappings.
-* Provide a consistent naming reference for the Parser.
+## 2. Ontology Layers
+The knowledge base of the system.
+*   **Semantic Ontology:** Maps text patterns to gameplay tags (e.g., "Pierces Spell Immunity").
+*   **Balance Ontology:** Maps mechanics to strategic concepts (e.g., "Movement Speed" → "Mobility") and defines impact weights.
 
-## Frontend
+## 3. Modeling Layer (Hero Feature Vectors)
+Quantifies a hero's strategic identity across 7 dimensions (Farming, Mobility, etc.). Patch changes modify these vectors, enabling the tracking of "Hero Identity Shift" over time.
 
-Responsibilities:
-
-* Display patch notes
-* Display expandable lists of hero/item changes with UI markers for polarity (Buff/Nerf).
-* Display qualitative impact details and phase-specific analysis.
-* Display thematic patch summaries.
-* Search and filtering
-* Historical patch browsing
-
-Technology:
-
-* Next.js
-* TypeScript
-* CSS Modules (tentative)
+## 4. Meta Simulation Engine
+The highest intelligence layer. Reasons about patch changes at a draft and strategy level, identifying synergistic winners and losers where multiple small changes coalesce into a major meta shift.
 
 ---
 
-## API
+# Documentation Map & Index
 
-Responsibilities:
+This architecture is supported by the following detailed design and specification documents:
 
-* Expose processed patch data
-* Expose thematic summaries
-* Expose hero/item endpoints
-* Provide search capabilities
+### Core Data & Specs
+*   [DATA_MODEL.md](./DATA_MODEL.md): Primary entity definitions and integrity principles.
+*   [DECISIONS.md](./DECISIONS.md): Record of architectural pivots and technical choices.
+*   [VALIDATION.md](./VALIDATION.md): Evaluation framework for accuracy and quality control.
 
-Technology:
+### Parser & Classification
+*   [PARSER_DESIGN.md](./PARSER_DESIGN.md): Logic for converting raw Valve JSON to structured facts.
+*   [CLASSIFICATION_ARCHITECTURE.md](./CLASSIFICATION_ARCHITECTURE.md): The 4-state tiered classification system.
+*   [SEMANTIC_ONTOLOGY.md](./SEMANTIC_ONTOLOGY.md): Library of text patterns and gameplay tags.
 
-* Node.js
-* Fastify
-* TypeScript
+### Intelligence & Analytics
+*   [BALANCE_ONTOLOGY.md](./BALANCE_ONTOLOGY.md): Strategic weighting of mechanics and hero archetypes.
+*   [CHANGE_GROUPING.md](./CHANGE_GROUPING.md): Aggregation of atomic changes into hero/patch summaries.
+*   [HERO_FEATURE_VECTORS.md](./HERO_FEATURE_VECTORS.md): The 7-dimensional functional hero model.
+*   [HISTORICAL_ANALYTICS.md](./HISTORICAL_ANALYTICS.md): Framework for tracking trajectories and power-creep.
+*   [META_SIMULATION.md](./META_SIMULATION.md): Draft-level reasoning and synergistic analysis.
+*   [WINRATE_CALIBRATION.md](./WINRATE_CALIBRATION.md): Real-world validation loop using external match data.
 
----
-
-## Parser
-
-Responsibilities:
-
-* Convert raw patch notes into structured data
-* Identify heroes
-* Identify items
-* Identify systems
-* Extract numerical changes and metrics
-
----
-
-## Quantitative Classification Engine
-
-Responsibilities:
-
-* Determine baseline buff/nerf/rework polarity based on metrics.
-* Handle deterministic adjustments.
-
----
-
-## Contextual Impact Engine (LLM)
-
-Responsibilities:
-
-* Ingest quantitatively classified changes.
-* Evaluate the *magnitude* of the impact (e.g., Low, Medium, High, Meta-Defining).
-* Determine game-phase relevance (Laning, Late Game).
-* Generate expandable reasoning for the change's true weight in the current meta.
-
----
-
-## Meta Analysis Engine
-
-Responsibilities:
-
-* Identify overarching, thematic balance trends.
-* Generate high-level patch summaries.
-* Detect systemic changes and infer meta shifts affecting lineups and itemization.
-
----
-
-## Database
-
-Responsibilities:
-
-* Store patches
-* Store parsed changes
-* Store classifications
-* Store generated summaries
-
-Technology:
-
-* PostgreSQL
-
----
-
-# Future Considerations
-
-Potential future additions:
-
-* User accounts
-* Saved hero tracking
-* Patch comparisons
-* Meta trend analytics
-* AI-generated patch reviews
-* Public API
+### Automation
+*   [AUTOMATION_PIPELINE.md](./AUTOMATION_PIPELINE.md): Design for the future end-to-end auto-processing flow.
 
 ---
 
 # Status
 
-Current Status: Draft v1.1
+Current Status: Architecture Finalized (v2.0)
 Last Updated: 2026-06-08

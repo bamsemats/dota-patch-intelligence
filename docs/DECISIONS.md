@@ -166,6 +166,29 @@ The user explicitly mandated the use of standard `.css` files over utility-first
 Alternatives Considered:
 * Tailwind CSS (Explicitly rejected by user).
 
+# 2026-06-08
+
+Status:
+Accepted
+
+Decision:
+LLMs function exclusively as the final narrative and synthesis layer; they are not the primary source of truth for classification or reasoning.
+
+Permitted Use Cases:
+*   Generating human-readable patch summaries from pre-computed structured data.
+*   Synthesizing hero and meta narratives from calculated feature vector deltas.
+*   Proposing classifications for `UNKNOWN` semantic changes (human confirmation required).
+*   Generating editorial content and thematic patch reports.
+
+Prohibited Use Cases:
+*   Deterministic numeric classification (must use parser rules).
+*   Known semantic classification (must use the Semantic Ontology).
+*   Modifying or overriding stored structured facts.
+*   Performing high-scale analysis without pre-computed structured inputs.
+
+Reasoning:
+The structured balance knowledge graph (Ontologies + Feature Vectors) is the core asset of the platform. LLMs should be treated as "Prose Generators" that receive pre-processed facts and produce readable summaries. This ensures maximum consistency, auditability, and cost-efficiency. Running reasoning through generative inference is too speculative and expensive for a core data pipeline.
+
 ---
 
 # Open Decisions

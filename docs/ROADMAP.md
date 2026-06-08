@@ -117,7 +117,7 @@ Success Criteria:
 
 # Phase 6 — Frontend MVP
 
-Status: In Progress
+Status: Complete
 
 Goals:
 
@@ -129,11 +129,11 @@ Goals:
 
 Deliverables:
 
-* First public version
+* First public version (Done: Next.js static site built with Vanilla CSS)
 
 Success Criteria:
 
-* Users can browse and immediately grasp both the literal changes and their contextual impact on the game.
+* Users can browse and immediately grasp both the literal changes and their contextual impact on the game. (Done)
 
 Future Improvements for Phase 6:
 * Expand Synergistic Winners and Losers to explicitly cover specific roles (e.g., top 3 winners/losers for each of the 5 roles).
@@ -142,19 +142,65 @@ Future Improvements for Phase 6:
 
 # Phase 7 — CI/CD & Initial Deployment
 
-Status: Planned
+Status: Complete
 
 Goals:
 * Develop a CI/CD pipeline using GitHub Actions to automate testing and builds.
 * Deploy the Frontend MVP to GitHub Pages as the initial hosting platform.
 
 Deliverables:
-* GitHub Actions workflow configurations.
-* Live, publicly accessible web application.
+* GitHub Actions workflow configurations. (Done: deploy.yml)
+* Live, publicly accessible web application. (Done: static export configured)
 
 ---
 
-# Phase 8 — Backend API & Database Migration
+# Phase 8 — Intelligence Foundation (Implementation)
+
+Status: Planned
+
+Goals:
+* Upgrade the Classification Engine to the **Tiered Architecture** (Numeric/Semantic/Unknown).
+* Implement the **Semantic Ontology** matching engine.
+* Implement the **Balance Ontology** for strategic weighting.
+* Integrate **Confidence Scoring** across all pipeline layers.
+
+Deliverables:
+* Upgraded `classifyPatches.ts`.
+* Ontology pattern matching library.
+
+---
+
+# Phase 9 — Advanced Modeling (Implementation)
+
+Status: Planned
+
+Goals:
+* Implement the **ChangeGroup** aggregation logic (clustering atomic changes).
+* Implement **Hero Feature Vectors** (7-dimensional identity model).
+* Build the **Raw Note Archive** for semantic search and auditability.
+
+Deliverables:
+* Change grouping engine.
+* Hero vector calculation logic.
+
+---
+
+# Phase 10 — Strategic Analytics (Implementation)
+
+Status: Planned
+
+Goals:
+* Implement the **Meta Impact Simulation** engine (draft-level reasoning).
+* Establish the **Validation Framework** suite to measure engine accuracy.
+* Implement the **Winrate Calibration** loop for automated weight adjustment.
+
+Deliverables:
+* Simulation engine prototype.
+* Automated validation test suite.
+
+---
+
+# Phase 11 — Backend API & Database Migration
 
 Status: Future
 
@@ -169,44 +215,41 @@ Deliverables:
 
 ---
 
-# Phase 9 — Historical Analytics
+# Phase 12 — Historical Analytics
 
 Status: Future
 
 Potential Features:
-
-* Hero balance history and trajectory
-* Item history
-* Patch comparisons
-* Long-term thematic trend analysis
+* Hero balance history and trajectory.
+* Item history.
+* Patch comparisons.
+* Long-term thematic trend analysis.
 
 ---
 
-# Phase 10 — Automation Pipeline
+# Phase 13 — Automation Pipeline
 
 Status: Future
 
 Goals:
-* Automated patch detection system (Steam polling/webhooks)
-* Trigger full ingestion pipeline (discover → map → parse → classify → impact score → database insertion)
-* Automated notifications (e.g., Discord, Email) when a new patch is processed
+* Automated patch detection system (Steam polling/webhooks).
+* Trigger full ingestion pipeline (discover → map → parse → classify → impact score → database insertion).
+* Automated notifications (e.g., Discord, Email) when a new patch is processed.
 
 Deliverables:
-* Scheduled cron job or webhook listener
-* End-to-end automation script
+* Scheduled cron job or webhook listener.
+* End-to-end automation script.
 
 ---
 
-# Phase 11 — Advanced Features
+# Phase 14 — Advanced Features
 
 Status: Future
 
 Potential Features:
-
-* User accounts
-* Personalized hero tracking
-* Public API
-* Community features
+* User accounts and personalized hero tracking.
+* Public API and community features.
+* Website analytics (visitor count, traffic metrics, usage tracking).
 
 ---
 

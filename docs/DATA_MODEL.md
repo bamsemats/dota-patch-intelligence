@@ -593,23 +593,65 @@ Current supported values:
 
 # Confidence Scores
 
-All AI-assisted classifications should include confidence values.
+Confidence scoring is a first-class concept in the Dota Patch Intelligence platform. A confidence score must be attached to every classification, meta summary, and meta shift.
 
-Range:
+## Confidence Levels
 
-0.00 - 1.00
+| Level | Range | Meaning | Display Treatment |
+|---|---|---|---|
+| **Certain** | 0.95–1.00 | Deterministic rule match (e.g. Numeric) | No qualifier |
+| **High** | 0.80–0.94 | Strong signal, minor ambiguity | "Likely" |
+| **Moderate** | 0.60–0.79 | Reasonable inference | "Probably" |
+| **Low** | 0.40–0.59 | Speculative / Heuristic | "Possibly" |
+| **Insufficient** | 0.00–0.39 | Unreliable | Flag for review; do not display |
 
-Examples:
+---
 
-1.00 = Deterministic rule match
+# Data Integrity Principles
 
-0.95 = Very likely
+## Fact vs. Inference Separation
 
-0.75 = Moderate confidence
+To maintain system trustworthiness, facts (what changed) and inferences (what it means) are stored separately and never allowed to overwrite one another.
 
-0.50 = Uncertain
+### Pipeline Layers
 
-Values below 0.50 should generally be reviewed.
+The system follows a strict hierarchical layer model. No layer may modify or replace data from a layer above it.
+
+1.  **Patch Data:** Raw ingested content from Valve (Source of Truth).
+2.  **Structured Facts:** Parsed, deterministic data (Entities, Metrics, Values).
+3.  **Classifications:** Buff/Nerf/Rework labels with confidence scores.
+4.  **Interpretations:** Contextual meaning (e.g., "This hurts laning sustain").
+5.  **Meta Conclusions:** Patch-level reasoning and trend analysis.
+
+# Raw Note Archive
+
+The Raw Note Archive is a permanent repository of every original patch note string ingested by the system.
+
+## Purpose
+
+By storing raw strings alongside their structured counterparts, the system enables:
+*   **Semantic Search:** Finding all historical changes related to a specific keyword or phrase.
+*   **Retrospective Classification:** Re-running the parser or LLM logic on old data as the system's intelligence improves.
+*   **Auditability:** Allowing users to see the exact original text that led to a specific interpretation.
+
+## Data Structure: RawNoteRecord
+
+```json
+{
+  "hero": "Anti-Mage",
+  "ability": "Mana Void",
+  "patch": "7.42",
+  "rawNote": "Now pierces spell immunity",
+  "classificationState": "KNOWN_SEMANTIC",
+  "semanticTag": "SPELL_IMMUNITY_INTERACTION"
+}
+```
+
+## Example Queries Enabled
+*   "Show every time Valve modified spell immunity interactions."
+*   "Show every hero that gained BKB-piercing effects in the last year."
+*   "Find all historical changes similar to [provided note text]."
+*   "Show all changes classified as UNKNOWN across the last 10 patches."
 
 ---
 
