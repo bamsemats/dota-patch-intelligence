@@ -12,8 +12,11 @@ This document describes business concepts, not database tables.
 
 # API connectivity
 
-To fetch Dota 2 patch notes programmatically, we can use the *Steam Web API*'s **GetNewsForApp** endpoint or third-party platforms like the OpenDota API. 
-Valve publishes official updates and changelogs directly to their news feed.
+To fetch Dota 2 patch notes programmatically, we use the official **Valve Datafeed API**:
+*   **Patch Notes**: `https://www.dota2.com/datafeed/patchnotes?version={version}&language=english`
+*   **Hero List**: `https://www.dota2.com/datafeed/herolist?language=english`
+*   **Hero Details (Abilities/Talents)**: `https://www.dota2.com/datafeed/herodata?language=english&hero_id={id}`
+*   **Item List**: `https://www.dota2.com/datafeed/itemlist?language=english`
 
 ---
 
@@ -48,7 +51,7 @@ interface SteamNewsResponse {
 
 async function getDotaPatchNotes(count: number = 5): Promise<SteamNewsItem[]> {
   const appId = 570; // Dota 2 App ID
-  const url = `https://steampowered.com{appId}&count=${count}&maxlength=5000&format=json`;
+  const url = `https://steampowered.com${appId}&count=${count}&maxlength=5000&format=json`;
 
   try {
     const response = await fetch(url);
@@ -110,10 +113,14 @@ Fields:
 
 Example:
 
-{
-"patchNumber": "7.39",
-"releaseDate": "2026-01-01"
+{  
+"patchNumber": "7.39",  
+"patchVersion": {  
+"major": 7,  
+"minor": 39,  
+"revision": null  
 }  
+}
 
 ---
 
@@ -143,6 +150,62 @@ Example:
 "title": "Heroes"
 }
 
+--- 
+
+# PatchVersion
+
+Represents a normalized version of a patch number.
+
+Purpose:
+
+Patch identifiers cannot reliably be sorted using string comparison.
+
+Example:
+
+7.37
+7.37a
+7.37b
+7.38
+7.38a
+
+Lexicographic ordering produces incorrect results.
+
+PatchVersion provides a normalized representation for ordering and comparison.
+
+Fields:
+
+- major
+- minor
+- revision
+
+Examples:
+
+7.37
+{
+"major": 7,
+"minor": 37,
+"revision": null
+}
+
+7.37d
+{
+"major": 7,
+"minor": 37,
+"revision": "d"
+}
+
+Comparison Rules:
+
+7.37
+<
+7.37a
+<
+7.37b
+<
+7.37d
+<
+7.38
+
 ---
 
 # Change
@@ -151,29 +214,31 @@ Represents a single balance or gameplay change.
 
 This is the most important entity in the system.
 
-Examples:
-
-* Crystal Nova mana cost increased
-* Black King Bar cooldown reduced
-* Roshan now drops an additional item
-
 Fields:
 
-* id
-* patchId
-* sectionId
-* targetType
-* targetId
-* rawText
-* normalizedText
-* changeType
-* confidenceScore
+- id
+- patchVersion
+- category ("hero" | "item" | "neutral" | "general")
+- entityName (e.g., "Crystal Maiden")
+- subEntityName (e.g., "Crystal Nova")
+- rawNote (Original string)
+- indentLevel (Preserves hierarchy)
+- metric (e.g., "Mana Cost", "Base Damage")
+- changeType ("INCREASE" | "DECREASE" | "RESCALE" | "REWORK" | "ADDITION" | "REMOVAL" | "ADJUSTMENT")
+- oldValue (e.g., "100")
+- newValue (e.g., "130")
+- metadata (entityId, subEntityId)
 
 Example:
 
 {
-"targetType": "Hero",
-"changeType": "Nerf"
+  "category": "hero",
+  "entityName": "Anti-Mage",
+  "subEntityName": "Blink",
+  "metric": "Mana Cost",
+  "changeType": "DECREASE",
+  "oldValue": "65",
+  "newValue": "60"
 }
 
 ---
@@ -202,6 +267,58 @@ Fields:
 * classificationType
 * confidenceScore
 * reasoning
+* impactMagnitude ("Low" | "Medium" | "High" | "Meta-Defining")
+* impactedPhases (e.g., ["Laning", "Mid Game"])
+
+
+Classification is the authoritative source of truth for all
+interpretation of a change, combining quantitative polarity (Buff/Nerf) with contextual impact scoring.
+
+A single Change may generate multiple Classifications.
+
+Examples:
+
+Change:
+
+Mana cost increased.
+
+Classifications:
+
+- Nerf
+- Resource Cost Increase
+- impactMagnitude: "Medium"
+- impactedPhases: ["Laning"]
+
+---
+
+# PatchSource
+
+Represents where patch data originates.
+
+Types:
+
+- SteamNews (Discovery layer)
+- ValveDatafeed (Canonical structured source)
+
+Fields:
+
+- type
+- url
+- reliabilityScore
+
+---
+
+# PatchCanonicalDocument
+
+Represents the official structured patch page from dota2.com.
+
+Fields:
+
+- version
+- url
+- htmlContent
+- sections
+- fetchedAt
 
 ---
 
@@ -282,6 +399,70 @@ Fields:
 
 ---
 
+# Talent
+
+Represents a hero talent.
+
+Talents are distinct from abilities and frequently receive
+independent balance changes.
+
+Fields:
+
+- id
+- heroId
+- level
+- talentName
+
+Examples:
+
++200 Health
+
++25 Movement Speed
+
+---
+
+# ChangeGroup
+
+Represents a collection of related changes that should be
+interpreted together.
+
+Purpose:
+
+Many hero reworks consist of numerous individual changes
+which are only meaningful as a group.
+
+Examples:
+
+- Hero Rework
+- Facet Rework
+- Talent Tree Rework
+- Item Redesign
+
+Fields:
+
+- id
+- patchId
+- title
+- description
+- groupType
+
+Group Types:
+
+- Rework
+- Major Buff Package
+- Major Nerf Package
+- Feature Introduction
+- Feature Removal
+
+Example:
+
+{  
+"title": "Tinker Rework",  
+"groupType": "Rework"  
+}
+
+---
+
 # MetaSummary
 
 Represents a high-level interpretation of a patch.
@@ -303,8 +484,8 @@ Fields:
 
 Example:
 
-{
-"title": "Magic Damage Weakened"
+{  
+"title": "Magic Damage Weakened"  
 }
 
 ---
@@ -401,7 +582,6 @@ Current supported values:
 * Ability
 * Item
 * Talent
-* Facet
 * Neutral Item
 * Economy
 * Map
@@ -454,11 +634,14 @@ These are intentionally excluded from the initial MVP.
 MVP Scope:
 
 Patch
+PatchVersion
 PatchSection
 Change
+ChangeGroup
 Classification
 Hero
 Ability
+Talent
 Item
 GameSystem
 MetaSummary

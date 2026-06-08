@@ -12,15 +12,15 @@ The goal of the project is to transform raw Dota 2 patch notes into structured, 
 
 Official Dota patch notes provide detailed information but are difficult to consume due to their size and structure.
 
-Players often want answers to questions such as:
+However, **quantitative counting of buffs and nerfs is insufficient** to understand a patch. A hero receiving a dozen minor numerical tweaks might be less impacted than a hero receiving one single, meta-defining mechanical change.
 
-* Which heroes were buffed?
-* Which heroes were nerfed?
-* Which items changed significantly?
-* What systems were affected?
-* How has the overall meta shifted?
+Players want answers to questions such as:
+* Which heroes received *impactful* buffs or nerfs?
+* How do changes affect specific game phases (Laning, Mid, Late)?
+* What thematic gameplay systems were altered?
+* How has the overall meta shifted regarding picks, lineups, and itemization?
 
-This platform aims to answer those questions automatically.
+This platform aims to answer those questions by combining deterministic structured parsing with deep, contextual AI impact analysis.
 
 ---
 
@@ -51,7 +51,8 @@ Structured:
 {
 hero: "Crystal Maiden",
 ability: "Crystal Nova",
-classification: "nerf"
+classification: "nerf",
+impactMagnitude: "low"
 }
 
 ---
@@ -60,17 +61,15 @@ classification: "nerf"
 
 Every classification should be traceable.
 
-Users should be able to understand why a change was categorized as a buff, nerf, rework, or adjustment.
+Users should be able to understand why a change was categorized as a buff, nerf, rework, or adjustment, and *why* its impact was scored a certain way.
 
 ---
 
-## 4. AI as an Enhancement Layer
+## 4. AI for Contextual Impact Analysis
 
-AI should assist with classification and summarization.
-
-AI should not be the sole source of truth.
-
-Rule-based logic should be preferred where possible.
+AI should not be used for basic string parsing where regex suffices.
+AI **must** be used to evaluate the *contextual impact* of a change.
+Rule-based logic handles the quantitative baseline (e.g., "Mana cost increased = Nerf"), while AI determines the qualitative weight (e.g., "Is this mana cost nerf actually significant for this hero's laning phase?").
 
 ---
 
@@ -82,7 +81,9 @@ Ingestion Layer
 ↓
 Parsing Engine
 ↓
-Classification Engine
+Quantitative Classification Engine
+↓
+Contextual Impact Engine (LLM)
 ↓
 Meta Analysis Engine
 ↓
@@ -94,15 +95,29 @@ Frontend
 
 ---
 
+# Changes pipeline
+
+Steam News → Discovery Layer → Valve JSON Datafeed API → ID Mapping Resolver → Structured Parser → Quantitative Classifications → Contextual Impact Scoring → Structured Changes
+
+---
+
 # Components
+
+## Mappings Layer
+
+Responsibilities:
+* Fetch hero, ability, and item lists from Valve API.
+* Build numerical ID to human-readable name mappings.
+* Provide a consistent naming reference for the Parser.
 
 ## Frontend
 
 Responsibilities:
 
 * Display patch notes
-* Display summaries
-* Display hero/item changes
+* Display expandable lists of hero/item changes with UI markers for polarity (Buff/Nerf).
+* Display qualitative impact details and phase-specific analysis.
+* Display thematic patch summaries.
 * Search and filtering
 * Historical patch browsing
 
@@ -119,7 +134,7 @@ Technology:
 Responsibilities:
 
 * Expose processed patch data
-* Expose summaries
+* Expose thematic summaries
 * Expose hero/item endpoints
 * Provide search capabilities
 
@@ -139,17 +154,27 @@ Responsibilities:
 * Identify heroes
 * Identify items
 * Identify systems
-* Extract numerical changes
+* Extract numerical changes and metrics
 
 ---
 
-## Classification Engine
+## Quantitative Classification Engine
 
 Responsibilities:
 
-* Determine buff/nerf/rework status
-* Assign confidence scores
-* Explain classifications
+* Determine baseline buff/nerf/rework polarity based on metrics.
+* Handle deterministic adjustments.
+
+---
+
+## Contextual Impact Engine (LLM)
+
+Responsibilities:
+
+* Ingest quantitatively classified changes.
+* Evaluate the *magnitude* of the impact (e.g., Low, Medium, High, Meta-Defining).
+* Determine game-phase relevance (Laning, Late Game).
+* Generate expandable reasoning for the change's true weight in the current meta.
 
 ---
 
@@ -157,10 +182,9 @@ Responsibilities:
 
 Responsibilities:
 
-* Identify overarching balance trends
-* Generate patch summaries
-* Detect systemic changes
-* Infer potential meta shifts
+* Identify overarching, thematic balance trends.
+* Generate high-level patch summaries.
+* Detect systemic changes and infer meta shifts affecting lineups and itemization.
 
 ---
 
@@ -194,5 +218,5 @@ Potential future additions:
 
 # Status
 
-Current Status: Draft v1
-Last Updated: YYYY-MM-DD
+Current Status: Draft v1.1
+Last Updated: 2026-06-08

@@ -1,0 +1,1586 @@
+{
+  "schemaVersion": "1.0",
+  "version": "7.39e",
+  "changes": [
+    {
+      "category": "general",
+      "entityName": "General Changes",
+      "rawNote": "Scan no longer triggers on creep heroes (with the exception of Lone Druid's Spirit Bear)",
+      "indentLevel": 1,
+      "changeType": "REMOVAL",
+      "metadata": {},
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 0.9,
+        "reasoning": "Removal of a mechanic or scaling is generally a nerf."
+      }
+    },
+    {
+      "category": "general",
+      "entityName": "General Changes",
+      "rawNote": "Neutral Creep Gold/XP penalty for stacked camps increased from 15% to 20%",
+      "indentLevel": 1,
+      "metric": "Neutral Creep Gold/XP penalty for stacked camps",
+      "changeType": "INCREASED",
+      "oldValue": "15%",
+      "newValue": "20%",
+      "metadata": {},
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Increased a negative metric (neutral creep gold/xp penalty for stacked camps)."
+      }
+    },
+    {
+      "category": "item",
+      "entityName": "Aeon Disk",
+      "rawNote": "Combo Breaker now starts on a 6s cooldown after being assembled for the first time",
+      "indentLevel": 1,
+      "changeType": "ADJUSTMENT",
+      "metadata": {
+        "entityId": 256
+      },
+      "classification": {
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "reasoning": "Could not deterministically classify based on metric rules."
+      }
+    },
+    {
+      "category": "item",
+      "entityName": "Ghost Scepter",
+      "rawNote": "Ghost Form is no longer active while the wearer is Debuff Immune",
+      "indentLevel": 1,
+      "changeType": "REMOVAL",
+      "metadata": {
+        "entityId": 37
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 0.9,
+        "reasoning": "Removal of a mechanic or scaling is generally a nerf."
+      }
+    },
+    {
+      "category": "item",
+      "entityName": "Ethereal Blade",
+      "rawNote": "Ether Blast ethereal form is no longer applied while the target is Debuff Immune",
+      "indentLevel": 1,
+      "changeType": "REMOVAL",
+      "metadata": {
+        "entityId": 176
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 0.9,
+        "reasoning": "Removal of a mechanic or scaling is generally a nerf."
+      }
+    },
+    {
+      "category": "item",
+      "entityName": "Helm of the Dominator",
+      "rawNote": "Dominate now has a 50 mana cost",
+      "indentLevel": 1,
+      "changeType": "ADJUSTMENT",
+      "metadata": {
+        "entityId": 164
+      },
+      "classification": {
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "reasoning": "Could not deterministically classify based on metric rules."
+      }
+    },
+    {
+      "category": "item",
+      "entityName": "Helm of the Dominator",
+      "rawNote": "Dominate can no longer be used if the currently dominated creep took damage from hero-based sources in the last 3s",
+      "indentLevel": 1,
+      "changeType": "REMOVAL",
+      "metadata": {
+        "entityId": 164
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 0.9,
+        "reasoning": "Removal of a mechanic or scaling is generally a nerf."
+      }
+    },
+    {
+      "category": "item",
+      "entityName": "Helm of the Dominator",
+      "rawNote": "Dominated Creep movement speed decreased from 380 to 370",
+      "indentLevel": 1,
+      "metric": "Dominated Creep movement speed",
+      "changeType": "DECREASED",
+      "oldValue": "380",
+      "newValue": "370",
+      "metadata": {
+        "entityId": 164
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a positive metric (dominated creep movement speed)."
+      }
+    },
+    {
+      "category": "item",
+      "entityName": "Helm of the Overlord",
+      "rawNote": "Dominate now has a 50 mana cost",
+      "indentLevel": 1,
+      "changeType": "ADJUSTMENT",
+      "metadata": {
+        "entityId": 635
+      },
+      "classification": {
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "reasoning": "Could not deterministically classify based on metric rules."
+      }
+    },
+    {
+      "category": "item",
+      "entityName": "Helm of the Overlord",
+      "rawNote": "Dominate can no longer be used if the currently dominated creep took damage from hero-based sources in the last 3s",
+      "indentLevel": 1,
+      "changeType": "REMOVAL",
+      "metadata": {
+        "entityId": 635
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 0.9,
+        "reasoning": "Removal of a mechanic or scaling is generally a nerf."
+      }
+    },
+    {
+      "category": "item",
+      "entityName": "Refresher Orb",
+      "rawNote": "Reset Cooldowns cooldown now increases by 10s with each subsequent use up to 210s ",
+      "indentLevel": 1,
+      "changeType": "ADJUSTMENT",
+      "metadata": {
+        "entityId": 110
+      },
+      "classification": {
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "reasoning": "Could not deterministically classify based on metric rules."
+      }
+    },
+    {
+      "category": "item",
+      "entityName": "Refresher Orb",
+      "rawNote": "Reset Cooldowns mana cost increased from 350 to 400",
+      "indentLevel": 1,
+      "metric": "Reset Cooldowns mana cost",
+      "changeType": "INCREASED",
+      "oldValue": "350",
+      "newValue": "400",
+      "metadata": {
+        "entityId": 110
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Increased a negative metric (reset cooldowns mana cost)."
+      }
+    },
+    {
+      "category": "neutral",
+      "entityName": "Outworld Staff",
+      "rawNote": "Self-Exile now makes the user invulnerable and immobile for the duration, instead of hidden",
+      "indentLevel": 1,
+      "changeType": "ADJUSTMENT",
+      "metadata": {
+        "entityId": 1641
+      },
+      "classification": {
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "reasoning": "Could not deterministically classify based on metric rules."
+      }
+    },
+    {
+      "category": "neutral",
+      "entityName": "Timeless",
+      "rawNote": "Debuff Duration bonus decreased from +10/15% to +8/15%",
+      "indentLevel": 1,
+      "metric": "Debuff Duration bonus",
+      "changeType": "DECREASED",
+      "oldValue": "+10/15%",
+      "newValue": "+8/15%",
+      "metadata": {
+        "entityId": 1592
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a positive metric (debuff duration bonus)."
+      }
+    },
+    {
+      "category": "neutral",
+      "entityName": "Timeless",
+      "rawNote": "Spell Amplification bonus decreased from +8/16% to +6/16%",
+      "indentLevel": 1,
+      "metric": "Spell Amplification bonus",
+      "changeType": "DECREASED",
+      "oldValue": "+8/16%",
+      "newValue": "+6/16%",
+      "metadata": {
+        "entityId": 1592
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a positive metric (spell amplification bonus)."
+      }
+    },
+    {
+      "category": "neutral",
+      "entityName": "Boundless",
+      "rawNote": "Cast Range bonus decreased from +350 to +275",
+      "indentLevel": 1,
+      "metric": "Cast Range bonus",
+      "changeType": "DECREASED",
+      "oldValue": "+350",
+      "newValue": "+275",
+      "metadata": {
+        "entityId": 1590
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a positive metric (cast range bonus)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Bane",
+      "subEntityName": "Enfeeble",
+      "rawNote": "Cast Range decreased from 800/900/1000/1100 to 700/800/900/1000",
+      "indentLevel": 1,
+      "metric": "Cast Range",
+      "changeType": "DECREASED",
+      "oldValue": "800/900/1000/1100",
+      "newValue": "700/800/900/1000",
+      "metadata": {
+        "entityId": 3,
+        "subEntityId": 5012
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a positive metric (cast range)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Earthshaker",
+      "subEntityName": "Aftershock",
+      "rawNote": "Damage decreased from 70/100/130/160 to 65/90/115/140",
+      "indentLevel": 1,
+      "metric": "Damage",
+      "changeType": "DECREASED",
+      "oldValue": "70/100/130/160",
+      "newValue": "65/90/115/140",
+      "metadata": {
+        "entityId": 7,
+        "subEntityId": 5025
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a positive metric (damage)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Earthshaker",
+      "subEntityName": "Talents",
+      "rawNote": "Level 10 Talent Fissure Damage decreased from +90 to +75",
+      "indentLevel": 1,
+      "metric": "Level 10 Talent Fissure Damage",
+      "changeType": "DECREASED",
+      "oldValue": "+90",
+      "newValue": "+75",
+      "metadata": {
+        "entityId": 7
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a positive metric (level 10 talent fissure damage)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Razor",
+      "subEntityName": "Static Link",
+      "rawNote": "Cooldown decreased from 50/40/30/20s to 44/36/28/20s",
+      "indentLevel": 1,
+      "metric": "Cooldown",
+      "changeType": "DECREASED",
+      "oldValue": "50/40/30/20s",
+      "newValue": "44/36/28/20s",
+      "metadata": {
+        "entityId": 15,
+        "subEntityId": 5083
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a negative metric (cooldown)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Storm Spirit",
+      "subEntityName": "Overload",
+      "rawNote": "Aghanim's Shard active mana cost decreased from 150 to 100",
+      "indentLevel": 1,
+      "metric": "Aghanim's Shard active mana cost",
+      "changeType": "DECREASED",
+      "oldValue": "150",
+      "newValue": "100",
+      "metadata": {
+        "entityId": 17,
+        "subEntityId": 5100
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a negative metric (aghanim's shard active mana cost)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Sven",
+      "subEntityName": "Wrath of God",
+      "rawNote": "Bonus Damage per STR decreased from 0/0.3/0.4/0.5 to 0/0.2/0.3/0.4",
+      "indentLevel": 1,
+      "metric": "Bonus Damage per STR",
+      "changeType": "DECREASED",
+      "oldValue": "0/0.3/0.4/0.5",
+      "newValue": "0/0.2/0.3/0.4",
+      "metadata": {
+        "entityId": 18,
+        "subEntityId": 1234
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a positive metric (bonus damage per str)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Lina",
+      "subEntityName": "Light Strike Array",
+      "rawNote": "Stun Duration increased from 1/1.4/1.8/2.2s to 1.2/1.6/2.0/2.4s",
+      "indentLevel": 1,
+      "metric": "Stun Duration",
+      "changeType": "INCREASED",
+      "oldValue": "1/1.4/1.8/2.2s",
+      "newValue": "1.2/1.6/2.0/2.4s",
+      "metadata": {
+        "entityId": 25,
+        "subEntityId": 5041
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Increased a positive metric (stun duration)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Lich",
+      "rawNote": "Base Intelligence increased from 26 to 28",
+      "indentLevel": 1,
+      "metric": "Base Intelligence",
+      "changeType": "INCREASED",
+      "oldValue": "26",
+      "newValue": "28",
+      "metadata": {
+        "entityId": 31
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Increased a positive metric (base intelligence)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Lich",
+      "rawNote": "Damage at level 1 increased by 2 (from 50–59 to 52–61)",
+      "indentLevel": 1,
+      "metric": "Damage at level 1",
+      "changeType": "INCREASED",
+      "oldValue": "by 2 (from 50–59",
+      "newValue": "52–61)",
+      "metadata": {
+        "entityId": 31
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Increased a positive metric (damage at level 1)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Riki",
+      "subEntityName": "Blink Strike",
+      "rawNote": "Slow Duration increased from 0.4s to 0.5s",
+      "indentLevel": 1,
+      "metric": "Slow Duration",
+      "changeType": "INCREASED",
+      "oldValue": "0.4s",
+      "newValue": "0.5s",
+      "metadata": {
+        "entityId": 32,
+        "subEntityId": 5143
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Increased a positive metric (slow duration)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Necrophos",
+      "subEntityName": "Ghost Shroud",
+      "rawNote": "Ethereal form is not applied if the target is Debuff Immune",
+      "indentLevel": 1,
+      "changeType": "ADJUSTMENT",
+      "metadata": {
+        "entityId": 36,
+        "subEntityId": 1270
+      },
+      "classification": {
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "reasoning": "Could not deterministically classify based on metric rules."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Beastmaster",
+      "rawNote": "Base damage decreased by 2",
+      "indentLevel": 1,
+      "metric": "Base damage",
+      "changeType": "DECREASED",
+      "newValue": "2",
+      "metadata": {
+        "entityId": 38
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a positive metric (base damage)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Beastmaster",
+      "rawNote": "Damage at level 1 decreased from 52–56 to 50–54",
+      "indentLevel": 1,
+      "metric": "Damage at level 1",
+      "changeType": "DECREASED",
+      "oldValue": "52–56",
+      "newValue": "50–54",
+      "metadata": {
+        "entityId": 38
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a positive metric (damage at level 1)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Beastmaster",
+      "subEntityName": "Talents",
+      "rawNote": "Level 15 Talent Movespeed to Beastmaster and his summons decreased from +20 to +15",
+      "indentLevel": 1,
+      "metric": "Level 15 Talent Movespeed to Beastmaster and his summons",
+      "changeType": "DECREASED",
+      "oldValue": "+20",
+      "newValue": "+15",
+      "metadata": {
+        "entityId": 38
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a positive metric (level 15 talent movespeed to beastmaster and his summons)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Beastmaster",
+      "subEntityName": "Talents",
+      "rawNote": "Level 25 Talent Primal Roar Cooldown Reduction decreased from 30s to 25s",
+      "indentLevel": 1,
+      "metric": "Level 25 Talent Primal Roar Cooldown Reduction",
+      "changeType": "DECREASED",
+      "oldValue": "30s",
+      "newValue": "25s",
+      "metadata": {
+        "entityId": 38
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a negative metric (level 25 talent primal roar cooldown reduction)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Queen of Pain",
+      "subEntityName": "Sonic Wave",
+      "rawNote": "Damage decreased from 350/500/650 to 325/475/625",
+      "indentLevel": 1,
+      "metric": "Damage",
+      "changeType": "DECREASED",
+      "oldValue": "350/500/650",
+      "newValue": "325/475/625",
+      "metadata": {
+        "entityId": 39,
+        "subEntityId": 5176
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a positive metric (damage)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Venomancer",
+      "rawNote": "Base agility increased from 24 to 25",
+      "indentLevel": 1,
+      "metric": "Base agility",
+      "changeType": "INCREASED",
+      "oldValue": "24",
+      "newValue": "25",
+      "metadata": {
+        "entityId": 40
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Increased a positive metric (base agility)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Venomancer",
+      "rawNote": "Damage at level 1 increased by 1 (from 45–48 to 46–49)",
+      "indentLevel": 1,
+      "metric": "Damage at level 1",
+      "changeType": "INCREASED",
+      "oldValue": "by 1 (from 45–48",
+      "newValue": "46–49)",
+      "metadata": {
+        "entityId": 40
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Increased a positive metric (damage at level 1)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Venomancer",
+      "subEntityName": "Plague Ward",
+      "rawNote": "Ward damage increased from 14/22/30/38 to 16/24/32/40",
+      "indentLevel": 1,
+      "metric": "Ward damage",
+      "changeType": "INCREASED",
+      "oldValue": "14/22/30/38",
+      "newValue": "16/24/32/40",
+      "metadata": {
+        "entityId": 40,
+        "subEntityId": 5180
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Increased a positive metric (ward damage)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Phantom Assassin",
+      "subEntityName": "Immaterial",
+      "rawNote": "Bonus Evasion increased from 20/30/40/50% to 25/35/45/55%",
+      "indentLevel": 1,
+      "metric": "Bonus Evasion",
+      "changeType": "INCREASED",
+      "oldValue": "20/30/40/50%",
+      "newValue": "25/35/45/55%",
+      "metadata": {
+        "entityId": 44,
+        "subEntityId": 1287
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Increased a positive metric (bonus evasion)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Pugna",
+      "subEntityName": "Decrepify",
+      "rawNote": "Ethereal form is not applied if the target is Debuff Immune",
+      "indentLevel": 1,
+      "changeType": "ADJUSTMENT",
+      "metadata": {
+        "entityId": 45,
+        "subEntityId": 5187
+      },
+      "classification": {
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "reasoning": "Could not deterministically classify based on metric rules."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Viper",
+      "subEntityName": "Corrosive Skin",
+      "rawNote": "Attack Slow increased from 8/16/24/32 to 9/18/27/36",
+      "indentLevel": 1,
+      "metric": "Attack Slow",
+      "changeType": "INCREASED",
+      "oldValue": "8/16/24/32",
+      "newValue": "9/18/27/36",
+      "metadata": {
+        "entityId": 47,
+        "subEntityId": 5220
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Increased a positive metric (attack slow)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Leshrac",
+      "subEntityName": "Nihilism",
+      "rawNote": "Ethereal form is not applied if the target is Debuff Immune",
+      "indentLevel": 1,
+      "changeType": "ADJUSTMENT",
+      "metadata": {
+        "entityId": 52,
+        "subEntityId": 539
+      },
+      "classification": {
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "reasoning": "Could not deterministically classify based on metric rules."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Lifestealer",
+      "subEntityName": "Feast",
+      "rawNote": "Hero Creeps no longer count as heroes for Lifestealer's permanent Health bonus",
+      "indentLevel": 1,
+      "changeType": "REMOVAL",
+      "metadata": {
+        "entityId": 54,
+        "subEntityId": 5250
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 0.9,
+        "reasoning": "Removal of a mechanic or scaling is generally a nerf."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Omniknight",
+      "subEntityName": "Purification",
+      "rawNote": "Cast Range increased from 600 to 700",
+      "indentLevel": 1,
+      "metric": "Cast Range",
+      "changeType": "INCREASED",
+      "oldValue": "600",
+      "newValue": "700",
+      "metadata": {
+        "entityId": 57,
+        "subEntityId": 5263
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Increased a positive metric (cast range)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Jakiro",
+      "subEntityName": "Liquid Frost",
+      "rawNote": "Impact Damage increased from 10/15/20/25 to 15/20/25/30",
+      "indentLevel": 1,
+      "metric": "Impact Damage",
+      "changeType": "INCREASED",
+      "oldValue": "10/15/20/25",
+      "newValue": "15/20/25/30",
+      "metadata": {
+        "entityId": 64,
+        "subEntityId": 1317
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Increased a positive metric (impact damage)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Jakiro",
+      "subEntityName": "Liquid Frost",
+      "rawNote": "Duration increased from 4s to 5s",
+      "indentLevel": 1,
+      "metric": "Duration",
+      "changeType": "INCREASED",
+      "oldValue": "4s",
+      "newValue": "5s",
+      "metadata": {
+        "entityId": 64,
+        "subEntityId": 1317
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Increased a positive metric (duration)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Ursa",
+      "subEntityName": "Earthshock",
+      "rawNote": "Aghanim's Shard Enrage duration decreased from 1.3s to 1.2s",
+      "indentLevel": 1,
+      "metric": "Aghanim's Shard Enrage duration",
+      "changeType": "DECREASED",
+      "oldValue": "1.3s",
+      "newValue": "1.2s",
+      "metadata": {
+        "entityId": 70,
+        "subEntityId": 5357
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a positive metric (aghanim's shard enrage duration)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Ursa",
+      "subEntityName": "Talents",
+      "rawNote": "Level 10 Talent Fury Swipes Reset Time decreased from +12s to +9s",
+      "indentLevel": 1,
+      "metric": "Level 10 Talent Fury Swipes Reset Time",
+      "changeType": "DECREASED",
+      "oldValue": "+12s",
+      "newValue": "+9s",
+      "metadata": {
+        "entityId": 70
+      },
+      "classification": {
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "reasoning": "Could not deterministically classify based on metric rules."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Silencer",
+      "subEntityName": "Arcane Curse",
+      "rawNote": "Cast Range decreased from 1000 to 850",
+      "indentLevel": 1,
+      "metric": "Cast Range",
+      "changeType": "DECREASED",
+      "oldValue": "1000",
+      "newValue": "850",
+      "metadata": {
+        "entityId": 75,
+        "subEntityId": 5377
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a positive metric (cast range)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Outworld Destroyer",
+      "subEntityName": "Arcane Orb",
+      "rawNote": "Cooldown decreased from 6/4/2/0s to 4.5/3/1.5/0s",
+      "indentLevel": 1,
+      "metric": "Cooldown",
+      "changeType": "DECREASED",
+      "oldValue": "6/4/2/0s",
+      "newValue": "4.5/3/1.5/0s",
+      "metadata": {
+        "entityId": 76,
+        "subEntityId": 5391
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a negative metric (cooldown)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Brewmaster",
+      "rawNote": "Base armor increased by 1",
+      "indentLevel": 1,
+      "metric": "Base armor",
+      "changeType": "INCREASED",
+      "newValue": "1",
+      "metadata": {
+        "entityId": 78
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Increased a positive metric (base armor)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Treant Protector",
+      "rawNote": "Base armor increased by 1",
+      "indentLevel": 1,
+      "metric": "Base armor",
+      "changeType": "INCREASED",
+      "newValue": "1",
+      "metadata": {
+        "entityId": 83
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Increased a positive metric (base armor)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Treant Protector",
+      "subEntityName": "Living Armor",
+      "rawNote": "Bonus Armor increased from 4/6/8/10 to 4/7/10/13",
+      "indentLevel": 1,
+      "metric": "Bonus Armor",
+      "changeType": "INCREASED",
+      "oldValue": "4/6/8/10",
+      "newValue": "4/7/10/13",
+      "metadata": {
+        "entityId": 83,
+        "subEntityId": 5436
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Increased a positive metric (bonus armor)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Rubick",
+      "subEntityName": "Talents",
+      "rawNote": "Level 10 Talent Telekinesis Landing damage increased from 150 to 165",
+      "indentLevel": 1,
+      "metric": "Level 10 Talent Telekinesis Landing damage",
+      "changeType": "INCREASED",
+      "oldValue": "150",
+      "newValue": "165",
+      "metadata": {
+        "entityId": 86
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Increased a positive metric (level 10 talent telekinesis landing damage)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Disruptor",
+      "subEntityName": "Static Storm",
+      "rawNote": "Cooldown increased from 90/80/70s to 100/85/70s",
+      "indentLevel": 1,
+      "metric": "Cooldown",
+      "changeType": "INCREASED",
+      "oldValue": "90/80/70s",
+      "newValue": "100/85/70s",
+      "metadata": {
+        "entityId": 87,
+        "subEntityId": 5461
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Increased a negative metric (cooldown)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Naga Siren",
+      "subEntityName": "Song of the Siren",
+      "rawNote": "Aghanim's Shard Max HP Regen per Second decreased from 5/6/7% to 4/5/6% ",
+      "indentLevel": 1,
+      "metric": "Aghanim's Shard Max HP Regen per Second",
+      "changeType": "DECREASED",
+      "oldValue": "5/6/7%",
+      "newValue": "4/5/6%",
+      "metadata": {
+        "entityId": 89,
+        "subEntityId": 5470
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a positive metric (aghanim's shard max hp regen per second)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Visage",
+      "subEntityName": "Grave Chill",
+      "rawNote": "Mana Cost decreased from 90 to 75",
+      "indentLevel": 1,
+      "metric": "Mana Cost",
+      "changeType": "DECREASED",
+      "oldValue": "90",
+      "newValue": "75",
+      "metadata": {
+        "entityId": 92,
+        "subEntityId": 5480
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a negative metric (mana cost)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Medusa",
+      "subEntityName": "Mana Shield",
+      "rawNote": "Base Damage per Mana decreased from 2.2 to 2.0",
+      "indentLevel": 1,
+      "metric": "Base Damage per Mana",
+      "changeType": "DECREASED",
+      "oldValue": "2.2",
+      "newValue": "2.0",
+      "metadata": {
+        "entityId": 94,
+        "subEntityId": 5506
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a positive metric (base damage per mana)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Troll Warlord",
+      "subEntityName": "Talents",
+      "rawNote": "Level 10 Talent Berserker's Rage Movement Speed decreased from +25 to +20",
+      "indentLevel": 1,
+      "metric": "Level 10 Talent Berserker's Rage Movement Speed",
+      "changeType": "DECREASED",
+      "oldValue": "+25",
+      "newValue": "+20",
+      "metadata": {
+        "entityId": 95
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a positive metric (level 10 talent berserker's rage movement speed)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Troll Warlord",
+      "subEntityName": "Talents",
+      "rawNote": "Level 15 Talent Fervor Attack Speed decreased from +5 to +4",
+      "indentLevel": 1,
+      "metric": "Level 15 Talent Fervor Attack Speed",
+      "changeType": "DECREASED",
+      "oldValue": "+5",
+      "newValue": "+4",
+      "metadata": {
+        "entityId": 95
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a positive metric (level 15 talent fervor attack speed)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Centaur Warrunner",
+      "subEntityName": "Work Horse",
+      "rawNote": "Hitch a ride cast range decreased from 300 to 250",
+      "indentLevel": 1,
+      "metric": "Hitch a ride cast range",
+      "changeType": "DECREASED",
+      "oldValue": "300",
+      "newValue": "250",
+      "metadata": {
+        "entityId": 96,
+        "subEntityId": 1135
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a positive metric (hitch a ride cast range)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Magnus",
+      "subEntityName": "Skewer",
+      "rawNote": "Movement is now cancelled if Magnus is interrupted ",
+      "indentLevel": 1,
+      "changeType": "ADJUSTMENT",
+      "metadata": {
+        "entityId": 97,
+        "subEntityId": 5520
+      },
+      "classification": {
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "reasoning": "Could not deterministically classify based on metric rules."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Timbersaw",
+      "subEntityName": "Reactive Armor",
+      "rawNote": "Stacks gained from hero attacks increased from 3 to 4",
+      "indentLevel": 1,
+      "metric": "Stacks gained from hero attacks",
+      "changeType": "INCREASED",
+      "oldValue": "3",
+      "newValue": "4",
+      "metadata": {
+        "entityId": 98,
+        "subEntityId": 5526
+      },
+      "classification": {
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "reasoning": "Could not deterministically classify based on metric rules."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Tusk",
+      "subEntityName": "Bitter Chill",
+      "rawNote": "Attack Speed Slow increased from 15/35/55/75 to 20/40/60/80",
+      "indentLevel": 1,
+      "metric": "Attack Speed Slow",
+      "changeType": "INCREASED",
+      "oldValue": "15/35/55/75",
+      "newValue": "20/40/60/80",
+      "metadata": {
+        "entityId": 100,
+        "subEntityId": 1386
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Increased a positive metric (attack speed slow)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Abaddon",
+      "subEntityName": "Borrowed Time",
+      "rawNote": "Cooldown increased from 90/80/70s to 90/85/80s",
+      "indentLevel": 1,
+      "metric": "Cooldown",
+      "changeType": "INCREASED",
+      "oldValue": "90/80/70s",
+      "newValue": "90/85/80s",
+      "metadata": {
+        "entityId": 102,
+        "subEntityId": 5588
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Increased a negative metric (cooldown)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Techies",
+      "subEntityName": "Reactive Tazer",
+      "rawNote": "Cooldown decreased from 30/25/20/15s to 26/22/18/14s",
+      "indentLevel": 1,
+      "metric": "Cooldown",
+      "changeType": "DECREASED",
+      "oldValue": "30/25/20/15s",
+      "newValue": "26/22/18/14s",
+      "metadata": {
+        "entityId": 105,
+        "subEntityId": 886
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a negative metric (cooldown)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Techies",
+      "subEntityName": "Proximity Mines",
+      "rawNote": "Min damage at the edge increased from 50% to 60%",
+      "indentLevel": 1,
+      "metric": "Min damage at the edge",
+      "changeType": "INCREASED",
+      "oldValue": "50%",
+      "newValue": "60%",
+      "metadata": {
+        "entityId": 105,
+        "subEntityId": 5599
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Increased a positive metric (min damage at the edge)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Earth Spirit",
+      "subEntityName": "Geomagnetic Grip",
+      "rawNote": "Remnant Damage increased from 70/140/210/280 to 75/150/225/300",
+      "indentLevel": 1,
+      "metric": "Remnant Damage",
+      "changeType": "INCREASED",
+      "oldValue": "70/140/210/280",
+      "newValue": "75/150/225/300",
+      "metadata": {
+        "entityId": 107,
+        "subEntityId": 5610
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Increased a positive metric (remnant damage)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Phoenix",
+      "subEntityName": "Supernova",
+      "rawNote": "Aghanim's Scepter cast range decreased from 500 to 450",
+      "indentLevel": 1,
+      "metric": "Aghanim's Scepter cast range",
+      "changeType": "DECREASED",
+      "oldValue": "500",
+      "newValue": "450",
+      "metadata": {
+        "entityId": 110,
+        "subEntityId": 5630
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a positive metric (aghanim's scepter cast range)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Monkey King",
+      "subEntityName": "Boundless Strike",
+      "rawNote": "Aghanim's Shard portion of Primal Spring's max power decreased from 40% to 35%",
+      "indentLevel": 1,
+      "metric": "Aghanim's Shard portion of Primal Spring's max power",
+      "changeType": "DECREASED",
+      "oldValue": "40%",
+      "newValue": "35%",
+      "metadata": {
+        "entityId": 114,
+        "subEntityId": 5716
+      },
+      "classification": {
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "reasoning": "Could not deterministically classify based on metric rules."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Monkey King",
+      "subEntityName": "Tree Dance",
+      "rawNote": "Movement is now cancelled if Monkey King is interrupted ",
+      "indentLevel": 1,
+      "changeType": "ADJUSTMENT",
+      "metadata": {
+        "entityId": 114,
+        "subEntityId": 5721
+      },
+      "classification": {
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "reasoning": "Could not deterministically classify based on metric rules."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Monkey King",
+      "subEntityName": "Talents",
+      "rawNote": "Level 10 Talent Primal Spring Max Damage decreased from +100 to +85",
+      "indentLevel": 1,
+      "metric": "Level 10 Talent Primal Spring Max Damage",
+      "changeType": "DECREASED",
+      "oldValue": "+100",
+      "newValue": "+85",
+      "metadata": {
+        "entityId": 114
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a positive metric (level 10 talent primal spring max damage)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Hoodwink",
+      "subEntityName": "Hunter's Boomerang",
+      "rawNote": "Incoming Spell Damage Amp decreased from 25% to 20%",
+      "indentLevel": 1,
+      "metric": "Incoming Spell Damage Amp",
+      "changeType": "DECREASED",
+      "oldValue": "25%",
+      "newValue": "20%",
+      "metadata": {
+        "entityId": 123,
+        "subEntityId": 1422
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a positive metric (incoming spell damage amp)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Snapfire",
+      "subEntityName": "Firesnap Cookie",
+      "rawNote": "Cast Range decreased from 700 to 650",
+      "indentLevel": 1,
+      "metric": "Cast Range",
+      "changeType": "DECREASED",
+      "oldValue": "700",
+      "newValue": "650",
+      "metadata": {
+        "entityId": 128,
+        "subEntityId": 6483
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a positive metric (cast range)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Mars",
+      "subEntityName": "Arena Of Blood",
+      "rawNote": "Duration rescaled from 5/6/7s to 5.5s",
+      "indentLevel": 1,
+      "metric": "Duration",
+      "changeType": "RESCALE",
+      "oldValue": "5/6/7s",
+      "newValue": "5.5s",
+      "metadata": {
+        "entityId": 129,
+        "subEntityId": 1416
+      },
+      "classification": {
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.8,
+        "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Ringmaster",
+      "subEntityName": "Tame the Beasts",
+      "rawNote": "Min Damage increased from 45/70/95/120 to 50/75/100/125",
+      "indentLevel": 1,
+      "metric": "Min Damage",
+      "changeType": "INCREASED",
+      "oldValue": "45/70/95/120",
+      "newValue": "50/75/100/125",
+      "metadata": {
+        "entityId": 131,
+        "subEntityId": 352
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Increased a positive metric (min damage)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Dawnbreaker",
+      "subEntityName": "Solar Guardian",
+      "rawNote": "Aghanim's Scepter aura linger duration decreased from 3s to 2s",
+      "indentLevel": 1,
+      "metric": "Aghanim's Scepter aura linger duration",
+      "changeType": "DECREASED",
+      "oldValue": "3s",
+      "newValue": "2s",
+      "metadata": {
+        "entityId": 135,
+        "subEntityId": 7906
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a positive metric (aghanim's scepter aura linger duration)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Marci",
+      "subEntityName": "Unleash",
+      "rawNote": "Bonus Attack Speed decreased from 700/975/1325 to 700/925/1150",
+      "indentLevel": 1,
+      "metric": "Bonus Attack Speed",
+      "changeType": "DECREASED",
+      "oldValue": "700/975/1325",
+      "newValue": "700/925/1150",
+      "metadata": {
+        "entityId": 136,
+        "subEntityId": 8198
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a positive metric (bonus attack speed)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Kez",
+      "rawNote": "Added to Captain's Mode",
+      "indentLevel": 1,
+      "changeType": "ADJUSTMENT",
+      "metadata": {
+        "entityId": 145
+      },
+      "classification": {
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "reasoning": "Could not deterministically classify based on metric rules."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Kez",
+      "rawNote": "Base Mana Regen increased from 0 to 0.25",
+      "indentLevel": 1,
+      "metric": "Base Mana Regen",
+      "changeType": "INCREASED",
+      "oldValue": "0",
+      "newValue": "0.25",
+      "metadata": {
+        "entityId": 145
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "reasoning": "Increased a positive metric (base mana regen)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Kez",
+      "rawNote": "Flutter: Switch Discipline: The first hit bonus is now consumed by the first attack of Echo Slash and Raptor Dance, rather than applying to the entire cast ",
+      "indentLevel": 1,
+      "changeType": "ADJUSTMENT",
+      "metadata": {
+        "entityId": 145
+      },
+      "classification": {
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "reasoning": "Could not deterministically classify based on metric rules."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Kez",
+      "rawNote": "Flutter: Switch Discipline: Fixed the Katana bonus being lost if Echo Slash hit nothing",
+      "indentLevel": 1,
+      "changeType": "ADJUSTMENT",
+      "metadata": {
+        "entityId": 145
+      },
+      "classification": {
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "reasoning": "Could not deterministically classify based on metric rules."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Kez",
+      "subEntityName": "Switch Discipline",
+      "rawNote": "Fixed a bug with Aghanim's Scepter that would allow extra Sai abilities to skip cooldown",
+      "indentLevel": 1,
+      "changeType": "ADJUSTMENT",
+      "metadata": {
+        "entityId": 145,
+        "subEntityId": 1497
+      },
+      "classification": {
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "reasoning": "Could not deterministically classify based on metric rules."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Kez",
+      "subEntityName": "Kazurai Katana",
+      "rawNote": "Impale damage changed from post-critical strike bonus damage to a separate instance of physical spell damage",
+      "indentLevel": 1,
+      "changeType": "ADJUSTMENT",
+      "metadata": {
+        "entityId": 145,
+        "subEntityId": 1500
+      },
+      "classification": {
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "reasoning": "Could not deterministically classify based on metric rules."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Kez",
+      "subEntityName": "Raptor Dance",
+      "rawNote": "Max Health as Damage decreased from 3% to 2.5%",
+      "indentLevel": 1,
+      "metric": "Max Health as Damage",
+      "changeType": "DECREASED",
+      "oldValue": "3%",
+      "newValue": "2.5%",
+      "metadata": {
+        "entityId": 145,
+        "subEntityId": 1501
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "reasoning": "Decreased a positive metric (max health as damage)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Kez",
+      "subEntityName": "Raptor Dance",
+      "rawNote": "Can no longer be interrupted by casting Grappling Claw",
+      "indentLevel": 1,
+      "changeType": "REMOVAL",
+      "metadata": {
+        "entityId": 145,
+        "subEntityId": 1501
+      },
+      "classification": {
+        "classificationType": "Nerf",
+        "confidenceScore": 0.9,
+        "reasoning": "Removal of a mechanic or scaling is generally a nerf."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Kez",
+      "subEntityName": "Falcon Rush",
+      "rawNote": "Now has an 825 break distance",
+      "indentLevel": 1,
+      "changeType": "ADDITION",
+      "metadata": {
+        "entityId": 145,
+        "subEntityId": 1502
+      },
+      "classification": {
+        "classificationType": "Buff",
+        "confidenceScore": 0.9,
+        "reasoning": "Addition of a new mechanic, feature, or scaling is generally a buff."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Kez",
+      "subEntityName": "Falcon Rush",
+      "rawNote": "Attack Speed Factor rescaled from 6/8/10/12% to 9%",
+      "indentLevel": 1,
+      "metric": "Attack Speed Factor",
+      "changeType": "RESCALE",
+      "oldValue": "6/8/10/12%",
+      "newValue": "9%",
+      "metadata": {
+        "entityId": 145,
+        "subEntityId": 1502
+      },
+      "classification": {
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.8,
+        "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Kez",
+      "subEntityName": "Shodo Sai",
+      "rawNote": "Mark Critical Strike decreased from 140/160/180/200% to 125/150/175/200%",
+      "indentLevel": 1,
+      "metric": "Mark Critical Strike",
+      "changeType": "DECREASED",
+      "oldValue": "140/160/180/200%",
+      "newValue": "125/150/175/200%",
+      "metadata": {
+        "entityId": 145,
+        "subEntityId": 1504
+      },
+      "classification": {
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "reasoning": "Could not deterministically classify based on metric rules."
+      }
+    }
+  ]
+}

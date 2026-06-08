@@ -1,0 +1,129 @@
+.listContainer {
+  margin-top: 32px;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.filterBtn {
+  background: var(--bg-panel);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.filterBtn:hover {
+  background: #232833;
+}
+
+.filterBtn.active {
+  background: var(--color-rare);
+  border-color: var(--color-rare);
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 12px;
+}
+
+.heroName {
+  margin: 0;
+  color: var(--color-epic);
+  font-size: 1.25rem;
+}
+
+.itemName {
+  margin: 0;
+  color: var(--color-artifact);
+  font-size: 1.25rem;
+}
+
+.netScore {
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.netScore.positive {
+  background: rgba(43, 171, 1, 0.15);
+  color: var(--color-buff);
+}
+
+.netScore.negative {
+  background: rgba(255, 76, 76, 0.15);
+  color: var(--color-nerf);
+}
+
+.netScore.neutral {
+  background: rgba(156, 195, 255, 0.15);
+  color: var(--color-adjustment);
+}
+
+.changesList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.changeItem {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  padding-left: 12px;
+  border-left: 3px solid var(--border-color);
+}
+
+.changeItem.Buff {
+  border-left-color: var(--color-buff);
+}
+
+.changeItem.Nerf {
+  border-left-color: var(--color-nerf);
+}
+
+.changeItem.Adjustment {
+  border-left-color: var(--color-adjustment);
+}
+
+.changeItem.Rework {
+  border-left-color: var(--color-rework);
+}
+
+.subEntity {
+  font-weight: bold;
+  color: var(--color-consumable);
+  margin-bottom: 4px;
+  display: block;
+}
+
+.note {
+  color: #ccc;
+}

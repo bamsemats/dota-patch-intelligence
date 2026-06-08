@@ -9,7 +9,15 @@
     "packages/*"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "inspect:steam-news": "tsx apps/scripts/inspectSteamNews.ts",
+    "patch:discovery": "tsx apps/scripts/patchDiscovery.ts",
+    "patch:mappings": "tsx apps/scripts/fetchMappings.ts",
+    "patch:parse": "tsx apps/scripts/parsePatches.ts",
+    "patch:classify": "tsx apps/scripts/classifyPatches.ts",
+    "patch:analyze": "tsx apps/scripts/analyzePatch.ts",
+    "patch:impact": "tsx apps/scripts/impactScorer.ts",
+    "patch:meta": "tsx apps/scripts/metaAnalyzer.ts"
   },
   "repository": {
     "type": "git",
@@ -24,6 +32,8 @@
   },
   "homepage": "https://github.com/bamsemats/dota-patch-intelligence#readme",
   "dependencies": {
-    "create-next-app": "^16.2.7"
+    "@google/genai": "^2.8.0",
+    "create-next-app": "^16.2.7",
+    "dotenv": "^17.4.2"
   }
 }

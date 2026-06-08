@@ -86,6 +86,88 @@ Alternatives Considered:
 
 ---
 
+# 2026-06-08
+
+Status:
+Accepted
+
+Decision:
+Classification is owned by the Classification entity.
+
+Reasoning:
+A single change may generate multiple interpretations.
+
+The Change entity stores only a denormalized primaryClassification
+for convenience.
+
+Classification remains the source of truth.
+
+---
+
+# 2026-06-08
+
+Status:
+Accepted
+
+Decision:
+Introduce ChangeGroup as a first-class domain entity.
+
+Reasoning:
+Many balance updates are only meaningful when interpreted
+collectively.
+
+Grouping improves analysis, display, and future meta reasoning.
+
+---
+
+# 2026-06-08
+
+Status:
+Accepted
+
+Decision:
+Pivot from HTML scraping to using Valve's official JSON Datafeed API for patch notes, and implement deep structured decomposition for the Change entity.
+
+Reasoning:
+Valve provides a highly structured, undocumented JSON datafeed API (`/datafeed/patchnotes`, `/datafeed/herodata`, etc.) which completely eliminates the fragility and complexity of DOM scraping. This allows the parser to focus on ID resolution (mapping `ability_id` to ability names) and regex-based string decomposition (extracting metrics, change types, and old/new values from notes) to create a highly structured dataset suitable for programmatic meta-analysis.
+
+Alternatives Considered:
+* Continuing with HTML DOM scraping (rejected due to fragility and lack of explicit entity IDs).
+
+---
+
+# 2026-06-08
+
+Status:
+Accepted
+
+Decision:
+Use a "Single-Prompt Synergistic" approach for LLM Meta Analysis rather than per-hero batching.
+
+Reasoning:
+1. **API Rate Limiting:** The free tier of the Gemini API (and most LLMs) has strict quotas (e.g., 5 RPM, 20 RPD). Sending 127 individual hero requests per patch halts development and production automation.
+2. **Relational Synergy:** Evaluating heroes in isolation completely misses the core philosophy of Contextual Impact Analysis. A hero buff combined with an economy/jungle buff creates an exponential synergy that an LLM cannot detect if it doesn't see both changes simultaneously. 
+By sending the entire simplified JSON structure of a patch (Systemic + Items + Heroes) in a single request, we use only 1 API call per patch and leverage the 1M+ token context window to allow the LLM to find these relational synergies.
+
+Alternatives Considered:
+* Per-hero LLM scoring (rejected due to API quotas and context blindness).
+
+# 2026-06-08
+
+Status:
+Accepted
+
+Decision:
+Use Vanilla CSS / CSS Modules for frontend styling; DO NOT use Tailwind CSS.
+
+Reasoning:
+The user explicitly mandated the use of standard `.css` files over utility-first frameworks like Tailwind. This encourages a clean separation of concerns, semantic class names, and allows for the easy integration of a specific, Dota 2-inspired color palette (e.g., Epic `#B812F9`, Common `#2BAB01`).
+
+Alternatives Considered:
+* Tailwind CSS (Explicitly rejected by user).
+
+---
+
 # Open Decisions
 
 The following decisions remain unresolved:

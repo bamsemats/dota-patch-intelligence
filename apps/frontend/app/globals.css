@@ -1,24 +1,39 @@
-
-
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --bg-color: #0f1115;
+  --bg-panel: #171a21;
+  --border-color: #2a2f3a;
+  --text-color: #e6e6e6;
+  
+  /* Dota Palette */
+  --color-rare: #1A87F9;
+  --color-artifact: #E29B01;
+  --color-secret-shop: #FFFFFF;
+  --color-consumable: #1D80E7;
+  --color-common: #2BAB01; /* Buff */
+  --color-epic: #B812F9; /* Hero names */
+  --color-component: #FFFFFF;
+  
+  /* Status Colors */
+  --color-buff: var(--color-common);
+  --color-nerf: #FF4C4C;
+  --color-adjustment: #9cc3ff;
+  --color-rework: var(--color-artifact);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
 }
