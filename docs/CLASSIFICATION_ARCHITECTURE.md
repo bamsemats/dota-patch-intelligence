@@ -64,26 +64,24 @@ Every parsed change exists in one of four states, determining its path through t
 
 ## Human Review Queue
 
-The review queue is a critical component for maintaining system trustworthiness and expanding the ontology.
+The review queue is a critical component for maintaining system trustworthiness and expanding the ontology. When changes fall into the `UNKNOWN` state, they must be processed to teach the system new semantic patterns.
 
-### Review Record Structure
+### Interactive Review Tool
 
-```json
-{
-  "id": "rev_9921",
-  "patch": "7.42",
-  "rawNote": "Illusions now inherit the owner's attack speed penalty",
-  "proposedClassification": "Nerf",
-  "proposedTag": "ILLUSION_INTERACTION",
-  "status": "Pending"
-}
+The project includes a CLI-based Interactive Review Tool to clear the backlog of `UNKNOWN` changes.
+
+**How to Run:**
+```bash
+npm run patch:review
 ```
 
 ### Reviewer Workflow
 
-1.  **Presentation:** The reviewer is shown the raw note, the hero/item context, and any LLM-proposed tags.
-2.  **Action:**
-    *   **Confirm:** Accept the proposed classification.
-    *   **Edit:** Manually assign a different tag or polarity.
-    *   **Discard:** Flag as non-gameplay/unimportant change.
-3.  **Storage:** Once confirmed, the result is stored permanently. If a new pattern is identified, it is added to the **Semantic Ontology** to ensure future instances are handled as `KNOWN_SEMANTIC`.
+1.  **Deduplication:** The tool automatically scans all processed patches and deduplicates identical `UNKNOWN` strings (e.g., if "now provides an aura" appears 10 times, you only review it once).
+2.  **Presentation:** The tool displays the patch version, entity context (Hero/Item), and the highlighted raw string.
+3.  **Actions:** You will be prompted to take one of four actions:
+    *   `[m] Map to existing tag:` Displays a list of all current Semantic Ontology tags. You select the appropriate number and input the generic phrase to match (e.g., "now provides an aura"). This appends the new phrase to the existing tag.
+    *   `[c] Create new tag:` Prompts you to define a brand new tag (e.g., `AURA_INTERACTION`), the matching phrase, the affected impact areas, and its default strategic weight (1-10).
+    *   `[s] Skip:` Bypasses the change. Used for minor bug fixes or tooltip changes that have no strategic weight.
+    *   `[q] Quit:` Saves progress and exits the tool.
+4.  **Auto-Save & Re-Classification:** Upon making a choice, `research-output/ontology/semantic_tags.json` is updated immediately. After finishing a review session, you **must run** `npm run patch:classify` to re-process the historical data using your newly added rules.

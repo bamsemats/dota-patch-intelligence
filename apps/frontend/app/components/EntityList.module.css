@@ -127,3 +127,33 @@
 .note {
   color: #ccc;
 }
+
+.vectorContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px dashed var(--border-color);
+}
+
+.vectorBadge {
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  font-weight: 600;
+}
+
+.vectorBadge.pos {
+  color: var(--color-buff);
+  border-color: var(--color-buff);
+  background: rgba(43, 171, 1, 0.1);
+}
+
+.vectorBadge.neg {
+  color: var(--color-nerf);
+  border-color: var(--color-nerf);
+  background: rgba(255, 76, 76, 0.1);
+}

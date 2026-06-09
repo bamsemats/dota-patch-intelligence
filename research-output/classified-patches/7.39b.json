@@ -10,9 +10,10 @@
       "changeType": "ADJUSTMENT",
       "metadata": {},
       "classification": {
-        "classificationType": "Adjustment",
-        "confidenceScore": 0.5,
-        "reasoning": "Could not deterministically classify based on metric rules."
+        "state": "UNKNOWN",
+        "classificationType": "Unknown",
+        "confidenceScore": 0,
+        "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
       }
     },
     {
@@ -23,9 +24,10 @@
       "changeType": "ADJUSTMENT",
       "metadata": {},
       "classification": {
-        "classificationType": "Adjustment",
-        "confidenceScore": 0.5,
-        "reasoning": "Could not deterministically classify based on metric rules."
+        "state": "UNKNOWN",
+        "classificationType": "Unknown",
+        "confidenceScore": 0,
+        "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
       }
     },
     {
@@ -36,9 +38,10 @@
       "changeType": "ADJUSTMENT",
       "metadata": {},
       "classification": {
-        "classificationType": "Adjustment",
-        "confidenceScore": 0.5,
-        "reasoning": "Could not deterministically classify based on metric rules."
+        "state": "UNKNOWN",
+        "classificationType": "Unknown",
+        "confidenceScore": 0,
+        "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
       }
     },
     {
@@ -49,9 +52,10 @@
       "changeType": "REMOVAL",
       "metadata": {},
       "classification": {
+        "state": "KNOWN_SEMANTIC",
         "classificationType": "Nerf",
         "confidenceScore": 0.9,
-        "reasoning": "Removal of a mechanic or scaling is generally a nerf."
+        "reasoning": "Removal of a mechanic or feature."
       }
     },
     {
@@ -62,9 +66,10 @@
       "changeType": "ADJUSTMENT",
       "metadata": {},
       "classification": {
-        "classificationType": "Adjustment",
-        "confidenceScore": 0.5,
-        "reasoning": "Could not deterministically classify based on metric rules."
+        "state": "UNKNOWN",
+        "classificationType": "Unknown",
+        "confidenceScore": 0,
+        "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
       }
     },
     {
@@ -80,24 +85,11 @@
         "entityId": 1640
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Buff",
         "confidenceScore": 1,
+        "strategicWeight": 5,
         "reasoning": "Increased a positive metric (pollinate health restoration loss)."
-      }
-    },
-    {
-      "category": "neutral",
-      "entityName": "Jidi Pollen Bag",
-      "rawNote": "<br>",
-      "indentLevel": 1,
-      "changeType": "ADJUSTMENT",
-      "metadata": {
-        "entityId": 1640
-      },
-      "classification": {
-        "classificationType": "Adjustment",
-        "confidenceScore": 0.5,
-        "reasoning": "Could not deterministically classify based on metric rules."
       }
     },
     {
@@ -110,9 +102,10 @@
         "entityId": 1642
       },
       "classification": {
+        "state": "KNOWN_SEMANTIC",
         "classificationType": "Nerf",
         "confidenceScore": 0.9,
-        "reasoning": "Removal of a mechanic or scaling is generally a nerf."
+        "reasoning": "Removal of a mechanic or feature."
       }
     },
     {
@@ -128,9 +121,11 @@
         "entityId": 1642
       },
       "classification": {
-        "classificationType": "Nerf",
-        "confidenceScore": 1,
-        "reasoning": "Decreased a positive metric (blood invocation aoe bonus)."
+        "state": "NUMERIC",
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "strategicWeight": 5,
+        "reasoning": "Numeric change, but polarity could not be deterministically resolved."
       }
     },
     {
@@ -146,8 +141,10 @@
         "entityId": 1643
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Nerf",
         "confidenceScore": 1,
+        "strategicWeight": 5,
         "reasoning": "Decreased a positive metric (crushing blow debuff duration)."
       }
     },
@@ -164,24 +161,11 @@
         "entityId": 1607
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Nerf",
         "confidenceScore": 1,
+        "strategicWeight": 5,
         "reasoning": "Decreased a positive metric (keen eye bonus cast range)."
-      }
-    },
-    {
-      "category": "neutral",
-      "entityName": "Magnifying Monocle",
-      "rawNote": "<br>",
-      "indentLevel": 1,
-      "changeType": "ADJUSTMENT",
-      "metadata": {
-        "entityId": 1607
-      },
-      "classification": {
-        "classificationType": "Adjustment",
-        "confidenceScore": 0.5,
-        "reasoning": "Could not deterministically classify based on metric rules."
       }
     },
     {
@@ -197,8 +181,10 @@
         "entityId": 327
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Nerf",
         "confidenceScore": 1,
+        "strategicWeight": 5,
         "reasoning": "Increased a negative metric (death delay cooldown)."
       }
     },
@@ -215,8 +201,10 @@
         "entityId": 1589
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Buff",
         "confidenceScore": 1,
+        "strategicWeight": 5,
         "reasoning": "Increased a positive metric (health restoration bonus)."
       }
     },
@@ -233,8 +221,10 @@
         "entityId": 1589
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Nerf",
         "confidenceScore": 1,
+        "strategicWeight": 5,
         "reasoning": "Decreased a positive metric (intelligence reduction)."
       }
     },
@@ -253,8 +243,10 @@
         "subEntityId": 5009
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Nerf",
         "confidenceScore": 1,
+        "strategicWeight": 5,
         "reasoning": "Decreased a positive metric (aghanim's scepter attack damage reduction)."
       }
     },
@@ -270,9 +262,10 @@
         "subEntityId": 5056
       },
       "classification": {
-        "classificationType": "Adjustment",
-        "confidenceScore": 0.5,
-        "reasoning": "Could not deterministically classify based on metric rules."
+        "state": "UNKNOWN",
+        "classificationType": "Unknown",
+        "confidenceScore": 0,
+        "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
       }
     },
     {
@@ -290,8 +283,10 @@
         "subEntityId": 5102
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Buff",
         "confidenceScore": 1,
+        "strategicWeight": 5,
         "reasoning": "Decreased a negative metric (mana cost)."
       }
     },
@@ -309,9 +304,11 @@
         "entityId": 16
       },
       "classification": {
-        "classificationType": "Buff",
-        "confidenceScore": 1,
-        "reasoning": "Increased a positive metric (level 10 talent stinger slow)."
+        "state": "NUMERIC",
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "strategicWeight": 5,
+        "reasoning": "Numeric change, but polarity could not be deterministically resolved."
       }
     },
     {
@@ -328,8 +325,10 @@
         "entityId": 16
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Buff",
         "confidenceScore": 1,
+        "strategicWeight": 5,
         "reasoning": "Increased a positive metric (level 15 talent burrowstrike cast range)."
       }
     },
@@ -347,8 +346,10 @@
         "entityId": 16
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Buff",
         "confidenceScore": 1,
+        "strategicWeight": 5,
         "reasoning": "Increased a positive metric (level 15 talent sand storm damage per second)."
       }
     },
@@ -367,8 +368,10 @@
         "subEntityId": 5078
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Nerf",
         "confidenceScore": 1,
+        "strategicWeight": 7,
         "reasoning": "Decreased a positive metric (damage)."
       }
     },
@@ -387,8 +390,10 @@
         "subEntityId": 5080
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Nerf",
         "confidenceScore": 1,
+        "strategicWeight": 6,
         "reasoning": "Increased a negative metric (cooldown)."
       }
     },
@@ -405,8 +410,10 @@
         "entityId": 31
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Buff",
         "confidenceScore": 1,
+        "strategicWeight": 5,
         "reasoning": "Increased a positive metric (death charge: mana restored on hero death)."
       }
     },
@@ -422,9 +429,10 @@
         "subEntityId": 5147
       },
       "classification": {
-        "classificationType": "Adjustment",
-        "confidenceScore": 0.5,
-        "reasoning": "Could not deterministically classify based on metric rules."
+        "state": "UNKNOWN",
+        "classificationType": "Unknown",
+        "confidenceScore": 0,
+        "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
       }
     },
     {
@@ -439,8 +447,10 @@
         "entityId": 35
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Buff",
         "confidenceScore": 1,
+        "strategicWeight": 5,
         "reasoning": "Increased a positive metric (base armor)."
       }
     },
@@ -456,9 +466,10 @@
         "subEntityId": 5165
       },
       "classification": {
-        "classificationType": "Adjustment",
-        "confidenceScore": 0.5,
-        "reasoning": "Could not deterministically classify based on metric rules."
+        "state": "UNKNOWN",
+        "classificationType": "Unknown",
+        "confidenceScore": 0,
+        "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
       }
     },
     {
@@ -471,9 +482,10 @@
         "entityId": 38
       },
       "classification": {
+        "state": "KNOWN_SEMANTIC",
         "classificationType": "Nerf",
         "confidenceScore": 0.9,
-        "reasoning": "Removal of a mechanic or scaling is generally a nerf."
+        "reasoning": "Removal of a mechanic or feature."
       }
     },
     {
@@ -491,8 +503,10 @@
         "subEntityId": 5194
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Nerf",
         "confidenceScore": 1,
+        "strategicWeight": 5,
         "reasoning": "Increased a negative metric (mana cost)."
       }
     },
@@ -511,8 +525,10 @@
         "subEntityId": 5194
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Nerf",
         "confidenceScore": 1,
+        "strategicWeight": 5,
         "reasoning": "Decreased a positive metric (bonus damage)."
       }
     },
@@ -531,8 +547,10 @@
         "subEntityId": 5248
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Nerf",
         "confidenceScore": 1,
+        "strategicWeight": 5,
         "reasoning": "Decreased a positive metric (base damage)."
       }
     },
@@ -551,8 +569,10 @@
         "subEntityId": 5256
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Nerf",
         "confidenceScore": 1,
+        "strategicWeight": 8,
         "reasoning": "Decreased a positive metric (duration)."
       }
     },
@@ -571,8 +591,10 @@
         "subEntityId": 5258
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Nerf",
         "confidenceScore": 1,
+        "strategicWeight": 6,
         "reasoning": "Decreased a positive metric (cast range)."
       }
     },
@@ -591,8 +613,10 @@
         "subEntityId": 656
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Nerf",
         "confidenceScore": 1,
+        "strategicWeight": 6,
         "reasoning": "Increased a negative metric (cooldown)."
       }
     },
@@ -611,8 +635,10 @@
         "subEntityId": 656
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Nerf",
         "confidenceScore": 1,
+        "strategicWeight": 7,
         "reasoning": "Decreased a positive metric (damage)."
       }
     },
@@ -631,9 +657,11 @@
         "subEntityId": 5269
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Adjustment",
         "confidenceScore": 0.5,
-        "reasoning": "Could not deterministically classify based on metric rules."
+        "strategicWeight": 5,
+        "reasoning": "Numeric change, but polarity could not be deterministically resolved."
       }
     },
     {
@@ -651,8 +679,10 @@
         "subEntityId": 5275
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Nerf",
         "confidenceScore": 1,
+        "strategicWeight": 5,
         "reasoning": "Decreased a positive metric (night duration)."
       }
     },
@@ -669,8 +699,10 @@
         "entityId": 69
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Nerf",
         "confidenceScore": 1,
+        "strategicWeight": 5,
         "reasoning": "Decreased a positive metric (base health regen)."
       }
     },
@@ -689,8 +721,10 @@
         "subEntityId": 5358
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Adjustment",
         "confidenceScore": 0.8,
+        "strategicWeight": 5,
         "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
       }
     },
@@ -709,9 +743,11 @@
         "subEntityId": 5359
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Adjustment",
         "confidenceScore": 0.5,
-        "reasoning": "Could not deterministically classify based on metric rules."
+        "strategicWeight": 5,
+        "reasoning": "Numeric change, but polarity could not be deterministically resolved."
       }
     },
     {
@@ -729,8 +765,10 @@
         "subEntityId": 5458
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Nerf",
         "confidenceScore": 1,
+        "strategicWeight": 5,
         "reasoning": "Decreased a positive metric (slow duration)."
       }
     },
@@ -747,8 +785,10 @@
         "entityId": 93
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Nerf",
         "confidenceScore": 1,
+        "strategicWeight": 5,
         "reasoning": "Decreased a positive metric (barracuda: health gained per second)."
       }
     },
@@ -767,8 +807,10 @@
         "subEntityId": 1379
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Nerf",
         "confidenceScore": 1,
+        "strategicWeight": 5,
         "reasoning": "Decreased a positive metric (max movement speed)."
       }
     },
@@ -787,8 +829,10 @@
         "subEntityId": 5581
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Buff",
         "confidenceScore": 1,
+        "strategicWeight": 5,
         "reasoning": "Increased a positive metric (base damage)."
       }
     },
@@ -805,8 +849,10 @@
         "entityId": 103
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Nerf",
         "confidenceScore": 1,
+        "strategicWeight": 5,
         "reasoning": "Decreased a positive metric (base movement speed)."
       }
     },
@@ -825,8 +871,10 @@
         "subEntityId": 879
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Buff",
         "confidenceScore": 1,
+        "strategicWeight": 7,
         "reasoning": "Increased a positive metric (damage)."
       }
     },
@@ -845,8 +893,10 @@
         "subEntityId": 865
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Buff",
         "confidenceScore": 1,
+        "strategicWeight": 5,
         "reasoning": "Decreased a negative metric (mana cost)."
       }
     },
@@ -865,8 +915,10 @@
         "subEntityId": 1396
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Nerf",
         "confidenceScore": 1,
+        "strategicWeight": 5,
         "reasoning": "Increased a negative metric (damage penalty)."
       }
     },
@@ -883,8 +935,10 @@
         "entityId": 111
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Nerf",
         "confidenceScore": 1,
+        "strategicWeight": 5,
         "reasoning": "Decreased a positive metric (strength gain)."
       }
     },
@@ -903,9 +957,11 @@
         "subEntityId": 932
       },
       "classification": {
-        "classificationType": "Nerf",
-        "confidenceScore": 1,
-        "reasoning": "Decreased a positive metric (heal amplification)."
+        "state": "NUMERIC",
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "strategicWeight": 5,
+        "reasoning": "Numeric change, but polarity could not be deterministically resolved."
       }
     },
     {
@@ -920,9 +976,10 @@
         "subEntityId": 1502
       },
       "classification": {
-        "classificationType": "Adjustment",
-        "confidenceScore": 0.5,
-        "reasoning": "Could not deterministically classify based on metric rules."
+        "state": "UNKNOWN",
+        "classificationType": "Unknown",
+        "confidenceScore": 0,
+        "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
       }
     },
     {
@@ -940,8 +997,10 @@
         "subEntityId": 1502
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Buff",
         "confidenceScore": 1,
+        "strategicWeight": 8,
         "reasoning": "Increased a positive metric (duration)."
       }
     },
@@ -960,8 +1019,10 @@
         "subEntityId": 1503
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Buff",
         "confidenceScore": 1,
+        "strategicWeight": 5,
         "reasoning": "Decreased a negative metric (mana cost)."
       }
     },
@@ -977,9 +1038,10 @@
         "subEntityId": 1504
       },
       "classification": {
+        "state": "KNOWN_SEMANTIC",
         "classificationType": "Buff",
         "confidenceScore": 0.9,
-        "reasoning": "Addition of a new mechanic, feature, or scaling is generally a buff."
+        "reasoning": "Addition of a new mechanic or feature."
       }
     },
     {
@@ -997,8 +1059,10 @@
         "subEntityId": 1504
       },
       "classification": {
+        "state": "NUMERIC",
         "classificationType": "Adjustment",
         "confidenceScore": 0.8,
+        "strategicWeight": 5,
         "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
       }
     }

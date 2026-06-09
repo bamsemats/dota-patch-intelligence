@@ -2,6 +2,16 @@
 
 The Balance Ontology defines the strategic meaning of Dota 2 game mechanics. It maps specific parsed metrics (e.g., "Movement Speed") to broader gameplay concepts and assigns weights representing their general impact on the game.
 
+## Calibration Methodology (Strategic Balancing)
+
+The initial weights and archetype modifiers in the system are prototype placeholders (e.g., uniform `1.5` multipliers) used to validate the calculation pipeline. To ensure the system accurately represents true gameplay impact across different roles and heroes, the weights must undergo a rigorous, strategic calibration phase.
+
+### Calibration Strategy:
+1.  **Expert Consensus Baseline:** Base metric weights (1-10) and archetype modifiers must be initially set using high-MMR domain knowledge. For example, a `carry` archetype will receive a heavy modifier (`1.8`) for *Attack Speed*, while a `support` receives a lower modifier (`0.8`) but a high modifier (`2.0`) for *Disable Duration*.
+2.  **Relative Normalization:** Weights must be balanced against each other to prevent systemic skew. If "Armor" is weighted too heavily across all archetypes, every patch will incorrectly look like a "Tank Meta."
+3.  **Empirical Feedback Loop:** Once the Winrate Calibration system (Phase 10) is operational, the weights will be continually adjusted based on observed data. If the system predicts a hero will win due to a "Base Damage" buff, but the hero's winrate remains static, the weight of "Base Damage" for that specific archetype will be automatically reduced.
+4.  **Continuous Review:** As the game's fundamental mechanics evolve (e.g., the introduction of Facets or new attributes), the ontology must be manually audited using the Interactive Review Tool to ensure the weights still align with the current meta-philosophy.
+
 ## Metric → Gameplay Concept Mapping
 
 Each trackable metric is mapped to one or more gameplay areas it affects.

@@ -17,10 +17,21 @@ interface Change {
   };
 }
 
+interface FeatureVector {
+  farming: number;
+  mobility: number;
+  survivability: number;
+  teamfight: number;
+  laning: number;
+  siege: number;
+  utility: number;
+}
+
 interface HeroData {
   heroName: string;
   changes: Change[];
   netScore: number;
+  vectorDelta: FeatureVector | null;
 }
 
 interface HeroListProps {
@@ -35,6 +46,13 @@ export default function HeroList({ heroes }: HeroListProps) {
     if (filter === "Nerfed") return hero.netScore < 0;
     return true;
   });
+
+  const getSignificantVectors = (vector: FeatureVector | null) => {
+    if (!vector) return [];
+    return Object.entries(vector)
+      .filter(([_, val]) => val !== 0)
+      .map(([dim, val]) => ({ dim: dim.charAt(0).toUpperCase() + dim.slice(1), val }));
+  };
 
   return (
     <div className={styles.listContainer}>
@@ -62,27 +80,40 @@ export default function HeroList({ heroes }: HeroListProps) {
       </div>
 
       <div className={styles.grid}>
-        {filteredHeroes.map((hero) => (
-          <div key={hero.heroName} className={styles.card}>
-            <div className={styles.cardHeader}>
-              <h3 className={styles.heroName}>{hero.heroName}</h3>
-              <span className={`${styles.netScore} ${hero.netScore > 0 ? styles.positive : hero.netScore < 0 ? styles.negative : styles.neutral}`}>
-                {hero.netScore > 0 ? `+${hero.netScore}` : hero.netScore}
-              </span>
-            </div>
-            
-            <div className={styles.changesList}>
-              {hero.changes.map((change, idx) => (
-                <div key={idx} className={`${styles.changeItem} ${styles[change.classification.classificationType]}`}>
-                  {change.subEntityName && (
-                    <span className={styles.subEntity}>{change.subEntityName}</span>
-                  )}
-                  <span className={styles.note}>{change.rawNote}</span>
+        {filteredHeroes.map((hero) => {
+          const vectors = getSignificantVectors(hero.vectorDelta);
+          return (
+            <div key={hero.heroName} className={styles.card}>
+              <div className={styles.cardHeader}>
+                <h3 className={styles.heroName}>{hero.heroName}</h3>
+                <span className={`${styles.netScore} ${hero.netScore > 0 ? styles.positive : hero.netScore < 0 ? styles.negative : styles.neutral}`}>
+                  {hero.netScore > 0 ? `+${hero.netScore}` : hero.netScore}
+                </span>
+              </div>
+              
+              <div className={styles.changesList}>
+                {hero.changes.map((change, idx) => (
+                  <div key={idx} className={`${styles.changeItem} ${styles[change.classification.classificationType]}`}>
+                    {change.subEntityName && (
+                      <span className={styles.subEntity}>{change.subEntityName}</span>
+                    )}
+                    <span className={styles.note}>{change.rawNote}</span>
+                  </div>
+                ))}
+              </div>
+
+              {vectors.length > 0 && (
+                <div className={styles.vectorContainer}>
+                  {vectors.map((v, idx) => (
+                    <span key={idx} className={`${styles.vectorBadge} ${v.val > 0 ? styles.pos : styles.neg}`}>
+                      {v.dim} {v.val > 0 ? `+${v.val}` : v.val}
+                    </span>
+                  ))}
                 </div>
-              ))}
+              )}
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );

@@ -42,6 +42,16 @@ export default async function Page() {
     console.error("Could not load patch data:", e);
   }
 
+  // 3. Load Feature Vectors
+  const vectorPath = path.join(researchDir, "feature-vectors", `vectors-${patchVersion}.json`);
+  let vectorData = null;
+  try {
+    const rawVectors = await fs.readFile(vectorPath, "utf-8");
+    vectorData = JSON.parse(rawVectors);
+  } catch (e) {
+    console.error("Could not load vector data:", e);
+  }
+
   // Process Data
   const heroMap = new Map<string, any>();
   const itemMap = new Map<string, any>();
@@ -57,7 +67,7 @@ export default async function Page() {
 
       if (change.category === "hero") {
         if (!heroMap.has(change.entityName)) {
-          heroMap.set(change.entityName, { heroName: change.entityName, changes: [], netScore: 0 });
+          heroMap.set(change.entityName, { heroName: change.entityName, changes: [], netScore: 0, vectorDelta: null });
         }
         const hero = heroMap.get(change.entityName);
         hero.changes.push(change);
@@ -84,6 +94,15 @@ export default async function Page() {
           generalMap.set(change.entityName, { sectionName: change.entityName, changes: [] });
         }
         generalMap.get(change.entityName).changes.push(change);
+      }
+    }
+  }
+
+  // Merge vector data
+  if (vectorData && vectorData.vectorDeltas) {
+    for (const vector of vectorData.vectorDeltas) {
+      if (heroMap.has(vector.heroName)) {
+        heroMap.get(vector.heroName).vectorDelta = vector.vectorDelta;
       }
     }
   }

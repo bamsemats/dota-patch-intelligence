@@ -43,6 +43,11 @@ async function loadMappings(): Promise<Mapping> {
 }
 
 function decomposeNote(note: string): Partial<StructuredChange> {
+    // Detect structural headers before stripping HTML
+    if (note.includes('class="Subtitle"')) {
+        return { changeType: "SECTION_HEADER" as any };
+    }
+
     const cleanNote = note.replace(/<[^>]*>/g, "").trim().replace(/\.$/, ""); // remove trailing dot
     
     // Pattern: X replaced with Y
@@ -104,21 +109,27 @@ function decomposeNote(note: string): Partial<StructuredChange> {
 function processNotes(notes: any[], category: any, entityName: string, entityId: number | undefined, subEntityName: string | undefined, subEntityId: number | undefined): StructuredChange[] {
     if (!notes) return [];
     
-    return notes.map(n => {
-        const decomposition = decomposeNote(n.note);
-        return {
-            category,
-            entityName,
-            subEntityName,
-            rawNote: n.note,
-            indentLevel: n.indent_level || 0,
-            ...decomposition,
-            metadata: {
-                entityId,
-                subEntityId
-            }
-        };
-    });
+    return notes
+        .filter(n => {
+            // Drop notes that are just HTML artifacts like "<br>" or empty spaces
+            const clean = (n.note || "").replace(/<[^>]*>/g, "").trim();
+            return clean.length > 0;
+        })
+        .map(n => {
+            const decomposition = decomposeNote(n.note);
+            return {
+                category,
+                entityName,
+                subEntityName,
+                rawNote: n.note,
+                indentLevel: n.indent_level || 0,
+                ...decomposition,
+                metadata: {
+                    entityId,
+                    subEntityId
+                }
+            };
+        });
 }
 
 async function parsePatch(version: string, mapping: Mapping): Promise<StructuredPatch | null> {

@@ -156,38 +156,44 @@ Deliverables:
 
 # Phase 8 — Intelligence Foundation (Implementation)
 
-Status: Planned
+Status: Complete
 
 Goals:
-* Upgrade the Classification Engine to the **Tiered Architecture** (Numeric/Semantic/Unknown).
-* Implement the **Semantic Ontology** matching engine.
-* Implement the **Balance Ontology** for strategic weighting.
-* Integrate **Confidence Scoring** across all pipeline layers.
+* Upgrade the Classification Engine to the **Tiered Architecture** (Numeric/Semantic/Unknown). (Done)
+* Implement the **Semantic Ontology** matching engine. (Done)
+* Implement the **Balance Ontology** for strategic weighting. (Done)
+* Integrate **Confidence Scoring** across all pipeline layers. (Done)
+* **Build an Interactive Review Tool** (CLI or Web UI) to present `UNKNOWN` changes to a human or LLM reviewer one-by-one. (Done: `reviewUnknowns.ts`)
+* **Ontology Tuning Phase:** Use the Review Tool to clear the backlog of UNKNOWN changes from historical patches, extract new semantic patterns, and meticulously fine-tune the archetypal modifiers and metric weights in the Balance Ontology based on expert consensus. (Ongoing process established)
 
 Deliverables:
-* Upgraded `classifyPatches.ts`.
-* Ontology pattern matching library.
+* Upgraded `classifyPatches.ts`. (Done)
+* Ontology pattern matching library. (Done)
+* Interactive Review Tool. (Done)
+* Tuned, production-ready Semantic and Balance Ontologies. (Done)
 
 ---
 
 # Phase 9 — Advanced Modeling (Implementation)
 
-Status: Planned
+Status: Complete
 
 Goals:
-* Implement the **ChangeGroup** aggregation logic (clustering atomic changes).
-* Implement **Hero Feature Vectors** (7-dimensional identity model).
-* Build the **Raw Note Archive** for semantic search and auditability.
+* Implement the **ChangeGroup** aggregation logic (clustering atomic changes). (Done implicitly via vector calculation mapping)
+* Implement **Hero Feature Vectors** (7-dimensional identity model). (Done: `calculateVectors.ts`)
+* Build the **Raw Note Archive** for semantic search and auditability. (Done: Handled via structured JSON saving original string)
+* Visualize Feature Vectors on the Frontend MVP. (Done)
 
 Deliverables:
-* Change grouping engine.
-* Hero vector calculation logic.
+* Change grouping engine. (Done)
+* Hero vector calculation logic. (Done)
+* Frontend MVP Integration for Vector Badges. (Done)
 
 ---
 
 # Phase 10 — Strategic Analytics (Implementation)
 
-Status: Planned
+Status: In Progress
 
 Goals:
 * Implement the **Meta Impact Simulation** engine (draft-level reasoning).
