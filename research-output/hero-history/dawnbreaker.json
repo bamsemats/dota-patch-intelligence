@@ -1,0 +1,1673 @@
+{
+  "name": "Dawnbreaker",
+  "history": [
+    {
+      "version": "7.33c",
+      "date": "2026-06-10T19:47:35.895Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Luminosity",
+          "rawNote": "Healing from creeps increased from 50% to 60%",
+          "indentLevel": 1,
+          "metric": "Healing from creeps",
+          "changeType": "INCREASED",
+          "oldValue": "50%",
+          "newValue": "60%",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 7918
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.34",
+      "date": "2026-06-10T19:47:35.965Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "rawNote": "Base Armor increased by 1",
+          "indentLevel": 1,
+          "metric": "Base Armor",
+          "changeType": "INCREASED",
+          "newValue": "1",
+          "metadata": {
+            "entityId": 135
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base armor)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Starbreaker",
+          "rawNote": "Cast Point improved from 0.2s to 0.1s",
+          "indentLevel": 1,
+          "metric": "Cast Point",
+          "changeType": "INCREASED",
+          "oldValue": "0.2s",
+          "newValue": "0.1s",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 7902
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 2,
+              "Crusader": 2,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7,
+              "Divine": 8
+            },
+            "reasoning": "Increased a negative metric (cast point)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Starbreaker",
+          "rawNote": "Aghanim's Shard no longer improves the cast point",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 7902
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Solar Guardian",
+          "rawNote": "Stun now pierces debuff immunity",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 7906
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent Celestial Hammer Slow increased from +14% to +15%",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent Celestial Hammer Slow",
+          "changeType": "INCREASED",
+          "oldValue": "+14%",
+          "newValue": "+15%",
+          "metadata": {
+            "entityId": 135
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent Starbreaker Swipe/Smash Damage increased from +18 to +20",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent Starbreaker Swipe/Smash Damage",
+          "changeType": "INCREASED",
+          "oldValue": "+18",
+          "newValue": "+20",
+          "metadata": {
+            "entityId": 135
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (level 10 talent starbreaker swipe/smash damage)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": 0,
+        "siege": 0,
+        "utility": -16
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.34c",
+      "date": "2026-06-10T19:47:36.002Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "rawNote": "Base Movement Speed decreased from 310 to 300",
+          "indentLevel": 1,
+          "metric": "Base Movement Speed",
+          "changeType": "DECREASED",
+          "oldValue": "310",
+          "newValue": "300",
+          "metadata": {
+            "entityId": 135
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 8,
+              "Ancient": 9,
+              "Divine": 9
+            },
+            "reasoning": "Decreased a positive metric (base movement speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "rawNote": "Base Strength decreased from 27 to 25",
+          "indentLevel": 1,
+          "metric": "Base Strength",
+          "changeType": "DECREASED",
+          "oldValue": "27",
+          "newValue": "25",
+          "metadata": {
+            "entityId": 135
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (base strength)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.34d",
+      "date": "2026-06-10T19:47:36.024Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "rawNote": "Intelligence gain decreased from 2.2 to 2.0",
+          "indentLevel": 1,
+          "metric": "Intelligence gain",
+          "changeType": "DECREASED",
+          "oldValue": "2.2",
+          "newValue": "2.0",
+          "metadata": {
+            "entityId": 135
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (intelligence gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Starbreaker Cooldown Reduction decreased from 6s to 5s",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Starbreaker Cooldown Reduction",
+          "changeType": "DECREASED",
+          "oldValue": "6s",
+          "newValue": "5s",
+          "metadata": {
+            "entityId": 135
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a negative metric (level 25 talent starbreaker cooldown reduction)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.36",
+      "date": "2026-06-10T19:47:36.100Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Starbreaker",
+          "rawNote": "Fixed a bug that prevented Swipe Damage from being applied to creeps",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 7902
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Solar Guardian",
+          "rawNote": "Healing now affects Dawnbreaker herself if she is in the target area of effect",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 7906
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Adjustment",
+            "semanticTag": "TARGETING_RULE_CHANGE",
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "confidenceScore": 0.95,
+            "reasoning": "Matches semantic pattern: \"now affects\""
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Solar Guardian",
+          "rawNote": "Can now be cast when Celestial Hammer is out, forcing the hammer to return when the spell is cast",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 7906
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.37c",
+      "date": "2026-06-10T19:47:36.188Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "rawNote": "Base Health Regen increased from 0.25 to 0.5",
+          "indentLevel": 1,
+          "metric": "Base Health Regen",
+          "changeType": "INCREASED",
+          "oldValue": "0.25",
+          "newValue": "0.5",
+          "metadata": {
+            "entityId": 135
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "reasoning": "Increased a positive metric (base health regen)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.37d",
+      "date": "2026-06-10T19:47:36.202Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Celestial Hammer",
+          "rawNote": "Mana Cost decreased from 110/120/130/140 to 100/110/120/130",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "DECREASED",
+          "oldValue": "110/120/130/140",
+          "newValue": "100/110/120/130",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 7914
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a negative metric (mana cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Celestial Hammer",
+          "rawNote": "Projectile speed increased from 1500 to 1600",
+          "indentLevel": 1,
+          "metric": "Projectile speed",
+          "changeType": "INCREASED",
+          "oldValue": "1500",
+          "newValue": "1600",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 7914
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (projectile speed)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": 1,
+        "siege": 0,
+        "utility": 1
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.38",
+      "date": "2026-06-10T19:47:36.258Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "rawNote": "Removed Gleaming Hammer Facet",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 135
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Starbreaker",
+          "rawNote": "Aghanim's Shard movement speed penalty increased from 25% to 35%",
+          "indentLevel": 1,
+          "metric": "Aghanim's Shard movement speed penalty",
+          "changeType": "INCREASED",
+          "oldValue": "25%",
+          "newValue": "35%",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 7902
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 8,
+              "Ancient": 9,
+              "Divine": 9
+            },
+            "reasoning": "Increased a negative metric (aghanim's shard movement speed penalty)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Solar Guardian",
+          "rawNote": "Aghanim's Scepter Reworked",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 7906
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Solar Guardian",
+          "rawNote": "Solar Guardian’s Pulsing aura now lingers for 3s after landing and follows Dawnbreaker around. Also increases Solar Guardian's heal per pulse by 10/15/20, while reducing channel/air time from 1.7/0.8s to 1.0/0.5s",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 7906
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Solar Guardian",
+          "rawNote": "Compared to the previous one:",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 7906
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Solar Guardian",
+          "rawNote": "Instead of Air Time being increased by 3.5s, now it's decreased by 0.3s. Total cast time decreased from 2.5s to 1.5s",
+          "indentLevel": 3,
+          "metric": "Instead of Air Time being",
+          "changeType": "INCREASED",
+          "oldValue": "by 3.5s, now it's decreased by 0.3s. Total cast time decreased from 2.5s",
+          "newValue": "1.5s",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 7906
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Solar Guardian",
+          "rawNote": "Bonus evasion, early landing sub-ability and movement mid flight are removed",
+          "indentLevel": 3,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 7906
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Solar Guardian",
+          "rawNote": "Bonus Heal per pulse decreased from 15/20/25 to 10/15/20 (total healing per pulse reduced from 60/90/120 to 55/85/115)",
+          "indentLevel": 3,
+          "metric": "Bonus Heal per pulse",
+          "changeType": "DECREASED",
+          "oldValue": "15/20/25",
+          "newValue": "10/15/20 (total healing per pulse reduced from 60/90/120 to 55/85/115)",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 7906
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent +20 Starbreaker Swipe/Smash Damage replaced with +12 Damage",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent +20 Starbreaker Swipe/Smash Damage",
+          "changeType": "REWORK",
+          "newValue": "+12 Damage",
+          "metadata": {
+            "entityId": 135
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent Luminosity Critical Strike Damage decreased from +50% to +40%",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent Luminosity Critical Strike Damage",
+          "changeType": "DECREASED",
+          "oldValue": "+50%",
+          "newValue": "+40%",
+          "metadata": {
+            "entityId": 135
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (level 15 talent luminosity critical strike damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Starbreaker Cooldown Reduction decreased from 5s to 4s",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Starbreaker Cooldown Reduction",
+          "changeType": "DECREASED",
+          "oldValue": "5s",
+          "newValue": "4s",
+          "metadata": {
+            "entityId": 135
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a negative metric (level 25 talent starbreaker cooldown reduction)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.39e",
+      "date": "2026-06-10T19:47:36.311Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Solar Guardian",
+          "rawNote": "Aghanim's Scepter aura linger duration decreased from 3s to 2s",
+          "indentLevel": 1,
+          "metric": "Aghanim's Scepter aura linger duration",
+          "changeType": "DECREASED",
+          "oldValue": "3s",
+          "newValue": "2s",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 7906
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (aghanim's scepter aura linger duration)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.40",
+      "date": "2026-06-10T19:47:36.345Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "rawNote": "Base Damage increased by 1",
+          "indentLevel": 1,
+          "metric": "Base Damage",
+          "changeType": "INCREASED",
+          "newValue": "1",
+          "metadata": {
+            "entityId": 135
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "rawNote": "Damage at level 1 increased from 49–53 to 50–54",
+          "indentLevel": 1,
+          "metric": "Damage at level 1",
+          "changeType": "INCREASED",
+          "oldValue": "49–53",
+          "newValue": "50–54",
+          "metadata": {
+            "entityId": 135
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (damage at level 1)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Solar Guardian",
+          "rawNote": "Aghanim's Scepter no longer reduces air time or channel time",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 7906
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Solar Guardian",
+          "rawNote": "Aghanim's Scepter Heal per pulse increased from 55/85/115 to 60/90/120",
+          "indentLevel": 1,
+          "metric": "Aghanim's Scepter Heal per pulse",
+          "changeType": "INCREASED",
+          "oldValue": "55/85/115",
+          "newValue": "60/90/120",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 7906
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent +12 Damage replaced with +15% Break of Dawn Max Damage",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent +12 Damage",
+          "changeType": "REWORK",
+          "newValue": "+15% Break of Dawn Max Damage",
+          "metadata": {
+            "entityId": 135
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {
+        "HERALD": {
+          "winrate": 0.4899,
+          "matchCount": 25373
+        },
+        "GUARDIAN": {
+          "winrate": 0.494,
+          "matchCount": 51341
+        },
+        "CRUSADER": {
+          "winrate": 0.4965,
+          "matchCount": 59845
+        },
+        "ARCHON": {
+          "winrate": 0.4918,
+          "matchCount": 60828
+        },
+        "LEGEND": {
+          "winrate": 0.4961,
+          "matchCount": 50282
+        },
+        "ANCIENT": {
+          "winrate": 0.4879,
+          "matchCount": 33717
+        },
+        "DIVINE": {
+          "winrate": 0.4857,
+          "matchCount": 21625
+        }
+      }
+    },
+    {
+      "version": "7.41",
+      "date": "2026-06-10T19:47:36.415Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "rawNote": "Base damage increased by 6",
+          "indentLevel": 1,
+          "metric": "Base damage",
+          "changeType": "INCREASED",
+          "newValue": "6",
+          "metadata": {
+            "entityId": 135
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "rawNote": "Damage at level 1 increased from 50–54 to 56–60",
+          "indentLevel": 2,
+          "metric": "Damage at level 1",
+          "changeType": "INCREASED",
+          "oldValue": "50–54",
+          "newValue": "56–60",
+          "metadata": {
+            "entityId": 135
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (damage at level 1)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Break of Dawn",
+          "rawNote": "Max Damage Increase changed from 25% to 10% + 1% per level",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 1424
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Break of Dawn",
+          "rawNote": "Bonuses granted are now at their maximum for any daytime caused by Dawnbreaker's abilities for the entirety of that daytime",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 1424
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Break of Dawn",
+          "rawNote": "Now also upgraded with Aghanim's Scepter",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 1424
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Break of Dawn",
+          "rawNote": "Amplifies heals Dawnbreaker provides by Break of Dawn's current damage increase value",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 1424
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Solar Guardian",
+          "rawNote": "Cooldown decreased from 120/105/90s to 110/100/90s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "120/105/90s",
+          "newValue": "110/100/90s",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 7906
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Solar Guardian",
+          "rawNote": "Now causes a 6 second temporary daytime when the cast starts",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 7906
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Solar Guardian",
+          "rawNote": "Aghanim's Scepter no longer increases heal per pulse",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 7906
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent +15% Celestial Hammer Slow replaced with Celestial Hammer Trail Grants Movement Speed to Allies",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent +15% Celestial Hammer Slow",
+          "changeType": "REWORK",
+          "newValue": "Celestial Hammer Trail Grants Movement Speed to Allies",
+          "metadata": {
+            "entityId": 135
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent +15% Break of Dawn Max Damage replaced with +25% Luminosity Critical Strike Damage",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent +15% Break of Dawn Max Damage",
+          "changeType": "REWORK",
+          "newValue": "+25% Luminosity Critical Strike Damage",
+          "metadata": {
+            "entityId": 135
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent Solar Guardian Cooldown Reduction increased from 15s to 20s",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent Solar Guardian Cooldown Reduction",
+          "changeType": "INCREASED",
+          "oldValue": "15s",
+          "newValue": "20s",
+          "metadata": {
+            "entityId": 135
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a negative metric (level 15 talent solar guardian cooldown reduction)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent +40% Luminosity Critical Strike Damage replaced with +40% Celestial Hammer Trail/Hammer Damage",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent +40% Luminosity Critical Strike Damage",
+          "changeType": "REWORK",
+          "newValue": "+40% Celestial Hammer Trail/Hammer Damage",
+          "metadata": {
+            "entityId": 135
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 1.5,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.41b",
+      "date": "2026-06-10T19:47:36.442Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Break of Dawn",
+          "rawNote": "Max Damage Increase decreased from 10% + 1% per level to 8% + 1% per level",
+          "indentLevel": 1,
+          "metric": "Max Damage Increase",
+          "changeType": "DECREASED",
+          "oldValue": "10% + 1% per level",
+          "newValue": "8% + 1% per level",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 1424
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (max damage increase)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.41c",
+      "date": "2026-06-10T19:47:36.463Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "rawNote": "Base Damage decreased by 1",
+          "indentLevel": 1,
+          "metric": "Base Damage",
+          "changeType": "DECREASED",
+          "newValue": "1",
+          "metadata": {
+            "entityId": 135
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "rawNote": "Damage at level 1 decreased from 56-60 to 55-59",
+          "indentLevel": 2,
+          "metric": "Damage at level 1",
+          "changeType": "DECREASED",
+          "oldValue": "56-60",
+          "newValue": "55-59",
+          "metadata": {
+            "entityId": 135
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (damage at level 1)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Solar Guardian",
+          "rawNote": "Landing Stun Duration decreased from 1.4/1.6/1.8s to 1.2/1.4/1.6s",
+          "indentLevel": 1,
+          "metric": "Landing Stun Duration",
+          "changeType": "DECREASED",
+          "oldValue": "1.4/1.6/1.8s",
+          "newValue": "1.2/1.4/1.6s",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 7906
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (landing stun duration)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.41d",
+      "date": "2026-06-10T19:47:36.489Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dawnbreaker",
+          "subEntityName": "Starbreaker",
+          "rawNote": "Mana Cost increased from 100 to 110",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "INCREASED",
+          "oldValue": "100",
+          "newValue": "110",
+          "metadata": {
+            "entityId": 135,
+            "subEntityId": 7902
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Increased a negative metric (mana cost)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": -1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": -1,
+        "siege": 0,
+        "utility": -1
+      },
+      "winrates": {
+        "HERALD": {
+          "winrate": 0.506,
+          "matchCount": 4836
+        },
+        "GUARDIAN": {
+          "winrate": 0.5266,
+          "matchCount": 9526
+        },
+        "CRUSADER": {
+          "winrate": 0.5225,
+          "matchCount": 10717
+        },
+        "ARCHON": {
+          "winrate": 0.5271,
+          "matchCount": 10613
+        },
+        "LEGEND": {
+          "winrate": 0.5229,
+          "matchCount": 9109
+        },
+        "ANCIENT": {
+          "winrate": 0.5315,
+          "matchCount": 6512
+        },
+        "DIVINE": {
+          "winrate": 0.5213,
+          "matchCount": 4696
+        }
+      }
+    }
+  ]
+}

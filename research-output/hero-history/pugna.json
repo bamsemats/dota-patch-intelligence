@@ -1,0 +1,1271 @@
+{
+  "name": "Pugna",
+  "history": [
+    {
+      "version": "7.33d",
+      "date": "2026-06-10T19:47:35.901Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Life Drain",
+          "rawNote": "Ally Drain/Heal per second decreased from 160/240/320 to 120/210/300",
+          "indentLevel": 1,
+          "metric": "Ally Drain/Heal per second",
+          "changeType": "DECREASED",
+          "oldValue": "160/240/320",
+          "newValue": "120/210/300",
+          "metadata": {
+            "entityId": 45,
+            "subEntityId": 5189
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.33e",
+      "date": "2026-06-10T19:47:35.913Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Nether Blast",
+          "rawNote": "Mana Cost increased from 85/105/125/145 to 100/115/130/145",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "INCREASED",
+          "oldValue": "85/105/125/145",
+          "newValue": "100/115/130/145",
+          "metadata": {
+            "entityId": 45,
+            "subEntityId": 5186
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Increased a negative metric (mana cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Life Drain",
+          "rawNote": "Mana restoration on full health decreased from 120/210/300 per second to 60/105/150 per second",
+          "indentLevel": 1,
+          "metric": "Mana restoration on full health",
+          "changeType": "DECREASED",
+          "oldValue": "120/210/300 per second",
+          "newValue": "60/105/150 per second",
+          "metadata": {
+            "entityId": 45,
+            "subEntityId": 5189
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Decreased a positive metric (mana restoration on full health)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": -1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": -1,
+        "siege": 0,
+        "utility": -1
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.34",
+      "date": "2026-06-10T19:47:35.938Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Nether Ward",
+          "rawNote": "Base Damage increased from 50/60/70/80 to 50/70/90/110",
+          "indentLevel": 1,
+          "metric": "Base Damage",
+          "changeType": "INCREASED",
+          "oldValue": "50/60/70/80",
+          "newValue": "50/70/90/110",
+          "metadata": {
+            "entityId": 45,
+            "subEntityId": 5188
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base damage)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.34c",
+      "date": "2026-06-10T19:47:35.990Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "rawNote": "Base Intelligence increased from 24 to 26",
+          "indentLevel": 1,
+          "metric": "Base Intelligence",
+          "changeType": "INCREASED",
+          "oldValue": "24",
+          "newValue": "26",
+          "metadata": {
+            "entityId": 45
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base intelligence)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Decrepify",
+          "rawNote": "Ally Heal Amplification increased from 5/10/15/20% to 10/15/20/25%",
+          "indentLevel": 1,
+          "metric": "Ally Heal Amplification",
+          "changeType": "INCREASED",
+          "oldValue": "5/10/15/20%",
+          "newValue": "10/15/20/25%",
+          "metadata": {
+            "entityId": 45,
+            "subEntityId": 5187
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Life Drain",
+          "rawNote": "Mana Cost decreased from 125/175/225 to 100/150/200",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "DECREASED",
+          "oldValue": "125/175/225",
+          "newValue": "100/150/200",
+          "metadata": {
+            "entityId": 45,
+            "subEntityId": 5189
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a negative metric (mana cost)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": 1,
+        "siege": 0,
+        "utility": 1
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.34d",
+      "date": "2026-06-10T19:47:36.016Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Nether Blast",
+          "rawNote": "Building Damage increased from 50% to 65%",
+          "indentLevel": 1,
+          "metric": "Building Damage",
+          "changeType": "INCREASED",
+          "oldValue": "50%",
+          "newValue": "65%",
+          "metadata": {
+            "entityId": 45,
+            "subEntityId": 5186
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (building damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Decrepify",
+          "rawNote": "Enemy Move Slow increased from 30/40/50/60% to 45/50/55/60%",
+          "indentLevel": 1,
+          "metric": "Enemy Move Slow",
+          "changeType": "INCREASED",
+          "oldValue": "30/40/50/60%",
+          "newValue": "45/50/55/60%",
+          "metadata": {
+            "entityId": 45,
+            "subEntityId": 5187
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Decrepify",
+          "rawNote": "Cast Range increased from 400/475/550/625 to 475/550/625/700",
+          "indentLevel": 1,
+          "metric": "Cast Range",
+          "changeType": "INCREASED",
+          "oldValue": "400/475/550/625",
+          "newValue": "475/550/625/700",
+          "metadata": {
+            "entityId": 45,
+            "subEntityId": 5187
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 2.5,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (cast range)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": 0,
+        "siege": 0,
+        "utility": 15
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.36",
+      "date": "2026-06-10T19:47:36.082Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Nether Blast",
+          "rawNote": "Damage decreased from 100/180/260/340 to 95/170/245/320",
+          "indentLevel": 1,
+          "metric": "Damage",
+          "changeType": "DECREASED",
+          "oldValue": "100/180/260/340",
+          "newValue": "95/170/245/320",
+          "metadata": {
+            "entityId": 45,
+            "subEntityId": 5186
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Decrepify",
+          "rawNote": "Can no longer be cast while channeling on its own",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 45,
+            "subEntityId": 5187
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Decrepify",
+          "rawNote": "Enemy Increased Magic Damage decreased from 30/40/50/60% to 20/30/40/50%",
+          "indentLevel": 1,
+          "metric": "Enemy",
+          "changeType": "INCREASED",
+          "oldValue": "Magic Damage decreased from 30/40/50/60%",
+          "newValue": "20/30/40/50%",
+          "metadata": {
+            "entityId": 45,
+            "subEntityId": 5187
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": -8,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -8,
+        "laning": -8,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.37",
+      "date": "2026-06-10T19:47:36.153Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent +200 Health replaced with +2 Nether Ward Health",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent +200 Health",
+          "changeType": "REWORK",
+          "newValue": "+2 Nether Ward Health",
+          "metadata": {
+            "entityId": 45
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent +10% Decrepify Movement Speed To Allies replaced with -1s Nether Blast Cooldown",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent +10% Decrepify Movement Speed To Allies",
+          "changeType": "REWORK",
+          "newValue": "-1s Nether Blast Cooldown",
+          "metadata": {
+            "entityId": 45
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent +3 Nether Ward Health replaced with +350 Health",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent +3 Nether Ward Health",
+          "changeType": "REWORK",
+          "newValue": "+350 Health",
+          "metadata": {
+            "entityId": 45
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent -1s Nether Blast Cooldown replaced with +30% Decrepify Movement Speed To Allies",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent -1s Nether Blast Cooldown",
+          "changeType": "REWORK",
+          "newValue": "+30% Decrepify Movement Speed To Allies",
+          "metadata": {
+            "entityId": 45
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Decrepify Duration increased from +1.0s to +1.5s",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Decrepify Duration",
+          "changeType": "INCREASED",
+          "oldValue": "+1.0s",
+          "newValue": "+1.5s",
+          "metadata": {
+            "entityId": 45
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (level 20 talent decrepify duration)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.37c",
+      "date": "2026-06-10T19:47:36.184Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Life Drain",
+          "rawNote": "Enemy Drain per second rescaled from 160/240/320 to 150/250/350",
+          "indentLevel": 1,
+          "metric": "Enemy Drain per second",
+          "changeType": "RESCALE",
+          "oldValue": "160/240/320",
+          "newValue": "150/250/350",
+          "metadata": {
+            "entityId": 45,
+            "subEntityId": 5189
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.38",
+      "date": "2026-06-10T19:47:36.239Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Life Drain",
+          "rawNote": "No longer instantly kills enemy illusions",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 45,
+            "subEntityId": 5189
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Life Drain",
+          "rawNote": "No longer restores mana",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 45,
+            "subEntityId": 5189
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Life Drain",
+          "rawNote": "Ally Drain/Heal per second increased from 120/210/300 to 150/250/350 ",
+          "indentLevel": 1,
+          "metric": "Ally Drain/Heal per second",
+          "changeType": "INCREASED",
+          "oldValue": "120/210/300",
+          "newValue": "150/250/350",
+          "metadata": {
+            "entityId": 45,
+            "subEntityId": 5189
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Nether Ward Damage Per Mana increased from +1.75 to +1.9",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Nether Ward Damage Per Mana",
+          "changeType": "INCREASED",
+          "oldValue": "+1.75",
+          "newValue": "+1.9",
+          "metadata": {
+            "entityId": 45
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (level 25 talent nether ward damage per mana)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Nether Blast Damage increased from +160 to +180",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Nether Blast Damage",
+          "changeType": "INCREASED",
+          "oldValue": "+160",
+          "newValue": "+180",
+          "metadata": {
+            "entityId": 45
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (level 25 talent nether blast damage)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.39c",
+      "date": "2026-06-10T19:47:36.292Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Nether Ward",
+          "rawNote": "Ward Duration increased from 18/22/26/30s to 21/24/27/30s",
+          "indentLevel": 1,
+          "metric": "Ward Duration",
+          "changeType": "INCREASED",
+          "oldValue": "18/22/26/30s",
+          "newValue": "21/24/27/30s",
+          "metadata": {
+            "entityId": 45,
+            "subEntityId": 5188
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (ward duration)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.39e",
+      "date": "2026-06-10T19:47:36.304Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Decrepify",
+          "rawNote": "Ethereal form is not applied if the target is Debuff Immune",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 45,
+            "subEntityId": 5187
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.40",
+      "date": "2026-06-10T19:47:36.328Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent Health decreased from +350 to +300",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent Health",
+          "changeType": "DECREASED",
+          "oldValue": "+350",
+          "newValue": "+300",
+          "metadata": {
+            "entityId": 45
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Decreased a positive metric (level 15 talent health)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Life Drain Heal decreased from +20% to +15%",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Life Drain Heal",
+          "changeType": "DECREASED",
+          "oldValue": "+20%",
+          "newValue": "+15%",
+          "metadata": {
+            "entityId": 45
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Nether Blast Damage increased from +180 to +200",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Nether Blast Damage",
+          "changeType": "INCREASED",
+          "oldValue": "+180",
+          "newValue": "+200",
+          "metadata": {
+            "entityId": 45
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (level 25 talent nether blast damage)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {
+        "HERALD": {
+          "winrate": 0.4674,
+          "matchCount": 30212
+        },
+        "GUARDIAN": {
+          "winrate": 0.4705,
+          "matchCount": 58361
+        },
+        "CRUSADER": {
+          "winrate": 0.4807,
+          "matchCount": 61382
+        },
+        "ARCHON": {
+          "winrate": 0.4878,
+          "matchCount": 56326
+        },
+        "LEGEND": {
+          "winrate": 0.4987,
+          "matchCount": 42997
+        },
+        "ANCIENT": {
+          "winrate": 0.5039,
+          "matchCount": 27288
+        },
+        "DIVINE": {
+          "winrate": 0.5093,
+          "matchCount": 16745
+        }
+      }
+    },
+    {
+      "version": "7.40b",
+      "date": "2026-06-10T19:47:36.353Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Life Drain",
+          "rawNote": "Mana Cost increased from 100/150/200 to 115/160/205",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "INCREASED",
+          "oldValue": "100/150/200",
+          "newValue": "115/160/205",
+          "metadata": {
+            "entityId": 45,
+            "subEntityId": 5189
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Increased a negative metric (mana cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent Health decreased from +300 to +250",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent Health",
+          "changeType": "DECREASED",
+          "oldValue": "+300",
+          "newValue": "+250",
+          "metadata": {
+            "entityId": 45
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Decreased a positive metric (level 15 talent health)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": -1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": -1,
+        "siege": 0,
+        "utility": -1
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.41",
+      "date": "2026-06-10T19:47:36.395Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "rawNote": "Base Movement Speed decreased from 330 to 325",
+          "indentLevel": 1,
+          "metric": "Base Movement Speed",
+          "changeType": "DECREASED",
+          "oldValue": "330",
+          "newValue": "325",
+          "metadata": {
+            "entityId": 45
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 8,
+              "Ancient": 9,
+              "Divine": 9
+            },
+            "reasoning": "Decreased a positive metric (base movement speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Oblivion Savant",
+          "rawNote": "Now also increases Pugna's Spell Amplification by 1.5% per destroyed tower",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 45,
+            "subEntityId": 1288
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Nether Ward",
+          "rawNote": "Damage source changed from Nether Ward to the caster",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 45,
+            "subEntityId": 5188
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.41d",
+      "date": "2026-06-10T19:47:36.474Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "rawNote": "Base Mana Regen increased by 0.25",
+          "indentLevel": 1,
+          "metric": "Base Mana Regen",
+          "changeType": "INCREASED",
+          "newValue": "0.25",
+          "metadata": {
+            "entityId": 45
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (base mana regen)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Pugna",
+          "subEntityName": "Nether Ward",
+          "rawNote": "Cast Range increased from 150 to 175",
+          "indentLevel": 1,
+          "metric": "Cast Range",
+          "changeType": "INCREASED",
+          "oldValue": "150",
+          "newValue": "175",
+          "metadata": {
+            "entityId": 45,
+            "subEntityId": 5188
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 2.5,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (cast range)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": 0,
+        "siege": 0,
+        "utility": 15
+      },
+      "winrates": {
+        "HERALD": {
+          "winrate": 0.4781,
+          "matchCount": 3782
+        },
+        "GUARDIAN": {
+          "winrate": 0.4769,
+          "matchCount": 6483
+        },
+        "CRUSADER": {
+          "winrate": 0.4954,
+          "matchCount": 6227
+        },
+        "ARCHON": {
+          "winrate": 0.4961,
+          "matchCount": 5358
+        },
+        "LEGEND": {
+          "winrate": 0.501,
+          "matchCount": 3529
+        },
+        "ANCIENT": {
+          "winrate": 0.4983,
+          "matchCount": 2097
+        },
+        "DIVINE": {
+          "winrate": 0.5236,
+          "matchCount": 1312
+        }
+      }
+    }
+  ]
+}

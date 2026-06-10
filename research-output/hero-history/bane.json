@@ -1,0 +1,1154 @@
+{
+  "name": "Bane",
+  "history": [
+    {
+      "version": "7.33c",
+      "date": "2026-06-10T19:47:35.871Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "rawNote": "Base Damage decreased by 7 (Level 1 damage unchanged)",
+          "indentLevel": 1,
+          "metric": "Base Damage",
+          "changeType": "DECREASED",
+          "newValue": "7 (Level 1 damage unchanged)",
+          "metadata": {
+            "entityId": 3
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (base damage)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.34",
+      "date": "2026-06-10T19:47:35.921Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "subEntityName": "Brain Sap",
+          "rawNote": "Now fully pierces debuff immunity",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 3,
+            "subEntityId": 5011
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "subEntityName": "Nightmare",
+          "rawNote": "Sleeping units now aren't awakened by any damage dealt by Bane",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 3,
+            "subEntityId": 5014
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "subEntityName": "Nightmare",
+          "rawNote": "Bane now gains +15/25/35/45 attack speed against sleeping units",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 3,
+            "subEntityId": 5014
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "subEntityName": "Fiend's Grip",
+          "rawNote": "Now removes Nightmare effect from the targeted enemy",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 3,
+            "subEntityId": 5013
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent Brain Sap Cooldown Reduction increased from 2s to 3s",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent Brain Sap Cooldown Reduction",
+          "changeType": "INCREASED",
+          "oldValue": "2s",
+          "newValue": "3s",
+          "metadata": {
+            "entityId": 3
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a negative metric (level 10 talent brain sap cooldown reduction)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Brain Sap Damage/Heal increased from +200 to +250",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Brain Sap Damage/Heal",
+          "changeType": "INCREASED",
+          "oldValue": "+200",
+          "newValue": "+250",
+          "metadata": {
+            "entityId": 3
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (level 25 talent brain sap damage/heal)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.34c",
+      "date": "2026-06-10T19:47:35.985Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "rawNote": "Base Damage increased by 2",
+          "indentLevel": 1,
+          "metric": "Base Damage",
+          "changeType": "INCREASED",
+          "newValue": "2",
+          "metadata": {
+            "entityId": 3
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "subEntityName": "Enfeeble",
+          "rawNote": "Mana Cost decreased from 120/135/150/165 to 120",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "DECREASED",
+          "oldValue": "120/135/150/165",
+          "newValue": "120",
+          "metadata": {
+            "entityId": 3,
+            "subEntityId": 5012
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a negative metric (mana cost)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": 1,
+        "siege": 0,
+        "utility": 1
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.36",
+      "date": "2026-06-10T19:47:36.069Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "rawNote": "Strength gain increased from 2.5 to 2.7",
+          "indentLevel": 1,
+          "metric": "Strength gain",
+          "changeType": "INCREASED",
+          "oldValue": "2.5",
+          "newValue": "2.7",
+          "metadata": {
+            "entityId": 3
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (strength gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "rawNote": "Agility gain increased from 2.5 to 2.7",
+          "indentLevel": 1,
+          "metric": "Agility gain",
+          "changeType": "INCREASED",
+          "oldValue": "2.5",
+          "newValue": "2.7",
+          "metadata": {
+            "entityId": 3
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (agility gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "rawNote": "Intelligence gain increased from 2.5 to 2.7",
+          "indentLevel": 1,
+          "metric": "Intelligence gain",
+          "changeType": "INCREASED",
+          "oldValue": "2.5",
+          "newValue": "2.7",
+          "metadata": {
+            "entityId": 3
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (intelligence gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "subEntityName": "Nightmare",
+          "rawNote": "No longer grants bonus attack speed by default",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 3,
+            "subEntityId": 5014
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.37b",
+      "date": "2026-06-10T19:47:36.169Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Brain Sap Damage/Heal increased from +250 to +275",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Brain Sap Damage/Heal",
+          "changeType": "INCREASED",
+          "oldValue": "+250",
+          "newValue": "+275",
+          "metadata": {
+            "entityId": 3
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (level 25 talent brain sap damage/heal)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.37c",
+      "date": "2026-06-10T19:47:36.181Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "subEntityName": "Nightmare",
+          "rawNote": "Cast Range increased from 500/550/600/650 to 550/600/650/700",
+          "indentLevel": 1,
+          "metric": "Cast Range",
+          "changeType": "INCREASED",
+          "oldValue": "500/550/600/650",
+          "newValue": "550/600/650/700",
+          "metadata": {
+            "entityId": 3,
+            "subEntityId": 5014
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 2.5,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (cast range)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": 0,
+        "siege": 0,
+        "utility": 15
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.37e",
+      "date": "2026-06-10T19:47:36.206Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "subEntityName": "Enfeeble",
+          "rawNote": "Mana Cost rescaled from 120 to 100/110/120/130",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "RESCALE",
+          "oldValue": "120",
+          "newValue": "100/110/120/130",
+          "metadata": {
+            "entityId": 3,
+            "subEntityId": 5012
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.38",
+      "date": "2026-06-10T19:47:36.229Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "rawNote": "Base Damage increased by 25",
+          "indentLevel": 1,
+          "metric": "Base Damage",
+          "changeType": "INCREASED",
+          "newValue": "25",
+          "metadata": {
+            "entityId": 3
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "rawNote": "Damage at level 1 increased by 8 (from 47-53 to 55-61)",
+          "indentLevel": 1,
+          "metric": "Damage at level 1",
+          "changeType": "INCREASED",
+          "oldValue": "by 8 (from 47-53",
+          "newValue": "55-61)",
+          "metadata": {
+            "entityId": 3
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (damage at level 1)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "rawNote": "Damage gain per level decreased from +5.7 to +3.6",
+          "indentLevel": 1,
+          "metric": "Damage gain per level",
+          "changeType": "DECREASED",
+          "oldValue": "+5.7",
+          "newValue": "+3.6",
+          "metadata": {
+            "entityId": 3
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (damage gain per level)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "rawNote": "Damage at level 30 decreased by 61 (from 240-246 to 179-185)",
+          "indentLevel": 1,
+          "metric": "Damage at level 30",
+          "changeType": "DECREASED",
+          "oldValue": "by 61 (from 240-246",
+          "newValue": "179-185)",
+          "metadata": {
+            "entityId": 3
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (damage at level 30)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent -3s Brain Sap Cooldown replaced with +125 Brain Sap Cast Range",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent -3s Brain Sap Cooldown",
+          "changeType": "REWORK",
+          "newValue": "+125 Brain Sap Cast Range",
+          "metadata": {
+            "entityId": 3
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.39e",
+      "date": "2026-06-10T19:47:36.301Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "subEntityName": "Enfeeble",
+          "rawNote": "Cast Range decreased from 800/900/1000/1100 to 700/800/900/1000",
+          "indentLevel": 1,
+          "metric": "Cast Range",
+          "changeType": "DECREASED",
+          "oldValue": "800/900/1000/1100",
+          "newValue": "700/800/900/1000",
+          "metadata": {
+            "entityId": 3,
+            "subEntityId": 5012
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 2.5,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (cast range)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": 0,
+        "siege": 0,
+        "utility": -15
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.40",
+      "date": "2026-06-10T19:47:36.318Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "subEntityName": "Nightmare",
+          "rawNote": "Cooldown increased from 24/21/18/15s to 25/22/19/16s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "INCREASED",
+          "oldValue": "24/21/18/15s",
+          "newValue": "25/22/19/16s",
+          "metadata": {
+            "entityId": 3,
+            "subEntityId": 5014
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "subEntityName": "Fiend's Grip",
+          "rawNote": "Aghanim's Scepter Illusion damage taken increased from 200% to 225%",
+          "indentLevel": 1,
+          "metric": "Aghanim's Scepter Illusion damage taken",
+          "changeType": "INCREASED",
+          "oldValue": "200%",
+          "newValue": "225%",
+          "metadata": {
+            "entityId": 3,
+            "subEntityId": 5013
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (aghanim's scepter illusion damage taken)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -1.5,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {
+        "HERALD": {
+          "winrate": 0.4747,
+          "matchCount": 14938
+        },
+        "GUARDIAN": {
+          "winrate": 0.4702,
+          "matchCount": 29421
+        },
+        "CRUSADER": {
+          "winrate": 0.4801,
+          "matchCount": 31119
+        },
+        "ARCHON": {
+          "winrate": 0.4906,
+          "matchCount": 28999
+        },
+        "LEGEND": {
+          "winrate": 0.4934,
+          "matchCount": 22146
+        },
+        "ANCIENT": {
+          "winrate": 0.5049,
+          "matchCount": 13526
+        },
+        "DIVINE": {
+          "winrate": 0.5124,
+          "matchCount": 7958
+        }
+      }
+    },
+    {
+      "version": "7.41",
+      "date": "2026-06-10T19:47:36.384Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "rawNote": "Strength gain decreased from 2.7 to 2.5",
+          "indentLevel": 1,
+          "metric": "Strength gain",
+          "changeType": "DECREASED",
+          "oldValue": "2.7",
+          "newValue": "2.5",
+          "metadata": {
+            "entityId": 3
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (strength gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "rawNote": "Agility gain decreased from 2.7 to 2.5",
+          "indentLevel": 1,
+          "metric": "Agility gain",
+          "changeType": "DECREASED",
+          "oldValue": "2.7",
+          "newValue": "2.5",
+          "metadata": {
+            "entityId": 3
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (agility gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "rawNote": "Intelligence gain decreased from 2.7 to 2.5",
+          "indentLevel": 1,
+          "metric": "Intelligence gain",
+          "changeType": "DECREASED",
+          "oldValue": "2.7",
+          "newValue": "2.5",
+          "metadata": {
+            "entityId": 3
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (intelligence gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "rawNote": "Damage gain per level decreased from 3.6 to 3.4",
+          "indentLevel": 2,
+          "metric": "Damage gain per level",
+          "changeType": "DECREASED",
+          "oldValue": "3.6",
+          "newValue": "3.4",
+          "metadata": {
+            "entityId": 3
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (damage gain per level)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "rawNote": "Attack Range increased from 400 to 425",
+          "indentLevel": 1,
+          "metric": "Attack Range",
+          "changeType": "INCREASED",
+          "oldValue": "400",
+          "newValue": "425",
+          "metadata": {
+            "entityId": 3
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (attack range)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "subEntityName": "Ichor of Nyctasha",
+          "rawNote": "Ability reworked",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 3,
+            "subEntityId": 1202
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "subEntityName": "Ichor of Nyctasha",
+          "rawNote": "Every time Bane kills an enemy hero or they die under the effect of any debuff applied by Bane, they receive a Terror for the rest of the game. Each Terror stack decreases the enemy's status resistance to all Bane's debuffs by 5%. Max Terror stacks per hero: 5",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 3,
+            "subEntityId": 1202
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "subEntityName": "Nightmare",
+          "rawNote": "Now a Unit Vector Target Spell",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 3,
+            "subEntityId": 5014
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "subEntityName": "Nightmare",
+          "rawNote": "Sleeping units walk in Bane's chosen direction at a speed of 110",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 3,
+            "subEntityId": 5014
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "subEntityName": "Nightmare",
+          "rawNote": "Can be put on alt-cast to disable sleepwalking behavior",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 3,
+            "subEntityId": 5014
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.41c",
+      "date": "2026-06-10T19:47:36.445Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "subEntityName": "Brain Sap",
+          "rawNote": "Mana Cost decreased from 120/130/140/150 to 105/120/135/150",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "DECREASED",
+          "oldValue": "120/130/140/150",
+          "newValue": "105/120/135/150",
+          "metadata": {
+            "entityId": 3,
+            "subEntityId": 5011
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a negative metric (mana cost)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": 1,
+        "siege": 0,
+        "utility": 1
+      },
+      "winrates": {}
+    }
+  ]
+}

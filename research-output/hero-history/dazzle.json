@@ -1,0 +1,2223 @@
+{
+  "name": "Dazzle",
+  "history": [
+    {
+      "version": "7.33b",
+      "date": "2026-06-10T19:47:35.861Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "rawNote": "Base Mana Regen increased by 0.3",
+          "indentLevel": 1,
+          "metric": "Base Mana Regen",
+          "changeType": "INCREASED",
+          "newValue": "0.3",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (base mana regen)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Shallow Grave",
+          "rawNote": "Mana Cost decreased from 120/130/140/150 to 100/110/120/130",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "DECREASED",
+          "oldValue": "120/130/140/150",
+          "newValue": "100/110/120/130",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 5234
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a negative metric (mana cost)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": 1,
+        "siege": 0,
+        "utility": 1
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.33c",
+      "date": "2026-06-10T19:47:35.881Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "rawNote": "Base Damage decreased by 7 (Level 1 damage unchanged)",
+          "indentLevel": 1,
+          "metric": "Base Damage",
+          "changeType": "DECREASED",
+          "newValue": "7 (Level 1 damage unchanged)",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent Attack Speed increased from +30 to +35",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent Attack Speed",
+          "changeType": "INCREASED",
+          "oldValue": "+30",
+          "newValue": "+35",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Increased a positive metric (level 10 talent attack speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Poison Touch DPS increased from +45 to +60",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Poison Touch DPS",
+          "changeType": "INCREASED",
+          "oldValue": "+45",
+          "newValue": "+60",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.34",
+      "date": "2026-06-10T19:47:35.940Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "rawNote": "Bad Juju Instances of Health Cost Increase now stack independently of each other",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "rawNote": "Bad Juju Health Cost Increase Duration decreased from 30/25/20s to 20s",
+          "indentLevel": 1,
+          "metric": "Bad Juju Health Cost Increase Duration",
+          "changeType": "DECREASED",
+          "oldValue": "30/25/20s",
+          "newValue": "20s",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a negative metric (bad juju health cost increase duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Shallow Grave",
+          "rawNote": "Mana Cost decreased from 100/110/120/130 to 90/100/110/120",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "DECREASED",
+          "oldValue": "100/110/120/130",
+          "newValue": "90/100/110/120",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 5234
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a negative metric (mana cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Shadow Wave",
+          "rawNote": "Mana Cost decreased from 90 to 75",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "DECREASED",
+          "oldValue": "90",
+          "newValue": "75",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 5235
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a negative metric (mana cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Shadow Wave",
+          "rawNote": "Aghanim’s Scepter Upgrade can now bounce between allies and enemies regardless of who it is cast on",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 5235
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent +35 Attack Speed replaced with +300 Poison Touch Attack Range",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent +35 Attack Speed",
+          "changeType": "REWORK",
+          "newValue": "+300 Poison Touch Attack Range",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent +350 Poison Touch Attack Range replaced with +60 Attack Speed",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent +350 Poison Touch Attack Range",
+          "changeType": "REWORK",
+          "newValue": "+60 Attack Speed",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 2,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": 2,
+        "siege": 0,
+        "utility": 2
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.34b",
+      "date": "2026-06-10T19:47:35.974Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Shadow Wave",
+          "rawNote": "Heal/Damage increased from 60/85/110/135 to 75/95/115/135",
+          "indentLevel": 1,
+          "metric": "Heal/Damage",
+          "changeType": "INCREASED",
+          "oldValue": "60/85/110/135",
+          "newValue": "75/95/115/135",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 5235
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (heal/damage)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.34c",
+      "date": "2026-06-10T19:47:35.990Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "rawNote": "Intelligence gain increased from 2.5 to 2.8",
+          "indentLevel": 1,
+          "metric": "Intelligence gain",
+          "changeType": "INCREASED",
+          "oldValue": "2.5",
+          "newValue": "2.8",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (intelligence gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "rawNote": "Bad Juju Health Cost decreased from 75/100/125 to 75",
+          "indentLevel": 1,
+          "metric": "Bad Juju Health Cost",
+          "changeType": "DECREASED",
+          "oldValue": "75/100/125",
+          "newValue": "75",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Decreased a negative metric (bad juju health cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent Attack Speed increased from +60 to +80",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent Attack Speed",
+          "changeType": "INCREASED",
+          "oldValue": "+60",
+          "newValue": "+80",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Increased a positive metric (level 15 talent attack speed)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.34e",
+      "date": "2026-06-10T19:47:36.028Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "rawNote": "Bad Juju No longer affects any Blink Dagger's 3s mute period after taking damage",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.35b",
+      "date": "2026-06-10T19:47:36.038Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Shadow Wave",
+          "rawNote": "Damage increased from 75/95/115/135 to 85/105/125/145",
+          "indentLevel": 1,
+          "metric": "Damage",
+          "changeType": "INCREASED",
+          "oldValue": "75/95/115/135",
+          "newValue": "85/105/125/145",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 5235
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (damage)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 8,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 8,
+        "laning": 8,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.36",
+      "date": "2026-06-10T19:47:36.083Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "rawNote": "Bad Juju: No longer applies armor gain/loss on its own",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent +0.5 Bad Juju Armor Reduction/Increase replaced with +1 Weave Armor Reduction/Increase",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent +0.5 Bad Juju Armor Reduction/Increase",
+          "changeType": "REWORK",
+          "newValue": "+1 Weave Armor Reduction/Increase",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.37d",
+      "date": "2026-06-10T19:47:36.195Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent Attack Speed increased from +80 to +90",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent Attack Speed",
+          "changeType": "INCREASED",
+          "oldValue": "+80",
+          "newValue": "+90",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Increased a positive metric (level 15 talent attack speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Poison Touch DPS increased from +60 to +75",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Poison Touch DPS",
+          "changeType": "INCREASED",
+          "oldValue": "+60",
+          "newValue": "+75",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.37e",
+      "date": "2026-06-10T19:47:36.214Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Weave",
+          "rawNote": "Duration increased from 8s to 10s",
+          "indentLevel": 1,
+          "metric": "Duration",
+          "changeType": "INCREASED",
+          "oldValue": "8s",
+          "newValue": "10s",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 1293
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (duration)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 5,
+        "laning": 0,
+        "siege": 0,
+        "utility": 10
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.38",
+      "date": "2026-06-10T19:47:36.240Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "rawNote": "Base Damage increased by 16",
+          "indentLevel": 1,
+          "metric": "Base Damage",
+          "changeType": "INCREASED",
+          "newValue": "16",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "rawNote": "Damage at level 1 unchanged (47-53)",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "rawNote": "Strength gain increased from 2.0 to 2.3",
+          "indentLevel": 1,
+          "metric": "Strength gain",
+          "changeType": "INCREASED",
+          "oldValue": "2.0",
+          "newValue": "2.3",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (strength gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "rawNote": "Agility gain increased from 1.4 to 1.7",
+          "indentLevel": 1,
+          "metric": "Agility gain",
+          "changeType": "INCREASED",
+          "oldValue": "1.4",
+          "newValue": "1.7",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (agility gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "rawNote": "Intelligence gain increased from 2.8 to 3.7",
+          "indentLevel": 1,
+          "metric": "Intelligence gain",
+          "changeType": "INCREASED",
+          "oldValue": "2.8",
+          "newValue": "3.7",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (intelligence gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "rawNote": "Damage gain per level decreased from +4.3 to +3.5",
+          "indentLevel": 1,
+          "metric": "Damage gain per level",
+          "changeType": "DECREASED",
+          "oldValue": "+4.3",
+          "newValue": "+3.5",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (damage gain per level)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "rawNote": "Damage at level 30 decreased by 35 (from 201-207 to 166-172)",
+          "indentLevel": 1,
+          "metric": "Damage at level 30",
+          "changeType": "DECREASED",
+          "oldValue": "by 35 (from 201-207",
+          "newValue": "166-172)",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (damage at level 30)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "rawNote": "Removed Bad Juju ability",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Weave",
+          "rawNote": "Now levels with Nothl Projection ",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 1293
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Weave",
+          "rawNote": "Armor Change per stack rescaled from 1 to 0.5/0.75/1/1.25",
+          "indentLevel": 1,
+          "metric": "Armor Change per stack",
+          "changeType": "RESCALE",
+          "oldValue": "1",
+          "newValue": "0.5/0.75/1/1.25",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 1293
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Poison Touch",
+          "rawNote": "Cooldown decreased from 27/23/19/15s to 24/21/18/15s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "27/23/19/15s",
+          "newValue": "24/21/18/15s",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 5233
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Poison Touch",
+          "rawNote": "No longer upgraded with Aghanim's Shard",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 5233
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Shallow Grave",
+          "rawNote": "Cooldown decreased from 36/30/24/18s to 30/26/22/18s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "36/30/24/18s",
+          "newValue": "30/26/22/18s",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 5234
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Shadow Wave",
+          "rawNote": "Cooldown decreased from 12/11/10/9s to 10/9/8/7s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "12/11/10/9s",
+          "newValue": "10/9/8/7s",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 5235
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Shadow Wave",
+          "rawNote": "Aghanim's Scepter no longer allows to perform attacks if Dazzle is disarmed",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 5235
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Nothl Projection",
+          "rawNote": "New Ultimate ability",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 1550
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Nothl Projection",
+          "rawNote": "Dazzle's soul departs his body, becoming an untargetable, invulnerable and tree-walking spirit that can still attack, cast abilities and use items. His mortal body can be attacked and there is a visible tether between it and Dazzle's soul. While in soul form, all Dazzle's basic abilities are improved: Poison Touch hexes enemies, Shallow Grave heals upon expiration and Shadow Wave has reduced cooldown. If the body is killed, Dazzle's soul perishes. When Dazzle's spirit moves further than 1600 units from his body, it is tugged back towards the body with the intensity of this pull increasing the further Dazzle's soul travels. When the effect ends, the soul returns to its body. Cooldown: 70/60/50s, Max Duration: 15s, Min Duration: 5s, Cast Range: 600, Mana Cost: 100/150/200",
+          "indentLevel": 2,
+          "metric": "Dazzle's soul departs his body, becoming an untargetable, invulnerable and tree-walking spirit that can still attack, cast abilities and use items. His mortal body can be attacked and there is a visible tether between it and Dazzle's soul. While in soul form, all Dazzle's basic abilities are improved: Poison Touch hexes enemies, Shallow Grave heals upon expiration and Shadow Wave has",
+          "changeType": "DECREASED",
+          "oldValue": "cooldown. If the body is killed, Dazzle's soul perishes. When Dazzle's spirit moves further than 1600 units from his body, it is tugged back towards the body with the intensity of this pull increasing the further Dazzle's soul travels. When the effect ends, the soul returns",
+          "newValue": "its body. Cooldown: 70/60/50s, Max Duration: 15s, Min Duration: 5s, Cast Range: 600, Mana Cost: 100/150/200",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 1550
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Nothl Projection",
+          "rawNote": "Poison Touch Hex Duration: 1.4/1.6/1.8s",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 1550
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Nothl Projection",
+          "rawNote": "Shallow Grave Healing: 225/300/375 ",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 1550
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Nothl Projection",
+          "rawNote": "Shadow Wave Cooldown Reduction: 30/45/60%",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 1550
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Nothl Projection",
+          "rawNote": "Dazzle can't attack buildings or use Hand of Midas while in Soul form",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 1550
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Nothl Projection",
+          "rawNote": "Can be upgraded with Aghanim's Shard",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 1550
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Nothl Projection",
+          "rawNote": "Allows to cast Nothl Projection while disabled and provides 20% Outgoing Healing Amplification for the duration",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 1550
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent 200 Heal on Shallow Grave End replaced with -4s Shallow Grave Cooldown",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent 200 Heal on Shallow Grave End",
+          "changeType": "REWORK",
+          "newValue": "-4s Shallow Grave Cooldown",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 4.5,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.38b",
+      "date": "2026-06-10T19:47:36.262Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Poison Touch",
+          "rawNote": "Duration decreased from 5/6/7/8s to 3.5/5/6.5/8s",
+          "indentLevel": 1,
+          "metric": "Duration",
+          "changeType": "DECREASED",
+          "oldValue": "5/6/7/8s",
+          "newValue": "3.5/5/6.5/8s",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 5233
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Nothl Projection",
+          "rawNote": "Shadow Wave Cooldown Reduction decreased from 30/45/60% to 30/40/50%",
+          "indentLevel": 1,
+          "metric": "Shadow Wave Cooldown Reduction",
+          "changeType": "DECREASED",
+          "oldValue": "30/45/60%",
+          "newValue": "30/40/50%",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 1550
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a negative metric (shadow wave cooldown reduction)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -5,
+        "laning": 0,
+        "siege": 0,
+        "utility": -10
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.38c",
+      "date": "2026-06-10T19:47:36.274Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Shadow Wave",
+          "rawNote": "No longer has increased healing and damage when bouncing on enemies with Aghanim's Scepter",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 5235
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Nothl Projection",
+          "rawNote": "Cast Range decreased from 600 to 450",
+          "indentLevel": 1,
+          "metric": "Cast Range",
+          "changeType": "DECREASED",
+          "oldValue": "600",
+          "newValue": "450",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 1550
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 2.5,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (cast range)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Nothl Projection",
+          "rawNote": "Leash pull strength growth increased from 0.5 to 1.5 ",
+          "indentLevel": 1,
+          "metric": "Leash pull strength growth",
+          "changeType": "INCREASED",
+          "oldValue": "0.5",
+          "newValue": "1.5",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 1550
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (leash pull strength growth)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Nothl Projection",
+          "rawNote": "Max Duration decreased from 15s to 12s",
+          "indentLevel": 1,
+          "metric": "Max Duration",
+          "changeType": "DECREASED",
+          "oldValue": "15s",
+          "newValue": "12s",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 1550
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (max duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent Poison Touch Attack Range decreased from +300 to +200",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent Poison Touch Attack Range",
+          "changeType": "DECREASED",
+          "oldValue": "+300",
+          "newValue": "+200",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (level 10 talent poison touch attack range)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent +90 Attack Speed replaced with +5s Nothl Projection Duration",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent +90 Attack Speed",
+          "changeType": "REWORK",
+          "newValue": "+5s Nothl Projection Duration",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": 0,
+        "siege": 0,
+        "utility": -15
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.40",
+      "date": "2026-06-10T19:47:36.329Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "rawNote": "Base Strength increased from 18 to 19",
+          "indentLevel": 1,
+          "metric": "Base Strength",
+          "changeType": "INCREASED",
+          "oldValue": "18",
+          "newValue": "19",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base strength)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "rawNote": "Damage at level 1 unchanged",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "rawNote": "Intelligence gain decreased from 3.7 to 3.5",
+          "indentLevel": 1,
+          "metric": "Intelligence gain",
+          "changeType": "DECREASED",
+          "oldValue": "3.7",
+          "newValue": "3.5",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (intelligence gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "rawNote": "Damage gain per level decreased from 3.5 to 3.4",
+          "indentLevel": 1,
+          "metric": "Damage gain per level",
+          "changeType": "DECREASED",
+          "oldValue": "3.5",
+          "newValue": "3.4",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (damage gain per level)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Nothl Projection",
+          "rawNote": "Aghanim's Shard healing amplification decreased from 20% to 15%",
+          "indentLevel": 1,
+          "metric": "Aghanim's Shard healing amplification",
+          "changeType": "DECREASED",
+          "oldValue": "20%",
+          "newValue": "15%",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 1550
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {
+        "HERALD": {
+          "winrate": 0.5075,
+          "matchCount": 27661
+        },
+        "GUARDIAN": {
+          "winrate": 0.5106,
+          "matchCount": 61181
+        },
+        "CRUSADER": {
+          "winrate": 0.5181,
+          "matchCount": 65286
+        },
+        "ARCHON": {
+          "winrate": 0.528,
+          "matchCount": 57270
+        },
+        "LEGEND": {
+          "winrate": 0.5297,
+          "matchCount": 40223
+        },
+        "ANCIENT": {
+          "winrate": 0.5314,
+          "matchCount": 23678
+        },
+        "DIVINE": {
+          "winrate": 0.5403,
+          "matchCount": 14746
+        }
+      }
+    },
+    {
+      "version": "7.40b",
+      "date": "2026-06-10T19:47:36.354Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Poison Touch",
+          "rawNote": "Slow decreased from 16/18/20/22% to 13/16/19/22%",
+          "indentLevel": 1,
+          "metric": "Slow",
+          "changeType": "DECREASED",
+          "oldValue": "16/18/20/22%",
+          "newValue": "13/16/19/22%",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 5233
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Shallow Grave Cooldown Reduction decreased from 4s to 3s",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Shallow Grave Cooldown Reduction",
+          "changeType": "DECREASED",
+          "oldValue": "4s",
+          "newValue": "3s",
+          "metadata": {
+            "entityId": 50
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a negative metric (level 20 talent shallow grave cooldown reduction)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.41",
+      "date": "2026-06-10T19:47:36.396Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Weave",
+          "rawNote": "No longer levels with Nothl Projection",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 1293
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Weave",
+          "rawNote": "Armor Change per stack rescaled from 0.5/0.75/1/1.25 to 1",
+          "indentLevel": 1,
+          "metric": "Armor Change per stack",
+          "changeType": "RESCALE",
+          "oldValue": "0.5/0.75/1/1.25",
+          "newValue": "1",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 1293
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Weave",
+          "rawNote": "Duration changed from 8s to 6.9s + 0.1s per level",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 1293
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Weave",
+          "rawNote": "Now upgraded with Aghanim's Shard",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 1293
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Weave",
+          "rawNote": "Applying a stack of Weave on an ally heals them for 60 per stack of Weave, including the stack that was just applied",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 1293
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Nothl Projection",
+          "rawNote": "No longer does a hard dispel on Dazzle when projection ends",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 1550
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Nothl Projection",
+          "rawNote": "No longer upgraded with Aghanim's Shard",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 1550
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.41d",
+      "date": "2026-06-10T19:47:36.475Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dazzle",
+          "subEntityName": "Poison Touch",
+          "rawNote": "Bonus Slow Per Hit increased from 2/2.5/3/3.5% to 2.5/3/3.5/4%",
+          "indentLevel": 1,
+          "metric": "Bonus Slow Per Hit",
+          "changeType": "INCREASED",
+          "oldValue": "2/2.5/3/3.5%",
+          "newValue": "2.5/3/3.5/4%",
+          "metadata": {
+            "entityId": 50,
+            "subEntityId": 5233
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {
+        "HERALD": {
+          "winrate": 0.4782,
+          "matchCount": 3141
+        },
+        "GUARDIAN": {
+          "winrate": 0.4852,
+          "matchCount": 6198
+        },
+        "CRUSADER": {
+          "winrate": 0.5088,
+          "matchCount": 6341
+        },
+        "ARCHON": {
+          "winrate": 0.5025,
+          "matchCount": 5029
+        },
+        "LEGEND": {
+          "winrate": 0.5048,
+          "matchCount": 3306
+        },
+        "ANCIENT": {
+          "winrate": 0.5185,
+          "matchCount": 1890
+        },
+        "DIVINE": {
+          "winrate": 0.4899,
+          "matchCount": 1235
+        }
+      }
+    }
+  ]
+}

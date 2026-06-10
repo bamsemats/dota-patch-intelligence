@@ -1,0 +1,1957 @@
+{
+  "name": "Slark",
+  "history": [
+    {
+      "version": "7.33c",
+      "date": "2026-06-10T19:47:35.889Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Pounce",
+          "rawNote": "Aghanim's Scepter Distance decreased from 1100 to 1000",
+          "indentLevel": 1,
+          "metric": "Aghanim's Scepter Distance",
+          "changeType": "DECREASED",
+          "oldValue": "1100",
+          "newValue": "1000",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 5495
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.34",
+      "date": "2026-06-10T19:47:35.957Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Depth Shroud",
+          "rawNote": "Linger Duration decreased from 0.5s to 0.01s",
+          "indentLevel": 1,
+          "metric": "Linger Duration",
+          "changeType": "DECREASED",
+          "oldValue": "0.5s",
+          "newValue": "0.01s",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 729
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (linger duration)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.34d",
+      "date": "2026-06-10T19:47:36.021Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Essence Shift Duration decreased from +50s to +40s",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Essence Shift Duration",
+          "changeType": "DECREASED",
+          "oldValue": "+50s",
+          "newValue": "+40s",
+          "metadata": {
+            "entityId": 93
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (level 25 talent essence shift duration)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.35c",
+      "date": "2026-06-10T19:47:36.050Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Pounce",
+          "rawNote": "Cooldown increased from 22/18/14/10s to 24/20/16/12s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "INCREASED",
+          "oldValue": "22/18/14/10s",
+          "newValue": "24/20/16/12s",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 5495
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a negative metric (cooldown)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -1.5,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.36",
+      "date": "2026-06-10T19:47:36.093Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "rawNote": "Base Health Regen decreased from 1.75 to 0.25",
+          "indentLevel": 1,
+          "metric": "Base Health Regen",
+          "changeType": "DECREASED",
+          "oldValue": "1.75",
+          "newValue": "0.25",
+          "metadata": {
+            "entityId": 93
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "reasoning": "Decreased a positive metric (base health regen)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Pounce",
+          "rawNote": "No longer applies Essence Shift stacks by default",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 5495
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Pounce",
+          "rawNote": "Aghanim's Scepter range decreased from 1000 to 900",
+          "indentLevel": 1,
+          "metric": "Aghanim's Scepter range",
+          "changeType": "DECREASED",
+          "oldValue": "1000",
+          "newValue": "900",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 5495
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (aghanim's scepter range)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Shadow Dance",
+          "rawNote": "Passive Movement Speed and Regen bonuses moved to Innate ability",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 5497
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Shadow Dance",
+          "rawNote": "Mana Cost decreased from 120 to 100",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "DECREASED",
+          "oldValue": "120",
+          "newValue": "100",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 5497
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a negative metric (mana cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Shadow Dance",
+          "rawNote": "Cooldown decreased from 75/60/45s to 60/50/40s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "75/60/45s",
+          "newValue": "60/50/40s",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 5497
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Depth Shroud",
+          "rawNote": "No longer stacks with Shadow Dance",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 729
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent +50 Shadow Dance Regen replaced with +50 Barracuda Regen",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent +50 Shadow Dance Regen",
+          "changeType": "REWORK",
+          "newValue": "+50 Barracuda Regen",
+          "metadata": {
+            "entityId": 93
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 1.5,
+        "laning": 1,
+        "siege": 0,
+        "utility": 1
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.36a",
+      "date": "2026-06-10T19:47:36.107Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "rawNote": "Barracuda: Bonus Movement Speed increased from 4/24/36/48% to 6/24/36/48%",
+          "indentLevel": 1,
+          "metric": "Barracuda: Bonus Movement Speed",
+          "changeType": "INCREASED",
+          "oldValue": "4/24/36/48%",
+          "newValue": "6/24/36/48%",
+          "metadata": {
+            "entityId": 93
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 8,
+              "Ancient": 9,
+              "Divine": 9
+            },
+            "reasoning": "Increased a positive metric (barracuda: bonus movement speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "rawNote": "Barracuda: Health Gained per second increased from 8/60/90/120 to 10/60/90/120",
+          "indentLevel": 1,
+          "metric": "Barracuda: Health Gained per second",
+          "changeType": "INCREASED",
+          "oldValue": "8/60/90/120",
+          "newValue": "10/60/90/120",
+          "metadata": {
+            "entityId": 93
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Increased a positive metric (barracuda: health gained per second)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.36b",
+      "date": "2026-06-10T19:47:36.122Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "rawNote": "Barracuda: Health Gained per second increased from 10/60/90/120 to 10/70/100/130",
+          "indentLevel": 1,
+          "metric": "Barracuda: Health Gained per second",
+          "changeType": "INCREASED",
+          "oldValue": "10/60/90/120",
+          "newValue": "10/70/100/130",
+          "metadata": {
+            "entityId": 93
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Increased a positive metric (barracuda: health gained per second)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Shadow Dance",
+          "rawNote": "Cooldown decreased from 60/50/40s to 50/40/30s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "60/50/40s",
+          "newValue": "50/40/30s",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 5497
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 1.5,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.37",
+      "date": "2026-06-10T19:47:36.161Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "rawNote": "Base Damage increased by 3",
+          "indentLevel": 1,
+          "metric": "Base Damage",
+          "changeType": "INCREASED",
+          "newValue": "3",
+          "metadata": {
+            "entityId": 93
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Shadow Dance Attack Speed increased from +80 to +90",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Shadow Dance Attack Speed",
+          "changeType": "INCREASED",
+          "oldValue": "+80",
+          "newValue": "+90",
+          "metadata": {
+            "entityId": 93
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Increased a positive metric (level 20 talent shadow dance attack speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Shadow Dance Duration increased from +1s to +1.25s",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Shadow Dance Duration",
+          "changeType": "INCREASED",
+          "oldValue": "+1s",
+          "newValue": "+1.25s",
+          "metadata": {
+            "entityId": 93
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (level 25 talent shadow dance duration)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.38",
+      "date": "2026-06-10T19:47:36.251Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Depth Shroud",
+          "rawNote": "Radius decreased from 250 to 225",
+          "indentLevel": 1,
+          "metric": "Radius",
+          "changeType": "DECREASED",
+          "oldValue": "250",
+          "newValue": "225",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 729
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5.5,
+              "Guardian": 4.5,
+              "Crusader": 5,
+              "Archon": 4.5,
+              "Legend": 5,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "reasoning": "Decreased a positive metric (radius)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Shadow Dance Attack Speed increased from +90 to +100",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Shadow Dance Attack Speed",
+          "changeType": "INCREASED",
+          "oldValue": "+90",
+          "newValue": "+100",
+          "metadata": {
+            "entityId": 93
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Increased a positive metric (level 20 talent shadow dance attack speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Essence Shift Duration decreased from +40s to +35s",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Essence Shift Duration",
+          "changeType": "DECREASED",
+          "oldValue": "+40s",
+          "newValue": "+35s",
+          "metadata": {
+            "entityId": 93
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (level 25 talent essence shift duration)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -6,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.39b",
+      "date": "2026-06-10T19:47:36.286Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "rawNote": "Barracuda: Health Gained per second decreased from 10/70/100/130 to 5/70/100/130",
+          "indentLevel": 1,
+          "metric": "Barracuda: Health Gained per second",
+          "changeType": "DECREASED",
+          "oldValue": "10/70/100/130",
+          "newValue": "5/70/100/130",
+          "metadata": {
+            "entityId": 93
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Decreased a positive metric (barracuda: health gained per second)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.40",
+      "date": "2026-06-10T19:47:36.338Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "rawNote": "Removed Leeching Leash and Dark Reef Renegade facets",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 93
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "rawNote": "Removed Barracuda innate ability (effect moved to the Ultimate)",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 93
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Essence Shift",
+          "rawNote": "Now an innate ability. Passive, improves with Slark's level",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 5496
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Essence Shift",
+          "rawNote": "Duration rescaled from 15/35/55/75s to 15s + 2.5s each time Slark levels up",
+          "indentLevel": 1,
+          "metric": "Duration",
+          "changeType": "RESCALE",
+          "oldValue": "15/35/55/75s",
+          "newValue": "15s + 2.5s each time Slark levels up",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 5496
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Pounce",
+          "rawNote": "Now applies 1/2/3/4 Essence Shift stacks when leashing an enemy hero",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 5495
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Saltwater Shiv",
+          "rawNote": "New basic ability. Passive, auto-cast attack modifier",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 1693
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Saltwater Shiv",
+          "rawNote": "Slark slices the target with his salty shiv, stealing 3 Movement Speed, 3 Health Regen and 3/4/5/6% Health Restoration from them with each attack. Subsequent use of Saltwater Shiv refreshes the duration of all shiv stacks. Steal duration: 6/8/10/12s. Mana Cost: 20. Cooldown: 10/8/6/4s",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 1693
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Saltwater Shiv",
+          "rawNote": "Not Breakable. Disabled by Silence. Has no stack limit. Ignores attack backswing",
+          "indentLevel": 3,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 1693
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Saltwater Shiv",
+          "rawNote": "Enemies with Health Restoration below -100% will not lose health from health restoration sources",
+          "indentLevel": 3,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 1693
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Shadow Dance",
+          "rawNote": "Now passively grants 24/36/48% movement speed and 60/90/120 health regen when unseen",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 5497
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Shadow Dance",
+          "rawNote": "Previous Barracuda rules and mechanics unchanged",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 5497
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Depth Shroud",
+          "rawNote": "Duration decreased from 3s to 2s",
+          "indentLevel": 1,
+          "metric": "Duration",
+          "changeType": "DECREASED",
+          "oldValue": "3s",
+          "newValue": "2s",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 729
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent Dark Pact Cooldown Reduction increased from 0.5s to 0.75s",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent Dark Pact Cooldown Reduction",
+          "changeType": "INCREASED",
+          "oldValue": "0.5s",
+          "newValue": "0.75s",
+          "metadata": {
+            "entityId": 93
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a negative metric (level 10 talent dark pact cooldown reduction)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent +50 Barracuda Regen replaced with +30 Shadow Dance Regen",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent +50 Barracuda Regen",
+          "changeType": "REWORK",
+          "newValue": "+30 Shadow Dance Regen",
+          "metadata": {
+            "entityId": 93
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Shadow Dance Duration increased from +1.25s to +1.5s",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Shadow Dance Duration",
+          "changeType": "INCREASED",
+          "oldValue": "+1.25s",
+          "newValue": "+1.5s",
+          "metadata": {
+            "entityId": 93
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (level 25 talent shadow dance duration)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -5,
+        "laning": 0,
+        "siege": 0,
+        "utility": -10
+      },
+      "winrates": {
+        "HERALD": {
+          "winrate": 0.4999,
+          "matchCount": 72773
+        },
+        "GUARDIAN": {
+          "winrate": 0.4859,
+          "matchCount": 171522
+        },
+        "CRUSADER": {
+          "winrate": 0.4738,
+          "matchCount": 207278
+        },
+        "ARCHON": {
+          "winrate": 0.4657,
+          "matchCount": 202935
+        },
+        "LEGEND": {
+          "winrate": 0.4619,
+          "matchCount": 157586
+        },
+        "ANCIENT": {
+          "winrate": 0.4645,
+          "matchCount": 98980
+        },
+        "DIVINE": {
+          "winrate": 0.462,
+          "matchCount": 56748
+        }
+      }
+    },
+    {
+      "version": "7.40b",
+      "date": "2026-06-10T19:47:36.358Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Saltwater Shiv",
+          "rawNote": "Duration increased from 6/8/10/12s to 12s",
+          "indentLevel": 1,
+          "metric": "Duration",
+          "changeType": "INCREASED",
+          "oldValue": "6/8/10/12s",
+          "newValue": "12s",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 1693
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Saltwater Shiv",
+          "rawNote": "Stack Regen Steal rescaled from 3 to 2/3/4/5",
+          "indentLevel": 1,
+          "metric": "Stack Regen Steal",
+          "changeType": "RESCALE",
+          "oldValue": "3",
+          "newValue": "2/3/4/5",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 1693
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Saltwater Shiv",
+          "rawNote": "Stack Speed Steal rescaled from 3 to 2/3/4/5",
+          "indentLevel": 1,
+          "metric": "Stack Speed Steal",
+          "changeType": "RESCALE",
+          "oldValue": "3",
+          "newValue": "2/3/4/5",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 1693
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 5,
+        "laning": 0,
+        "siege": 0,
+        "utility": 10
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.40c",
+      "date": "2026-06-10T19:47:36.370Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Saltwater Shiv",
+          "rawNote": "Stack Restoration Steal rescaled from 3/4/5/6% to 2/4/6/8%",
+          "indentLevel": 1,
+          "metric": "Stack Restoration Steal",
+          "changeType": "RESCALE",
+          "oldValue": "3/4/5/6%",
+          "newValue": "2/4/6/8%",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 1693
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Saltwater Shiv",
+          "rawNote": "Stack Regen Steal increased from 2/3/4/5 to 2/4/6/8",
+          "indentLevel": 1,
+          "metric": "Stack Regen Steal",
+          "changeType": "INCREASED",
+          "oldValue": "2/3/4/5",
+          "newValue": "2/4/6/8",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 1693
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (stack regen steal)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Saltwater Shiv",
+          "rawNote": "Stack Speed Steal increased from 2/3/4/5 to 2/4/6/8",
+          "indentLevel": 1,
+          "metric": "Stack Speed Steal",
+          "changeType": "INCREASED",
+          "oldValue": "2/3/4/5",
+          "newValue": "2/4/6/8",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 1693
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (stack speed steal)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.41",
+      "date": "2026-06-10T19:47:36.407Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Essence Shift",
+          "rawNote": "Duration changed from 15s + 2.5s per level up to 12.5s + 2.5s per level ",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 5496
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Saltwater Shiv",
+          "rawNote": "Stacks now have independent durations and don't refresh previous ones",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 1693
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Saltwater Shiv",
+          "rawNote": "Cooldown increased from 10/8/6/4s to 14/12/10/8s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "INCREASED",
+          "oldValue": "10/8/6/4s",
+          "newValue": "14/12/10/8s",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 1693
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Saltwater Shiv",
+          "rawNote": "Mana Cost increased from 20 to 25/30/35/40",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "INCREASED",
+          "oldValue": "20",
+          "newValue": "25/30/35/40",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 1693
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Increased a negative metric (mana cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Saltwater Shiv",
+          "rawNote": "Cast Range is now Slark's attack range + 50",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 1693
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Saltwater Shiv",
+          "rawNote": "Stack Restoration Steal increased from 2/4/6/8% to 4/8/12/16%",
+          "indentLevel": 1,
+          "metric": "Stack Restoration Steal",
+          "changeType": "INCREASED",
+          "oldValue": "2/4/6/8%",
+          "newValue": "4/8/12/16%",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 1693
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Saltwater Shiv",
+          "rawNote": "Stack Regen Steal increased from 2/4/6/8 to 4/8/12/16",
+          "indentLevel": 1,
+          "metric": "Stack Regen Steal",
+          "changeType": "INCREASED",
+          "oldValue": "2/4/6/8",
+          "newValue": "4/8/12/16",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 1693
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (stack regen steal)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Saltwater Shiv",
+          "rawNote": "Stack Speed Steal increased from 2/4/6/8 to 4/8/12/16",
+          "indentLevel": 1,
+          "metric": "Stack Speed Steal",
+          "changeType": "INCREASED",
+          "oldValue": "2/4/6/8",
+          "newValue": "4/8/12/16",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 1693
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (stack speed steal)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Saltwater Shiv",
+          "rawNote": "Now also modifies incoming healing ",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 1693
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": -1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -1.5,
+        "laning": -1,
+        "siege": 0,
+        "utility": -1
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.41a",
+      "date": "2026-06-10T19:47:36.424Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Shadow Dance",
+          "rawNote": "Bonus Movement Speed decreased from 24/36/48% to 20/30/40%",
+          "indentLevel": 1,
+          "metric": "Bonus Movement Speed",
+          "changeType": "DECREASED",
+          "oldValue": "24/36/48%",
+          "newValue": "20/30/40%",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 5497
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 8,
+              "Ancient": 9,
+              "Divine": 9
+            },
+            "reasoning": "Decreased a positive metric (bonus movement speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent +1 Agility gain/stolen per Essence Shift Stack replaced with +25s Essence Shift Duration",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent +1 Agility gain/stolen per Essence Shift Stack",
+          "changeType": "REWORK",
+          "newValue": "+25s Essence Shift Duration",
+          "metadata": {
+            "entityId": 93
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent +35s Essence Shift Duration replaced with +1 Agility gain/stolen per Essence Shift Stack",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent +35s Essence Shift Duration",
+          "changeType": "REWORK",
+          "newValue": "+1 Agility gain/stolen per Essence Shift Stack",
+          "metadata": {
+            "entityId": 93
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.41b",
+      "date": "2026-06-10T19:47:36.439Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Essence Shift",
+          "rawNote": "Duration decreased from 12.5s + 2.5s per level to 10s + 2.5s per level",
+          "indentLevel": 1,
+          "metric": "Duration",
+          "changeType": "DECREASED",
+          "oldValue": "12.5s + 2.5s per level",
+          "newValue": "10s + 2.5s per level",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 5496
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Essence Shift Duration decreased from +25s to +20s",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Essence Shift Duration",
+          "changeType": "DECREASED",
+          "oldValue": "+25s",
+          "newValue": "+20s",
+          "metadata": {
+            "entityId": 93
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (level 20 talent essence shift duration)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -5,
+        "laning": 0,
+        "siege": 0,
+        "utility": -10
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.41d",
+      "date": "2026-06-10T19:47:36.483Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Slark",
+          "subEntityName": "Saltwater Shiv",
+          "rawNote": "Cooldown decreased from 14/12/10/8s to 12/10.5/9/7.5s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "14/12/10/8s",
+          "newValue": "12/10.5/9/7.5s",
+          "metadata": {
+            "entityId": 93,
+            "subEntityId": 1693
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 1.5,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {
+        "HERALD": {
+          "winrate": 0.5162,
+          "matchCount": 8075
+        },
+        "GUARDIAN": {
+          "winrate": 0.5108,
+          "matchCount": 16902
+        },
+        "CRUSADER": {
+          "winrate": 0.5092,
+          "matchCount": 19127
+        },
+        "ARCHON": {
+          "winrate": 0.5016,
+          "matchCount": 17380
+        },
+        "LEGEND": {
+          "winrate": 0.5036,
+          "matchCount": 12505
+        },
+        "ANCIENT": {
+          "winrate": 0.5091,
+          "matchCount": 7680
+        },
+        "DIVINE": {
+          "winrate": 0.5092,
+          "matchCount": 4664
+        }
+      }
+    }
+  ]
+}

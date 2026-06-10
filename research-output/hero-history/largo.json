@@ -1,0 +1,983 @@
+{
+  "name": "Largo",
+  "history": [
+    {
+      "version": "7.40b",
+      "date": "2026-06-10T19:47:36.363Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Catchy Lick",
+          "rawNote": "Enemy Pull Distance increased from 210/240/270/300 to 235/265/295/325",
+          "indentLevel": 1,
+          "metric": "Enemy Pull Distance",
+          "changeType": "INCREASED",
+          "oldValue": "210/240/270/300",
+          "newValue": "235/265/295/325",
+          "metadata": {
+            "entityId": 155,
+            "subEntityId": 1659
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Catchy Lick",
+          "rawNote": "Bonus Health Regen increased from 4/6/8/10 to 4/7/10/13",
+          "indentLevel": 1,
+          "metric": "Bonus Health Regen",
+          "changeType": "INCREASED",
+          "oldValue": "4/6/8/10",
+          "newValue": "4/7/10/13",
+          "metadata": {
+            "entityId": 155,
+            "subEntityId": 1659
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "reasoning": "Increased a positive metric (bonus health regen)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Croak of Genius",
+          "rawNote": "Reverberated damage is now only applied if the target is within 2000 range of the caster",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 155,
+            "subEntityId": 1661
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Croak of Genius",
+          "rawNote": "Duration is no longer decreased on Largo from his own abilities",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 155,
+            "subEntityId": 1661
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Catchy Lick Damage increased from +140 to +170",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Catchy Lick Damage",
+          "changeType": "INCREASED",
+          "oldValue": "+140",
+          "newValue": "+170",
+          "metadata": {
+            "entityId": 155
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (level 20 talent catchy lick damage)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.40c",
+      "date": "2026-06-10T19:47:36.373Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "rawNote": "Added to Captains Mode",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 155
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "rawNote": "Intelligence gain increased from 2.4 to 2.6",
+          "indentLevel": 1,
+          "metric": "Intelligence gain",
+          "changeType": "INCREASED",
+          "oldValue": "2.4",
+          "newValue": "2.6",
+          "metadata": {
+            "entityId": 155
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (intelligence gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Frogstomp",
+          "rawNote": "Damage per stomp increased from 35/45/55/65 to 36/48/60/72",
+          "indentLevel": 1,
+          "metric": "Damage per stomp",
+          "changeType": "INCREASED",
+          "oldValue": "35/45/55/65",
+          "newValue": "36/48/60/72",
+          "metadata": {
+            "entityId": 155,
+            "subEntityId": 1660
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (damage per stomp)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Amphibian Rhapsody",
+          "rawNote": "Now can be toggled while silenced",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 155,
+            "subEntityId": 1662
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Amphibian Rhapsody",
+          "rawNote": "Radius increased from 750 to 800",
+          "indentLevel": 1,
+          "metric": "Radius",
+          "changeType": "INCREASED",
+          "oldValue": "750",
+          "newValue": "800",
+          "metadata": {
+            "entityId": 155,
+            "subEntityId": 1662
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5.5,
+              "Guardian": 4.5,
+              "Crusader": 5,
+              "Archon": 4.5,
+              "Legend": 5,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "reasoning": "Increased a positive metric (radius)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 6,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.41",
+      "date": "2026-06-10T19:47:36.416Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Encore",
+          "rawNote": "Bonus Duration changed from 10% + 1% per level up to 9% + 1% per level ",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 155,
+            "subEntityId": 1666
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Catchy Lick",
+          "rawNote": "Now can lick runes to pull them. Rune-licking refunds spent mana",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 155,
+            "subEntityId": 1659
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Catchy Lick",
+          "rawNote": "Health Regen Duration decreased from 10s to 8s",
+          "indentLevel": 1,
+          "metric": "Health Regen Duration",
+          "changeType": "DECREASED",
+          "oldValue": "10s",
+          "newValue": "8s",
+          "metadata": {
+            "entityId": 155,
+            "subEntityId": 1659
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "reasoning": "Decreased a positive metric (health regen duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Catchy Lick",
+          "rawNote": "Bonus health regen is now also provided if the target is killed by Catchy Lick",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 155,
+            "subEntityId": 1659
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Amphibian Rhapsody",
+          "rawNote": "Aghanim's Scepter no longer adds damage to double-strumming",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 155,
+            "subEntityId": 1662
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Bullbelly Blitz",
+          "rawNote": "Now also deals 20/30/40 magical damage by default",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 155,
+            "subEntityId": 1663
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Bullbelly Blitz",
+          "rawNote": "Now upgraded with Aghanim's Scepter",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 155,
+            "subEntityId": 1663
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Bullbelly Blitz",
+          "rawNote": "Increases magic damage by 6/12/18 per Groovin' stack when this song is used in double-strumming",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 155,
+            "subEntityId": 1663
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Hotfeet Hustle",
+          "rawNote": "Move Speed decreased from 16/22/28% to 16/20/24%",
+          "indentLevel": 1,
+          "metric": "Move Speed",
+          "changeType": "DECREASED",
+          "oldValue": "16/22/28%",
+          "newValue": "16/20/24%",
+          "metadata": {
+            "entityId": 155,
+            "subEntityId": 1664
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (move speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Hotfeet Hustle",
+          "rawNote": "Slow Resistance decreased from 70/80/90% to 70/75/80%",
+          "indentLevel": 1,
+          "metric": "Slow Resistance",
+          "changeType": "DECREASED",
+          "oldValue": "70/80/90%",
+          "newValue": "70/75/80%",
+          "metadata": {
+            "entityId": 155,
+            "subEntityId": 1664
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent Croak of Genius Max Health DPS decreased from 1.5% to 1%",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent Croak of Genius Max Health DPS",
+          "changeType": "DECREASED",
+          "oldValue": "1.5%",
+          "newValue": "1%",
+          "metadata": {
+            "entityId": 155
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Decreased a positive metric (level 15 talent croak of genius max health dps)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Amphibian Rhapsody Song Effects decreased from +35% to +30%",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Amphibian Rhapsody Song Effects",
+          "changeType": "DECREASED",
+          "oldValue": "+35%",
+          "newValue": "+30%",
+          "metadata": {
+            "entityId": 155
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.41b",
+      "date": "2026-06-10T19:47:36.443Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Encore",
+          "rawNote": "Bonus Duration increased from 9% + 1% per level to 10% + 1% per level",
+          "indentLevel": 1,
+          "metric": "Bonus Duration",
+          "changeType": "INCREASED",
+          "oldValue": "9% + 1% per level",
+          "newValue": "10% + 1% per level",
+          "metadata": {
+            "entityId": 155,
+            "subEntityId": 1666
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (bonus duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Croak of Genius",
+          "rawNote": "Mana Cost rescaled from 25/35/45/55 to 40",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "RESCALE",
+          "oldValue": "25/35/45/55",
+          "newValue": "40",
+          "metadata": {
+            "entityId": 155,
+            "subEntityId": 1661
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Croak of Genius",
+          "rawNote": "Duration increased from 12/18/24/30s to 15/20/25/30s",
+          "indentLevel": 1,
+          "metric": "Duration",
+          "changeType": "INCREASED",
+          "oldValue": "12/18/24/30s",
+          "newValue": "15/20/25/30s",
+          "metadata": {
+            "entityId": 155,
+            "subEntityId": 1661
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Bullbelly Blitz",
+          "rawNote": "Aghanim's Scepter Damage per stack decreased from 6/12/18 to 6/10/14",
+          "indentLevel": 1,
+          "metric": "Aghanim's Scepter Damage per stack",
+          "changeType": "DECREASED",
+          "oldValue": "6/12/18",
+          "newValue": "6/10/14",
+          "metadata": {
+            "entityId": 155,
+            "subEntityId": 1663
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (aghanim's scepter damage per stack)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Catchy Lick Damage increased from +170 to +200",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Catchy Lick Damage",
+          "changeType": "INCREASED",
+          "oldValue": "+170",
+          "newValue": "+200",
+          "metadata": {
+            "entityId": 155
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (level 20 talent catchy lick damage)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 5,
+        "laning": 0,
+        "siege": 0,
+        "utility": 10
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.41c",
+      "date": "2026-06-10T19:47:36.464Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent +200 Catchy Lick Damage replaced with 2x Catchy Lick Charges",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent +200 Catchy Lick Damage",
+          "changeType": "REWORK",
+          "newValue": "2x Catchy Lick Charges",
+          "metadata": {
+            "entityId": 155
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent 2x Catchy Lick Charges replaced with 2x Frogstomp Stomps / Interval",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent 2x Catchy Lick Charges",
+          "changeType": "REWORK",
+          "newValue": "2x Frogstomp Stomps / Interval",
+          "metadata": {
+            "entityId": 155
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.41d",
+      "date": "2026-06-10T19:47:36.490Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Encore",
+          "rawNote": "Bonus Duration increased from 10% + 1% per level to 15% + 1% per level",
+          "indentLevel": 1,
+          "metric": "Bonus Duration",
+          "changeType": "INCREASED",
+          "oldValue": "10% + 1% per level",
+          "newValue": "15% + 1% per level",
+          "metadata": {
+            "entityId": 155,
+            "subEntityId": 1666
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (bonus duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Largo",
+          "subEntityName": "Amphibian Rhapsody",
+          "rawNote": "Song Mana Costs increased from 20/32/44 to 25/35/45",
+          "indentLevel": 1,
+          "metric": "Song Mana Costs",
+          "changeType": "INCREASED",
+          "oldValue": "20/32/44",
+          "newValue": "25/35/45",
+          "metadata": {
+            "entityId": 155,
+            "subEntityId": 1662
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Increased a negative metric (song mana costs)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {
+        "HERALD": {
+          "winrate": 0.4719,
+          "matchCount": 1301
+        },
+        "GUARDIAN": {
+          "winrate": 0.4729,
+          "matchCount": 2324
+        },
+        "CRUSADER": {
+          "winrate": 0.4826,
+          "matchCount": 2302
+        },
+        "ARCHON": {
+          "winrate": 0.4741,
+          "matchCount": 2107
+        },
+        "LEGEND": {
+          "winrate": 0.479,
+          "matchCount": 1574
+        },
+        "ANCIENT": {
+          "winrate": 0.4991,
+          "matchCount": 1084
+        },
+        "DIVINE": {
+          "winrate": 0.4822,
+          "matchCount": 757
+        }
+      }
+    }
+  ]
+}

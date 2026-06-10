@@ -1,0 +1,2717 @@
+{
+  "name": "Lone Druid",
+  "history": [
+    {
+      "version": "7.33c",
+      "date": "2026-06-10T19:47:35.887Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Base Damage decreased by 3 (Level 1 damage increased by 2)",
+          "indentLevel": 1,
+          "metric": "Base Damage",
+          "changeType": "DECREASED",
+          "newValue": "3 (Level 1 damage increased by 2)",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (base damage)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.34",
+      "date": "2026-06-10T19:47:35.953Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Summon Spirit Bear",
+          "rawNote": "Bear is now a Universal creep-hero unit. It has 0 base attributes and does not gain them with level, but attributes received from buffs or items fully affect the bear as they would for Universal heroes. The bear cannot gain experience, but its health and damage increase with Lone Druid's level by 90 and 5 respectively",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 1342
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Summon Spirit Bear",
+          "rawNote": "Bear now has its own Aghanim's Scepter and Shard upgrades",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 1342
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Summon Spirit Bear",
+          "rawNote": "Aghanim's Scepter allows Spirit Bear to attack at any range from Lone Druid, and to survive if Lone Druid dies",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 1342
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Summon Spirit Bear",
+          "rawNote": "Aghanim's Shard grants an active ability Fetch. Spirit Bear roots the targeted unit or rune and uncontrollably drags them towards the Lone Druid for 2.25s. The Spirit Bear is slowed by 20% during this and the target is gradually dealt 300 damage over the duration if it's an enemy. The bear is not slowed down while fetching a rune. Mana Cost: 75; Cooldown: 30s",
+          "indentLevel": 2,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 1342
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Spirit Link",
+          "rawNote": "Now upgradable by Aghanim's Scepter",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 7309
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Spirit Link",
+          "rawNote": "Lone Druid severs the link to his Spirit Bear, and connects to the target allied hero, sharing the Spirit Link bonuses with them for 20s. Armor sharing and attack speed bonuses are increased by 35%. Damage done by the ally heals Lone Druid, as well as the other way around. The Spirit Bear is feared for the duration of the transformation, unless it has its own Aghanim's Scepter. Cooldown: 40s; Mana Cost: 50",
+          "indentLevel": 2,
+          "metric": "Lone Druid severs the link to his Spirit Bear, and connects to the target allied hero, sharing the Spirit Link bonuses with them for 20s. Armor sharing and attack speed bonuses are",
+          "changeType": "INCREASED",
+          "newValue": "35%. Damage done by the ally heals Lone Druid, as well as the other way around. The Spirit Bear is feared for the duration of the transformation, unless it has its own Aghanim's Scepter. Cooldown: 40s; Mana Cost: 50",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 7309
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Increased a positive metric (lone druid severs the link to his spirit bear, and connects to the target allied hero, sharing the spirit link bonuses with them for 20s. armor sharing and attack speed bonuses are)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "True Form",
+          "rawNote": "No longer increases BAT",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 5415
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.34b",
+      "date": "2026-06-10T19:47:35.977Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Base Strength increased from 18 to 20",
+          "indentLevel": 1,
+          "metric": "Base Strength",
+          "changeType": "INCREASED",
+          "oldValue": "18",
+          "newValue": "20",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base strength)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.34c",
+      "date": "2026-06-10T19:47:35.994Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Base Armor increased by 2",
+          "indentLevel": 1,
+          "metric": "Base Armor",
+          "changeType": "INCREASED",
+          "newValue": "2",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base armor)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Spirit Link",
+          "rawNote": "Attack Speed increased from 16/32/48/64 to 20/35/50/65",
+          "indentLevel": 1,
+          "metric": "Attack Speed",
+          "changeType": "INCREASED",
+          "oldValue": "16/32/48/64",
+          "newValue": "20/35/50/65",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 7309
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Increased a positive metric (attack speed)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 7,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 7,
+        "laning": 0,
+        "siege": 7,
+        "utility": 0
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.35b",
+      "date": "2026-06-10T19:47:36.040Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Spirit Link",
+          "rawNote": "Shared Lifesteal decreased from 20/35/50/65% to 15/30/45/60%",
+          "indentLevel": 1,
+          "metric": "Shared Lifesteal",
+          "changeType": "DECREASED",
+          "oldValue": "20/35/50/65%",
+          "newValue": "15/30/45/60%",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 7309
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.35c",
+      "date": "2026-06-10T19:47:36.049Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Summon Spirit Bear",
+          "rawNote": "Bear Movespeed decreased from 340/360/380/400 to 300/330/360/390",
+          "indentLevel": 1,
+          "metric": "Bear Movespeed",
+          "changeType": "DECREASED",
+          "oldValue": "340/360/380/400",
+          "newValue": "300/330/360/390",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 1342
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (bear movespeed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Summon Spirit Bear",
+          "rawNote": "Cooldown increased from 120s to 150/140/130/120s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "INCREASED",
+          "oldValue": "120s",
+          "newValue": "150/140/130/120s",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 1342
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Summon Spirit Bear",
+          "rawNote": "Bear is now properly affected by Monkey King's Jingu Mastery",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 1342
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -1.5,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.36",
+      "date": "2026-06-10T19:47:36.090Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent +1000 Spirit Bear and True Form HP replaced with +30 Entangling Claws Damage",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent +1000 Spirit Bear and True Form HP",
+          "changeType": "REWORK",
+          "newValue": "+30 Entangling Claws Damage",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent 0s Entangling Claws Cooldown replaced with +45 Spirit Link Attack Speed",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent 0s Entangling Claws Cooldown",
+          "changeType": "REWORK",
+          "newValue": "+45 Spirit Link Attack Speed",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent -0.1 Spirit Bear Base Attack Time replaced with +150 Savage Roar Radius",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent -0.1 Spirit Bear Base Attack Time",
+          "changeType": "REWORK",
+          "newValue": "+150 Savage Roar Radius",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.36b",
+      "date": "2026-06-10T19:47:36.121Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent Spirit Bear Movement Speed increased from +25 to +30",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent Spirit Bear Movement Speed",
+          "changeType": "INCREASED",
+          "oldValue": "+25",
+          "newValue": "+30",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 8,
+              "Ancient": 9,
+              "Divine": 9
+            },
+            "reasoning": "Increased a positive metric (level 10 talent spirit bear movement speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent -50s True Form Cooldown replaced with +150 Savage Roar Radius",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent -50s True Form Cooldown",
+          "changeType": "REWORK",
+          "newValue": "+150 Savage Roar Radius",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent +150 Savage Roar Radius replaced with -50s True Form Cooldown",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent +150 Savage Roar Radius",
+          "changeType": "REWORK",
+          "newValue": "-50s True Form Cooldown",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.37",
+      "date": "2026-06-10T19:47:36.160Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Gift Bearer: New Innate ability. Passive, can't be leveled up",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Lone Druid can re-roll his Neutral Token once per tier",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Summon Spirit Bear",
+          "rawNote": "Spirit Bear can no longer equip its own neutral items. Now copies and shares a cooldown with Lone Druid's currently equipped neutral item",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 1342
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.37d",
+      "date": "2026-06-10T19:47:36.198Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent Savage Roar Cooldown Reduction decreased from 7s to 5s",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent Savage Roar Cooldown Reduction",
+          "changeType": "DECREASED",
+          "oldValue": "7s",
+          "newValue": "5s",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a negative metric (level 15 talent savage roar cooldown reduction)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.38",
+      "date": "2026-06-10T19:47:36.248Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Is now an Agility Hero ",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Base Damage increased by 17",
+          "indentLevel": 1,
+          "metric": "Base Damage",
+          "changeType": "INCREASED",
+          "newValue": "17",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Base Strength decreased from 20 to 18",
+          "indentLevel": 1,
+          "metric": "Base Strength",
+          "changeType": "DECREASED",
+          "oldValue": "20",
+          "newValue": "18",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (base strength)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Damage at level 1 unchanged (38-42)",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Strength gain increased from 1.8 to 2.5",
+          "indentLevel": 1,
+          "metric": "Strength gain",
+          "changeType": "INCREASED",
+          "oldValue": "1.8",
+          "newValue": "2.5",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (strength gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Agility gain increased from 2.0 to 2.8",
+          "indentLevel": 1,
+          "metric": "Agility gain",
+          "changeType": "INCREASED",
+          "oldValue": "2.0",
+          "newValue": "2.8",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (agility gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Intelligence gain decreased from 2.0 to 1.4",
+          "indentLevel": 1,
+          "metric": "Intelligence gain",
+          "changeType": "DECREASED",
+          "oldValue": "2.0",
+          "newValue": "1.4",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (intelligence gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Damage gain per level decreased from +4.1 to +2.8",
+          "indentLevel": 1,
+          "metric": "Damage gain per level",
+          "changeType": "DECREASED",
+          "oldValue": "+4.1",
+          "newValue": "+2.8",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (damage gain per level)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Damage at level 30 decreased by 52 (from 185-189 to 133-137)",
+          "indentLevel": 1,
+          "metric": "Damage at level 30",
+          "changeType": "DECREASED",
+          "oldValue": "by 52 (from 185-189",
+          "newValue": "133-137)",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (damage at level 30)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Removed Unbearable Facet ",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Gift Bearer: Reworked",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Lone Druid's Spirit Bear receives a copy of his neutral item. This copy has an independent cooldown of the main one",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Spirit Link",
+          "rawNote": "Now follows global Lifesteal rules (as a result, gained 40% creep penalty)",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 7309
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.39c",
+      "date": "2026-06-10T19:47:36.295Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Summon Spirit Bear",
+          "rawNote": "Spirit Bear health per Lone Druid's level increased from 90 to 100",
+          "indentLevel": 1,
+          "metric": "Spirit Bear health per Lone Druid's level",
+          "changeType": "INCREASED",
+          "oldValue": "90",
+          "newValue": "100",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 1342
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Increased a positive metric (spirit bear health per lone druid's level)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.40",
+      "date": "2026-06-10T19:47:36.335Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Base Movement Speed decreased from 325 to 295",
+          "indentLevel": 1,
+          "metric": "Base Movement Speed",
+          "changeType": "DECREASED",
+          "oldValue": "325",
+          "newValue": "295",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 8,
+              "Ancient": 9,
+              "Divine": 9
+            },
+            "reasoning": "Decreased a positive metric (base movement speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Base Damage increased by 4",
+          "indentLevel": 1,
+          "metric": "Base Damage",
+          "changeType": "INCREASED",
+          "newValue": "4",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Damage at level 1 increased from 38–42 to 42–46",
+          "indentLevel": 1,
+          "metric": "Damage at level 1",
+          "changeType": "INCREASED",
+          "oldValue": "38–42",
+          "newValue": "42–46",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (damage at level 1)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Removed Bear With Me and Bear Necessities facets",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Removed Gift Bearer innate ability. Its effect is now a part of Summon Spirit Bear ability",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Summon Spirit Bear",
+          "rawNote": "Moved to an innate ability. Cannot be leveled up",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 1342
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Summon Spirit Bear",
+          "rawNote": "Ability is moved to the 4th ability slot ",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 1342
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Summon Spirit Bear",
+          "rawNote": "Spirit Bear now counts as a melee hero for most spells",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 1342
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Summon Spirit Bear",
+          "rawNote": "Since the bear is now a hero, all unit-related changes moved to a separate Spirit Bear section below. This section is for the summon ability changes only",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 1342
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Summon Spirit Bear",
+          "rawNote": "Cooldown decreased from 150/140/130/120s to 120s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "150/140/130/120s",
+          "newValue": "120s",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 1342
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Entangle",
+          "rawNote": "New Point Targeted basic ability",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 1684
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Entangle",
+          "rawNote": "Allows Lone Druid to Entangle enemies once they gain 5 stacks of this ability. Entangled enemies are unable to move for 1.2/1.6/2/2.4s and take 60/70/80/90 damage per second. When cast, applies 2 stacks to each enemy hero in the area and 5 stacks to enemy creeps, and also empowers Lone Druid for 10 seconds, making him apply 1 stack with each attack on enemy heroes. Enemies are protected from gaining new stacks while they're already Entangled. Radius: 350. Stack Duration: 10s. Cast Range: 700. Mana Cost: 60. Cooldown: 24/22/20/18s",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 1684
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Entangle",
+          "rawNote": "Pierces Debuff Immunity",
+          "indentLevel": 3,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 1684
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Entangle",
+          "rawNote": "Lone Druid's Empowered Buff and enemy stack counter debuff are undispellable, Entangled debuff is dispellable",
+          "indentLevel": 3,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 1684
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Entangle",
+          "rawNote": "Creeps can't gain stacks from either Lone Druid's and Spirit Bear's attacks, and are Entangled only on cast",
+          "indentLevel": 3,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 1684
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Entangle",
+          "rawNote": "Roshan is affected as if he were a hero",
+          "indentLevel": 4,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 1684
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Entangle",
+          "rawNote": "Spirit Bear's Entangling Claws reworked. Now it levels up with this ability and passively provides empowered attacks at all times",
+          "indentLevel": 3,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 1684
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Entangle",
+          "rawNote": "Upgraded with Aghanim's Scepter",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 1684
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Entangle",
+          "rawNote": "Increases radius to 450 and hero stacks on cast to 5, instantly Entangling them. Also removes stack protection from Entangled enemies",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 1684
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Spirit Link",
+          "rawNote": "No longer grants attack speed or shared armor",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 7309
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Spirit Link",
+          "rawNote": "Now also passively grants +10/20/30/40 movement speed to Lone Druid and +20/40/60/80 to his Spirit Bear",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 7309
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Spirit Link",
+          "rawNote": "Lone Druid's attacks now heal the Spirit Bear by default",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 7309
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Spirit Link",
+          "rawNote": "No longer upgraded with Aghanim's Scepter",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 7309
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "True Form",
+          "rawNote": "Mana Cost decreased from 200 to 80",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "DECREASED",
+          "oldValue": "200",
+          "newValue": "80",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 5415
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a negative metric (mana cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "True Form",
+          "rawNote": "Duration decreased from 40s to 25s",
+          "indentLevel": 1,
+          "metric": "Duration",
+          "changeType": "DECREASED",
+          "oldValue": "40s",
+          "newValue": "25s",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 5415
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "True Form",
+          "rawNote": "Cooldown decreased from 100s to 60/55/50s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "100s",
+          "newValue": "60/55/50s",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 5415
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "True Form",
+          "rawNote": "No longer grants Entangling Claws and Demolish to Lone Druid",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 5415
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "True Form",
+          "rawNote": "Now also provides 50/90/130 bonus attack damage",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 5415
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "True Form",
+          "rawNote": "Bonus Armor increased from 8/10/12 to 10/15/20",
+          "indentLevel": 1,
+          "metric": "Bonus Armor",
+          "changeType": "INCREASED",
+          "oldValue": "8/10/12",
+          "newValue": "10/15/20",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 5415
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (bonus armor)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent +30 Spirit Bear Movement Speed replaced with +15 Entangle Root Damage Per Second",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent +30 Spirit Bear Movement Speed",
+          "changeType": "REWORK",
+          "newValue": "+15 Entangle Root Damage Per Second",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent +200 Health replaced with -25s Summon Spirit Bear Cooldown",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent +200 Health",
+          "changeType": "REWORK",
+          "newValue": "-25s Summon Spirit Bear Cooldown",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent +7 Spirit Bear Armor replaced with +12 Agility",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent +7 Spirit Bear Armor",
+          "changeType": "REWORK",
+          "newValue": "+12 Agility",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent +30 Entangling Claws DPS replaced with +55 Attack Speed",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent +30 Entangling Claws DPS",
+          "changeType": "REWORK",
+          "newValue": "+55 Attack Speed",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent +45 Spirit Link Attack Speed replaced with +0.6s Entangle Root Duration (also affects Spirit Bear's Entangling Claws)",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent +45 Spirit Link Attack Speed",
+          "changeType": "REWORK",
+          "newValue": "+0.6s Entangle Root Duration (also affects Spirit Bear's Entangling Claws)",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent -50s True Form Cooldown replaced with True Form provides 60% Slow Resistance",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent -50s True Form Cooldown",
+          "changeType": "REWORK",
+          "newValue": "True Form provides 60% Slow Resistance",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -2,
+        "laning": 1,
+        "siege": 0,
+        "utility": -9
+      },
+      "winrates": {
+        "HERALD": {
+          "winrate": 0.4371,
+          "matchCount": 15620
+        },
+        "GUARDIAN": {
+          "winrate": 0.4267,
+          "matchCount": 33788
+        },
+        "CRUSADER": {
+          "winrate": 0.4159,
+          "matchCount": 37190
+        },
+        "ARCHON": {
+          "winrate": 0.4113,
+          "matchCount": 35662
+        },
+        "LEGEND": {
+          "winrate": 0.4004,
+          "matchCount": 28641
+        },
+        "ANCIENT": {
+          "winrate": 0.39,
+          "matchCount": 18224
+        },
+        "DIVINE": {
+          "winrate": 0.3911,
+          "matchCount": 10690
+        }
+      }
+    },
+    {
+      "version": "7.40b",
+      "date": "2026-06-10T19:47:36.357Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Base Strength increased from 18 to 20",
+          "indentLevel": 1,
+          "metric": "Base Strength",
+          "changeType": "INCREASED",
+          "oldValue": "18",
+          "newValue": "20",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base strength)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Base Movement Speed increased from 295 to 300",
+          "indentLevel": 1,
+          "metric": "Base Movement Speed",
+          "changeType": "INCREASED",
+          "oldValue": "295",
+          "newValue": "300",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 8,
+              "Ancient": 9,
+              "Divine": 9
+            },
+            "reasoning": "Increased a positive metric (base movement speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Entangle",
+          "rawNote": "Root Damage per second increased from 60/70/80/90 to 90",
+          "indentLevel": 1,
+          "metric": "Root Damage per second",
+          "changeType": "INCREASED",
+          "oldValue": "60/70/80/90",
+          "newValue": "90",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 1684
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (root damage per second)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Entangle",
+          "rawNote": "Cooldown decreased from 24/22/20/18s to 20/19/18/17s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "24/22/20/18s",
+          "newValue": "20/19/18/17s",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 1684
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Savage Roar",
+          "rawNote": "Cooldown decreased from 38/32/26/20s to 29/26/23/20s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "38/32/26/20s",
+          "newValue": "29/26/23/20s",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 5414
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent Entangle Root Damage Per Second increased from +15 to +20",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent Entangle Root Damage Per Second",
+          "changeType": "INCREASED",
+          "oldValue": "+15",
+          "newValue": "+20",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (level 10 talent entangle root damage per second)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 3,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.40c",
+      "date": "2026-06-10T19:47:36.369Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Base Agility increased from 20 to 22",
+          "indentLevel": 1,
+          "metric": "Base Agility",
+          "changeType": "INCREASED",
+          "oldValue": "20",
+          "newValue": "22",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base agility)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Damage at level 1 increased from 42–46 to 44–48",
+          "indentLevel": 1,
+          "metric": "Damage at level 1",
+          "changeType": "INCREASED",
+          "oldValue": "42–46",
+          "newValue": "44–48",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (damage at level 1)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Savage Roar",
+          "rawNote": "Duration increased from 0.8/1.2/1.6/2s to 1.1/1.4/1.7/2s",
+          "indentLevel": 1,
+          "metric": "Duration",
+          "changeType": "INCREASED",
+          "oldValue": "0.8/1.2/1.6/2s",
+          "newValue": "1.1/1.4/1.7/2s",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 5414
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Slow Resistance during True Form increased from 60% to 70%",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Slow Resistance during True Form",
+          "changeType": "INCREASED",
+          "oldValue": "60%",
+          "newValue": "70%",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 5,
+        "laning": 0,
+        "siege": 0,
+        "utility": 10
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.41",
+      "date": "2026-06-10T19:47:36.404Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Attack projectile speed increased from 900 to 1125",
+          "indentLevel": 1,
+          "metric": "Attack projectile speed",
+          "changeType": "INCREASED",
+          "oldValue": "900",
+          "newValue": "1125",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (attack projectile speed)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.41c",
+      "date": "2026-06-10T19:47:36.456Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Summon Spirit Bear",
+          "rawNote": "Mana Cost increased from 75 to 100",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "INCREASED",
+          "oldValue": "75",
+          "newValue": "100",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 1342
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Increased a negative metric (mana cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Spirit Link",
+          "rawNote": "Shared Lifesteal now follows general lifesteal rules and has a creep penalty of 40%",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 7309
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Savage Roar",
+          "rawNote": "Aghanim's Shard buff duration decreased from 5s to 4s",
+          "indentLevel": 1,
+          "metric": "Aghanim's Shard buff duration",
+          "changeType": "DECREASED",
+          "oldValue": "5s",
+          "newValue": "4s",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 5414
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (aghanim's shard buff duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Savage Roar",
+          "rawNote": "Aghanim's Shard bonus movement speed decreased from 15% to 10%",
+          "indentLevel": 1,
+          "metric": "Aghanim's Shard bonus movement speed",
+          "changeType": "DECREASED",
+          "oldValue": "15%",
+          "newValue": "10%",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 5414
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 8,
+              "Ancient": 9,
+              "Divine": 9
+            },
+            "reasoning": "Decreased a positive metric (aghanim's shard bonus movement speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent -25s Summon Spirit Bear Cooldown replaced with +5s True Form Duration",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent -25s Summon Spirit Bear Cooldown",
+          "changeType": "REWORK",
+          "newValue": "+5s True Form Duration",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": -1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": -1,
+        "siege": 0,
+        "utility": -1
+      },
+      "winrates": {}
+    }
+  ]
+}

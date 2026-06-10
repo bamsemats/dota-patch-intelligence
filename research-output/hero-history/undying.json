@@ -1,0 +1,1122 @@
+{
+  "name": "Undying",
+  "history": [
+    {
+      "version": "7.33e",
+      "date": "2026-06-10T19:47:35.914Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "rawNote": "Base Health Regen decreased from 0.25 to -0.25 (+1.9 HP Regen at Lvl 1)",
+          "indentLevel": 1,
+          "metric": "Base Health Regen",
+          "changeType": "DECREASED",
+          "oldValue": "0.25",
+          "newValue": "-0.25 (+1.9 HP Regen at Lvl 1)",
+          "metadata": {
+            "entityId": 85
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "reasoning": "Decreased a positive metric (base health regen)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Tombstone",
+          "rawNote": "Aghanim's Shard now allows Tombstone to be unit targeted on cast. If cast on an allied hero, they will be automatically bunkered",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 5444
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Tombstone",
+          "rawNote": "Aghanim's Shard no longer grants the Grab Ally ability to neither Undying nor the Tombstone. Allies still can right-click the Tombstone to get inside",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 5444
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.34",
+      "date": "2026-06-10T19:47:35.954Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "rawNote": "Base Damage decreased by 4",
+          "indentLevel": 1,
+          "metric": "Base Damage",
+          "changeType": "DECREASED",
+          "newValue": "4",
+          "metadata": {
+            "entityId": 85
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Decay",
+          "rawNote": "Cooldown increased from 10/8/6/4s to 13/10/7/4s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "INCREASED",
+          "oldValue": "10/8/6/4s",
+          "newValue": "13/10/7/4s",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 5442
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Soul Rip",
+          "rawNote": "Mana Cost decreased from 120 to 110",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "DECREASED",
+          "oldValue": "120",
+          "newValue": "110",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 5443
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a negative metric (mana cost)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -1.5,
+        "laning": 1,
+        "siege": 0,
+        "utility": 1
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.34b",
+      "date": "2026-06-10T19:47:35.978Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "rawNote": "Heroes inside the tombstone (with Aghanim's Shard) are now stunned for 3s if it gets destroyed",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 85
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Flesh Golem",
+          "rawNote": "Bonus Movespeed decreased from 30/40/50 to 20/30/40",
+          "indentLevel": 1,
+          "metric": "Bonus Movespeed",
+          "changeType": "DECREASED",
+          "oldValue": "30/40/50",
+          "newValue": "20/30/40",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 5447
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (bonus movespeed)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.34c",
+      "date": "2026-06-10T19:47:35.995Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Tombstone",
+          "rawNote": "Tombstone Vision Range decreased from 1500 to 1200 on all levels",
+          "indentLevel": 1,
+          "metric": "Tombstone Vision Range",
+          "changeType": "DECREASED",
+          "oldValue": "1500",
+          "newValue": "1200 on all levels",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 5444
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (tombstone vision range)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.36",
+      "date": "2026-06-10T19:47:36.091Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Tombstone",
+          "rawNote": "Zombie vision range decreased from 1400 to 900",
+          "indentLevel": 1,
+          "metric": "Zombie vision range",
+          "changeType": "DECREASED",
+          "oldValue": "1400",
+          "newValue": "900",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 5444
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (zombie vision range)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Tombstone",
+          "rawNote": "Mana Cost increased from 120/140/160/180 to 125/150/175/200",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "INCREASED",
+          "oldValue": "120/140/160/180",
+          "newValue": "125/150/175/200",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 5444
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Increased a negative metric (mana cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Tombstone",
+          "rawNote": "Aghanim's Shard time restraint to leave or re-enter decreased from 3s to 2s",
+          "indentLevel": 1,
+          "metric": "Aghanim's Shard time restraint to leave or re-enter",
+          "changeType": "DECREASED",
+          "oldValue": "3s",
+          "newValue": "2s",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 5444
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Flesh Golem",
+          "rawNote": "Slow Duration decreased from 4s to 3s",
+          "indentLevel": 1,
+          "metric": "Slow Duration",
+          "changeType": "DECREASED",
+          "oldValue": "4s",
+          "newValue": "3s",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 5447
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (slow duration)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": -1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": -1,
+        "siege": 0,
+        "utility": -1
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.36b",
+      "date": "2026-06-10T19:47:36.122Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Decay",
+          "rawNote": "Steal Duration decreased from 40s to 35s",
+          "indentLevel": 1,
+          "metric": "Steal Duration",
+          "changeType": "DECREASED",
+          "oldValue": "40s",
+          "newValue": "35s",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 5442
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (steal duration)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.37",
+      "date": "2026-06-10T19:47:36.160Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Ceaseless Dirge",
+          "rawNote": "Can no longer be refreshed",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 1360
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Tombstone",
+          "rawNote": "Cooldown rescaled from 90/85/80/75s to 80s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "RESCALE",
+          "oldValue": "90/85/80/75s",
+          "newValue": "80s",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 5444
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Flesh Golem",
+          "rawNote": "Slow decreased from 40/45/50% to 35/40/45%",
+          "indentLevel": 1,
+          "metric": "Slow",
+          "changeType": "DECREASED",
+          "oldValue": "40/45/50%",
+          "newValue": "35/40/45%",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 5447
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Flesh Golem Strength Bonus decreased from +60% to +50%",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Flesh Golem Strength Bonus",
+          "changeType": "DECREASED",
+          "oldValue": "+60%",
+          "newValue": "+50%",
+          "metadata": {
+            "entityId": 85
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (level 25 talent flesh golem strength bonus)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.37e",
+      "date": "2026-06-10T19:47:36.218Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Decay",
+          "rawNote": "Base Damage increased from 0/40/80/120 to 10/50/90/130",
+          "indentLevel": 1,
+          "metric": "Base Damage",
+          "changeType": "INCREASED",
+          "oldValue": "0/40/80/120",
+          "newValue": "10/50/90/130",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 5442
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base damage)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.38",
+      "date": "2026-06-10T19:47:36.249Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Decay",
+          "rawNote": "Damage increased from 10/50/90/130 to 20/60/100/140",
+          "indentLevel": 1,
+          "metric": "Damage",
+          "changeType": "INCREASED",
+          "oldValue": "10/50/90/130",
+          "newValue": "20/60/100/140",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 5442
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Soul Rip",
+          "rawNote": "Mana Cost rescaled from 100 to 80/90/100/110",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "RESCALE",
+          "oldValue": "100",
+          "newValue": "80/90/100/110",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 5443
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Flesh Golem",
+          "rawNote": "Slow decreased from 35/40/45% to 30/35/40%",
+          "indentLevel": 1,
+          "metric": "Slow",
+          "changeType": "DECREASED",
+          "oldValue": "35/40/45%",
+          "newValue": "30/35/40%",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 5447
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent Decay Damage decreased from +50 to +40",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent Decay Damage",
+          "changeType": "DECREASED",
+          "oldValue": "+50",
+          "newValue": "+40",
+          "metadata": {
+            "entityId": 85
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (level 10 talent decay damage)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 8,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 8,
+        "laning": 8,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.39c",
+      "date": "2026-06-10T19:47:36.295Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Flesh Golem",
+          "rawNote": "Bonus Movespeed decreased from 20/30/40 to 20",
+          "indentLevel": 1,
+          "metric": "Bonus Movespeed",
+          "changeType": "DECREASED",
+          "oldValue": "20/30/40",
+          "newValue": "20",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 5447
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (bonus movespeed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Tombstone on Death replaced with to +4 Tombstone Attacks to Destroy",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Tombstone on Death",
+          "changeType": "REWORK",
+          "newValue": "to +4 Tombstone Attacks to Destroy",
+          "metadata": {
+            "entityId": 85
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent +6 Tombstone Attacks to Destroy replaced with Tombstone on Death",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent +6 Tombstone Attacks to Destroy",
+          "changeType": "REWORK",
+          "newValue": "Tombstone on Death",
+          "metadata": {
+            "entityId": 85
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.40",
+      "date": "2026-06-10T19:47:36.336Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Soul Rip",
+          "rawNote": "Cooldown decreased from 18/14/10/6s to 15/12/9/6s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "18/14/10/6s",
+          "newValue": "15/12/9/6s",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 5443
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent Soul Rip Damage/Heal increased from +10 to +12",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent Soul Rip Damage/Heal",
+          "changeType": "INCREASED",
+          "oldValue": "+10",
+          "newValue": "+12",
+          "metadata": {
+            "entityId": 85
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (level 15 talent soul rip damage/heal)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 1.5,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {
+        "HERALD": {
+          "winrate": 0.5021,
+          "matchCount": 43401
+        },
+        "GUARDIAN": {
+          "winrate": 0.5105,
+          "matchCount": 96051
+        },
+        "CRUSADER": {
+          "winrate": 0.5154,
+          "matchCount": 102563
+        },
+        "ARCHON": {
+          "winrate": 0.5222,
+          "matchCount": 87901
+        },
+        "LEGEND": {
+          "winrate": 0.5222,
+          "matchCount": 60658
+        },
+        "ANCIENT": {
+          "winrate": 0.5215,
+          "matchCount": 35169
+        },
+        "DIVINE": {
+          "winrate": 0.5303,
+          "matchCount": 20134
+        }
+      }
+    },
+    {
+      "version": "7.41",
+      "date": "2026-06-10T19:47:36.405Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "rawNote": "Base Agility increased from 10 to 13",
+          "indentLevel": 1,
+          "metric": "Base Agility",
+          "changeType": "INCREASED",
+          "oldValue": "10",
+          "newValue": "13",
+          "metadata": {
+            "entityId": 85
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base agility)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "rawNote": "Base Armor decreased by 1",
+          "indentLevel": 1,
+          "metric": "Base Armor",
+          "changeType": "DECREASED",
+          "newValue": "1",
+          "metadata": {
+            "entityId": 85
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (base armor)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Flesh Golem",
+          "rawNote": "Attacks now spawn the current level of Tombstone Zombie",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 5447
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.41d",
+      "date": "2026-06-10T19:47:36.482Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "rawNote": "Base Mana Regen increased by 0.25",
+          "indentLevel": 1,
+          "metric": "Base Mana Regen",
+          "changeType": "INCREASED",
+          "newValue": "0.25",
+          "metadata": {
+            "entityId": 85
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (base mana regen)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {
+        "HERALD": {
+          "winrate": 0.5049,
+          "matchCount": 6304
+        },
+        "GUARDIAN": {
+          "winrate": 0.5097,
+          "matchCount": 12904
+        },
+        "CRUSADER": {
+          "winrate": 0.5098,
+          "matchCount": 13530
+        },
+        "ARCHON": {
+          "winrate": 0.5097,
+          "matchCount": 10985
+        },
+        "LEGEND": {
+          "winrate": 0.5081,
+          "matchCount": 7378
+        },
+        "ANCIENT": {
+          "winrate": 0.4994,
+          "matchCount": 4407
+        },
+        "DIVINE": {
+          "winrate": 0.5215,
+          "matchCount": 2675
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1609 @@
+{
+  "name": "Luna",
+  "history": [
+    {
+      "version": "7.34",
+      "date": "2026-06-10T19:47:35.940Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Lucent Beam",
+          "rawNote": "Aghanim's Shard Upgrade removed",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 5222
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Moon Glaives",
+          "rawNote": "Now upgradable by Aghanim's Shard",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 5223
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Moon Glaives",
+          "rawNote": "When activated, creates 4 Moon Glaives that rotate around Luna in a 150 radius for 6 seconds, reducing any damage she takes by 20%. If the glaive collides with an enemy unit, it deals 75% of Luna's attack damage once per its revolution. Cooldown: 25s; Mana Cost: 25",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 5223
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.34b",
+      "date": "2026-06-10T19:47:35.973Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Moon Glaives",
+          "rawNote": "Aghanim's Shard Orbit Radius increased from 150 to 175",
+          "indentLevel": 1,
+          "metric": "Aghanim's Shard Orbit Radius",
+          "changeType": "INCREASED",
+          "oldValue": "150",
+          "newValue": "175",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 5223
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5.5,
+              "Guardian": 4.5,
+              "Crusader": 5,
+              "Archon": 4.5,
+              "Legend": 5,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "reasoning": "Increased a positive metric (aghanim's shard orbit radius)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Moon Glaives",
+          "rawNote": "Aghanim's Shard Collision Radius increased from 90 to 115",
+          "indentLevel": 1,
+          "metric": "Aghanim's Shard Collision Radius",
+          "changeType": "INCREASED",
+          "oldValue": "90",
+          "newValue": "115",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 5223
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5.5,
+              "Guardian": 4.5,
+              "Crusader": 5,
+              "Archon": 4.5,
+              "Legend": 5,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "reasoning": "Increased a positive metric (aghanim's shard collision radius)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Eclipse",
+          "rawNote": "Cooldown decreased from 140/130/120s to 110s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "140/130/120s",
+          "newValue": "110s",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 5225
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 1.5,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.34d",
+      "date": "2026-06-10T19:47:36.016Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Moon Glaives",
+          "rawNote": "Damage Reduction per bounce from decreased 56/50/44/38% to 50/45/40/35%",
+          "indentLevel": 1,
+          "metric": "Damage Reduction per bounce from",
+          "changeType": "DECREASED",
+          "oldValue": "56/50/44/38%",
+          "newValue": "50/45/40/35%",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 5223
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (damage reduction per bounce from)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Moon Glaives",
+          "rawNote": "Aghanim's Shard Self Damage Reduction increased from 20% to 25%",
+          "indentLevel": 1,
+          "metric": "Aghanim's Shard Self Damage Reduction",
+          "changeType": "INCREASED",
+          "oldValue": "20%",
+          "newValue": "25%",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 5223
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (aghanim's shard self damage reduction)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Moon Glaives",
+          "rawNote": "Aghanim's Shard Buff Duration increased from 6s to 7s",
+          "indentLevel": 1,
+          "metric": "Aghanim's Shard Buff Duration",
+          "changeType": "INCREASED",
+          "oldValue": "6s",
+          "newValue": "7s",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 5223
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (aghanim's shard buff duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent Eclipse Cooldown Reduction increased from 25s to 30s",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent Eclipse Cooldown Reduction",
+          "changeType": "INCREASED",
+          "oldValue": "25s",
+          "newValue": "30s",
+          "metadata": {
+            "entityId": 48
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a negative metric (level 15 talent eclipse cooldown reduction)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.36",
+      "date": "2026-06-10T19:47:36.083Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Moon Glaives",
+          "rawNote": "Bounces decreased from 3/4/5/6 to 2/3/4/5",
+          "indentLevel": 1,
+          "metric": "Bounces",
+          "changeType": "DECREASED",
+          "oldValue": "3/4/5/6",
+          "newValue": "2/3/4/5",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 5223
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Moon Glaives",
+          "rawNote": "Now can be activated without Aghanim's Shard. Damage on Collision is 20% of Luna's attack. Glaives Count decreased from 4 to 3. Duration is unchanged: 7s. Mana Cost increased from 25 to 75. Cooldown increased from 25s to 30s",
+          "indentLevel": 1,
+          "metric": "Now can be activated without Aghanim's Shard. Damage on Collision is 20% of Luna's attack. Glaives Count",
+          "changeType": "DECREASED",
+          "oldValue": "4",
+          "newValue": "3. Duration is unchanged: 7s. Mana Cost increased from 25 to 75. Cooldown increased from 25s to 30s",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 5223
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (now can be activated without aghanim's shard. damage on collision is 20% of luna's attack. glaives count)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Moon Glaives",
+          "rawNote": "Aghanim's Shard now increases rotating glaive count by 1 and damage on collision by 20%",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 5223
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Lunar Blessing",
+          "rawNote": "Night Vision increased from 250/500/750/1000 to 400/600/800/1000",
+          "indentLevel": 1,
+          "metric": "Night Vision",
+          "changeType": "INCREASED",
+          "oldValue": "250/500/750/1000",
+          "newValue": "400/600/800/1000",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 5224
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent Lucent Beam Ministun increased from +0.3s to +0.4s",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent Lucent Beam Ministun",
+          "changeType": "INCREASED",
+          "oldValue": "+0.3s",
+          "newValue": "+0.4s",
+          "metadata": {
+            "entityId": 48
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent Eclipse Cooldown Reduction increased from 30s to 40s",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent Eclipse Cooldown Reduction",
+          "changeType": "INCREASED",
+          "oldValue": "30s",
+          "newValue": "40s",
+          "metadata": {
+            "entityId": 48
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a negative metric (level 15 talent eclipse cooldown reduction)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent -2s Lucent Beam Cooldown replaced with +80 Lucent Beam Damage",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent -2s Lucent Beam Cooldown",
+          "changeType": "REWORK",
+          "newValue": "+80 Lucent Beam Damage",
+          "metadata": {
+            "entityId": 48
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent +100 Lucent Beam Damage replaced with -2s Lucent Beam Cooldown",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent +100 Lucent Beam Damage",
+          "changeType": "REWORK",
+          "newValue": "-2s Lucent Beam Cooldown",
+          "metadata": {
+            "entityId": 48
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent 0.25s Eclipse Ministun replaced with Lucent Beam Hits additional Target (within 500 radius)",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent 0.25s Eclipse Ministun",
+          "changeType": "REWORK",
+          "newValue": "Lucent Beam Hits additional Target (within 500 radius)",
+          "metadata": {
+            "entityId": 48
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.37",
+      "date": "2026-06-10T19:47:36.154Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "rawNote": "Selemene's Favor: Ability removed",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 48
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Lunar Blessing",
+          "rawNote": "Moved to innate ability. Can no longer be leveled",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 5224
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Lunar Blessing",
+          "rawNote": "Grants 1 attack damage per level to Luna and allied heroes, and 400 bonus night vision + 20 per level to Luna only. Luna receives double the attack damage bonuses. At night, Lunar Blessing is global",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 5224
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Lunar Orbit",
+          "rawNote": "New basic ability. Creates 4 glaives that rotate in a 250 radius around Luna. Any enemy unit that collides with a glaive takes a percentage of Luna's attack damage. Collision Radius: 150. Collision Damage: 20/25/30/35%. Duration: 5/6/7/8s. Mana Cost: 65/70/75/80. Cooldown: 40/35/30/25s",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 1462
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Lunar Orbit",
+          "rawNote": "Now upgraded with Aghanim's Shard. Increases collision damage by 15%. Glaives also rotate 50% faster (160 to 240)",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 1462
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Moon Glaives",
+          "rawNote": "Can no longer be activated. Rotating glaives moved to Lunar Orbit ability",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 5223
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Moon Glaives",
+          "rawNote": "Aghanim's Shard upgrade removed",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 5223
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Moon Glaives",
+          "rawNote": "Bounces increased from 2/3/4/5 to 3/4/5/6",
+          "indentLevel": 1,
+          "metric": "Bounces",
+          "changeType": "INCREASED",
+          "oldValue": "2/3/4/5",
+          "newValue": "3/4/5/6",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 5223
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent +20 Lunar Blessing Damage replaced with +1 Lunar Blessing Damage Per Level",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent +20 Lunar Blessing Damage",
+          "changeType": "REWORK",
+          "newValue": "+1 Lunar Blessing Damage Per Level",
+          "metadata": {
+            "entityId": 48
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.37d",
+      "date": "2026-06-10T19:47:36.195Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Lucent Beam",
+          "rawNote": "Beam Damage decreased from 80/160/240/320 to 75/150/225/300",
+          "indentLevel": 1,
+          "metric": "Beam Damage",
+          "changeType": "DECREASED",
+          "oldValue": "80/160/240/320",
+          "newValue": "75/150/225/300",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 5222
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (beam damage)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.37e",
+      "date": "2026-06-10T19:47:36.213Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Lunar Blessing",
+          "rawNote": "Bonus Night Vision rescaled from 400 + 20 per level to 250 + 25 per level",
+          "indentLevel": 1,
+          "metric": "Bonus Night Vision",
+          "changeType": "RESCALE",
+          "oldValue": "400 + 20 per level",
+          "newValue": "250 + 25 per level",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 5224
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent Moon Glaives Damage Penalty Reduction decreased from 8% to 5%",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent Moon Glaives Damage Penalty Reduction",
+          "changeType": "DECREASED",
+          "oldValue": "8%",
+          "newValue": "5%",
+          "metadata": {
+            "entityId": 48
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a negative metric (level 10 talent moon glaives damage penalty reduction)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent +80 Lucent Beam Damage replaced with +1 Lunar Orbit glaive",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent +80 Lucent Beam Damage",
+          "changeType": "REWORK",
+          "newValue": "+1 Lunar Orbit glaive",
+          "metadata": {
+            "entityId": 48
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent 2 Moon Glaives fired on Lucent Beam replaced with +110 Lucent Beam Damage",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent 2 Moon Glaives fired on Lucent Beam",
+          "changeType": "REWORK",
+          "newValue": "+110 Lucent Beam Damage",
+          "metadata": {
+            "entityId": 48
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.38",
+      "date": "2026-06-10T19:47:36.240Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Lunar Orbit",
+          "rawNote": "Collision Damage increased from 20/25/30/35% to 22/28/34/40%",
+          "indentLevel": 1,
+          "metric": "Collision Damage",
+          "changeType": "INCREASED",
+          "oldValue": "20/25/30/35%",
+          "newValue": "22/28/34/40%",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 1462
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (collision damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Lunar Orbit",
+          "rawNote": "Collision Radius increased from 150 to 175",
+          "indentLevel": 1,
+          "metric": "Collision Radius",
+          "changeType": "INCREASED",
+          "oldValue": "150",
+          "newValue": "175",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 1462
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5.5,
+              "Guardian": 4.5,
+              "Crusader": 5,
+              "Archon": 4.5,
+              "Legend": 5,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "reasoning": "Increased a positive metric (collision radius)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Lunar Orbit",
+          "rawNote": "Improved Glaive collision behavior for orbiting Glaives",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 1462
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Lunar Orbit",
+          "rawNote": "Aghanim's Shard Collision Damage Bonus increased from +15% to +20% ",
+          "indentLevel": 1,
+          "metric": "Aghanim's Shard Collision Damage Bonus",
+          "changeType": "INCREASED",
+          "oldValue": "+15%",
+          "newValue": "+20%",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 1462
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (aghanim's shard collision damage bonus)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.38c",
+      "date": "2026-06-10T19:47:36.273Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Moon Glaives",
+          "rawNote": "No longer bounce to attack-immune targets",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 5223
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.40",
+      "date": "2026-06-10T19:47:36.329Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Lunar Orbit",
+          "rawNote": "Collision Damage increased from 22/28/34/40% to 28/32/36/40%",
+          "indentLevel": 1,
+          "metric": "Collision Damage",
+          "changeType": "INCREASED",
+          "oldValue": "22/28/34/40%",
+          "newValue": "28/32/36/40%",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 1462
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (collision damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Lunar Orbit",
+          "rawNote": "Formation time decreased from 1.2s to 0.9s",
+          "indentLevel": 1,
+          "metric": "Formation time",
+          "changeType": "DECREASED",
+          "oldValue": "1.2s",
+          "newValue": "0.9s",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 1462
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Lunar Orbit",
+          "rawNote": "Rotation Radius decreased from 250 to 225",
+          "indentLevel": 1,
+          "metric": "Rotation Radius",
+          "changeType": "DECREASED",
+          "oldValue": "250",
+          "newValue": "225",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 1462
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5.5,
+              "Guardian": 4.5,
+              "Crusader": 5,
+              "Archon": 4.5,
+              "Legend": 5,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "reasoning": "Decreased a positive metric (rotation radius)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Lunar Orbit",
+          "rawNote": "Collision Radius increased from 175 to 200",
+          "indentLevel": 1,
+          "metric": "Collision Radius",
+          "changeType": "INCREASED",
+          "oldValue": "175",
+          "newValue": "200",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 1462
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5.5,
+              "Guardian": 4.5,
+              "Crusader": 5,
+              "Archon": 4.5,
+              "Legend": 5,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "reasoning": "Increased a positive metric (collision radius)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent -40s Eclipse Cooldown replaced with +80 Lucent Beam Damage",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent -40s Eclipse Cooldown",
+          "changeType": "REWORK",
+          "newValue": "+80 Lucent Beam Damage",
+          "metadata": {
+            "entityId": 48
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent +110 Lucent Beam Damage replaced with -40s Eclipse Cooldown",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent +110 Lucent Beam Damage",
+          "changeType": "REWORK",
+          "newValue": "-40s Eclipse Cooldown",
+          "metadata": {
+            "entityId": 48
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent +1 Lunar Blessing Damage per Level replaced with +30 Lunar Blessing Damage",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent +1 Lunar Blessing Damage per Level",
+          "changeType": "REWORK",
+          "newValue": "+30 Lunar Blessing Damage",
+          "metadata": {
+            "entityId": 48
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {
+        "HERALD": {
+          "winrate": 0.5158,
+          "matchCount": 46590
+        },
+        "GUARDIAN": {
+          "winrate": 0.512,
+          "matchCount": 84779
+        },
+        "CRUSADER": {
+          "winrate": 0.5083,
+          "matchCount": 82889
+        },
+        "ARCHON": {
+          "winrate": 0.5084,
+          "matchCount": 72753
+        },
+        "LEGEND": {
+          "winrate": 0.5024,
+          "matchCount": 52660
+        },
+        "ANCIENT": {
+          "winrate": 0.5,
+          "matchCount": 31326
+        },
+        "DIVINE": {
+          "winrate": 0.4953,
+          "matchCount": 17899
+        }
+      }
+    },
+    {
+      "version": "7.41",
+      "date": "2026-06-10T19:47:36.396Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Lunar Blessing",
+          "rawNote": "Damage for Allies/Self changed from 1/2 + 1/2 per level up to 1/2 per level ",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 5224
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Lunar Blessing",
+          "rawNote": "Bonus Night Vision changed from 250 + 25 per level up to 225 + 25 per level ",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 5224
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Lunar Orbit",
+          "rawNote": "Now applies 8/12/16/20% damage reduction while active",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 1462
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Lunar Orbit",
+          "rawNote": "Aghanim's Shard upgrade reworked",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 1462
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Lunar Orbit",
+          "rawNote": "Increases damage reduction by 10% and provides Luna with 20% bonus movement speed for the duration",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 1462
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent -2s Lucent Beam Cooldown replaced with 1.5x Lunar Orbit Damage / Speed",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent -2s Lucent Beam Cooldown",
+          "changeType": "REWORK",
+          "newValue": "1.5x Lunar Orbit Damage / Speed",
+          "metadata": {
+            "entityId": 48
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Lunar Blessing Allied/Self Damage decreased from +30/60 to +25/50",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Lunar Blessing Allied/Self Damage",
+          "changeType": "DECREASED",
+          "oldValue": "+30/60",
+          "newValue": "+25/50",
+          "metadata": {
+            "entityId": 48
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (level 25 talent lunar blessing allied/self damage)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    }
+  ]
+}

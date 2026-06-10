@@ -1,0 +1,1333 @@
+{
+  "name": "Disruptor",
+  "history": [
+    {
+      "version": "7.33d",
+      "date": "2026-06-10T19:47:35.905Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "rawNote": "Base Damage decreased by 2",
+          "indentLevel": 1,
+          "metric": "Base Damage",
+          "changeType": "DECREASED",
+          "newValue": "2",
+          "metadata": {
+            "entityId": 87
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Thunder Strike",
+          "rawNote": "Strike Damage rescaled from 35/60/85/110 to 25/55/85/115",
+          "indentLevel": 1,
+          "metric": "Strike Damage",
+          "changeType": "RESCALE",
+          "oldValue": "35/60/85/110",
+          "newValue": "25/55/85/115",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 5458
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.34",
+      "date": "2026-06-10T19:47:35.955Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Thunder Strike",
+          "rawNote": "If the target is trapped inside the Kinetic Field, Thunder Strike now hits all other enemies inside the field",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 5458
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent +100 Thunder Strike Radius replaced with +10 Thunder Strike Damage per Strike",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent +100 Thunder Strike Radius",
+          "changeType": "REWORK",
+          "newValue": "+10 Thunder Strike Damage per Strike",
+          "metadata": {
+            "entityId": 87
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.35d",
+      "date": "2026-06-10T19:47:36.059Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Thunder Strike",
+          "rawNote": "Slow Duration increased from 0.1/0.2/0.3/0.4s to 0.4s",
+          "indentLevel": 1,
+          "metric": "Slow Duration",
+          "changeType": "INCREASED",
+          "oldValue": "0.1/0.2/0.3/0.4s",
+          "newValue": "0.4s",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 5458
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (slow duration)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.36",
+      "date": "2026-06-10T19:47:36.092Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Thunder Strike",
+          "rawNote": "No longer has any Kinetic Field interactions by default",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 5458
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Thunder Strike",
+          "rawNote": "Aghanim's Shard bonus range decreased from 800 to 400",
+          "indentLevel": 1,
+          "metric": "Aghanim's Shard bonus range",
+          "changeType": "DECREASED",
+          "oldValue": "800",
+          "newValue": "400",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 5458
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (aghanim's shard bonus range)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Thunder Strike",
+          "rawNote": "Aghanim's Shard bonus strikes decreased from 2 to 1",
+          "indentLevel": 1,
+          "metric": "Aghanim's Shard bonus strikes",
+          "changeType": "DECREASED",
+          "oldValue": "2",
+          "newValue": "1",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 5458
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Thunder Strike",
+          "rawNote": "Aghanim's Shard Duration on the ground decreased from 7s to 5s",
+          "indentLevel": 1,
+          "metric": "Aghanim's Shard Duration on the ground",
+          "changeType": "DECREASED",
+          "oldValue": "7s",
+          "newValue": "5s",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 5458
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (aghanim's shard duration on the ground)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Glimpse",
+          "rawNote": "Max Damage rescaled from 125/175/225/275 to 100/160/220/280",
+          "indentLevel": 1,
+          "metric": "Max Damage",
+          "changeType": "RESCALE",
+          "oldValue": "125/175/225/275",
+          "newValue": "100/160/220/280",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 5459
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Kinetic Field",
+          "rawNote": "Cooldown increased from 20/17/14/11s to 20/18/16/14s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "INCREASED",
+          "oldValue": "20/17/14/11s",
+          "newValue": "20/18/16/14s",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 5460
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Static Storm Radius decreased from +200 to +150",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Static Storm Radius",
+          "changeType": "DECREASED",
+          "oldValue": "+200",
+          "newValue": "+150",
+          "metadata": {
+            "entityId": 87
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5.5,
+              "Guardian": 4.5,
+              "Crusader": 5,
+              "Archon": 4.5,
+              "Legend": 5,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "reasoning": "Decreased a positive metric (level 25 talent static storm radius)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -1.5,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.36a",
+      "date": "2026-06-10T19:47:36.107Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Glimpse",
+          "rawNote": "Can now be used on Lone Druid's Spirit Bear",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 5459
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.37",
+      "date": "2026-06-10T19:47:36.161Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Glimpse",
+          "rawNote": "Now deals 20/25/30/35% of the distance traveled as damage. Max damage remains 100/160/220/280",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 5459
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent +275 Glimpse Max Damage replaced with +10%/+280 Glimpse Distance To Damage/Max Damage",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent +275 Glimpse Max Damage",
+          "changeType": "REWORK",
+          "newValue": "+10%/+280 Glimpse Distance To Damage/Max Damage",
+          "metadata": {
+            "entityId": 87
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.37e",
+      "date": "2026-06-10T19:47:36.218Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent Glimpse Max Damage increased from 280 to 300",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent Glimpse Max Damage",
+          "changeType": "INCREASED",
+          "oldValue": "280",
+          "newValue": "300",
+          "metadata": {
+            "entityId": 87
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (level 15 talent glimpse max damage)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.38",
+      "date": "2026-06-10T19:47:36.249Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Thunder Strike",
+          "rawNote": "Radius increased from 240 to 260",
+          "indentLevel": 1,
+          "metric": "Radius",
+          "changeType": "INCREASED",
+          "oldValue": "240",
+          "newValue": "260",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 5458
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5.5,
+              "Guardian": 4.5,
+              "Crusader": 5,
+              "Archon": 4.5,
+              "Legend": 5,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "reasoning": "Increased a positive metric (radius)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent Thunder Strike Damage per Strike increased from +10 to +15",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent Thunder Strike Damage per Strike",
+          "changeType": "INCREASED",
+          "oldValue": "+10",
+          "newValue": "+15",
+          "metadata": {
+            "entityId": 87
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (level 10 talent thunder strike damage per strike)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent -3s Kinetic Field Cooldown replaced with +20 Movement Speed",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent -3s Kinetic Field Cooldown",
+          "changeType": "REWORK",
+          "newValue": "+20 Movement Speed",
+          "metadata": {
+            "entityId": 87
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Thunder Strike Slow Duration increased from +0.5s to +0.6s",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Thunder Strike Slow Duration",
+          "changeType": "INCREASED",
+          "oldValue": "+0.5s",
+          "newValue": "+0.6s",
+          "metadata": {
+            "entityId": 87
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (level 20 talent thunder strike slow duration)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 6,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.39b",
+      "date": "2026-06-10T19:47:36.286Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Thunder Strike",
+          "rawNote": "Slow duration decreased from 0.4s to 0.3s ",
+          "indentLevel": 1,
+          "metric": "Slow duration",
+          "changeType": "DECREASED",
+          "oldValue": "0.4s",
+          "newValue": "0.3s",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 5458
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (slow duration)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.39c",
+      "date": "2026-06-10T19:47:36.295Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Electromagnetic Repulsion",
+          "rawNote": "Cooldown increased from 4s to 5s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "INCREASED",
+          "oldValue": "4s",
+          "newValue": "5s",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 1363
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Kinetic Field Duration decreased from +1.5s to +1s",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Kinetic Field Duration",
+          "changeType": "DECREASED",
+          "oldValue": "+1.5s",
+          "newValue": "+1s",
+          "metadata": {
+            "entityId": 87
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (level 20 talent kinetic field duration)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -1.5,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.39e",
+      "date": "2026-06-10T19:47:36.307Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Static Storm",
+          "rawNote": "Cooldown increased from 90/80/70s to 100/85/70s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "INCREASED",
+          "oldValue": "90/80/70s",
+          "newValue": "100/85/70s",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 5461
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a negative metric (cooldown)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -1.5,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.41",
+      "date": "2026-06-10T19:47:36.405Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Electromagnetic Repulsion",
+          "rawNote": "Now deals damage equal to 1.5x of Disruptor's Intelligence",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 1363
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Thunder Strike",
+          "rawNote": "Strike Damage increased from 25/55/85/115 to 30/60/90/120",
+          "indentLevel": 1,
+          "metric": "Strike Damage",
+          "changeType": "INCREASED",
+          "oldValue": "25/55/85/115",
+          "newValue": "30/60/90/120",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 5458
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (strike damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Thunder Strike",
+          "rawNote": "No longer upgraded with Aghanim's Shard",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 5458
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Kinetic Fence",
+          "rawNote": "Now granted by Aghanim's Shard",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 1362
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Kinetic Fence",
+          "rawNote": "No longer shares level with Kinetic Field. Has only one level instead",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 1362
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Kinetic Fence",
+          "rawNote": "Cast Range increased from 1050 to 1200",
+          "indentLevel": 1,
+          "metric": "Cast Range",
+          "changeType": "INCREASED",
+          "oldValue": "1050",
+          "newValue": "1200",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 1362
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 2.5,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (cast range)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Kinetic Fence",
+          "rawNote": "Cooldown decreased from 20/18/16/14s to 14s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "20/18/16/14s",
+          "newValue": "14s",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 1362
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Kinetic Fence",
+          "rawNote": "Duration increased from 2.6/3.2/3.8/4.4s to 4.4s",
+          "indentLevel": 1,
+          "metric": "Duration",
+          "changeType": "INCREASED",
+          "oldValue": "2.6/3.2/3.8/4.4s",
+          "newValue": "4.4s",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 1362
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Kinetic Fence",
+          "rawNote": "Can be increased with Kinetic Field Duration talent",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 1362
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Kinetic Fence",
+          "rawNote": "Formation Delay increased from 0.4s to 1s",
+          "indentLevel": 1,
+          "metric": "Formation Delay",
+          "changeType": "INCREASED",
+          "oldValue": "0.4s",
+          "newValue": "1s",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 1362
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a negative metric (formation delay)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent +10%/300 Glimpse Distance To Damage/Max increased to +15%/300",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 87
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent +150 Electromagnetic Repulsion Radius/Knockback replaced with +75 Static Storm Radius",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent +150 Electromagnetic Repulsion Radius/Knockback",
+          "changeType": "REWORK",
+          "newValue": "+75 Static Storm Radius",
+          "metadata": {
+            "entityId": 87
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent +150 Static Storm Radius replaced with +6 Thunder Strike Strikes (also decreases Strike Interval by 50%) ",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent +150 Static Storm Radius",
+          "changeType": "REWORK",
+          "newValue": "+6 Thunder Strike Strikes (also decreases Strike Interval by 50%)",
+          "metadata": {
+            "entityId": 87
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent -12s Glimpse Cooldown replaced with 2 Glimpse Charges",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent -12s Glimpse Cooldown",
+          "changeType": "REWORK",
+          "newValue": "2 Glimpse Charges",
+          "metadata": {
+            "entityId": 87
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 6.5,
+        "laning": 0,
+        "siege": 0,
+        "utility": 25
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.41d",
+      "date": "2026-06-10T19:47:36.483Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "rawNote": "Base Movement Speed increased from 295 to 300",
+          "indentLevel": 1,
+          "metric": "Base Movement Speed",
+          "changeType": "INCREASED",
+          "oldValue": "295",
+          "newValue": "300",
+          "metadata": {
+            "entityId": 87
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 8,
+              "Ancient": 9,
+              "Divine": 9
+            },
+            "reasoning": "Increased a positive metric (base movement speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Thunder Strike",
+          "rawNote": "Mana Cost decreased from 125/130/135/140 to 115/120/125/130",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "DECREASED",
+          "oldValue": "125/130/135/140",
+          "newValue": "115/120/125/130",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 5458
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a negative metric (mana cost)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": 1,
+        "siege": 0,
+        "utility": 1
+      },
+      "winrates": {
+        "HERALD": {
+          "winrate": 0.4838,
+          "matchCount": 2648
+        },
+        "GUARDIAN": {
+          "winrate": 0.4833,
+          "matchCount": 6638
+        },
+        "CRUSADER": {
+          "winrate": 0.4808,
+          "matchCount": 8061
+        },
+        "ARCHON": {
+          "winrate": 0.4884,
+          "matchCount": 7981
+        },
+        "LEGEND": {
+          "winrate": 0.489,
+          "matchCount": 6252
+        },
+        "ANCIENT": {
+          "winrate": 0.4826,
+          "matchCount": 4244
+        },
+        "DIVINE": {
+          "winrate": 0.519,
+          "matchCount": 2967
+        }
+      }
+    }
+  ]
+}

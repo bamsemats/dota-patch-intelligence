@@ -1,0 +1,1647 @@
+{
+  "name": "Viper",
+  "history": [
+    {
+      "version": "7.34",
+      "date": "2026-06-10T19:47:35.939Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Viper Strike",
+          "rawNote": "Duration increased from 5s to 6s",
+          "indentLevel": 1,
+          "metric": "Duration",
+          "changeType": "INCREASED",
+          "oldValue": "5s",
+          "newValue": "6s",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 5221
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Viper Strike",
+          "rawNote": "Initial Attack Slow increased from 40/60/80 to 80/120/160",
+          "indentLevel": 1,
+          "metric": "Initial Attack Slow",
+          "changeType": "INCREASED",
+          "oldValue": "40/60/80",
+          "newValue": "80/120/160",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 5221
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Viper Strike",
+          "rawNote": "Damage per second decreased from 80/120/160 to 70/110/150",
+          "indentLevel": 1,
+          "metric": "Damage per second",
+          "changeType": "DECREASED",
+          "oldValue": "80/120/160",
+          "newValue": "70/110/150",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 5221
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (damage per second)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Viper Strike",
+          "rawNote": "Projectile Speed increased from 1200 to 1500",
+          "indentLevel": 1,
+          "metric": "Projectile Speed",
+          "changeType": "INCREASED",
+          "oldValue": "1200",
+          "newValue": "1500",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 5221
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (projectile speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Nosedive",
+          "rawNote": "Cast Range increased from 375 to 475",
+          "indentLevel": 1,
+          "metric": "Cast Range",
+          "changeType": "INCREASED",
+          "oldValue": "375",
+          "newValue": "475",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 983
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 2.5,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (cast range)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent -11s Nethertoxin Cooldown replaced with Become Universal",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent -11s Nethertoxin Cooldown",
+          "changeType": "REWORK",
+          "newValue": "Become Universal",
+          "metadata": {
+            "entityId": 47
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 5,
+        "laning": 0,
+        "siege": 0,
+        "utility": 25
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.35b",
+      "date": "2026-06-10T19:47:36.038Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Poison Attack",
+          "rawNote": "Aghanim's Shard Max Stacks decreased from 8 to 7",
+          "indentLevel": 1,
+          "metric": "Aghanim's Shard Max Stacks",
+          "changeType": "DECREASED",
+          "oldValue": "8",
+          "newValue": "7",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 5218
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent Poison Attack Magic Resistance Reduction decreased from +5% to +4%",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent Poison Attack Magic Resistance Reduction",
+          "changeType": "DECREASED",
+          "oldValue": "+5%",
+          "newValue": "+4%",
+          "metadata": {
+            "entityId": 47
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Poison Attack slow/damage decreased from +25% to +20%",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Poison Attack slow/damage",
+          "changeType": "DECREASED",
+          "oldValue": "+25%",
+          "newValue": "+20%",
+          "metadata": {
+            "entityId": 47
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (level 20 talent poison attack slow/damage)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.35c",
+      "date": "2026-06-10T19:47:36.047Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Nethertoxin",
+          "rawNote": "Max DPS decreased from 50/75/100/125 to 35/65/95/125",
+          "indentLevel": 1,
+          "metric": "Max DPS",
+          "changeType": "DECREASED",
+          "oldValue": "50/75/100/125",
+          "newValue": "35/65/95/125",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 5219
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Corrosive Skin",
+          "rawNote": "Max Range Radius decreased from 1400 to 1200",
+          "indentLevel": 1,
+          "metric": "Max Range Radius",
+          "changeType": "DECREASED",
+          "oldValue": "1400",
+          "newValue": "1200",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 5220
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5.5,
+              "Guardian": 4.5,
+              "Crusader": 5,
+              "Archon": 4.5,
+              "Legend": 5,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "reasoning": "Decreased a positive metric (max range radius)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.36",
+      "date": "2026-06-10T19:47:36.083Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Poison Attack",
+          "rawNote": "Cast Range decreased from 600/640/680/720 to 600",
+          "indentLevel": 1,
+          "metric": "Cast Range",
+          "changeType": "DECREASED",
+          "oldValue": "600/640/680/720",
+          "newValue": "600",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 5218
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 2.5,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (cast range)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Nosedive",
+          "rawNote": "No longer Disarms",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 983
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Nosedive",
+          "rawNote": "Corrosive Skin Splatter Radius decreased from 1200 to 500",
+          "indentLevel": 1,
+          "metric": "Corrosive Skin Splatter Radius",
+          "changeType": "DECREASED",
+          "oldValue": "1200",
+          "newValue": "500",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 983
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5.5,
+              "Guardian": 4.5,
+              "Crusader": 5,
+              "Archon": 4.5,
+              "Legend": 5,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "reasoning": "Decreased a positive metric (corrosive skin splatter radius)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Nosedive",
+          "rawNote": "Cast Range increased from 475 to 700",
+          "indentLevel": 1,
+          "metric": "Cast Range",
+          "changeType": "INCREASED",
+          "oldValue": "475",
+          "newValue": "700",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 983
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 2.5,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (cast range)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Nosedive",
+          "rawNote": "Dive Speed increased from 500 to 700",
+          "indentLevel": 1,
+          "metric": "Dive Speed",
+          "changeType": "INCREASED",
+          "oldValue": "500",
+          "newValue": "700",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 983
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (dive speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent Corrosive Skin Damage Per Second increased from +18 to +20",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent Corrosive Skin Damage Per Second",
+          "changeType": "INCREASED",
+          "oldValue": "+18",
+          "newValue": "+20",
+          "metadata": {
+            "entityId": 47
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (level 10 talent corrosive skin damage per second)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent +15% Corrosive Skin Magic Resistance replaced with +20 Corrosive Skin Attack Speed Slow",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent +15% Corrosive Skin Magic Resistance",
+          "changeType": "REWORK",
+          "newValue": "+20 Corrosive Skin Attack Speed Slow",
+          "metadata": {
+            "entityId": 47
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.36b",
+      "date": "2026-06-10T19:47:36.118Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Poison Attack",
+          "rawNote": "Max Stacks increased from 5 to 6",
+          "indentLevel": 1,
+          "metric": "Max Stacks",
+          "changeType": "INCREASED",
+          "oldValue": "5",
+          "newValue": "6",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 5218
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Nethertoxin",
+          "rawNote": "Projectile Speed increased from 2000 to 2400",
+          "indentLevel": 1,
+          "metric": "Projectile Speed",
+          "changeType": "INCREASED",
+          "oldValue": "2000",
+          "newValue": "2400",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 5219
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (projectile speed)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.37",
+      "date": "2026-06-10T19:47:36.154Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Predator",
+          "rawNote": "New Innate ability. Passive, can't be leveled up",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 1461
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Predator",
+          "rawNote": "Viper's attacks deal an additional instance of physical damage per missing health percentage of his target, equal to 0.25 + 0.05 per Viper's level. Only works on heroes",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 1461
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Corrosive Skin",
+          "rawNote": "No longer an innate ability",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 5220
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Corrosive Skin",
+          "rawNote": "Attack Slow rescaled from 3/6/14/22/30 to 8/16/24/32",
+          "indentLevel": 1,
+          "metric": "Attack Slow",
+          "changeType": "RESCALE",
+          "oldValue": "3/6/14/22/30",
+          "newValue": "8/16/24/32",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 5220
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Corrosive Skin",
+          "rawNote": "Magic Resistance rescaled from 5/10/15/20/25% to 10/15/20/25%",
+          "indentLevel": 1,
+          "metric": "Magic Resistance",
+          "changeType": "RESCALE",
+          "oldValue": "5/10/15/20/25%",
+          "newValue": "10/15/20/25%",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 5220
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Corrosive Skin",
+          "rawNote": "Damage per second rescaled from 3/6/14/22/30 to 8/16/24/32",
+          "indentLevel": 1,
+          "metric": "Damage per second",
+          "changeType": "RESCALE",
+          "oldValue": "3/6/14/22/30",
+          "newValue": "8/16/24/32",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 5220
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.37b",
+      "date": "2026-06-10T19:47:36.173Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Predator",
+          "rawNote": "Bonus damage is now decreased by the illusion damage reduction amount if applied by illusions",
+          "indentLevel": 1,
+          "metric": "Bonus damage is now",
+          "changeType": "DECREASED",
+          "newValue": "the illusion damage reduction amount if applied by illusions",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 1461
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (bonus damage is now)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Predator",
+          "rawNote": "Damage per missing health decreased from 0.25 + 0.05 per Viper's level to 0.15 + 0.05 per Viper's level",
+          "indentLevel": 1,
+          "metric": "Damage per missing health",
+          "changeType": "DECREASED",
+          "oldValue": "0.25 + 0.05 per Viper's level",
+          "newValue": "0.15 + 0.05 per Viper's level",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 1461
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Decreased a positive metric (damage per missing health)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent +20 Corrosive Skin Attack Speed Slow replaced with +15% Poison Attack slow/damage",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent +20 Corrosive Skin Attack Speed Slow",
+          "changeType": "REWORK",
+          "newValue": "+15% Poison Attack slow/damage",
+          "metadata": {
+            "entityId": 47
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent +20% Poison Attack slow/damage replaced with +0.2 Predator Damage per missing health",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent +20% Poison Attack slow/damage",
+          "changeType": "REWORK",
+          "newValue": "+0.2 Predator Damage per missing health",
+          "metadata": {
+            "entityId": 47
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.38",
+      "date": "2026-06-10T19:47:36.239Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Nosedive",
+          "rawNote": "Now also releases Nethertoxin upon landing ",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 983
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent +4% Poison Attack Magic Resistance Reduction replaced with +1s Viper Strike Duration",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent +4% Poison Attack Magic Resistance Reduction",
+          "changeType": "REWORK",
+          "newValue": "+1s Viper Strike Duration",
+          "metadata": {
+            "entityId": 47
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Become Universal replaced with Nethertoxin Radius increases by 25 every 0.5s",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Become Universal",
+          "changeType": "REWORK",
+          "newValue": "Nethertoxin Radius increases by 25 every 0.5s",
+          "metadata": {
+            "entityId": 47
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.39e",
+      "date": "2026-06-10T19:47:36.304Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Corrosive Skin",
+          "rawNote": "Attack Slow increased from 8/16/24/32 to 9/18/27/36",
+          "indentLevel": 1,
+          "metric": "Attack Slow",
+          "changeType": "INCREASED",
+          "oldValue": "8/16/24/32",
+          "newValue": "9/18/27/36",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 5220
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.40",
+      "date": "2026-06-10T19:47:36.328Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Poison Attack",
+          "rawNote": "Mana Cost decreased from 22 to 20",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "DECREASED",
+          "oldValue": "22",
+          "newValue": "20",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 5218
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a negative metric (mana cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Predator Damage Per Missing Health increased from +0.2 to +0.25",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Predator Damage Per Missing Health",
+          "changeType": "INCREASED",
+          "oldValue": "+0.2",
+          "newValue": "+0.25",
+          "metadata": {
+            "entityId": 47
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Increased a positive metric (level 20 talent predator damage per missing health)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": 1,
+        "siege": 0,
+        "utility": 1
+      },
+      "winrates": {
+        "HERALD": {
+          "winrate": 0.512,
+          "matchCount": 105666
+        },
+        "GUARDIAN": {
+          "winrate": 0.5136,
+          "matchCount": 166013
+        },
+        "CRUSADER": {
+          "winrate": 0.5235,
+          "matchCount": 154807
+        },
+        "ARCHON": {
+          "winrate": 0.5292,
+          "matchCount": 134521
+        },
+        "LEGEND": {
+          "winrate": 0.5341,
+          "matchCount": 99879
+        },
+        "ANCIENT": {
+          "winrate": 0.534,
+          "matchCount": 61745
+        },
+        "DIVINE": {
+          "winrate": 0.5398,
+          "matchCount": 39068
+        }
+      }
+    },
+    {
+      "version": "7.40b",
+      "date": "2026-06-10T19:47:36.354Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent +20 Corrosive Skin Damage Per Second replaced with +10% Poison Attack Slow/Damage",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent +20 Corrosive Skin Damage Per Second",
+          "changeType": "REWORK",
+          "newValue": "+10% Poison Attack Slow/Damage",
+          "metadata": {
+            "entityId": 47
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent +15% Poison Attack Slow/Damage replaced with +20 Corrosive Skin Damage Per Second",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent +15% Poison Attack Slow/Damage",
+          "changeType": "REWORK",
+          "newValue": "+20 Corrosive Skin Damage Per Second",
+          "metadata": {
+            "entityId": 47
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent Nethertoxin Min/Max Damage decreased from +40 to +30",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent Nethertoxin Min/Max Damage",
+          "changeType": "DECREASED",
+          "oldValue": "+40",
+          "newValue": "+30",
+          "metadata": {
+            "entityId": 47
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (level 15 talent nethertoxin min/max damage)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.40c",
+      "date": "2026-06-10T19:47:36.367Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Corrosive Skin",
+          "rawNote": "Damage per second rescaled from 8/16/24/32 to 10/15/20/25",
+          "indentLevel": 1,
+          "metric": "Damage per second",
+          "changeType": "RESCALE",
+          "oldValue": "8/16/24/32",
+          "newValue": "10/15/20/25",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 5220
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Predator Damage Per Missing Health increased from +0.25 to +0.3",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Predator Damage Per Missing Health",
+          "changeType": "INCREASED",
+          "oldValue": "+0.25",
+          "newValue": "+0.3",
+          "metadata": {
+            "entityId": 47
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Increased a positive metric (level 20 talent predator damage per missing health)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Viper Strike DPS decreased from +80 to +70",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Viper Strike DPS",
+          "changeType": "DECREASED",
+          "oldValue": "+80",
+          "newValue": "+70",
+          "metadata": {
+            "entityId": 47
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.41",
+      "date": "2026-06-10T19:47:36.395Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "rawNote": "Agility gain increased from 2.7 to 2.9",
+          "indentLevel": 1,
+          "metric": "Agility gain",
+          "changeType": "INCREASED",
+          "oldValue": "2.7",
+          "newValue": "2.9",
+          "metadata": {
+            "entityId": 47
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (agility gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "rawNote": "Base Attack Speed decreased from 120 to 110",
+          "indentLevel": 1,
+          "metric": "Base Attack Speed",
+          "changeType": "DECREASED",
+          "oldValue": "120",
+          "newValue": "110",
+          "metadata": {
+            "entityId": 47
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Decreased a positive metric (base attack speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Predator",
+          "rawNote": "Base Damage per Missing Health Percentage increased from 0.15 to 0.25",
+          "indentLevel": 1,
+          "metric": "Base Damage per Missing Health Percentage",
+          "changeType": "INCREASED",
+          "oldValue": "0.15",
+          "newValue": "0.25",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 1461
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Increased a positive metric (base damage per missing health percentage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Corrosive Skin",
+          "rawNote": "Aghanim's Scepter now also gradually increases Corrosive Skin's magic resistance and damage per second while he is in Nethertoxin, up to 50% increased effect after 4s",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 5220
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent +10% Poison Attack slow/damage replaced with +15 Corrosive Skin Damage Per Second",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent +10% Poison Attack slow/damage",
+          "changeType": "REWORK",
+          "newValue": "+15 Corrosive Skin Damage Per Second",
+          "metadata": {
+            "entityId": 47
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent +20 Corrosive Skin Damage Per Second replaced with +15% Poison Attack Slow / Damage",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent +20 Corrosive Skin Damage Per Second",
+          "changeType": "REWORK",
+          "newValue": "+15% Poison Attack Slow / Damage",
+          "metadata": {
+            "entityId": 47
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent +30 Nethertoxin Min/Max Damage replaced with +20/40 Nethertoxin Min/Max Damage",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent +30 Nethertoxin Min/Max Damage",
+          "changeType": "REWORK",
+          "newValue": "+20/40 Nethertoxin Min/Max Damage",
+          "metadata": {
+            "entityId": 47
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Predator Damage Per Missing Health increased from +0.3 to +0.35",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Predator Damage Per Missing Health",
+          "changeType": "INCREASED",
+          "oldValue": "+0.3",
+          "newValue": "+0.35",
+          "metadata": {
+            "entityId": 47
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Increased a positive metric (level 20 talent predator damage per missing health)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.41c",
+      "date": "2026-06-10T19:47:36.452Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Nosedive",
+          "rawNote": "Cooldown increased from 20s to 25s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "INCREASED",
+          "oldValue": "20s",
+          "newValue": "25s",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 983
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a negative metric (cooldown)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -1.5,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {}
+    }
+  ]
+}

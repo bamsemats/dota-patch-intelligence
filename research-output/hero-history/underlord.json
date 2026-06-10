@@ -1,0 +1,1834 @@
+{
+  "name": "Underlord",
+  "history": [
+    {
+      "version": "7.33b",
+      "date": "2026-06-10T19:47:35.868Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Atrophy Aura",
+          "rawNote": "Damage Reduction rescaled from 5/15/25/35% to 6/14/22/30%",
+          "indentLevel": 1,
+          "metric": "Damage Reduction",
+          "changeType": "RESCALE",
+          "oldValue": "5/15/25/35%",
+          "newValue": "6/14/22/30%",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 5615
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Fiend's Gate",
+          "rawNote": "Channel Time increased from 3s to 3.5s",
+          "indentLevel": 1,
+          "metric": "Channel Time",
+          "changeType": "INCREASED",
+          "oldValue": "3s",
+          "newValue": "3.5s",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 865
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.33c",
+      "date": "2026-06-10T19:47:35.892Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Fiend's Gate",
+          "rawNote": "Mana Cost increased from 100 to 200",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "INCREASED",
+          "oldValue": "100",
+          "newValue": "200",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 865
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Increased a negative metric (mana cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent Firestorm Radius decreased from +100 to +75",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent Firestorm Radius",
+          "changeType": "DECREASED",
+          "oldValue": "+100",
+          "newValue": "+75",
+          "metadata": {
+            "entityId": 108
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5.5,
+              "Guardian": 4.5,
+              "Crusader": 5,
+              "Archon": 4.5,
+              "Legend": 5,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "reasoning": "Decreased a positive metric (level 10 talent firestorm radius)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent Firestorm Cooldown Reduction decreased from 4s to 3s",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent Firestorm Cooldown Reduction",
+          "changeType": "DECREASED",
+          "oldValue": "4s",
+          "newValue": "3s",
+          "metadata": {
+            "entityId": 108
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a negative metric (level 15 talent firestorm cooldown reduction)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": -1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": -1,
+        "siege": 0,
+        "utility": -1
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.34",
+      "date": "2026-06-10T19:47:35.961Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Firestorm",
+          "rawNote": "Cooldown increased from 15/14/13/12s to 16/15/14/13s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "INCREASED",
+          "oldValue": "15/14/13/12s",
+          "newValue": "16/15/14/13s",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 5613
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Firestorm",
+          "rawNote": "Aghanim's Shard now allows targeting allies",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 5613
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Pit of Malice",
+          "rawNote": "Cast Point improved from 0.45s to 0.35s",
+          "indentLevel": 1,
+          "metric": "Cast Point",
+          "changeType": "INCREASED",
+          "oldValue": "0.45s",
+          "newValue": "0.35s",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 5614
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 2,
+              "Crusader": 2,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7,
+              "Divine": 8
+            },
+            "reasoning": "Increased a negative metric (cast point)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Firestorm Burn Damage decreased from +1% to +0.8%",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Firestorm Burn Damage",
+          "changeType": "DECREASED",
+          "oldValue": "+1%",
+          "newValue": "+0.8%",
+          "metadata": {
+            "entityId": 108
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (level 20 talent firestorm burn damage)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -1.5,
+        "laning": 0,
+        "siege": 0,
+        "utility": -16
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.35d",
+      "date": "2026-06-10T19:47:36.061Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Pit of Malice",
+          "rawNote": "Aghanim's Scepter no longer slows enemy movement by 40%",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 5614
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Pit of Malice",
+          "rawNote": "Aghanim's Scepter now increases radius by 100",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 5614
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Atrophy Aura",
+          "rawNote": "Bonus Damage per creep increased from 2/4/6/8 to 3/5/7/9",
+          "indentLevel": 1,
+          "metric": "Bonus Damage per creep",
+          "changeType": "INCREASED",
+          "oldValue": "2/4/6/8",
+          "newValue": "3/5/7/9",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 5615
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (bonus damage per creep)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent +75 Pit of Malice AoE replaced with Pit of Malice Slows by 30%",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent +75 Pit of Malice AoE",
+          "changeType": "REWORK",
+          "newValue": "Pit of Malice Slows by 30%",
+          "metadata": {
+            "entityId": 108
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.36",
+      "date": "2026-06-10T19:47:36.097Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Pit of Malice",
+          "rawNote": "Root Duration increased from 1.2/1.4/1.6/1.8s to 1.5/1.6/1.7/1.8s",
+          "indentLevel": 1,
+          "metric": "Root Duration",
+          "changeType": "INCREASED",
+          "oldValue": "1.2/1.4/1.6/1.8s",
+          "newValue": "1.5/1.6/1.7/1.8s",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 5614
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (root duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Pit of Malice",
+          "rawNote": "Mana Cost increased from 80/100/120/140 to 110/120/130/140",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "INCREASED",
+          "oldValue": "80/100/120/140",
+          "newValue": "110/120/130/140",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 5614
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Increased a negative metric (mana cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Pit of Malice",
+          "rawNote": "Cooldown increased from 21/19/17/15s to 30/25/20/15s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "INCREASED",
+          "oldValue": "21/19/17/15s",
+          "newValue": "30/25/20/15s",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 5614
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Fiend's Gate",
+          "rawNote": "Cast Point decreased from 0.2s to 0.0s",
+          "indentLevel": 1,
+          "metric": "Cast Point",
+          "changeType": "DECREASED",
+          "oldValue": "0.2s",
+          "newValue": "0.0s",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 865
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 2,
+              "Crusader": 2,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a negative metric (cast point)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Fiend's Gate",
+          "rawNote": "Minimum Distance decreased from 2000 to 1500",
+          "indentLevel": 1,
+          "metric": "Minimum Distance",
+          "changeType": "DECREASED",
+          "oldValue": "2000",
+          "newValue": "1500",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 865
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Fiend's Gate",
+          "rawNote": "Aghanim's Scepter now also reduces Cooldown by 20 seconds",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 865
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent +5 Armor replaced with +10% Fiend's Gate Movement Bonus/Damage Reduction",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent +5 Armor",
+          "changeType": "REWORK",
+          "newValue": "+10% Fiend's Gate Movement Bonus/Damage Reduction",
+          "metadata": {
+            "entityId": 108
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent +15% Atrophy Aura Attack Damage Reduction replaced with +10% Atrophy Aura Damage Reduction/Gain",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent +15% Atrophy Aura Attack Damage Reduction",
+          "changeType": "REWORK",
+          "newValue": "+10% Atrophy Aura Damage Reduction/Gain",
+          "metadata": {
+            "entityId": 108
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent +50% Atrophy Allied Hero Bonus replaced with Fiend's Gates deal 100 DPS in a 700 radius",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent +50% Atrophy Allied Hero Bonus",
+          "changeType": "REWORK",
+          "newValue": "Fiend's Gates deal 100 DPS in a 700 radius",
+          "metadata": {
+            "entityId": 108
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": -1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -1.5,
+        "laning": -1,
+        "siege": 0,
+        "utility": 15
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.36b",
+      "date": "2026-06-10T19:47:36.124Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Fiend's Gate",
+          "rawNote": "Aghanim's Scepter Cooldown Reduction decreased from 20s to 10s",
+          "indentLevel": 1,
+          "metric": "Aghanim's Scepter Cooldown Reduction",
+          "changeType": "DECREASED",
+          "oldValue": "20s",
+          "newValue": "10s",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 865
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a negative metric (aghanim's scepter cooldown reduction)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.36c",
+      "date": "2026-06-10T19:47:36.137Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Fiend's Gate",
+          "rawNote": "Cooldown increased from 110/100/90s to 110/105/100s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "INCREASED",
+          "oldValue": "110/100/90s",
+          "newValue": "110/105/100s",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 865
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Fiend's Gate",
+          "rawNote": "Buff Duration decreased from 5/6/7s to 5s",
+          "indentLevel": 1,
+          "metric": "Buff Duration",
+          "changeType": "DECREASED",
+          "oldValue": "5/6/7s",
+          "newValue": "5s",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 865
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (buff duration)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -1.5,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.37",
+      "date": "2026-06-10T19:47:36.164Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Invading Force",
+          "rawNote": "New innate ability. Scales with Fiend's Gate",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 1486
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Invading Force",
+          "rawNote": "After an allied hero teleports, they temporarily gain damage reduction and movement speed. Bonuses are doubled when teleporting via Fiend's Gate. Damage Reduction: 4/6/8/10%. Bonus Move Speed: 5/10/15/20%. Buff Duration: 5s",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 1486
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Atrophy Aura",
+          "rawNote": "No longer an innate ability",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 5615
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Atrophy Aura",
+          "rawNote": "Damage Reduction rescaled from 0/6/14/22/30% to 6/14/22/30%",
+          "indentLevel": 1,
+          "metric": "Damage Reduction",
+          "changeType": "RESCALE",
+          "oldValue": "0/6/14/22/30%",
+          "newValue": "6/14/22/30%",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 5615
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Atrophy Aura",
+          "rawNote": "Bonus Damage per creep rescaled from 1/3/5/7/9 to 2/4/6/8",
+          "indentLevel": 1,
+          "metric": "Bonus Damage per creep",
+          "changeType": "RESCALE",
+          "oldValue": "1/3/5/7/9",
+          "newValue": "2/4/6/8",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 5615
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Atrophy Aura",
+          "rawNote": "Bonus Damage per hero rescaled from 25/30/35/40/45 to 30/35/40/45",
+          "indentLevel": 1,
+          "metric": "Bonus Damage per hero",
+          "changeType": "RESCALE",
+          "oldValue": "25/30/35/40/45",
+          "newValue": "30/35/40/45",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 5615
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Atrophy Aura",
+          "rawNote": "Duration rescaled from 25/35/45/55/65s to 35/45/55/65s",
+          "indentLevel": 1,
+          "metric": "Duration",
+          "changeType": "RESCALE",
+          "oldValue": "25/35/45/55/65s",
+          "newValue": "35/45/55/65s",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 5615
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Fiend's Gate",
+          "rawNote": "No longer provides a buff after passing through the portal by default (moved to Invading Force innate ability)",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 865
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent Firestorm Radius decreased from +75 to +60",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent Firestorm Radius",
+          "changeType": "DECREASED",
+          "oldValue": "+75",
+          "newValue": "+60",
+          "metadata": {
+            "entityId": 108
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5.5,
+              "Guardian": 4.5,
+              "Crusader": 5,
+              "Archon": 4.5,
+              "Legend": 5,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "reasoning": "Decreased a positive metric (level 10 talent firestorm radius)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent +10% Fiend's Gate Movement Bonus/Damage Reduction replaced with +5% Invading Force Movement Bonus/Damage Reduction",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent +10% Fiend's Gate Movement Bonus/Damage Reduction",
+          "changeType": "REWORK",
+          "newValue": "+5% Invading Force Movement Bonus/Damage Reduction",
+          "metadata": {
+            "entityId": 108
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent Pit of Malice Slow decreased from +30% to +25%",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent Pit of Malice Slow",
+          "changeType": "DECREASED",
+          "oldValue": "+30%",
+          "newValue": "+25%",
+          "metadata": {
+            "entityId": 108
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Pit of Malice Root decreased from +0.65s to +0.5s",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Pit of Malice Root",
+          "changeType": "DECREASED",
+          "oldValue": "+0.65s",
+          "newValue": "+0.5s",
+          "metadata": {
+            "entityId": 108
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.37d",
+      "date": "2026-06-10T19:47:36.200Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Atrophy Aura",
+          "rawNote": "Duration decreased from 35/45/55/65s to 30/40/50/60s",
+          "indentLevel": 1,
+          "metric": "Duration",
+          "changeType": "DECREASED",
+          "oldValue": "35/45/55/65s",
+          "newValue": "30/40/50/60s",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 5615
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (duration)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -5,
+        "laning": 0,
+        "siege": 0,
+        "utility": -10
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.38",
+      "date": "2026-06-10T19:47:36.254Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent +60 Firestorm Radius replaced with +15s Atrophy Aura Duration",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent +60 Firestorm Radius",
+          "changeType": "REWORK",
+          "newValue": "+15s Atrophy Aura Duration",
+          "metadata": {
+            "entityId": 108
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Firestorm Burn Damage decreased from +0.8% to +0.6%",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Firestorm Burn Damage",
+          "changeType": "DECREASED",
+          "oldValue": "+0.8%",
+          "newValue": "+0.6%",
+          "metadata": {
+            "entityId": 108
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (level 20 talent firestorm burn damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Pit of Malice Root decreased from +0.5s to +0.4s",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Pit of Malice Root",
+          "changeType": "DECREASED",
+          "oldValue": "+0.5s",
+          "newValue": "+0.4s",
+          "metadata": {
+            "entityId": 108
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.39b",
+      "date": "2026-06-10T19:47:36.287Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Fiend's Gate",
+          "rawNote": "Mana Cost decreased from 200 to 175",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "DECREASED",
+          "oldValue": "200",
+          "newValue": "175",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 865
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a negative metric (mana cost)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": 1,
+        "siege": 0,
+        "utility": 1
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.39c",
+      "date": "2026-06-10T19:47:36.297Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Invading Force",
+          "rawNote": "Movement speed bonus increased from 5/10/15/20% to 11/14/17/20%",
+          "indentLevel": 1,
+          "metric": "Movement speed bonus",
+          "changeType": "INCREASED",
+          "oldValue": "5/10/15/20%",
+          "newValue": "11/14/17/20%",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 1486
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 8,
+              "Ancient": 9,
+              "Divine": 9
+            },
+            "reasoning": "Increased a positive metric (movement speed bonus)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.40",
+      "date": "2026-06-10T19:47:36.342Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "rawNote": "Strength gain increased from 3.0 to 3.2",
+          "indentLevel": 1,
+          "metric": "Strength gain",
+          "changeType": "INCREASED",
+          "oldValue": "3.0",
+          "newValue": "3.2",
+          "metadata": {
+            "entityId": 108
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (strength gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "rawNote": "Base Intelligence increased from 17 to 18",
+          "indentLevel": 1,
+          "metric": "Base Intelligence",
+          "changeType": "INCREASED",
+          "oldValue": "17",
+          "newValue": "18",
+          "metadata": {
+            "entityId": 108
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base intelligence)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Firestorm",
+          "rawNote": "Cast Range increased from 600/625/650/675 to 675",
+          "indentLevel": 1,
+          "metric": "Cast Range",
+          "changeType": "INCREASED",
+          "oldValue": "600/625/650/675",
+          "newValue": "675",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 5613
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 2.5,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (cast range)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent Pit of Malice Slow decreased from +25% to +20%",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent Pit of Malice Slow",
+          "changeType": "DECREASED",
+          "oldValue": "+25%",
+          "newValue": "+20%",
+          "metadata": {
+            "entityId": 108
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Fiend's Gate DPS increased from 100 to 125",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Fiend's Gate DPS",
+          "changeType": "INCREASED",
+          "oldValue": "100",
+          "newValue": "125",
+          "metadata": {
+            "entityId": 108
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": 0,
+        "siege": 0,
+        "utility": 15
+      },
+      "winrates": {
+        "HERALD": {
+          "winrate": 0.5077,
+          "matchCount": 18500
+        },
+        "GUARDIAN": {
+          "winrate": 0.5137,
+          "matchCount": 43525
+        },
+        "CRUSADER": {
+          "winrate": 0.5043,
+          "matchCount": 52067
+        },
+        "ARCHON": {
+          "winrate": 0.4993,
+          "matchCount": 51693
+        },
+        "LEGEND": {
+          "winrate": 0.4971,
+          "matchCount": 40599
+        },
+        "ANCIENT": {
+          "winrate": 0.4891,
+          "matchCount": 24560
+        },
+        "DIVINE": {
+          "winrate": 0.4861,
+          "matchCount": 14272
+        }
+      }
+    },
+    {
+      "version": "7.40b",
+      "date": "2026-06-10T19:47:36.360Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent Firestorm Cooldown Reduction increased from 3s to 4s",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent Firestorm Cooldown Reduction",
+          "changeType": "INCREASED",
+          "oldValue": "3s",
+          "newValue": "4s",
+          "metadata": {
+            "entityId": 108
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a negative metric (level 15 talent firestorm cooldown reduction)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.41",
+      "date": "2026-06-10T19:47:36.411Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Invading Force",
+          "rawNote": "No longer levels with Fiend's Gate",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 1486
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Invading Force",
+          "rawNote": "Damage Reduction rescaled from 4/6/8/10% to 3.7% + 0.3% per level",
+          "indentLevel": 1,
+          "metric": "Damage Reduction",
+          "changeType": "RESCALE",
+          "oldValue": "4/6/8/10%",
+          "newValue": "3.7% + 0.3% per level",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 1486
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Invading Force",
+          "rawNote": "Movement Speed bonus rescaled from 11/14/17/20% to 9.5% + 0.5% per level",
+          "indentLevel": 1,
+          "metric": "Movement Speed bonus",
+          "changeType": "RESCALE",
+          "oldValue": "11/14/17/20%",
+          "newValue": "9.5% + 0.5% per level",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 1486
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 8,
+              "Ancient": 9,
+              "Divine": 9
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Firestorm",
+          "rawNote": "Wave Damage increased from 30/50/70/90 to 30/55/80/105",
+          "indentLevel": 1,
+          "metric": "Wave Damage",
+          "changeType": "INCREASED",
+          "oldValue": "30/50/70/90",
+          "newValue": "30/55/80/105",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 5613
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (wave damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Atrophy Aura",
+          "rawNote": "Damage Reduction increased from 6/14/22/30% to 8/16/24/32%",
+          "indentLevel": 1,
+          "metric": "Damage Reduction",
+          "changeType": "INCREASED",
+          "oldValue": "6/14/22/30%",
+          "newValue": "8/16/24/32%",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 5615
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (damage reduction)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent Firestorm Cooldown Reduction increased from 4s to 5s",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent Firestorm Cooldown Reduction",
+          "changeType": "INCREASED",
+          "oldValue": "4s",
+          "newValue": "5s",
+          "metadata": {
+            "entityId": 108
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a negative metric (level 15 talent firestorm cooldown reduction)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Fiend's Gate DPS increased from 125 to 160",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Fiend's Gate DPS",
+          "changeType": "INCREASED",
+          "oldValue": "125",
+          "newValue": "160",
+          "metadata": {
+            "entityId": 108
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    }
+  ]
+}

@@ -1,0 +1,1383 @@
+{
+  "name": "Sniper",
+  "history": [
+    {
+      "version": "7.33c",
+      "date": "2026-06-10T19:47:35.878Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Take Aim",
+          "rawNote": "Now provides +200 attack range when active",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 5156
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.33d",
+      "date": "2026-06-10T19:47:35.900Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Shrapnel",
+          "rawNote": "Radius increased from 400 to 400/425/450/475",
+          "indentLevel": 1,
+          "metric": "Radius",
+          "changeType": "INCREASED",
+          "oldValue": "400",
+          "newValue": "400/425/450/475",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 5154
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5.5,
+              "Guardian": 4.5,
+              "Crusader": 5,
+              "Archon": 4.5,
+              "Legend": 5,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "reasoning": "Increased a positive metric (radius)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 6,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.34",
+      "date": "2026-06-10T19:47:35.933Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Assassinate",
+          "rawNote": "Now also performs an autoattack on the target",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 5157
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Assassinate",
+          "rawNote": "Damage decreased from 320/510/700 to 250/350/450",
+          "indentLevel": 1,
+          "metric": "Damage",
+          "changeType": "DECREASED",
+          "oldValue": "320/510/700",
+          "newValue": "250/350/450",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 5157
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Assassinate",
+          "rawNote": "Is now refreshed whenever Sniper kills an enemy hero",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 5157
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Assassinate",
+          "rawNote": "This includes all kills by Sniper and not just ones from Assassinate",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 5157
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Assassinate",
+          "rawNote": "Mana Cost decreased from 175/225/275 to 175",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "DECREASED",
+          "oldValue": "175/225/275",
+          "newValue": "175",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 5157
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a negative metric (mana cost)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": -7,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -8,
+        "laning": -7,
+        "siege": 0,
+        "utility": 1
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.34c",
+      "date": "2026-06-10T19:47:35.988Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Take Aim",
+          "rawNote": "Passive Bonus Range increased from 100/200/300/400 to 130/220/310/400",
+          "indentLevel": 1,
+          "metric": "Passive Bonus Range",
+          "changeType": "INCREASED",
+          "oldValue": "100/200/300/400",
+          "newValue": "130/220/310/400",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 5156
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (passive bonus range)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Assassinate",
+          "rawNote": "Damage increased from 250/350/450 to 300/400/500",
+          "indentLevel": 1,
+          "metric": "Damage",
+          "changeType": "INCREASED",
+          "oldValue": "250/350/450",
+          "newValue": "300/400/500",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 5157
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (damage)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 8,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 8,
+        "laning": 8,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.36",
+      "date": "2026-06-10T19:47:36.080Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Headshot",
+          "rawNote": "Now knockback distance increases with the proximity of the target to Sniper. Max knockback distance increased to 50",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 5155
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Take Aim",
+          "rawNote": "Passive Attack Range bonus moved to Innate ability",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 5156
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Take Aim",
+          "rawNote": "Now provides 5/10/15/20 bonus armor for the duration",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 5156
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Take Aim",
+          "rawNote": "Self-slow increased from 45/40/35/30% to 65%",
+          "indentLevel": 1,
+          "metric": "Self-slow",
+          "changeType": "INCREASED",
+          "oldValue": "45/40/35/30%",
+          "newValue": "65%",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 5156
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent +1s Take Aim Duration replaced with +10% Shrapnel Movement Slow",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent +1s Take Aim Duration",
+          "changeType": "REWORK",
+          "newValue": "+10% Shrapnel Movement Slow",
+          "metadata": {
+            "entityId": 35
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent +15% Shrapnel Slow replaced with +1s Take Aim Duration",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent +15% Shrapnel Slow",
+          "changeType": "REWORK",
+          "newValue": "+1s Take Aim Duration",
+          "metadata": {
+            "entityId": 35
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent +25 Shrapnel DPS replaced with +100 Attack Range",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent +25 Shrapnel DPS",
+          "changeType": "REWORK",
+          "newValue": "+100 Attack Range",
+          "metadata": {
+            "entityId": 35
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent +25 Headshot Knockback Distance replaced with +15 Take Aim Armor",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent +25 Headshot Knockback Distance",
+          "changeType": "REWORK",
+          "newValue": "+15 Take Aim Armor",
+          "metadata": {
+            "entityId": 35
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent +100 Attack Range replaced with +50 Max Headshot Knockback Distance",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent +100 Attack Range",
+          "changeType": "REWORK",
+          "newValue": "+50 Max Headshot Knockback Distance",
+          "metadata": {
+            "entityId": 35
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent +6 Shrapnel Charges replaced with -25s Shrapnel Charge Restore time",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent +6 Shrapnel Charges",
+          "changeType": "REWORK",
+          "newValue": "-25s Shrapnel Charge Restore time",
+          "metadata": {
+            "entityId": 35
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.36b",
+      "date": "2026-06-10T19:47:36.115Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Keen Scope",
+          "rawNote": "Attack Range Bonus increased from 100/200/300/400 to 160/240/320/400",
+          "indentLevel": 1,
+          "metric": "Attack Range Bonus",
+          "changeType": "INCREASED",
+          "oldValue": "100/200/300/400",
+          "newValue": "160/240/320/400",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 1268
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (attack range bonus)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Shrapnel Charge Restore Time Reduction increased from 25s to 30s",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Shrapnel Charge Restore Time Reduction",
+          "changeType": "INCREASED",
+          "oldValue": "25s",
+          "newValue": "30s",
+          "metadata": {
+            "entityId": 35
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.37",
+      "date": "2026-06-10T19:47:36.151Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Keen Scope",
+          "rawNote": "Attack Range Bonus increased from 160/240/320/400 to 160/260/360/460",
+          "indentLevel": 1,
+          "metric": "Attack Range Bonus",
+          "changeType": "INCREASED",
+          "oldValue": "160/240/320/400",
+          "newValue": "160/260/360/460",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 1268
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (attack range bonus)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Shrapnel",
+          "rawNote": "Damage increased from 25/40/55/70 to 30/45/60/75",
+          "indentLevel": 1,
+          "metric": "Damage",
+          "changeType": "INCREASED",
+          "oldValue": "25/40/55/70",
+          "newValue": "30/45/60/75",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 5154
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent +100 Attack Range replaced with +30% Shrapnel Damage",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent +100 Attack Range",
+          "changeType": "REWORK",
+          "newValue": "+30% Shrapnel Damage",
+          "metadata": {
+            "entityId": 35
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 8,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 8,
+        "laning": 8,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.37d",
+      "date": "2026-06-10T19:47:36.194Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Headshot",
+          "rawNote": "Slow Duration decreased from 0.5s to 0.2/0.3/0.4/0.5s",
+          "indentLevel": 1,
+          "metric": "Slow Duration",
+          "changeType": "DECREASED",
+          "oldValue": "0.5s",
+          "newValue": "0.2/0.3/0.4/0.5s",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 5155
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (slow duration)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.38",
+      "date": "2026-06-10T19:47:36.237Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Take Aim",
+          "rawNote": "Now has an overhead indicator when the ability is active",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 5156
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent +10% Shrapnel Movement Slow replaced with +55 Take Aim Bonus Attack Range",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent +10% Shrapnel Movement Slow",
+          "changeType": "REWORK",
+          "newValue": "+55 Take Aim Bonus Attack Range",
+          "metadata": {
+            "entityId": 35
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent +1s Take Aim Duration replaced with +150 Assassinate Damage",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent +1s Take Aim Duration",
+          "changeType": "REWORK",
+          "newValue": "+150 Assassinate Damage",
+          "metadata": {
+            "entityId": 35
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent +30 Attack Speed replaced with +45 Attack Speed During Take Aim",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent +30 Attack Speed",
+          "changeType": "REWORK",
+          "newValue": "+45 Attack Speed During Take Aim",
+          "metadata": {
+            "entityId": 35
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent +15 Take Aim Armor replaced with +2s Take Aim Duration",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent +15 Take Aim Armor",
+          "changeType": "REWORK",
+          "newValue": "+2s Take Aim Duration",
+          "metadata": {
+            "entityId": 35
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.39b",
+      "date": "2026-06-10T19:47:36.283Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "rawNote": "Base armor increased by 1",
+          "indentLevel": 1,
+          "metric": "Base armor",
+          "changeType": "INCREASED",
+          "newValue": "1",
+          "metadata": {
+            "entityId": 35
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base armor)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.40",
+      "date": "2026-06-10T19:47:36.326Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Assassinate",
+          "rawNote": "Can no longer target invulnerable units",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 5157
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Assassinate",
+          "rawNote": "Attack Damage increased from 100% to 100/110/120%",
+          "indentLevel": 1,
+          "metric": "Attack Damage",
+          "changeType": "INCREASED",
+          "oldValue": "100%",
+          "newValue": "100/110/120%",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 5157
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (attack damage)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {
+        "HERALD": {
+          "winrate": 0.4972,
+          "matchCount": 166619
+        },
+        "GUARDIAN": {
+          "winrate": 0.4954,
+          "matchCount": 322542
+        },
+        "CRUSADER": {
+          "winrate": 0.4922,
+          "matchCount": 333738
+        },
+        "ARCHON": {
+          "winrate": 0.4888,
+          "matchCount": 284538
+        },
+        "LEGEND": {
+          "winrate": 0.4901,
+          "matchCount": 191158
+        },
+        "ANCIENT": {
+          "winrate": 0.4873,
+          "matchCount": 100512
+        },
+        "DIVINE": {
+          "winrate": 0.4795,
+          "matchCount": 47968
+        }
+      }
+    },
+    {
+      "version": "7.41",
+      "date": "2026-06-10T19:47:36.392Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Keen Scope",
+          "rawNote": "No longer levels with Assassinate",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 1268
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Keen Scope",
+          "rawNote": "No longer increases attack range",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 1268
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Keen Scope",
+          "rawNote": "Now increases damage from Sniper's attacks by 1.5% + 0.05% per level for every 100 units of distance between him and the target",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 1268
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Keen Scope",
+          "rawNote": "Also affects attack damage from Assassinate",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 1268
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Take Aim",
+          "rawNote": "Now passively grants 160/240/320/400 attack range",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 5156
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Take Aim",
+          "rawNote": "Active Bonus Attack Range rescaled from 100/150/200/250 to 75/150/225/300",
+          "indentLevel": 1,
+          "metric": "Active Bonus Attack Range",
+          "changeType": "RESCALE",
+          "oldValue": "100/150/200/250",
+          "newValue": "75/150/225/300",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 5156
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Assassinate",
+          "rawNote": "No longer amplifies attack damage to 100/110/120%",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 5157
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent +55 Take Aim Attack Range Bonus replaced with +50 Take Aim Passive Attack Range",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent +55 Take Aim Attack Range Bonus",
+          "changeType": "REWORK",
+          "newValue": "+50 Take Aim Passive Attack Range",
+          "metadata": {
+            "entityId": 35
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.41d",
+      "date": "2026-06-10T19:47:36.473Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Keen Scope",
+          "rawNote": "No longer applies on denies or buildings",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 1268
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {
+        "HERALD": {
+          "winrate": 0.5395,
+          "matchCount": 20729
+        },
+        "GUARDIAN": {
+          "winrate": 0.5347,
+          "matchCount": 37593
+        },
+        "CRUSADER": {
+          "winrate": 0.5317,
+          "matchCount": 36682
+        },
+        "ARCHON": {
+          "winrate": 0.5322,
+          "matchCount": 29946
+        },
+        "LEGEND": {
+          "winrate": 0.5314,
+          "matchCount": 19406
+        },
+        "ANCIENT": {
+          "winrate": 0.5182,
+          "matchCount": 10507
+        },
+        "DIVINE": {
+          "winrate": 0.5144,
+          "matchCount": 5216
+        }
+      }
+    }
+  ]
+}

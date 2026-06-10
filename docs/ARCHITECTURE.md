@@ -87,6 +87,8 @@ Impact Scoring (Balance Ontology + Archetypes)
 ↓
 Modeling Layer (Hero Feature Vectors)
 ↓
+Historical Archiving (Hero History Engine)
+↓
 Meta Simulation & Analysis
 ↓
 Strategic Summary (LLM Narrative)
@@ -95,7 +97,21 @@ Database → API → Frontend
 
 ---
 
-# Changes pipeline
+# Frontend Architecture & Routing (v2.0)
+
+The frontend is a Next.js application optimized for Static Site Generation (SSG), enabling performant deployment to edge networks (e.g., GitHub Pages).
+
+### Primary Routes:
+*   **`/`**: Latest Patch Strategic Summary.
+*   **`/patch/[version]`**: Strategic Summary landing page for a specific patch.
+*   **`/patch/[version]/full-notes`**: Reconstructed, color-coded official patch notes.
+*   **`/hero/[name]`**: Dedicated hero intelligence page with historical trend data.
+*   **`/search`**: Global cross-patch semantic search.
+
+---
+
+# Core Architectural Components
+
 
 Steam News → Discovery Layer → Valve JSON Datafeed API → ID Mapping Resolver → Structured Parser → Tiered Classifications (Numeric/Semantic) → Strategic Weighting (Balance Ontology) → Vector Modification (Hero Feature Vectors) → Meta Simulation → Meta Conclusions
 

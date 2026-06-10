@@ -1,0 +1,3077 @@
+{
+  "name": "Kez",
+  "history": [
+    {
+      "version": "7.37e",
+      "date": "2026-06-10T19:47:36.221Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Echo Slash",
+          "rawNote": "Bonus Hero Damage rescaled from 30/45/60/75 to 25/45/65/85",
+          "indentLevel": 1,
+          "metric": "Bonus Hero Damage",
+          "changeType": "RESCALE",
+          "oldValue": "30/45/60/75",
+          "newValue": "25/45/65/85",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1498
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Grappling Claw",
+          "rawNote": "Hero Bonus Lifesteal decreased from 50/100/150/200 to 40/80/120/160",
+          "indentLevel": 1,
+          "metric": "Hero Bonus Lifesteal",
+          "changeType": "DECREASED",
+          "oldValue": "50/100/150/200",
+          "newValue": "40/80/120/160",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1499
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.38",
+      "date": "2026-06-10T19:47:36.259Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "rawNote": "Base Armor decreased by 1",
+          "indentLevel": 1,
+          "metric": "Base Armor",
+          "changeType": "DECREASED",
+          "newValue": "1",
+          "metadata": {
+            "entityId": 145
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (base armor)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "rawNote": "Base Agility increased from 26 to 27",
+          "indentLevel": 1,
+          "metric": "Base Agility",
+          "changeType": "INCREASED",
+          "oldValue": "26",
+          "newValue": "27",
+          "metadata": {
+            "entityId": 145
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base agility)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "rawNote": "Base Movement Speed decreased from 320 to 315",
+          "indentLevel": 1,
+          "metric": "Base Movement Speed",
+          "changeType": "DECREASED",
+          "oldValue": "320",
+          "newValue": "315",
+          "metadata": {
+            "entityId": 145
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 8,
+              "Ancient": 9,
+              "Divine": 9
+            },
+            "reasoning": "Decreased a positive metric (base movement speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "rawNote": "Removed Hero of the Flightless Facet",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 145
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "rawNote": "Flutter: New Facet",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 145
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "rawNote": "Flutter: Switch Discipline: Kez deals 12% more damage on the first attack or ability after switching to Katana, and gains 12% bonus movement speed for 2 seconds after switching to Sai ",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 145
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "rawNote": "Shadowhawk: New Facet",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 145
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "rawNote": "Shadowhawk: Shodo Sai: Triggering a Shodo Sai Mark from invisibility deals 50% more critical damage. When Kez triggers a Shodo Sai Mark, reduce the cooldown of both Shodo Sai and Kazurai Katana by 20/30/40/50%",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 145
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Switch Discipline",
+          "rawNote": "Katana Bonus Damage decreased from 20% to 12%",
+          "indentLevel": 1,
+          "metric": "Katana Bonus Damage",
+          "changeType": "DECREASED",
+          "oldValue": "20%",
+          "newValue": "12%",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1497
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (katana bonus damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Grappling Claw",
+          "rawNote": "No longer grants flat bonus hero lifesteal",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1499
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Grappling Claw",
+          "rawNote": "Lifesteal on attack rescaled from 100% to 50/75/100/125%",
+          "indentLevel": 1,
+          "metric": "Lifesteal on attack",
+          "changeType": "RESCALE",
+          "oldValue": "100%",
+          "newValue": "50/75/100/125%",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1499
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Kazurai Katana",
+          "rawNote": "Aghanim's Shard Cast Range increased from 150 to 200",
+          "indentLevel": 1,
+          "metric": "Aghanim's Shard Cast Range",
+          "changeType": "INCREASED",
+          "oldValue": "150",
+          "newValue": "200",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1500
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 2.5,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (aghanim's shard cast range)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Kazurai Katana",
+          "rawNote": "Aghanim's Shard cooldown increased from 5s to 20/15/10/5s",
+          "indentLevel": 1,
+          "metric": "Aghanim's Shard cooldown",
+          "changeType": "INCREASED",
+          "oldValue": "5s",
+          "newValue": "20/15/10/5s",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1500
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a negative metric (aghanim's shard cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Raptor Dance",
+          "rawNote": "Now follows global Lifesteal rules (as a result, gained creep penalty)",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1501
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Raptor Dance",
+          "rawNote": "No longer provides debuff immunity and a hard dispel",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1501
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Raptor Dance",
+          "rawNote": "Now provides a basic dispel and 0.1s invulnerability period on cast, and complete magic damage immunity for the duration",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1501
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Falcon Rush",
+          "rawNote": "Can now change targets while rushing",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1502
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Falcon Rush",
+          "rawNote": "Rush Range decreased from 575 to 525",
+          "indentLevel": 1,
+          "metric": "Rush Range",
+          "changeType": "DECREASED",
+          "oldValue": "575",
+          "newValue": "525",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1502
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (rush range)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Falcon Rush",
+          "rawNote": "Sai Base Attack Rate increased from 1.2/1.1/1.0/0.9s to 1.3/1.2/1.1/1s",
+          "indentLevel": 1,
+          "metric": "Sai Base Attack Rate",
+          "changeType": "INCREASED",
+          "oldValue": "1.2/1.1/1.0/0.9s",
+          "newValue": "1.3/1.2/1.1/1s",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1502
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Falcon Rush",
+          "rawNote": "Katana Base Attack Rate increased from 1.4/1.3/1.2/1.1s to 1.5/1.4/1.3/1.2s",
+          "indentLevel": 1,
+          "metric": "Katana Base Attack Rate",
+          "changeType": "INCREASED",
+          "oldValue": "1.4/1.3/1.2/1.1s",
+          "newValue": "1.5/1.4/1.3/1.2s",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1502
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Falcon Rush",
+          "rawNote": "Attack Speed Factor increased from 6/7/8/9% to 6/8/10/12%",
+          "indentLevel": 1,
+          "metric": "Attack Speed Factor",
+          "changeType": "INCREASED",
+          "oldValue": "6/7/8/9%",
+          "newValue": "6/8/10/12%",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1502
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Increased a positive metric (attack speed factor)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Talon Toss",
+          "rawNote": "Now deals physical damage",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1503
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Shodo Sai",
+          "rawNote": "No longer slows Marked targets",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1504
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Shodo Sai",
+          "rawNote": "Aghanim's Shard no longer grants bonus movement speed",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1504
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.38b",
+      "date": "2026-06-10T19:47:36.268Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "rawNote": "Base Intelligence increased from 18 to 20",
+          "indentLevel": 1,
+          "metric": "Base Intelligence",
+          "changeType": "INCREASED",
+          "oldValue": "18",
+          "newValue": "20",
+          "metadata": {
+            "entityId": 145
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base intelligence)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "rawNote": "Strength gain increased from 2.6 to 2.8",
+          "indentLevel": 1,
+          "metric": "Strength gain",
+          "changeType": "INCREASED",
+          "oldValue": "2.6",
+          "newValue": "2.8",
+          "metadata": {
+            "entityId": 145
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (strength gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "rawNote": "Shadowhawk: Now scales with ultimate abilities instead of Shodo Sai",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 145
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "rawNote": "Shadowhawk: Shodo Sai: Invis Bonus Crit rescaled from 50% to 40/60/80/100%",
+          "indentLevel": 1,
+          "metric": "Shadowhawk: Shodo Sai: Invis Bonus Crit",
+          "changeType": "RESCALE",
+          "oldValue": "50%",
+          "newValue": "40/60/80/100%",
+          "metadata": {
+            "entityId": 145
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Grappling Claw",
+          "rawNote": "Lifesteal increased from 50/75/100/125% to 65/85/105/125%",
+          "indentLevel": 1,
+          "metric": "Lifesteal",
+          "changeType": "INCREASED",
+          "oldValue": "50/75/100/125%",
+          "newValue": "65/85/105/125%",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1499
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Shodo Sai",
+          "rawNote": "Can now block all physical attack sources (still can't Mark non-hero units)",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1504
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Raptor Dance",
+          "rawNote": "Invulnerability period increased from 0.1s to 0.2s",
+          "indentLevel": 1,
+          "metric": "Invulnerability period",
+          "changeType": "INCREASED",
+          "oldValue": "0.1s",
+          "newValue": "0.2s",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1501
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.38c",
+      "date": "2026-06-10T19:47:36.281Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Shodo Sai Mark Critical Strike increased from +75% to +100%",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Shodo Sai Mark Critical Strike",
+          "changeType": "INCREASED",
+          "oldValue": "+75%",
+          "newValue": "+100%",
+          "metadata": {
+            "entityId": 145
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.39b",
+      "date": "2026-06-10T19:47:36.288Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Falcon Rush",
+          "rawNote": "Abilities that are unit targeted attacks now allow Kez to rush to the target ",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1502
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Falcon Rush",
+          "rawNote": "Duration increased from 3/4/5/6s to 3.75/4.5/5.25/6s",
+          "indentLevel": 1,
+          "metric": "Duration",
+          "changeType": "INCREASED",
+          "oldValue": "3/4/5/6s",
+          "newValue": "3.75/4.5/5.25/6s",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1502
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Talon Toss",
+          "rawNote": "Mana Cost decreased from 75 to 60/65/70/75",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "DECREASED",
+          "oldValue": "75",
+          "newValue": "60/65/70/75",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1503
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a negative metric (mana cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Shodo Sai",
+          "rawNote": "Once again grants bonus stun and critical strike from marks generated by parrying an enemy Hero",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1504
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Shodo Sai",
+          "rawNote": "Parry Bonus Critical Strike rescaled from 25/50/75/100% to 4% * Enemy Level",
+          "indentLevel": 1,
+          "metric": "Parry Bonus Critical Strike",
+          "changeType": "RESCALE",
+          "oldValue": "25/50/75/100%",
+          "newValue": "4% * Enemy Level",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1504
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 5,
+        "laning": 1,
+        "siege": 0,
+        "utility": 11
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.39c",
+      "date": "2026-06-10T19:47:36.300Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Echo Slash",
+          "rawNote": "Mana Cost decreased from 85/100/115/130 to 75/90/105/120",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "DECREASED",
+          "oldValue": "85/100/115/130",
+          "newValue": "75/90/105/120",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1498
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a negative metric (mana cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Kazurai Katana",
+          "rawNote": "Impale Duration decreased from 0.6s to 0.5s",
+          "indentLevel": 1,
+          "metric": "Impale Duration",
+          "changeType": "DECREASED",
+          "oldValue": "0.6s",
+          "newValue": "0.5s",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1500
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (impale duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Kazurai Katana",
+          "rawNote": "Mana Cost decreased from 50 to 40",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "DECREASED",
+          "oldValue": "50",
+          "newValue": "40",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1500
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a negative metric (mana cost)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 2,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": 2,
+        "siege": 0,
+        "utility": 2
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.39e",
+      "date": "2026-06-10T19:47:36.312Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "rawNote": "Added to Captain's Mode",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 145
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "rawNote": "Base Mana Regen increased from 0 to 0.25",
+          "indentLevel": 1,
+          "metric": "Base Mana Regen",
+          "changeType": "INCREASED",
+          "oldValue": "0",
+          "newValue": "0.25",
+          "metadata": {
+            "entityId": 145
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (base mana regen)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "rawNote": "Flutter: Switch Discipline: The first hit bonus is now consumed by the first attack of Echo Slash and Raptor Dance, rather than applying to the entire cast ",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 145
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "rawNote": "Flutter: Switch Discipline: Fixed the Katana bonus being lost if Echo Slash hit nothing",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 145
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Switch Discipline",
+          "rawNote": "Fixed a bug with Aghanim's Scepter that would allow extra Sai abilities to skip cooldown",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1497
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Kazurai Katana",
+          "rawNote": "Impale damage changed from post-critical strike bonus damage to a separate instance of physical spell damage",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1500
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Raptor Dance",
+          "rawNote": "Max Health as Damage decreased from 3% to 2.5%",
+          "indentLevel": 1,
+          "metric": "Max Health as Damage",
+          "changeType": "DECREASED",
+          "oldValue": "3%",
+          "newValue": "2.5%",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1501
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Decreased a positive metric (max health as damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Raptor Dance",
+          "rawNote": "Can no longer be interrupted by casting Grappling Claw",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1501
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Falcon Rush",
+          "rawNote": "Now has an 825 break distance",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1502
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Falcon Rush",
+          "rawNote": "Attack Speed Factor rescaled from 6/8/10/12% to 9%",
+          "indentLevel": 1,
+          "metric": "Attack Speed Factor",
+          "changeType": "RESCALE",
+          "oldValue": "6/8/10/12%",
+          "newValue": "9%",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1502
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Shodo Sai",
+          "rawNote": "Mark Critical Strike decreased from 140/160/180/200% to 125/150/175/200%",
+          "indentLevel": 1,
+          "metric": "Mark Critical Strike",
+          "changeType": "DECREASED",
+          "oldValue": "140/160/180/200%",
+          "newValue": "125/150/175/200%",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1504
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.40",
+      "date": "2026-06-10T19:47:36.346Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "rawNote": "Base Strength increased from 19 to 20",
+          "indentLevel": 1,
+          "metric": "Base Strength",
+          "changeType": "INCREASED",
+          "oldValue": "19",
+          "newValue": "20",
+          "metadata": {
+            "entityId": 145
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base strength)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Switch Discipline",
+          "rawNote": "Cooldown reduction per level increased from 0.2s to 0.25s",
+          "indentLevel": 1,
+          "metric": "Cooldown reduction per level",
+          "changeType": "INCREASED",
+          "oldValue": "0.2s",
+          "newValue": "0.25s",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1497
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a negative metric (cooldown reduction per level)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Switch Discipline",
+          "rawNote": "Cooldown on level 1 decreased from 7.8s to 7.75s",
+          "indentLevel": 2,
+          "metric": "Cooldown on level 1",
+          "changeType": "DECREASED",
+          "oldValue": "7.8s",
+          "newValue": "7.75s",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1497
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown on level 1)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Switch Discipline",
+          "rawNote": "Cooldown on level 30 decreased from 2s to 0.5s",
+          "indentLevel": 2,
+          "metric": "Cooldown on level 30",
+          "changeType": "DECREASED",
+          "oldValue": "2s",
+          "newValue": "0.5s",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1497
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown on level 30)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Switch Discipline",
+          "rawNote": "Katana Base Attack Time improved from 2.0s to 1.8s",
+          "indentLevel": 1,
+          "metric": "Katana Base Attack Time",
+          "changeType": "INCREASED",
+          "oldValue": "2.0s",
+          "newValue": "1.8s",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1497
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Switch Discipline",
+          "rawNote": "Katana Bonus Agility Base Damage decreased from 20% to 12%",
+          "indentLevel": 1,
+          "metric": "Katana Bonus Agility Base Damage",
+          "changeType": "DECREASED",
+          "oldValue": "20%",
+          "newValue": "12%",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1497
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (katana bonus agility base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Kazurai Katana",
+          "rawNote": "Damage per second rescaled from 5/7/9/11 to 3/6/9/12%",
+          "indentLevel": 1,
+          "metric": "Damage per second",
+          "changeType": "RESCALE",
+          "oldValue": "5/7/9/11",
+          "newValue": "3/6/9/12%",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1500
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Kazurai Katana",
+          "rawNote": "The active effect may only trigger up to a maximum of 500 stacks",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1500
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Kazurai Katana",
+          "rawNote": "Aghanim's Shard now also increases Max Stacks to 1000 and stack as burst damage from 50% to 100%",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1500
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Falcon Rush",
+          "rawNote": "No longer causes Kez to have a fixed attack rate or any interaction with attack speed",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1502
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Falcon Rush",
+          "rawNote": "Echo Attack Damage decreased from 45/55/65/75% to 35/40/45/50%",
+          "indentLevel": 1,
+          "metric": "Echo Attack Damage",
+          "changeType": "DECREASED",
+          "oldValue": "45/55/65/75%",
+          "newValue": "35/40/45/50%",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1502
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (echo attack damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Falcon Rush",
+          "rawNote": "Echoes now have 50% reduced chance to proc random effects",
+          "indentLevel": 1,
+          "metric": "Echoes now have 50%",
+          "changeType": "DECREASED",
+          "oldValue": "chance",
+          "newValue": "proc random effects",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1502
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Falcon Rush",
+          "rawNote": "Echo with Maelstrom (25% chance) will have a 12.5% chance to proc its passive",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1502
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Falcon Rush",
+          "rawNote": "Echoes can no longer trigger Marks, but may still create them",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1502
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Falcon Rush",
+          "rawNote": "However, their chance to mark will be reduced from 18% to 9% due to the proc chance change mentioned before",
+          "indentLevel": 2,
+          "metric": "However, their chance to mark will be",
+          "changeType": "DECREASED",
+          "oldValue": "18%",
+          "newValue": "9% due to the proc chance change mentioned before",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1502
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Falcon Rush",
+          "rawNote": "Rush Speed decreased from 1000 to 850",
+          "indentLevel": 1,
+          "metric": "Rush Speed",
+          "changeType": "DECREASED",
+          "oldValue": "1000",
+          "newValue": "850",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1502
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (rush speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Shodo Sai",
+          "rawNote": "Marked Stun Duration decreased from 0.5s to 0.4s",
+          "indentLevel": 1,
+          "metric": "Marked Stun Duration",
+          "changeType": "DECREASED",
+          "oldValue": "0.5s",
+          "newValue": "0.4s",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1504
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (marked stun duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Shodo Sai",
+          "rawNote": "Parry Stun Duration decreased from 0.5s to 0.4s",
+          "indentLevel": 1,
+          "metric": "Parry Stun Duration",
+          "changeType": "DECREASED",
+          "oldValue": "0.5s",
+          "newValue": "0.4s",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1504
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (parry stun duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent +50% Attack Damage Added to Talon Toss replaced with +60 Attack Speed During Falcon Rush",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent +50% Attack Damage Added to Talon Toss",
+          "changeType": "REWORK",
+          "newValue": "+60 Attack Speed During Falcon Rush",
+          "metadata": {
+            "entityId": 145
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {
+        "HERALD": {
+          "winrate": 0.478,
+          "matchCount": 33371
+        },
+        "GUARDIAN": {
+          "winrate": 0.4579,
+          "matchCount": 60414
+        },
+        "CRUSADER": {
+          "winrate": 0.4501,
+          "matchCount": 64586
+        },
+        "ARCHON": {
+          "winrate": 0.4437,
+          "matchCount": 64722
+        },
+        "LEGEND": {
+          "winrate": 0.4461,
+          "matchCount": 54621
+        },
+        "ANCIENT": {
+          "winrate": 0.4459,
+          "matchCount": 38561
+        },
+        "DIVINE": {
+          "winrate": 0.4515,
+          "matchCount": 24608
+        }
+      }
+    },
+    {
+      "version": "7.40b",
+      "date": "2026-06-10T19:47:36.363Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Switch Discipline",
+          "rawNote": "Katana Base Attack Time worsened from 1.8s to 1.9s",
+          "indentLevel": 1,
+          "metric": "Katana Base Attack Time",
+          "changeType": "DECREASED",
+          "oldValue": "1.8s",
+          "newValue": "1.9s",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1497
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Switch Discipline",
+          "rawNote": "Katana Bonus Agility Base Damage increased from 12% to 16%",
+          "indentLevel": 1,
+          "metric": "Katana Bonus Agility Base Damage",
+          "changeType": "INCREASED",
+          "oldValue": "12%",
+          "newValue": "16%",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1497
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (katana bonus agility base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Switch Discipline",
+          "rawNote": "Can no longer be disabled by Silence",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1497
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Falcon Rush",
+          "rawNote": "Can no longer rush towards buildings or trigger on them",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1502
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Falcon Rush",
+          "rawNote": "Echo Attack Damage decreased from 35/40/45/50% to 30/35/40/45%",
+          "indentLevel": 1,
+          "metric": "Echo Attack Damage",
+          "changeType": "DECREASED",
+          "oldValue": "35/40/45/50%",
+          "newValue": "30/35/40/45%",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1502
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (echo attack damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Attack Speed During Falcon Rush decreased from +60 to +40",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Attack Speed During Falcon Rush",
+          "changeType": "DECREASED",
+          "oldValue": "+60",
+          "newValue": "+40",
+          "metadata": {
+            "entityId": 145
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Decreased a positive metric (level 20 talent attack speed during falcon rush)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.41",
+      "date": "2026-06-10T19:47:36.416Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "rawNote": "Base Movement Speed decreased from 315 to 310",
+          "indentLevel": 1,
+          "metric": "Base Movement Speed",
+          "changeType": "DECREASED",
+          "oldValue": "315",
+          "newValue": "310",
+          "metadata": {
+            "entityId": 145
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 8,
+              "Ancient": 9,
+              "Divine": 9
+            },
+            "reasoning": "Decreased a positive metric (base movement speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "rawNote": "Base Attack Speed decreased from 110 to 100",
+          "indentLevel": 1,
+          "metric": "Base Attack Speed",
+          "changeType": "DECREASED",
+          "oldValue": "110",
+          "newValue": "100",
+          "metadata": {
+            "entityId": 145
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Decreased a positive metric (base attack speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Switch Discipline",
+          "rawNote": "Cooldown changed from 7.75s - 0.25s per level up to 8s - 0.25s per level ",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1497
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Switch Discipline",
+          "rawNote": "Now the first katana hit or ability will deal 12% bonus damage after switching to Katana, and after switching to Sai Kez gains +12% movement speed for 2 seconds",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1497
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Switch Discipline",
+          "rawNote": "Aghanim's Scepter no longer restarts the alternate ability cooldown if it was already on cooldown",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1497
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Grappling Claw",
+          "rawNote": "When targeting a tree, now always destroys the targeted tree and ends in the tree's position",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1499
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Talon Toss",
+          "rawNote": "Cast Range decreased from 1200 to 650/750/850/950 ",
+          "indentLevel": 1,
+          "metric": "Cast Range",
+          "changeType": "DECREASED",
+          "oldValue": "1200",
+          "newValue": "650/750/850/950",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1503
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 2.5,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (cast range)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Shodo Sai",
+          "rawNote": "The proc effect now triggers a critical strike only instead of creating a Mark",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1504
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Shodo Sai",
+          "rawNote": "18% Chance to Mark replaced with 20% Critical Strike Chance",
+          "indentLevel": 1,
+          "metric": "18% Chance to Mark",
+          "changeType": "REWORK",
+          "newValue": "20% Critical Strike Chance",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1504
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Shodo Sai",
+          "rawNote": "As a result, marks are applied only by parrying and casting Raven's Veil",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1504
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Shodo Sai",
+          "rawNote": "No longer restricts Kez from proccing passive Bash spells of Skull Basher and Abyssal Blade",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1504
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Shodo Sai",
+          "rawNote": "Mark Stun Duration increased from 0.4s to 0.5/0.6/0.7/0.8s",
+          "indentLevel": 1,
+          "metric": "Mark Stun Duration",
+          "changeType": "INCREASED",
+          "oldValue": "0.4s",
+          "newValue": "0.5/0.6/0.7/0.8s",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1504
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (mark stun duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Shodo Sai",
+          "rawNote": "No longer has a parry bonus by default",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1504
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Shodo Sai",
+          "rawNote": "Now upgraded with Aghanim's Shard",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1504
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Shodo Sai",
+          "rawNote": "Parrying creates a stronger mark that will stun the target for an additional 0.2s and an a crit bonus of 50%",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1504
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Raptor Dance",
+          "rawNote": "No longer provides magic damage immunity",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1501
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent +100% Shodo Sai Mark Critical Strike replaced with +80% Shodo Sai Critical Strike",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent +100% Shodo Sai Mark Critical Strike",
+          "changeType": "REWORK",
+          "newValue": "+80% Shodo Sai Critical Strike",
+          "metadata": {
+            "entityId": 145
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": 0,
+        "siege": 0,
+        "utility": -15
+      },
+      "winrates": {}
+    },
+    {
+      "version": "7.41a",
+      "date": "2026-06-10T19:47:36.427Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Raptor Dance",
+          "rawNote": "Base Damage increased from 30/60/90 to 40/70/100",
+          "indentLevel": 1,
+          "metric": "Base Damage",
+          "changeType": "INCREASED",
+          "oldValue": "30/60/90",
+          "newValue": "40/70/100",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1501
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Raven's Veil",
+          "rawNote": "Buff Duration increased from 7/8/9s to 8/10/12s",
+          "indentLevel": 1,
+          "metric": "Buff Duration",
+          "changeType": "INCREASED",
+          "oldValue": "7/8/9s",
+          "newValue": "8/10/12s",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1506
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (buff duration)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "winrates": {}
+    },
+    {
+      "version": "7.41d",
+      "date": "2026-06-10T19:47:36.490Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Switch Discipline",
+          "rawNote": "Katana Bonus Agility Base Damage decreased from 16% to 12%",
+          "indentLevel": 1,
+          "metric": "Katana Bonus Agility Base Damage",
+          "changeType": "DECREASED",
+          "oldValue": "16%",
+          "newValue": "12%",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1497
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (katana bonus agility base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Kazurai Katana",
+          "rawNote": "Cooldown increased from 20/15/10/5s to 24/18/12/6s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "INCREASED",
+          "oldValue": "20/15/10/5s",
+          "newValue": "24/18/12/6s",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1500
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Shodo Sai",
+          "rawNote": "Cooldown increased from 20/15/10/5s to 24/18/12/6s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "INCREASED",
+          "oldValue": "20/15/10/5s",
+          "newValue": "24/18/12/6s",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1504
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 2,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Shodo Sai",
+          "rawNote": "Parry Duration decreased from 2s to 1.5s",
+          "indentLevel": 1,
+          "metric": "Parry Duration",
+          "changeType": "DECREASED",
+          "oldValue": "2s",
+          "newValue": "1.5s",
+          "metadata": {
+            "entityId": 145,
+            "subEntityId": 1504
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (parry duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Kez",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent +12% Magic Resistance replaced with +6% Switch Discipline Swap Bonuses ",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent +12% Magic Resistance",
+          "changeType": "REWORK",
+          "newValue": "+6% Switch Discipline Swap Bonuses",
+          "metadata": {
+            "entityId": 145
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -3,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {
+        "HERALD": {
+          "winrate": 0.48,
+          "matchCount": 4404
+        },
+        "GUARDIAN": {
+          "winrate": 0.4674,
+          "matchCount": 5954
+        },
+        "CRUSADER": {
+          "winrate": 0.4619,
+          "matchCount": 5830
+        },
+        "ARCHON": {
+          "winrate": 0.4665,
+          "matchCount": 5833
+        },
+        "LEGEND": {
+          "winrate": 0.4587,
+          "matchCount": 4942
+        },
+        "ANCIENT": {
+          "winrate": 0.469,
+          "matchCount": 3535
+        },
+        "DIVINE": {
+          "winrate": 0.472,
+          "matchCount": 2587
+        }
+      }
+    }
+  ]
+}

@@ -209,32 +209,34 @@ Deliverables:
 
 # Phase 11 — Frontend Polish & Advanced UX
 
-Status: In Progress
+Status: Complete
 
 Goals:
-* **Full Patch Note Overview:** A comprehensive, color-coded, and deeply filterable/searchable view of the entire patch notes.
-* **Hero-Specific Detail Views:** Dedicated pages or modals for each hero displaying patch impacts, historical winrate histograms, and exact metric values.
-* **Single Page Application (SPA) Architecture:** Optimize the Next.js setup for static site generation (SSG) to support GitHub Pages. (Done: `/patch/[version]` refactor)
-* **Global Search & Filter:** Robust system-wide search functionality to find specific mechanics, items, or heroes across patches.
+* **Strategic Landing Pages:** Re-architected patch pages to prioritize high-level impact summaries over raw data. (Done)
+* **Hero-Specific Detail Views:** Dedicated, permanent pages for every hero with full balance history, winrate histograms, and feature vector trajectories. (Done)
+* **Single Page Application (SPA) Architecture:** Optimized Next.js setup with deep interlinking between notes, summaries, and hero archives. (Done)
+* **Global Search & Filter:** Robust system-wide search functionality to find specific mechanics, items, or heroes across all patches. (Done)
+* **Mobile Responsiveness:** (Added to Roadmap) Ensure the advanced dashboards and histograms are fully functional and readable on mobile devices.
 
 Deliverables:
-* Frontend V2 release with advanced interactive components.
-* Data visualization charts (e.g., winrate histograms).
-* Static pre-rendered patch pages. (Done)
+* Frontend V2 release with dual-view patch architecture (Summary/Full Notes).
+* Integrated Hero History Archive.
+* Global search engine.
 
 ---
 
 # Phase 12 — Backend API & Database Migration
 
-Status: Future
+Status: Up Next
 
 Goals:
 * Transition the data architecture from local static JSON files (`research-output`) to a relational PostgreSQL database.
-* Develop a robust backend API (Node.js/Fastify) to serve patch data dynamically to the frontend.
+* Develop a robust backend API (Node.js/Fastify) to serve patch data dynamically.
+* Implement a caching layer for heavy analytics queries.
 * Establish data models and schemas using an ORM (e.g., Prisma or Drizzle).
 
 Deliverables:
-* Database schema implementation.
+* Database schema implementation and migration scripts.
 * Deployed REST/GraphQL API.
 
 ---
