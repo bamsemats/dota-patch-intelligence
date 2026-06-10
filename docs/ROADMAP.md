@@ -203,7 +203,7 @@ Goals:
 Deliverables:
 * Simulation engine prototype. (Done)
 * Automated validation test suite. (Done)
-* Self-correcting weight auto-tuner. (Done)
+* Self-correcting weight auto-tuner. (Done: Successfully calibrated across 3 years of data)
 
 ---
 
@@ -214,12 +214,13 @@ Status: In Progress
 Goals:
 * **Full Patch Note Overview:** A comprehensive, color-coded, and deeply filterable/searchable view of the entire patch notes.
 * **Hero-Specific Detail Views:** Dedicated pages or modals for each hero displaying patch impacts, historical winrate histograms, and exact metric values.
-* **Single Page Application (SPA) Architecture:** Optimize the Next.js setup for seamless state management, quick transitions, and superior UI/UX.
+* **Single Page Application (SPA) Architecture:** Optimize the Next.js setup for static site generation (SSG) to support GitHub Pages. (Done: `/patch/[version]` refactor)
 * **Global Search & Filter:** Robust system-wide search functionality to find specific mechanics, items, or heroes across patches.
 
 Deliverables:
 * Frontend V2 release with advanced interactive components.
 * Data visualization charts (e.g., winrate histograms).
+* Static pre-rendered patch pages. (Done)
 
 ---
 

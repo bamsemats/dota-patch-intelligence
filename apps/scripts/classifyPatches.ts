@@ -39,13 +39,27 @@ function determineClassification(change: any): Classification {
     const metricStr = (change.metric || "").toLowerCase();
     const rawNoteLower = change.rawNote.toLowerCase();
 
+    // Helper to find the best matching metric key from ontology
+    const findMetricData = (mStr: string) => {
+        // 1. Try exact match
+        if (balanceOntology.metrics[mStr]) return balanceOntology.metrics[mStr];
+        
+        // 2. Try partial match (check if ontology key is part of the extracted metric)
+        // Sort keys by length descending to match most specific first (e.g., "mana regen" before "mana")
+        const keys = Object.keys(balanceOntology.metrics).sort((a, b) => b.length - a.length);
+        for (const key of keys) {
+            if (mStr.includes(key)) return balanceOntology.metrics[key];
+        }
+        return null;
+    };
+
     // Catch structural headers that bypass the parser's HTML strip
     if (changeType === "SECTION_HEADER") {
         return {
             state: "KNOWN_SEMANTIC",
-            classificationType: "Adjustment", // Treat as neutral info
+            classificationType: "Adjustment",
             semanticTag: "STRUCTURAL_HEADER",
-            strategicWeight: 0,
+            strategicWeight: { "Herald": 0, "Guardian": 0, "Crusader": 0, "Archon": 0, "Legend": 0, "Ancient": 0, "Divine": 0 },
             confidenceScore: 1.0,
             reasoning: "Structural HTML header, not a gameplay change."
         };
@@ -53,7 +67,7 @@ function determineClassification(change: any): Classification {
 
     // 1. Check for NUMERIC states (Deterministic via Balance Ontology)
     if (changeType === "INCREASED" || changeType === "DECREASED" || changeType === "RESCALE") {
-        const metricData = balanceOntology.metrics[metricStr];
+        const metricData = findMetricData(metricStr);
         const defaultWeights = { "Herald": 5, "Guardian": 5, "Crusader": 5, "Archon": 5, "Legend": 5, "Ancient": 5, "Divine": 5 };
         const weightsObj = metricData ? metricData.weights : defaultWeights;
         
@@ -68,7 +82,6 @@ function determineClassification(change: any): Classification {
         }
 
         // We use a heuristic if metric is not mapped explicitly with polarity.
-        // For MVP, we still rely on basic keyword matching for polarity if balance_ontology doesn't define it.
         const isNegativeMetric = ["cooldown", "mana cost", "cast point", "delay", "cost", "penalty"].some(m => metricStr.includes(m));
         const isPositiveMetric = ["damage", "health", "mana", "armor", "speed", "range", "duration", "strength", "agility", "intelligence", "radius", "regen"].some(m => metricStr.includes(m));
 
@@ -82,7 +95,6 @@ function determineClassification(change: any): Classification {
             if (isPositiveMetric) return { state: "NUMERIC", classificationType: "Nerf", confidenceScore: 1.0, strategicWeight: weightsObj, reasoning: `Decreased a positive metric (${metricStr}).` };
         }
         
-        // Numeric but ambiguous polarity
         return {
             state: "NUMERIC",
             classificationType: "Adjustment",
@@ -93,9 +105,11 @@ function determineClassification(change: any): Classification {
     }
 
     // Explicit Feature Handling (Rework/Add/Remove)
-    if (changeType === "REWORK") return { state: "KNOWN_SEMANTIC", classificationType: "Rework", confidenceScore: 1.0, reasoning: "Explicitly designated as a replacement or rework." };
-    if (changeType === "ADDITION") return { state: "KNOWN_SEMANTIC", classificationType: "Buff", confidenceScore: 0.9, reasoning: "Addition of a new mechanic or feature." };
-    if (changeType === "REMOVAL") return { state: "KNOWN_SEMANTIC", classificationType: "Nerf", confidenceScore: 0.9, reasoning: "Removal of a mechanic or feature." };
+    const wrapWeight = (w: number) => ({ "Herald": w, "Guardian": w, "Crusader": w, "Archon": w, "Legend": w, "Ancient": w, "Divine": w });
+
+    if (changeType === "REWORK") return { state: "KNOWN_SEMANTIC", classificationType: "Rework", confidenceScore: 1.0, strategicWeight: wrapWeight(8), reasoning: "Explicitly designated as a replacement or rework." };
+    if (changeType === "ADDITION") return { state: "KNOWN_SEMANTIC", classificationType: "Buff", confidenceScore: 0.9, strategicWeight: wrapWeight(7), reasoning: "Addition of a new mechanic or feature." };
+    if (changeType === "REMOVAL") return { state: "KNOWN_SEMANTIC", classificationType: "Nerf", confidenceScore: 0.9, strategicWeight: wrapWeight(7), reasoning: "Removal of a mechanic or feature." };
 
     // 2. Check Semantic Ontology for KNOWN_SEMANTIC
     for (const entry of semanticOntology) {
@@ -103,9 +117,9 @@ function determineClassification(change: any): Classification {
             if (rawNoteLower.includes(pattern.toLowerCase())) {
                 return {
                     state: "KNOWN_SEMANTIC",
-                    classificationType: "Adjustment", // Polarity often depends on context for semantic changes
+                    classificationType: "Adjustment", 
                     semanticTag: entry.tag,
-                    strategicWeight: entry.defaultWeight,
+                    strategicWeight: wrapWeight(entry.defaultWeight || 5),
                     confidenceScore: 0.95,
                     reasoning: `Matches semantic pattern: "${pattern}"`
                 };
@@ -118,6 +132,7 @@ function determineClassification(change: any): Classification {
         state: "UNKNOWN",
         classificationType: "Unknown",
         confidenceScore: 0.0,
+        strategicWeight: wrapWeight(5),
         reasoning: "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
     };
 }

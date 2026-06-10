@@ -91,20 +91,30 @@ export default function ItemList({ title, items }: ItemListProps) {
                       <span className={styles.note}>{change.rawNote}</span>
                     </div>
                     {change.classification.strategicWeight && (
-                      <span style={{ 
-                        fontSize: '0.75rem', 
-                        color: 'var(--color-rare)', 
-                        background: 'rgba(26, 135, 249, 0.1)',
-                        padding: '2px 6px',
-                        borderRadius: '4px',
-                        marginLeft: '8px',
-                        whiteSpace: 'nowrap',
-                        fontWeight: 'bold'
-                      }}>
-                        Impact: {typeof change.classification.strategicWeight === 'object' 
-                          ? change.classification.strategicWeight['Divine'] 
-                          : change.classification.strategicWeight}
-                      </span>
+                      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '2px' }}>
+                        <span style={{ 
+                          fontSize: '0.75rem', 
+                          color: 'var(--color-rare)', 
+                          background: 'rgba(26, 135, 249, 0.1)',
+                          padding: '2px 6px',
+                          borderRadius: '4px',
+                          marginLeft: '8px',
+                          whiteSpace: 'nowrap',
+                          fontWeight: 'bold'
+                        }}>
+                          Impact: {typeof change.classification.strategicWeight === 'object' 
+                            ? change.classification.strategicWeight['Divine'] 
+                            : change.classification.strategicWeight}
+                        </span>
+                        <span style={{ 
+                          fontSize: '0.6rem', 
+                          color: change.classification.state === 'UNKNOWN' ? '#888' : 'var(--color-common)',
+                          textTransform: 'uppercase',
+                          letterSpacing: '0.5px'
+                        }}>
+                          {change.classification.state}
+                        </span>
+                      </div>
                     )}
                   </div>
                 </div>
