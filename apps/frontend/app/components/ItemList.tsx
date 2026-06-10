@@ -14,6 +14,8 @@ interface Change {
     classificationType: ChangeType;
     confidenceScore: number;
     reasoning: string;
+    strategicWeight?: any;
+    state?: string;
   };
 }
 
@@ -31,8 +33,12 @@ interface ItemListProps {
 
 export default function ItemList({ title, items }: ItemListProps) {
   const [filter, setFilter] = useState<"All" | "Buffed" | "Nerfed">("All");
+  const [search, setSearch] = useState("");
 
   const filteredItems = items.filter((item) => {
+    const matchesSearch = item.itemName.toLowerCase().includes(search.toLowerCase());
+    if (!matchesSearch) return false;
+
     if (filter === "Buffed") return item.netScore > 0;
     if (filter === "Nerfed") return item.netScore < 0;
     return true;
@@ -40,27 +46,39 @@ export default function ItemList({ title, items }: ItemListProps) {
 
   return (
     <div className={styles.listContainer}>
-      <h2>{title}</h2>
-      
-      <div className={styles.controls}>
-        <button 
-          className={`${styles.filterBtn} ${filter === "All" ? styles.active : ""}`}
-          onClick={() => setFilter("All")}
-        >
-          All Items
-        </button>
-        <button 
-          className={`${styles.filterBtn} ${filter === "Buffed" ? styles.active : ""}`}
-          onClick={() => setFilter("Buffed")}
-        >
-          Buffed Items
-        </button>
-        <button 
-          className={`${styles.filterBtn} ${filter === "Nerfed" ? styles.active : ""}`}
-          onClick={() => setFilter("Nerfed")}
-        >
-          Nerfed Items
-        </button>
+      <div className={styles.controlsRow}>
+        <h2>{title}</h2>
+        
+        <div className={styles.controls}>
+          <button 
+            className={`${styles.filterBtn} ${filter === "All" ? styles.active : ""}`}
+            onClick={() => setFilter("All")}
+          >
+            All
+          </button>
+          <button 
+            className={`${styles.filterBtn} ${filter === "Buffed" ? styles.active : ""}`}
+            onClick={() => setFilter("Buffed")}
+          >
+            Buffed
+          </button>
+          <button 
+            className={`${styles.filterBtn} ${filter === "Nerfed" ? styles.active : ""}`}
+            onClick={() => setFilter("Nerfed")}
+          >
+            Nerfed
+          </button>
+        </div>
+
+        <div className={styles.searchContainer}>
+          <input 
+            type="text" 
+            placeholder={`Search ${title.toLowerCase()}...`} 
+            className={styles.searchInput}
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+        </div>
       </div>
 
       <div className={styles.grid}>

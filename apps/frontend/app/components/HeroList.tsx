@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import styles from "./EntityList.module.css";
 
 type ChangeType = "Buff" | "Nerf" | "Rework" | "Adjustment";
@@ -14,6 +15,8 @@ interface Change {
     classificationType: ChangeType;
     confidenceScore: number;
     reasoning: string;
+    strategicWeight?: any;
+    state?: string;
   };
 }
 
@@ -36,12 +39,18 @@ interface HeroData {
 
 interface HeroListProps {
   heroes: HeroData[];
+  winrateData?: any;
+  heroMapping?: Record<string, string>;
 }
 
 export default function HeroList({ heroes }: HeroListProps) {
   const [filter, setFilter] = useState<"All" | "Buffed" | "Nerfed">("All");
+  const [search, setSearch] = useState("");
 
   const filteredHeroes = heroes.filter((hero) => {
+    const matchesSearch = hero.heroName.toLowerCase().includes(search.toLowerCase());
+    if (!matchesSearch) return false;
+    
     if (filter === "Buffed") return hero.netScore > 0;
     if (filter === "Nerfed") return hero.netScore < 0;
     return true;
@@ -54,36 +63,57 @@ export default function HeroList({ heroes }: HeroListProps) {
       .map(([dim, val]) => ({ dim: dim.charAt(0).toUpperCase() + dim.slice(1), val }));
   };
 
+  const getHeroSlug = (name: string) => {
+    return name.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+  };
+
   return (
     <div className={styles.listContainer}>
       <h2>Hero Changes</h2>
       
-      <div className={styles.controls}>
-        <button 
-          className={`${styles.filterBtn} ${filter === "All" ? styles.active : ""}`}
-          onClick={() => setFilter("All")}
-        >
-          All Heroes
-        </button>
-        <button 
-          className={`${styles.filterBtn} ${filter === "Buffed" ? styles.active : ""}`}
-          onClick={() => setFilter("Buffed")}
-        >
-          Buffed Heroes
-        </button>
-        <button 
-          className={`${styles.filterBtn} ${filter === "Nerfed" ? styles.active : ""}`}
-          onClick={() => setFilter("Nerfed")}
-        >
-          Nerfed Heroes
-        </button>
+      <div className={styles.controlsRow}>
+        <div className={styles.controls}>
+          <button 
+            className={`${styles.filterBtn} ${filter === "All" ? styles.active : ""}`}
+            onClick={() => setFilter("All")}
+          >
+            All Heroes
+          </button>
+          <button 
+            className={`${styles.filterBtn} ${filter === "Buffed" ? styles.active : ""}`}
+            onClick={() => setFilter("Buffed")}
+          >
+            Buffed
+          </button>
+          <button 
+            className={`${styles.filterBtn} ${filter === "Nerfed" ? styles.active : ""}`}
+            onClick={() => setFilter("Nerfed")}
+          >
+            Nerfed
+          </button>
+        </div>
+
+        <div className={styles.searchContainer}>
+          <input 
+            type="text" 
+            placeholder="Search heroes..." 
+            className={styles.searchInput}
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+        </div>
       </div>
 
       <div className={styles.grid}>
         {filteredHeroes.map((hero) => {
           const vectors = getSignificantVectors(hero.vectorDelta);
           return (
-            <div key={hero.heroName} className={styles.card}>
+            <Link 
+              key={hero.heroName} 
+              href={`/hero/${getHeroSlug(hero.heroName)}`}
+              className={`${styles.card} ${styles.clickable}`}
+              style={{ textDecoration: 'none', color: 'inherit' }}
+            >
               <div className={styles.cardHeader}>
                 <h3 className={styles.heroName}>{hero.heroName}</h3>
                 <span className={`${styles.netScore} ${hero.netScore > 0 ? styles.positive : hero.netScore < 0 ? styles.negative : styles.neutral}`}>
@@ -92,44 +122,23 @@ export default function HeroList({ heroes }: HeroListProps) {
               </div>
               
               <div className={styles.changesList}>
-                {hero.changes.map((change, idx) => (
+                {hero.changes.slice(0, 3).map((change, idx) => (
                   <div key={idx} className={`${styles.changeItem} ${styles[change.classification.classificationType]}`}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                      <div>
+                      <div className={styles.noteTruncate}>
                         {change.subEntityName && (
                           <span className={styles.subEntity}>{change.subEntityName}</span>
                         )}
                         <span className={styles.note}>{change.rawNote}</span>
                       </div>
-                      {change.classification.strategicWeight && (
-                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '2px' }}>
-                          <span style={{ 
-                            fontSize: '0.75rem', 
-                            color: 'var(--color-rare)', 
-                            background: 'rgba(26, 135, 249, 0.1)',
-                            padding: '2px 6px',
-                            borderRadius: '4px',
-                            marginLeft: '8px',
-                            whiteSpace: 'nowrap',
-                            fontWeight: 'bold'
-                          }}>
-                            Impact: {typeof change.classification.strategicWeight === 'object' 
-                              ? change.classification.strategicWeight['Divine'] 
-                              : change.classification.strategicWeight}
-                          </span>
-                          <span style={{ 
-                            fontSize: '0.6rem', 
-                            color: change.classification.state === 'UNKNOWN' ? '#888' : 'var(--color-common)',
-                            textTransform: 'uppercase',
-                            letterSpacing: '0.5px'
-                          }}>
-                            {change.classification.state}
-                          </span>
-                        </div>
-                      )}
                     </div>
                   </div>
                 ))}
+                {hero.changes.length > 3 && (
+                  <div className={styles.moreChanges}>
+                    + {hero.changes.length - 3} more changes...
+                  </div>
+                )}
               </div>
 
               {vectors.length > 0 && (
@@ -141,7 +150,7 @@ export default function HeroList({ heroes }: HeroListProps) {
                   ))}
                 </div>
               )}
-            </div>
+            </Link>
           );
         })}
       </div>

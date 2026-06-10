@@ -1,5 +1,6 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
+import Link from "next/link";
 import HeroList from "../../components/HeroList";
 import ItemList from "../../components/ItemList";
 import GeneralList from "../../components/GeneralList";
@@ -69,6 +70,26 @@ export default async function Page({ params }: PageProps) {
     // No vectors for this patch
   }
 
+  // 5. Load Winrate Data
+  const winratePath = path.join(researchDir, "calibration-data", `winrates-${patchVersion}.json`);
+  let winrateData = null;
+  try {
+    const rawWinrate = await fs.readFile(winratePath, "utf-8");
+    winrateData = JSON.parse(rawWinrate);
+  } catch (e) {
+    // No winrate for this patch
+  }
+
+  // 6. Load Hero Mapping
+  const mappingPath = path.join(researchDir, "mappings", "heroes.json");
+  let heroMapping = null;
+  try {
+    const rawMapping = await fs.readFile(mappingPath, "utf-8");
+    heroMapping = JSON.parse(rawMapping);
+  } catch (e) {
+    // No mapping
+  }
+
   // Process Data
   const heroMap = new Map<string, any>();
   const itemMap = new Map<string, any>();
@@ -136,13 +157,22 @@ export default async function Page({ params }: PageProps) {
 
   return (
     <div className="container">
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '40px', flexWrap: 'wrap', gap: '20px' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '20px' }}>
         <h1 style={{ color: "var(--color-artifact)", margin: 0, fontSize: "2.5rem" }}>
           Patch {patchVersion} Intelligence
         </h1>
         
-        <PatchSelector availablePatches={availablePatches} currentPatch={patchVersion} />
+        <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
+          <Link href={`/patch/${patchVersion}/full-notes`} style={{ color: 'var(--color-rare)', fontWeight: 'bold' }}>
+            View Full Patch Notes &rarr;
+          </Link>
+          <PatchSelector availablePatches={availablePatches} currentPatch={patchVersion} />
+        </div>
       </div>
+
+      <p style={{ color: '#888', marginBottom: '40px' }}>
+        Strategic summary and impact analysis for patch {patchVersion}.
+      </p>
 
       {metaData && (
         <div style={{ marginBottom: "40px" }}>
@@ -212,7 +242,7 @@ export default async function Page({ params }: PageProps) {
       )}
 
       {heroesArray.length > 0 ? (
-        <HeroList heroes={heroesArray} />
+        <HeroList heroes={heroesArray} winrateData={winrateData} heroMapping={heroMapping} />
       ) : (
         <p>No hero data available.</p>
       )}
