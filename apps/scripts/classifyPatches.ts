@@ -54,14 +54,15 @@ function determineClassification(change: any): Classification {
     // 1. Check for NUMERIC states (Deterministic via Balance Ontology)
     if (changeType === "INCREASED" || changeType === "DECREASED" || changeType === "RESCALE") {
         const metricData = balanceOntology.metrics[metricStr];
-        const weight = metricData ? metricData.weight : 5; // Default weight
+        const defaultWeights = { "Herald": 5, "Guardian": 5, "Crusader": 5, "Archon": 5, "Legend": 5, "Ancient": 5, "Divine": 5 };
+        const weightsObj = metricData ? metricData.weights : defaultWeights;
         
         if (changeType === "RESCALE") {
             return {
                 state: "NUMERIC",
                 classificationType: "Adjustment",
                 confidenceScore: 0.8,
-                strategicWeight: weight,
+                strategicWeight: weightsObj,
                 reasoning: "Rescaling redistributes power across levels and requires contextual analysis."
             };
         }
@@ -72,13 +73,13 @@ function determineClassification(change: any): Classification {
         const isPositiveMetric = ["damage", "health", "mana", "armor", "speed", "range", "duration", "strength", "agility", "intelligence", "radius", "regen"].some(m => metricStr.includes(m));
 
         if (changeType === "INCREASED") {
-            if (isNegativeMetric) return { state: "NUMERIC", classificationType: "Nerf", confidenceScore: 1.0, strategicWeight: weight, reasoning: `Increased a negative metric (${metricStr}).` };
-            if (isPositiveMetric) return { state: "NUMERIC", classificationType: "Buff", confidenceScore: 1.0, strategicWeight: weight, reasoning: `Increased a positive metric (${metricStr}).` };
+            if (isNegativeMetric) return { state: "NUMERIC", classificationType: "Nerf", confidenceScore: 1.0, strategicWeight: weightsObj, reasoning: `Increased a negative metric (${metricStr}).` };
+            if (isPositiveMetric) return { state: "NUMERIC", classificationType: "Buff", confidenceScore: 1.0, strategicWeight: weightsObj, reasoning: `Increased a positive metric (${metricStr}).` };
         }
 
         if (changeType === "DECREASED") {
-            if (isNegativeMetric) return { state: "NUMERIC", classificationType: "Buff", confidenceScore: 1.0, strategicWeight: weight, reasoning: `Decreased a negative metric (${metricStr}).` };
-            if (isPositiveMetric) return { state: "NUMERIC", classificationType: "Nerf", confidenceScore: 1.0, strategicWeight: weight, reasoning: `Decreased a positive metric (${metricStr}).` };
+            if (isNegativeMetric) return { state: "NUMERIC", classificationType: "Buff", confidenceScore: 1.0, strategicWeight: weightsObj, reasoning: `Decreased a negative metric (${metricStr}).` };
+            if (isPositiveMetric) return { state: "NUMERIC", classificationType: "Nerf", confidenceScore: 1.0, strategicWeight: weightsObj, reasoning: `Decreased a positive metric (${metricStr}).` };
         }
         
         // Numeric but ambiguous polarity
@@ -86,7 +87,7 @@ function determineClassification(change: any): Classification {
             state: "NUMERIC",
             classificationType: "Adjustment",
             confidenceScore: 0.5,
-            strategicWeight: weight,
+            strategicWeight: weightsObj,
             reasoning: "Numeric change, but polarity could not be deterministically resolved."
         };
     }

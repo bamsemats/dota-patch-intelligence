@@ -40,3 +40,29 @@ Winrate shifts are not purely driven by numerical balance changes. The system mu
 *   **Pro Play Influence:** Professional meta trends can drive pickrates and winrates regardless of direct hero changes.
 *   **Synergy Shifts:** A hero might perform better simply because their core items were buffed, not because they were directly touched.
 *   **Skill Floor/Ceiling:** Some buffs take weeks for the general player base to learn and exploit effectively.
+
+---
+
+## Workflow & Commands
+
+The calibration loop is executed via CLI scripts that pull data and compare it against our models.
+
+### 1. Setup API Credentials
+The data fetcher relies on the Stratz GraphQL API. You must create a `.env` file in the root directory containing your token:
+```env
+STRATZ_API_KEY=your_stratz_default_token
+```
+
+### 2. Fetch Winrate Data
+Run the fetcher to pull winrate statistics across all 7 pub brackets (Herald through Divine). This script features built-in rate-limiting to respect the Stratz Default Token quotas.
+```bash
+npm run patch:fetch-winrates
+```
+*Output: `research-output/calibration-data/winrates-[patch].json`*
+
+### 3. Run Calibration (Auto-Tuner)
+*(Note: This script will be developed as the final step of Phase 10)*
+Run the auto-tuner to compare the observed winrate shifts against our calculated Feature Vector deltas. It will propose adjustments to the `balance_metrics.json` ontology weights using mathematical gradient descent to minimize the error margin between predictions and reality.
+```bash
+npm run patch:calibrate
+```

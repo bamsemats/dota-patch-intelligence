@@ -193,20 +193,37 @@ Deliverables:
 
 # Phase 10 — Strategic Analytics (Implementation)
 
-Status: In Progress
+Status: Complete
 
 Goals:
-* Implement the **Meta Impact Simulation** engine (draft-level reasoning).
-* Establish the **Validation Framework** suite to measure engine accuracy.
-* Implement the **Winrate Calibration** loop for automated weight adjustment.
+* Implement the **Meta Impact Simulation** engine (draft-level reasoning). (Done: `simulateMeta.ts`)
+* Establish the **Validation Framework** suite to measure engine accuracy. (Done: `validateEngine.ts`)
+* Implement the **Winrate Calibration** loop for automated weight adjustment. (Done: `fetchWinrates.ts` & `calibrateWeights.ts`)
 
 Deliverables:
-* Simulation engine prototype.
-* Automated validation test suite.
+* Simulation engine prototype. (Done)
+* Automated validation test suite. (Done)
+* Self-correcting weight auto-tuner. (Done)
 
 ---
 
-# Phase 11 — Backend API & Database Migration
+# Phase 11 — Frontend Polish & Advanced UX
+
+Status: In Progress
+
+Goals:
+* **Full Patch Note Overview:** A comprehensive, color-coded, and deeply filterable/searchable view of the entire patch notes.
+* **Hero-Specific Detail Views:** Dedicated pages or modals for each hero displaying patch impacts, historical winrate histograms, and exact metric values.
+* **Single Page Application (SPA) Architecture:** Optimize the Next.js setup for seamless state management, quick transitions, and superior UI/UX.
+* **Global Search & Filter:** Robust system-wide search functionality to find specific mechanics, items, or heroes across patches.
+
+Deliverables:
+* Frontend V2 release with advanced interactive components.
+* Data visualization charts (e.g., winrate histograms).
+
+---
+
+# Phase 12 — Backend API & Database Migration
 
 Status: Future
 
@@ -221,7 +238,7 @@ Deliverables:
 
 ---
 
-# Phase 12 — Historical Analytics
+# Phase 13 — Historical Analytics
 
 Status: Future
 
@@ -233,7 +250,7 @@ Potential Features:
 
 ---
 
-# Phase 13 — Automation Pipeline
+# Phase 14 — Automation Pipeline
 
 Status: Future
 
@@ -248,7 +265,7 @@ Deliverables:
 
 ---
 
-# Phase 14 — Advanced Features
+# Phase 15 — Advanced Features
 
 Status: Future
 
@@ -256,6 +273,7 @@ Potential Features:
 * User accounts and personalized hero tracking.
 * Public API and community features.
 * Website analytics (visitor count, traffic metrics, usage tracking).
+* Professional Match Analytics (Calibrating weights and extracting meta shifts specifically from tournament and pro-circuit data, distinct from the 7 pub brackets).
 
 ---
 

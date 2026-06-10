@@ -85,7 +85,16 @@ function calculateHeroDelta(heroName: string, changes: any[], balanceOntology: a
         if (polarity === "Nerf") multiplier = -1;
         if (multiplier === 0) continue; // Skip adjustments and reworks for pure numerical deltas
 
-        const weight = change.classification.strategicWeight || 5;
+        let weightObj = change.classification.strategicWeight;
+        let weight = 5; // fallback
+        
+        if (typeof weightObj === "number") {
+            weight = weightObj;
+        } else if (typeof weightObj === "object" && weightObj !== null) {
+            // Default to Divine bracket for MVP vector calculations
+            weight = weightObj["Divine"] || 5;
+        }
+
         const metricStr = (change.metric || "").toLowerCase();
         
         let areas: string[] = [];

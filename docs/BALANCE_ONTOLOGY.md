@@ -31,9 +31,22 @@ Each trackable metric is mapped to one or more gameplay areas it affects.
 | **AoE Radius** | teamfight_reliability, zoning |
 | **Stat Gain (Str/Agi/Int)** | late_game_scaling, survivability |
 
-## Impact Weights
+## Impact Weights (Per-Bracket)
 
-Default impact weights are assigned to metrics on a scale of 1 (Low) to 10 (Critical). These weights represent the *general* strategic significance of a typical change to that metric.
+The impact of a mechanic is highly dependent on the skill level of the players. A cast-point reduction might be meta-defining for players who react in milliseconds, but irrelevant in lower-skill games. 
+
+To account for this, the Balance Ontology does not use flat weights. Instead, every metric is assigned a specific weight (1-10) across the **7 Standard Pub Brackets**:
+1. Herald
+2. Guardian
+3. Crusader
+4. Archon
+5. Legend
+6. Ancient
+7. Divine
+
+*(Note: Professional match calibration is treated as a separate, future advanced feature due to its unique meta environment).*
+
+These weights represent the *general* strategic significance of a typical change to that metric within that specific skill tier.
 
 | Metric Group | Default Weight |
 |---|---|

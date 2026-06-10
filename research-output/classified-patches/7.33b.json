@@ -1,0 +1,3335 @@
+{
+  "schemaVersion": "1.0",
+  "version": "7.33b",
+  "changes": [
+    {
+      "category": "general",
+      "entityName": "General",
+      "rawNote": "Increased channel time for Twin Gates by 1 second",
+      "indentLevel": 1,
+      "changeType": "ADJUSTMENT",
+      "metadata": {},
+      "classification": {
+        "state": "UNKNOWN",
+        "classificationType": "Unknown",
+        "confidenceScore": 0,
+        "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+      }
+    },
+    {
+      "category": "general",
+      "entityName": "General",
+      "rawNote": "Tormentors' Reflect doesn't count illusions when dividing up damage. Illusions still take damage, but do not reduce the amount of damage taken by other units in the area.",
+      "indentLevel": 1,
+      "changeType": "ADJUSTMENT",
+      "metadata": {},
+      "classification": {
+        "state": "UNKNOWN",
+        "classificationType": "Unknown",
+        "confidenceScore": 0,
+        "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+      }
+    },
+    {
+      "category": "general",
+      "entityName": "General",
+      "rawNote": "Tormentors' Unyielding Shield base barrier amount now increases by 200 every time they respawn",
+      "indentLevel": 1,
+      "changeType": "ADJUSTMENT",
+      "metadata": {},
+      "classification": {
+        "state": "UNKNOWN",
+        "classificationType": "Unknown",
+        "confidenceScore": 0,
+        "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+      }
+    },
+    {
+      "category": "general",
+      "entityName": "General",
+      "rawNote": "Night Bonus Movement Speed is now also disabled when a hero damages an enemy controlled unit",
+      "indentLevel": 1,
+      "changeType": "ADDITION",
+      "metadata": {},
+      "classification": {
+        "state": "KNOWN_SEMANTIC",
+        "classificationType": "Buff",
+        "confidenceScore": 0.9,
+        "reasoning": "Addition of a new mechanic or feature."
+      }
+    },
+    {
+      "category": "item",
+      "entityName": "Blood Grenade",
+      "rawNote": "Now can be stacked in a single inventory slot up to 3 times",
+      "indentLevel": 1,
+      "changeType": "ADDITION",
+      "metadata": {
+        "entityId": 1123
+      },
+      "classification": {
+        "state": "KNOWN_SEMANTIC",
+        "classificationType": "Buff",
+        "confidenceScore": 0.9,
+        "reasoning": "Addition of a new mechanic or feature."
+      }
+    },
+    {
+      "category": "item",
+      "entityName": "Boots of Travel 2",
+      "rawNote": "Town Portal Scroll Cooldown increased from 30s to 40s (same as regular Boots of Travel)",
+      "indentLevel": 1,
+      "metric": "Town Portal Scroll Cooldown",
+      "changeType": "INCREASED",
+      "oldValue": "30s",
+      "newValue": "40s (same as regular Boots of Travel)",
+      "metadata": {
+        "entityId": 220
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a negative metric (town portal scroll cooldown)."
+      }
+    },
+    {
+      "category": "item",
+      "entityName": "Crimson Guard",
+      "rawNote": "Guard Strength to blocked damage decreased from 60% to 50%",
+      "indentLevel": 1,
+      "metric": "Guard Strength to blocked damage",
+      "changeType": "DECREASED",
+      "oldValue": "60%",
+      "newValue": "50%",
+      "metadata": {
+        "entityId": 242
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Decreased a positive metric (guard strength to blocked damage)."
+      }
+    },
+    {
+      "category": "item",
+      "entityName": "Disperser",
+      "rawNote": "Self- or Ally targeted Suppress can now be dispelled by enemies",
+      "indentLevel": 1,
+      "changeType": "ADJUSTMENT",
+      "metadata": {
+        "entityId": 1097
+      },
+      "classification": {
+        "state": "UNKNOWN",
+        "classificationType": "Unknown",
+        "confidenceScore": 0,
+        "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+      }
+    },
+    {
+      "category": "item",
+      "entityName": "Phylactery",
+      "rawNote": "Recipe Changed: Recipe (200) replaced with Sage's Mask (175), Total Cost decreased from 2400 to 2375",
+      "indentLevel": 1,
+      "metric": "Recipe Changed: Recipe (200)",
+      "changeType": "REWORK",
+      "newValue": "Sage's Mask (175), Total Cost decreased from 2400 to 2375",
+      "metadata": {
+        "entityId": 1107
+      },
+      "classification": {
+        "state": "KNOWN_SEMANTIC",
+        "classificationType": "Rework",
+        "confidenceScore": 1,
+        "reasoning": "Explicitly designated as a replacement or rework."
+      }
+    },
+    {
+      "category": "item",
+      "entityName": "Phylactery",
+      "rawNote": "Now provides +0.7 Mana Regen",
+      "indentLevel": 1,
+      "changeType": "ADDITION",
+      "metadata": {
+        "entityId": 1107
+      },
+      "classification": {
+        "state": "KNOWN_SEMANTIC",
+        "classificationType": "Buff",
+        "confidenceScore": 0.9,
+        "reasoning": "Addition of a new mechanic or feature."
+      }
+    },
+    {
+      "category": "item",
+      "entityName": "Phylactery",
+      "rawNote": "Empower Spell Bonus Damage increased from 125 to 150",
+      "indentLevel": 1,
+      "metric": "Empower Spell Bonus Damage",
+      "changeType": "INCREASED",
+      "oldValue": "125",
+      "newValue": "150",
+      "metadata": {
+        "entityId": 1107
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (empower spell bonus damage)."
+      }
+    },
+    {
+      "category": "item",
+      "entityName": "Phylactery",
+      "rawNote": "Empower Spell Slow Duration increased from 1.2s to 1.5s",
+      "indentLevel": 1,
+      "metric": "Empower Spell Slow Duration",
+      "changeType": "INCREASED",
+      "oldValue": "1.2s",
+      "newValue": "1.5s",
+      "metadata": {
+        "entityId": 1107
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (empower spell slow duration)."
+      }
+    },
+    {
+      "category": "neutral",
+      "entityName": "Unknown Neutral (-1)",
+      "rawNote": "If you already have a neutral token or an item for the tier, newly dropped tokens of this tier are automatically teleported to the neutral item stash",
+      "indentLevel": 1,
+      "changeType": "ADJUSTMENT",
+      "metadata": {
+        "entityId": -1
+      },
+      "classification": {
+        "state": "UNKNOWN",
+        "classificationType": "Unknown",
+        "confidenceScore": 0,
+        "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+      }
+    },
+    {
+      "category": "neutral",
+      "entityName": "Unknown Neutral (-1)",
+      "rawNote": "You can now convert neutral item tokens that are in your stash",
+      "indentLevel": 1,
+      "changeType": "ADJUSTMENT",
+      "metadata": {
+        "entityId": -1
+      },
+      "classification": {
+        "state": "UNKNOWN",
+        "classificationType": "Unknown",
+        "confidenceScore": 0,
+        "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+      }
+    },
+    {
+      "category": "neutral",
+      "entityName": "Faded Broach",
+      "rawNote": "Mana bonus decreased from +200 to +125",
+      "indentLevel": 1,
+      "metric": "Mana bonus",
+      "changeType": "DECREASED",
+      "oldValue": "+200",
+      "newValue": "+125",
+      "metadata": {
+        "entityId": 375
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Decreased a positive metric (mana bonus)."
+      }
+    },
+    {
+      "category": "neutral",
+      "entityName": "Seeds of Serenity",
+      "rawNote": "Verdurous Dale Radius increased from 350 to 400",
+      "indentLevel": 1,
+      "metric": "Verdurous Dale Radius",
+      "changeType": "INCREASED",
+      "oldValue": "350",
+      "newValue": "400",
+      "metadata": {
+        "entityId": 945
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (verdurous dale radius)."
+      }
+    },
+    {
+      "category": "neutral",
+      "entityName": "Seeds of Serenity",
+      "rawNote": "Verdurous Dale Cooldown decreased from 40s to 35s",
+      "indentLevel": 1,
+      "metric": "Verdurous Dale Cooldown",
+      "changeType": "DECREASED",
+      "oldValue": "40s",
+      "newValue": "35s",
+      "metadata": {
+        "entityId": 945
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Decreased a negative metric (verdurous dale cooldown)."
+      }
+    },
+    {
+      "category": "neutral",
+      "entityName": "Eye of the Vizier",
+      "rawNote": "Now provides +0.5 Mana Regen",
+      "indentLevel": 1,
+      "changeType": "ADDITION",
+      "metadata": {
+        "entityId": 990
+      },
+      "classification": {
+        "state": "KNOWN_SEMANTIC",
+        "classificationType": "Buff",
+        "confidenceScore": 0.9,
+        "reasoning": "Addition of a new mechanic or feature."
+      }
+    },
+    {
+      "category": "neutral",
+      "entityName": "Specialist's Array",
+      "rawNote": "Damage bonus increased from +10 to +12",
+      "indentLevel": 1,
+      "metric": "Damage bonus",
+      "changeType": "INCREASED",
+      "oldValue": "+10",
+      "newValue": "+12",
+      "metadata": {
+        "entityId": 1076
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (damage bonus)."
+      }
+    },
+    {
+      "category": "neutral",
+      "entityName": "Specialist's Array",
+      "rawNote": "Crackshot now has a bonus 225 range search radius for secondary targets",
+      "indentLevel": 1,
+      "changeType": "ADJUSTMENT",
+      "metadata": {
+        "entityId": 1076
+      },
+      "classification": {
+        "state": "UNKNOWN",
+        "classificationType": "Unknown",
+        "confidenceScore": 0,
+        "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+      }
+    },
+    {
+      "category": "neutral",
+      "entityName": "Ogre Seal Totem",
+      "rawNote": "Ogre Seal Flop Slow Duration increased from 1s to 1.5s",
+      "indentLevel": 1,
+      "metric": "Ogre Seal Flop Slow Duration",
+      "changeType": "INCREASED",
+      "oldValue": "1s",
+      "newValue": "1.5s",
+      "metadata": {
+        "entityId": 949
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (ogre seal flop slow duration)."
+      }
+    },
+    {
+      "category": "neutral",
+      "entityName": "Ogre Seal Totem",
+      "rawNote": "Ogre Seal Flop Radius increased from 225 to 275",
+      "indentLevel": 1,
+      "metric": "Ogre Seal Flop Radius",
+      "changeType": "INCREASED",
+      "oldValue": "225",
+      "newValue": "275",
+      "metadata": {
+        "entityId": 949
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (ogre seal flop radius)."
+      }
+    },
+    {
+      "category": "neutral",
+      "entityName": "Vindicator's Axe",
+      "rawNote": "Attack Speed bonus increased from +25 to +30",
+      "indentLevel": 1,
+      "metric": "Attack Speed bonus",
+      "changeType": "INCREASED",
+      "oldValue": "+25",
+      "newValue": "+30",
+      "metadata": {
+        "entityId": 2096
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (attack speed bonus)."
+      }
+    },
+    {
+      "category": "neutral",
+      "entityName": "Vindicator's Axe",
+      "rawNote": "Vengeance Armor bonus when the hero is stunned increased from 15 to 20",
+      "indentLevel": 1,
+      "metric": "Vengeance Armor bonus when the hero is stunned",
+      "changeType": "INCREASED",
+      "oldValue": "15",
+      "newValue": "20",
+      "metadata": {
+        "entityId": 2096
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (vengeance armor bonus when the hero is stunned)."
+      }
+    },
+    {
+      "category": "neutral",
+      "entityName": "Ascetic's Cap",
+      "rawNote": "Endurance Cooldown decreased from 30s to 25s",
+      "indentLevel": 1,
+      "metric": "Endurance Cooldown",
+      "changeType": "DECREASED",
+      "oldValue": "30s",
+      "newValue": "25s",
+      "metadata": {
+        "entityId": 825
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Decreased a negative metric (endurance cooldown)."
+      }
+    },
+    {
+      "category": "neutral",
+      "entityName": "Ascetic's Cap",
+      "rawNote": "Endurance Duration increased from 3s to 4s",
+      "indentLevel": 1,
+      "metric": "Endurance Duration",
+      "changeType": "INCREASED",
+      "oldValue": "3s",
+      "newValue": "4s",
+      "metadata": {
+        "entityId": 825
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (endurance duration)."
+      }
+    },
+    {
+      "category": "neutral",
+      "entityName": "Havoc Hammer",
+      "rawNote": "Strength bonus increased from +14 to +16",
+      "indentLevel": 1,
+      "metric": "Strength bonus",
+      "changeType": "INCREASED",
+      "oldValue": "+14",
+      "newValue": "+16",
+      "metadata": {
+        "entityId": 364
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (strength bonus)."
+      }
+    },
+    {
+      "category": "neutral",
+      "entityName": "Havoc Hammer",
+      "rawNote": "Damage bonus increased from +14 to +16",
+      "indentLevel": 1,
+      "metric": "Damage bonus",
+      "changeType": "INCREASED",
+      "oldValue": "+14",
+      "newValue": "+16",
+      "metadata": {
+        "entityId": 364
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (damage bonus)."
+      }
+    },
+    {
+      "category": "neutral",
+      "entityName": "Stormcrafter",
+      "rawNote": "Movement Speed bonus increased from +25 to +30",
+      "indentLevel": 1,
+      "metric": "Movement Speed bonus",
+      "changeType": "INCREASED",
+      "oldValue": "+25",
+      "newValue": "+30",
+      "metadata": {
+        "entityId": 585
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (movement speed bonus)."
+      }
+    },
+    {
+      "category": "neutral",
+      "entityName": "Stormcrafter",
+      "rawNote": "Bottled Lightning Slow Duration increased from 0.3s to 0.4s",
+      "indentLevel": 1,
+      "metric": "Bottled Lightning Slow Duration",
+      "changeType": "INCREASED",
+      "oldValue": "0.3s",
+      "newValue": "0.4s",
+      "metadata": {
+        "entityId": 585
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (bottled lightning slow duration)."
+      }
+    },
+    {
+      "category": "neutral",
+      "entityName": "Telescope",
+      "rawNote": "Attack and Cast Range bonus increased from +100 to +125",
+      "indentLevel": 1,
+      "metric": "Attack and Cast Range bonus",
+      "changeType": "INCREASED",
+      "oldValue": "+100",
+      "newValue": "+125",
+      "metadata": {
+        "entityId": 336
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (attack and cast range bonus)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Phantom Lancer",
+      "rawNote": "Base Movement Speed decreased by 5",
+      "indentLevel": 1,
+      "metric": "Base Movement Speed",
+      "changeType": "DECREASED",
+      "newValue": "5",
+      "metadata": {
+        "entityId": 12
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Decreased a positive metric (base movement speed)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Phantom Lancer",
+      "rawNote": "Agility gain decreased from 3.2 to 2.8",
+      "indentLevel": 1,
+      "metric": "Agility gain",
+      "changeType": "DECREASED",
+      "oldValue": "3.2",
+      "newValue": "2.8",
+      "metadata": {
+        "entityId": 12
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Decreased a positive metric (agility gain)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Phantom Lancer",
+      "subEntityName": "Spirit Lance",
+      "rawNote": "Damage decreased from 100/160/220/280 to 70/140/210/280",
+      "indentLevel": 1,
+      "metric": "Damage",
+      "changeType": "DECREASED",
+      "oldValue": "100/160/220/280",
+      "newValue": "70/140/210/280",
+      "metadata": {
+        "entityId": 12,
+        "subEntityId": 5065
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 3.5,
+          "Guardian": 4,
+          "Crusader": 4,
+          "Archon": 4,
+          "Legend": 5,
+          "Ancient": 7.5,
+          "Divine": 8
+        },
+        "reasoning": "Decreased a positive metric (damage)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Phantom Lancer",
+      "subEntityName": "Doppelganger",
+      "rawNote": "Cooldown increased from 19/16/13/10s to 22/18/14/10s",
+      "indentLevel": 1,
+      "metric": "Cooldown",
+      "changeType": "INCREASED",
+      "oldValue": "19/16/13/10s",
+      "newValue": "22/18/14/10s",
+      "metadata": {
+        "entityId": 12,
+        "subEntityId": 5066
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 2,
+          "Divine": 1.5
+        },
+        "reasoning": "Increased a negative metric (cooldown)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Vengeful Spirit",
+      "rawNote": "Base Strength increased from 19 + 2.0 to 20 + 2.1",
+      "indentLevel": 1,
+      "metric": "Base Strength",
+      "changeType": "INCREASED",
+      "oldValue": "19 + 2.0",
+      "newValue": "20 + 2.1",
+      "metadata": {
+        "entityId": 20
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (base strength)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Vengeful Spirit",
+      "rawNote": "Base Agility increased from 20 + 2.0 to 21 + 2.1",
+      "indentLevel": 1,
+      "metric": "Base Agility",
+      "changeType": "INCREASED",
+      "oldValue": "20 + 2.0",
+      "newValue": "21 + 2.1",
+      "metadata": {
+        "entityId": 20
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (base agility)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Vengeful Spirit",
+      "subEntityName": "Magic Missile",
+      "rawNote": "Mana Cost decreased from 100/110/120/130 to 90/95/100/105",
+      "indentLevel": 1,
+      "metric": "Mana Cost",
+      "changeType": "DECREASED",
+      "oldValue": "100/110/120/130",
+      "newValue": "90/95/100/105",
+      "metadata": {
+        "entityId": 20,
+        "subEntityId": 5122
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1
+        },
+        "reasoning": "Decreased a negative metric (mana cost)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Vengeful Spirit",
+      "subEntityName": "Talents",
+      "rawNote": "Level 15 Talent Wave of Terror Armor increased from -2 to -3",
+      "indentLevel": 1,
+      "metric": "Level 15 Talent Wave of Terror Armor",
+      "changeType": "INCREASED",
+      "oldValue": "-2",
+      "newValue": "-3",
+      "metadata": {
+        "entityId": 20
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (level 15 talent wave of terror armor)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Riki",
+      "subEntityName": "Smoke Screen",
+      "rawNote": "Aghanim's Shard Armor Reduction decreased from 7 to 6",
+      "indentLevel": 1,
+      "metric": "Aghanim's Shard Armor Reduction",
+      "changeType": "DECREASED",
+      "oldValue": "7",
+      "newValue": "6",
+      "metadata": {
+        "entityId": 32,
+        "subEntityId": 5142
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Decreased a positive metric (aghanim's shard armor reduction)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Riki",
+      "subEntityName": "Blink Strike",
+      "rawNote": "Slow Duration rescaled from 0.2/0.4/0.6/0.8s to 0.4s",
+      "indentLevel": 1,
+      "metric": "Slow Duration",
+      "changeType": "RESCALE",
+      "oldValue": "0.2/0.4/0.6/0.8s",
+      "newValue": "0.4s",
+      "metadata": {
+        "entityId": 32,
+        "subEntityId": 5143
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.8,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Riki",
+      "subEntityName": "Cloak and Dagger",
+      "rawNote": "Backstab Agility Damage Multiplier decreased from 1.4/1.8/2.2 to 1.2/1.6/2.0",
+      "indentLevel": 1,
+      "metric": "Backstab Agility Damage Multiplier",
+      "changeType": "DECREASED",
+      "oldValue": "1.4/1.8/2.2",
+      "newValue": "1.2/1.6/2.0",
+      "metadata": {
+        "entityId": 32,
+        "subEntityId": 5144
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Decreased a positive metric (backstab agility damage multiplier)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Riki",
+      "subEntityName": "Cloak and Dagger",
+      "rawNote": "Tormentors are now immune to being backstabbed",
+      "indentLevel": 1,
+      "changeType": "ADJUSTMENT",
+      "metadata": {
+        "entityId": 32,
+        "subEntityId": 5144
+      },
+      "classification": {
+        "state": "UNKNOWN",
+        "classificationType": "Unknown",
+        "confidenceScore": 0,
+        "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Riki",
+      "subEntityName": "Talents",
+      "rawNote": "Level 10 Talent Smoke Screen Radius decreased from +60 to +50",
+      "indentLevel": 1,
+      "metric": "Level 10 Talent Smoke Screen Radius",
+      "changeType": "DECREASED",
+      "oldValue": "+60",
+      "newValue": "+50",
+      "metadata": {
+        "entityId": 32
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Decreased a positive metric (level 10 talent smoke screen radius)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Riki",
+      "subEntityName": "Talents",
+      "rawNote": "Level 15 Talent Smoke Screen Cooldown Reduction decreased from 4s to 3s",
+      "indentLevel": 1,
+      "metric": "Level 15 Talent Smoke Screen Cooldown Reduction",
+      "changeType": "DECREASED",
+      "oldValue": "4s",
+      "newValue": "3s",
+      "metadata": {
+        "entityId": 32
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Decreased a negative metric (level 15 talent smoke screen cooldown reduction)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Riki",
+      "subEntityName": "Talents",
+      "rawNote": "Level 15 Talent Tricks of the Trade Agility Increase decreased from +50% to +40%",
+      "indentLevel": 1,
+      "metric": "Level 15 Talent Tricks of the Trade Agility Increase",
+      "changeType": "DECREASED",
+      "oldValue": "+50%",
+      "newValue": "+40%",
+      "metadata": {
+        "entityId": 32
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Decreased a positive metric (level 15 talent tricks of the trade agility increase)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Riki",
+      "subEntityName": "Talents",
+      "rawNote": "Level 20 Talent Backstab Multiplier decreased from +0.5 to +0.4",
+      "indentLevel": 1,
+      "metric": "Level 20 Talent Backstab Multiplier",
+      "changeType": "DECREASED",
+      "oldValue": "+0.5",
+      "newValue": "+0.4",
+      "metadata": {
+        "entityId": 32
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Enigma",
+      "subEntityName": "Malefice",
+      "rawNote": "Mana Cost decreased from 100/120/140/160 to 100/110/120/130",
+      "indentLevel": 1,
+      "metric": "Mana Cost",
+      "changeType": "DECREASED",
+      "oldValue": "100/120/140/160",
+      "newValue": "100/110/120/130",
+      "metadata": {
+        "entityId": 33,
+        "subEntityId": 5146
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1
+        },
+        "reasoning": "Decreased a negative metric (mana cost)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Enigma",
+      "subEntityName": "Talents",
+      "rawNote": "Level 15 Talent Malefice Instance Damage increased from +30 to +35",
+      "indentLevel": 1,
+      "metric": "Level 15 Talent Malefice Instance Damage",
+      "changeType": "INCREASED",
+      "oldValue": "+30",
+      "newValue": "+35",
+      "metadata": {
+        "entityId": 33
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (level 15 talent malefice instance damage)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Beastmaster",
+      "rawNote": "Base Strength increased from 23 to 25",
+      "indentLevel": 1,
+      "metric": "Base Strength",
+      "changeType": "INCREASED",
+      "oldValue": "23",
+      "newValue": "25",
+      "metadata": {
+        "entityId": 38
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (base strength)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Beastmaster",
+      "rawNote": "Call of the Wild Boar Mana Cost decreased from 60/65/70/75 to 60",
+      "indentLevel": 1,
+      "metric": "Call of the Wild Boar Mana Cost",
+      "changeType": "DECREASED",
+      "oldValue": "60/65/70/75",
+      "newValue": "60",
+      "metadata": {
+        "entityId": 38
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Decreased a negative metric (call of the wild boar mana cost)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Venomancer",
+      "rawNote": "Poison Nova Magic Resist Reduction decreased from 30% to 20%",
+      "indentLevel": 1,
+      "metric": "Poison Nova Magic Resist Reduction",
+      "changeType": "DECREASED",
+      "oldValue": "30%",
+      "newValue": "20%",
+      "metadata": {
+        "entityId": 40
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Venomancer",
+      "subEntityName": "Noxious Plague",
+      "rawNote": "Max HP as Damage decreased from 5/6/7% to 4/5/6%",
+      "indentLevel": 1,
+      "metric": "Max HP as Damage",
+      "changeType": "DECREASED",
+      "oldValue": "5/6/7%",
+      "newValue": "4/5/6%",
+      "metadata": {
+        "entityId": 40,
+        "subEntityId": 1105
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Decreased a positive metric (max hp as damage)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Dazzle",
+      "rawNote": "Base Mana Regen increased by 0.3",
+      "indentLevel": 1,
+      "metric": "Base Mana Regen",
+      "changeType": "INCREASED",
+      "newValue": "0.3",
+      "metadata": {
+        "entityId": 50
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (base mana regen)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Dazzle",
+      "subEntityName": "Shallow Grave",
+      "rawNote": "Mana Cost decreased from 120/130/140/150 to 100/110/120/130",
+      "indentLevel": 1,
+      "metric": "Mana Cost",
+      "changeType": "DECREASED",
+      "oldValue": "120/130/140/150",
+      "newValue": "100/110/120/130",
+      "metadata": {
+        "entityId": 50,
+        "subEntityId": 5234
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1
+        },
+        "reasoning": "Decreased a negative metric (mana cost)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Clockwerk",
+      "rawNote": "Base Strength increased from 26 to 27",
+      "indentLevel": 1,
+      "metric": "Base Strength",
+      "changeType": "INCREASED",
+      "oldValue": "26",
+      "newValue": "27",
+      "metadata": {
+        "entityId": 51
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (base strength)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Clockwerk",
+      "subEntityName": "Power Cogs",
+      "rawNote": "Mana Cost decreased from 80 to 70",
+      "indentLevel": 1,
+      "metric": "Mana Cost",
+      "changeType": "DECREASED",
+      "oldValue": "80",
+      "newValue": "70",
+      "metadata": {
+        "entityId": 51,
+        "subEntityId": 5238
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1
+        },
+        "reasoning": "Decreased a negative metric (mana cost)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Clockwerk",
+      "subEntityName": "Talents",
+      "rawNote": "Level 10 Talent Power Cogs Cooldown Reduction increased from 2s to 3s",
+      "indentLevel": 1,
+      "metric": "Level 10 Talent Power Cogs Cooldown Reduction",
+      "changeType": "INCREASED",
+      "oldValue": "2s",
+      "newValue": "3s",
+      "metadata": {
+        "entityId": 51
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a negative metric (level 10 talent power cogs cooldown reduction)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Dark Seer",
+      "subEntityName": "Surge",
+      "rawNote": "Cooldown increased from 18/15/12/9s to 21/17/13/9s",
+      "indentLevel": 1,
+      "metric": "Cooldown",
+      "changeType": "INCREASED",
+      "oldValue": "18/15/12/9s",
+      "newValue": "21/17/13/9s",
+      "metadata": {
+        "entityId": 55,
+        "subEntityId": 5257
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 2,
+          "Divine": 1.5
+        },
+        "reasoning": "Increased a negative metric (cooldown)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Clinkz",
+      "rawNote": "Base Agility increased from 22 to 25",
+      "indentLevel": 1,
+      "metric": "Base Agility",
+      "changeType": "INCREASED",
+      "oldValue": "22",
+      "newValue": "25",
+      "metadata": {
+        "entityId": 56
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (base agility)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Clinkz",
+      "rawNote": "Base Intelligence increased from 18 to 21",
+      "indentLevel": 1,
+      "metric": "Base Intelligence",
+      "changeType": "INCREASED",
+      "oldValue": "18",
+      "newValue": "21",
+      "metadata": {
+        "entityId": 56
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (base intelligence)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Clinkz",
+      "rawNote": "Tar Bomb Projectile Speed increased from 1500 to 2000",
+      "indentLevel": 1,
+      "metric": "Tar Bomb Projectile Speed",
+      "changeType": "INCREASED",
+      "oldValue": "1500",
+      "newValue": "2000",
+      "metadata": {
+        "entityId": 56
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (tar bomb projectile speed)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Clinkz",
+      "rawNote": "Tar Bomb Radius increased from 275 to 325",
+      "indentLevel": 1,
+      "metric": "Tar Bomb Radius",
+      "changeType": "INCREASED",
+      "oldValue": "275",
+      "newValue": "325",
+      "metadata": {
+        "entityId": 56
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (tar bomb radius)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Clinkz",
+      "subEntityName": "Death Pact",
+      "rawNote": "Bonus Health increased from 125/200/275/350 to 175/250/325/400",
+      "indentLevel": 1,
+      "metric": "Bonus Health",
+      "changeType": "INCREASED",
+      "oldValue": "125/200/275/350",
+      "newValue": "175/250/325/400",
+      "metadata": {
+        "entityId": 56,
+        "subEntityId": 5262
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (bonus health)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Omniknight",
+      "rawNote": "Heavenly Grace Base Strength bonus decreased from 8/16/24/32 to 7/14/21/28",
+      "indentLevel": 1,
+      "metric": "Heavenly Grace Base Strength bonus",
+      "changeType": "DECREASED",
+      "oldValue": "8/16/24/32",
+      "newValue": "7/14/21/28",
+      "metadata": {
+        "entityId": 57
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Decreased a positive metric (heavenly grace base strength bonus)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Broodmother",
+      "rawNote": "Base Damage increased by 3",
+      "indentLevel": 1,
+      "metric": "Base Damage",
+      "changeType": "INCREASED",
+      "newValue": "3",
+      "metadata": {
+        "entityId": 61
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (base damage)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Broodmother",
+      "rawNote": "Base Attack Range increased from 150 to 175",
+      "indentLevel": 1,
+      "metric": "Base Attack Range",
+      "changeType": "INCREASED",
+      "oldValue": "150",
+      "newValue": "175",
+      "metadata": {
+        "entityId": 61
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (base attack range)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Broodmother",
+      "rawNote": "Strength gain increased from 2.0 to 2.3",
+      "indentLevel": 1,
+      "metric": "Strength gain",
+      "changeType": "INCREASED",
+      "oldValue": "2.0",
+      "newValue": "2.3",
+      "metadata": {
+        "entityId": 61
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (strength gain)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Broodmother",
+      "subEntityName": "Insatiable Hunger",
+      "rawNote": "Base Attack Damage Bonus increased from 30/40/50/60% to 40/50/60/70%",
+      "indentLevel": 1,
+      "metric": "Base Attack Damage Bonus",
+      "changeType": "INCREASED",
+      "oldValue": "30/40/50/60%",
+      "newValue": "40/50/60/70%",
+      "metadata": {
+        "entityId": 61,
+        "subEntityId": 5282
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (base attack damage bonus)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Broodmother",
+      "subEntityName": "Spin Web",
+      "rawNote": "Radius increased from 900 to 1200",
+      "indentLevel": 1,
+      "metric": "Radius",
+      "changeType": "INCREASED",
+      "oldValue": "900",
+      "newValue": "1200",
+      "metadata": {
+        "entityId": 61,
+        "subEntityId": 5280
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5.5,
+          "Guardian": 4.5,
+          "Crusader": 5,
+          "Archon": 4.5,
+          "Legend": 5,
+          "Ancient": 6,
+          "Divine": 6
+        },
+        "reasoning": "Increased a positive metric (radius)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Broodmother",
+      "subEntityName": "Spawn Spiderlings",
+      "rawNote": "Mana Cost decreased from 120 to 100",
+      "indentLevel": 1,
+      "metric": "Mana Cost",
+      "changeType": "DECREASED",
+      "oldValue": "120",
+      "newValue": "100",
+      "metadata": {
+        "entityId": 61,
+        "subEntityId": 5279
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1
+        },
+        "reasoning": "Decreased a negative metric (mana cost)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Batrider",
+      "rawNote": "Strength gain increased from 2.0 to 2.2",
+      "indentLevel": 1,
+      "metric": "Strength gain",
+      "changeType": "INCREASED",
+      "oldValue": "2.0",
+      "newValue": "2.2",
+      "metadata": {
+        "entityId": 65
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (strength gain)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Batrider",
+      "subEntityName": "Sticky Napalm",
+      "rawNote": "No longer amplifies the damage of Blood Grenade",
+      "indentLevel": 1,
+      "changeType": "REMOVAL",
+      "metadata": {
+        "entityId": 65,
+        "subEntityId": 5320
+      },
+      "classification": {
+        "state": "KNOWN_SEMANTIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 0.9,
+        "reasoning": "Removal of a mechanic or feature."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Batrider",
+      "subEntityName": "Firefly",
+      "rawNote": "Damage per second increased from 25/50/75/100 to 30/60/90/120",
+      "indentLevel": 1,
+      "metric": "Damage per second",
+      "changeType": "INCREASED",
+      "oldValue": "25/50/75/100",
+      "newValue": "30/60/90/120",
+      "metadata": {
+        "entityId": 65,
+        "subEntityId": 5322
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (damage per second)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Batrider",
+      "subEntityName": "Firefly",
+      "rawNote": "Mana Cost decreased from 125 to 100",
+      "indentLevel": 1,
+      "metric": "Mana Cost",
+      "changeType": "DECREASED",
+      "oldValue": "125",
+      "newValue": "100",
+      "metadata": {
+        "entityId": 65,
+        "subEntityId": 5322
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1
+        },
+        "reasoning": "Decreased a negative metric (mana cost)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Batrider",
+      "subEntityName": "Flaming Lasso",
+      "rawNote": "Mana Cost decreased from 150/175/200 to 125/150/175",
+      "indentLevel": 1,
+      "metric": "Mana Cost",
+      "changeType": "DECREASED",
+      "oldValue": "150/175/200",
+      "newValue": "125/150/175",
+      "metadata": {
+        "entityId": 65,
+        "subEntityId": 5323
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1
+        },
+        "reasoning": "Decreased a negative metric (mana cost)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Chen",
+      "rawNote": "Base Strength decreased from 25 to 23",
+      "indentLevel": 1,
+      "metric": "Base Strength",
+      "changeType": "DECREASED",
+      "oldValue": "25",
+      "newValue": "23",
+      "metadata": {
+        "entityId": 66
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Decreased a positive metric (base strength)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Chen",
+      "subEntityName": "Penitence",
+      "rawNote": "Bonus Attack Speed decreased from 25/50/75/100 to 20/40/60/80",
+      "indentLevel": 1,
+      "metric": "Bonus Attack Speed",
+      "changeType": "DECREASED",
+      "oldValue": "25/50/75/100",
+      "newValue": "20/40/60/80",
+      "metadata": {
+        "entityId": 66,
+        "subEntityId": 5328
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Decreased a positive metric (bonus attack speed)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Ancient Apparition",
+      "subEntityName": "Cold Feet",
+      "rawNote": "Cooldown increased from 12/11/10/9s to 15/13/11/9s",
+      "indentLevel": 1,
+      "metric": "Cooldown",
+      "changeType": "INCREASED",
+      "oldValue": "12/11/10/9s",
+      "newValue": "15/13/11/9s",
+      "metadata": {
+        "entityId": 68,
+        "subEntityId": 5345
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 2,
+          "Divine": 1.5
+        },
+        "reasoning": "Increased a negative metric (cooldown)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Spirit Breaker",
+      "subEntityName": "Charge of Darkness",
+      "rawNote": "Charge Bonus Speed increased from 300/325/350/375 to 325/350/375/400",
+      "indentLevel": 1,
+      "metric": "Charge Bonus Speed",
+      "changeType": "INCREASED",
+      "oldValue": "300/325/350/375",
+      "newValue": "325/350/375/400",
+      "metadata": {
+        "entityId": 71,
+        "subEntityId": 5353
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (charge bonus speed)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Spirit Breaker",
+      "subEntityName": "Nether Strike",
+      "rawNote": "Bonus Damage increased from 125/200/275 to 150/225/300",
+      "indentLevel": 1,
+      "metric": "Bonus Damage",
+      "changeType": "INCREASED",
+      "oldValue": "125/200/275",
+      "newValue": "150/225/300",
+      "metadata": {
+        "entityId": 71,
+        "subEntityId": 5356
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (bonus damage)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Spirit Breaker",
+      "subEntityName": "Talents",
+      "rawNote": "Level 20 Talent Greater Bash Chance increased from +13% to +17%",
+      "indentLevel": 1,
+      "metric": "Level 20 Talent Greater Bash Chance",
+      "changeType": "INCREASED",
+      "oldValue": "+13%",
+      "newValue": "+17%",
+      "metadata": {
+        "entityId": 71
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Alchemist",
+      "rawNote": "Base Movement Speed reduced from 305 to 300",
+      "indentLevel": 1,
+      "metric": "Base Movement Speed",
+      "changeType": "DECREASED",
+      "oldValue": "305",
+      "newValue": "300",
+      "metadata": {
+        "entityId": 73
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Decreased a positive metric (base movement speed)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Alchemist",
+      "subEntityName": "Acid Spray",
+      "rawNote": "Radius decreased from 475/525/575/625 to 400/475/550/625",
+      "indentLevel": 1,
+      "metric": "Radius",
+      "changeType": "DECREASED",
+      "oldValue": "475/525/575/625",
+      "newValue": "400/475/550/625",
+      "metadata": {
+        "entityId": 73,
+        "subEntityId": 5365
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5.5,
+          "Guardian": 4.5,
+          "Crusader": 5,
+          "Archon": 4.5,
+          "Legend": 5,
+          "Ancient": 6,
+          "Divine": 6
+        },
+        "reasoning": "Decreased a positive metric (radius)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Alchemist",
+      "subEntityName": "Acid Spray",
+      "rawNote": "Armor reduction reduced from 4/5/6/7 to 3/4/5/6",
+      "indentLevel": 1,
+      "metric": "Armor reduction",
+      "changeType": "DECREASED",
+      "oldValue": "4/5/6/7",
+      "newValue": "3/4/5/6",
+      "metadata": {
+        "entityId": 73,
+        "subEntityId": 5365
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Decreased a positive metric (armor reduction)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Silencer",
+      "subEntityName": "Arcane Curse",
+      "rawNote": "Radius rescaled from 340/360/380/400 to 350",
+      "indentLevel": 1,
+      "metric": "Radius",
+      "changeType": "RESCALE",
+      "oldValue": "340/360/380/400",
+      "newValue": "350",
+      "metadata": {
+        "entityId": 75,
+        "subEntityId": 5377
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.8,
+        "strategicWeight": {
+          "Herald": 5.5,
+          "Guardian": 4.5,
+          "Crusader": 5,
+          "Archon": 4.5,
+          "Legend": 5,
+          "Ancient": 6,
+          "Divine": 6
+        },
+        "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Meepo",
+      "subEntityName": "MegaMeepo",
+      "rawNote": "No longer pulls Meepos out of Duel Black Hole and Chronosphere",
+      "indentLevel": 1,
+      "changeType": "REMOVAL",
+      "metadata": {
+        "entityId": 82,
+        "subEntityId": 1109
+      },
+      "classification": {
+        "state": "KNOWN_SEMANTIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 0.9,
+        "reasoning": "Removal of a mechanic or feature."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Visage",
+      "subEntityName": "Soul Assumption",
+      "rawNote": "Mana Cost decreased from 125 to 110",
+      "indentLevel": 1,
+      "metric": "Mana Cost",
+      "changeType": "DECREASED",
+      "oldValue": "125",
+      "newValue": "110",
+      "metadata": {
+        "entityId": 92,
+        "subEntityId": 5481
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1
+        },
+        "reasoning": "Decreased a negative metric (mana cost)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Visage",
+      "subEntityName": "Talents",
+      "rawNote": "Level 20 Talent Soul Assumption Damage Per Charge increased from +20 to +25",
+      "indentLevel": 1,
+      "metric": "Level 20 Talent Soul Assumption Damage Per Charge",
+      "changeType": "INCREASED",
+      "oldValue": "+20",
+      "newValue": "+25",
+      "metadata": {
+        "entityId": 92
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (level 20 talent soul assumption damage per charge)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Medusa",
+      "rawNote": "Base Intelligence increased from 23 to 27",
+      "indentLevel": 1,
+      "metric": "Base Intelligence",
+      "changeType": "INCREASED",
+      "oldValue": "23",
+      "newValue": "27",
+      "metadata": {
+        "entityId": 94
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (base intelligence)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Medusa",
+      "subEntityName": "Split Shot",
+      "rawNote": "Outgoing Damage increased from 45/55/65/75% to 55/65/75/85%",
+      "indentLevel": 1,
+      "metric": "Outgoing Damage",
+      "changeType": "INCREASED",
+      "oldValue": "45/55/65/75%",
+      "newValue": "55/65/75/85%",
+      "metadata": {
+        "entityId": 94,
+        "subEntityId": 5504
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (outgoing damage)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Medusa",
+      "subEntityName": "Mystic Snake",
+      "rawNote": "Main Gain increased from 11/14/17/20% to 16/18/20/22%",
+      "indentLevel": 1,
+      "metric": "Main Gain",
+      "changeType": "INCREASED",
+      "oldValue": "11/14/17/20%",
+      "newValue": "16/18/20/22%",
+      "metadata": {
+        "entityId": 94,
+        "subEntityId": 5505
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Medusa",
+      "subEntityName": "Mana Shield",
+      "rawNote": "Damage Per Mana increased from 2/2.3/2.6/2.9/3.2 to 2/2.5/3/3.5/4",
+      "indentLevel": 1,
+      "metric": "Damage Per Mana",
+      "changeType": "INCREASED",
+      "oldValue": "2/2.3/2.6/2.9/3.2",
+      "newValue": "2/2.5/3/3.5/4",
+      "metadata": {
+        "entityId": 94,
+        "subEntityId": 5506
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (damage per mana)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Medusa",
+      "subEntityName": "Mana Shield",
+      "rawNote": "Illusions now benefit from Mana Shield",
+      "indentLevel": 1,
+      "changeType": "ADJUSTMENT",
+      "metadata": {
+        "entityId": 94,
+        "subEntityId": 5506
+      },
+      "classification": {
+        "state": "KNOWN_SEMANTIC",
+        "classificationType": "Adjustment",
+        "semanticTag": "ILLUSION_INTERACTION",
+        "strategicWeight": 7,
+        "confidenceScore": 0.95,
+        "reasoning": "Matches semantic pattern: \"illusions now\""
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Magnus",
+      "rawNote": "Strength gain increased from 3.0 to 3.1",
+      "indentLevel": 1,
+      "metric": "Strength gain",
+      "changeType": "INCREASED",
+      "oldValue": "3.0",
+      "newValue": "3.1",
+      "metadata": {
+        "entityId": 97
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (strength gain)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Magnus",
+      "rawNote": "Agility gain increased from 1.9 to 2.0",
+      "indentLevel": 1,
+      "metric": "Agility gain",
+      "changeType": "INCREASED",
+      "oldValue": "1.9",
+      "newValue": "2.0",
+      "metadata": {
+        "entityId": 97
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (agility gain)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Magnus",
+      "subEntityName": "Talents",
+      "rawNote": "Level 15 Talent All Stats per hero hit with Reverse Polarity increased from +5 to +6",
+      "indentLevel": 1,
+      "metric": "Level 15 Talent All Stats per hero hit with Reverse Polarity",
+      "changeType": "INCREASED",
+      "oldValue": "+5",
+      "newValue": "+6",
+      "metadata": {
+        "entityId": 97
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Timbersaw",
+      "rawNote": "Strength gain increased from 2.9 to 3.2",
+      "indentLevel": 1,
+      "metric": "Strength gain",
+      "changeType": "INCREASED",
+      "oldValue": "2.9",
+      "newValue": "3.2",
+      "metadata": {
+        "entityId": 98
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (strength gain)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Timbersaw",
+      "rawNote": "Agility gain increased from 1.0 to 1.3",
+      "indentLevel": 1,
+      "metric": "Agility gain",
+      "changeType": "INCREASED",
+      "oldValue": "1.0",
+      "newValue": "1.3",
+      "metadata": {
+        "entityId": 98
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (agility gain)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Bristleback",
+      "subEntityName": "Bristleback",
+      "rawNote": "Damage Threshold increased from 200 to 225",
+      "indentLevel": 1,
+      "metric": "Damage Threshold",
+      "changeType": "INCREASED",
+      "oldValue": "200",
+      "newValue": "225",
+      "metadata": {
+        "entityId": 99,
+        "subEntityId": 5550
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (damage threshold)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Bristleback",
+      "subEntityName": "Warpath",
+      "rawNote": "Max Stacks increased from 6/8/10 to 8/10/12",
+      "indentLevel": 1,
+      "metric": "Max Stacks",
+      "changeType": "INCREASED",
+      "oldValue": "6/8/10",
+      "newValue": "8/10/12",
+      "metadata": {
+        "entityId": 99,
+        "subEntityId": 5551
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Bristleback",
+      "subEntityName": "Warpath",
+      "rawNote": "Damage per stack decreased from 20/25/30 to 15/20/25",
+      "indentLevel": 1,
+      "metric": "Damage per stack",
+      "changeType": "DECREASED",
+      "oldValue": "20/25/30",
+      "newValue": "15/20/25",
+      "metadata": {
+        "entityId": 99,
+        "subEntityId": 5551
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Decreased a positive metric (damage per stack)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Bristleback",
+      "subEntityName": "Warpath",
+      "rawNote": "Movement Speed per stack decreased from 3/4/5% to 2/3/4%",
+      "indentLevel": 1,
+      "metric": "Movement Speed per stack",
+      "changeType": "DECREASED",
+      "oldValue": "3/4/5%",
+      "newValue": "2/3/4%",
+      "metadata": {
+        "entityId": 99,
+        "subEntityId": 5551
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Decreased a positive metric (movement speed per stack)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Legion Commander",
+      "subEntityName": "Duel",
+      "rawNote": "Cooldown increased from 50s to 60/55/50s",
+      "indentLevel": 1,
+      "metric": "Cooldown",
+      "changeType": "INCREASED",
+      "oldValue": "50s",
+      "newValue": "60/55/50s",
+      "metadata": {
+        "entityId": 104,
+        "subEntityId": 5598
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 2,
+          "Divine": 1.5
+        },
+        "reasoning": "Increased a negative metric (cooldown)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Legion Commander",
+      "subEntityName": "Talents",
+      "rawNote": "Level 15 Talent +75 Overwhelming Odds Damage reduced to +60",
+      "indentLevel": 1,
+      "changeType": "ADJUSTMENT",
+      "metadata": {
+        "entityId": 104
+      },
+      "classification": {
+        "state": "UNKNOWN",
+        "classificationType": "Unknown",
+        "confidenceScore": 0,
+        "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Legion Commander",
+      "subEntityName": "Talents",
+      "rawNote": "Level 15 Talent +40 Press the Attack HP Regen reduced to +30",
+      "indentLevel": 1,
+      "changeType": "ADJUSTMENT",
+      "metadata": {
+        "entityId": 104
+      },
+      "classification": {
+        "state": "UNKNOWN",
+        "classificationType": "Unknown",
+        "confidenceScore": 0,
+        "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Underlord",
+      "subEntityName": "Atrophy Aura",
+      "rawNote": "Damage Reduction rescaled from 5/15/25/35% to 6/14/22/30%",
+      "indentLevel": 1,
+      "metric": "Damage Reduction",
+      "changeType": "RESCALE",
+      "oldValue": "5/15/25/35%",
+      "newValue": "6/14/22/30%",
+      "metadata": {
+        "entityId": 108,
+        "subEntityId": 5615
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.8,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Underlord",
+      "subEntityName": "Fiend's Gate",
+      "rawNote": "Channel Time increased from 3s to 3.5s",
+      "indentLevel": 1,
+      "metric": "Channel Time",
+      "changeType": "INCREASED",
+      "oldValue": "3s",
+      "newValue": "3.5s",
+      "metadata": {
+        "entityId": 108,
+        "subEntityId": 865
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Oracle",
+      "subEntityName": "Fate's Edict",
+      "rawNote": "Mana Cost increased from 50 to 80/90/100/110",
+      "indentLevel": 1,
+      "metric": "Mana Cost",
+      "changeType": "INCREASED",
+      "oldValue": "50",
+      "newValue": "80/90/100/110",
+      "metadata": {
+        "entityId": 111,
+        "subEntityId": 5638
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1
+        },
+        "reasoning": "Increased a negative metric (mana cost)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Oracle",
+      "subEntityName": "Rain of Destiny",
+      "rawNote": "Heal Amplification decreased from 25% to 20%",
+      "indentLevel": 1,
+      "metric": "Heal Amplification",
+      "changeType": "DECREASED",
+      "oldValue": "25%",
+      "newValue": "20%",
+      "metadata": {
+        "entityId": 111,
+        "subEntityId": 932
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Adjustment",
+        "confidenceScore": 0.5,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Oracle",
+      "subEntityName": "Talents",
+      "rawNote": "Level 15 Talent Purifying Flames Cooldown Reduction decreased from 1.25s to 1s",
+      "indentLevel": 1,
+      "metric": "Level 15 Talent Purifying Flames Cooldown Reduction",
+      "changeType": "DECREASED",
+      "oldValue": "1.25s",
+      "newValue": "1s",
+      "metadata": {
+        "entityId": 111
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Decreased a negative metric (level 15 talent purifying flames cooldown reduction)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Pangolier",
+      "rawNote": "Base Strength increased from 17 to 19",
+      "indentLevel": 1,
+      "metric": "Base Strength",
+      "changeType": "INCREASED",
+      "oldValue": "17",
+      "newValue": "19",
+      "metadata": {
+        "entityId": 120
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (base strength)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Pangolier",
+      "subEntityName": "Swashbuckle",
+      "rawNote": "Mana Cost decreased from 75/80/85/90 to 75",
+      "indentLevel": 1,
+      "metric": "Mana Cost",
+      "changeType": "DECREASED",
+      "oldValue": "75/80/85/90",
+      "newValue": "75",
+      "metadata": {
+        "entityId": 120,
+        "subEntityId": 6344
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1
+        },
+        "reasoning": "Decreased a negative metric (mana cost)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Pangolier",
+      "subEntityName": "Rolling Thunder",
+      "rawNote": "Mana Cost decreased from 100/150/200 to 100/125/150",
+      "indentLevel": 1,
+      "metric": "Mana Cost",
+      "changeType": "DECREASED",
+      "oldValue": "100/150/200",
+      "newValue": "100/125/150",
+      "metadata": {
+        "entityId": 120,
+        "subEntityId": 6343
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1
+        },
+        "reasoning": "Decreased a negative metric (mana cost)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Void Spirit",
+      "rawNote": "Base Movement Speed decreased from 295 to 290",
+      "indentLevel": 1,
+      "metric": "Base Movement Speed",
+      "changeType": "DECREASED",
+      "oldValue": "295",
+      "newValue": "290",
+      "metadata": {
+        "entityId": 126
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Decreased a positive metric (base movement speed)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Void Spirit",
+      "subEntityName": "Resonant Pulse",
+      "rawNote": "Damage decreased from 70/120/170/220 to 60/110/160/210",
+      "indentLevel": 1,
+      "metric": "Damage",
+      "changeType": "DECREASED",
+      "oldValue": "70/120/170/220",
+      "newValue": "60/110/160/210",
+      "metadata": {
+        "entityId": 126,
+        "subEntityId": 7710
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 3.5,
+          "Guardian": 4,
+          "Crusader": 4,
+          "Archon": 4,
+          "Legend": 5,
+          "Ancient": 7.5,
+          "Divine": 8
+        },
+        "reasoning": "Decreased a positive metric (damage)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Snapfire",
+      "rawNote": "Base Strength increased from 20 to 21",
+      "indentLevel": 1,
+      "metric": "Base Strength",
+      "changeType": "INCREASED",
+      "oldValue": "20",
+      "newValue": "21",
+      "metadata": {
+        "entityId": 128
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (base strength)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Snapfire",
+      "subEntityName": "Firesnap Cookie",
+      "rawNote": "Mana Cost decreased from 100 to 85/90/95/100",
+      "indentLevel": 1,
+      "metric": "Mana Cost",
+      "changeType": "DECREASED",
+      "oldValue": "100",
+      "newValue": "85/90/95/100",
+      "metadata": {
+        "entityId": 128,
+        "subEntityId": 6483
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1
+        },
+        "reasoning": "Decreased a negative metric (mana cost)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Marci",
+      "rawNote": "Strength gain increased from 3.0 to 3.2",
+      "indentLevel": 1,
+      "metric": "Strength gain",
+      "changeType": "INCREASED",
+      "oldValue": "3.0",
+      "newValue": "3.2",
+      "metadata": {
+        "entityId": 136
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (strength gain)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Marci",
+      "subEntityName": "Dispose",
+      "rawNote": "Mana Cost decreased from 90 to 75/80/85/90",
+      "indentLevel": 1,
+      "metric": "Mana Cost",
+      "changeType": "DECREASED",
+      "oldValue": "90",
+      "newValue": "75/80/85/90",
+      "metadata": {
+        "entityId": 136,
+        "subEntityId": 8192
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1
+        },
+        "reasoning": "Decreased a negative metric (mana cost)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Marci",
+      "subEntityName": "Talents",
+      "rawNote": "Level 20 Talent Rebound Stun Duration increased from +0.5s to +0.75s",
+      "indentLevel": 1,
+      "metric": "Level 20 Talent Rebound Stun Duration",
+      "changeType": "INCREASED",
+      "oldValue": "+0.5s",
+      "newValue": "+0.75s",
+      "metadata": {
+        "entityId": 136
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Buff",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Increased a positive metric (level 20 talent rebound stun duration)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Muerta",
+      "rawNote": "Base Agility decreased from 22 to 20",
+      "indentLevel": 1,
+      "metric": "Base Agility",
+      "changeType": "DECREASED",
+      "oldValue": "22",
+      "newValue": "20",
+      "metadata": {
+        "entityId": 138
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Decreased a positive metric (base agility)."
+      }
+    },
+    {
+      "category": "hero",
+      "entityName": "Muerta",
+      "rawNote": "Agility gain decreased from 3.0 to 2.7",
+      "indentLevel": 1,
+      "metric": "Agility gain",
+      "changeType": "DECREASED",
+      "oldValue": "3.0",
+      "newValue": "2.7",
+      "metadata": {
+        "entityId": 138
+      },
+      "classification": {
+        "state": "NUMERIC",
+        "classificationType": "Nerf",
+        "confidenceScore": 1,
+        "strategicWeight": {
+          "Herald": 5,
+          "Guardian": 5,
+          "Crusader": 5,
+          "Archon": 5,
+          "Legend": 5,
+          "Ancient": 5,
+          "Divine": 5
+        },
+        "reasoning": "Decreased a positive metric (agility gain)."
+      }
+    }
+  ]
+}

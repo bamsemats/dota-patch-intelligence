@@ -87,17 +87,37 @@ export default function HeroList({ heroes }: HeroListProps) {
               <div className={styles.cardHeader}>
                 <h3 className={styles.heroName}>{hero.heroName}</h3>
                 <span className={`${styles.netScore} ${hero.netScore > 0 ? styles.positive : hero.netScore < 0 ? styles.negative : styles.neutral}`}>
-                  {hero.netScore > 0 ? `+${hero.netScore}` : hero.netScore}
+                  Score: {hero.netScore > 0 ? `+${hero.netScore}` : hero.netScore}
                 </span>
               </div>
               
               <div className={styles.changesList}>
                 {hero.changes.map((change, idx) => (
                   <div key={idx} className={`${styles.changeItem} ${styles[change.classification.classificationType]}`}>
-                    {change.subEntityName && (
-                      <span className={styles.subEntity}>{change.subEntityName}</span>
-                    )}
-                    <span className={styles.note}>{change.rawNote}</span>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                      <div>
+                        {change.subEntityName && (
+                          <span className={styles.subEntity}>{change.subEntityName}</span>
+                        )}
+                        <span className={styles.note}>{change.rawNote}</span>
+                      </div>
+                      {change.classification.strategicWeight && (
+                        <span style={{ 
+                          fontSize: '0.75rem', 
+                          color: 'var(--color-rare)', 
+                          background: 'rgba(26, 135, 249, 0.1)',
+                          padding: '2px 6px',
+                          borderRadius: '4px',
+                          marginLeft: '8px',
+                          whiteSpace: 'nowrap',
+                          fontWeight: 'bold'
+                        }}>
+                          Impact: {typeof change.classification.strategicWeight === 'object' 
+                            ? change.classification.strategicWeight['Divine'] 
+                            : change.classification.strategicWeight}
+                        </span>
+                      )}
+                    </div>
                   </div>
                 ))}
               </div>

@@ -38,18 +38,22 @@ interface PatchDiscoveryResult {
 }
 
 const DOTA_APP_ID = 570;
-const NEWS_COUNT = 100;
+const NEWS_FETCH_LIMIT = 100;
 const OUTPUT_DIR = path.resolve("research-output", "patches");
 
-async function fetchSteamNews(): Promise<SteamNewsItem[]> {
-    const url =
+async function fetchSteamNews(endDate?: number): Promise<SteamNewsItem[]> {
+    let url =
         `https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/` +
         `?appid=${DOTA_APP_ID}` +
-        `&count=${NEWS_COUNT}` +
+        `&count=${NEWS_FETCH_LIMIT}` +
         `&maxlength=50000` +
         `&format=json`;
+    
+    if (endDate) {
+        url += `&enddate=${endDate}`;
+    }
 
-    console.log(`[Discovery] Fetching Steam news...`);
+    console.log(`[Discovery] Fetching Steam news${endDate ? ' before ' + new Date(endDate * 1000).toISOString() : ''}...`);
 
     const response = await fetch(url);
 
@@ -173,64 +177,86 @@ async function fileExists(filePath: string): Promise<boolean> {
 }
 
 async function main() {
-    const newsItems = await fetchSteamNews();
     const results: PatchDiscoveryResult[] = [];
+    const THREE_YEARS_MS = 3 * 365 * 24 * 60 * 60 * 1000;
+    const targetStartDate = Date.now() - THREE_YEARS_MS;
+    
+    let currentEndDate: number | undefined = undefined;
+    let keepFetching = true;
+    let totalItemsAnalyzed = 0;
 
-    console.log(`[Discovery] Analyzing ${newsItems.length} news items...`);
+    console.log(`[Discovery] Initiating 3-year historical search (Target: ${new Date(targetStartDate).toISOString()})...`);
 
-    for (const item of newsItems) {
-        const { confidence, version } = calculateConfidence(item);
+    while (keepFetching) {
+        const newsItems = await fetchSteamNews(currentEndDate);
+        if (newsItems.length === 0) break;
 
-        if (version) {
-            console.log(`[Debug] Item: "${item.title}" | Version: ${version} | Ext: ${item.is_external_url} | Feed: "${item.feedlabel}" | Author: "${item.author}" | Conf: ${confidence}%`);
+        totalItemsAnalyzed += newsItems.length;
+        console.log(`[Discovery] Analyzing batch of ${newsItems.length} items (Total: ${totalItemsAnalyzed})...`);
+
+        for (const item of newsItems) {
+            const { confidence, version } = calculateConfidence(item);
+
+            if (version && confidence > 40) {
+                const patchDir = path.join(OUTPUT_DIR, version);
+                const dataJsonPath = path.join(patchDir, "data.json");
+
+                if (await fileExists(dataJsonPath)) {
+                    // Update currentEndDate even if skipping
+                    if (!currentEndDate || item.date < currentEndDate) {
+                        currentEndDate = item.date - 1;
+                    }
+                    continue;
+                }
+
+                console.log(`[Candidate] Found: ${version} (Confidence: ${confidence}%) - ${item.title}`);
+                const { isValid, finalUrl } = await validateCanonicalUrl(version);
+
+                const result: PatchDiscoveryResult = {
+                    version,
+                    steamTitle: item.title,
+                    steamUrl: item.url,
+                    canonicalUrl: finalUrl,
+                    confidence,
+                    isValidCanonical: isValid,
+                    discoveryDate: new Date(item.date * 1000).toISOString(),
+                    author: item.author,
+                    feedLabel: item.feedlabel
+                };
+
+                let html: string | null = null;
+                let json: any | null = null;
+
+                if (isValid) {
+                    console.log(`[Fetch] Fetching artifacts for ${version}...`);
+                    html = await fetchPatchHtml(finalUrl);
+                    json = await fetchPatchJson(version);
+                }
+
+                await savePatchArtifacts(result, html, json);
+                results.push(result);
+            }
+
+            // Update currentEndDate to the oldest item in the batch
+            if (!currentEndDate || item.date < currentEndDate) {
+                currentEndDate = item.date - 1;
+            }
         }
 
-        // We only care about items with a version and decent confidence
-        if (version && confidence > 40) {
-            console.log(`[Candidate] Found: ${version} (Confidence: ${confidence}%) - ${item.title}`);
+        // Check if we've reached the target date
+        if (currentEndDate && (currentEndDate * 1000) < targetStartDate) {
+            console.log(`[Discovery] Reached target date: ${new Date(currentEndDate * 1000).toISOString()}`);
+            keepFetching = false;
+        }
 
-            const patchDir = path.join(OUTPUT_DIR, version);
-            const dataJsonPath = path.join(patchDir, "data.json");
-
-            // Deduplication check
-            if (await fileExists(dataJsonPath)) {
-                console.log(`[Skip] Patch ${version} already exists.`);
-                continue;
-            }
-
-            const { isValid, finalUrl } = await validateCanonicalUrl(version);
-
-            const result: PatchDiscoveryResult = {
-                version,
-                steamTitle: item.title,
-                steamUrl: item.url,
-                canonicalUrl: finalUrl,
-                confidence,
-                isValidCanonical: isValid,
-                discoveryDate: new Date(item.date * 1000).toISOString(),
-                author: item.author,
-                feedLabel: item.feedlabel
-            };
-
-            let html: string | null = null;
-            let json: any | null = null;
-
-            if (isValid) {
-                console.log(`[Fetch] Fetching canonical page for ${version}...`);
-                html = await fetchPatchHtml(finalUrl);
-                
-                console.log(`[Fetch] Fetching datafeed JSON for ${version}...`);
-                json = await fetchPatchJson(version);
-            } else {
-                console.warn(`[Warning] Canonical URL for ${version} is invalid or returned error.`);
-            }
-
-            await savePatchArtifacts(result, html, json);
-            results.push(result);
+        // Safety break to prevent infinite loops (approx 30 pages)
+        if (totalItemsAnalyzed > 3000) {
+            console.warn(`[Discovery] Safety limit reached (3000 items). Stopping.`);
+            keepFetching = false;
         }
     }
 
-    console.log(`\n[Summary] Discovered and processed ${results.length} new patch candidates.`);
+    console.log(`\n[Summary] Discovered and processed ${results.length} new patch candidates across ${totalItemsAnalyzed} news items.`);
 }
 
 main().catch((error) => {
