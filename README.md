@@ -54,6 +54,44 @@ The project operates as a multi-stage CLI-driven pipeline:
 
 ---
 
+## 📊 Data Flow & Analysis
+
+```mermaid
+graph TD
+    subgraph "Data Acquisition"
+        A[Steam News] --> B[Valve JSON Datafeed]
+        B --> C[ID Mapping Resolver]
+    end
+
+    subgraph "Parsing & Extraction"
+        C --> D[Structured Parser]
+        D --> E[Atomic Change List]
+    end
+
+    subgraph "Intelligence Engine"
+        E --> F[Tiered Classification]
+        F --> G[Balance Ontology Weighting]
+        G --> H[Hero Feature Vector Deltas]
+    end
+
+    subgraph "Strategic Analysis"
+        H --> I[Meta Simulation Engine]
+        I --> J[LLM Meta Analyzer]
+        J --> K[Thematic Shifts & Synergy Report]
+    end
+
+    subgraph "Frontend Presentation"
+        K --> L[Hero History Archive]
+        L --> M[Next.js Static Generation]
+        M --> N[Patch Summary Landing]
+        M --> O[Full Notes View]
+        M --> P[Hero History Pages]
+        M --> Q[Global Search Index]
+    end
+```
+
+---
+
 ## 🗺️ Roadmap
 
 ### Phase 1 — Foundation (Complete)
@@ -83,22 +121,29 @@ The project operates as a multi-stage CLI-driven pipeline:
 *   Automated build and deploy pipeline via GitHub Actions.
 *   Site hosted on GitHub Pages.
 
-### Phase 8 — Historical Analytics (Planned)
-*   Hero balance trajectory and "Identity Shift" tracking.
-*   Cross-patch comparisons and long-term thematic trends.
+### Phase 8 — Intelligence Foundation (Complete)
+*   Tiered Classification Engine (Numeric/Semantic/Unknown).
+*   Semantic & Balance Ontology matching.
 
-### Phase 9 — Backend API & Database Migration (Future)
-*   Migration from static JSON files to PostgreSQL.
+### Phase 9 — Advanced Modeling (Complete)
+*   Hero Feature Vectors (7D Identity Model).
+*   Automatic vector modification based on patch notes.
+
+### Phase 10 — Strategic Analytics (Complete)
+*   Meta Impact Simulation (Draft-level reasoning).
+*   Winrate Calibration loop for weight auto-tuning.
+
+### Phase 11 — Frontend Polish & Advanced UX (Complete)
+*   Dual-view patch architecture (Strategic Summary & Classic Notes).
+*   Dedicated Hero History pages with trend visualization.
+*   Global Cross-Patch Search.
+
+### Phase 12 — Backend API & Database Migration (Up Next)
+*   Transition from local JSON files to PostgreSQL.
 *   Node.js/Fastify API for dynamic data serving.
+*   Mobile Responsiveness sprint.
 
-### Phase 10 — Automation Pipeline (Future)
-*   Real-time patch detection and end-to-end auto-processing.
-*   Discord/Email notifications.
-
-### Phase 11 — Advanced Features (Future)
-*   User accounts and personalized hero tracking.
-*   Public API and community features.
-*   Advanced website traffic metrics.
+---
 
 ---
 
