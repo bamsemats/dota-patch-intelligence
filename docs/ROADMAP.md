@@ -216,12 +216,23 @@ Goals:
 * **Hero-Specific Detail Views:** Dedicated, permanent pages for every hero with full balance history, winrate histograms, and feature vector trajectories. (Done)
 * **Single Page Application (SPA) Architecture:** Optimized Next.js setup with deep interlinking between notes, summaries, and hero archives. (Done)
 * **Global Search & Filter:** Robust system-wide search functionality to find specific mechanics, items, or heroes across all patches. (Done)
-* **Mobile Responsiveness:** (Added to Roadmap) Ensure the advanced dashboards and histograms are fully functional and readable on mobile devices.
 
 Deliverables:
 * Frontend V2 release with dual-view patch architecture (Summary/Full Notes).
 * Integrated Hero History Archive.
 * Global search engine.
+
+---
+
+# Phase 11.5 — UI/UX Refinement & Mobile Optimization
+
+Status: In Progress
+
+Goals:
+* **Mobile Responsiveness:** Ensure the advanced dashboards, histograms, and vector charts are fully functional and readable on mobile devices.
+* **Aesthetic Polish:** Fine-tune the color scheme, typography, and spacing to ensure a premium, consistent "Dota" feel across all views.
+* **Additional Pages:** Implementation of any requested secondary pages (e.g., "About", "Terminology Guide", "Meta Dashboard").
+* **Interactive Feedback:** Add transitions and micro-interactions to make the UI feel more "alive".
 
 ---
 

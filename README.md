@@ -138,10 +138,14 @@ graph TD
 *   Dedicated Hero History pages with trend visualization.
 *   Global Cross-Patch Search.
 
+### Phase 11.5 — UI/UX Refinement & Mobile Optimization (In Progress)
+*   **Mobile Responsiveness:** Full dashboard optimization for small screens.
+*   **Aesthetic Polish:** Fine-tuning colors, typography, and spacing.
+*   **Additional Content:** New static pages (About, Glossary, etc.).
+
 ### Phase 12 — Backend API & Database Migration (Up Next)
 *   Transition from local JSON files to PostgreSQL.
 *   Node.js/Fastify API for dynamic data serving.
-*   Mobile Responsiveness sprint.
 
 ---
 
