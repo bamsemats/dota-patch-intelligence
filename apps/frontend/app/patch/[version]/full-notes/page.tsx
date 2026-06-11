@@ -2,6 +2,7 @@ import { promises as fs } from "node:fs";
 import path from "node:path";
 import Link from "next/link";
 import PatchSelector from "../../../components/PatchSelector";
+import FullNotesTabs from "./FullNotesTabs";
 
 interface PageProps {
   params: Promise<{ version: string }>;
@@ -39,47 +40,100 @@ export default async function PatchNotesPage({ params }: PageProps) {
 
   if (!patchData) return <div>Patch not found.</div>;
 
-  // Group changes by category and entity
-  const categoryMap: Record<string, Record<string, any[]>> = {
-    general: {},
-    item: {},
-    neutral: {},
-    hero: {}
-  };
-
-  for (const change of patchData.changes) {
-    const cat = change.category || "general";
-    if (!categoryMap[cat]) categoryMap[cat] = {};
-    if (!categoryMap[cat][change.entityName]) categoryMap[cat][change.entityName] = [];
-    categoryMap[cat][change.entityName].push(change);
+  // Load Feature Vectors
+  const vectorPath = path.join(researchDir, "feature-vectors", `vectors-${patchVersion}.json`);
+  let vectorData = null;
+  try {
+    const rawVectors = await fs.readFile(vectorPath, "utf-8");
+    vectorData = JSON.parse(rawVectors);
+  } catch (e) {
+    // No vectors for this patch
   }
 
-  const sections = [
-    { id: 'general', title: 'General Updates' },
-    { id: 'item', title: 'Item Changes' },
-    { id: 'neutral', title: 'Neutral Item Changes' },
-    { id: 'hero', title: 'Hero Changes' }
-  ];
+  // Load Winrate Data
+  const winratePath = path.join(researchDir, "calibration-data", `winrates-${patchVersion}.json`);
+  let winrateData = null;
+  try {
+    const rawWinrate = await fs.readFile(winratePath, "utf-8");
+    winrateData = JSON.parse(rawWinrate);
+  } catch (e) {
+    // No winrate for this patch
+  }
 
-  const getClassificationStyle = (type: string) => {
-    switch (type) {
-      case "Buff": return { borderLeft: '3px solid var(--color-buff)', paddingLeft: '10px' };
-      case "Nerf": return { borderLeft: '3px solid var(--color-nerf)', paddingLeft: '10px' };
-      case "Adjustment": return { borderLeft: '3px solid var(--color-adjustment)', paddingLeft: '10px' };
-      case "Rework": return { borderLeft: '3px solid var(--color-rework)', paddingLeft: '10px' };
-      default: return { borderLeft: '3px solid transparent', paddingLeft: '10px' };
-    }
-  };
+  // Load Hero Mapping
+  const mappingPath = path.join(researchDir, "mappings", "heroes.json");
+  let heroMapping = null;
+  try {
+    const rawMapping = await fs.readFile(mappingPath, "utf-8");
+    heroMapping = JSON.parse(rawMapping);
+  } catch (e) {
+    // No mapping
+  }
 
-  const getEntityTitleStyle = (category: string) => {
-    switch (category) {
-      case "hero": return { color: 'var(--color-epic)' };
-      case "item": return { color: 'var(--color-artifact)' };
-      case "neutral": return { color: 'var(--color-consumable)' };
-      case "general": return { color: 'var(--color-secret-shop)' };
-      default: return {};
+  // Process Data
+  const heroMap = new Map<string, any>();
+  const itemMap = new Map<string, any>();
+  const neutralMap = new Map<string, any>();
+  const generalMap = new Map<string, any>();
+
+  if (patchData && patchData.changes) {
+    for (const change of patchData.changes) {
+      const type = change.classification?.classificationType;
+      let netScoreDelta = 0;
+      if (type === "Buff") netScoreDelta = 1;
+      if (type === "Nerf") netScoreDelta = -1;
+
+      if (change.category === "hero") {
+        if (!heroMap.has(change.entityName)) {
+          heroMap.set(change.entityName, { heroName: change.entityName, changes: [], netScore: 0, vectorDelta: null });
+        }
+        const hero = heroMap.get(change.entityName);
+        hero.changes.push(change);
+        const weightObj = change.classification?.strategicWeight;
+        const weight = typeof weightObj === 'object' ? (weightObj['Divine'] || 5) : (weightObj || 5);
+        hero.netScore += (weight * netScoreDelta);
+      } 
+      else if (change.category === "item") {
+        if (!itemMap.has(change.entityName)) {
+          itemMap.set(change.entityName, { itemName: change.entityName, itemType: "Shop Item", changes: [], netScore: 0 });
+        }
+        const item = itemMap.get(change.entityName);
+        item.changes.push(change);
+        const weightObj = change.classification?.strategicWeight;
+        const weight = typeof weightObj === 'object' ? (weightObj['Divine'] || 5) : (weightObj || 5);
+        item.netScore += (weight * netScoreDelta);
+      }
+      else if (change.category === "neutral") {
+        if (!neutralMap.has(change.entityName)) {
+          neutralMap.set(change.entityName, { itemName: change.entityName, itemType: "Neutral Item", changes: [], netScore: 0 });
+        }
+        const item = neutralMap.get(change.entityName);
+        item.changes.push(change);
+        const weightObj = change.classification?.strategicWeight;
+        const weight = typeof weightObj === 'object' ? (weightObj['Divine'] || 5) : (weightObj || 5);
+        item.netScore += (weight * netScoreDelta);
+      }
+      else if (change.category === "general") {
+        if (!generalMap.has(change.entityName)) {
+          generalMap.set(change.entityName, { sectionName: change.entityName, changes: [] });
+        }
+        generalMap.get(change.entityName).changes.push(change);
+      }
     }
-  };
+  }
+
+  if (vectorData && vectorData.vectorDeltas) {
+    for (const vector of vectorData.vectorDeltas) {
+      if (heroMap.has(vector.heroName)) {
+        heroMap.get(vector.heroName).vectorDelta = vector.vectorDelta;
+      }
+    }
+  }
+
+  const heroesArray = Array.from(heroMap.values()).sort((a, b) => a.heroName.localeCompare(b.heroName));
+  const itemsArray = Array.from(itemMap.values()).sort((a, b) => a.itemName.localeCompare(b.itemName));
+  const neutralsArray = Array.from(neutralMap.values()).sort((a, b) => a.itemName.localeCompare(b.itemName));
+  const generalArray = Array.from(generalMap.values());
 
   return (
     <div className="container">
@@ -89,72 +143,18 @@ export default async function PatchNotesPage({ params }: PageProps) {
         </h1>
         
         <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
-          <Link href={`/patch/${patchVersion}`} style={{ color: 'var(--color-rare)', fontWeight: 'bold' }}>
-            &larr; View Strategic Summary
-          </Link>
           <PatchSelector availablePatches={availablePatches} currentPatch={patchVersion} />
         </div>
       </div>
 
-      <div style={{ background: 'var(--bg-panel)', padding: '40px', borderRadius: '12px', border: '1px solid var(--border-color)', marginTop: '20px' }}>
-        {sections.map(section => {
-          const entities = categoryMap[section.id];
-          if (!entities || Object.keys(entities).length === 0) return null;
-
-          const sortedEntityNames = Object.keys(entities).sort((a, b) => a.localeCompare(b));
-
-          return (
-            <div key={section.id} style={{ marginBottom: '60px' }}>
-              <h2 style={{ 
-                color: 'var(--color-rare)', 
-                fontSize: '2.2rem', 
-                borderBottom: '2px solid var(--color-rare)', 
-                paddingBottom: '15px',
-                marginBottom: '30px',
-                textTransform: 'uppercase',
-                letterSpacing: '1px'
-              }}>
-                {section.title}
-              </h2>
-
-              {sortedEntityNames.map((entityName) => (
-                <div key={entityName} style={{ marginBottom: '40px' }}>
-                  <h3 style={{ 
-                    ...getEntityTitleStyle(section.id), 
-                    fontSize: '1.6rem', 
-                    borderBottom: '1px solid var(--border-color)',
-                    paddingBottom: '8px',
-                    marginBottom: '15px'
-                  }}>
-                    {section.id === "hero" ? (
-                      <Link href={`/hero/${entityName.replace(/[^a-z0-9]/gi, '_').toLowerCase()}`} style={{ color: 'inherit', textDecoration: 'none' }}>
-                        {entityName}
-                      </Link>
-                    ) : entityName}
-                  </h3>
-                  
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                    {entities[entityName].map((change: any, cIdx: number) => (
-                      <div key={cIdx} style={{ 
-                        ...getClassificationStyle(change.classification.classificationType),
-                        lineHeight: '1.6',
-                        fontSize: '1rem'
-                      }}>
-                        {change.subEntityName && (
-                          <strong style={{ color: 'var(--color-consumable)', marginRight: '8px' }}>
-                            {change.subEntityName}:
-                          </strong>
-                        )}
-                        <span style={{ color: '#ddd' }}>{change.rawNote}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          );
-        })}
-      </div>
+      <FullNotesTabs 
+        heroes={heroesArray}
+        items={itemsArray}
+        neutrals={neutralsArray}
+        general={generalArray}
+        winrateData={winrateData}
+        heroMapping={heroMapping}
+      />
     </div>
   );
 }

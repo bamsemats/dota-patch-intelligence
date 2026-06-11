@@ -125,7 +125,7 @@ export default function HeroList({ heroes }: HeroListProps) {
                 {hero.changes.slice(0, 3).map((change, idx) => (
                   <div key={idx} className={`${styles.changeItem} ${styles[change.classification.classificationType]}`}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                      <div className={styles.noteTruncate}>
+                      <div>
                         {change.subEntityName && (
                           <span className={styles.subEntity}>{change.subEntityName}</span>
                         )}

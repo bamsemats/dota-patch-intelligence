@@ -82,9 +82,15 @@
   padding: 40px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .content {
     grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .sidebar {
+    order: -1; /* Show metrics first on mobile */
   }
 }
 
@@ -192,11 +198,13 @@
   flex-direction: column;
   align-items: center;
   gap: 8px;
+  height: 100%;
 }
 
 .histBarContainer {
   flex: 1;
   width: 100%;
+  height: 100%;
   display: flex;
   align-items: flex-end;
   position: relative;

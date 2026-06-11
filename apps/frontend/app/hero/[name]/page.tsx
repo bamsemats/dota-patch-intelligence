@@ -2,6 +2,7 @@ import { promises as fs } from "node:fs";
 import path from "node:path";
 import Link from "next/link";
 import styles from "../../components/HeroDetailModal.module.css";
+import WinrateHistorySelector from "./WinrateHistorySelector";
 
 interface PageProps {
   params: Promise<{ name: string }>;
@@ -19,7 +20,48 @@ export async function generateStaticParams() {
     }));
 }
 
-const RANKS = ["HERALD", "GUARDIAN", "CRUSADER", "ARCHON", "LEGEND", "ANCIENT", "DIVINE", "IMMORTAL"];
+export async function generateMetadata({ params }: PageProps) {
+  const { name } = await params;
+  
+  // Try to read hero data to get the exact formatted name
+  const heroPath = path.join(historyDir, `${name}.json`);
+  let heroName = name.replace(/_/g, ' ');
+  try {
+    const rawData = await fs.readFile(heroPath, "utf-8");
+    const heroData = JSON.parse(rawData);
+    heroName = heroData.name;
+  } catch (e) {
+    // fallback to formatted URL param
+    heroName = heroName.charAt(0).toUpperCase() + heroName.slice(1);
+  }
+
+  const title = `${heroName} Balance History & Winrates`;
+  const description = `Track the historical balance changes, feature vector shifts, and winrate trajectories for ${heroName} across all Dota 2 patches.`;
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: "article",
+      siteName: "Dota Patch Intelligence",
+      images: [
+        {
+          url: "/api/og?title=" + encodeURIComponent(heroName), // Placeholder for future dynamic OG image
+          width: 1200,
+          height: 630,
+          alt: `${heroName} Balance History`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+  };
+}
 
 export default async function HeroPage({ params }: PageProps) {
   const { name } = await params;
@@ -46,13 +88,13 @@ export default async function HeroPage({ params }: PageProps) {
   return (
     <div className="container">
       <div style={{ marginBottom: '40px' }}>
-        <h1 style={{ color: "var(--color-artifact)", margin: 0, fontSize: "3rem" }}>
+        <h1 style={{ color: "var(--color-artifact)", margin: 0, fontSize: "clamp(2rem, 5vw, 3rem)" }}>
           {heroData.name}
         </h1>
         <p style={{ color: '#888', fontSize: '1.2rem' }}>Historical Balance Tracker & Intelligence</p>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 350px', gap: '40px' }}>
+      <div className={styles.content} style={{ padding: 0 }}>
         <div className={styles.section}>
           <h2 style={{ color: 'var(--color-rare)', borderBottom: '1px solid var(--border-color)', paddingBottom: '10px' }}>
             Balance History
@@ -60,7 +102,7 @@ export default async function HeroPage({ params }: PageProps) {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '30px', marginTop: '20px' }}>
             {heroData.history.slice().reverse().map((patch: any, pIdx: number) => (
               <div key={pIdx} style={{ background: 'var(--bg-panel)', padding: '25px', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '15px' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '15px', flexWrap: 'wrap', gap: '10px' }}>
                   <Link href={`/patch/${patch.version}`} style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--color-rare)', textDecoration: 'none' }}>
                     Patch {patch.version}
                   </Link>
@@ -104,7 +146,7 @@ export default async function HeroPage({ params }: PageProps) {
           </div>
         </div>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
+        <div className={styles.sidebar}>
           <div className={styles.section}>
             <h3 style={{ color: 'var(--color-rare)' }}>Current Feature Vectors</h3>
             <div className={styles.vectorGrid} style={{ background: 'var(--bg-panel)', padding: '20px', borderRadius: '12px' }}>
@@ -130,40 +172,7 @@ export default async function HeroPage({ params }: PageProps) {
             </div>
           </div>
 
-          <div className={styles.section}>
-            <h3 style={{ color: 'var(--color-rare)' }}>Latest Winrate by Rank</h3>
-            <div style={{ background: 'var(--bg-panel)', padding: '20px', borderRadius: '12px' }}>
-              <div className={styles.histogram}>
-                {RANKS.map(rank => {
-                  const wrData = latestHistory.winrates[rank];
-                  const wr = wrData ? wrData.winrate : null;
-                  const percent = wr ? (wr * 100).toFixed(1) : "N/A";
-                  const height = wr ? (wr - 0.4) * 500 : 0;
-                  
-                  return (
-                    <div key={rank} className={styles.histCol}>
-                      <div className={styles.histBarContainer}>
-                        {wr && (
-                          <div 
-                            className={styles.histBar} 
-                            style={{ height: `${Math.max(height, 5)}%`, backgroundColor: wr > 0.5 ? 'var(--color-buff)' : 'var(--color-nerf)' }}
-                          >
-                            <span className={styles.histVal}>{percent}%</span>
-                          </div>
-                        )}
-                      </div>
-                      <span className={styles.rankLabel}>{rank.charAt(0)}</span>
-                    </div>
-                  );
-                })}
-              </div>
-              <div className={styles.rankLegend}>
-                {RANKS.map(rank => (
-                  <span key={rank} style={{ fontSize: '0.65rem', color: '#666' }}>{rank.charAt(0)}={rank} </span>
-                ))}
-              </div>
-            </div>
-          </div>
+          <WinrateHistorySelector history={heroData.history} />
         </div>
       </div>
     </div>

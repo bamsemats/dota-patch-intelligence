@@ -230,9 +230,18 @@ Status: In Progress
 
 Goals:
 * **Mobile Responsiveness:** Ensure the advanced dashboards, histograms, and vector charts are fully functional and readable on mobile devices.
+* **Hero Page - Historical Winrate Selector:** Implement a mechanism (e.g., dropdown or timeline) on the dedicated hero pages to allow users to view winrate distributions from specific historical patches.
+* **Layout Polish:** Fix text truncation issues in Hero Cards (allow wrapping/multi-line notes) to ensure consistency with Item Cards.
+* **Role-Based Analytics:**
+    * Implement a dedicated section for **Roles** (1-5) to track role-specific meta shifts.
+    * Expand **Synergistic Winners/Losers** to include role-specific categories (Top 3 for Carry, Mid, Offlane, Soft Support, Hard Support).
 * **Aesthetic Polish:** Fine-tune the color scheme, typography, and spacing to ensure a premium, consistent "Dota" feel across all views.
-* **Additional Pages:** Implementation of any requested secondary pages (e.g., "About", "Terminology Guide", "Meta Dashboard").
 * **Interactive Feedback:** Add transitions and micro-interactions to make the UI feel more "alive".
+* **SEO & Social Visibility:**
+    * Implement **Dynamic Metadata** (Title, Description) for every patch and hero page.
+    * Add **Open Graph (OG) and Twitter Card** tags to ensure rich previews when sharing links on social media (e.g., Discord, X, Reddit).
+    * Optimize **Semantic HTML** structure to improve search engine indexing.
+    * Generate an automated **Sitemap** for the static site.
 
 ---
 

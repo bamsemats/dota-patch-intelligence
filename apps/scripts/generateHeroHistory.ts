@@ -6,20 +6,36 @@ const patchesDir = path.join(researchDir, "classified-patches");
 const outputDir = path.join(researchDir, "hero-history");
 const vectorsDir = path.join(researchDir, "feature-vectors");
 const calibrationDir = path.join(researchDir, "calibration-data");
+const mappingPath = path.join(researchDir, "mappings", "heroes.json");
 
 async function generate() {
-  console.log("Generating hero history index...");
+  console.log("Generating smart hero history index with winrate forward-filling...");
   
   if (!(await fs.stat(outputDir).catch(() => null))) {
     await fs.mkdir(outputDir);
   }
 
+  const heroMapping = JSON.parse(await fs.readFile(mappingPath, "utf-8"));
+  const heroNames = Object.values(heroMapping) as string[];
+  
   const files = await fs.readdir(patchesDir);
   const jsonFiles = files
     .filter(f => f.endsWith(".json"))
     .sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
 
   const heroData: Record<string, any> = {};
+  for (const name of heroNames) {
+    heroData[name] = {
+      name: name,
+      history: []
+    };
+  }
+
+  // Persistent winrate state for forward-filling
+  const currentWinrates: Record<string, Record<string, any>> = {};
+  for (const name of heroNames) {
+    currentWinrates[name] = {};
+  }
 
   for (const file of jsonFiles) {
     const patchVersion = file.replace(".json", "");
@@ -43,46 +59,45 @@ async function generate() {
       winrateMap = JSON.parse(rawWinrates);
     } catch (e) {}
 
+    // Track which heroes have changes in this patch
+    const patchChanges: Record<string, any[]> = {};
     if (patch.changes) {
       for (const change of patch.changes) {
         if (change.category === "hero") {
           const name = change.entityName;
-          if (!heroData[name]) {
-            heroData[name] = {
-              name: name,
-              history: []
-            };
-          }
-
-          // Add or update entry for this patch
-          let patchEntry = heroData[name].history.find((h: any) => h.version === patchVersion);
-          if (!patchEntry) {
-            patchEntry = {
-              version: patchVersion,
-              date: patch.timestamp || new Date().toISOString(), // Fallback
-              changes: [],
-              vectorDelta: vectorDeltaMap[name] || null,
-              winrates: {}
-            };
-            
-            // Extract winrates for this hero across ranks
-            if (winrateMap) {
-              const mapping = JSON.parse(await fs.readFile(path.join(researchDir, "mappings", "heroes.json"), "utf-8"));
-              const heroId = Object.keys(mapping).find(id => mapping[id] === name);
-              if (heroId) {
-                for (const rank in winrateMap) {
-                  if (winrateMap[rank][heroId]) {
-                    patchEntry.winrates[rank] = winrateMap[rank][heroId];
-                  }
-                }
-              }
-            }
-
-            heroData[name].history.push(patchEntry);
-          }
-          patchEntry.changes.push(change);
+          if (!patchChanges[name]) patchChanges[name] = [];
+          patchChanges[name].push(change);
         }
       }
+    }
+
+    // For EVERY hero, update their state and create history entry
+    for (const name of heroNames) {
+      const heroId = Object.keys(heroMapping).find(id => heroMapping[id] === name);
+      
+      // Update persistent winrate if new data is available and not empty
+      if (winrateMap && heroId) {
+        let hasData = false;
+        const newWinrates: Record<string, any> = {};
+        for (const rank in winrateMap) {
+          if (winrateMap[rank][heroId]) {
+            newWinrates[rank] = winrateMap[rank][heroId];
+            hasData = true;
+          }
+        }
+        
+        if (hasData) {
+          currentWinrates[name] = newWinrates;
+        }
+      }
+
+      heroData[name].history.push({
+        version: patchVersion,
+        date: patch.timestamp || new Date().toISOString(),
+        changes: patchChanges[name] || [],
+        vectorDelta: vectorDeltaMap[name] || null,
+        winrates: { ...currentWinrates[name] } // Use the filled state
+      });
     }
   }
 
@@ -95,7 +110,7 @@ async function generate() {
     );
   }
 
-  console.log(`Hero history generated for ${Object.keys(heroData).length} heroes.`);
+  console.log(`Forward-filled hero history generated for ${Object.keys(heroData).length} heroes.`);
 }
 
 generate().catch(console.error);

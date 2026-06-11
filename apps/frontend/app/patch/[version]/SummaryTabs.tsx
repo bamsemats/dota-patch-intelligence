@@ -1,0 +1,122 @@
+"use client";
+
+import { useState } from "react";
+import styles from "../../components/Tabs.module.css";
+import Link from "next/link";
+
+interface SummaryTabsProps {
+  metaData: any;
+}
+
+export default function SummaryTabs({ metaData }: SummaryTabsProps) {
+  const [activeTab, setActiveTab] = useState<"shifts" | "synergies" | "roles">("shifts");
+
+  if (!metaData) return null;
+
+  return (
+    <div className={styles.tabContainer}>
+      <div className={styles.tabHeader}>
+        <button 
+          className={`${styles.tabButton} ${activeTab === "shifts" ? styles.active : ""}`}
+          onClick={() => setActiveTab("shifts")}
+        >
+          Thematic Meta Shifts
+        </button>
+        <button 
+          className={`${styles.tabButton} ${activeTab === "synergies" ? styles.active : ""}`}
+          onClick={() => setActiveTab("synergies")}
+        >
+          Overall Synergies
+        </button>
+        {metaData.roleSpecificWinners && (
+          <button 
+            className={`${styles.tabButton} ${activeTab === "roles" ? styles.active : ""}`}
+            onClick={() => setActiveTab("roles")}
+          >
+            Role-Specific Winners
+          </button>
+        )}
+      </div>
+
+      <div className={styles.tabContent}>
+        {activeTab === "shifts" && (
+          <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+            {metaData.metaShifts?.map((shift: any, idx: number) => (
+              <div key={idx} style={{ background: "var(--bg-panel)", padding: "20px", borderRadius: "10px", border: "1px solid var(--border-color)" }}>
+                <h3 style={{ margin: "0 0 10px 0", color: "var(--color-epic)" }}>{shift.theme}</h3>
+                <p style={{ margin: "0 0 10px 0", lineHeight: "1.5" }}>{shift.description}</p>
+                <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
+                  {shift.impactedRoles?.map((role: string) => (
+                    <span key={role} style={{ background: "var(--border-color)", padding: "4px 10px", borderRadius: "20px", fontSize: "0.85rem" }}>{role}</span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {activeTab === "synergies" && (
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "20px" }}>
+            <div style={{ background: "var(--bg-panel)", padding: "20px", borderRadius: "10px", border: "1px solid var(--border-color)" }}>
+              <h2 style={{ color: "var(--color-buff)", marginTop: 0, borderBottom: "1px solid var(--border-color)", paddingBottom: "10px" }}>
+                Overall Synergistic Winners
+              </h2>
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", marginTop: "16px" }}>
+                {metaData.synergisticWinners?.map((winner: any, idx: number) => (
+                  <div key={idx}>
+                    <h4 style={{ margin: "0 0 4px 0", color: "var(--color-epic)" }}>{winner.entity}</h4>
+                    <p style={{ margin: 0, fontSize: "0.9rem", color: "#ccc", lineHeight: "1.4" }}>{winner.synergyExplanation}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div style={{ background: "var(--bg-panel)", padding: "20px", borderRadius: "10px", border: "1px solid var(--border-color)" }}>
+              <h2 style={{ color: "var(--color-nerf)", marginTop: 0, borderBottom: "1px solid var(--border-color)", paddingBottom: "10px" }}>
+                Overall Synergistic Losers
+              </h2>
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", marginTop: "16px" }}>
+                {metaData.synergisticLosers?.map((loser: any, idx: number) => (
+                  <div key={idx}>
+                    <h4 style={{ margin: "0 0 4px 0", color: "var(--color-epic)" }}>{loser.entity}</h4>
+                    <p style={{ margin: 0, fontSize: "0.9rem", color: "#ccc", lineHeight: "1.4" }}>{loser.synergyExplanation}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {activeTab === "roles" && metaData.roleSpecificWinners && (
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "20px" }}>
+            {["Carry", "Mid", "Offlane", "SoftSupport", "HardSupport"].map(role => {
+              const winners = metaData.roleSpecificWinners[role];
+              if (!winners || winners.length === 0) return null;
+              
+              const roleDisplay = role.replace(/([A-Z])/g, ' $1').trim(); // e.g. "SoftSupport" -> "Soft Support"
+              
+              return (
+                <div key={role} style={{ background: "var(--bg-panel)", padding: "20px", borderRadius: "10px", border: "1px solid var(--border-color)" }}>
+                  <h3 style={{ color: "var(--color-buff)", marginTop: 0, marginBottom: "15px", fontSize: "1.2rem", display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <span style={{ display: 'inline-block', width: '8px', height: '8px', borderRadius: '50%', background: 'var(--color-buff)' }}></span>
+                    {roleDisplay}
+                  </h3>
+                  <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+                    {winners.map((winner: any, idx: number) => (
+                      <div key={idx}>
+                        <Link href={`/hero/${winner.hero.replace(/[^a-z0-9]/gi, '_').toLowerCase()}`} style={{ textDecoration: 'none' }}>
+                           <h4 style={{ margin: "0 0 4px 0", color: "var(--color-epic)", cursor: 'pointer' }}>{winner.hero}</h4>
+                        </Link>
+                        <p style={{ margin: 0, fontSize: "0.85rem", color: "#ccc", lineHeight: "1.4" }}>{winner.explanation}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
