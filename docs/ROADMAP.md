@@ -302,19 +302,24 @@ Goals:
 
 ---
 
-# Phase 16 — Advanced Resilience & Data Sourcing
+# Phase 16 — Stratz Exit & OpenDota Migration (CRITICAL PIVOT)
 
-Status: Future
+Status: Up Next (Immediate Priority)
 
 Goals:
-* **Multi-Source Winrate Aggregation:** Integrate **OpenDota API** as a secondary source to fill Stratz data gaps.
-* **Live Data Fallback:** Implement a "Live Period" fetcher that pulls current global hero stats to represent the most recent patch when explicit versioned snapshots are not yet available.
-* **Version Aliasing:** Build an automated mapping table to "alias" minor sub-patches (e.g., 7.41c) to their parent versions (7.41) to ensure the UI is never empty.
-* **Official API Exploration:** Investigate the feasibility of a lightweight "Match Scraper" using the official Valve Web API (`GetMatchHistory`) to calculate real-time winrates for the very latest revisions.
+* **Decouple from Stratz:** Remove all dependencies on the discontinued Stratz API and mappings.
+* **OpenDota Integration:** Implement a robust winrate and hero stats ingestion engine using the OpenDota REST API and SQL Explorer.
+* **Unified Historical Re-sync:** Re-backfill all historical winrate data (7.33 - 7.41) using OpenDota as the new "Source of Truth" to resolve current data gaps.
+* **Official Datafeed Hardening:** Move all Hero/Item/Ability ID mapping exclusively to Valve's official datafeed.
+
+Deliverables:
+* `fetchOpenDotaWinrates.ts` and `fetchOpenDotaPatches.ts`.
+* Updated `seed.ts` optimized for OpenDota schema.
+* Full historical winrate archive in `research-output/calibration-data/`.
 
 ---
 
-# Phase 17 — Cloud Infrastructure & Dynamic Hosting (The "Option B" Pivot)
+# Phase 17 — Advanced Resilience & Data Sourcing
 
 ---
 
