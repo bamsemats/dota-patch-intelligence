@@ -256,6 +256,34 @@ Alternatives Considered:
 
 ---
 
+# 2026-06-12 (Strategic Pivot)
+
+Status:
+Accepted
+
+Decision:
+Full Exit from Stratz API and transition to OpenDota as the primary third-party data source.
+
+Reasoning:
+Stratz has discontinued development of their API and website. To ensure system longevity, we are pivoting to OpenDota (REST API and SQL Explorer) and Valve's official datafeed. This involves refactoring winrate fetchers, patch mappings, and entity resolution to be entirely independent of Stratz-specific IDs or endpoints.
+
+# 2026-06-12 (Data Integrity)
+
+Status:
+Accepted
+
+Decision:
+Implementation of a Hybrid Winrate Model and SQL Fallback Logic.
+
+Reasoning:
+OpenDota's REST API only provides tiered winrates for the *current* patch. To maintain historical accuracy for all 38 patches, we transitioned to the OpenDota SQL Explorer to fetch a "Professional Baseline." We also implemented a fallback mechanism where minor sub-patches (e.g., 7.41a) inherit data from their base version (7.41) if specific matches are unavailable, ensuring 100% data coverage in the UI.
+
+Alternatives Considered:
+*   Allowing empty charts for minor patches (Rejected - bad UX).
+*   Interpolating winrates (Rejected - mathematically dishonest).
+
+---
+
 # Open Decisions
 
 The following decisions remain unresolved:

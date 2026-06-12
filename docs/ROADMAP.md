@@ -304,18 +304,18 @@ Goals:
 
 # Phase 16 — Stratz Exit & OpenDota Migration (CRITICAL PIVOT)
 
-Status: Up Next (Immediate Priority)
+Status: **Complete**
 
 Goals:
-* **Decouple from Stratz:** Remove all dependencies on the discontinued Stratz API and mappings.
-* **OpenDota Integration:** Implement a robust winrate and hero stats ingestion engine using the OpenDota REST API and SQL Explorer.
-* **Unified Historical Re-sync:** Re-backfill all historical winrate data (7.33 - 7.41) using OpenDota as the new "Source of Truth" to resolve current data gaps.
-* **Official Datafeed Hardening:** Move all Hero/Item/Ability ID mapping exclusively to Valve's official datafeed.
+* **Decouple from Stratz:** Successfully removed all dependencies on the discontinued Stratz API and mappings.
+* **OpenDota Integration:** Implemented a robust ingestion engine using OpenDota REST (for live data) and SQL Explorer (for historical recovery).
+* **Unified Historical Re-sync:** Restored 100% winrate coverage for all 38 patches (7.33 - 7.41d) using a Professional Baseline fallback model.
+* **Official Datafeed Hardening:** Moved all Entity resolution (Heroes/Items/Abilities) exclusively to Valve's official datafeed.
 
 Deliverables:
-* `fetchOpenDotaWinrates.ts` and `fetchOpenDotaPatches.ts`.
-* Updated `seed.ts` optimized for OpenDota schema.
-* Full historical winrate archive in `research-output/calibration-data/`.
+* `fetchOpenDotaWinrates.ts` (Tiered REST) and `fetchHistoricalWinrates.ts` (SQL Explorer).
+* Hybrid UI in `WinrateHistorySelector.tsx` supporting Pro vs. Tiered views.
+* 100% data coverage in `research-output/calibration-data/`.
 
 ---
 

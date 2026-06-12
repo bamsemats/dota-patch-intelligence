@@ -46,7 +46,7 @@ async function seed() {
     // Create Patch
     const patch = await prisma.patch.upsert({
       where: { version: patchVersion },
-      update: { releaseDate: patchData.timestamp ? new Date(patchData.timestamp) : null },
+      update: patchData.timestamp ? { releaseDate: new Date(patchData.timestamp) } : {},
       create: {
         version: patchVersion,
         releaseDate: patchData.timestamp ? new Date(patchData.timestamp) : null,
@@ -172,33 +172,35 @@ async function seed() {
       const rawMapping = await fs.readFile(mappingPath, "utf-8");
       const heroMapping = JSON.parse(rawMapping);
       
-      for (const rank in winrates) {
-        for (const stratzId in winrates[rank]) {
+      for (const bracket in winrates) {
+        for (const stratzId in winrates[bracket]) {
           const heroName = heroMapping[stratzId];
           if (!heroName) continue;
           
           const entity = await prisma.entity.findUnique({ where: { name: heroName } });
           if (!entity) continue;
           
-          const wrData = winrates[rank][stratzId];
+          const wrData = winrates[bracket][stratzId];
           await prisma.winrateSnapshot.upsert({
             where: {
               patchId_entityId_bracket: {
                 patchId: patch.id,
                 entityId: entity.id,
-                bracket: rank
+                bracket: bracket
               }
             },
             update: {
               winrate: wrData.winrate,
-              matchCount: wrData.matchCount
+              matchCount: wrData.matchCount,
+              isHistorical: wrData.isHistorical || false
             },
             create: {
               patchId: patch.id,
               entityId: entity.id,
-              bracket: rank,
+              bracket: bracket,
               winrate: wrData.winrate,
-              matchCount: wrData.matchCount
+              matchCount: wrData.matchCount,
+              isHistorical: wrData.isHistorical || false
             }
           });
         }

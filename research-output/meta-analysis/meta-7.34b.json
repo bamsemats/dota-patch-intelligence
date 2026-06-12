@@ -1,112 +1,144 @@
 {
   "metaShifts": [
     {
-      "theme": "Support Utility Rebalancing",
-      "description": "Following 7.34's support enhancement, this patch applies targeted nerfs to overperforming supports while buffing underutilized ones. Witch Doctor receives comprehensive nerfs (Death Ward range, cooldown, damage), while Glimmer Cape cooldown increases. Conversely, Spirit Vessel becomes more accessible with 200 gold cost reduction, and heroes like Vengeful Spirit, Dazzle, and Omniknight receive meaningful buffs.",
+      "theme": "The Reign of the Brawlers & Frontline Durability",
+      "description": "The previous patch introduced Slow Resistance and bolstered frontline heroes. This patch significantly amplifies that trend. Spirit Vessel's shift to raw HP makes it a more direct durability item for early fights. Numerous strength heroes and natural frontliners like Bristleback, Pangolier, Morphling, Enchantress, Lone Druid, Alchemist, and Magnus received direct buffs to their tankiness, sustain, or damage output, making them even harder to deal with and more effective at dictating the pace of fights.",
       "impactedRoles": [
-        "HardSupport",
+        "Carry",
+        "Mid",
+        "Offlane",
         "SoftSupport"
       ]
     },
     {
-      "theme": "Carry Power Level Corrections",
-      "description": "The patch addresses overperforming carries from the slow resistance meta. Phantom Assassin loses base agility and Phantom Strike gets creep penalty, while Riki faces comprehensive nerfs (attack speed, smoke screen, talents). Meanwhile, underperforming carries like Luna receive significant buffs (Eclipse cooldown, Aghanim's Shard improvements) and Morphling gets survivability through strength gain.",
+      "theme": "Accelerated Early-Mid Game Tempo",
+      "description": "The previous patch pushed for faster early-mid game aggression. This patch amplifies this by making Spirit Vessel cheaper and more accessible for early rotations and anti-regen. Many heroes received buffs that enhance their early-mid game ganking, burst, or teamfight presence (Vengeful Spirit, Dazzle, Bounty Hunter, Techies, Abaddon, Winter Wyvern, Arc Warden, Monkey King, Pangolier, Mars). The game continues to favor teams that can secure early advantages and snowball.",
       "impactedRoles": [
+        "All"
+      ]
+    },
+    {
+      "theme": "Support Archetype Rebalancing",
+      "description": "While Glimmer Cape received a minor nerf, Spirit Vessel became cheaper and more health-focused, shifting its utility. More importantly, previously dominant supports like Witch Doctor and Sand King (often played as Pos 4) received severe nerfs, while others like Dazzle, Vengeful Spirit, Winter Wyvern, Abaddon, Omniknight, Enigma, Crystal Maiden, and Snapfire received buffs. This indicates a deliberate rebalancing, moving away from certain high-impact ultimates or sustained damage/control, towards supports with more direct lane presence, burst, or protective capabilities.",
+      "impactedRoles": [
+        "SoftSupport",
+        "HardSupport"
+      ]
+    },
+    {
+      "theme": "Universal Hero Re-tuning",
+      "description": "The previous patch aimed to re-evaluate Universal heroes. This patch delivers a significant correction by heavily nerfing Invoker, particularly his Wex item cooldown reduction and Ghost Walk sustain. While Morphling and Lone Druid received minor strength buffs, the Invoker nerfs suggest that the Universal archetype, especially when combined with item synergies, was still deemed too powerful and required a direct power reduction.",
+      "impactedRoles": [
+        "Mid",
         "Carry"
-      ]
-    },
-    {
-      "theme": "Invoker Dominance Containment",
-      "description": "After becoming Universal in 7.34, Invoker's oppressive presence gets targeted nerfs. Wex no longer provides item cooldown reduction (eliminating BKB/Refresher abuse), Ghost Walk regeneration is heavily nerfed and disabled after taking damage, and base armor is reduced. This directly counters his 7.34 rehabilitation without reverting the Universal status.",
-      "impactedRoles": [
-        "Mid"
-      ]
-    },
-    {
-      "theme": "Offlane Utility Enhancement",
-      "description": "Offlane heroes receive buffs focused on their utility and teamfight contribution rather than laning dominance. Magnus gets substantial Empower buffs (damage and cleave), Bristleback gains strength and mana regen, and Treant Protector's Leech Seed improves. These changes favor teamfight-oriented offlaners over pure lane dominators.",
-      "impactedRoles": [
-        "Offlane"
       ]
     }
   ],
   "synergisticWinners": [
     {
-      "entity": "Magnus + Empower Carries",
-      "synergyExplanation": "Magnus receives massive Empower buffs (+4% damage and cleave at all levels), creating powerful synergies with carries who benefit from both damage amplification and cleave. Heroes like Sven, Phantom Assassin (despite her nerfs), and Troll Warlord become significantly stronger when paired with Magnus."
+      "entity": "Spirit Vessel + Tanky/Aggressive Offlaners/Supports",
+      "synergyExplanation": "The reduced cost and increased raw health make Spirit Vessel a prime early-game pickup for heroes like Bristleback, Abaddon, Mars, or Pangolier. It provides crucial sustain and anti-regen for early skirmishes, amplifying their frontline presence and enabling aggressive plays."
     },
     {
-      "entity": "Spirit Vessel + DOT Heroes",
-      "synergyExplanation": "Spirit Vessel's 200 gold cost reduction makes it more accessible for heroes who can reliably proc its DOT effect. Heroes like Venomancer, Viper, and Jakiro can build it earlier and more frequently, enhancing their kill potential and teamfight contribution."
+      "entity": "Magnus + Cleave/Melee Carries",
+      "synergyExplanation": "Magnus's Empower and Shockwave Shard buffs are substantial. Pairing him with heroes like Sven, Kunkka, Juggernaut, or even Alchemist (who also got buffs) creates a devastating physical damage output and farming acceleration, making them incredibly potent in teamfights and pushing objectives."
     },
     {
-      "entity": "Luna + Aghanim's Shard",
-      "synergyExplanation": "Luna's Aghanim's Shard receives significant buffs (orbit radius 150→175, collision radius 90→115) combined with Eclipse cooldown reduction (140/130/120→110). This creates a powerful mid-game spike for Luna builds that prioritize Shard timing."
+      "entity": "Omniknight + Vulnerable Cores",
+      "synergyExplanation": "With Repel's significantly reduced cooldown, Omniknight becomes an even more reliable protector. He synergizes exceptionally well with cores who need to commit to fights or are susceptible to control, such as Luna, Alchemist, or a buffed Morphling, allowing them to play more aggressively and survive burst."
+    },
+    {
+      "entity": "Arc Warden + Ranged Pushers/Carries",
+      "synergyExplanation": "Magnetic Field's reduced cooldown means more frequent uptime for its attack speed and evasion benefits. This synergizes perfectly with ranged carries who want to siege high ground or dominate teamfights from a safe distance, providing sustained protection and damage amplification."
     }
   ],
   "synergisticLosers": [
     {
-      "entity": "Invoker + Item Cooldown Builds",
-      "synergyExplanation": "Wex no longer providing item cooldown reduction eliminates Invoker's ability to abuse BKB, Refresher Orb, and other high-impact items. This removes a core synergy that made Invoker oppressive in the previous patch's Universal rework."
+      "entity": "Invoker + Item-Dependent Builds",
+      "synergyExplanation": "The removal of Wex's item cooldown reduction is a massive nerf to Invoker's late-game scaling with items like Refresher Orb, Octarine Core, or even Shiva's Guard. This fundamentally changes his build path and reduces his ability to chain powerful spells and items, making him less of a late-game threat."
     },
     {
-      "entity": "Riki + Smoke Screen Setups",
-      "synergyExplanation": "Smoke Screen losing its linger duration (0.5s→0s) eliminates Riki's ability to create extended disable zones for team setups. Combined with attack speed nerfs, this significantly weakens Riki's teamfight contribution and synergy with AOE ultimates."
+      "entity": "Glimmer Cape + Squishy Cores/Supports",
+      "synergyExplanation": "The increased cooldown on Glimmer Cape makes it less reliable as a consistent save. This indirectly nerfs squishier heroes who relied on its frequent use for escape or repositioning, forcing them to play more cautiously or seek alternative defensive items."
     },
     {
-      "entity": "Witch Doctor + Death Ward Positioning",
-      "synergyExplanation": "Death Ward range reduction (700→600) and talent nerfs (+100→+75 range) make Witch Doctor significantly more vulnerable during ultimate usage. This weakens synergies with heroes who provide positioning assistance like Magnus or Dark Seer."
+      "entity": "Sand King + Early-Mid Game Aggression",
+      "synergyExplanation": "Sand King's widespread nerfs to damage, mobility, and ultimate utility severely hamper his ability to initiate and control early-mid game fights. This makes him a less desirable pick for aggressive lineups that thrive on early skirmishes and snowballing."
+    },
+    {
+      "entity": "Witch Doctor + Teamfight Control/Damage",
+      "synergyExplanation": "The significant nerfs to Death Ward's range, cooldown, and talents, coupled with base stat reductions, drastically reduce Witch Doctor's impact in teamfights. His ability to zone, burst, and control is severely diminished, making him a much weaker pick for sustained damage and area denial."
     }
   ],
   "roleSpecificWinners": {
     "Carry": [
       {
         "hero": "Luna",
-        "explanation": "Eclipse cooldown reduction to flat 110s at all levels provides consistent teamfight presence, while Aghanim's Shard buffs (orbit radius +25, collision radius +25) significantly improve her farming and teamfight capabilities."
+        "explanation": "Eclipse cooldown reduction and Moon Glaives Shard buffs significantly enhance her farming speed and teamfight presence, allowing her to come online faster and contribute more consistently to objectives and engagements."
+      },
+      {
+        "hero": "Alchemist",
+        "explanation": "Increased base armor and Chemical Rage movement speed make him tankier in lane and more mobile for farming and ganking, accelerating his already fast progression and enabling earlier power spikes."
       },
       {
         "hero": "Morphling",
-        "explanation": "Strength gain increase (3.0→3.2) provides crucial survivability improvements for a hero that typically builds minimal HP items, making him more viable in the current burst-heavy meta."
+        "explanation": "Increased Strength gain makes him slightly more durable, allowing him to survive burst better and potentially be more aggressive in fights, which is crucial in the current brawler-heavy meta."
       }
     ],
     "Mid": [
       {
-        "hero": "Lina",
-        "explanation": "Dragon Slave burn duration increase (2s→3s) improves farming efficiency and harassment, while talent buffs across multiple levels (+20→+25 damage, +275→+325 health) enhance her scaling potential."
+        "hero": "Alchemist",
+        "explanation": "As a mid-lane core, Alchemist benefits from the same armor and movement speed buffs, making him a stronger laning presence and an even faster farmer, allowing him to dictate the mid-game tempo."
+      },
+      {
+        "hero": "Mirana",
+        "explanation": "Buffs to her Level 20 and 25 talents provide significant late-game damage scaling, making her a more potent threat in longer games and a strong choice for teams looking for a versatile mid-laner with high burst potential."
+      },
+      {
+        "hero": "Pangolier",
+        "explanation": "Increased Strength gain and Shield Crash mana cost reduction make him tankier and more spammable in the mid-lane, improving his ability to control the lane and participate in early skirmishes."
       }
     ],
     "Offlane": [
       {
         "hero": "Magnus",
-        "explanation": "Empower receives massive buffs with damage (12/20/28/36%→16/24/32/40%) and cleave (10/20/30/40%→16/24/32/40%) increases, making him an exceptional teamfight enabler and carry amplifier."
+        "explanation": "Substantial buffs to Empower's damage and cleave, along with Shockwave Shard, make him a powerhouse for farming, pushing, and teamfight damage, solidifying his role as a strong initiator and damage amplifier for his team."
       },
       {
         "hero": "Bristleback",
-        "explanation": "Strength gain increase (2.5→2.7) and base mana regen buff (0.25→0.4) address his sustainability issues, making him more viable in extended teamfights and laning phases."
+        "explanation": "Increased Strength gain and base mana regen improve his tankiness and ability to spam spells, making him even harder to kill and a more annoying presence in lane and teamfights, fitting perfectly into the brawler meta."
       },
       {
-        "hero": "Alchemist",
-        "explanation": "Base armor increase (+1) and Chemical Rage movement speed buffs (20/40/60→30/45/60) improve his survivability and mobility, crucial for his aggressive farming and fighting style."
+        "hero": "Abaddon",
+        "explanation": "Mist Coil buffs (less self-damage, more heal/damage, increased cast range) make him a dominant laning presence and a more effective frontliner and healer in teamfights, providing immense sustain for his team."
       }
     ],
     "SoftSupport": [
       {
         "hero": "Vengeful Spirit",
-        "explanation": "Magic Missile stun duration increase (1.1/1.2/1.3/1.4s→1.4/1.5/1.6/1.7s) provides significantly more reliable disable, making her a stronger roaming and teamfight support."
+        "explanation": "Increased Magic Missile stun duration makes her a more potent ganker and disabler, enhancing her early-game impact and pick-off potential, which is crucial for the accelerated tempo."
       },
       {
         "hero": "Winter Wyvern",
-        "explanation": "Splinter Blast improvements (mana cost reduction, cooldown 7s→6s) and talent buffs (+2s→+3s Arctic Burn duration) enhance her farming, harassment, and teamfight control capabilities."
+        "explanation": "Reduced mana cost and cooldown on Splinter Blast, along with talent buffs, make her a much more spammable and impactful nuker and disabler throughout the game, providing consistent damage and control."
+      },
+      {
+        "hero": "Bounty Hunter",
+        "explanation": "Increased Shuriken Toss damage improves his burst potential, making him a more dangerous ganker and a better asset for securing kills and tracking enemies, fitting the aggressive early-mid game meta."
       }
     ],
     "HardSupport": [
       {
-        "hero": "Dazzle",
-        "explanation": "Shadow Wave heal/damage increase (60/85/110/135→75/95/115/135) improves his laning presence and teamfight impact, making him more viable as a defensive support."
+        "hero": "Enigma",
+        "explanation": "The rework of Demonic Summoning to a point-targeted ability with reduced mana cost significantly improves his early game jungle efficiency and ability to secure lane creeps, making him a more reliable and impactful position 5."
       },
       {
-        "hero": "Omniknight",
-        "explanation": "Repel cooldown reduction (60/55/50/45s→60/52/44/36s) significantly improves his utility in teamfights and ability to protect cores from magical burst."
+        "hero": "Dazzle",
+        "explanation": "Increased Shadow Wave heal/damage makes him a stronger laning partner and a more effective burst healer/damage dealer in early skirmishes, providing crucial sustain and offensive power."
+      },
+      {
+        "hero": "Snapfire",
+        "explanation": "Buffed Firesnap Cookie health restore at Level 10 provides better sustain for her and her allies, improving her laning and early-game survivability, making her a more resilient hard support."
       }
     ]
   },
@@ -114,51 +146,47 @@
     "Carry": [
       {
         "hero": "Phantom Assassin",
-        "explanation": "Base agility reduction (-2) weakens her early game damage and attack speed, while Phantom Strike lifesteal penalty on creeps (40%) reduces her farming efficiency and sustain."
+        "explanation": "Reduced base Agility and a lifesteal penalty on creeps significantly slow down her early game farming and reduce her overall stat efficiency, making her weaker in the current accelerated tempo where early impact is key."
       },
       {
         "hero": "Riki",
-        "explanation": "Base attack speed reduction (100→90), Smoke Screen linger removal (0.5s→0s), and multiple talent nerfs significantly weaken his teamfight contribution and scaling potential."
-      },
-      {
-        "hero": "Wraith King",
-        "explanation": "Strength gain reduction (3→2.8) decreases his natural tankiness, making him more vulnerable in the early-mid game despite the Aghanim's Scepter cooldown buff."
+        "explanation": "Nerfs to base attack speed, Smoke Screen linger, and key talents severely reduce his early-mid game burst and ability to control fights, making him less effective at securing kills and snowballing in the current meta."
       }
     ],
     "Mid": [
       {
         "hero": "Invoker",
-        "explanation": "Wex item cooldown removal eliminates BKB/Refresher abuse, Ghost Walk regeneration nerfs (health 10→80 to 10→45, mana 5→40 to 2.5→20) and damage-based regen disable significantly reduce his survivability and utility."
-      },
-      {
-        "hero": "Sand King",
-        "explanation": "Base damage reduction (-2), Burrowstrike damage nerfs, and Sandstorm movement speed early game nerfs (100 to 25/50/75/100) weaken his laning and ganking potential as a mid laner."
+        "explanation": "The removal of Wex's item cooldown reduction and significant nerfs to Ghost Walk's sustain and regen fundamentally weaken his late-game power spike and overall survivability, making him a much less desirable mid-lane pick."
       }
     ],
     "Offlane": [
       {
-        "hero": "Night Stalker",
-        "explanation": "Aghanim's Shard Hunter in the Night nerfs (mana cost 0→50, cooldown 20s→30s) reduce his farming efficiency and teamfight mobility, key aspects of his offlane performance."
+        "hero": "Sand King",
+        "explanation": "Widespread nerfs to his base damage, Burrowstrike, Sand Storm mobility, and Epicenter Shard make him significantly less impactful as an initiator, damage dealer, and disabler, reducing his viability in the offlane."
       },
       {
         "hero": "Brewmaster",
-        "explanation": "Drunken Brawler critical damage reduction (145/160/175/190%→120/140/160/180%) significantly weakens his damage output and scaling potential in the offlane role."
+        "explanation": "Reduced critical damage on Fire Stance slightly lowers his overall damage output, making him less effective at bursting down targets in fights and reducing his impact as a damage-focused offlaner."
       }
     ],
     "SoftSupport": [
       {
-        "hero": "Jakiro",
-        "explanation": "Multiple talent nerfs (attack range +275→+250, Macropyre damage +30→+25) and Aghanim's Scepter slow reduction (70%→60%) weaken his teamfight control and positioning capabilities."
+        "hero": "Witch Doctor",
+        "explanation": "Severe nerfs to Death Ward's range, cooldown, and talents, combined with base stat reductions, drastically reduce his teamfight impact and ability to secure kills, making him a much weaker position 4."
       },
       {
-        "hero": "Warlock",
-        "explanation": "Base attack speed reduction (100→90) and Fatal Bonds imp movement speed nerfs weaken his laning harassment and teamfight contribution as a support."
+        "hero": "Jakiro",
+        "explanation": "Nerfs to Macropyre's Aghanim's Scepter slow and key talents reduce his control and damage output, making him less effective at zoning and contributing to teamfights, especially compared to other buffed supports."
       }
     ],
     "HardSupport": [
       {
-        "hero": "Witch Doctor",
-        "explanation": "Comprehensive nerfs including base damage (-3), intelligence gain reduction (3.3→3.1), Death Ward range (700→600) and cooldown (60s→100/80/60s) nerfs, plus multiple talent reductions significantly weaken his impact."
+        "hero": "Warlock",
+        "explanation": "Reduced base attack speed and Fatal Bonds Imp movement speed slightly diminish his early-game harass and overall impact, making him a less threatening presence in lane and early skirmishes, which is critical for hard supports."
+      },
+      {
+        "hero": "Night Stalker",
+        "explanation": "Nerfs to his Hunter in the Night Shard's mana cost and cooldown reduce his mid-game utility and ability to provide consistent vision and mobility for his team, making him a less efficient hard support."
       }
     ]
   }

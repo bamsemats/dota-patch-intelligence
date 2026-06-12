@@ -46,26 +46,43 @@ function calculateScoreForHero(heroName: string, patchData: any, weights: any, b
 
 async function calibrateAllPatches() {
     console.log("=========================================");
-    console.log("   Winrate Calibration Auto-Tuner (v4)   ");
+    console.log("   Winrate Calibration Auto-Tuner (v5)   ");
     console.log("=========================================\n");
 
     let weights = await loadJSON(ONTOLOGY_PATH);
     const heroesMap = await loadJSON(path.join(RESEARCH_DIR, "mappings", `heroes.json`));
     
     const winrateFiles = await readdir(path.join(RESEARCH_DIR, "calibration-data"));
-    const versions = winrateFiles.map(f => f.replace("winrates-", "").replace(".json", ""));
+    const versions = winrateFiles
+        .map(f => f.replace("winrates-", "").replace(".json", ""))
+        .sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
     
-    console.log(`[Auto-Tuner] Found ${versions.length} patches with winrate data for calibration.`);
+    console.log(`[Auto-Tuner] Found ${versions.length} patches with potential winrate data.`);
 
     const NUDGE_FACTOR = 0.5;
     let totalAdjustments = 0;
 
-    // Outer loop: Iterate through all available historical patches
     for (const version of versions) {
+        const winratePath = path.join(RESEARCH_DIR, "calibration-data", `winrates-${version}.json`);
+        const patchPath = path.join(RESEARCH_DIR, "classified-patches", `${version}.json`);
+
+        // SKIP if we don't have both the winrates and the classified patch
+        try {
+            await readFile(patchPath);
+        } catch (e) {
+            console.log(`[Auto-Tuner] Skipping Patch ${version} (Classified patch file missing).`);
+            continue;
+        }
+
         console.log(`[Auto-Tuner] Calibrating Patch ${version}...`);
         
-        const winrates = await loadJSON(path.join(RESEARCH_DIR, "calibration-data", `winrates-${version}.json`));
-        const patchData = await loadJSON(path.join(RESEARCH_DIR, "classified-patches", `${version}.json`));
+        const winrates = await loadJSON(winratePath);
+        const patchData = await loadJSON(patchPath);
+
+        if (Object.keys(winrates).length === 0) {
+            console.log(`[Auto-Tuner] Skipping Patch ${version} (Winrate data is empty).`);
+            continue;
+        }
 
         // Process all 7 brackets per patch
         for (const [stratBracket, bracketKey] of Object.entries(BRACKET_MAP)) {

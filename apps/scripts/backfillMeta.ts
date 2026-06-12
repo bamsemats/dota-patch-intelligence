@@ -2,7 +2,7 @@
 
 import { mkdir, writeFile, readFile, readdir, access } from "node:fs/promises";
 import * as path from "node:path";
-import Anthropic from "@anthropic-ai/sdk";
+import { GoogleGenAI, Type } from "@google/genai";
 import { PrismaClient } from "@prisma/client";
 
 require('dotenv').config();
@@ -10,90 +10,90 @@ const INPUT_DIR = path.resolve("research-output", "classified-patches");
 const OUTPUT_DIR = path.resolve("research-output", "meta-analysis");
 
 const prisma = new PrismaClient();
-const hasApiKey = !!process.env.CLAUDE_API_KEY;
-let anthropic: Anthropic | null = null;
+const hasApiKey = !!process.env.GEMINI_API_KEY;
+let ai: GoogleGenAI | null = null;
 
 if (!hasApiKey) {
-    console.error("[Error] CLAUDE_API_KEY is not set. Backfill requires AI.");
+    console.error("[Error] GEMINI_API_KEY is not set. Backfill requires Gemini.");
     process.exit(1);
 } else {
-    anthropic = new Anthropic({
-        apiKey: process.env.CLAUDE_API_KEY,
+    ai = new GoogleGenAI({
+        apiKey: process.env.GEMINI_API_KEY
     });
 }
 
-const SYSTEM_PROMPT = `You are a world-class Dota 2 strategist and analyst for a professional Tier 1 team. Your goal is to provide 100% accurate, high-fidelity meta insights.
+const SYSTEM_PROMPT = `You are a world-class Dota 2 strategist and analyst for a professional Tier 1 team. Your goal is to provide high-fidelity meta insights that capture the "Strategic Intuition" of the game.
 
 CRITICAL MECHANICAL ACCURACY RULES:
 1. **Item-Hero Affinity:** NEVER suggest a synergy between a hero and an item they do not realistically build in high-level (9k+ MMR) play. (e.g., Phantom Assassin does NOT build Gleipnir, Anti-Mage does NOT build Conjurer's Catalyst). 
-2. **Mechanical Validity:** Do not hallucinate interactions. Only claim a synergy if the mechanics actually work together (e.g., don't claim Mana Break procs spell-based passives unless it actually does).
-3. **Systemic Impact:** Focus on how map changes (Roshan, jungle, gold/XP) affect specific *playstyles* (e.g., "Slower jungle gold favors lane dominators like Huskar" is valid; "Slower jungle gold is good for PA" is usually FALSE).
-4. **Role Purity:** When identifying Role Winners/Losers, ensure the explanation is specific to *how they play that role*.
-5. **Temporal Context:** You will be provided with the "Meta Shifts" of the previous patch. You MUST use this to determine if current changes are amplifying an existing trend or attempting to correct/nerf a previously dominant strategy.
+2. **Mechanical Validity:** Do not hallucinate interactions. Only claim a synergy if the mechanics actually work together.
+3. **Role Purity:** When identifying Role Winners/Losers, ensure the explanation is specific to *how they play that role*.
+4. **Temporal Context:** You will be provided with the "Meta Shifts" of the previous patch. You MUST use this to determine if current changes are amplifying an existing trend or attempting to correct/nerf a previously dominant strategy.
 
-ANALYTICAL FRAMEWORK:
-- Identify relational synergies (e.g., Buff to Item X + Buff to Hero Y who builds Item X = Synergistic Winner).
-- Look for cascading effects where a system change combined with a hero tweak results in a massive shift.
-- Be conservative. If a hero is only slightly buffed but the meta is moving against them, they are NOT a winner.
+STRATEGIC INTUITION & ARCHETYPAL THEMES:
+- Prioritize identifying "Archetypal Themes" (e.g., "The Return of the Deathball", "The Greedy Support Meta", "Vision Control Domination", "The Death of the Hard Carry").
+- Look for how systemic changes (economy, map, runes, Roshan) shift the *tempo* of the game and which hero archetypes thrive in that tempo.
+- Instead of just item-math, explain the *strategic why* behind a hero's rise or fall (e.g., "The nerf to lane XP makes roaming Pos 4s more valuable, benefiting heroes like Earthshaker").
+- Identify relational synergies: If a Support item is buffed, look for Supports whose kit also improved.
 
-Your output must be a clinical, professional breakdown that a professional coach would trust.`;
+Your output must be a professional, intuitive breakdown that a professional coach would use to prepare a team for a major tournament.`;
 
-const responseSchema: any = {
-    type: "object",
+const responseSchema = {
+    type: Type.OBJECT,
     properties: {
         metaShifts: {
-            type: "array",
+            type: Type.ARRAY,
             items: {
-                type: "object",
+                type: Type.OBJECT,
                 properties: {
-                    theme: { type: "string" },
-                    description: { type: "string" },
-                    impactedRoles: { type: "array", items: { type: "string" } }
+                    theme: { type: Type.STRING },
+                    description: { type: Type.STRING },
+                    impactedRoles: { type: Type.ARRAY, items: { type: Type.STRING } }
                 },
                 required: ["theme", "description", "impactedRoles"]
             }
         },
         synergisticWinners: {
-            type: "array",
+            type: Type.ARRAY,
             items: {
-                type: "object",
+                type: Type.OBJECT,
                 properties: {
-                    entity: { type: "string" },
-                    synergyExplanation: { type: "string" }
+                    entity: { type: Type.STRING },
+                    synergyExplanation: { type: Type.STRING }
                 },
                 required: ["entity", "synergyExplanation"]
             }
         },
         synergisticLosers: {
-            type: "array",
+            type: Type.ARRAY,
             items: {
-                type: "object",
+                type: Type.OBJECT,
                 properties: {
-                    entity: { type: "string" },
-                    synergyExplanation: { type: "string" }
+                    entity: { type: Type.STRING },
+                    synergyExplanation: { type: Type.STRING }
                 },
                 required: ["entity", "synergyExplanation"]
             }
         },
         roleSpecificWinners: {
-            type: "object",
+            type: Type.OBJECT,
             properties: {
-                Carry: { type: "array", items: { type: "object", properties: { hero: { type: "string" }, explanation: { type: "string" } }, required: ["hero", "explanation"] } },
-                Mid: { type: "array", items: { type: "object", properties: { hero: { type: "string" }, explanation: { type: "string" } }, required: ["hero", "explanation"] } },
-                Offlane: { type: "array", items: { type: "object", properties: { hero: { type: "string" }, explanation: { type: "string" } }, required: ["hero", "explanation"] } },
-                SoftSupport: { type: "array", items: { type: "object", properties: { hero: { type: "string" }, explanation: { type: "string" } }, required: ["hero", "explanation"] } },
-                HardSupport: { type: "array", items: { type: "object", properties: { hero: { type: "string" }, explanation: { type: "string" } }, required: ["hero", "explanation"] } }
+                Carry: { type: Type.ARRAY, items: { type: Type.OBJECT, properties: { hero: { type: Type.STRING }, explanation: { type: Type.STRING } }, required: ["hero", "explanation"] } },
+                Mid: { type: Type.ARRAY, items: { type: Type.OBJECT, properties: { hero: { type: Type.STRING }, explanation: { type: Type.STRING } }, required: ["hero", "explanation"] } },
+                Offlane: { type: Type.ARRAY, items: { type: Type.OBJECT, properties: { hero: { type: Type.STRING }, explanation: { type: Type.STRING } }, required: ["hero", "explanation"] } },
+                SoftSupport: { type: Type.ARRAY, items: { type: Type.OBJECT, properties: { hero: { type: Type.STRING }, explanation: { type: Type.STRING } }, required: ["hero", "explanation"] } },
+                HardSupport: { type: Type.ARRAY, items: { type: Type.OBJECT, properties: { hero: { type: Type.STRING }, explanation: { type: Type.STRING } }, required: ["hero", "explanation"] } }
             },
             required: ["Carry", "Mid", "Offlane", "SoftSupport", "HardSupport"]
         },
         roleSpecificLosers: {
-            type: "object",
+            type: Type.OBJECT,
             properties: {
-                Carry: { type: "array", items: { type: "object", properties: { hero: { type: "string" }, explanation: { type: "string" } }, required: ["hero", "explanation"] } },
-                Mid: { type: "array", items: { type: "object", properties: { hero: { type: "string" }, explanation: { type: "string" } }, required: ["hero", "explanation"] } },
-                Offlane: { type: "array", items: { type: "object", properties: { hero: { type: "string" }, explanation: { type: "string" } }, required: ["hero", "explanation"] } },
-                SoftSupport: { type: "array", items: { type: "object", properties: { hero: { type: "string" }, explanation: { type: "string" } }, required: ["hero", "explanation"] } },
-                HardSupport: { type: "array", items: { type: "object", properties: { hero: { type: "string" }, explanation: { type: "string" } }, required: ["hero", "explanation"] } }
+                Carry: { type: Type.ARRAY, items: { type: Type.OBJECT, properties: { hero: { type: Type.STRING }, explanation: { type: Type.STRING } }, required: ["hero", "explanation"] } },
+                Mid: { type: Type.ARRAY, items: { type: Type.OBJECT, properties: { hero: { type: Type.STRING }, explanation: { type: Type.STRING } }, required: ["hero", "explanation"] } },
+                Offlane: { type: Type.ARRAY, items: { type: Type.OBJECT, properties: { hero: { type: Type.STRING }, explanation: { type: Type.STRING } }, required: ["hero", "explanation"] } },
+                SoftSupport: { type: Type.ARRAY, items: { type: Type.OBJECT, properties: { hero: { type: Type.STRING }, explanation: { type: Type.STRING } }, required: ["hero", "explanation"] } },
+                HardSupport: { type: Type.ARRAY, items: { type: Type.OBJECT, properties: { hero: { type: Type.STRING }, explanation: { type: Type.STRING } }, required: ["hero", "explanation"] } }
             },
             required: ["Carry", "Mid", "Offlane", "SoftSupport", "HardSupport"]
         }
@@ -119,46 +119,27 @@ async function generateMetaAnalysis(patchData: any, previousAnalysis: any = null
         : "";
     
     try {
-        const response = await anthropic!.messages.create({
-            model: "claude-sonnet-4-20250514",
-            max_tokens: 4096,
-            temperature: 0.1,
-            system: SYSTEM_PROMPT,
-            messages: [
-                {
-                    role: "user",
-                    content: `Analyze this Dota 2 patch and output the meta analysis using the provided tool:\n\nPATCH DATA:\n${payloadString}${contextPrompt}`
-                }
-            ],
-            tools: [
-                {
-                    name: "output_meta_analysis",
-                    description: "Output the final structured meta analysis of the patch.",
-                    input_schema: responseSchema
-                }
-            ],
-            tool_choice: { type: "tool", name: "output_meta_analysis" }
+        const response = await ai!.models.generateContent({
+            model: 'gemini-2.5-flash',
+            contents: `Analyze this Dota 2 patch and output the meta analysis:\n\nPATCH DATA:\n${payloadString}${contextPrompt}`,
+            config: {
+                systemInstruction: SYSTEM_PROMPT,
+                responseMimeType: "application/json",
+                responseSchema: responseSchema,
+                temperature: 0.1,
+            }
         });
 
-        if (response.content && response.content.length > 0) {
-            const toolCall: any = response.content.find((block: any) => block.type === 'tool_use' && block.name === 'output_meta_analysis');
-            if (toolCall && toolCall.input) {
-                 const analysis = toolCall.input;
-                 if (!analysis.synergisticLosers) analysis.synergisticLosers = [];
-                 if (!analysis.synergisticWinners) analysis.synergisticWinners = [];
-                 if (!analysis.metaShifts) analysis.metaShifts = [];
-                 return analysis;
-            }
+        if (response.text) {
+             const analysis = JSON.parse(response.text);
+             if (!analysis.synergisticLosers) analysis.synergisticLosers = [];
+             if (!analysis.synergisticWinners) analysis.synergisticWinners = [];
+             if (!analysis.metaShifts) analysis.metaShifts = [];
+             return analysis;
         }
         return null;
     } catch (error: any) {
-        if (error.status === 429) {
-             console.warn(`[LLM] Rate Limit hit for ${patchData.version}. Retrying in ${backoff / 1000}s...`);
-             await new Promise(resolve => setTimeout(resolve, backoff));
-             return generateMetaAnalysis(patchData, previousAnalysis, retries - 1, backoff * 2);
-        }
-        
-        if (retries > 0 && error.status && (error.status === 503 || error.status >= 500)) {
+        if (retries > 0 && error.status && (error.status === 429 || error.status === 503 || error.status >= 500)) {
             console.warn(`[LLM] API Error (Status: ${error.status}) for ${patchData.version}. Retrying in ${backoff / 1000}s...`);
             await new Promise(resolve => setTimeout(resolve, backoff));
             return generateMetaAnalysis(patchData, previousAnalysis, retries - 1, backoff * 2);
@@ -260,8 +241,8 @@ async function main() {
 
             previousAnalysis = { version, metaShifts: analysis.metaShifts };
 
-            // Delay to respect rate limits
-            await new Promise(resolve => setTimeout(resolve, 15000));
+            // Delay to respect rate limits (Gemini Free tier is 15 RPM, but we want to be safe)
+            await new Promise(resolve => setTimeout(resolve, 5000));
         } else {
             console.error(`[Backfill] Failed: ${version}`);
         }

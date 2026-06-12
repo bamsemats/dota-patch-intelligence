@@ -1,8 +1,8 @@
 {
   "metaShifts": [
     {
-      "theme": "Innate/Facet System Revolution",
-      "description": "The introduction of Innates and Facets fundamentally restructures hero power curves and customization. Every hero gains passive effects from level 1 (Innates) and strategic customization options (Facets), creating unprecedented early-game impact variance and match-specific optimization potential. This represents the largest mechanical overhaul in Dota 2 history.",
+      "theme": "The Metamorphosis of Heroes: Innates & Facets",
+      "description": "The introduction of Innate abilities and Facets for every hero fundamentally redefines hero identity and strategic depth. Innates provide baseline power or unique mechanics from level one, influencing early game dynamics and potentially leading to more aggressive laning. Facets offer crucial customization during strategy time, allowing players to adapt hero playstyles to specific match-ups or team compositions. This necessitates a deeper understanding of hero kits and introduces a new layer of counter-drafting and in-game adaptation, amplifying the strategic complexity of the game.",
       "impactedRoles": [
         "Carry",
         "Mid",
@@ -12,25 +12,19 @@
       ]
     },
     {
-      "theme": "Status Resistance to Slow Resistance Paradigm Shift",
-      "description": "Sange items lose Status Resistance (-16%) but gain Slow Resistance (+20%), fundamentally changing defensive itemization priorities. This amplifies the previous patch's utility cooldown inflation by making heroes more vulnerable to disables while providing better mobility against slows. The meta shifts from disable mitigation to positioning-based defense.",
+      "theme": "The Tempo Shift: Early Aggression & Sustained Engagements",
+      "description": "This patch, building on the previous patch's widening BKB window, further encourages earlier aggression through stronger innate abilities and rebalanced hero kits. The systemic shift from Status Resistance to Slow Resistance on key items like Sange and Heaven's Halberd, coupled with the Glyph of Fortification change (no longer refreshes on T3 destruction but on Melee Barracks), points towards a meta where sustained slows and repeated engagements are more impactful. Teams will need to adapt to longer fight durations and prioritize heroes and items that offer either strong initiation/burst or robust sustain/slow resistance.",
       "impactedRoles": [
         "Carry",
         "Mid",
-        "Offlane"
+        "Offlane",
+        "SoftSupport",
+        "HardSupport"
       ]
     },
     {
-      "theme": "Intelligence Item Cost Inflation Continuation",
-      "description": "Building on 7.35d's intelligence item nerfs, this patch increases costs across the board: Eternal Shroud (+100g), Kaya/Sange/Yasha (+100g each), all combinations (+200g). Combined with Octarine Core stat nerfs (-75 HP/Mana), this continues the systematic dismantling of spell-based itemization efficiency.",
-      "impactedRoles": [
-        "Mid",
-        "SoftSupport"
-      ]
-    },
-    {
-      "theme": "Roshan's Banner Strategic Rework",
-      "description": "Banner transforms from a global pushing tool to a localized invulnerability field (600 radius, 2min duration). This creates concentrated teamfight advantages rather than map-wide pressure, fundamentally changing late-game objective control from split-push enablement to grouped engagement dominance.",
+      "theme": "The Re-evaluation of Core Itemization & Mana Economy",
+      "description": "Core itemization undergoes a significant re-evaluation. General nerfs to popular items like Octarine Core, Maelstrom, and Eternal Shroud, coupled with increased costs for basic Sange, Yasha, and Kaya, push players towards more deliberate item choices. Conversely, the combined Sange & Yasha, Kaya & Sange, and Yasha & Kaya items receive notable buffs, particularly Kaya & Sange's mana cost reduction, which directly addresses the 'Mana Rebalancing & Magic Burst Downturn' from the previous patch. Heaven's Halberd also becomes a more attractive defensive option with its new Slow Resistance.",
       "impactedRoles": [
         "Carry",
         "Mid",
@@ -40,89 +34,129 @@
   ],
   "synergisticWinners": [
     {
-      "entity": "Tinker + March of the Machines Return",
-      "synergyExplanation": "Tinker's Heat-Seeking Missile replacement with March of the Machines, combined with Rearm no longer resetting item cooldowns, creates a hero focused purely on spell-based area control. The +310 base movement speed buff compensates for reduced mobility, while the new ability synergizes with his innate spell-focused identity."
+      "entity": "Kaya and Sange",
+      "synergyExplanation": "The addition of +25% Mana Cost/Mana Loss Reduction makes this item incredibly potent for spellcasters, directly countering the mana economy nerfs from the previous patch and enabling more sustained spellcasting in longer engagements."
     },
     {
-      "entity": "Sange Items + Mobility Heroes",
-      "synergyExplanation": "The shift from Status Resistance to Slow Resistance (+20% on Sange, +25% on combinations) creates powerful synergy with heroes who rely on positioning and mobility. Heroes like Storm Spirit, Queen of Pain, and Puck benefit enormously from slow immunity while maintaining their natural disable avoidance through positioning."
+      "entity": "Sange and Yasha / Heaven's Halberd",
+      "synergyExplanation": "The introduction of Slow Resistance on these items provides a crucial new defensive layer against slow-heavy lineups, which are likely to thrive in a meta with longer engagements and less reliable Status Resistance."
     },
     {
-      "entity": "Phantom Assassin + Blur Rework",
-      "synergyExplanation": "PA's Blur losing evasion but gaining untargetability with ghostly visibility creates synergy with aggressive positioning items. Combined with +2 base damage and +10 attack speed, she becomes a positioning-based assassin rather than an evasion tank, synergizing with Blink Dagger and initiation items."
+      "entity": "Roshan's Banner (Rework)",
+      "synergyExplanation": "While its duration and radius are reduced, granting invulnerability to allied lane creeps in a radius is a powerful, focused push tool. This allows for decisive, timed pushes on specific lanes, especially when combined with melee heroes who can quickly destroy the banner."
     },
     {
-      "entity": "Timbersaw + Strength Hero Conversion",
-      "synergyExplanation": "Converting Timbersaw to Strength (+19 base damage) while maintaining his spell-based kit creates synergy with Strength-based items like Sange combinations. His new stat scaling allows him to build tanky items while retaining spell damage, creating a unique hybrid scaling pattern."
+      "entity": "AoE Bonuses",
+      "synergyExplanation": "The change for AoE Bonuses to affect all auras and Cleave sources is a subtle but significant buff, enhancing the effectiveness of aura carriers and cleave damage dealers in teamfights."
     }
   ],
   "synergisticLosers": [
     {
-      "entity": "Anti-Mage + Counterspell Nerfs",
-      "synergyExplanation": "Counterspell losing spell reflection by default, combined with +5 mana cost on Blink and Counterspell, creates negative synergy with AM's mana-dependent playstyle. The hero becomes less effective at both farming (higher mana costs) and teamfighting (no spell reflection), while talent reworks remove key scaling options."
+      "entity": "Octarine Core",
+      "synergyExplanation": "Significant nerfs to both health and mana bonuses reduce its overall value as a general-purpose sustain and tankiness item, making it less appealing for many core heroes."
     },
     {
-      "entity": "Intelligence Cores + Item Cost Inflation",
-      "synergyExplanation": "The systematic cost increases across intelligence items (Kaya +100g, Octarine -75 stats, Eternal Shroud +100g) create negative synergy with spell-dependent heroes. This continues 7.35d's intelligence item nerfs, making heroes like Invoker, Storm Spirit, and Leshrac significantly more expensive to itemize effectively."
+      "entity": "Maelstrom",
+      "synergyExplanation": "A direct damage nerf to Chain Lightning reduces its farming efficiency and burst potential, continuing the trend of 'Physical Carry Archetype Refinement' away from raw proc damage."
     },
     {
-      "entity": "Nyx Assassin + Burrow Ability Consolidation",
-      "synergyExplanation": "Burrow losing specific ability bonuses (Impale range/cooldown, Mind Flare range) but gaining generic +500 cast range creates negative synergy with Nyx's assassination playstyle. The hero loses specialized ganking tools in favor of generic improvements, reducing his unique strategic identity."
+      "entity": "Mana Cost Reduction effects on abilities that drain mana over time",
+      "synergyExplanation": "This specific nerf directly impacts heroes who rely on mana-draining abilities (e.g., Pugna's Life Drain, Leshrac's Pulse Nova) to sustain their output, making them less efficient."
     },
     {
-      "entity": "Dragon Lance + Disassembly Removal",
-      "synergyExplanation": "Dragon Lance losing disassembly creates negative synergy with flexible itemization strategies. Ranged cores can no longer use it as a temporary positioning tool before breaking it down for other items, reducing build path flexibility and forcing more committed item choices."
+      "entity": "Dominated Creeps bypassing Backdoor Protection",
+      "synergyExplanation": "This nerf directly reduces the objective-taking power of Helm of the Dominator/Overlord strategies, slightly reversing the 'Creep Domination's Golden Age' by making backdoor pushes harder."
     }
   ],
   "roleSpecificWinners": {
     "Carry": [
       {
-        "hero": "Phantom Assassin",
-        "explanation": "Blur rework removes evasion dependency while adding untargetability mechanics, creating a positioning-based carry. +2 base damage and +10 attack speed provide early game presence, while the new Blur allows for aggressive positioning without relying on RNG evasion."
+        "hero": "Templar Assassin",
+        "explanation": "Receives buffs to base health regen, attack time, attack range, and projectile speed. Her Refraction rework to a health barrier provides significant burst damage mitigation, making her more resilient in fights and improving her laning stage."
       },
       {
-        "hero": "Terrorblade",
-        "explanation": "Metamorphosis range scaling (450/490/530/570) and Demon Zeal adding +20 HP regen create better farming patterns. The hero benefits from Sange item changes (slow resistance) while maintaining strong illusion scaling through the new systems."
+        "hero": "Juggernaut",
+        "explanation": "The addition of a strong dispel at the end of Blade Fury is a massive survivability and playmaking buff for a carry. Coupled with more consistent critical chance from Blade Dance, he becomes a more reliable threat."
+      },
+      {
+        "hero": "Phantom Lancer",
+        "explanation": "Increased base armor and attack speed improve his early game laning and farming efficiency. These foundational buffs, combined with potential strong facets, make him a more robust illusion carry."
+      },
+      {
+        "hero": "Pangolier",
+        "explanation": "Significant buffs to all three attribute gains and base health regen improve his scaling and survivability. Rolling Thunder's damage type change to physical with attack damage scaling, alongside Lucky Shot buffs, pushes him towards a potent physical damage carry role."
       }
     ],
     "Mid": [
       {
         "hero": "Tinker",
-        "explanation": "March of the Machines return with +310 base movement speed creates a spell-focused mid laner. Rearm no longer resetting items forces pure spell-based gameplay, while the movement speed buff enables better positioning for March usage and escape."
+        "explanation": "A comprehensive rework, including increased base movement speed, improved Laser cast range and mana cost, and reduced Rearm channel time and mana cost, alongside the return of March of the Machines, positions him for a strong comeback as a high-impact mid-laner. His facets will dictate specific playstyles."
+      },
+      {
+        "hero": "Shadow Fiend",
+        "explanation": "The new Feast of Souls ability grants significant attack speed, complementing his Necromastery. Combined with Shadowraze cooldown reduction and talent buffs, this pushes him towards a more active, attack-speed-focused mid-laner with high burst potential."
+      },
+      {
+        "hero": "Invoker",
+        "explanation": "Across-the-board cooldown reductions for all his spells (especially Wex-focused ones) significantly increase his overall spell output and tempo, making him a more consistent threat throughout the game, particularly as a greedy mid or even a position 4."
       },
       {
         "hero": "Puck",
-        "explanation": "+3 base armor and Dream Coil buffs (+25 damage, +0.1s stun) create stronger teamfight presence. The hero benefits from Sange slow resistance changes while maintaining natural disable immunity through Phase Shift."
+        "explanation": "Despite an agility nerf, Puck receives buffs to base armor, Illusory Orb mana cost, and Dream Coil damage and stun duration. These changes enhance her burst damage and control, making her a more impactful initiator and playmaker in the mid lane."
       }
     ],
     "Offlane": [
       {
         "hero": "Timbersaw",
-        "explanation": "Strength hero conversion provides +19 base damage while maintaining spell-based scaling. The hero can now build Sange items for slow resistance while benefiting from Strength-based survivability, creating a unique hybrid scaling pattern."
+        "explanation": "The change to a Strength hero is a massive buff, providing natural tankiness and improved scaling. Increased base damage and agility gain further enhance his early game and overall presence, making him a formidable front-liner."
+      },
+      {
+        "hero": "Spirit Breaker",
+        "explanation": "Charge of Darkness now piercing Debuff Immunity is a game-changer, ensuring his initiation is always effective. Combined with base attack range and Aghanim's Shard movement speed buffs, he becomes an even more terrifying global threat from the offlane."
       },
       {
         "hero": "Centaur Warrunner",
-        "explanation": "Despite base stat nerfs, the Mount ability gaining invulnerability for the target creates powerful save potential. Combined with Innate abilities, Centaur becomes a more strategic offlaner focused on team utility rather than raw stats."
+        "explanation": "The new ability (Unknown 980) granting invulnerability to the mounted target is a massive defensive buff, allowing him to protect a core or initiate with unparalleled safety. This significantly enhances his teamfight utility and survivability."
+      },
+      {
+        "hero": "Underlord",
+        "explanation": "Buffs to Pit of Malice root duration and Fiend's Gate cast point, along with Scepter cooldown reduction, make him a more reliable disabler and teamfight controller. His ability to create space and control objectives is significantly improved."
       }
     ],
     "SoftSupport": [
       {
-        "hero": "Grimstroke",
-        "explanation": "Stroke of Fate applying Ink Trail on hit creates better harassment and setup potential. The hero's spell-based kit benefits from the new Facet system while maintaining strong teamfight control through improved ability interactions."
+        "hero": "Witch Doctor",
+        "explanation": "Maledict receives substantial buffs, including instant first damage, increased damage per second, faster tick intervals, and increased radius/cast range. These changes make his signature spell far more impactful in teamfights and ganks, solidifying his role as a potent damage support."
+      },
+      {
+        "hero": "Bounty Hunter",
+        "explanation": "Track now increases all damage taken by the target, providing a massive team-wide damage amplification. This, combined with Shuriken Toss damage buffs and Shadow Walk mana cost reduction, makes him a highly valuable roaming and ganking support."
+      },
+      {
+        "hero": "Mirana",
+        "explanation": "Buffs to Sacred Arrow's Scepter damage, Leap's distance, buff duration, and charge restore time enhance her mobility, burst, and overall impact as a roaming position 4, allowing her to be more active across the map."
       },
       {
         "hero": "Phoenix",
-        "explanation": "Icarus Dive damage increase (+5 per level) and cooldown improvements create better trading patterns. The hero's percentage-based damage scaling works well with the new Innate system while maintaining strong teamfight presence."
+        "explanation": "Icarus Dive damage buffs and Solar Guardian healing Phoenix herself improve her sustain and damage output. These changes make her a more resilient and impactful teamfight support, capable of turning fights with her ultimate."
       }
     ],
     "HardSupport": [
       {
-        "hero": "Crystal Maiden",
-        "explanation": "Frostbite dealing 4x damage to creeps creates reliable farming/stacking potential despite losing bonus duration. Freezing Field attack speed slow buffs (80/120/160) provide stronger teamfight control, while Innate abilities enhance her aura impact."
+        "hero": "Naga Siren",
+        "explanation": "Song of the Siren now passively heals allies, and its Aghanim's Shard provides mana regen, significantly boosting her team sustain. Ensnare's Aghanim's Scepter now affecting Debuff Immune units is a critical buff, making her a premier counter to BKB-reliant cores."
       },
       {
-        "hero": "Witch Doctor",
-        "explanation": "Maledict instant first tick and improved damage scaling create stronger laning presence. The ability to immediately apply damage makes trading more effective, while radius increases improve teamfight impact."
+        "hero": "Lion",
+        "explanation": "Increased strength and agility gains improve his natural tankiness. While Mana Drain no longer deals damage by default, his level 25 talent for Earth Spike cast range is a massive late-game buff, allowing him to initiate from extreme distances and control key targets."
+      },
+      {
+        "hero": "Chen",
+        "explanation": "Holy Persuasion's dominated creep health buff and Divine Favor's active heal amplification now affecting health regen, with a global Scepter upgrade, significantly enhance his ability to sustain his team and push objectives. Hand of God's increased duration further aids team healing."
+      },
+      {
+        "hero": "Ancient Apparition",
+        "explanation": "The rework of Cold Feet, Ice Vortex, Chilling Touch, and Ice Blast to apply Death Rime stacks introduces a powerful new damage and slow mechanic. This synergy across his kit, combined with Cold Feet stun duration buffs, makes him a potent magic damage and control support."
       }
     ]
   },
@@ -130,51 +164,91 @@
     "Carry": [
       {
         "hero": "Anti-Mage",
-        "explanation": "Counterspell losing spell reflection by default removes key teamfight utility. +5 mana cost on Blink and Counterspell creates farming inefficiency, while talent reworks remove scaling options. The hero becomes less effective at both farming and fighting."
+        "explanation": "Significant nerfs to Blink and Counterspell mana costs, and Counterspell no longer reflecting spells by default, severely impact his early game survivability and mana efficiency. This is a major hit to his core identity as a spell-blocking carry."
+      },
+      {
+        "hero": "Lifestealer",
+        "explanation": "Nerfs to base damage, attack speed, and agility gain, coupled with a rework to Open Wounds that removes max health damage and spread, and reduces early lifesteal, significantly diminish his early game power and sustained damage output."
       },
       {
         "hero": "Luna",
-        "explanation": "Moon Glaives bounce reduction (3/4/5/6 to 2/3/4/5) and active version nerfs (4 to 3 glaives, +50 mana cost) reduce farming efficiency. The hero loses reliable AoE damage while facing increased mana constraints."
+        "explanation": "Moon Glaives receive multiple nerfs, including reduced bounces, lower active damage, increased mana cost, and cooldown. These changes directly impact her farming speed and burst potential, making her a slower and less efficient carry."
+      },
+      {
+        "hero": "Spectre",
+        "explanation": "Spectral Dagger no longer applies Desolate damage, and Haunt no longer casts Spectral Dagger. These changes reduce her early game damage and kill potential, making her a weaker threat in skirmishes and slowing her farm progression."
       }
     ],
     "Mid": [
       {
-        "hero": "Invoker",
-        "explanation": "Despite spell cooldown buffs, the hero suffers from intelligence item cost inflation. Wex losing cooldown reduction removes a key scaling mechanic, while expensive itemization makes the hero less viable in faster-paced games."
+        "hero": "Zeus",
+        "explanation": "The removal of current/max health damage from Arc Lightning and Thundergod's Wrath is a massive nerf to his burst potential against high-HP targets. While base damages are increased, it fundamentally changes his role from a percentage-based nuker to a flat damage dealer, which is less effective against tanky heroes."
       },
       {
         "hero": "Outworld Destroyer",
-        "explanation": "Arcane Orb mana scaling nerf (12/13/14/15% to 10/11/12/13%) reduces damage output. Combined with base movement speed (-5) and armor (-0.5) nerfs, the hero becomes less effective at both farming and fighting."
+        "explanation": "Nerfs to base movement speed, armor, and Arcane Orb damage, combined with Sanity's Eclipse no longer applying Mana Allergy by default, significantly reduce his damage output and survivability, making him less dominant in the mid lane."
+      },
+      {
+        "hero": "Lina",
+        "explanation": "Dragon Slave no longer applies damage over time, and Laguna Blade no longer supercharges Lina by default. These changes reduce her sustained damage and burst potential, making her less impactful in both farming and fighting scenarios."
+      },
+      {
+        "hero": "Brewmaster",
+        "explanation": "Nerfs to Thunder Clap damage and slow, along with significant reductions to his Primal Split brewlings' effectiveness (Earth Brewling damage, Storm Brewling Cyclone duration, Wind Walk cooldown/speed), severely weaken his teamfight presence and split-pushing capabilities."
       }
     ],
     "Offlane": [
       {
         "hero": "Axe",
-        "explanation": "Berserker's Call armor nerf (16/19/22/25 to 14/16/18/20) reduces survivability during initiation. Aghanim's upgrades being shuffled between Shard/Scepter creates itemization confusion without providing clear power increases."
+        "explanation": "Berserker's Call armor reduction is a direct nerf to his tankiness and ability to initiate. While Battle Hunger can now stack with Scepter, the initial armor reduction makes him more vulnerable in the early to mid-game."
+      },
+      {
+        "hero": "Lycan",
+        "explanation": "Howl no longer fearing non-hero units and Shapeshift no longer applying bonuses to units by default significantly reduce his pushing power and unit-based damage. Wolf Bite's lifesteal penalty against creeps further hinders his jungle efficiency."
       },
       {
         "hero": "Bristleback",
-        "explanation": "-8 base damage significantly impacts laning phase trading. Viscous Nasal Goo Shard losing stack limit increases reduces late-game scaling potential, while the hero faces increased competition from reworked offlaners."
+        "explanation": "A base damage nerf and the removal of Viscous Nasal Goo's Aghanim's Shard stack limit increase reduce his overall damage output and debuff potential, making him less oppressive in the offlane."
+      },
+      {
+        "hero": "Slardar",
+        "explanation": "Nerfs to Slithereen Crush's Aghanim's Shard AoE and Aghanim's Scepter puddle duration reduce his area control and teamfight impact, making him less effective at locking down multiple targets."
       }
     ],
     "SoftSupport": [
       {
-        "hero": "Disruptor",
-        "explanation": "Thunder Strike losing Kinetic Field interactions by default removes combo potential. Kinetic Field cooldown increase (20/17/14/11s to 20/18/16/14s) reduces area control frequency, while Shard nerfs limit scaling options."
+        "hero": "Warlock",
+        "explanation": "Across-the-board nerfs to his strength gain, Shadow Word's cast point, Upheaval's cast range and mana cost, and Chaotic Offering's cast range and Golem damage significantly reduce his overall impact as a support, making him less effective in both laning and teamfights."
       },
       {
-        "hero": "Nyx Assassin",
-        "explanation": "Burrow losing specific ability bonuses (Impale range/cooldown, Mind Flare range) in favor of generic improvements reduces assassination potential. Mind Flare cooldown increases make the hero less effective at burst damage."
+        "hero": "Abaddon",
+        "explanation": "A base damage nerf and a rework to Curse of Avernus that removes silence, reduces attack speed, slow, DPS, and duration, severely diminish his offensive support capabilities and ability to control enemies in fights."
+      },
+      {
+        "hero": "Enchantress",
+        "explanation": "Enchant no longer dealing damage to heroes and reduced creep health, along with a decreased gold bounty for dominating creeps, significantly reduces her early game aggression and farming potential, making her a less impactful roaming support."
+      },
+      {
+        "hero": "Disruptor",
+        "explanation": "Thunder Strike losing Kinetic Field interactions and receiving multiple Shard nerfs, combined with an increased Kinetic Field cooldown, reduce his synergy and overall control potential, making him less effective at locking down enemies."
       }
     ],
     "HardSupport": [
       {
-        "hero": "Lion",
-        "explanation": "Mana Drain losing damage by default removes harassment potential. Despite stat gain buffs, the hero loses a key laning tool while facing increased competition from supports with better Innate/Facet scaling."
+        "hero": "Crystal Maiden",
+        "explanation": "A critical nerf to her base mana regen (to 0) and the removal of her Arcane Aura self-bonus severely impact her early game mana sustain, making it much harder for her to cast spells and support her lane effectively."
       },
       {
-        "hero": "Warlock",
-        "explanation": "Systematic nerfs across all abilities: Upheaval mana cost increase (+30), Chaotic Offering damage reduction, and Golem nerfs. The hero loses teamfight impact while facing longer cooldowns and higher mana costs."
+        "hero": "Undying",
+        "explanation": "Nerfs to Tombstone zombie vision and mana cost, along with a reduced Flesh Golem slow duration, weaken his ability to control areas and apply pressure in teamfights, making him less impactful as a front-line hard support."
+      },
+      {
+        "hero": "Nyx Assassin",
+        "explanation": "Mind Flare's rework to max mana damage comes with increased mana cost and cooldown. Vendetta no longer burns mana, and Burrow's previous range/cooldown bonuses are removed (though new ones are added). This rebalancing shifts his identity, potentially reducing his burst and mana drain effectiveness against certain lineups."
+      },
+      {
+        "hero": "Techies",
+        "explanation": "A significant decrease in base attack range makes him more vulnerable in the early game and harder to harass enemies from a safe distance, impacting his laning phase as a hard support."
       }
     ]
   }

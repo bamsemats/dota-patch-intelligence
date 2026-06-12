@@ -24,8 +24,8 @@ OpenDota is an open-source alternative with a long-standing commitment to the co
 3.  **Update Documentation**: Standardize on OpenDota as the primary third-party data source.
 
 ## Progress Tracking
-- [ ] Research OpenDota `/heroStats` schema.
-- [ ] Implement `fetchOpenDotaWinrates.ts`.
-- [ ] Implement `fetchOpenDotaPatches.ts`.
-- [ ] Perform full historical re-sync with OpenDota data.
-- [ ] Update `ROADMAP.md` and `DECISIONS.md`.
+- [x] Research OpenDota `/heroStats` schema.
+- [x] Implement `fetchOpenDotaWinrates.ts`.
+- [x] Implement `fetchOpenDotaPatches.ts`.
+- [/] Perform full historical re-sync with OpenDota data. (Ongoing - 7.41 series complete)
+- [x] Update `ROADMAP.md` and `DECISIONS.md`.

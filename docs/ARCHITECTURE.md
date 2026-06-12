@@ -1,166 +1,45 @@
 # ARCHITECTURE.md
 
-## Purpose
+## 1. Overview
+Dota Patch Intelligence is a full-stack analytical platform designed to decompose and evaluate the contextual impact of Dota 2 balance changes. It uses a **Tiered Classification Engine**, a **7-Dimensional Feature Vector Model**, and **LLM-driven Meta Analysis** to provide players and professional teams with actionable insights.
 
-This document describes the architecture of the Dota Patch Intelligence platform.
+## 2. Technical Stack
+*   **Monorepo Engine:** Node.js / TypeScript.
+*   **Database:** PostgreSQL (local) with Prisma ORM.
+*   **API:** Fastify (build-time data provider).
+*   **Frontend:** Next.js (Static-to-Dynamic Hybrid) on GitHub Pages.
+*   **Intelligence Layer:** Gemini 2.5 Flash / Claude 4 Sonnet.
+*   **Data Sourcing:** Valve Official Datafeed + OpenDota (SQL & REST).
 
-The goal of the project is to transform raw Dota 2 patch notes into structured, searchable, and understandable balance information for players.
+## 3. Data Pipeline (Phase 16)
+1.  **Discovery:** `patchDiscovery.ts` monitors Valve's news feed for new patch GIDs.
+2.  **Ingestion:** `fetchSpecificPatch.ts` retrieves the raw JSON datafeed for specific versions.
+3.  **Parsing:** `parsePatches.ts` converts the nested Valve JSON into a flat, entity-based Change set.
+4.  **Classification:** `classifyPatches.ts` identifies polarity (Buff/Nerf) and maps changes to the **Balance Ontology**.
+5.  **Analytics:** `impactScorer.ts` and `calculateVectors.ts` compute the 7D feature trajectories and contextual impact scores.
+6.  **Meta Analysis:** `backfillMeta.ts` (Gemini 2.5 Flash) synthesizes narrative themes and synergistic winners/losers.
+7.  **Seeding:** `seed.ts` populates the PostgreSQL database for the frontend build process.
 
----
+## 4. Analytical Pipeline
 
-# Core Problem
+### Hybrid Winrate Engine (v2.3)
+To ensure system longevity after the Stratz deprecation, the platform uses a two-tiered ingestion model:
+1.  **Historical Baseline (SQL):** Uses OpenDota SQL Explorer to fetch aggregated "Professional Baseline" data (Lobby Type 1) for historical patches. This ensures 100% coverage even for minor patches through base-version fallback logic.
+2.  **Live Tiered Data (REST):** Uses the OpenDota `/heroStats` API to fetch real-time, rank-bracketed (Herald through Divine) winrates for the current active patch.
+3.  **UI Adaptivity:** The frontend dynamically toggles between a 7-column histogram (Live) and a single-metric "Pro Baseline" (Historical) based on data availability.
 
-Official Dota patch notes provide detailed information but are difficult to consume due to their size and structure.
+### Meta Analysis (Gemini 2.5 Flash)
+Refactored to utilize the Google Gen AI SDK:
+*   **Strategic Intuition:** Prioritizes "Archetypal Themes" and game tempo over individual change math.
+*   **Temporal Grounding:** Injects meta shifts from the *previous* patch into the prompt context to identify recurring trends or corrective nerfs.
+*   **High-Fidelity Rules:** Strict mechanical grounding prevents hallucinated hero-item synergies.
 
-However, **quantitative counting of buffs and nerfs is insufficient** to understand a patch. A hero receiving a dozen minor numerical tweaks might be less impacted than a hero receiving one single, meta-defining mechanical change.
+### Winrate Calibration Engine
+Automated script (`calibrateWeights.ts`) that compares real-world winrate shifts against calculated impact scores. If a hero's winrate moves in the opposite direction of our prediction, the system "nudges" the underlying ontology weights to improve future accuracy.
 
-Players want answers to questions such as:
-* Which heroes received *impactful* buffs or nerfs?
-* How do changes affect specific game phases (Laning, Mid, Late)?
-* What thematic gameplay systems were altered?
-* How has the overall meta shifted regarding picks, lineups, and itemization?
-
-This platform aims to answer those questions by combining deterministic structured parsing with deep, contextual AI impact analysis.
-
----
-
-# Architectural Principles
-
-## 1. Data First
-
-The project is fundamentally a data processing platform.
-
-The frontend exists to present processed data.
-
-All business logic should live in backend services and shared packages.
-
----
-
-## 2. Structured Data Over Raw Text
-
-Raw patch notes should be converted into structured entities whenever possible.
-
-Example:
-
-Raw:
-
-"Crystal Nova mana cost increased from 100 to 130."
-
-Structured:
-
-{
-hero: "Crystal Maiden",
-ability: "Crystal Nova",
-classification: "nerf",
-impactMagnitude: "low"
-}
-
----
-
-## 3. Explainable Analysis
-
-Every classification should be traceable.
-
-Users should be able to understand why a change was categorized as a buff, nerf, rework, or adjustment, and *why* its impact was scored a certain way.
-
----
-
-## 4. AI for Contextual Impact Analysis
-
-AI should not be used for basic string parsing where regex suffices.
-AI **must** be used to evaluate the *contextual impact* of a change.
-Rule-based logic handles the quantitative baseline (e.g., "Mana cost increased = Nerf"), while AI determines the qualitative weight (e.g., "Is this mana cost nerf actually significant for this hero's laning phase?").
-
----
-
-# High-Level System Architecture
-
-Patch Source (Steam/Valve)
-↓
-Ingestion Layer (Datafeed JSON)
-↓
-Parsing & Normalization
-↓
-Tiered Classification Engine (Deterministic + Semantic)
-↓
-Impact Scoring (Balance Ontology + Archetypes)
-↓
-Modeling Layer (Hero Feature Vectors)
-↓
-Historical Archiving (Hero History Engine)
-↓
-Meta Simulation & Analysis
-↓
-Strategic Summary (LLM Narrative)
-↓
-Database → API → Frontend
-
----
-
-# Frontend Architecture & Routing (v2.0)
-
-The frontend is a Next.js application optimized for Static Site Generation (SSG), enabling performant deployment to edge networks (e.g., GitHub Pages).
-
-### Primary Routes:
-*   **`/`**: Latest Patch Strategic Summary.
-*   **`/patch/[version]`**: Strategic Summary landing page for a specific patch.
-*   **`/patch/[version]/full-notes`**: Reconstructed, color-coded official patch notes.
-*   **`/hero/[name]`**: Dedicated hero intelligence page with historical trend data.
-*   **`/search`**: Global cross-patch semantic search.
-
----
-
-# Core Architectural Components
-
-## 1. Tiered Classification Engine
-Ensures data integrity by separating deterministic facts from qualitative inferences.
-*   **Numeric:** 100% deterministic (e.g., Mana 100 → 80).
-*   **Semantic:** Rule-based matching against the **Semantic Ontology**.
-*   **Manual/Review:** Human-in-the-loop for unknown patterns.
-
-## 2. Ontology Layers
-The knowledge base of the system.
-*   **Semantic Ontology:** Maps text patterns to gameplay tags (e.g., "Pierces Spell Immunity").
-*   **Balance Ontology:** Maps mechanics to strategic concepts (e.g., "Movement Speed" → "Mobility") and defines impact weights.
-
-## 3. Modeling Layer (Hero Feature Vectors)
-Quantifies a hero's strategic identity across 7 dimensions (Farming, Mobility, etc.). Patch changes modify these vectors, enabling the tracking of "Hero Identity Shift" over time.
-
-## 4. Meta Analysis Layer
-Structured metadata and thematic insights are processed by LLMs (Anthropic Claude 4 Sonnet).
-*   **Temporal Context:** The analysis engine considers the state of the *previous* patch analysis to provide a relative assessment of meta shifts.
-*   **Mechanical Grounding:** Strict system prompts prevent hallucinations regarding item builds and hero interactions.
-
----
-
-# Documentation Map & Index
-
-This architecture is supported by the following detailed design and specification documents:
-
-### Core Data & Specs
-*   [DATA_MODEL.md](./DATA_MODEL.md): Primary entity definitions and integrity principles.
-*   [DECISIONS.md](./DECISIONS.md): Record of architectural pivots and technical choices.
-*   [VALIDATION.md](./VALIDATION.md): Evaluation framework for accuracy and quality control.
-
-### Parser & Classification
-*   [PARSER_DESIGN.md](./PARSER_DESIGN.md): Logic for converting raw Valve JSON to structured facts.
-*   [CLASSIFICATION_ARCHITECTURE.md](./CLASSIFICATION_ARCHITECTURE.md): The 4-state tiered classification system.
-*   [SEMANTIC_ONTOLOGY.md](./SEMANTIC_ONTOLOGY.md): Library of text patterns and gameplay tags.
-
-### Intelligence & Analytics
-*   [BALANCE_ONTOLOGY.md](./BALANCE_ONTOLOGY.md): Strategic weighting of mechanics and hero archetypes.
-*   [CHANGE_GROUPING.md](./CHANGE_GROUPING.md): Aggregation of atomic changes into hero/patch summaries.
-*   [HERO_FEATURE_VECTORS.md](./HERO_FEATURE_VECTORS.md): The 7-dimensional functional hero model.
-*   [HISTORICAL_ANALYTICS.md](./HISTORICAL_ANALYTICS.md): Framework for tracking trajectories and power-creep.
-*   [META_SIMULATION.md](./META_SIMULATION.md): Draft-level reasoning and synergistic analysis.
-*   [WINRATE_CALIBRATION.md](./WINRATE_CALIBRATION.md): Real-world validation loop using external match data.
-
-### Automation
-*   [AUTOMATION_PIPELINE.md](./AUTOMATION_PIPELINE.md): Design for the future end-to-end auto-processing flow.
-
----
-
-# Status
-
-Current Status: Architecture Finalized (v2.2)
-Last Updated: 2026-06-12
+## 5. Deployment Model
+The project uses a **"Static-to-Dynamic Hybrid"** architecture for GitHub Pages:
+*   **Development:** Full relational DB and API available.
+*   **Build-time:** Next.js fetches from the local Fastify API.
+*   **Production:** A fully static distribution containing all patch and hero data is deployed.
+*   **Resilience:** The frontend includes a local JSON fallback mechanism in `lib/localData.ts` to ensure build success even if the database is unreachable.

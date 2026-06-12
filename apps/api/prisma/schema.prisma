@@ -93,9 +93,10 @@ model WinrateSnapshot {
   id          Int      @id @default(autoincrement())
   patchId     Int
   entityId    Int      // Should only link to Heroes
-  bracket     String   // "HERALD", "DIVINE", etc.
+  bracket     String   // "HERALD", "DIVINE", "PROFESSIONAL", etc.
   winrate     Float
   matchCount  Int
+  isHistorical Boolean @default(false)
   createdAt   DateTime @default(now())
 
   // Relations

@@ -3,7 +3,7 @@
   "history": [
     {
       "version": "7.33b",
-      "date": "2026-06-12T19:03:53.745Z",
+      "date": "2026-06-12T21:14:57.870Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -48,7 +48,7 @@
     },
     {
       "version": "7.33c",
-      "date": "2026-06-12T19:03:53.747Z",
+      "date": "2026-06-12T21:14:57.872Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -93,7 +93,7 @@
     },
     {
       "version": "7.33d",
-      "date": "2026-06-12T19:03:53.753Z",
+      "date": "2026-06-12T21:14:57.877Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -138,7 +138,7 @@
     },
     {
       "version": "7.33e",
-      "date": "2026-06-12T19:03:53.756Z",
+      "date": "2026-06-12T21:14:57.878Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -183,7 +183,7 @@
     },
     {
       "version": "7.34",
-      "date": "2026-06-12T19:03:53.762Z",
+      "date": "2026-06-12T21:14:57.882Z",
       "changes": [
         {
           "category": "hero",
@@ -365,40 +365,11 @@
         "siege": 0,
         "utility": 0
       },
-      "winrates": {
-        "HERALD": {
-          "winrate": 0.4846,
-          "matchCount": 19945
-        },
-        "GUARDIAN": {
-          "winrate": 0.4778,
-          "matchCount": 54197
-        },
-        "CRUSADER": {
-          "winrate": 0.4873,
-          "matchCount": 79075
-        },
-        "ARCHON": {
-          "winrate": 0.492,
-          "matchCount": 72419
-        },
-        "LEGEND": {
-          "winrate": 0.4949,
-          "matchCount": 41944
-        },
-        "ANCIENT": {
-          "winrate": 0.4973,
-          "matchCount": 18823
-        },
-        "DIVINE": {
-          "winrate": 0.4977,
-          "matchCount": 8668
-        }
-      }
+      "winrates": {}
     },
     {
       "version": "7.34b",
-      "date": "2026-06-12T19:03:53.764Z",
+      "date": "2026-06-12T21:14:57.884Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -443,7 +414,7 @@
     },
     {
       "version": "7.34c",
-      "date": "2026-06-12T19:03:53.769Z",
+      "date": "2026-06-12T21:14:57.887Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -488,7 +459,7 @@
     },
     {
       "version": "7.34d",
-      "date": "2026-06-12T19:03:53.771Z",
+      "date": "2026-06-12T21:14:57.889Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -533,7 +504,7 @@
     },
     {
       "version": "7.34e",
-      "date": "2026-06-12T19:03:53.773Z",
+      "date": "2026-06-12T21:14:57.891Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -577,8 +548,119 @@
       }
     },
     {
+      "version": "7.35",
+      "date": "2026-06-12T21:14:57.895Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Ursa",
+          "rawNote": "Base Health Regen increased from 0.5 to 1.0",
+          "indentLevel": 1,
+          "metric": "Base Health Regen",
+          "changeType": "INCREASED",
+          "oldValue": "0.5",
+          "newValue": "1.0",
+          "metadata": {
+            "entityId": 70
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "reasoning": "Increased a positive metric (base health regen)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Ursa",
+          "subEntityName": "Overpower",
+          "rawNote": "Slow Resistance increased from 10/15/20/25% to 15/20/25/30%",
+          "indentLevel": 1,
+          "metric": "Slow Resistance",
+          "changeType": "INCREASED",
+          "oldValue": "10/15/20/25%",
+          "newValue": "15/20/25/30%",
+          "metadata": {
+            "entityId": 70,
+            "subEntityId": 5358
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Ursa",
+          "subEntityName": "Fury Swipes",
+          "rawNote": "Damage per attack increased from 10/19/28/37 to 13/21/29/37",
+          "indentLevel": 1,
+          "metric": "Damage per attack",
+          "changeType": "INCREASED",
+          "oldValue": "10/19/28/37",
+          "newValue": "13/21/29/37",
+          "metadata": {
+            "entityId": 70,
+            "subEntityId": 5359
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (damage per attack)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "totalVector": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.4802,
+          "matchCount": 783,
+          "isHistorical": true
+        }
+      }
+    },
+    {
       "version": "7.35b",
-      "date": "2026-06-12T19:03:53.776Z",
+      "date": "2026-06-12T21:14:57.897Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -591,39 +673,16 @@
         "utility": 0
       },
       "winrates": {
-        "HERALD": {
-          "winrate": 0.4719,
-          "matchCount": 359980
-        },
-        "GUARDIAN": {
-          "winrate": 0.4728,
-          "matchCount": 641774
-        },
-        "CRUSADER": {
-          "winrate": 0.4853,
-          "matchCount": 824433
-        },
-        "ARCHON": {
-          "winrate": 0.4928,
-          "matchCount": 814650
-        },
-        "LEGEND": {
-          "winrate": 0.4994,
-          "matchCount": 555050
-        },
-        "ANCIENT": {
-          "winrate": 0.5023,
-          "matchCount": 286215
-        },
-        "DIVINE": {
-          "winrate": 0.5061,
-          "matchCount": 147146
+        "PROFESSIONAL": {
+          "winrate": 0.4802,
+          "matchCount": 783,
+          "isHistorical": true
         }
       }
     },
     {
       "version": "7.35c",
-      "date": "2026-06-12T19:03:53.778Z",
+      "date": "2026-06-12T21:14:57.899Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -636,39 +695,16 @@
         "utility": 0
       },
       "winrates": {
-        "HERALD": {
-          "winrate": 0.471,
-          "matchCount": 140414
-        },
-        "GUARDIAN": {
-          "winrate": 0.4708,
-          "matchCount": 249547
-        },
-        "CRUSADER": {
-          "winrate": 0.4827,
-          "matchCount": 314576
-        },
-        "ARCHON": {
-          "winrate": 0.4939,
-          "matchCount": 313978
-        },
-        "LEGEND": {
-          "winrate": 0.4987,
-          "matchCount": 219387
-        },
-        "ANCIENT": {
-          "winrate": 0.5037,
-          "matchCount": 114849
-        },
-        "DIVINE": {
-          "winrate": 0.5076,
-          "matchCount": 59598
+        "PROFESSIONAL": {
+          "winrate": 0.4802,
+          "matchCount": 783,
+          "isHistorical": true
         }
       }
     },
     {
       "version": "7.35d",
-      "date": "2026-06-12T19:03:53.780Z",
+      "date": "2026-06-12T21:14:57.901Z",
       "changes": [
         {
           "category": "hero",
@@ -712,39 +748,16 @@
         "utility": 0
       },
       "winrates": {
-        "HERALD": {
-          "winrate": 0.4719,
-          "matchCount": 381416
-        },
-        "GUARDIAN": {
-          "winrate": 0.4721,
-          "matchCount": 702007
-        },
-        "CRUSADER": {
-          "winrate": 0.4848,
-          "matchCount": 871818
-        },
-        "ARCHON": {
-          "winrate": 0.4944,
-          "matchCount": 894886
-        },
-        "LEGEND": {
-          "winrate": 0.5008,
-          "matchCount": 663458
-        },
-        "ANCIENT": {
-          "winrate": 0.5064,
-          "matchCount": 375107
-        },
-        "DIVINE": {
-          "winrate": 0.5115,
-          "matchCount": 209904
+        "PROFESSIONAL": {
+          "winrate": 0.4802,
+          "matchCount": 783,
+          "isHistorical": true
         }
       }
     },
     {
       "version": "7.36",
-      "date": "2026-06-12T19:03:53.788Z",
+      "date": "2026-06-12T21:14:57.907Z",
       "changes": [
         {
           "category": "hero",
@@ -823,11 +836,17 @@
         "siege": 0,
         "utility": -1
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.5132,
+          "matchCount": 871,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.36a",
-      "date": "2026-06-12T19:03:53.792Z",
+      "date": "2026-06-12T21:14:57.914Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -839,11 +858,17 @@
         "siege": 0,
         "utility": -1
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.5132,
+          "matchCount": 871,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.36b",
-      "date": "2026-06-12T19:03:53.796Z",
+      "date": "2026-06-12T21:14:57.916Z",
       "changes": [
         {
           "category": "hero",
@@ -894,11 +919,17 @@
         "siege": 0,
         "utility": -1
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.5132,
+          "matchCount": 871,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.36c",
-      "date": "2026-06-12T19:03:53.798Z",
+      "date": "2026-06-12T21:14:57.917Z",
       "changes": [
         {
           "category": "hero",
@@ -941,39 +972,16 @@
         "utility": -1
       },
       "winrates": {
-        "HERALD": {
-          "winrate": 0.4741,
-          "matchCount": 281999
-        },
-        "GUARDIAN": {
-          "winrate": 0.4835,
-          "matchCount": 539174
-        },
-        "CRUSADER": {
-          "winrate": 0.5006,
-          "matchCount": 712092
-        },
-        "ARCHON": {
-          "winrate": 0.5108,
-          "matchCount": 786173
-        },
-        "LEGEND": {
-          "winrate": 0.52,
-          "matchCount": 669043
-        },
-        "ANCIENT": {
-          "winrate": 0.5252,
-          "matchCount": 445582
-        },
-        "DIVINE": {
-          "winrate": 0.5268,
-          "matchCount": 288856
+        "PROFESSIONAL": {
+          "winrate": 0.5132,
+          "matchCount": 871,
+          "isHistorical": true
         }
       }
     },
     {
       "version": "7.37",
-      "date": "2026-06-12T19:03:53.804Z",
+      "date": "2026-06-12T21:14:57.921Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -986,39 +994,16 @@
         "utility": -1
       },
       "winrates": {
-        "HERALD": {
-          "winrate": 0.4657,
-          "matchCount": 451013
-        },
-        "GUARDIAN": {
-          "winrate": 0.4735,
-          "matchCount": 779837
-        },
-        "CRUSADER": {
-          "winrate": 0.4888,
-          "matchCount": 956814
-        },
-        "ARCHON": {
-          "winrate": 0.5007,
-          "matchCount": 989939
-        },
-        "LEGEND": {
-          "winrate": 0.5094,
-          "matchCount": 794372
-        },
-        "ANCIENT": {
-          "winrate": 0.5149,
-          "matchCount": 509018
-        },
-        "DIVINE": {
-          "winrate": 0.5198,
-          "matchCount": 316425
+        "PROFESSIONAL": {
+          "winrate": 0.466,
+          "matchCount": 1382,
+          "isHistorical": true
         }
       }
     },
     {
       "version": "7.37b",
-      "date": "2026-06-12T19:03:53.806Z",
+      "date": "2026-06-12T21:14:57.923Z",
       "changes": [
         {
           "category": "hero",
@@ -1147,27 +1132,17 @@
         "siege": 0,
         "utility": -1
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.466,
+          "matchCount": 1382,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.37c",
-      "date": "2026-06-12T19:03:53.808Z",
-      "changes": [],
-      "vectorDelta": null,
-      "totalVector": {
-        "farming": -1,
-        "mobility": 0,
-        "survivability": 0,
-        "teamfight": -1.5,
-        "laning": -1,
-        "siege": 0,
-        "utility": -1
-      },
-      "winrates": {}
-    },
-    {
-      "version": "7.37d",
-      "date": "2026-06-12T19:03:53.810Z",
+      "date": "2026-06-12T21:14:57.925Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1180,39 +1155,38 @@
         "utility": -1
       },
       "winrates": {
-        "HERALD": {
-          "winrate": 0.4668,
-          "matchCount": 355172
-        },
-        "GUARDIAN": {
-          "winrate": 0.4762,
-          "matchCount": 533143
-        },
-        "CRUSADER": {
-          "winrate": 0.4918,
-          "matchCount": 606108
-        },
-        "ARCHON": {
-          "winrate": 0.5,
-          "matchCount": 600231
-        },
-        "LEGEND": {
-          "winrate": 0.5082,
-          "matchCount": 462788
-        },
-        "ANCIENT": {
-          "winrate": 0.51,
-          "matchCount": 285021
-        },
-        "DIVINE": {
-          "winrate": 0.5111,
-          "matchCount": 171268
+        "PROFESSIONAL": {
+          "winrate": 0.466,
+          "matchCount": 1382,
+          "isHistorical": true
+        }
+      }
+    },
+    {
+      "version": "7.37d",
+      "date": "2026-06-12T21:14:57.927Z",
+      "changes": [],
+      "vectorDelta": null,
+      "totalVector": {
+        "farming": -1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -1.5,
+        "laning": -1,
+        "siege": 0,
+        "utility": -1
+      },
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.466,
+          "matchCount": 1382,
+          "isHistorical": true
         }
       }
     },
     {
       "version": "7.37e",
-      "date": "2026-06-12T19:03:53.812Z",
+      "date": "2026-06-12T21:14:57.928Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1225,39 +1199,16 @@
         "utility": -1
       },
       "winrates": {
-        "HERALD": {
-          "winrate": 0.4652,
-          "matchCount": 743181
-        },
-        "GUARDIAN": {
-          "winrate": 0.4753,
-          "matchCount": 1075891
-        },
-        "CRUSADER": {
-          "winrate": 0.4908,
-          "matchCount": 1188072
-        },
-        "ARCHON": {
-          "winrate": 0.5008,
-          "matchCount": 1169455
-        },
-        "LEGEND": {
-          "winrate": 0.5061,
-          "matchCount": 919156
-        },
-        "ANCIENT": {
-          "winrate": 0.5079,
-          "matchCount": 587836
-        },
-        "DIVINE": {
-          "winrate": 0.5091,
-          "matchCount": 370517
+        "PROFESSIONAL": {
+          "winrate": 0.466,
+          "matchCount": 1382,
+          "isHistorical": true
         }
       }
     },
     {
       "version": "7.38",
-      "date": "2026-06-12T19:03:53.820Z",
+      "date": "2026-06-12T21:14:57.935Z",
       "changes": [
         {
           "category": "hero",
@@ -1329,39 +1280,16 @@
         "utility": -1
       },
       "winrates": {
-        "HERALD": {
-          "winrate": 0.4676,
-          "matchCount": 593152
-        },
-        "GUARDIAN": {
-          "winrate": 0.4808,
-          "matchCount": 1039310
-        },
-        "CRUSADER": {
-          "winrate": 0.4974,
-          "matchCount": 1159682
-        },
-        "ARCHON": {
-          "winrate": 0.5063,
-          "matchCount": 1157652
-        },
-        "LEGEND": {
-          "winrate": 0.5101,
-          "matchCount": 927464
-        },
-        "ANCIENT": {
-          "winrate": 0.5142,
-          "matchCount": 613511
-        },
-        "DIVINE": {
-          "winrate": 0.5149,
-          "matchCount": 402242
+        "PROFESSIONAL": {
+          "winrate": 0.5197,
+          "matchCount": 710,
+          "isHistorical": true
         }
       }
     },
     {
       "version": "7.38b",
-      "date": "2026-06-12T19:03:53.821Z",
+      "date": "2026-06-12T21:14:57.937Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1373,11 +1301,17 @@
         "siege": 0,
         "utility": -1
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.5197,
+          "matchCount": 710,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.38c",
-      "date": "2026-06-12T19:03:53.824Z",
+      "date": "2026-06-12T21:14:57.939Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1389,11 +1323,69 @@
         "siege": 0,
         "utility": -1
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.5197,
+          "matchCount": 710,
+          "isHistorical": true
+        }
+      }
+    },
+    {
+      "version": "7.39",
+      "date": "2026-06-12T21:14:57.944Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Ursa",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent Enrage Status Resistance increased from +20% to +25%",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent Enrage Status Resistance",
+          "changeType": "INCREASED",
+          "oldValue": "+20%",
+          "newValue": "+25%",
+          "metadata": {
+            "entityId": 70
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "totalVector": {
+        "farming": -1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -1.5,
+        "laning": -1,
+        "siege": 0,
+        "utility": -1
+      },
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.4906,
+          "matchCount": 2436,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.39b",
-      "date": "2026-06-12T19:03:53.825Z",
+      "date": "2026-06-12T21:14:57.946Z",
       "changes": [
         {
           "category": "hero",
@@ -1466,11 +1458,17 @@
         "siege": 0,
         "utility": -1
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.4906,
+          "matchCount": 2436,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.39c",
-      "date": "2026-06-12T19:03:53.828Z",
+      "date": "2026-06-12T21:14:57.947Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1482,11 +1480,100 @@
         "siege": 0,
         "utility": -1
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.4906,
+          "matchCount": 2436,
+          "isHistorical": true
+        }
+      }
+    },
+    {
+      "version": "7.39d",
+      "date": "2026-06-12T21:14:57.949Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Ursa",
+          "subEntityName": "Maul",
+          "rawNote": "Health As Damage rescaled from 1.2/1.3/1.4/1.5% to 1.25%",
+          "indentLevel": 1,
+          "metric": "Health As Damage",
+          "changeType": "RESCALE",
+          "oldValue": "1.2/1.3/1.4/1.5%",
+          "newValue": "1.25%",
+          "metadata": {
+            "entityId": 70,
+            "subEntityId": 1327
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Ursa",
+          "subEntityName": "Earthshock",
+          "rawNote": "Aghanim's Shard Enrage duration decreased from 1.4s to 1.3s",
+          "indentLevel": 1,
+          "metric": "Aghanim's Shard Enrage duration",
+          "changeType": "DECREASED",
+          "oldValue": "1.4s",
+          "newValue": "1.3s",
+          "metadata": {
+            "entityId": 70,
+            "subEntityId": 5357
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 3,
+              "Guardian": 3,
+              "Crusader": 3,
+              "Archon": 3,
+              "Legend": 3,
+              "Ancient": 4,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (aghanim's shard enrage duration)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "totalVector": {
+        "farming": -1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -1.5,
+        "laning": -1,
+        "siege": 0,
+        "utility": -1
+      },
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.4906,
+          "matchCount": 2436,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.39e",
-      "date": "2026-06-12T19:03:53.830Z",
+      "date": "2026-06-12T21:14:57.951Z",
       "changes": [
         {
           "category": "hero",
@@ -1558,11 +1645,17 @@
         "siege": 0,
         "utility": -1
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.4906,
+          "matchCount": 2436,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.40",
-      "date": "2026-06-12T19:03:53.836Z",
+      "date": "2026-06-12T21:14:57.957Z",
       "changes": [
         {
           "category": "hero",
@@ -1696,39 +1789,16 @@
         "utility": -1
       },
       "winrates": {
-        "HERALD": {
-          "winrate": 0.4736,
-          "matchCount": 72144
-        },
-        "GUARDIAN": {
-          "winrate": 0.4826,
-          "matchCount": 127189
-        },
-        "CRUSADER": {
-          "winrate": 0.4986,
-          "matchCount": 132547
-        },
-        "ARCHON": {
-          "winrate": 0.5041,
-          "matchCount": 124681
-        },
-        "LEGEND": {
-          "winrate": 0.5127,
-          "matchCount": 97843
-        },
-        "ANCIENT": {
-          "winrate": 0.5163,
-          "matchCount": 64098
-        },
-        "DIVINE": {
-          "winrate": 0.5174,
-          "matchCount": 41057
+        "PROFESSIONAL": {
+          "winrate": 0.4777,
+          "matchCount": 1030,
+          "isHistorical": true
         }
       }
     },
     {
       "version": "7.40b",
-      "date": "2026-06-12T19:03:53.839Z",
+      "date": "2026-06-12T21:14:57.960Z",
       "changes": [
         {
           "category": "hero",
@@ -1826,11 +1896,17 @@
         "siege": 0,
         "utility": -1
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.4777,
+          "matchCount": 1030,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.40c",
-      "date": "2026-06-12T19:03:53.840Z",
+      "date": "2026-06-12T21:14:57.962Z",
       "changes": [
         {
           "category": "hero",
@@ -1873,11 +1949,17 @@
         "siege": 0,
         "utility": -1
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.4777,
+          "matchCount": 1030,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.41",
-      "date": "2026-06-12T19:03:53.851Z",
+      "date": "2026-06-12T21:14:57.971Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1889,11 +1971,17 @@
         "siege": 0,
         "utility": -1
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.4378,
+          "matchCount": 539,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.41a",
-      "date": "2026-06-12T19:03:53.854Z",
+      "date": "2026-06-12T21:14:57.973Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1905,11 +1993,17 @@
         "siege": 0,
         "utility": -1
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.4378,
+          "matchCount": 539,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.41b",
-      "date": "2026-06-12T19:03:53.856Z",
+      "date": "2026-06-12T21:14:57.975Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1921,11 +2015,17 @@
         "siege": 0,
         "utility": -1
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.4378,
+          "matchCount": 539,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.41c",
-      "date": "2026-06-12T19:03:53.858Z",
+      "date": "2026-06-12T21:14:57.977Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1937,11 +2037,17 @@
         "siege": 0,
         "utility": -1
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.4378,
+          "matchCount": 539,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.41d",
-      "date": "2026-06-12T19:03:53.860Z",
+      "date": "2026-06-12T21:14:57.979Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1953,7 +2059,36 @@
         "siege": 0,
         "utility": -1
       },
-      "winrates": {}
+      "winrates": {
+        "HERALD": {
+          "winrate": 0.4418,
+          "matchCount": 20461
+        },
+        "GUARDIAN": {
+          "winrate": 0.4563,
+          "matchCount": 38409
+        },
+        "CRUSADER": {
+          "winrate": 0.4668,
+          "matchCount": 42753
+        },
+        "ARCHON": {
+          "winrate": 0.4754,
+          "matchCount": 39540
+        },
+        "LEGEND": {
+          "winrate": 0.4801,
+          "matchCount": 30197
+        },
+        "ANCIENT": {
+          "winrate": 0.4807,
+          "matchCount": 19686
+        },
+        "DIVINE": {
+          "winrate": 0.4814,
+          "matchCount": 20650
+        }
+      }
     }
   ]
 }

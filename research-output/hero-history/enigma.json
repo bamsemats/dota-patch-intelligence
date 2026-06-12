@@ -3,7 +3,7 @@
   "history": [
     {
       "version": "7.33b",
-      "date": "2026-06-12T19:03:53.744Z",
+      "date": "2026-06-12T21:14:57.870Z",
       "changes": [
         {
           "category": "hero",
@@ -116,7 +116,7 @@
     },
     {
       "version": "7.33c",
-      "date": "2026-06-12T19:03:53.747Z",
+      "date": "2026-06-12T21:14:57.872Z",
       "changes": [
         {
           "category": "hero",
@@ -200,7 +200,7 @@
     },
     {
       "version": "7.33d",
-      "date": "2026-06-12T19:03:53.753Z",
+      "date": "2026-06-12T21:14:57.876Z",
       "changes": [
         {
           "category": "hero",
@@ -314,7 +314,7 @@
     },
     {
       "version": "7.33e",
-      "date": "2026-06-12T19:03:53.756Z",
+      "date": "2026-06-12T21:14:57.878Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -359,7 +359,7 @@
     },
     {
       "version": "7.34",
-      "date": "2026-06-12T19:03:53.761Z",
+      "date": "2026-06-12T21:14:57.882Z",
       "changes": [
         {
           "category": "hero",
@@ -506,40 +506,11 @@
         "siege": 0,
         "utility": 1
       },
-      "winrates": {
-        "HERALD": {
-          "winrate": 0.4513,
-          "matchCount": 15666
-        },
-        "GUARDIAN": {
-          "winrate": 0.4629,
-          "matchCount": 45785
-        },
-        "CRUSADER": {
-          "winrate": 0.4692,
-          "matchCount": 57483
-        },
-        "ARCHON": {
-          "winrate": 0.4667,
-          "matchCount": 43269
-        },
-        "LEGEND": {
-          "winrate": 0.4658,
-          "matchCount": 21008
-        },
-        "ANCIENT": {
-          "winrate": 0.4659,
-          "matchCount": 8170
-        },
-        "DIVINE": {
-          "winrate": 0.4583,
-          "matchCount": 3439
-        }
-      }
+      "winrates": {}
     },
     {
       "version": "7.34b",
-      "date": "2026-06-12T19:03:53.764Z",
+      "date": "2026-06-12T21:14:57.884Z",
       "changes": [
         {
           "category": "hero",
@@ -677,7 +648,7 @@
     },
     {
       "version": "7.34c",
-      "date": "2026-06-12T19:03:53.769Z",
+      "date": "2026-06-12T21:14:57.887Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -722,7 +693,7 @@
     },
     {
       "version": "7.34d",
-      "date": "2026-06-12T19:03:53.771Z",
+      "date": "2026-06-12T21:14:57.889Z",
       "changes": [
         {
           "category": "hero",
@@ -866,7 +837,7 @@
     },
     {
       "version": "7.34e",
-      "date": "2026-06-12T19:03:53.773Z",
+      "date": "2026-06-12T21:14:57.891Z",
       "changes": [
         {
           "category": "hero",
@@ -949,53 +920,204 @@
       }
     },
     {
+      "version": "7.35",
+      "date": "2026-06-12T21:14:57.895Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Enigma",
+          "subEntityName": "Demonic Summoning",
+          "rawNote": "Eidolons' health is increased by 4% of Enigma's current health",
+          "indentLevel": 1,
+          "metric": "Eidolons' health is",
+          "changeType": "INCREASED",
+          "newValue": "4% of Enigma's current health",
+          "metadata": {
+            "entityId": 33,
+            "subEntityId": 5147
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Increased a positive metric (eidolons' health is)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Enigma",
+          "subEntityName": "Demonic Summoning",
+          "rawNote": "Eidolons now preserve their commanded attack target when they split",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 33,
+            "subEntityId": 5147
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Enigma",
+          "subEntityName": "Midnight Pulse",
+          "rawNote": "Now also deals 5/10/15/20 base damage",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 33,
+            "subEntityId": 5148
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Enigma",
+          "subEntityName": "Midnight Pulse",
+          "rawNote": "Current Health as Damage decreased from 5/7/9/11% to 4/6/8/10%",
+          "indentLevel": 1,
+          "metric": "Current Health as Damage",
+          "changeType": "DECREASED",
+          "oldValue": "5/7/9/11%",
+          "newValue": "4/6/8/10%",
+          "metadata": {
+            "entityId": 33,
+            "subEntityId": 5148
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Decreased a positive metric (current health as damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Enigma",
+          "subEntityName": "Midnight Pulse",
+          "rawNote": "Radius decreased from 650 to 600",
+          "indentLevel": 1,
+          "metric": "Radius",
+          "changeType": "DECREASED",
+          "oldValue": "650",
+          "newValue": "600",
+          "metadata": {
+            "entityId": 33,
+            "subEntityId": 5148
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5.5,
+              "Guardian": 4.5,
+              "Crusader": 5,
+              "Archon": 4.5,
+              "Legend": 5,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "reasoning": "Decreased a positive metric (radius)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -6,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
+      "totalVector": {
+        "farming": 3,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 4.5,
+        "laning": 3,
+        "siege": 0,
+        "utility": 3
+      },
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.5419,
+          "matchCount": 620,
+          "isHistorical": true
+        }
+      }
+    },
+    {
       "version": "7.35b",
-      "date": "2026-06-12T19:03:53.775Z",
+      "date": "2026-06-12T21:14:57.897Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 4.5,
         "laning": 3,
         "siege": 0,
         "utility": 3
       },
       "winrates": {
-        "HERALD": {
-          "winrate": 0.4646,
-          "matchCount": 268694
-        },
-        "GUARDIAN": {
-          "winrate": 0.4789,
-          "matchCount": 501741
-        },
-        "CRUSADER": {
-          "winrate": 0.4878,
-          "matchCount": 550188
-        },
-        "ARCHON": {
-          "winrate": 0.4932,
-          "matchCount": 449493
-        },
-        "LEGEND": {
-          "winrate": 0.4996,
-          "matchCount": 257104
-        },
-        "ANCIENT": {
-          "winrate": 0.5081,
-          "matchCount": 115269
-        },
-        "DIVINE": {
-          "winrate": 0.5224,
-          "matchCount": 57295
+        "PROFESSIONAL": {
+          "winrate": 0.5419,
+          "matchCount": 620,
+          "isHistorical": true
         }
       }
     },
     {
       "version": "7.35c",
-      "date": "2026-06-12T19:03:53.778Z",
+      "date": "2026-06-12T21:14:57.899Z",
       "changes": [
         {
           "category": "hero",
@@ -1041,90 +1163,44 @@
         "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 4.5,
         "laning": 3,
         "siege": 0,
         "utility": -12
       },
       "winrates": {
-        "HERALD": {
-          "winrate": 0.4626,
-          "matchCount": 114359
-        },
-        "GUARDIAN": {
-          "winrate": 0.4808,
-          "matchCount": 211844
-        },
-        "CRUSADER": {
-          "winrate": 0.4892,
-          "matchCount": 233537
-        },
-        "ARCHON": {
-          "winrate": 0.494,
-          "matchCount": 197816
-        },
-        "LEGEND": {
-          "winrate": 0.4981,
-          "matchCount": 118900
-        },
-        "ANCIENT": {
-          "winrate": 0.5105,
-          "matchCount": 54836
-        },
-        "DIVINE": {
-          "winrate": 0.5147,
-          "matchCount": 26448
+        "PROFESSIONAL": {
+          "winrate": 0.5419,
+          "matchCount": 620,
+          "isHistorical": true
         }
       }
     },
     {
       "version": "7.35d",
-      "date": "2026-06-12T19:03:53.780Z",
+      "date": "2026-06-12T21:14:57.901Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 4.5,
         "laning": 3,
         "siege": 0,
         "utility": -12
       },
       "winrates": {
-        "HERALD": {
-          "winrate": 0.4628,
-          "matchCount": 236857
-        },
-        "GUARDIAN": {
-          "winrate": 0.4797,
-          "matchCount": 478633
-        },
-        "CRUSADER": {
-          "winrate": 0.4868,
-          "matchCount": 550931
-        },
-        "ARCHON": {
-          "winrate": 0.491,
-          "matchCount": 488986
-        },
-        "LEGEND": {
-          "winrate": 0.493,
-          "matchCount": 305474
-        },
-        "ANCIENT": {
-          "winrate": 0.4993,
-          "matchCount": 145643
-        },
-        "DIVINE": {
-          "winrate": 0.5097,
-          "matchCount": 70737
+        "PROFESSIONAL": {
+          "winrate": 0.5419,
+          "matchCount": 620,
+          "isHistorical": true
         }
       }
     },
     {
       "version": "7.36",
-      "date": "2026-06-12T19:03:53.788Z",
+      "date": "2026-06-12T21:14:57.907Z",
       "changes": [
         {
           "category": "hero",
@@ -1258,48 +1334,66 @@
         "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 4.5,
         "laning": 2,
         "siege": 0,
         "utility": -13
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.5679,
+          "matchCount": 324,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.36a",
-      "date": "2026-06-12T19:03:53.791Z",
+      "date": "2026-06-12T21:14:57.913Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 4.5,
         "laning": 2,
         "siege": 0,
         "utility": -13
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.5679,
+          "matchCount": 324,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.36b",
-      "date": "2026-06-12T19:03:53.796Z",
+      "date": "2026-06-12T21:14:57.915Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 4.5,
         "laning": 2,
         "siege": 0,
         "utility": -13
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.5679,
+          "matchCount": 324,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.36c",
-      "date": "2026-06-12T19:03:53.798Z",
+      "date": "2026-06-12T21:14:57.917Z",
       "changes": [
         {
           "category": "hero",
@@ -1395,45 +1489,22 @@
         "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 4.5,
         "laning": 2,
         "siege": 0,
         "utility": -13
       },
       "winrates": {
-        "HERALD": {
-          "winrate": 0.4785,
-          "matchCount": 164980
-        },
-        "GUARDIAN": {
-          "winrate": 0.495,
-          "matchCount": 351156
-        },
-        "CRUSADER": {
-          "winrate": 0.5031,
-          "matchCount": 412113
-        },
-        "ARCHON": {
-          "winrate": 0.5051,
-          "matchCount": 377721
-        },
-        "LEGEND": {
-          "winrate": 0.5107,
-          "matchCount": 255020
-        },
-        "ANCIENT": {
-          "winrate": 0.5171,
-          "matchCount": 134580
-        },
-        "DIVINE": {
-          "winrate": 0.5276,
-          "matchCount": 70020
+        "PROFESSIONAL": {
+          "winrate": 0.5679,
+          "matchCount": 324,
+          "isHistorical": true
         }
       }
     },
     {
       "version": "7.37",
-      "date": "2026-06-12T19:03:53.804Z",
+      "date": "2026-06-12T21:14:57.921Z",
       "changes": [
         {
           "category": "hero",
@@ -1499,122 +1570,88 @@
         "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 4.5,
         "laning": 2,
         "siege": 0,
         "utility": -13
       },
       "winrates": {
-        "HERALD": {
-          "winrate": 0.4763,
-          "matchCount": 275673
-        },
-        "GUARDIAN": {
-          "winrate": 0.4883,
-          "matchCount": 514325
-        },
-        "CRUSADER": {
-          "winrate": 0.4933,
-          "matchCount": 541248
-        },
-        "ARCHON": {
-          "winrate": 0.4964,
-          "matchCount": 452094
-        },
-        "LEGEND": {
-          "winrate": 0.4997,
-          "matchCount": 282372
-        },
-        "ANCIENT": {
-          "winrate": 0.5059,
-          "matchCount": 140680
-        },
-        "DIVINE": {
-          "winrate": 0.5171,
-          "matchCount": 70191
+        "PROFESSIONAL": {
+          "winrate": 0.5756,
+          "matchCount": 714,
+          "isHistorical": true
         }
       }
     },
     {
       "version": "7.37b",
-      "date": "2026-06-12T19:03:53.806Z",
+      "date": "2026-06-12T21:14:57.922Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
-        "laning": 2,
-        "siege": 0,
-        "utility": -13
-      },
-      "winrates": {}
-    },
-    {
-      "version": "7.37c",
-      "date": "2026-06-12T19:03:53.808Z",
-      "changes": [],
-      "vectorDelta": null,
-      "totalVector": {
-        "farming": 2,
-        "mobility": 0,
-        "survivability": 0,
-        "teamfight": 10.5,
-        "laning": 2,
-        "siege": 0,
-        "utility": -13
-      },
-      "winrates": {}
-    },
-    {
-      "version": "7.37d",
-      "date": "2026-06-12T19:03:53.810Z",
-      "changes": [],
-      "vectorDelta": null,
-      "totalVector": {
-        "farming": 2,
-        "mobility": 0,
-        "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 4.5,
         "laning": 2,
         "siege": 0,
         "utility": -13
       },
       "winrates": {
-        "HERALD": {
-          "winrate": 0.4753,
-          "matchCount": 235144
-        },
-        "GUARDIAN": {
-          "winrate": 0.4911,
-          "matchCount": 406591
-        },
-        "CRUSADER": {
-          "winrate": 0.4973,
-          "matchCount": 435009
-        },
-        "ARCHON": {
-          "winrate": 0.4996,
-          "matchCount": 374656
-        },
-        "LEGEND": {
-          "winrate": 0.5035,
-          "matchCount": 244766
-        },
-        "ANCIENT": {
-          "winrate": 0.5106,
-          "matchCount": 126742
-        },
-        "DIVINE": {
-          "winrate": 0.5212,
-          "matchCount": 67640
+        "PROFESSIONAL": {
+          "winrate": 0.5756,
+          "matchCount": 714,
+          "isHistorical": true
+        }
+      }
+    },
+    {
+      "version": "7.37c",
+      "date": "2026-06-12T21:14:57.925Z",
+      "changes": [],
+      "vectorDelta": null,
+      "totalVector": {
+        "farming": 2,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 4.5,
+        "laning": 2,
+        "siege": 0,
+        "utility": -13
+      },
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.5756,
+          "matchCount": 714,
+          "isHistorical": true
+        }
+      }
+    },
+    {
+      "version": "7.37d",
+      "date": "2026-06-12T21:14:57.926Z",
+      "changes": [],
+      "vectorDelta": null,
+      "totalVector": {
+        "farming": 2,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 4.5,
+        "laning": 2,
+        "siege": 0,
+        "utility": -13
+      },
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.5756,
+          "matchCount": 714,
+          "isHistorical": true
         }
       }
     },
     {
       "version": "7.37e",
-      "date": "2026-06-12T19:03:53.812Z",
+      "date": "2026-06-12T21:14:57.928Z",
       "changes": [
         {
           "category": "hero",
@@ -1652,45 +1689,22 @@
         "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 4.5,
         "laning": 2,
         "siege": 0,
         "utility": -13
       },
       "winrates": {
-        "HERALD": {
-          "winrate": 0.4779,
-          "matchCount": 424396
-        },
-        "GUARDIAN": {
-          "winrate": 0.4913,
-          "matchCount": 705322
-        },
-        "CRUSADER": {
-          "winrate": 0.4973,
-          "matchCount": 750159
-        },
-        "ARCHON": {
-          "winrate": 0.4996,
-          "matchCount": 654259
-        },
-        "LEGEND": {
-          "winrate": 0.5059,
-          "matchCount": 433580
-        },
-        "ANCIENT": {
-          "winrate": 0.51,
-          "matchCount": 227065
-        },
-        "DIVINE": {
-          "winrate": 0.5256,
-          "matchCount": 122347
+        "PROFESSIONAL": {
+          "winrate": 0.5756,
+          "matchCount": 714,
+          "isHistorical": true
         }
       }
     },
     {
       "version": "7.38",
-      "date": "2026-06-12T19:03:53.819Z",
+      "date": "2026-06-12T21:14:57.935Z",
       "changes": [
         {
           "category": "hero",
@@ -1868,77 +1882,119 @@
         "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 4.5,
         "laning": 2,
         "siege": 0,
         "utility": -13
       },
       "winrates": {
-        "HERALD": {
-          "winrate": 0.4808,
-          "matchCount": 310193
-        },
-        "GUARDIAN": {
-          "winrate": 0.4954,
-          "matchCount": 599352
-        },
-        "CRUSADER": {
-          "winrate": 0.5008,
-          "matchCount": 615773
-        },
-        "ARCHON": {
-          "winrate": 0.5021,
-          "matchCount": 520277
-        },
-        "LEGEND": {
-          "winrate": 0.5052,
-          "matchCount": 336195
-        },
-        "ANCIENT": {
-          "winrate": 0.5044,
-          "matchCount": 173867
-        },
-        "DIVINE": {
-          "winrate": 0.5099,
-          "matchCount": 85471
+        "PROFESSIONAL": {
+          "winrate": 0.594,
+          "matchCount": 234,
+          "isHistorical": true
         }
       }
     },
     {
       "version": "7.38b",
-      "date": "2026-06-12T19:03:53.821Z",
+      "date": "2026-06-12T21:14:57.936Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 4.5,
         "laning": 2,
         "siege": 0,
         "utility": -13
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.594,
+          "matchCount": 234,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.38c",
-      "date": "2026-06-12T19:03:53.823Z",
+      "date": "2026-06-12T21:14:57.938Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 4.5,
         "laning": 2,
         "siege": 0,
         "utility": -13
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.594,
+          "matchCount": 234,
+          "isHistorical": true
+        }
+      }
+    },
+    {
+      "version": "7.39",
+      "date": "2026-06-12T21:14:57.944Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Enigma",
+          "subEntityName": "Demonic Summoning",
+          "rawNote": "Eidolon Damage rescaled from 20/28/38/47 to 16/27/38/49",
+          "indentLevel": 1,
+          "metric": "Eidolon Damage",
+          "changeType": "RESCALE",
+          "oldValue": "20/28/38/47",
+          "newValue": "16/27/38/49",
+          "metadata": {
+            "entityId": 33,
+            "subEntityId": 5147
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 3.5,
+              "Guardian": 4,
+              "Crusader": 4,
+              "Archon": 4,
+              "Legend": 5,
+              "Ancient": 7.5,
+              "Divine": 8
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "totalVector": {
+        "farming": 2,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 4.5,
+        "laning": 2,
+        "siege": 0,
+        "utility": -13
+      },
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.4849,
+          "matchCount": 464,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.39b",
-      "date": "2026-06-12T19:03:53.825Z",
+      "date": "2026-06-12T21:14:57.946Z",
       "changes": [
         {
           "category": "hero",
@@ -1973,48 +2029,88 @@
         "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 4.5,
         "laning": 2,
         "siege": 0,
         "utility": -13
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.4849,
+          "matchCount": 464,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.39c",
-      "date": "2026-06-12T19:03:53.828Z",
+      "date": "2026-06-12T21:14:57.947Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 4.5,
         "laning": 2,
         "siege": 0,
         "utility": -13
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.4849,
+          "matchCount": 464,
+          "isHistorical": true
+        }
+      }
+    },
+    {
+      "version": "7.39d",
+      "date": "2026-06-12T21:14:57.949Z",
+      "changes": [],
+      "vectorDelta": null,
+      "totalVector": {
+        "farming": 2,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 4.5,
+        "laning": 2,
+        "siege": 0,
+        "utility": -13
+      },
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.4849,
+          "matchCount": 464,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.39e",
-      "date": "2026-06-12T19:03:53.830Z",
+      "date": "2026-06-12T21:14:57.951Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 4.5,
         "laning": 2,
         "siege": 0,
         "utility": -13
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.4849,
+          "matchCount": 464,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.40",
-      "date": "2026-06-12T19:03:53.836Z",
+      "date": "2026-06-12T21:14:57.957Z",
       "changes": [
         {
           "category": "hero",
@@ -2078,45 +2174,22 @@
         "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 4.5,
         "laning": 2,
         "siege": 0,
         "utility": -13
       },
       "winrates": {
-        "HERALD": {
-          "winrate": 0.4831,
-          "matchCount": 25573
-        },
-        "GUARDIAN": {
-          "winrate": 0.4977,
-          "matchCount": 52536
-        },
-        "CRUSADER": {
-          "winrate": 0.5094,
-          "matchCount": 53429
-        },
-        "ARCHON": {
-          "winrate": 0.5114,
-          "matchCount": 46036
-        },
-        "LEGEND": {
-          "winrate": 0.5155,
-          "matchCount": 31382
-        },
-        "ANCIENT": {
-          "winrate": 0.5241,
-          "matchCount": 16997
-        },
-        "DIVINE": {
-          "winrate": 0.5234,
-          "matchCount": 8731
+        "PROFESSIONAL": {
+          "winrate": 0.608,
+          "matchCount": 176,
+          "isHistorical": true
         }
       }
     },
     {
       "version": "7.40b",
-      "date": "2026-06-12T19:03:53.838Z",
+      "date": "2026-06-12T21:14:57.960Z",
       "changes": [
         {
           "category": "hero",
@@ -2154,32 +2227,44 @@
         "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 4.5,
         "laning": 2,
         "siege": 0,
         "utility": -13
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.608,
+          "matchCount": 176,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.40c",
-      "date": "2026-06-12T19:03:53.840Z",
+      "date": "2026-06-12T21:14:57.962Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 4.5,
         "laning": 2,
         "siege": 0,
         "utility": -13
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.608,
+          "matchCount": 176,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.41",
-      "date": "2026-06-12T19:03:53.851Z",
+      "date": "2026-06-12T21:14:57.971Z",
       "changes": [
         {
           "category": "hero",
@@ -2294,32 +2379,44 @@
         "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 4.5,
         "laning": 2,
         "siege": 0,
         "utility": -13
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.6136,
+          "matchCount": 88,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.41a",
-      "date": "2026-06-12T19:03:53.854Z",
+      "date": "2026-06-12T21:14:57.973Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 4.5,
         "laning": 2,
         "siege": 0,
         "utility": -13
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.6136,
+          "matchCount": 88,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.41b",
-      "date": "2026-06-12T19:03:53.856Z",
+      "date": "2026-06-12T21:14:57.975Z",
       "changes": [
         {
           "category": "hero",
@@ -2441,32 +2538,44 @@
         "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 4.5,
         "laning": 2,
         "siege": 0,
         "utility": -13
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.6136,
+          "matchCount": 88,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.41c",
-      "date": "2026-06-12T19:03:53.858Z",
+      "date": "2026-06-12T21:14:57.977Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 4.5,
         "laning": 2,
         "siege": 0,
         "utility": -13
       },
-      "winrates": {}
+      "winrates": {
+        "PROFESSIONAL": {
+          "winrate": 0.6136,
+          "matchCount": 88,
+          "isHistorical": true
+        }
+      }
     },
     {
       "version": "7.41d",
-      "date": "2026-06-12T19:03:53.860Z",
+      "date": "2026-06-12T21:14:57.979Z",
       "changes": [
         {
           "category": "hero",
@@ -2504,12 +2613,41 @@
         "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 4.5,
         "laning": 2,
         "siege": 0,
         "utility": -13
       },
-      "winrates": {}
+      "winrates": {
+        "HERALD": {
+          "winrate": 0.4716,
+          "matchCount": 11763
+        },
+        "GUARDIAN": {
+          "winrate": 0.4854,
+          "matchCount": 21125
+        },
+        "CRUSADER": {
+          "winrate": 0.4935,
+          "matchCount": 21472
+        },
+        "ARCHON": {
+          "winrate": 0.5037,
+          "matchCount": 17304
+        },
+        "LEGEND": {
+          "winrate": 0.5078,
+          "matchCount": 12039
+        },
+        "ANCIENT": {
+          "winrate": 0.5279,
+          "matchCount": 7528
+        },
+        "DIVINE": {
+          "winrate": 0.5507,
+          "matchCount": 8197
+        }
+      }
     }
   ]
 }
