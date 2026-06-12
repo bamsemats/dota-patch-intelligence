@@ -53,6 +53,9 @@ async function seed() {
       }
     });
 
+    // CRITICAL: Delete existing changes for this patch before re-seeding to prevent duplicates
+    await prisma.patchChange.deleteMany({ where: { patchId: patch.id } });
+
     // 3. Process Changes and Entities
     if (patchData.changes) {
       for (const change of patchData.changes) {

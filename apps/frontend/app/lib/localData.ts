@@ -54,24 +54,36 @@ export async function getLocalPatchData(version: string) {
              bracket,
              winrate: winrateData[bracket][heroId].winrate,
              matchCount: winrateData[bracket][heroId].matchCount,
-             entity: { id: parseInt(heroId), name: "Unknown" } // name is usually resolved from mappings in actual app but this is a fallback
+             entity: { id: parseInt(heroId), name: "Unknown" } 
            });
         }
       }
       patchData.winrateSnapshots = snapshots;
     } catch (e) {}
 
-    // Deep structure fix for full-notes page expectation
-    // The full-notes page expects change.entity.name and change.entity.type
+    // Deep structure fix and Score Calculation
     if (patchData.changes) {
-      patchData.changes = patchData.changes.map((c: any) => ({
-        ...c,
-        classificationType: c.classification?.classificationType,
-        reasoning: c.classification?.reasoning,
-        strategicWeight: c.classification?.strategicWeight,
-        netScoreDelta: c.impact?.netScoreDelta || 0,
-        entity: { name: c.entityName, type: c.category }
-      }));
+      patchData.changes = patchData.changes.map((c: any) => {
+        const typeStr = c.classification?.classificationType || "Unknown";
+        let multiplier = 0;
+        if (typeStr === "Buff") multiplier = 1;
+        if (typeStr === "Nerf") multiplier = -1;
+
+        const weightObj = c.classification?.strategicWeight;
+        const weight = typeof weightObj === 'object' ? (weightObj['Divine'] || 5) : (weightObj || 5);
+        
+        // COMPUTE SCORE FOR STATIC SITE
+        const netScoreDelta = multiplier * weight;
+
+        return {
+          ...c,
+          classificationType: typeStr,
+          reasoning: c.classification?.reasoning,
+          strategicWeight: weightObj,
+          netScoreDelta: netScoreDelta, // <--- Correctly calculated now
+          entity: { name: c.entityName, type: c.category }
+        };
+      });
     }
 
     return patchData;

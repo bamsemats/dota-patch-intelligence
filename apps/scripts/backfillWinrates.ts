@@ -97,10 +97,9 @@ async function main() {
     const heroMapping = JSON.parse(await readFile(path.join(MAPPINGS_DIR, "heroes.json"), "utf8"));
     const classifiedPatches = (await readdir(path.resolve("research-output", "classified-patches")))
         .filter(f => f.endsWith(".json"))
-        .map(f => f.replace(".json", ""))
-        .sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
+        .map(f => f.replace(".json", ""));
 
-    console.log(`[Backfill] Processing ${classifiedPatches.length} patches.`);
+    console.log(`[Zero-Trust Backfill] Processing ${classifiedPatches.length} patches.`);
 
     // 1. Fetch ALL winrate data once
     const bracketData: Record<string, Record<number, any>> = {};
@@ -122,10 +121,6 @@ async function main() {
         await sleep(1000); 
     }
 
-    // Identify the absolute latest ID available
-    const availableIds = Object.keys(bracketData["DIVINE"]).map(Number).sort((a, b) => b - a);
-    const latestId = availableIds[0];
-
     for (const version of classifiedPatches) {
         const stratzVersionId = rawPatchMap[version];
         let finalWinrateData: any = null;
@@ -136,15 +131,11 @@ async function main() {
             for (const bracketName of Object.keys(BRACKETS)) {
                 finalWinrateData[bracketName] = bracketData[bracketName][stratzVersionId];
             }
-            console.log(`[Backfill] ${version} -> Found exact match (ID: ${stratzVersionId})`);
+            console.log(`[Integrity] ${version} -> Found exact match (ID: ${stratzVersionId})`);
         } else {
-            // NO MATCH - USE LATEST LIVE DATA AS REPRESENTATIVE
-            // This fills the gaps for 7.41 series with the most recent performance stats
+            // NO MATCH - EMPTY (No Fallbacks allowed for temporal integrity)
+            console.log(`[Integrity] ${version} -> Unmapped. Clearing winrate data.`);
             finalWinrateData = {};
-            for (const bracketName of Object.keys(BRACKETS)) {
-                finalWinrateData[bracketName] = bracketData[bracketName][latestId];
-            }
-            console.log(`[Backfill] ${version} -> Unmapped. Using latest live period data (ID: ${latestId})`);
         }
 
         const outPath = path.join(OUTPUT_DIR, `winrates-${version}.json`);
@@ -153,11 +144,13 @@ async function main() {
         const patchRecord = await prisma.patch.findUnique({ where: { version } });
         if (patchRecord) {
             await prisma.winrateSnapshot.deleteMany({ where: { patchId: patchRecord.id } });
-            await updateDatabase(patchRecord.id, finalWinrateData, heroMapping);
+            if (Object.keys(finalWinrateData).length > 0) {
+                await updateDatabase(patchRecord.id, finalWinrateData, heroMapping);
+            }
         }
     }
 
-    console.log("[Backfill] Completed. Current period data restored to all recent patches.");
+    console.log("[Zero-Trust Backfill] Completed. Temporal integrity restored.");
     await prisma.$disconnect();
 }
 

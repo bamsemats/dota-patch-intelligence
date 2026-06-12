@@ -8,146 +8,106 @@ Dota 2 Patch Intelligence is a high-fidelity data pipeline and visualization pla
 
 ## 🚀 Key Features
 
-*   **Synergistic Meta Analysis:** Powered by LLMs (Gemini 2.5 Flash), the system identifies how systemic changes (economy, map) synergize with hero-specific buffs to shift the meta.
-*   **Contextual Impact Scoring:** Evaluates the *actual weight* of changes against hero kits and game phases (Laning, Mid, Late), rather than just counting buffs/nerfs.
-*   **Structured Parsing:** Automatically decomposes unstructured Valve patch strings into precise metrics (e.g., "Mana Cost", "Base Damage") with polarity detection.
-*   **Thematic Insights:** Clear outlines of major gameplay shifts affecting specific roles and playstyles.
-*   **Interactive Dashboard:** A filterable frontend built with Next.js and Vanilla CSS to browse winners, losers, and specific changes using a Dota-inspired palette.
-*   **Official Data Source:** Consumes directly from the official Valve Datafeed API for 100% accuracy.
+*   **Synergistic Meta Analysis:** Multi-LLM hybrid engine (Gemini 2.5 Flash & Claude 4 Sonnet) that identifies how systemic changes (economy, map) synergize with hero buffs to shift the meta.
+*   **Net Balance Trajectory:** Tracks the cumulative power shifts of heroes across 7 strategic dimensions (Farming, Mobility, Teamfight, etc.) since patch 7.33.
+*   **Historical Winrate Analytics:** Visualizes hero performance trends across multiple rank brackets (Herald to Divine) over the entire patch timeline.
+*   **Role-Specific Winners & Losers:** Deep analytical breakdown of the top 3 heroes impacted by each patch for every role (Carry, Mid, Offlane, Soft Support, Hard Support).
+*   **Temporal Intelligence:** The analysis engine considers previous patch states to determine if current changes are amplifying or correcting recent meta trends.
+*   **High-Fidelity Grounding:** Strict mechanical rules ensure AI insights are competitively valid and factually grounded in Dota 2 mechanics.
 
 ---
 
-## 🏗️ Architecture
+## 🏗️ Architecture (v2.2)
 
-The system is built on a "Fact vs. Inference" separation principle, ensuring data integrity and explainable analysis.
+The system uses a **Static-to-Dynamic Hybrid** architecture, combining the power of a relational database with the cost-efficiency of static hosting.
 
-1.  **Ingestion Layer:** Discovers patches via Steam News and fetches raw JSON from Valve.
-2.  **Parsing Engine:** Resolves IDs (Heroes/Items/Abilities) and decomposes text into structured facts.
-3.  **Classification Layer:** 
-    *   *Quantitative:* Rule-based polarity detection (Buff/Nerf/Rework).
-    *   *Qualitative:* LLM-driven contextual impact and magnitude scoring.
-4.  **Meta Analysis Engine:** Synthesizes overarching thematic shifts and synergistic relationships.
-5.  **Frontend Layer:** A static Next.js application designed for rapid browsing and deep-dive analysis.
+1.  **Ingestion Layer:** Discovers patches via Valve's official JSON datafeed and Stratz API.
+2.  **Intelligence Engine:** A tiered classification pipeline (Deterministic -> Semantic -> AI) that models balance changes into structured facts.
+3.  **Modeling Layer:** Calculates 7-dimensional **Hero Feature Vectors** and aggregates **Cumulative Balance Histories**.
+4.  **Meta Analysis Layer:** LLMs synthesize high-level themes with **Temporal Context** and **Mechanical Grounding**.
+5.  **Serving Layer:** A local **Fastify API** and **PostgreSQL** database powered by **Prisma ORM**.
+6.  **Frontend:** A **Next.js** application optimized for **Static Site Generation (SSG)** with local-file failbacks for CI/CD robustness.
 
 ---
 
-## 🛠️ Data Pipeline
+## 🛠️ Data Pipeline & CLI
 
 The project operates as a multi-stage CLI-driven pipeline:
 
-1.  **Discovery:** `npm run patch:discovery` — Detects new patches on Steam and fetches the raw JSON datafeed.
-2.  **Mapping:** `npm run patch:mappings` — Builds ID-to-name maps for heroes, abilities, and items from the Valve API.
-3.  **Parsing:** `npm run patch:parse` — Decomposes raw notes into structured JSON changes with schema versioning.
-4.  **Classification:** `npm run patch:classify` — Rule-based polarity detection.
-5.  **Analytics:** `npm run patch:analyze` — Aggregates hero/item net scores for statistical summaries.
-6.  **Meta Analysis:** `npm run patch:meta` — Single-call synergistic LLM analysis for deep strategic insights.
-7.  **Impact Scoring:** `npm run patch:impact` — (Optional) Per-hero qualitative analysis.
+### Core Pipeline
+1.  **Ingestion:** `npm run patch:discovery` — Fetches raw data from Valve.
+2.  **Mapping:** `npm run patch:mappings` — Builds ID-to-name maps.
+3.  **Parsing:** `npm run patch:parse` — Decomposes raw notes into structured facts.
+4.  **Vectors:** `npm run patch:vectors` — Calculates 7D identity shifts for heroes.
+5.  **Winrates:** `npm run patch:fetch-winrates` — Syncs historical performance data from Stratz.
+6.  **History:** `npm run patch:generate-history` — Builds cumulative hero identity archives.
+
+### Intelligence Layer (LLM)
+7.  **Meta Analysis:** `npm run patch:meta -- <version>` — Generates high-fidelity strategic summaries.
+8.  **Historical Backfill:** `npm run patch:meta-backfill` — Runs the high-fidelity sequential re-analysis across the entire timeline.
+
+### Database & Serving
+9.  **Seed Database:** `npm run db:seed` — Syncs all JSON intelligence into the local PostgreSQL database.
+10. **Start API:** `npm run dev --prefix apps/api` — Starts the Fastify server.
+11. **Start UI:** `npm run dev --prefix apps/frontend` — Starts the Next.js dev server.
 
 ---
 
 ## 💻 Tech Stack
 
 *   **Frontend:** Next.js (Static Export), TypeScript, Vanilla CSS (CSS Modules).
-*   **Pipeline:** Node.js, TypeScript, Google Gen AI SDK (Gemini).
+*   **API:** Fastify, Prisma ORM, PostgreSQL (via Docker).
+*   **Intelligence:** Anthropic SDK (Claude 4), Google Gen AI (Gemini 2.5), Valve Datafeed, Stratz GraphQL.
 *   **Deployment:** GitHub Actions, GitHub Pages.
-*   **Data Format:** Hierarchical JSON (Transitioning to PostgreSQL).
 
 ---
 
-## 📊 Data Flow & Analysis
+## 📊 Data Flow
 
 ```mermaid
 graph TD
     subgraph "Data Acquisition"
         A[Steam News] --> B[Valve JSON Datafeed]
         B --> C[ID Mapping Resolver]
-    end
-
-    subgraph "Parsing & Extraction"
-        C --> D[Structured Parser]
-        D --> E[Atomic Change List]
+        S[Stratz API] --> W[Winrate Snapshots]
     end
 
     subgraph "Intelligence Engine"
-        E --> F[Tiered Classification]
-        F --> G[Balance Ontology Weighting]
-        G --> H[Hero Feature Vector Deltas]
+        C --> D[Structured Parser]
+        D --> E[Tiered Classification]
+        E --> F[Balance Ontology Weighting]
+        F --> G[Hero Feature Vectors]
+    end
+
+    subgraph "Historical Layer"
+        G --> H[Cumulative Hero Trajectories]
+        W --> H
+        H --> I[Prisma / PostgreSQL]
     end
 
     subgraph "Strategic Analysis"
-        H --> I[Meta Simulation Engine]
-        I --> J[LLM Meta Analyzer]
-        J --> K[Thematic Shifts & Synergy Report]
+        I --> J[Meta Analysis Engine]
+        J --> K[Claude 4 / Gemini 2.5]
+        K --> L[Context-Aware Meta Reports]
     end
 
     subgraph "Frontend Presentation"
-        K --> L[Hero History Archive]
         L --> M[Next.js Static Generation]
-        M --> N[Patch Summary Landing]
-        M --> O[Full Notes View]
-        M --> P[Hero History Pages]
-        M --> Q[Global Search Index]
+        M --> N[Patch Intelligence Landing]
+        M --> O[Hero Balance Archives]
+        M --> P[Global Semantic Search]
     end
 ```
 
 ---
 
-## 🗺️ Roadmap
+## 🗺️ Roadmap Status
 
-### Phase 1 — Foundation (Complete)
-*   Establish project structure and core documentation.
-*   Define initial architecture and data models.
-
-### Phase 2 — Data Acquisition (Complete)
-*   Automated ingestion from Valve JSON Datafeed.
-*   Historical patch archival.
-
-### Phase 3 — Parsing Engine (Complete)
-*   Structured entity resolution and numerical change extraction.
-*   Pipeline validation framework implemented.
-
-### Phase 4 — Quantitative Classification (Complete)
-*   Deterministic rule-based polarity detection (Buff/Nerf/Rework).
-
-### Phase 5 — Contextual Impact & Thematic Analysis (Complete)
-*   LLM-driven Synergistic Meta Analyzer for strategic insights.
-*   Systemic impact evaluation (Economy/Map changes).
-
-### Phase 6 — Frontend MVP (Complete)
-*   Interactive dashboard with Dota-inspired styling.
-*   Hero/Item lists with synergistic winners and losers.
-
-### Phase 7 — CI/CD & Initial Deployment (Complete)
-*   Automated build and deploy pipeline via GitHub Actions.
-*   Site hosted on GitHub Pages.
-
-### Phase 8 — Intelligence Foundation (Complete)
-*   Tiered Classification Engine (Numeric/Semantic/Unknown).
-*   Semantic & Balance Ontology matching.
-
-### Phase 9 — Advanced Modeling (Complete)
-*   Hero Feature Vectors (7D Identity Model).
-*   Automatic vector modification based on patch notes.
-
-### Phase 10 — Strategic Analytics (Complete)
-*   Meta Impact Simulation (Draft-level reasoning).
-*   Winrate Calibration loop for weight auto-tuning.
-
-### Phase 11 — Frontend Polish & Advanced UX (Complete)
-*   Dual-view patch architecture (Strategic Summary & Classic Notes).
-*   Dedicated Hero History pages with trend visualization.
-*   Global Cross-Patch Search.
-
-### Phase 11.5 — UI/UX Refinement & Mobile Optimization (In Progress)
-*   **Mobile Responsiveness:** Full dashboard optimization for small screens.
-*   **Aesthetic Polish:** Fine-tuning colors, typography, and spacing.
-*   **Additional Content:** New static pages (About, Glossary, etc.).
-
-### Phase 12 — Backend API & Database Migration (Up Next)
-*   Transition from local JSON files to PostgreSQL.
-*   Node.js/Fastify API for dynamic data serving.
-
----
+- **Phases 1-12**: [COMPLETE] Foundation, Ingestion, Parsing, Vectors, Winrates, UI/UX, Local DB & API.
+- **Phase 14**: [COMPLETE] Historical Backfill (Initial High-Fidelity Run).
+- **Phase 14.5**: [IN PROGRESS] Intuitive Meta Correction (Gemini Re-run).
+- **Phase 15**: [UP NEXT] Cross-Patch Trend Validation & Temporal Intelligence.
+- **Phase 16**: [FUTURE] Cloud Infrastructure & Dynamic Hosting Pivot.
 
 ---
 
