@@ -239,6 +239,21 @@ Implement a "Dual-Write" strategy for long-running backfills.
 Reasoning:
 Historical analysis results must be saved to both the `research-output/` file system (as a permanent, portable archive) and the `MetaAnalysis` database table (for immediate frontend consumption). This ensures data durability and immediate feature availability.
 
+# 2026-06-12 (Data Resilience)
+
+Status:
+Accepted
+
+Decision:
+Prioritize Third-Party Aggregators (Stratz/OpenDota) for Winrate Data over Official Valve API.
+
+Reasoning:
+The official Valve Web API provides raw match data but does not offer pre-aggregated winrates. Building a custom aggregator would require significant engineering effort (scraping and indexing thousands of matches daily). Third-party aggregators provide this data via stable GraphQL/REST APIs. To ensure resilience, the system will implement a multi-source fallback (Stratz -> OpenDota -> Live Stats) in Phase 16.
+
+Alternatives Considered:
+*   Building a custom match scraper (rejected for MVP due to infrastructure costs).
+*   Scraping Dotabuff/OpenDota web pages (rejected due to fragility).
+
 ---
 
 # Open Decisions

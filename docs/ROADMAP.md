@@ -302,7 +302,19 @@ Goals:
 
 ---
 
-# Phase 16 — Cloud Infrastructure & Dynamic Hosting (The "Option B" Pivot)
+# Phase 16 — Advanced Resilience & Data Sourcing
+
+Status: Future
+
+Goals:
+* **Multi-Source Winrate Aggregation:** Integrate **OpenDota API** as a secondary source to fill Stratz data gaps.
+* **Live Data Fallback:** Implement a "Live Period" fetcher that pulls current global hero stats to represent the most recent patch when explicit versioned snapshots are not yet available.
+* **Version Aliasing:** Build an automated mapping table to "alias" minor sub-patches (e.g., 7.41c) to their parent versions (7.41) to ensure the UI is never empty.
+* **Official API Exploration:** Investigate the feasibility of a lightweight "Match Scraper" using the official Valve Web API (`GetMatchHistory`) to calculate real-time winrates for the very latest revisions.
+
+---
+
+# Phase 17 — Cloud Infrastructure & Dynamic Hosting (The "Option B" Pivot)
 
 ---
 
