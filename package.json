@@ -18,6 +18,7 @@
     "patch:analyze": "tsx apps/scripts/analyzePatch.ts",
     "patch:impact": "tsx apps/scripts/impactScorer.ts",
     "patch:meta": "tsx apps/scripts/metaAnalyzer.ts",
+    "patch:meta-backfill": "tsx apps/scripts/backfillMeta.ts",
     "patch:review": "tsx apps/scripts/reviewUnknowns.ts",
     "patch:vectors": "tsx apps/scripts/calculateVectors.ts",
     "patch:simulate": "tsx apps/scripts/simulateMeta.ts",
@@ -39,8 +40,17 @@
   },
   "homepage": "https://github.com/bamsemats/dota-patch-intelligence#readme",
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.104.1",
+    "@fastify/cors": "^11.2.0",
     "@google/genai": "^2.8.0",
     "create-next-app": "^16.2.7",
-    "dotenv": "^17.4.2"
+    "dotenv": "^17.4.2",
+    "fastify": "^5.8.5",
+    "fastify-cors": "^6.0.3"
+  },
+  "devDependencies": {
+    "@prisma/client": "^5.22.0",
+    "prisma": "^5.22.0",
+    "ts-node": "^10.9.2"
   }
 }

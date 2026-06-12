@@ -112,13 +112,6 @@ The frontend is a Next.js application optimized for Static Site Generation (SSG)
 
 # Core Architectural Components
 
-
-Steam News → Discovery Layer → Valve JSON Datafeed API → ID Mapping Resolver → Structured Parser → Tiered Classifications (Numeric/Semantic) → Strategic Weighting (Balance Ontology) → Vector Modification (Hero Feature Vectors) → Meta Simulation → Meta Conclusions
-
----
-
-# Core Architectural Components
-
 ## 1. Tiered Classification Engine
 Ensures data integrity by separating deterministic facts from qualitative inferences.
 *   **Numeric:** 100% deterministic (e.g., Mana 100 → 80).
@@ -133,8 +126,10 @@ The knowledge base of the system.
 ## 3. Modeling Layer (Hero Feature Vectors)
 Quantifies a hero's strategic identity across 7 dimensions (Farming, Mobility, etc.). Patch changes modify these vectors, enabling the tracking of "Hero Identity Shift" over time.
 
-## 4. Meta Simulation Engine
-The highest intelligence layer. Reasons about patch changes at a draft and strategy level, identifying synergistic winners and losers where multiple small changes coalesce into a major meta shift.
+## 4. Meta Analysis Layer
+Structured metadata and thematic insights are processed by LLMs (Anthropic Claude 4 Sonnet).
+*   **Temporal Context:** The analysis engine considers the state of the *previous* patch analysis to provide a relative assessment of meta shifts.
+*   **Mechanical Grounding:** Strict system prompts prevent hallucinations regarding item builds and hero interactions.
 
 ---
 
@@ -167,5 +162,5 @@ This architecture is supported by the following detailed design and specificatio
 
 # Status
 
-Current Status: Architecture Finalized (v2.0)
-Last Updated: 2026-06-08
+Current Status: Architecture Finalized (v2.2)
+Last Updated: 2026-06-12

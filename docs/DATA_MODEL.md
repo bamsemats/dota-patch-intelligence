@@ -655,13 +655,40 @@ By storing raw strings alongside their structured counterparts, the system enabl
 
 ---
 
+# FeatureVector
+
+Quantifies a hero's strategic identity across 7 dimensions.
+
+Fields:
+- id
+- patchId
+- entityId (Hero)
+- farming
+- mobility
+- survivability
+- teamfight
+- laning
+- siege
+- utility
+
+# WinrateSnapshot
+
+Historical winrate data for a hero in a specific patch and rank bracket.
+
+Fields:
+- id
+- patchId
+- entityId (Hero)
+- bracket (e.g., "HERALD", "DIVINE")
+- winrate
+- matchCount
+
+---
+
 # Future Data Opportunities
 
 Potential future entities:
 
-* Match Statistics
-* Hero Win Rates
-* Hero Pick Rates
 * Professional Match Data
 * User Accounts
 * User Hero Tracking

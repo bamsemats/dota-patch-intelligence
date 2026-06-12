@@ -191,17 +191,64 @@ The structured balance knowledge graph (Ontologies + Feature Vectors) is the cor
 
 ---
 
+# 2026-06-12
+
+Status:
+Accepted
+
+Decision:
+Enforce "Mechanical Fidelity" and "Temporal Context" in Meta Analysis.
+
+Reasoning:
+To prevent LLM hallucinations (e.g., suggesting nonsensical item builds or procs), the analyzer must be restricted by a "Professional Coach" framework. Furthermore, to provide true intelligence, it must assess changes *relative* to the recent patch history, acknowledging when a buff is merely a correction for a recent nerf.
+
+# 2026-06-11
+
+Status:
+Accepted
+
+Decision:
+Pivot to a "Static-to-Dynamic" Hybrid Architecture.
+
+Reasoning:
+To maintain the cost-efficiency of GitHub Pages while leveraging the power of a relational database, the system will use a local PostgreSQL/Prisma/Fastify stack during development and build-time. The Next.js frontend will fetch all required data from the local API during the `npm run build` process to generate a fully static, optimized distribution.
+
+Alternatives Considered:
+*   Fully dynamic SSR (too expensive for early-stage hosting).
+*   Pure flat-file architecture (lacks querying power and data integrity).
+
+# 2026-06-12
+
+Status:
+Accepted
+
+Decision:
+Enforce "Mechanical Fidelity" and "Temporal Context" in Meta Analysis.
+
+Reasoning:
+To prevent LLM hallucinations (e.g., suggesting nonsensical item builds or procs), the analyzer must be restricted by a "Professional Coach" framework. Furthermore, to provide true intelligence, it must assess changes *relative* to the recent patch history, acknowledging when a buff is merely a correction for a recent nerf.
+
+# 2026-06-11
+
+Status:
+Accepted
+
+Decision:
+Implement a "Dual-Write" strategy for long-running backfills.
+
+Reasoning:
+Historical analysis results must be saved to both the `research-output/` file system (as a permanent, portable archive) and the `MetaAnalysis` database table (for immediate frontend consumption). This ensures data durability and immediate feature availability.
+
+---
+
 # Open Decisions
 
 The following decisions remain unresolved:
 
-* Patch data source
-* Hosting platform
-* Authentication requirements
-* AI provider
-* Search implementation
-* Caching strategy
-* Deployment architecture
+* Hosting platform for the "Option B" pivot (Cloud Database).
+* Authentication requirements (if user accounts are added in Phase 16).
+* AI provider selection for production (currently testing with Gemini-2.5-Flash).
+* Caching strategy for live cloud API.
 
 ---
 

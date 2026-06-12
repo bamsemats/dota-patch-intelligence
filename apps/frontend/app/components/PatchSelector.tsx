@@ -1,6 +1,6 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import styles from "./EntityList.module.css";
 
 interface PatchSelectorProps {
@@ -10,6 +10,7 @@ interface PatchSelectorProps {
 
 export default function PatchSelector({ availablePatches, currentPatch }: PatchSelectorProps) {
   const router = useRouter();
+  const pathname = usePathname();
 
   return (
     <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
@@ -19,12 +20,15 @@ export default function PatchSelector({ availablePatches, currentPatch }: PatchS
         value={currentPatch}
         onChange={(e) => {
           const val = e.target.value;
-          // Navigate to the patch page. 
-          // Next.js router automatically handles the basePath configured in next.config.ts
+          
+          // Check if we are currently on the 'full-notes' view
+          const isFullNotes = pathname.endsWith('/full-notes');
+          const suffix = isFullNotes ? '/full-notes' : '';
+
           if (val === availablePatches[0]) {
-            router.push("/");
+            router.push(`/${suffix}`);
           } else {
-            router.push(`/patch/${val}`);
+            router.push(`/patch/${val}${suffix}`);
           }
         }}
         style={{ 

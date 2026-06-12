@@ -28,12 +28,12 @@ export default function SummaryTabs({ metaData }: SummaryTabsProps) {
         >
           Overall Synergies
         </button>
-        {metaData.roleSpecificWinners && (
+        {(metaData.roleSpecificWinners || metaData.roleSpecificLosers) && (
           <button 
             className={`${styles.tabButton} ${activeTab === "roles" ? styles.active : ""}`}
             onClick={() => setActiveTab("roles")}
           >
-            Role-Specific Winners
+            Role Insights
           </button>
         )}
       </div>
@@ -87,30 +87,59 @@ export default function SummaryTabs({ metaData }: SummaryTabsProps) {
           </div>
         )}
 
-        {activeTab === "roles" && metaData.roleSpecificWinners && (
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "20px" }}>
+        {activeTab === "roles" && (metaData.roleSpecificWinners || metaData.roleSpecificLosers) && (
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "20px" }}>
             {["Carry", "Mid", "Offlane", "SoftSupport", "HardSupport"].map(role => {
-              const winners = metaData.roleSpecificWinners[role];
-              if (!winners || winners.length === 0) return null;
+              const winners = metaData.roleSpecificWinners ? metaData.roleSpecificWinners[role] : [];
+              const losers = metaData.roleSpecificLosers ? metaData.roleSpecificLosers[role] : [];
+              
+              if ((!winners || winners.length === 0) && (!losers || losers.length === 0)) return null;
               
               const roleDisplay = role.replace(/([A-Z])/g, ' $1').trim(); // e.g. "SoftSupport" -> "Soft Support"
               
               return (
                 <div key={role} style={{ background: "var(--bg-panel)", padding: "20px", borderRadius: "10px", border: "1px solid var(--border-color)" }}>
-                  <h3 style={{ color: "var(--color-buff)", marginTop: 0, marginBottom: "15px", fontSize: "1.2rem", display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <span style={{ display: 'inline-block', width: '8px', height: '8px', borderRadius: '50%', background: 'var(--color-buff)' }}></span>
+                  <h3 style={{ color: "var(--color-artifact)", marginTop: 0, marginBottom: "20px", fontSize: "1.4rem", borderBottom: "1px solid var(--border-color)", paddingBottom: "10px" }}>
                     {roleDisplay}
                   </h3>
-                  <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-                    {winners.map((winner: any, idx: number) => (
-                      <div key={idx}>
-                        <Link href={`/hero/${winner.hero.replace(/[^a-z0-9]/gi, '_').toLowerCase()}`} style={{ textDecoration: 'none' }}>
-                           <h4 style={{ margin: "0 0 4px 0", color: "var(--color-epic)", cursor: 'pointer' }}>{winner.hero}</h4>
-                        </Link>
-                        <p style={{ margin: 0, fontSize: "0.85rem", color: "#ccc", lineHeight: "1.4" }}>{winner.explanation}</p>
+                  
+                  {winners && winners.length > 0 && (
+                    <div style={{ marginBottom: "20px" }}>
+                      <h4 style={{ color: "var(--color-buff)", marginTop: 0, marginBottom: "15px", fontSize: "1.1rem", display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        <span style={{ display: 'inline-block', width: '8px', height: '8px', borderRadius: '50%', background: 'var(--color-buff)' }}></span>
+                        Top Winners
+                      </h4>
+                      <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+                        {winners.map((winner: any, idx: number) => (
+                          <div key={idx}>
+                            <Link href={`/hero/${winner.hero.replace(/[^a-z0-9]/gi, '_').toLowerCase()}`} style={{ textDecoration: 'none' }}>
+                               <h5 style={{ margin: "0 0 4px 0", color: "var(--color-epic)", cursor: 'pointer', fontSize: "1rem" }}>{winner.hero}</h5>
+                            </Link>
+                            <p style={{ margin: 0, fontSize: "0.85rem", color: "#ccc", lineHeight: "1.4" }}>{winner.explanation}</p>
+                          </div>
+                        ))}
                       </div>
-                    ))}
-                  </div>
+                    </div>
+                  )}
+
+                  {losers && losers.length > 0 && (
+                    <div>
+                      <h4 style={{ color: "var(--color-nerf)", marginTop: 0, marginBottom: "15px", fontSize: "1.1rem", display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        <span style={{ display: 'inline-block', width: '8px', height: '8px', borderRadius: '50%', background: 'var(--color-nerf)' }}></span>
+                        Top Losers
+                      </h4>
+                      <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+                        {losers.map((loser: any, idx: number) => (
+                          <div key={idx}>
+                            <Link href={`/hero/${loser.hero.replace(/[^a-z0-9]/gi, '_').toLowerCase()}`} style={{ textDecoration: 'none' }}>
+                               <h5 style={{ margin: "0 0 4px 0", color: "var(--color-epic)", cursor: 'pointer', fontSize: "1rem" }}>{loser.hero}</h5>
+                            </Link>
+                            <p style={{ margin: 0, fontSize: "0.85rem", color: "#ccc", lineHeight: "1.4" }}>{loser.explanation}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               );
             })}

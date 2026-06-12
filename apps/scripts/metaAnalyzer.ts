@@ -24,7 +24,7 @@ CRITICAL INSTRUCTION: Do not just aggregate hero changes. You MUST look for **re
 - If a support item is buffed, look for supports whose stats were also altered.
 - Look for cascading effects where a system change (like map layout or Roshan) combined with a specific hero tweak results in a massive shift in viability.
 
-ROLE-SPECIFIC ANALYSIS: You must identify the top 3 winners for each of the 5 roles (Carry, Mid, Offlane, Soft Support, Hard Support). These should be heroes whose specific changes synergize most strongly with the broader patch adjustments for that role.
+ROLE-SPECIFIC ANALYSIS: You must identify the top 3 winners AND the top 3 losers for each of the 5 roles (Carry, Mid, Offlane, Soft Support, Hard Support). Winners are heroes whose specific changes synergize most strongly with the broader patch adjustments. Losers are heroes hit hardest by nerfs or systemic shifts that negatively impact their role.
 
 Your output must be a highly analytical breakdown of the patch's true impact.`;
 
@@ -67,6 +67,17 @@ const responseSchema = {
             },
             required: ["Carry", "Mid", "Offlane", "SoftSupport", "HardSupport"]
         },
+        roleSpecificLosers: {
+            type: Type.OBJECT,
+            properties: {
+                Carry: { type: Type.ARRAY, items: { type: Type.OBJECT, properties: { hero: { type: Type.STRING }, explanation: { type: Type.STRING } }, required: ["hero", "explanation"] } },
+                Mid: { type: Type.ARRAY, items: { type: Type.OBJECT, properties: { hero: { type: Type.STRING }, explanation: { type: Type.STRING } }, required: ["hero", "explanation"] } },
+                Offlane: { type: Type.ARRAY, items: { type: Type.OBJECT, properties: { hero: { type: Type.STRING }, explanation: { type: Type.STRING } }, required: ["hero", "explanation"] } },
+                SoftSupport: { type: Type.ARRAY, items: { type: Type.OBJECT, properties: { hero: { type: Type.STRING }, explanation: { type: Type.STRING } }, required: ["hero", "explanation"] } },
+                HardSupport: { type: Type.ARRAY, items: { type: Type.OBJECT, properties: { hero: { type: Type.STRING }, explanation: { type: Type.STRING } }, required: ["hero", "explanation"] } }
+            },
+            required: ["Carry", "Mid", "Offlane", "SoftSupport", "HardSupport"]
+        },
         synergisticLosers: {
             type: Type.ARRAY,
             items: {
@@ -80,7 +91,7 @@ const responseSchema = {
             description: "Entities disproportionately hurt by combined changes."
         }
     },
-    required: ["metaShifts", "synergisticWinners", "roleSpecificWinners", "synergisticLosers"]
+    required: ["metaShifts", "synergisticWinners", "roleSpecificWinners", "roleSpecificLosers", "synergisticLosers"]
 };
 
 async function generateMetaAnalysis(patchData: any, retries = 4, backoff = 10000): Promise<any> {

@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "tsx server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,7 +12,11 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "prisma": "^5.22.0",
     "tsx": "^4.22.4",
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.22.0"
   }
 }

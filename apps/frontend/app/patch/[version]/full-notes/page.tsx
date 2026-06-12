@@ -1,5 +1,3 @@
-import { promises as fs } from "node:fs";
-import path from "node:path";
 import Link from "next/link";
 import PatchSelector from "../../../components/PatchSelector";
 import FullNotesTabs from "./FullNotesTabs";
@@ -8,67 +6,47 @@ interface PageProps {
   params: Promise<{ version: string }>;
 }
 
-const researchDir = path.resolve(process.cwd(), "../../research-output");
-const patchesDir = path.join(researchDir, "classified-patches");
+const API_BASE = process.env.API_URL || "http://localhost:8080";
 
 export async function generateStaticParams() {
-  const files = await fs.readdir(patchesDir);
-  return files
-    .filter(f => f.endsWith(".json"))
-    .map(f => ({
-      version: f.replace(".json", ""),
+  try {
+    const res = await fetch(`${API_BASE}/api/patches`);
+    if (!res.ok) return [];
+    const patches = await res.json();
+    return patches.map((p: any) => ({
+      version: p.version,
     }));
+  } catch (error) {
+    console.error("Failed to generate static params:", error);
+    return [];
+  }
 }
 
 export default async function PatchNotesPage({ params }: PageProps) {
   const { version: patchVersion } = await params;
   
-  const files = await fs.readdir(patchesDir);
-  const availablePatches = files
-    .filter(f => f.endsWith(".json"))
-    .map(f => f.replace(".json", ""))
-    .sort((a, b) => b.localeCompare(a, undefined, { numeric: true, sensitivity: 'base' }));
+  let availablePatches: string[] = [];
+  try {
+    const res = await fetch(`${API_BASE}/api/patches`);
+    if (res.ok) {
+      const patches = await res.json();
+      availablePatches = patches.map((p: any) => p.version);
+    }
+  } catch (e) {
+    console.error("Failed to fetch available patches");
+  }
 
-  const patchPath = path.join(researchDir, "classified-patches", `${patchVersion}.json`);
   let patchData = null;
   try {
-    const rawPatch = await fs.readFile(patchPath, "utf-8");
-    patchData = JSON.parse(rawPatch);
+    const res = await fetch(`${API_BASE}/api/patches/${patchVersion}`);
+    if (res.ok) {
+      patchData = await res.json();
+    }
   } catch (e) {
-    console.error("Could not load patch data:", e);
+    console.error("Failed to fetch patch data:", e);
   }
 
   if (!patchData) return <div>Patch not found.</div>;
-
-  // Load Feature Vectors
-  const vectorPath = path.join(researchDir, "feature-vectors", `vectors-${patchVersion}.json`);
-  let vectorData = null;
-  try {
-    const rawVectors = await fs.readFile(vectorPath, "utf-8");
-    vectorData = JSON.parse(rawVectors);
-  } catch (e) {
-    // No vectors for this patch
-  }
-
-  // Load Winrate Data
-  const winratePath = path.join(researchDir, "calibration-data", `winrates-${patchVersion}.json`);
-  let winrateData = null;
-  try {
-    const rawWinrate = await fs.readFile(winratePath, "utf-8");
-    winrateData = JSON.parse(rawWinrate);
-  } catch (e) {
-    // No winrate for this patch
-  }
-
-  // Load Hero Mapping
-  const mappingPath = path.join(researchDir, "mappings", "heroes.json");
-  let heroMapping = null;
-  try {
-    const rawMapping = await fs.readFile(mappingPath, "utf-8");
-    heroMapping = JSON.parse(rawMapping);
-  } catch (e) {
-    // No mapping
-  }
 
   // Process Data
   const heroMap = new Map<string, any>();
@@ -76,56 +54,91 @@ export default async function PatchNotesPage({ params }: PageProps) {
   const neutralMap = new Map<string, any>();
   const generalMap = new Map<string, any>();
 
-  if (patchData && patchData.changes) {
-    for (const change of patchData.changes) {
-      const type = change.classification?.classificationType;
-      let netScoreDelta = 0;
-      if (type === "Buff") netScoreDelta = 1;
-      if (type === "Nerf") netScoreDelta = -1;
+  // Extract Winrates mapping for the HeroList component to use
+  const winrateData: Record<string, Record<string, any>> = {};
+  if (patchData.winrateSnapshots) {
+    for (const wr of patchData.winrateSnapshots) {
+      const rank = wr.bracket;
+      const heroIdStr = wr.entity.id.toString(); // Map entity id to hero mapping loosely
+      if (!winrateData[rank]) winrateData[rank] = {};
+      winrateData[rank][heroIdStr] = {
+        winrate: wr.winrate,
+        matchCount: wr.matchCount
+      };
+    }
+  }
 
-      if (change.category === "hero") {
-        if (!heroMap.has(change.entityName)) {
-          heroMap.set(change.entityName, { heroName: change.entityName, changes: [], netScore: 0, vectorDelta: null });
+  // Create a minimal hero mapping for the component
+  const heroMapping: Record<string, string> = {};
+  if (patchData.winrateSnapshots) {
+    for (const wr of patchData.winrateSnapshots) {
+      heroMapping[wr.entity.id.toString()] = wr.entity.name;
+    }
+  }
+
+  if (patchData.changes) {
+    for (const change of patchData.changes) {
+      const entityName = change.entity.name;
+      const category = change.entity.type.toLowerCase();
+      
+      const formattedChange = {
+        category,
+        entityName,
+        subEntityName: change.subEntityName,
+        rawNote: change.rawNote,
+        classification: {
+          classificationType: change.classificationType,
+          reasoning: change.reasoning,
+          strategicWeight: change.strategicWeight
         }
-        const hero = heroMap.get(change.entityName);
-        hero.changes.push(change);
-        const weightObj = change.classification?.strategicWeight;
-        const weight = typeof weightObj === 'object' ? (weightObj['Divine'] || 5) : (weightObj || 5);
-        hero.netScore += (weight * netScoreDelta);
+      };
+
+      if (category === "hero") {
+        if (!heroMap.has(entityName)) {
+          heroMap.set(entityName, { heroName: entityName, changes: [], netScore: 0, vectorDelta: null });
+        }
+        const hero = heroMap.get(entityName);
+        hero.changes.push(formattedChange);
+        hero.netScore += change.netScoreDelta;
       } 
-      else if (change.category === "item") {
-        if (!itemMap.has(change.entityName)) {
-          itemMap.set(change.entityName, { itemName: change.entityName, itemType: "Shop Item", changes: [], netScore: 0 });
+      else if (category === "item") {
+        if (!itemMap.has(entityName)) {
+          itemMap.set(entityName, { itemName: entityName, itemType: "Shop Item", changes: [], netScore: 0 });
         }
-        const item = itemMap.get(change.entityName);
-        item.changes.push(change);
-        const weightObj = change.classification?.strategicWeight;
-        const weight = typeof weightObj === 'object' ? (weightObj['Divine'] || 5) : (weightObj || 5);
-        item.netScore += (weight * netScoreDelta);
+        const item = itemMap.get(entityName);
+        item.changes.push(formattedChange);
+        item.netScore += change.netScoreDelta;
       }
-      else if (change.category === "neutral") {
-        if (!neutralMap.has(change.entityName)) {
-          neutralMap.set(change.entityName, { itemName: change.entityName, itemType: "Neutral Item", changes: [], netScore: 0 });
+      else if (category === "neutral") {
+        if (!neutralMap.has(entityName)) {
+          neutralMap.set(entityName, { itemName: entityName, itemType: "Neutral Item", changes: [], netScore: 0 });
         }
-        const item = neutralMap.get(change.entityName);
-        item.changes.push(change);
-        const weightObj = change.classification?.strategicWeight;
-        const weight = typeof weightObj === 'object' ? (weightObj['Divine'] || 5) : (weightObj || 5);
-        item.netScore += (weight * netScoreDelta);
+        const item = neutralMap.get(entityName);
+        item.changes.push(formattedChange);
+        item.netScore += change.netScoreDelta;
       }
-      else if (change.category === "general") {
-        if (!generalMap.has(change.entityName)) {
-          generalMap.set(change.entityName, { sectionName: change.entityName, changes: [] });
+      else if (category === "general") {
+        if (!generalMap.has(entityName)) {
+          generalMap.set(entityName, { sectionName: entityName, changes: [] });
         }
-        generalMap.get(change.entityName).changes.push(change);
+        generalMap.get(entityName).changes.push(formattedChange);
       }
     }
   }
 
-  if (vectorData && vectorData.vectorDeltas) {
-    for (const vector of vectorData.vectorDeltas) {
-      if (heroMap.has(vector.heroName)) {
-        heroMap.get(vector.heroName).vectorDelta = vector.vectorDelta;
+  if (patchData.featureVectors) {
+    for (const vector of patchData.featureVectors) {
+      const entityName = vector.entity.name;
+      if (heroMap.has(entityName)) {
+        heroMap.get(entityName).vectorDelta = {
+          farming: vector.farming,
+          mobility: vector.mobility,
+          survivability: vector.survivability,
+          teamfight: vector.teamfight,
+          laning: vector.laning,
+          siege: vector.siege,
+          utility: vector.utility
+        };
       }
     }
   }

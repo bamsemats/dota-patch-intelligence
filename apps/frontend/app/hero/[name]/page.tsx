@@ -110,19 +110,25 @@ export default async function HeroPage({ params }: PageProps) {
                 </div>
                 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                  {patch.changes.map((change: any, cIdx: number) => (
-                    <div key={cIdx} style={{ 
-                      borderLeft: `3px solid ${
-                        change.classification.classificationType === 'Buff' ? 'var(--color-buff)' : 
-                        change.classification.classificationType === 'Nerf' ? 'var(--color-nerf)' : 
-                        'var(--color-adjustment)'
-                      }`,
-                      paddingLeft: '12px'
-                    }}>
-                      {change.subEntityName && <strong style={{ color: 'var(--color-consumable)' }}>{change.subEntityName}: </strong>}
-                      <span style={{ color: '#ccc' }}>{change.rawNote}</span>
+                  {patch.changes.length > 0 ? (
+                    patch.changes.map((change: any, cIdx: number) => (
+                      <div key={cIdx} style={{ 
+                        borderLeft: `3px solid ${
+                          change.classification.classificationType === 'Buff' ? 'var(--color-buff)' : 
+                          change.classification.classificationType === 'Nerf' ? 'var(--color-nerf)' : 
+                          'var(--color-adjustment)'
+                        }`,
+                        paddingLeft: '12px'
+                      }}>
+                        {change.subEntityName && <strong style={{ color: 'var(--color-consumable)' }}>{change.subEntityName}: </strong>}
+                        <span style={{ color: '#ccc' }}>{change.rawNote}</span>
+                      </div>
+                    ))
+                  ) : (
+                    <div style={{ color: '#666', fontStyle: 'italic', paddingLeft: '12px' }}>
+                      No hero-specific updates in this patch.
                     </div>
-                  ))}
+                  )}
                 </div>
 
                 {patch.vectorDelta && (
@@ -148,9 +154,16 @@ export default async function HeroPage({ params }: PageProps) {
 
         <div className={styles.sidebar}>
           <div className={styles.section}>
-            <h3 style={{ color: 'var(--color-rare)' }}>Current Feature Vectors</h3>
+            <h3 style={{ color: 'var(--color-rare)' }}>Net Balance Trajectory</h3>
+            <p style={{ fontSize: '0.85rem', color: '#888', marginBottom: '15px', lineHeight: '1.4' }}>
+              Cumulative power shifts across 7 dimensions since 7.33. 
+              <br/>
+              <span style={{ color: 'var(--color-buff)' }}>Positive:</span> Buff trend. 
+              <br/>
+              <span style={{ color: 'var(--color-nerf)' }}>Negative:</span> Nerf trend.
+            </p>
             <div className={styles.vectorGrid} style={{ background: 'var(--bg-panel)', padding: '20px', borderRadius: '12px' }}>
-              {latestHistory.vectorDelta && Object.entries(latestHistory.vectorDelta).map(([dim, val]: any) => (
+              {(latestHistory.totalVector || latestHistory.vectorDelta) && Object.entries(latestHistory.totalVector || latestHistory.vectorDelta).map(([dim, val]: any) => (
                 <div key={dim} className={styles.vectorRow}>
                   <span className={styles.dimName}>{dim.charAt(0).toUpperCase() + dim.slice(1)}</span>
                   <div className={styles.barContainer}>

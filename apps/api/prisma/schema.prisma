@@ -1,0 +1,120 @@
+// apps/api/prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Patch {
+  id               Int      @id @default(autoincrement())
+  version          String   @unique // e.g., "7.41d"
+  releaseDate      DateTime?
+  createdAt        DateTime @default(now())
+  
+  // Relations
+  changes          PatchChange[]
+  featureVectors   FeatureVector[]
+  winrateSnapshots WinrateSnapshot[]
+  metaAnalysis     MetaAnalysis?
+}
+
+enum EntityType {
+  HERO
+  ITEM
+  NEUTRAL
+  GENERAL
+}
+
+model Entity {
+  id               Int      @id @default(autoincrement())
+  name             String   @unique
+  type             EntityType
+  createdAt        DateTime @default(now())
+
+  // Relations
+  changes          PatchChange[]
+  featureVectors   FeatureVector[]
+  winrateSnapshots WinrateSnapshot[]
+}
+
+enum ClassificationType {
+  Buff
+  Nerf
+  Adjustment
+  Rework
+  Unknown
+}
+
+model PatchChange {
+  id                 Int      @id @default(autoincrement())
+  patchId            Int
+  entityId           Int
+  subEntityName      String?  // e.g., "Life Break" or "Recipe"
+  rawNote            String   // The original patch note text
+  classificationType ClassificationType
+  netScoreDelta      Float    // Calculated impact score (-10 to +10)
+  reasoning          String?  // LLM or deterministic reasoning
+  strategicWeight    Json?    // Stores the rank-based weighting
+  createdAt          DateTime @default(now())
+
+  // Relations
+  patch              Patch    @relation(fields: [patchId], references: [id], onDelete: Cascade)
+  entity             Entity   @relation(fields: [entityId], references: [id], onDelete: Cascade)
+
+  @@index([patchId])
+  @@index([entityId])
+}
+
+model FeatureVector {
+  id            Int      @id @default(autoincrement())
+  patchId       Int
+  entityId      Int      // Should only link to Heroes
+  farming       Float    @default(0)
+  mobility      Float    @default(0)
+  survivability Float    @default(0)
+  teamfight     Float    @default(0)
+  laning        Float    @default(0)
+  siege         Float    @default(0)
+  utility       Float    @default(0)
+  createdAt     DateTime @default(now())
+
+  // Relations
+  patch         Patch    @relation(fields: [patchId], references: [id], onDelete: Cascade)
+  entity        Entity   @relation(fields: [entityId], references: [id], onDelete: Cascade)
+
+  @@unique([patchId, entityId]) // A hero has one vector per patch
+}
+
+model WinrateSnapshot {
+  id          Int      @id @default(autoincrement())
+  patchId     Int
+  entityId    Int      // Should only link to Heroes
+  bracket     String   // "HERALD", "DIVINE", etc.
+  winrate     Float
+  matchCount  Int
+  createdAt   DateTime @default(now())
+
+  // Relations
+  patch       Patch    @relation(fields: [patchId], references: [id], onDelete: Cascade)
+  entity      Entity   @relation(fields: [entityId], references: [id], onDelete: Cascade)
+
+  @@unique([patchId, entityId, bracket]) // One snapshot per rank per patch per hero
+}
+
+model MetaAnalysis {
+  id                  Int      @id @default(autoincrement())
+  patchId             Int      @unique
+  metaShifts          Json     // Array of thematic shifts
+  synergisticWinners  Json     // Array of overall winners
+  synergisticLosers   Json     // Array of overall losers
+  roleSpecificWinners Json?    // JSON object categorized by Carry, Mid, etc.
+  roleSpecificLosers  Json?    // JSON object categorized by Carry, Mid, etc.
+  createdAt           DateTime @default(now())
+
+  // Relations
+  patch               Patch    @relation(fields: [patchId], references: [id], onDelete: Cascade)
+}

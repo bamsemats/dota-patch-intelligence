@@ -31,10 +31,15 @@ async function generate() {
     };
   }
 
-  // Persistent winrate state for forward-filling
+  // Persistent states for forward-filling
   const currentWinrates: Record<string, Record<string, any>> = {};
+  const currentVectors: Record<string, any> = {};
+
   for (const name of heroNames) {
     currentWinrates[name] = {};
+    currentVectors[name] = {
+      farming: 0, mobility: 0, survivability: 0, teamfight: 0, laning: 0, siege: 0, utility: 0
+    };
   }
 
   for (const file of jsonFiles) {
@@ -49,6 +54,13 @@ async function generate() {
       const vectors = JSON.parse(rawVectors);
       for (const v of vectors.vectorDeltas || []) {
         vectorDeltaMap[v.heroName] = v.vectorDelta;
+
+        // Accumulate vectors
+        if (currentVectors[v.heroName]) {
+          for (const dim in v.vectorDelta) {
+            currentVectors[v.heroName][dim] += v.vectorDelta[dim];
+          }
+        }
       }
     } catch (e) {}
 
@@ -75,19 +87,15 @@ async function generate() {
     for (const name of heroNames) {
       const heroId = Object.keys(heroMapping).find(id => heroMapping[id] === name);
       
-      // Update persistent winrate if new data is available and not empty
+      // NEW: Zero-Trust Winrates. We only record data if it exists for THIS patch.
+      // No more "forward-filling" the persistent state.
+      const currentPatchWinrates: Record<string, any> = {};
+      
       if (winrateMap && heroId) {
-        let hasData = false;
-        const newWinrates: Record<string, any> = {};
         for (const rank in winrateMap) {
           if (winrateMap[rank][heroId]) {
-            newWinrates[rank] = winrateMap[rank][heroId];
-            hasData = true;
+            currentPatchWinrates[rank] = winrateMap[rank][heroId];
           }
-        }
-        
-        if (hasData) {
-          currentWinrates[name] = newWinrates;
         }
       }
 
@@ -96,7 +104,8 @@ async function generate() {
         date: patch.timestamp || new Date().toISOString(),
         changes: patchChanges[name] || [],
         vectorDelta: vectorDeltaMap[name] || null,
-        winrates: { ...currentWinrates[name] } // Use the filled state
+        totalVector: { ...currentVectors[name] }, // Cumulative state
+        winrates: currentPatchWinrates // Explicitly only for THIS patch
       });
     }
   }

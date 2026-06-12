@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "../components/EntityList.module.css";
 
@@ -13,30 +13,46 @@ interface SearchEntry {
   cat: string; // category
 }
 
-interface SearchClientProps {
-  index: SearchEntry[];
-}
-
-export default function SearchClient({ index }: SearchClientProps) {
+export default function SearchClient() {
   const [query, setQuery] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("all");
+  const [results, setResults] = useState<SearchEntry[]>([]);
+  const [loading, setLoading] = useState(false);
 
-  const results = useMemo(() => {
-    if (query.length < 2) return [];
-    
-    const q = query.toLowerCase();
-    return index.filter(entry => {
-      const matchesQuery = 
-        entry.e.toLowerCase().includes(q) || 
-        entry.s.toLowerCase().includes(q) || 
-        entry.n.toLowerCase().includes(q);
+  useEffect(() => {
+    const fetchResults = async () => {
+      if (query.length < 2) {
+        setResults([]);
+        return;
+      }
       
-      if (!matchesQuery) return false;
-      if (categoryFilter !== "all" && entry.cat !== categoryFilter) return false;
-      
-      return true;
-    }).slice(0, 200); // Limit to 200 results for performance
-  }, [query, categoryFilter, index]);
+      setLoading(true);
+      try {
+        // Use relative URL so it works in prod if reverse-proxied, 
+        // or explicitly configure NEXT_PUBLIC_API_URL.
+        // For static local build, we assume Fastify is on 8080 during dev,
+        // but for static export it needs an absolute URL or proxy.
+        // We'll hardcode localhost for this local stage of Phase 12.
+        const res = await fetch(`http://localhost:8080/api/search?q=${encodeURIComponent(query)}`);
+        if (res.ok) {
+          const data = await res.json();
+          setResults(data);
+        }
+      } catch (error) {
+        console.error("Search failed:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    const debounceTimer = setTimeout(fetchResults, 300);
+    return () => clearTimeout(debounceTimer);
+  }, [query]);
+
+  const filteredResults = results.filter(entry => {
+    if (categoryFilter !== "all" && entry.cat !== categoryFilter) return false;
+    return true;
+  });
 
   return (
     <div>
@@ -80,14 +96,16 @@ export default function SearchClient({ index }: SearchClientProps) {
         </button>
       </div>
 
-      {query.length >= 2 && (
+      {loading && <div style={{ marginBottom: '20px', color: '#888' }}>Searching...</div>}
+
+      {query.length >= 2 && !loading && (
         <div style={{ marginBottom: '20px', color: '#888' }}>
-          Found {results.length === 200 ? "200+" : results.length} results
+          Found {filteredResults.length === 100 ? "100+" : filteredResults.length} results
         </div>
       )}
 
       <div className={styles.changesList}>
-        {results.map((res, idx) => (
+        {filteredResults.map((res, idx) => (
           <div key={idx} className={`${styles.changeItem} ${styles[res.c]}`} style={{ background: 'var(--bg-panel)', padding: '15px', borderRadius: '8px', marginBottom: '10px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
               <div style={{ fontWeight: 'bold' }}>
@@ -96,7 +114,7 @@ export default function SearchClient({ index }: SearchClientProps) {
                 {res.s && <span style={{ color: 'var(--color-consumable)' }}> - {res.s}</span>}
               </div>
               <Link 
-                href={res.v === index[0]?.v ? "/" : `/patch/${res.v}`}
+                href={`/patch/${res.v}`}
                 style={{ color: 'var(--color-rare)', fontSize: '0.85rem', textDecoration: 'none' }}
               >
                 View Patch &rarr;
@@ -122,7 +140,7 @@ export default function SearchClient({ index }: SearchClientProps) {
           <p style={{ color: '#666' }}>Keep typing to search...</p>
         )}
 
-        {query.length >= 2 && results.length === 0 && (
+        {query.length >= 2 && !loading && filteredResults.length === 0 && (
           <p style={{ color: '#666' }}>No results found for "{query}".</p>
         )}
       </div>

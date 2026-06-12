@@ -226,77 +226,81 @@ Deliverables:
 
 # Phase 11.5 — UI/UX Refinement & Mobile Optimization
 
-Status: In Progress
+Status: Complete
 
 Goals:
-* **Mobile Responsiveness:** Ensure the advanced dashboards, histograms, and vector charts are fully functional and readable on mobile devices.
-* **Hero Page - Historical Winrate Selector:** Implement a mechanism (e.g., dropdown or timeline) on the dedicated hero pages to allow users to view winrate distributions from specific historical patches.
-* **Layout Polish:** Fix text truncation issues in Hero Cards (allow wrapping/multi-line notes) to ensure consistency with Item Cards.
+* **Mobile Responsiveness:** Ensure the advanced dashboards, histograms, and vector charts are fully functional and readable on mobile devices. (Done)
+* **Hero Page - Historical Winrate Selector:** Implement a mechanism (e.g., dropdown or timeline) on the dedicated hero pages to allow users to view winrate distributions from specific historical patches. (Done: `WinrateHistorySelector`)
+* **Layout Polish:** Fix text truncation issues in Hero Cards (allow wrapping/multi-line notes) to ensure consistency with Item Cards. (Done)
 * **Role-Based Analytics:**
-    * Implement a dedicated section for **Roles** (1-5) to track role-specific meta shifts.
-    * Expand **Synergistic Winners/Losers** to include role-specific categories (Top 3 for Carry, Mid, Offlane, Soft Support, Hard Support).
-* **Aesthetic Polish:** Fine-tune the color scheme, typography, and spacing to ensure a premium, consistent "Dota" feel across all views.
-* **Interactive Feedback:** Add transitions and micro-interactions to make the UI feel more "alive".
+    * Implement a dedicated section for **Roles** (1-5) to track role-specific meta shifts. (Done)
+    * Expand **Synergistic Winners/Losers** to include role-specific categories (Top 3 for Carry, Mid, Offlane, Soft Support, Hard Support). (Done)
+* **Aesthetic Polish:** Fine-tune the color scheme, typography, and spacing to ensure a premium, consistent "Dota" feel across all views. (Done)
+* **Interactive Feedback:** Add transitions and micro-interactions to make the UI feel more "alive". (Done)
 * **SEO & Social Visibility:**
-    * Implement **Dynamic Metadata** (Title, Description) for every patch and hero page.
-    * Add **Open Graph (OG) and Twitter Card** tags to ensure rich previews when sharing links on social media (e.g., Discord, X, Reddit).
-    * Optimize **Semantic HTML** structure to improve search engine indexing.
-    * Generate an automated **Sitemap** for the static site.
+    * Implement **Dynamic Metadata** (Title, Description) for every patch and hero page. (Done)
+    * Add **Open Graph (OG) and Twitter Card** tags to ensure rich previews when sharing links on social media (e.g., Discord, X, Reddit). (Done)
+    * Optimize **Semantic HTML** structure to improve search engine indexing. (Done)
+    * Generate an automated **Sitemap** for the static site. (Done: `sitemap.ts`)
 
 ---
 
-# Phase 12 — Backend API & Database Migration
+# Phase 12 — Local Database & Build-Time API
+
+Status: Complete
+
+Goals:
+* **Option A Strategy:** Transition the data architecture to a relational database, but use it primarily as a robust local data source to generate the static frontend for GitHub Pages.
+* **Prisma ORM:** Establish relational data models (Patches, Entities, Changes, Vectors, Winrates). (Done: `schema.prisma`)
+* **ETL Pipeline:** Write a migration script to seed the database using the existing `research-output` flat files. (Done: `seed.ts`)
+* **Fastify API:** Develop a local Node.js/Fastify backend to serve data to Next.js during the `npm run build` step. (Done: `server.ts`)
+
+Deliverables:
+* `schema.prisma` and local PostgreSQL setup.
+* ETL Seed Script.
+* Local Fastify API running during CI/CD.
+
+---
+
+# Phase 13 — Cloud Infrastructure & Dynamic Hosting (The "Option B" Pivot)
 
 Status: Up Next
 
 Goals:
-* Transition the data architecture from local static JSON files (`research-output`) to a relational PostgreSQL database.
-* Develop a robust backend API (Node.js/Fastify) to serve patch data dynamically.
-* Implement a caching layer for heavy analytics queries.
-* Establish data models and schemas using an ORM (e.g., Prisma or Drizzle).
+* Migrate from GitHub Pages (Static) to a fully dynamic hosting solution (e.g., Vercel for Frontend, Render/Railway for Fastify).
+* Provision a managed cloud PostgreSQL database (e.g., Neon, Supabase, AWS RDS).
+* Update Next.js to use Server-Side Rendering (SSR) or Incremental Static Regeneration (ISR) to fetch from the live production API.
 
 Deliverables:
-* Database schema implementation and migration scripts.
-* Deployed REST/GraphQL API.
+* Live API endpoint accessible over the internet.
+* Dynamic web application.
 
 ---
 
-# Phase 13 — Historical Analytics
+# Phase 14 — Historical Backfill & Deep Meta Analysis
 
-Status: Future
-
-Potential Features:
-* Hero balance history and trajectory.
-* Item history.
-* Patch comparisons.
-* Long-term thematic trend analysis.
-
----
-
-# Phase 14 — Automation Pipeline
-
-Status: Future
+Status: In Progress (High-Fidelity Re-run)
 
 Goals:
-* Automated patch detection system (Steam polling/webhooks).
-* Trigger full ingestion pipeline (discover → map → parse → classify → impact score → database insertion).
-* Automated notifications (e.g., Discord, Email) when a new patch is processed.
-
-Deliverables:
-* Scheduled cron job or webhook listener.
-* End-to-end automation script.
+* **Role-Specific Losers:** Expand the Meta Analysis engine to identify the heroes hit hardest by nerfs within specific roles. (Done)
+* **High-Fidelity Grounding:** Enforce strict "Zero Hallucination" rules regarding item-hero synergies (e.g., no Gleipnir on PA) and mechanical interactions. (In Progress)
+* **Historical Backfilling:** Re-run analysis for all 35 patches using Claude 4 Sonnet with high-fidelity constraints. (In Progress)
+* **LLM Maintenance:** Update the model string in `backfillMeta.ts` to a newer stable version (e.g., `claude-3-7-sonnet-latest`) before the June 15th, 2026 deprecation of `claude-sonnet-4-20250514`.
 
 ---
 
-# Phase 15 — Advanced Features
+# Phase 15 — Cross-Patch Intelligence & Temporal Validation
 
-Status: Future
+Status: Up Next (CRITICAL)
 
-Potential Features:
-* User accounts and personalized hero tracking.
-* Public API and community features.
-* Website analytics (visitor count, traffic metrics, usage tracking).
-* Professional Match Analytics (Calibrating weights and extracting meta shifts specifically from tournament and pro-circuit data, distinct from the 7 pub brackets).
+Goals:
+* **Trend Analysis:** Implement "Temporal Context" where the analyzer reviews the previous patch before assessing the current one.
+* **Relative Strength Assessment:** Determine if a current buff is a net gain or just a partial recovery from a recent major nerf (e.g., Illusion strategies in 7.41b vs 7.41d).
+* **Automated Fact-Checking:** Develop a validation layer that flags nonsensical LLM synergies against a deterministic mechanical rulebook.
+
+---
+
+# Phase 16 — Cloud Infrastructure & Dynamic Hosting (The "Option B" Pivot)
 
 ---
 

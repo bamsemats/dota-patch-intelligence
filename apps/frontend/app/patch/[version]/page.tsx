@@ -1,5 +1,3 @@
-import { promises as fs } from "node:fs";
-import path from "node:path";
 import Link from "next/link";
 import PatchSelector from "../../components/PatchSelector";
 import SummaryTabs from "./SummaryTabs";
@@ -8,16 +6,20 @@ interface PageProps {
   params: Promise<{ version: string }>;
 }
 
-const researchDir = path.resolve(process.cwd(), "../../research-output");
-const patchesDir = path.join(researchDir, "classified-patches");
+const API_BASE = process.env.API_URL || "http://localhost:8080";
 
 export async function generateStaticParams() {
-  const files = await fs.readdir(patchesDir);
-  return files
-    .filter(f => f.endsWith(".json"))
-    .map(f => ({
-      version: f.replace(".json", ""),
+  try {
+    const res = await fetch(`${API_BASE}/api/patches`);
+    if (!res.ok) return [];
+    const patches = await res.json();
+    return patches.map((p: any) => ({
+      version: p.version,
     }));
+  } catch (error) {
+    console.error("Failed to generate static params:", error);
+    return [];
+  }
 }
 
 export async function generateMetadata({ params }: PageProps) {
@@ -53,17 +55,23 @@ export async function generateMetadata({ params }: PageProps) {
 export default async function Page({ params }: PageProps) {
   const { version: patchVersion } = await params;
   
-  const files = await fs.readdir(patchesDir);
-  const availablePatches = files
-    .filter(f => f.endsWith(".json"))
-    .map(f => f.replace(".json", ""))
-    .sort((a, b) => b.localeCompare(a, undefined, { numeric: true, sensitivity: 'base' }));
+  let availablePatches: string[] = [];
+  try {
+    const res = await fetch(`${API_BASE}/api/patches`);
+    if (res.ok) {
+      const patches = await res.json();
+      availablePatches = patches.map((p: any) => p.version);
+    }
+  } catch (e) {
+    console.error("Failed to fetch available patches");
+  }
 
-  const metaPath = path.join(researchDir, "meta-analysis", `meta-${patchVersion}.json`);
   let metaData = null;
   try {
-    const rawMeta = await fs.readFile(metaPath, "utf-8");
-    metaData = JSON.parse(rawMeta);
+    const res = await fetch(`${API_BASE}/api/patches/${patchVersion}/meta`);
+    if (res.ok) {
+      metaData = await res.json();
+    }
   } catch (e) {
     // No meta for this patch
   }

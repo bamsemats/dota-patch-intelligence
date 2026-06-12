@@ -1,27 +1,33 @@
 import { MetadataRoute } from 'next';
-import { promises as fs } from "node:fs";
-import path from "node:path";
 
 const BASE_URL = 'https://bamsemats.github.io/dota-patch-intelligence';
-const researchDir = path.resolve(process.cwd(), "../../research-output");
+const API_BASE = process.env.API_URL || "http://localhost:8080";
 
 export const dynamic = 'force-static';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const patchesDir = path.join(researchDir, "classified-patches");
-  const historyDir = path.join(researchDir, "hero-history");
+  let patches: string[] = [];
+  let heroes: string[] = [];
 
-  // Get Patches
-  const patchFiles = await fs.readdir(patchesDir).catch(() => []);
-  const patches = patchFiles
-    .filter(f => f.endsWith(".json"))
-    .map(f => f.replace(".json", ""));
+  try {
+    const patchRes = await fetch(`${API_BASE}/api/patches`);
+    if (patchRes.ok) {
+      const data = await patchRes.json();
+      patches = data.map((p: any) => p.version);
+    }
+  } catch (e) {
+    console.error("Sitemap: Failed to fetch patches");
+  }
 
-  // Get Heroes
-  const heroFiles = await fs.readdir(historyDir).catch(() => []);
-  const heroes = heroFiles
-    .filter(f => f.endsWith(".json"))
-    .map(f => f.replace(".json", ""));
+  try {
+    const heroRes = await fetch(`${API_BASE}/api/heroes`);
+    if (heroRes.ok) {
+      const data = await heroRes.json();
+      heroes = data.map((h: any) => h.name.replace(/[^a-z0-9]/gi, '_').toLowerCase());
+    }
+  } catch (e) {
+    console.error("Sitemap: Failed to fetch heroes");
+  }
 
   const staticRoutes: MetadataRoute.Sitemap = [
     {
