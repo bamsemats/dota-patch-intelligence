@@ -283,9 +283,11 @@ Status: In Progress (High-Fidelity Re-run)
 
 Goals:
 * **Role-Specific Losers:** Expand the Meta Analysis engine to identify the heroes hit hardest by nerfs within specific roles. (Done)
-* **High-Fidelity Grounding:** Enforce strict "Zero Hallucination" rules regarding item-hero synergies (e.g., no Gleipnir on PA) and mechanical interactions. (In Progress)
-* **Historical Backfilling:** Re-run analysis for all 35 patches using Claude 4 Sonnet with high-fidelity constraints. (In Progress)
+* **High-Fidelity Grounding:** Enforce strict "Zero Hallucination" rules regarding item-hero synergies (e.g., no Gleipnir on PA) and mechanical interactions. (Done)
+* **Historical Backfilling:** Re-run analysis for all 35 patches using Claude 4 Sonnet with high-fidelity constraints. (Done: Initial Re-run)
+* **Intuitive Meta Correction (TODO):** Re-run the meta-analysis for all patches using **Gemini 2.5 Flash** (once quota resets) to restore the "Strategic Intuition" and thematic depth that Gemini captures better than Claude, while keeping the high-fidelity grounding rules. (See `docs/GEMINI_META_PLAN.md`)
 * **LLM Maintenance:** Update the model string in `backfillMeta.ts` to a newer stable version (e.g., `claude-3-7-sonnet-latest`) before the June 15th, 2026 deprecation of `claude-sonnet-4-20250514`.
+* **CI/CD Build Robustness:** Refactored the frontend to use a local JSON fallback during the Next.js `npm run build` process, ensuring successful GitHub Pages deployment even when the API is offline. (Done)
 
 ---
 

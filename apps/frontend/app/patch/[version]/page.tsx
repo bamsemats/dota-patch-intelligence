@@ -1,6 +1,7 @@
 import Link from "next/link";
 import PatchSelector from "../../components/PatchSelector";
 import SummaryTabs from "./SummaryTabs";
+import { getLocalPatches, getLocalMeta } from "../../lib/localData";
 
 interface PageProps {
   params: Promise<{ version: string }>;
@@ -11,14 +12,15 @@ const API_BASE = process.env.API_URL || "http://localhost:8080";
 export async function generateStaticParams() {
   try {
     const res = await fetch(`${API_BASE}/api/patches`);
-    if (!res.ok) return [];
+    if (!res.ok) throw new Error("API not ok");
     const patches = await res.json();
     return patches.map((p: any) => ({
       version: p.version,
     }));
   } catch (error) {
-    console.error("Failed to generate static params:", error);
-    return [];
+    console.warn("API unavailable for generateStaticParams, falling back to local files.");
+    const patches = await getLocalPatches();
+    return patches.map((v) => ({ version: v }));
   }
 }
 
@@ -37,7 +39,7 @@ export async function generateMetadata({ params }: PageProps) {
       siteName: "Dota Patch Intelligence",
       images: [
         {
-          url: "/api/og?title=" + encodeURIComponent(`Patch ${patchVersion}`), // Placeholder for future dynamic OG image
+          url: "/api/og?title=" + encodeURIComponent(`Patch ${patchVersion}`), 
           width: 1200,
           height: 630,
           alt: `Dota 2 Patch ${patchVersion} Summary`,
@@ -61,9 +63,12 @@ export default async function Page({ params }: PageProps) {
     if (res.ok) {
       const patches = await res.json();
       availablePatches = patches.map((p: any) => p.version);
+    } else {
+      throw new Error();
     }
   } catch (e) {
-    console.error("Failed to fetch available patches");
+    availablePatches = await getLocalPatches();
+    availablePatches.reverse(); // desc for dropdown
   }
 
   let metaData = null;
@@ -71,13 +76,18 @@ export default async function Page({ params }: PageProps) {
     const res = await fetch(`${API_BASE}/api/patches/${patchVersion}/meta`);
     if (res.ok) {
       metaData = await res.json();
+    } else {
+      throw new Error();
     }
   } catch (e) {
-    // No meta for this patch
+    metaData = await getLocalMeta(patchVersion);
   }
 
   return (
     <div className="container">
+      <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginBottom: '10px' }}>
+         <Link href="/" style={{ color: 'var(--color-artifact)', textDecoration: 'none' }}>← Home</Link>
+      </div>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '20px' }}>
         <h1 style={{ color: "var(--color-artifact)", margin: 0, fontSize: "2.5rem" }}>
           Patch {patchVersion} Intelligence

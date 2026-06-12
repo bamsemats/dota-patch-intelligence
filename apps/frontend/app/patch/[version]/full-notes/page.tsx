@@ -1,6 +1,7 @@
 import Link from "next/link";
 import PatchSelector from "../../../components/PatchSelector";
 import FullNotesTabs from "./FullNotesTabs";
+import { getLocalPatches, getLocalPatchData } from "../../../lib/localData";
 
 interface PageProps {
   params: Promise<{ version: string }>;
@@ -11,14 +12,14 @@ const API_BASE = process.env.API_URL || "http://localhost:8080";
 export async function generateStaticParams() {
   try {
     const res = await fetch(`${API_BASE}/api/patches`);
-    if (!res.ok) return [];
+    if (!res.ok) throw new Error();
     const patches = await res.json();
     return patches.map((p: any) => ({
       version: p.version,
     }));
   } catch (error) {
-    console.error("Failed to generate static params:", error);
-    return [];
+    const patches = await getLocalPatches();
+    return patches.map(v => ({ version: v }));
   }
 }
 
@@ -31,9 +32,12 @@ export default async function PatchNotesPage({ params }: PageProps) {
     if (res.ok) {
       const patches = await res.json();
       availablePatches = patches.map((p: any) => p.version);
+    } else {
+      throw new Error();
     }
   } catch (e) {
-    console.error("Failed to fetch available patches");
+    availablePatches = await getLocalPatches();
+    availablePatches.reverse();
   }
 
   let patchData = null;
@@ -41,9 +45,11 @@ export default async function PatchNotesPage({ params }: PageProps) {
     const res = await fetch(`${API_BASE}/api/patches/${patchVersion}`);
     if (res.ok) {
       patchData = await res.json();
+    } else {
+      throw new Error();
     }
   } catch (e) {
-    console.error("Failed to fetch patch data:", e);
+    patchData = await getLocalPatchData(patchVersion);
   }
 
   if (!patchData) return <div>Patch not found.</div>;
@@ -59,7 +65,7 @@ export default async function PatchNotesPage({ params }: PageProps) {
   if (patchData.winrateSnapshots) {
     for (const wr of patchData.winrateSnapshots) {
       const rank = wr.bracket;
-      const heroIdStr = wr.entity.id.toString(); // Map entity id to hero mapping loosely
+      const heroIdStr = wr.entity.id.toString(); 
       if (!winrateData[rank]) winrateData[rank] = {};
       winrateData[rank][heroIdStr] = {
         winrate: wr.winrate,
@@ -150,6 +156,9 @@ export default async function PatchNotesPage({ params }: PageProps) {
 
   return (
     <div className="container">
+      <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginBottom: '10px' }}>
+         <Link href={`/patch/${patchVersion}`} style={{ color: 'var(--color-artifact)', textDecoration: 'none' }}>← Summary</Link>
+      </div>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '20px' }}>
         <h1 style={{ color: "var(--color-artifact)", margin: 0, fontSize: "2.5rem" }}>
           Patch {patchVersion} Notes
