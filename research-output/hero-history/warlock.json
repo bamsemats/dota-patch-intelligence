@@ -2,8 +2,193 @@
   "name": "Warlock",
   "history": [
     {
+      "version": "7.33",
+      "date": "2026-06-13T18:03:40.409Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Warlock",
+          "subEntityName": "Shadow Word",
+          "rawNote": "Aghanim's Shard Upgrade removed",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 37,
+            "subEntityId": 5163
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Warlock",
+          "subEntityName": "Upheaval",
+          "rawNote": "Now upgradable by Aghanim's Shard",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 37,
+            "subEntityId": 5164
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Warlock",
+          "subEntityName": "Upheaval",
+          "rawNote": "Creates an imp for every 2 seconds of channeling. These imps last for 15 seconds and have 17-18 attack damage, 300 health, 1 armor and Eldritch Explosion passive ability: when killed or expired, imps explode, dealing 60% of their max health as damage to enemies within 400 radius. Imps continuously seek out the closest visible and attackable target but can be controlled",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 37,
+            "subEntityId": 5164
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Warlock",
+          "subEntityName": "Chaotic Offering",
+          "rawNote": "Stun Duration decreased from 1s to 0.8s ",
+          "indentLevel": 1,
+          "metric": "Stun Duration",
+          "changeType": "DECREASED",
+          "oldValue": "1s",
+          "newValue": "0.8s",
+          "metadata": {
+            "entityId": 37,
+            "subEntityId": 5165
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a positive metric (stun duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Warlock",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent -4s Shadow Word Cooldown replaced with +18 Shadow Word Damage/Heal",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent -4s Shadow Word Cooldown",
+          "changeType": "REWORK",
+          "newValue": "+18 Shadow Word Damage/Heal",
+          "metadata": {
+            "entityId": 37
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Warlock",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent +25 Shadow Word Damage/Heal replaced with +450 Shadow Word AoE",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent +25 Shadow Word Damage/Heal",
+          "changeType": "REWORK",
+          "newValue": "+450 Shadow Word AoE",
+          "metadata": {
+            "entityId": 37
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "totalVector": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {},
+      "temporalAssessment": null
+    },
+    {
       "version": "7.33b",
-      "date": "2026-06-12T21:14:57.870Z",
+      "date": "2026-06-13T18:03:40.413Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -44,11 +229,12 @@
           "winrate": 0.5035,
           "matchCount": 21416
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.33c",
-      "date": "2026-06-12T21:14:57.872Z",
+      "date": "2026-06-13T18:03:40.417Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -89,11 +275,12 @@
           "winrate": 0.5016,
           "matchCount": 35727
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.33d",
-      "date": "2026-06-12T21:14:57.876Z",
+      "date": "2026-06-13T18:03:40.420Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -134,11 +321,12 @@
           "winrate": 0.509,
           "matchCount": 26589
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.33e",
-      "date": "2026-06-12T21:14:57.878Z",
+      "date": "2026-06-13T18:03:40.422Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -179,11 +367,12 @@
           "winrate": 0.5083,
           "matchCount": 27806
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.34",
-      "date": "2026-06-12T21:14:57.882Z",
+      "date": "2026-06-13T18:03:40.426Z",
       "changes": [
         {
           "category": "hero",
@@ -415,11 +604,12 @@
         "siege": 0,
         "utility": 0
       },
-      "winrates": {}
+      "winrates": {},
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.34b",
-      "date": "2026-06-12T21:14:57.884Z",
+      "date": "2026-06-13T18:03:40.429Z",
       "changes": [
         {
           "category": "hero",
@@ -438,13 +628,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 7,
-              "Guardian": 7,
-              "Crusader": 7,
-              "Archon": 7,
-              "Legend": 7,
-              "Ancient": 7,
-              "Divine": 7
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6.5,
+              "Archon": 6.5,
+              "Legend": 6.5,
+              "Ancient": 6.5,
+              "Divine": 6.5
             },
             "reasoning": "Decreased a positive metric (base attack speed)."
           }
@@ -519,11 +709,12 @@
           "winrate": 0.5141,
           "matchCount": 97801
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.34c",
-      "date": "2026-06-12T21:14:57.887Z",
+      "date": "2026-06-13T18:03:40.432Z",
       "changes": [
         {
           "category": "hero",
@@ -572,13 +763,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 3,
-              "Guardian": 3,
-              "Crusader": 3,
-              "Archon": 3,
-              "Legend": 3,
-              "Ancient": 4,
-              "Divine": 5
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Decreased a positive metric (duration)."
           }
@@ -601,13 +792,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 7,
-              "Guardian": 7,
-              "Crusader": 7,
-              "Archon": 7,
-              "Legend": 7,
-              "Ancient": 7,
-              "Divine": 7
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6.5,
+              "Archon": 6.5,
+              "Legend": 6.5,
+              "Ancient": 6.5,
+              "Divine": 6.5
             },
             "reasoning": "Decreased a positive metric (level 15 talent upheaval attack speed per second on allies)."
           }
@@ -660,11 +851,12 @@
           "winrate": 0.5033,
           "matchCount": 118047
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.34d",
-      "date": "2026-06-12T21:14:57.889Z",
+      "date": "2026-06-13T18:03:40.435Z",
       "changes": [
         {
           "category": "hero",
@@ -714,13 +906,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 5.5,
-              "Guardian": 4.5,
-              "Crusader": 5,
-              "Archon": 4.5,
-              "Legend": 5,
-              "Ancient": 6,
-              "Divine": 6
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Decreased a positive metric (level 10 talent upheaval radius)."
           }
@@ -765,11 +957,12 @@
           "winrate": 0.5012,
           "matchCount": 132358
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.34e",
-      "date": "2026-06-12T21:14:57.891Z",
+      "date": "2026-06-13T18:03:40.437Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -810,11 +1003,12 @@
           "winrate": 0.501,
           "matchCount": 54533
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.35",
-      "date": "2026-06-12T21:14:57.895Z",
+      "date": "2026-06-13T18:03:40.440Z",
       "changes": [
         {
           "category": "hero",
@@ -899,11 +1093,12 @@
           "matchCount": 298,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.35b",
-      "date": "2026-06-12T21:14:57.897Z",
+      "date": "2026-06-13T18:03:40.442Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -921,11 +1116,12 @@
           "matchCount": 298,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.35c",
-      "date": "2026-06-12T21:14:57.899Z",
+      "date": "2026-06-13T18:03:40.450Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -943,11 +1139,12 @@
           "matchCount": 298,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.35d",
-      "date": "2026-06-12T21:14:57.901Z",
+      "date": "2026-06-13T18:03:40.452Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -965,11 +1162,12 @@
           "matchCount": 298,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.36",
-      "date": "2026-06-12T21:14:57.907Z",
+      "date": "2026-06-13T18:03:40.459Z",
       "changes": [
         {
           "category": "hero",
@@ -1019,12 +1217,12 @@
             "confidenceScore": 1,
             "strategicWeight": {
               "Herald": 1,
-              "Guardian": 2,
-              "Crusader": 2,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 7,
-              "Divine": 8
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 2,
+              "Ancient": 4,
+              "Divine": 5
             },
             "reasoning": "Increased a negative metric (cast point)."
           }
@@ -1105,13 +1303,13 @@
             "classificationType": "Adjustment",
             "confidenceScore": 0.8,
             "strategicWeight": {
-              "Herald": 3.5,
-              "Guardian": 4,
-              "Crusader": 4,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 7.5,
-              "Divine": 8
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
           }
@@ -1164,11 +1362,11 @@
             "strategicWeight": {
               "Herald": 1,
               "Guardian": 1,
-              "Crusader": 2.5,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Decreased a positive metric (cast range)."
           }
@@ -1192,13 +1390,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 5.5,
-              "Guardian": 4.5,
-              "Crusader": 5,
-              "Archon": 4.5,
-              "Legend": 5,
-              "Ancient": 6,
-              "Divine": 6
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Increased a positive metric (radius)."
           }
@@ -1257,8 +1455,8 @@
               "Crusader": 1,
               "Archon": 1,
               "Legend": 1,
-              "Ancient": 2,
-              "Divine": 1.5
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
           }
@@ -1284,11 +1482,11 @@
             "strategicWeight": {
               "Herald": 1,
               "Guardian": 1,
-              "Crusader": 2.5,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Decreased a positive metric (cast range)."
           }
@@ -1312,13 +1510,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 3.5,
-              "Guardian": 4,
-              "Crusader": 4,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 7.5,
-              "Divine": 8
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Decreased a positive metric (golem's damage)."
           }
@@ -1342,13 +1540,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 3.5,
-              "Guardian": 4,
-              "Crusader": 4,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 7.5,
-              "Divine": 8
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Decreased a positive metric (golem's permanent immolation damage interval)."
           }
@@ -1372,13 +1570,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 3.5,
-              "Guardian": 4,
-              "Crusader": 4,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 7.5,
-              "Divine": 8
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Decreased a positive metric (aghanim's scepter golem's damage)."
           }
@@ -1428,13 +1626,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 5.5,
-              "Guardian": 4.5,
-              "Crusader": 5,
-              "Archon": 4.5,
-              "Legend": 5,
-              "Ancient": 6,
-              "Divine": 6
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Decreased a positive metric (level 10 talent upheaval radius)."
           }
@@ -1457,13 +1655,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 3.5,
-              "Guardian": 4,
-              "Crusader": 4,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 7.5,
-              "Divine": 8
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Decreased a positive metric (level 15 talent shadow word heal/damage per second)."
           }
@@ -1521,11 +1719,12 @@
           "matchCount": 258,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.36a",
-      "date": "2026-06-12T21:14:57.913Z",
+      "date": "2026-06-13T18:03:40.461Z",
       "changes": [
         {
           "category": "hero",
@@ -1546,13 +1745,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 3.5,
-              "Guardian": 4,
-              "Crusader": 4,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 7.5,
-              "Divine": 8
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Decreased a positive metric (imp explosion damage)."
           }
@@ -1574,11 +1773,12 @@
           "matchCount": 258,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.36b",
-      "date": "2026-06-12T21:14:57.915Z",
+      "date": "2026-06-13T18:03:40.463Z",
       "changes": [
         {
           "category": "hero",
@@ -1599,13 +1799,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 3,
-              "Guardian": 3,
-              "Crusader": 3,
-              "Archon": 3,
-              "Legend": 3,
-              "Ancient": 4,
-              "Divine": 5
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Decreased a positive metric (duration)."
           }
@@ -1635,11 +1835,12 @@
           "matchCount": 258,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.36c",
-      "date": "2026-06-12T21:14:57.917Z",
+      "date": "2026-06-13T18:03:40.465Z",
       "changes": [
         {
           "category": "hero",
@@ -1688,11 +1889,12 @@
           "matchCount": 258,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.37",
-      "date": "2026-06-12T21:14:57.921Z",
+      "date": "2026-06-13T18:03:40.469Z",
       "changes": [
         {
           "category": "hero",
@@ -1713,13 +1915,13 @@
             "classificationType": "Adjustment",
             "confidenceScore": 0.8,
             "strategicWeight": {
-              "Herald": 3.5,
-              "Guardian": 4,
-              "Crusader": 4,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 7.5,
-              "Divine": 8
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
           }
@@ -1769,11 +1971,12 @@
           "matchCount": 793,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.37b",
-      "date": "2026-06-12T21:14:57.922Z",
+      "date": "2026-06-13T18:03:40.471Z",
       "changes": [
         {
           "category": "hero",
@@ -1794,13 +1997,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 3.5,
-              "Guardian": 4,
-              "Crusader": 4,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 7.5,
-              "Divine": 8
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Increased a positive metric (shared damage)."
           }
@@ -1829,8 +2032,8 @@
               "Crusader": 1,
               "Archon": 1,
               "Legend": 1,
-              "Ancient": 2,
-              "Divine": 1.5
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Increased a negative metric (cooldown)."
           }
@@ -1859,8 +2062,8 @@
               "Crusader": 1,
               "Archon": 1,
               "Legend": 1,
-              "Ancient": 2,
-              "Divine": 1.5
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
           }
@@ -1916,11 +2119,11 @@
             "strategicWeight": {
               "Herald": 1,
               "Guardian": 1,
-              "Crusader": 2.5,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
           }
@@ -1944,13 +2147,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 3.5,
-              "Guardian": 4,
-              "Crusader": 4,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 7.5,
-              "Divine": 8
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Decreased a positive metric (golem permanent immolation damage)."
           }
@@ -1980,11 +2183,12 @@
           "matchCount": 793,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.37c",
-      "date": "2026-06-12T21:14:57.925Z",
+      "date": "2026-06-13T18:03:40.473Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -2002,11 +2206,12 @@
           "matchCount": 793,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.37d",
-      "date": "2026-06-12T21:14:57.926Z",
+      "date": "2026-06-13T18:03:40.475Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -2024,11 +2229,12 @@
           "matchCount": 793,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.37e",
-      "date": "2026-06-12T21:14:57.928Z",
+      "date": "2026-06-13T18:03:40.477Z",
       "changes": [
         {
           "category": "hero",
@@ -2074,11 +2280,12 @@
           "matchCount": 793,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.38",
-      "date": "2026-06-12T21:14:57.935Z",
+      "date": "2026-06-13T18:03:40.485Z",
       "changes": [
         {
           "category": "hero",
@@ -2096,13 +2303,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 3.5,
-              "Guardian": 4,
-              "Crusader": 4,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 7.5,
-              "Divine": 8
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Increased a positive metric (base damage)."
           }
@@ -2124,13 +2331,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 3.5,
-              "Guardian": 4,
-              "Crusader": 4,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 7.5,
-              "Divine": 8
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Increased a positive metric (damage at level 1)."
           }
@@ -2154,13 +2361,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 3,
-              "Guardian": 3,
-              "Crusader": 3,
-              "Archon": 3,
-              "Legend": 3,
-              "Ancient": 4,
-              "Divine": 5
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Decreased a positive metric (slow linger duration)."
           }
@@ -2182,11 +2389,12 @@
           "matchCount": 1033,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.38b",
-      "date": "2026-06-12T21:14:57.936Z",
+      "date": "2026-06-13T18:03:40.487Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -2204,11 +2412,12 @@
           "matchCount": 1033,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.38c",
-      "date": "2026-06-12T21:14:57.938Z",
+      "date": "2026-06-13T18:03:40.490Z",
       "changes": [
         {
           "category": "hero",
@@ -2257,11 +2466,12 @@
           "matchCount": 1033,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.39",
-      "date": "2026-06-12T21:14:57.944Z",
+      "date": "2026-06-13T18:03:40.494Z",
       "changes": [
         {
           "category": "hero",
@@ -2309,13 +2519,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 5.5,
-              "Guardian": 4.5,
-              "Crusader": 5,
-              "Archon": 4.5,
-              "Legend": 5,
-              "Ancient": 6,
-              "Divine": 6
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Decreased a positive metric (effect radius)."
           }
@@ -2337,11 +2547,12 @@
           "matchCount": 1926,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.39b",
-      "date": "2026-06-12T21:14:57.946Z",
+      "date": "2026-06-13T18:03:40.495Z",
       "changes": [
         {
           "category": "hero",
@@ -2387,11 +2598,12 @@
           "matchCount": 1926,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.39c",
-      "date": "2026-06-12T21:14:57.947Z",
+      "date": "2026-06-13T18:03:40.498Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -2409,11 +2621,12 @@
           "matchCount": 1926,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.39d",
-      "date": "2026-06-12T21:14:57.949Z",
+      "date": "2026-06-13T18:03:40.502Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -2431,11 +2644,12 @@
           "matchCount": 1926,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.39e",
-      "date": "2026-06-12T21:14:57.951Z",
+      "date": "2026-06-13T18:03:40.503Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -2453,11 +2667,12 @@
           "matchCount": 1926,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.40",
-      "date": "2026-06-12T21:14:57.957Z",
+      "date": "2026-06-13T18:03:40.509Z",
       "changes": [
         {
           "category": "hero",
@@ -2483,8 +2698,8 @@
               "Crusader": 1,
               "Archon": 1,
               "Legend": 1,
-              "Ancient": 2,
-              "Divine": 1.5
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Increased a negative metric (cooldown)."
           }
@@ -2507,13 +2722,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 7,
-              "Guardian": 7,
-              "Crusader": 7,
-              "Archon": 7,
-              "Legend": 7,
-              "Ancient": 7,
-              "Divine": 7
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6.5,
+              "Archon": 6.5,
+              "Legend": 6.5,
+              "Ancient": 6.5,
+              "Divine": 6.5
             },
             "reasoning": "Decreased a positive metric (level 15 talent upheaval attack speed per second on allies)."
           }
@@ -2627,11 +2842,12 @@
           "matchCount": 1643,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.40b",
-      "date": "2026-06-12T21:14:57.960Z",
+      "date": "2026-06-13T18:03:40.512Z",
       "changes": [
         {
           "category": "hero",
@@ -2652,13 +2868,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 3.5,
-              "Guardian": 4,
-              "Crusader": 4,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 7.5,
-              "Divine": 8
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Decreased a positive metric (imp explosion damage)."
           }
@@ -2681,13 +2897,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 3.5,
-              "Guardian": 4,
-              "Crusader": 4,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 7.5,
-              "Divine": 8
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Increased a positive metric (level 20 talent upheaval damage)."
           }
@@ -2738,11 +2954,12 @@
           "matchCount": 1643,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.40c",
-      "date": "2026-06-12T21:14:57.962Z",
+      "date": "2026-06-13T18:03:40.515Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -2760,11 +2977,12 @@
           "matchCount": 1643,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.41",
-      "date": "2026-06-12T21:14:57.971Z",
+      "date": "2026-06-13T18:03:40.525Z",
       "changes": [
         {
           "category": "hero",
@@ -2842,13 +3060,13 @@
             "classificationType": "Adjustment",
             "confidenceScore": 0.8,
             "strategicWeight": {
-              "Herald": 3.5,
-              "Guardian": 4,
-              "Crusader": 4,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 7.5,
-              "Divine": 8
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
           }
@@ -2902,13 +3120,13 @@
             "classificationType": "Adjustment",
             "confidenceScore": 0.8,
             "strategicWeight": {
-              "Herald": 3.5,
-              "Guardian": 4,
-              "Crusader": 4,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 7.5,
-              "Divine": 8
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
           }
@@ -2957,11 +3175,12 @@
           "matchCount": 492,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.41a",
-      "date": "2026-06-12T21:14:57.973Z",
+      "date": "2026-06-13T18:03:40.527Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -2979,11 +3198,12 @@
           "matchCount": 492,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.41b",
-      "date": "2026-06-12T21:14:57.975Z",
+      "date": "2026-06-13T18:03:40.529Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -3001,11 +3221,12 @@
           "matchCount": 492,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.41c",
-      "date": "2026-06-12T21:14:57.977Z",
+      "date": "2026-06-13T18:03:40.535Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -3023,11 +3244,12 @@
           "matchCount": 492,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.41d",
-      "date": "2026-06-12T21:14:57.979Z",
+      "date": "2026-06-13T18:03:40.538Z",
       "changes": [
         {
           "category": "hero",
@@ -3053,8 +3275,8 @@
               "Crusader": 1,
               "Archon": 1,
               "Legend": 1,
-              "Ancient": 2,
-              "Divine": 1.5
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Decreased a negative metric (cooldown)."
           }
@@ -3136,7 +3358,8 @@
           "winrate": 0.4751,
           "matchCount": 16702
         }
-      }
+      },
+      "temporalAssessment": "Net Gain"
     }
   ]
 }

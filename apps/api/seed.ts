@@ -173,14 +173,14 @@ async function seed() {
       const heroMapping = JSON.parse(rawMapping);
       
       for (const bracket in winrates) {
-        for (const stratzId in winrates[bracket]) {
-          const heroName = heroMapping[stratzId];
+        for (const entityId in winrates[bracket]) {
+          const heroName = heroMapping[entityId];
           if (!heroName) continue;
           
           const entity = await prisma.entity.findUnique({ where: { name: heroName } });
           if (!entity) continue;
           
-          const wrData = winrates[bracket][stratzId];
+          const wrData = winrates[bracket][entityId];
           await prisma.winrateSnapshot.upsert({
             where: {
               patchId_entityId_bracket: {

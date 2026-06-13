@@ -21,7 +21,7 @@ Dota 2 Patch Intelligence is a high-fidelity data pipeline and visualization pla
 
 The system uses a **Static-to-Dynamic Hybrid** architecture, combining the power of a relational database with the cost-efficiency of static hosting.
 
-1.  **Ingestion Layer:** Discovers patches via Valve's official JSON datafeed and Stratz API.
+1.  **Ingestion Layer:** Discovers patches via Valve's official JSON datafeed and OpenDota SQL Explorer.
 2.  **Intelligence Engine:** A tiered classification pipeline (Deterministic -> Semantic -> AI) that models balance changes into structured facts.
 3.  **Modeling Layer:** Calculates 7-dimensional **Hero Feature Vectors** and aggregates **Cumulative Balance Histories**.
 4.  **Meta Analysis Layer:** LLMs synthesize high-level themes with **Temporal Context** and **Mechanical Grounding**.
@@ -35,11 +35,13 @@ The system uses a **Static-to-Dynamic Hybrid** architecture, combining the power
 The project operates as a multi-stage CLI-driven pipeline:
 
 ### Core Pipeline
+For a step-by-step guide on how to process a new patch, see [Manual Patch Workflow](docs/MANUAL_PATCH_WORKFLOW.md).
+
 1.  **Ingestion:** `npm run patch:discovery` — Fetches raw data from Valve.
 2.  **Mapping:** `npm run patch:mappings` — Builds ID-to-name maps.
 3.  **Parsing:** `npm run patch:parse` — Decomposes raw notes into structured facts.
 4.  **Vectors:** `npm run patch:vectors` — Calculates 7D identity shifts for heroes.
-5.  **Winrates:** `npm run patch:fetch-winrates` — Syncs historical performance data from Stratz.
+5.  **Winrates:** `npm run patch:fetch-winrates` — Syncs performance data from OpenDota (REST & SQL).
 6.  **History:** `npm run patch:generate-history` — Builds cumulative hero identity archives.
 
 ### Intelligence Layer (LLM)
@@ -57,7 +59,7 @@ The project operates as a multi-stage CLI-driven pipeline:
 
 *   **Frontend:** Next.js (Static Export), TypeScript, Vanilla CSS (CSS Modules).
 *   **API:** Fastify, Prisma ORM, PostgreSQL (via Docker).
-*   **Intelligence:** Anthropic SDK (Claude 4), Google Gen AI (Gemini 2.5), Valve Datafeed, Stratz GraphQL.
+*   **Intelligence:** Anthropic SDK (Claude 4), Google Gen AI (Gemini 2.5), Valve Datafeed, OpenDota SQL.
 *   **Deployment:** GitHub Actions, GitHub Pages.
 
 ---
@@ -69,7 +71,8 @@ graph TD
     subgraph "Data Acquisition"
         A[Steam News] --> B[Valve JSON Datafeed]
         B --> C[ID Mapping Resolver]
-        S[Stratz API] --> W[Winrate Snapshots]
+        D1[OpenDota SQL] --> W[Winrate Snapshots]
+        D2[OpenDota REST] --> W
     end
 
     subgraph "Intelligence Engine"

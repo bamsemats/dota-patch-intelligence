@@ -103,9 +103,25 @@ export default async function HeroPage({ params }: PageProps) {
             {heroData.history.slice().reverse().map((patch: any, pIdx: number) => (
               <div key={pIdx} style={{ background: 'var(--bg-panel)', padding: '25px', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '15px', flexWrap: 'wrap', gap: '10px' }}>
-                  <Link href={`/patch/${patch.version}`} style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--color-rare)', textDecoration: 'none' }}>
-                    Patch {patch.version}
-                  </Link>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                    <Link href={`/patch/${patch.version}`} style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--color-rare)', textDecoration: 'none' }}>
+                      Patch {patch.version}
+                    </Link>
+                    {patch.temporalAssessment && (
+                       <span style={{ 
+                        fontSize: "0.7rem", 
+                        padding: "2px 8px", 
+                        borderRadius: "4px", 
+                        background: patch.temporalAssessment === "Net Gain" ? "rgba(76, 175, 80, 0.2)" : "rgba(255, 152, 0, 0.2)",
+                        color: patch.temporalAssessment === "Net Gain" ? "#81c784" : "#ffb74d",
+                        border: `1px solid ${patch.temporalAssessment === "Net Gain" ? "#4caf50" : "#ff9800"}`,
+                        fontWeight: "bold",
+                        textTransform: "uppercase"
+                      }}>
+                        {patch.temporalAssessment}
+                      </span>
+                    )}
+                  </div>
                   <span style={{ color: '#666' }}>{new Date(patch.date).toLocaleDateString()}</span>
                 </div>
                 

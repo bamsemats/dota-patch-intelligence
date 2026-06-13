@@ -2,8 +2,142 @@
   "name": "Crystal Maiden",
   "history": [
     {
+      "version": "7.33",
+      "date": "2026-06-13T18:03:40.409Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Crystal Maiden",
+          "rawNote": "Base Damage increased by 2",
+          "indentLevel": 1,
+          "metric": "Base Damage",
+          "changeType": "INCREASED",
+          "newValue": "2",
+          "metadata": {
+            "entityId": 5
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Increased a positive metric (base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Crystal Maiden",
+          "subEntityName": "Frostbite",
+          "rawNote": "Damage Tick Interval decreased from 0.25s to 0.2s",
+          "indentLevel": 1,
+          "metric": "Damage Tick Interval",
+          "changeType": "DECREASED",
+          "oldValue": "0.25s",
+          "newValue": "0.2s",
+          "metadata": {
+            "entityId": 5,
+            "subEntityId": 5127
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a positive metric (damage tick interval)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Crystal Maiden",
+          "subEntityName": "Freezing Field",
+          "rawNote": "Cooldown decreased from 100s to 100/95/90s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "100s",
+          "newValue": "100/95/90s",
+          "metadata": {
+            "entityId": 5,
+            "subEntityId": 5129
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Crystal Maiden",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Attack Speed increased from +200 to +225",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Attack Speed",
+          "changeType": "INCREASED",
+          "oldValue": "+200",
+          "newValue": "+225",
+          "metadata": {
+            "entityId": 5
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6.5,
+              "Archon": 6.5,
+              "Legend": 6.5,
+              "Ancient": 6.5,
+              "Divine": 6.5
+            },
+            "reasoning": "Increased a positive metric (level 20 talent attack speed)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "totalVector": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {},
+      "temporalAssessment": "Net Gain"
+    },
+    {
       "version": "7.33b",
-      "date": "2026-06-12T21:14:57.869Z",
+      "date": "2026-06-13T18:03:40.413Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -44,11 +178,12 @@
           "winrate": 0.5202,
           "matchCount": 63631
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.33c",
-      "date": "2026-06-12T21:14:57.872Z",
+      "date": "2026-06-13T18:03:40.417Z",
       "changes": [
         {
           "category": "hero",
@@ -69,13 +204,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 3.5,
-              "Guardian": 4,
-              "Crusader": 4,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 7.5,
-              "Divine": 8
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Decreased a positive metric (damage)."
           }
@@ -128,11 +263,12 @@
           "winrate": 0.5017,
           "matchCount": 104978
         }
-      }
+      },
+      "temporalAssessment": "Recovery"
     },
     {
       "version": "7.33d",
-      "date": "2026-06-12T21:14:57.876Z",
+      "date": "2026-06-13T18:03:40.419Z",
       "changes": [
         {
           "category": "hero",
@@ -202,11 +338,12 @@
           "winrate": 0.494,
           "matchCount": 65317
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.33e",
-      "date": "2026-06-12T21:14:57.878Z",
+      "date": "2026-06-13T18:03:40.422Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -247,11 +384,12 @@
           "winrate": 0.4931,
           "matchCount": 57863
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.34",
-      "date": "2026-06-12T21:14:57.882Z",
+      "date": "2026-06-13T18:03:40.426Z",
       "changes": [
         {
           "category": "hero",
@@ -375,11 +513,12 @@
         "siege": 0,
         "utility": 0
       },
-      "winrates": {}
+      "winrates": {},
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.34b",
-      "date": "2026-06-12T21:14:57.884Z",
+      "date": "2026-06-13T18:03:40.429Z",
       "changes": [
         {
           "category": "hero",
@@ -451,11 +590,12 @@
           "winrate": 0.4544,
           "matchCount": 58737
         }
-      }
+      },
+      "temporalAssessment": "Recovery"
     },
     {
       "version": "7.34c",
-      "date": "2026-06-12T21:14:57.887Z",
+      "date": "2026-06-13T18:03:40.432Z",
       "changes": [
         {
           "category": "hero",
@@ -551,11 +691,12 @@
           "winrate": 0.4718,
           "matchCount": 53951
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.34d",
-      "date": "2026-06-12T21:14:57.889Z",
+      "date": "2026-06-13T18:03:40.435Z",
       "changes": [
         {
           "category": "hero",
@@ -608,8 +749,8 @@
               "Crusader": 1,
               "Archon": 1,
               "Legend": 1,
-              "Ancient": 2,
-              "Divine": 1.5
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Decreased a negative metric (cooldown)."
           }
@@ -662,11 +803,12 @@
           "winrate": 0.4691,
           "matchCount": 77240
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.34e",
-      "date": "2026-06-12T21:14:57.891Z",
+      "date": "2026-06-13T18:03:40.437Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -707,11 +849,12 @@
           "winrate": 0.4739,
           "matchCount": 36930
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.35",
-      "date": "2026-06-12T21:14:57.894Z",
+      "date": "2026-06-13T18:03:40.440Z",
       "changes": [
         {
           "category": "hero",
@@ -789,13 +932,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 5.5,
-              "Guardian": 4.5,
-              "Crusader": 5,
-              "Archon": 4.5,
-              "Legend": 5,
-              "Ancient": 6,
-              "Divine": 6
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Increased a positive metric (radius)."
           }
@@ -823,8 +966,8 @@
               "Crusader": 1,
               "Archon": 1,
               "Legend": 1,
-              "Ancient": 2,
-              "Divine": 1.5
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Increased a negative metric (level 15 talent crystal nova cooldown reduction)."
           }
@@ -847,13 +990,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 3.5,
-              "Guardian": 4,
-              "Crusader": 4,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 7.5,
-              "Divine": 8
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Increased a positive metric (level 25 talent crystal nova damage)."
           }
@@ -883,11 +1026,12 @@
           "matchCount": 2763,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.35b",
-      "date": "2026-06-12T21:14:57.897Z",
+      "date": "2026-06-13T18:03:40.442Z",
       "changes": [
         {
           "category": "hero",
@@ -933,11 +1077,12 @@
           "matchCount": 2763,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.35c",
-      "date": "2026-06-12T21:14:57.899Z",
+      "date": "2026-06-13T18:03:40.450Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -955,11 +1100,12 @@
           "matchCount": 2763,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.35d",
-      "date": "2026-06-12T21:14:57.901Z",
+      "date": "2026-06-13T18:03:40.452Z",
       "changes": [
         {
           "category": "hero",
@@ -1016,11 +1162,12 @@
           "matchCount": 2763,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.36",
-      "date": "2026-06-12T21:14:57.906Z",
+      "date": "2026-06-13T18:03:40.459Z",
       "changes": [
         {
           "category": "hero",
@@ -1207,13 +1354,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 7,
-              "Guardian": 7,
-              "Crusader": 7,
-              "Archon": 7,
-              "Legend": 7,
-              "Ancient": 7,
-              "Divine": 7
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6.5,
+              "Archon": 6.5,
+              "Legend": 6.5,
+              "Ancient": 6.5,
+              "Divine": 6.5
             },
             "reasoning": "Increased a positive metric (attack speed slow)."
           }
@@ -1262,11 +1409,12 @@
           "matchCount": 1356,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.36a",
-      "date": "2026-06-12T21:14:57.913Z",
+      "date": "2026-06-13T18:03:40.460Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1284,11 +1432,12 @@
           "matchCount": 1356,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.36b",
-      "date": "2026-06-12T21:14:57.915Z",
+      "date": "2026-06-13T18:03:40.463Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1306,11 +1455,12 @@
           "matchCount": 1356,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.36c",
-      "date": "2026-06-12T21:14:57.917Z",
+      "date": "2026-06-13T18:03:40.465Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1328,11 +1478,12 @@
           "matchCount": 1356,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.37",
-      "date": "2026-06-12T21:14:57.921Z",
+      "date": "2026-06-13T18:03:40.469Z",
       "changes": [
         {
           "category": "hero",
@@ -1376,11 +1527,12 @@
           "matchCount": 1949,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.37b",
-      "date": "2026-06-12T21:14:57.922Z",
+      "date": "2026-06-13T18:03:40.471Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1398,11 +1550,12 @@
           "matchCount": 1949,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.37c",
-      "date": "2026-06-12T21:14:57.925Z",
+      "date": "2026-06-13T18:03:40.473Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1420,11 +1573,12 @@
           "matchCount": 1949,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.37d",
-      "date": "2026-06-12T21:14:57.926Z",
+      "date": "2026-06-13T18:03:40.475Z",
       "changes": [
         {
           "category": "hero",
@@ -1477,8 +1631,8 @@
               "Crusader": 1,
               "Archon": 1,
               "Legend": 1,
-              "Ancient": 2,
-              "Divine": 1.5
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Increased a negative metric (level 15 talent crystal nova cooldown reduction)."
           }
@@ -1500,11 +1654,12 @@
           "matchCount": 1949,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.37e",
-      "date": "2026-06-12T21:14:57.928Z",
+      "date": "2026-06-13T18:03:40.477Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1522,11 +1677,12 @@
           "matchCount": 1949,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.38",
-      "date": "2026-06-12T21:14:57.935Z",
+      "date": "2026-06-13T18:03:40.485Z",
       "changes": [
         {
           "category": "hero",
@@ -1625,13 +1781,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 3,
-              "Guardian": 3,
-              "Crusader": 3,
-              "Archon": 3,
-              "Legend": 3,
-              "Ancient": 4,
-              "Divine": 5
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Decreased a positive metric (slow duration)."
           }
@@ -1681,11 +1837,12 @@
           "matchCount": 999,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.38b",
-      "date": "2026-06-12T21:14:57.936Z",
+      "date": "2026-06-13T18:03:40.487Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1703,11 +1860,12 @@
           "matchCount": 999,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.38c",
-      "date": "2026-06-12T21:14:57.938Z",
+      "date": "2026-06-13T18:03:40.490Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1725,11 +1883,12 @@
           "matchCount": 999,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.39",
-      "date": "2026-06-12T21:14:57.944Z",
+      "date": "2026-06-13T18:03:40.494Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1747,11 +1906,12 @@
           "matchCount": 1833,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.39b",
-      "date": "2026-06-12T21:14:57.945Z",
+      "date": "2026-06-13T18:03:40.495Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1769,11 +1929,12 @@
           "matchCount": 1833,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.39c",
-      "date": "2026-06-12T21:14:57.947Z",
+      "date": "2026-06-13T18:03:40.498Z",
       "changes": [
         {
           "category": "hero",
@@ -1822,11 +1983,12 @@
           "matchCount": 1833,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.39d",
-      "date": "2026-06-12T21:14:57.949Z",
+      "date": "2026-06-13T18:03:40.501Z",
       "changes": [
         {
           "category": "hero",
@@ -1847,13 +2009,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 3.5,
-              "Guardian": 4,
-              "Crusader": 4,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 7.5,
-              "Divine": 8
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Increased a positive metric (damage)."
           }
@@ -1883,11 +2045,12 @@
           "matchCount": 1833,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.39e",
-      "date": "2026-06-12T21:14:57.951Z",
+      "date": "2026-06-13T18:03:40.503Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1905,11 +2068,12 @@
           "matchCount": 1833,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.40",
-      "date": "2026-06-12T21:14:57.956Z",
+      "date": "2026-06-13T18:03:40.509Z",
       "changes": [
         {
           "category": "hero",
@@ -1927,13 +2091,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 3.5,
-              "Guardian": 4,
-              "Crusader": 4,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 7.5,
-              "Divine": 8
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Decreased a positive metric (base damage)."
           }
@@ -2008,11 +2172,12 @@
           "matchCount": 829,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.40b",
-      "date": "2026-06-12T21:14:57.960Z",
+      "date": "2026-06-13T18:03:40.511Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -2030,11 +2195,12 @@
           "matchCount": 829,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.40c",
-      "date": "2026-06-12T21:14:57.962Z",
+      "date": "2026-06-13T18:03:40.515Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -2052,11 +2218,12 @@
           "matchCount": 829,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.41",
-      "date": "2026-06-12T21:14:57.971Z",
+      "date": "2026-06-13T18:03:40.525Z",
       "changes": [
         {
           "category": "hero",
@@ -2236,11 +2403,12 @@
           "matchCount": 468,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.41a",
-      "date": "2026-06-12T21:14:57.973Z",
+      "date": "2026-06-13T18:03:40.527Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -2258,11 +2426,12 @@
           "matchCount": 468,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.41b",
-      "date": "2026-06-12T21:14:57.975Z",
+      "date": "2026-06-13T18:03:40.529Z",
       "changes": [
         {
           "category": "hero",
@@ -2288,8 +2457,8 @@
               "Crusader": 1,
               "Archon": 1,
               "Legend": 1,
-              "Ancient": 2,
-              "Divine": 1.5
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Increased a negative metric (cooldown)."
           }
@@ -2319,11 +2488,12 @@
           "matchCount": 468,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.41c",
-      "date": "2026-06-12T21:14:57.977Z",
+      "date": "2026-06-13T18:03:40.535Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -2341,11 +2511,12 @@
           "matchCount": 468,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.41d",
-      "date": "2026-06-12T21:14:57.979Z",
+      "date": "2026-06-13T18:03:40.538Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -2386,7 +2557,8 @@
           "winrate": 0.493,
           "matchCount": 28417
         }
-      }
+      },
+      "temporalAssessment": null
     }
   ]
 }

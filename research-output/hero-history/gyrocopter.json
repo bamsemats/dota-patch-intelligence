@@ -2,8 +2,234 @@
   "name": "Gyrocopter",
   "history": [
     {
+      "version": "7.33",
+      "date": "2026-06-13T18:03:40.409Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Gyrocopter",
+          "subEntityName": "Homing Missile",
+          "rawNote": "Stun Duration decreased from 1.8/2.2/2.6/3s to 1.55/1.9/2.25/2.6s ",
+          "indentLevel": 1,
+          "metric": "Stun Duration",
+          "changeType": "DECREASED",
+          "oldValue": "1.8/2.2/2.6/3s",
+          "newValue": "1.55/1.9/2.25/2.6s",
+          "metadata": {
+            "entityId": 72,
+            "subEntityId": 5362
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a positive metric (stun duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Gyrocopter",
+          "subEntityName": "Homing Missile",
+          "rawNote": "Cooldown increased from 26/21/16/11s to 30/24/18/12s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "INCREASED",
+          "oldValue": "26/21/16/11s",
+          "newValue": "30/24/18/12s",
+          "metadata": {
+            "entityId": 72,
+            "subEntityId": 5362
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Increased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Gyrocopter",
+          "subEntityName": "Homing Missile",
+          "rawNote": "Aghanim's Shard Area of Effect decreased from 725 to 700",
+          "indentLevel": 1,
+          "metric": "Aghanim's Shard Area of Effect",
+          "changeType": "DECREASED",
+          "oldValue": "725",
+          "newValue": "700",
+          "metadata": {
+            "entityId": 72,
+            "subEntityId": 5362
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Gyrocopter",
+          "subEntityName": "Flak Cannon",
+          "rawNote": "Duration increased from 10s to 12s",
+          "indentLevel": 1,
+          "metric": "Duration",
+          "changeType": "INCREASED",
+          "oldValue": "10s",
+          "newValue": "12s",
+          "metadata": {
+            "entityId": 72,
+            "subEntityId": 5363
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Increased a positive metric (duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Gyrocopter",
+          "subEntityName": "Flak Cannon",
+          "rawNote": "Max Attacks increased from 3/4/5/6 to 4/5/6/7",
+          "indentLevel": 1,
+          "metric": "Max Attacks",
+          "changeType": "INCREASED",
+          "oldValue": "3/4/5/6",
+          "newValue": "4/5/6/7",
+          "metadata": {
+            "entityId": 72,
+            "subEntityId": 5363
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Gyrocopter",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent Homing Missile Stun Duration decreased from +0.4s to +0.3s",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent Homing Missile Stun Duration",
+          "changeType": "DECREASED",
+          "oldValue": "+0.4s",
+          "newValue": "+0.3s",
+          "metadata": {
+            "entityId": 72
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a positive metric (level 15 talent homing missile stun duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Gyrocopter",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Rocket Barrage damage decreased from +16 to +14",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Rocket Barrage damage",
+          "changeType": "DECREASED",
+          "oldValue": "+16",
+          "newValue": "+14",
+          "metadata": {
+            "entityId": 72
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a positive metric (level 20 talent rocket barrage damage)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "totalVector": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
+      "winrates": {},
+      "temporalAssessment": null
+    },
+    {
       "version": "7.33b",
-      "date": "2026-06-12T21:14:57.870Z",
+      "date": "2026-06-13T18:03:40.413Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -44,11 +270,12 @@
           "winrate": 0.4788,
           "matchCount": 16850
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.33c",
-      "date": "2026-06-12T21:14:57.872Z",
+      "date": "2026-06-13T18:03:40.417Z",
       "changes": [
         {
           "category": "hero",
@@ -118,11 +345,12 @@
           "winrate": 0.475,
           "matchCount": 22817
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.33d",
-      "date": "2026-06-12T21:14:57.877Z",
+      "date": "2026-06-13T18:03:40.420Z",
       "changes": [
         {
           "category": "hero",
@@ -143,13 +371,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 3.5,
-              "Guardian": 4,
-              "Crusader": 4,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 7.5,
-              "Divine": 8
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Increased a positive metric (missile two damage)."
           }
@@ -194,11 +422,12 @@
           "winrate": 0.4819,
           "matchCount": 18268
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.33e",
-      "date": "2026-06-12T21:14:57.878Z",
+      "date": "2026-06-13T18:03:40.422Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -239,11 +468,12 @@
           "winrate": 0.4844,
           "matchCount": 20646
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.34",
-      "date": "2026-06-12T21:14:57.882Z",
+      "date": "2026-06-13T18:03:40.427Z",
       "changes": [
         {
           "category": "hero",
@@ -291,13 +521,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 5.5,
-              "Guardian": 4.5,
-              "Crusader": 5,
-              "Archon": 4.5,
-              "Legend": 5,
-              "Ancient": 6,
-              "Divine": 6
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Increased a positive metric (radius)."
           }
@@ -375,11 +605,12 @@
         "siege": 0,
         "utility": 0
       },
-      "winrates": {}
+      "winrates": {},
+      "temporalAssessment": null
     },
     {
       "version": "7.34b",
-      "date": "2026-06-12T21:14:57.884Z",
+      "date": "2026-06-13T18:03:40.429Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -420,11 +651,12 @@
           "winrate": 0.5344,
           "matchCount": 151218
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.34c",
-      "date": "2026-06-12T21:14:57.887Z",
+      "date": "2026-06-13T18:03:40.432Z",
       "changes": [
         {
           "category": "hero",
@@ -473,13 +705,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 3,
-              "Guardian": 3,
-              "Crusader": 3,
-              "Archon": 3,
-              "Legend": 3,
-              "Ancient": 4,
-              "Divine": 5
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Decreased a positive metric (stun duration)."
           }
@@ -508,8 +740,8 @@
               "Crusader": 1,
               "Archon": 1,
               "Legend": 1,
-              "Ancient": 2,
-              "Divine": 1.5
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Increased a negative metric (cooldown)."
           }
@@ -622,8 +854,8 @@
               "Crusader": 1,
               "Archon": 1,
               "Legend": 1,
-              "Ancient": 2,
-              "Divine": 1.5
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Decreased a negative metric (level 25 talent flak cannon cooldown reduction)."
           }
@@ -676,11 +908,12 @@
           "winrate": 0.4838,
           "matchCount": 99708
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.34d",
-      "date": "2026-06-12T21:14:57.889Z",
+      "date": "2026-06-13T18:03:40.435Z",
       "changes": [
         {
           "category": "hero",
@@ -752,11 +985,12 @@
           "winrate": 0.468,
           "matchCount": 45202
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.34e",
-      "date": "2026-06-12T21:14:57.891Z",
+      "date": "2026-06-13T18:03:40.437Z",
       "changes": [
         {
           "category": "hero",
@@ -777,13 +1011,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 3.5,
-              "Guardian": 4,
-              "Crusader": 4,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 7.5,
-              "Divine": 8
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Increased a positive metric (rocket damage)."
           }
@@ -828,11 +1062,12 @@
           "winrate": 0.4998,
           "matchCount": 58712
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.35",
-      "date": "2026-06-12T21:14:57.895Z",
+      "date": "2026-06-13T18:03:40.440Z",
       "changes": [
         {
           "category": "hero",
@@ -964,13 +1199,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 5.5,
-              "Guardian": 4.5,
-              "Crusader": 5,
-              "Archon": 4.5,
-              "Legend": 5,
-              "Ancient": 6,
-              "Divine": 6
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Decreased a positive metric (strike radius)."
           }
@@ -1058,11 +1293,12 @@
           "matchCount": 1650,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.35b",
-      "date": "2026-06-12T21:14:57.897Z",
+      "date": "2026-06-13T18:03:40.442Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1080,11 +1316,12 @@
           "matchCount": 1650,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.35c",
-      "date": "2026-06-12T21:14:57.899Z",
+      "date": "2026-06-13T18:03:40.450Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1102,11 +1339,12 @@
           "matchCount": 1650,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.35d",
-      "date": "2026-06-12T21:14:57.901Z",
+      "date": "2026-06-13T18:03:40.453Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1124,11 +1362,12 @@
           "matchCount": 1650,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.36",
-      "date": "2026-06-12T21:14:57.907Z",
+      "date": "2026-06-13T18:03:40.459Z",
       "changes": [
         {
           "category": "hero",
@@ -1228,11 +1467,12 @@
           "matchCount": 870,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.36a",
-      "date": "2026-06-12T21:14:57.914Z",
+      "date": "2026-06-13T18:03:40.461Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1250,11 +1490,12 @@
           "matchCount": 870,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.36b",
-      "date": "2026-06-12T21:14:57.916Z",
+      "date": "2026-06-13T18:03:40.463Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1272,11 +1513,12 @@
           "matchCount": 870,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.36c",
-      "date": "2026-06-12T21:14:57.917Z",
+      "date": "2026-06-13T18:03:40.465Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1294,11 +1536,12 @@
           "matchCount": 870,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.37",
-      "date": "2026-06-12T21:14:57.921Z",
+      "date": "2026-06-13T18:03:40.469Z",
       "changes": [
         {
           "category": "hero",
@@ -1319,13 +1562,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 3.5,
-              "Guardian": 4,
-              "Crusader": 4,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 7.5,
-              "Divine": 8
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Increased a positive metric (missile damage)."
           }
@@ -1347,11 +1590,12 @@
           "matchCount": 2147,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.37b",
-      "date": "2026-06-12T21:14:57.923Z",
+      "date": "2026-06-13T18:03:40.471Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1369,11 +1613,12 @@
           "matchCount": 2147,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.37c",
-      "date": "2026-06-12T21:14:57.925Z",
+      "date": "2026-06-13T18:03:40.473Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1391,11 +1636,12 @@
           "matchCount": 2147,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.37d",
-      "date": "2026-06-12T21:14:57.927Z",
+      "date": "2026-06-13T18:03:40.475Z",
       "changes": [
         {
           "category": "hero",
@@ -1413,13 +1659,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 3.5,
-              "Guardian": 4,
-              "Crusader": 4,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 7.5,
-              "Divine": 8
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Increased a positive metric (base damage)."
           }
@@ -1441,11 +1687,12 @@
           "matchCount": 2147,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.37e",
-      "date": "2026-06-12T21:14:57.928Z",
+      "date": "2026-06-13T18:03:40.477Z",
       "changes": [
         {
           "category": "hero",
@@ -1494,11 +1741,12 @@
           "matchCount": 2147,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.38",
-      "date": "2026-06-12T21:14:57.935Z",
+      "date": "2026-06-13T18:03:40.485Z",
       "changes": [
         {
           "category": "hero",
@@ -1638,11 +1886,12 @@
           "matchCount": 749,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.38b",
-      "date": "2026-06-12T21:14:57.937Z",
+      "date": "2026-06-13T18:03:40.488Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1660,11 +1909,12 @@
           "matchCount": 749,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.38c",
-      "date": "2026-06-12T21:14:57.939Z",
+      "date": "2026-06-13T18:03:40.490Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1682,11 +1932,12 @@
           "matchCount": 749,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.39",
-      "date": "2026-06-12T21:14:57.944Z",
+      "date": "2026-06-13T18:03:40.494Z",
       "changes": [
         {
           "category": "hero",
@@ -1732,11 +1983,12 @@
           "matchCount": 2229,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.39b",
-      "date": "2026-06-12T21:14:57.946Z",
+      "date": "2026-06-13T18:03:40.496Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1754,11 +2006,12 @@
           "matchCount": 2229,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.39c",
-      "date": "2026-06-12T21:14:57.947Z",
+      "date": "2026-06-13T18:03:40.498Z",
       "changes": [
         {
           "category": "hero",
@@ -1812,8 +2065,8 @@
               "Crusader": 1,
               "Archon": 1,
               "Legend": 1,
-              "Ancient": 2,
-              "Divine": 1.5
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Decreased a negative metric (level 25 talent flak cannon cooldown reduction)."
           }
@@ -1835,11 +2088,12 @@
           "matchCount": 2229,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.39d",
-      "date": "2026-06-12T21:14:57.949Z",
+      "date": "2026-06-13T18:03:40.502Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1857,11 +2111,12 @@
           "matchCount": 2229,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.39e",
-      "date": "2026-06-12T21:14:57.951Z",
+      "date": "2026-06-13T18:03:40.504Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1879,11 +2134,12 @@
           "matchCount": 2229,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.40",
-      "date": "2026-06-12T21:14:57.957Z",
+      "date": "2026-06-13T18:03:40.509Z",
       "changes": [
         {
           "category": "hero",
@@ -1904,13 +2160,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 3.5,
-              "Guardian": 4,
-              "Crusader": 4,
-              "Archon": 4,
-              "Legend": 5,
-              "Ancient": 7.5,
-              "Divine": 8
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Decreased a positive metric (missile damage)."
           }
@@ -1932,11 +2188,12 @@
           "matchCount": 879,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.40b",
-      "date": "2026-06-12T21:14:57.960Z",
+      "date": "2026-06-13T18:03:40.512Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1954,11 +2211,12 @@
           "matchCount": 879,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.40c",
-      "date": "2026-06-12T21:14:57.962Z",
+      "date": "2026-06-13T18:03:40.515Z",
       "changes": [
         {
           "category": "hero",
@@ -1977,13 +2235,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 7,
-              "Guardian": 7,
-              "Crusader": 7,
-              "Archon": 7,
-              "Legend": 7,
-              "Ancient": 7,
-              "Divine": 7
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6.5,
+              "Archon": 6.5,
+              "Legend": 6.5,
+              "Ancient": 6.5,
+              "Divine": 6.5
             },
             "reasoning": "Decreased a positive metric (base attack speed)."
           }
@@ -2039,8 +2297,8 @@
               "Crusader": 1,
               "Archon": 1,
               "Legend": 1,
-              "Ancient": 2,
-              "Divine": 1.5
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Increased a negative metric (level 25 talent call down cooldown reduction)."
           }
@@ -2062,11 +2320,12 @@
           "matchCount": 879,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.41",
-      "date": "2026-06-12T21:14:57.971Z",
+      "date": "2026-06-13T18:03:40.525Z",
       "changes": [
         {
           "category": "hero",
@@ -2246,11 +2505,12 @@
           "matchCount": 243,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.41a",
-      "date": "2026-06-12T21:14:57.973Z",
+      "date": "2026-06-13T18:03:40.527Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -2268,11 +2528,12 @@
           "matchCount": 243,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.41b",
-      "date": "2026-06-12T21:14:57.975Z",
+      "date": "2026-06-13T18:03:40.529Z",
       "changes": [
         {
           "category": "hero",
@@ -2298,8 +2559,8 @@
               "Crusader": 1,
               "Archon": 1,
               "Legend": 1,
-              "Ancient": 2,
-              "Divine": 1.5
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
           }
@@ -2328,8 +2589,8 @@
               "Crusader": 1,
               "Archon": 1,
               "Legend": 1,
-              "Ancient": 2,
-              "Divine": 1.5
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Decreased a negative metric (cooldown)."
           }
@@ -2359,11 +2620,12 @@
           "matchCount": 243,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.41c",
-      "date": "2026-06-12T21:14:57.977Z",
+      "date": "2026-06-13T18:03:40.535Z",
       "changes": [
         {
           "category": "hero",
@@ -2384,13 +2646,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 3,
-              "Guardian": 3,
-              "Crusader": 3,
-              "Archon": 3,
-              "Legend": 3,
-              "Ancient": 4,
-              "Divine": 5
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Increased a positive metric (duration)."
           }
@@ -2420,11 +2682,12 @@
           "matchCount": 243,
           "isHistorical": true
         }
-      }
+      },
+      "temporalAssessment": null
     },
     {
       "version": "7.41d",
-      "date": "2026-06-12T21:14:57.979Z",
+      "date": "2026-06-13T18:03:40.538Z",
       "changes": [
         {
           "category": "hero",
@@ -2561,8 +2824,8 @@
               "Crusader": 1,
               "Archon": 1,
               "Legend": 1,
-              "Ancient": 2,
-              "Divine": 1.5
+              "Ancient": 1,
+              "Divine": 1
             },
             "reasoning": "Increased a negative metric (level 25 talent flak cannon cooldown reduction)."
           }
@@ -2607,7 +2870,8 @@
           "winrate": 0.4227,
           "matchCount": 6478
         }
-      }
+      },
+      "temporalAssessment": null
     }
   ]
 }

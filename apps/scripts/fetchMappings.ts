@@ -56,23 +56,27 @@ async function main() {
     
     const heroMap: Record<number, string> = {};
     const abilityMap: Record<number, string> = {};
+    const heroDataMap: Record<number, any> = {};
 
     for (const hero of heroes) {
         heroMap[hero.id] = hero.name_english_loc;
-        console.log(`[Mappings] Fetching abilities for ${hero.name_english_loc}...`);
+        console.log(`[Mappings] Fetching data for ${hero.name_english_loc}...`);
         
         try {
             const heroDataResponse = await fetchHeroData(hero.id);
             const heroData = heroDataResponse.result?.data?.heroes?.[0];
             
-            if (heroData && heroData.abilities) {
-                for (const ability of heroData.abilities) {
-                    abilityMap[ability.id] = ability.name_loc;
+            if (heroData) {
+                heroDataMap[hero.id] = heroData;
+                if (heroData.abilities) {
+                    for (const ability of heroData.abilities) {
+                        abilityMap[ability.id] = ability.name_loc;
+                    }
                 }
-            }
-            if (heroData && heroData.talents) {
-                for (const talent of heroData.talents) {
-                    abilityMap[talent.id] = talent.name_loc;
+                if (heroData.talents) {
+                    for (const talent of heroData.talents) {
+                        abilityMap[talent.id] = talent.name_loc;
+                    }
                 }
             }
         } catch (error) {
@@ -97,6 +101,7 @@ async function main() {
     if (Object.keys(itemMap).length === 0) throw new Error("Validation Failed: No items mapped.");
 
     await writeFile(heroesFile, JSON.stringify(heroMap, null, 2), "utf8");
+    await writeFile(path.join(MAPPINGS_DIR, "herodata.json"), JSON.stringify(heroDataMap, null, 2), "utf8");
     await writeFile(path.join(MAPPINGS_DIR, "abilities.json"), JSON.stringify(abilityMap, null, 2), "utf8");
     await writeFile(path.join(MAPPINGS_DIR, "items.json"), JSON.stringify(itemMap, null, 2), "utf8");
 

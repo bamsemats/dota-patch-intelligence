@@ -19,13 +19,17 @@
     "patch:impact": "tsx apps/scripts/impactScorer.ts",
     "patch:meta": "tsx apps/scripts/metaAnalyzer.ts",
     "patch:meta-backfill": "tsx apps/scripts/backfillMeta.ts",
+    "patch:meta-check": "tsx apps/scripts/factChecker.ts",
     "patch:review": "tsx apps/scripts/reviewUnknowns.ts",
     "patch:vectors": "tsx apps/scripts/calculateVectors.ts",
     "patch:simulate": "tsx apps/scripts/simulateMeta.ts",
     "patch:validate": "tsx apps/scripts/validateEngine.ts",
     "patch:fetch-winrates": "tsx apps/scripts/fetchOpenDotaWinrates.ts",
     "patch:calibrate": "tsx apps/scripts/calibrateWeights.ts",
-    "hero:history": "tsx apps/scripts/generateHeroHistory.ts"
+    "patch:generate-history": "tsx apps/scripts/generateHeroHistory.ts",
+    "db:seed": "tsx apps/api/seed.ts",
+    "db:backup": "tsx apps/scripts/backupDb.ts",
+    "predb:seed": "npm run db:backup"
   },
   "repository": {
     "type": "git",

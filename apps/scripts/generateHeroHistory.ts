@@ -6,10 +6,11 @@ const patchesDir = path.join(researchDir, "classified-patches");
 const outputDir = path.join(researchDir, "hero-history");
 const vectorsDir = path.join(researchDir, "feature-vectors");
 const calibrationDir = path.join(researchDir, "calibration-data");
+const metaDir = path.join(researchDir, "meta-analysis");
 const mappingPath = path.join(researchDir, "mappings", "heroes.json");
 
 async function generate() {
-  console.log("Generating smart hero history index with winrate forward-filling...");
+  console.log("Generating smart hero history index with temporal assessments...");
   
   if (!(await fs.stat(outputDir).catch(() => null))) {
     await fs.mkdir(outputDir);
@@ -71,6 +72,27 @@ async function generate() {
       winrateMap = JSON.parse(rawWinrates);
     } catch (e) {}
 
+    // Load meta-analysis for temporal assessments
+    const temporalMap: Record<string, string> = {};
+    try {
+      const rawMeta = await fs.readFile(path.join(metaDir, `meta-${patchVersion}.json`), "utf-8");
+      const meta = JSON.parse(rawMeta);
+      
+      // Extract from overall synergistic winners
+      (meta.synergisticWinners || []).forEach((w: any) => {
+        if (w.temporalAssessment) temporalMap[w.entity] = w.temporalAssessment;
+      });
+
+      // Extract from role-specific winners
+      if (meta.roleSpecificWinners) {
+        Object.values(meta.roleSpecificWinners).forEach((roleGroup: any) => {
+           roleGroup.forEach((w: any) => {
+             if (w.temporalAssessment) temporalMap[w.hero] = w.temporalAssessment;
+           });
+        });
+      }
+    } catch (e) {}
+
     // Track which heroes have changes in this patch
     const patchChanges: Record<string, any[]> = {};
     if (patch.changes) {
@@ -87,8 +109,6 @@ async function generate() {
     for (const name of heroNames) {
       const heroId = Object.keys(heroMapping).find(id => heroMapping[id] === name);
       
-      // NEW: Zero-Trust Winrates. We only record data if it exists for THIS patch.
-      // No more "forward-filling" the persistent state.
       const currentPatchWinrates: Record<string, any> = {};
       
       if (winrateMap && heroId) {
@@ -105,7 +125,8 @@ async function generate() {
         changes: patchChanges[name] || [],
         vectorDelta: vectorDeltaMap[name] || null,
         totalVector: { ...currentVectors[name] }, // Cumulative state
-        winrates: currentPatchWinrates // Explicitly only for THIS patch
+        winrates: currentPatchWinrates, // Explicitly only for THIS patch
+        temporalAssessment: temporalMap[name] || null
       });
     }
   }

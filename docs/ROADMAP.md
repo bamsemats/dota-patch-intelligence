@@ -277,28 +277,36 @@ Deliverables:
 
 ---
 
+# Phase 18 — Mechanical Truth-Grounded Intelligence (HARDENING)
+
+Status: **Complete**
+
+Goals:
+* **Factual Grounding:** Implemented `FACTUAL_REFERENCE_GUIDE` injection into Gemini 2.5 Flash prompts, anchoring analysis in deterministic game data. (Done)
+* **Hallucination Rejection:** Added explicit constraints to prevent "Intelligence form" and other non-existent mechanics. (Done)
+* **Programmatic Validation:** Created `factChecker.ts` to verify LLM outputs against official hero/ability/item mappings. (Done)
+
+---
+
 # Phase 14 — Historical Backfill & Deep Meta Analysis
 
-Status: In Progress (High-Fidelity Re-run)
+Status: In Progress (Sequential Re-run)
 
 Goals:
 * **Role-Specific Losers:** Expand the Meta Analysis engine to identify the heroes hit hardest by nerfs within specific roles. (Done)
-* **High-Fidelity Grounding:** Enforce strict "Zero Hallucination" rules regarding item-hero synergies (e.g., no Gleipnir on PA) and mechanical interactions. (Done)
-* **Historical Backfilling:** Re-run analysis for all 35 patches using Claude 4 Sonnet with high-fidelity constraints. (Done: Initial Re-run)
-* **Intuitive Meta Correction (TODO):** Re-run the meta-analysis for all patches using **Gemini 2.5 Flash** (once quota resets) to restore the "Strategic Intuition" and thematic depth that Gemini captures better than Claude, while keeping the high-fidelity grounding rules. (See `docs/GEMINI_META_PLAN.md`)
-* **LLM Maintenance:** Update the model string in `backfillMeta.ts` to a newer stable version (e.g., `claude-3-7-sonnet-latest`) before the June 15th, 2026 deprecation of `claude-sonnet-4-20250514`.
-* **CI/CD Build Robustness:** Refactored the frontend to use a local JSON fallback during the Next.js `npm run build` process, ensuring successful GitHub Pages deployment even when the API is offline. (Done)
+* **Historical Backfilling:** Re-running analysis for all 39 patches (starting from 7.33) using the Truth-Grounded Gemini 2.5 Flash engine. (In Progress)
+* **LLM Maintenance:** Updated `backfillMeta.ts` to use Gemini 2.5 Flash for superior strategic intuition. (Done)
 
 ---
 
 # Phase 15 — Cross-Patch Intelligence & Temporal Validation
 
-Status: Up Next (CRITICAL)
+Status: **Complete** (Integrated into Backfill)
 
 Goals:
-* **Trend Analysis:** Implement "Temporal Context" where the analyzer reviews the previous patch before assessing the current one.
-* **Relative Strength Assessment:** Determine if a current buff is a net gain or just a partial recovery from a recent major nerf (e.g., Illusion strategies in 7.41b vs 7.41d).
-* **Automated Fact-Checking:** Develop a validation layer that flags nonsensical LLM synergies against a deterministic mechanical rulebook.
+* **Trend Analysis:** Implement "Temporal Context" where the analyzer reviews the previous patch before assessing the current one. (Done)
+* **Relative Strength Assessment:** System now explicitly identifies if a buff is a 'Net Gain' or a 'Recovery' based on recent meta shifts. (Done)
+* **Automated Fact-Checking:** (See Phase 18)
 
 ---
 
@@ -320,6 +328,12 @@ Deliverables:
 ---
 
 # Phase 17 — Advanced Resilience & Data Sourcing
+
+Status: Up Next
+
+Goals:
+*   **Automatic Backup**: Implement periodic local snapshots of the PostgreSQL database.
+*   **Data Scraper Hardening**: Add more fallback sources for hero ability icons and item descriptions if Valve's CDN is slow.
 
 ---
 

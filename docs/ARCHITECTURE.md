@@ -31,8 +31,9 @@ To ensure system longevity after the Stratz deprecation, the platform uses a two
 ### Meta Analysis (Gemini 2.5 Flash)
 Refactored to utilize the Google Gen AI SDK:
 *   **Strategic Intuition:** Prioritizes "Archetypal Themes" and game tempo over individual change math.
-*   **Temporal Grounding:** Injects meta shifts from the *previous* patch into the prompt context to identify recurring trends or corrective nerfs.
-*   **High-Fidelity Rules:** Strict mechanical grounding prevents hallucinated hero-item synergies.
+*   **Temporal Grounding (Phase 15):** Injects meta shifts from the *previous* patch into the prompt context to identify recurring trends or corrective nerfs. Categorizes winners as "Net Gain" or "Recovery".
+*   **Mechanical Truth-Grounding (Phase 18):** Uses a deterministic `FACTUAL_REFERENCE_GUIDE` injected into the prompt to anchor analysis in real hero attributes and ability names.
+*   **Validation Layer:** A secondary `factChecker.ts` programmatic pass ensures all LLM-generated entities match official Valve mappings before the analysis is accepted.
 
 ### Winrate Calibration Engine
 Automated script (`calibrateWeights.ts`) that compares real-world winrate shifts against calculated impact scores. If a hero's winrate moves in the opposite direction of our prediction, the system "nudges" the underlying ontology weights to improve future accuracy.

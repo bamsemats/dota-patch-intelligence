@@ -64,7 +64,23 @@ export default function SummaryTabs({ metaData }: SummaryTabsProps) {
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", marginTop: "16px" }}>
                 {metaData.synergisticWinners?.map((winner: any, idx: number) => (
                   <div key={idx}>
-                    <h4 style={{ margin: "0 0 4px 0", color: "var(--color-epic)" }}>{winner.entity}</h4>
+                    <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "4px" }}>
+                      <h4 style={{ margin: 0, color: "var(--color-epic)" }}>{winner.entity}</h4>
+                      {winner.temporalAssessment && winner.temporalAssessment !== "N/A" && (
+                        <span style={{ 
+                          fontSize: "0.65rem", 
+                          padding: "2px 6px", 
+                          borderRadius: "4px", 
+                          background: winner.temporalAssessment === "Net Gain" ? "rgba(76, 175, 80, 0.2)" : "rgba(255, 152, 0, 0.2)",
+                          color: winner.temporalAssessment === "Net Gain" ? "#81c784" : "#ffb74d",
+                          border: `1px solid ${winner.temporalAssessment === "Net Gain" ? "#4caf50" : "#ff9800"}`,
+                          fontWeight: "bold",
+                          textTransform: "uppercase"
+                        }}>
+                          {winner.temporalAssessment}
+                        </span>
+                      )}
+                    </div>
                     <p style={{ margin: 0, fontSize: "0.9rem", color: "#ccc", lineHeight: "1.4" }}>{winner.synergyExplanation}</p>
                   </div>
                 ))}
@@ -112,9 +128,25 @@ export default function SummaryTabs({ metaData }: SummaryTabsProps) {
                       <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
                         {winners.map((winner: any, idx: number) => (
                           <div key={idx}>
-                            <Link href={`/hero/${winner.hero.replace(/[^a-z0-9]/gi, '_').toLowerCase()}`} style={{ textDecoration: 'none' }}>
-                               <h5 style={{ margin: "0 0 4px 0", color: "var(--color-epic)", cursor: 'pointer', fontSize: "1rem" }}>{winner.hero}</h5>
-                            </Link>
+                            <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "4px" }}>
+                              <Link href={`/hero/${winner.hero.replace(/[^a-z0-9]/gi, '_').toLowerCase()}`} style={{ textDecoration: 'none' }}>
+                                 <h5 style={{ margin: 0, color: "var(--color-epic)", cursor: 'pointer', fontSize: "1rem" }}>{winner.hero}</h5>
+                              </Link>
+                              {winner.temporalAssessment && winner.temporalAssessment !== "N/A" && (
+                                <span style={{ 
+                                  fontSize: "0.6rem", 
+                                  padding: "1px 5px", 
+                                  borderRadius: "4px", 
+                                  background: winner.temporalAssessment === "Net Gain" ? "rgba(76, 175, 80, 0.2)" : "rgba(255, 152, 0, 0.2)",
+                                  color: winner.temporalAssessment === "Net Gain" ? "#81c784" : "#ffb74d",
+                                  border: `1px solid ${winner.temporalAssessment === "Net Gain" ? "#4caf50" : "#ff9800"}`,
+                                  fontWeight: "bold",
+                                  textTransform: "uppercase"
+                                }}>
+                                  {winner.temporalAssessment}
+                                </span>
+                              )}
+                            </div>
                             <p style={{ margin: 0, fontSize: "0.85rem", color: "#ccc", lineHeight: "1.4" }}>{winner.explanation}</p>
                           </div>
                         ))}
