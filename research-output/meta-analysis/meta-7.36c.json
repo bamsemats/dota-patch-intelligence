@@ -1,36 +1,34 @@
 {
   "metaShifts": [
     {
-      "theme": "The Continued Decline of Raw Tankiness",
-      "description": "This patch amplifies the previous trend of de-emphasizing raw tankiness. Heroes like Axe, Pudge, Centaur Warrunner, Wraith King, and Chaos Knight all received direct nerfs to their inherent durability or scaling strength. The Bloodthorn nerf, which removes damage if the silence is dispelled, also indirectly reduces burst against dispellable tanky targets. This reinforces a meta where sustained brawling is less effective, and compositions focused on burst damage or quick disables will continue to thrive.",
+      "theme": "The Offlane/Initiator Power Shift",
+      "description": "Many dominant offlaners and initiators (Axe, Pudge, Enigma, Centaur, Underlord, Clockwerk, Spirit Breaker, Dark Seer, Chaos Knight, Pangolier) received significant nerfs. This suggests a move away from highly tanky, disruptive frontliners who could dictate the pace of the mid-game, opening up the offlane pool and potentially favoring more damage-oriented or less tanky initiators.",
       "impactedRoles": [
         "Offlane",
-        "Carry"
+        "SoftSupport"
       ]
     },
     {
-      "theme": "A Rebalancing of Early-Mid Game Aggression & Spell Spam",
-      "description": "Following a patch that saw the rise of mobile and spell-spamming aggressors, 7.36c attempts to rein in this dominance. Numerous heroes known for strong early-mid game pressure and frequent spell usage, such as Shadow Fiend, Vengeful Spirit, Storm Spirit, Clockwerk, Leshrac, Dark Seer, Night Stalker, Bounty Hunter, Weaver, Pangolier, Hoodwink, and Dark Willow, received significant nerfs. The cost increases to Phylactery and Khanda further dampen the early-mid game burst potential. This shift suggests a move away from overwhelming early aggression towards a more measured approach, potentially extending the mid-game phase.",
+      "theme": "Continued Mana Economy Scrutiny",
+      "description": "Arcane Boots mana regen nerf, Meteor Hammer mana regen amplification nerf, and Wraith King's Reincarnation mana cost increase reinforce the trend from 7.36b where mana efficiency and sustain are critical. Heroes with low mana costs or innate mana regeneration are still at an advantage.",
       "impactedRoles": [
         "Mid",
         "SoftSupport",
-        "Offlane",
+        "HardSupport"
+      ]
+    },
+    {
+      "theme": "Physical Carry Rebalancing - Specific Buffs",
+      "description": "While 7.36b rebalanced physical damage, 7.36c specifically buffs Drow Ranger, Phantom Assassin, and Spectre, making them more viable. This continues to diversify the carry pool, moving away from a few dominant picks and encouraging a broader range of physical damage drafts.",
+      "impactedRoles": [
         "Carry"
       ]
     },
     {
-      "theme": "The Rise of Direct Damage & Summon-Based Pressure",
-      "description": "While spell spam is toned down, this patch subtly buffs heroes who rely on direct damage output or summon-based pressure. Phantom Assassin and Spectre receive buffs to their damage and scaling, while Nature's Prophet's Treants are stronger, and Invoker's Mastermind is improved for denying with controlled units. This suggests a meta where consistent, focused damage or map pressure through summons might be more rewarded than broad area-of-effect spell burst.",
+      "theme": "Targeting Early-Mid Game Aggression & Vision",
+      "description": "Nerfs to heroes like Weaver, Bounty Hunter, Dark Willow, Hoodwink, and Storm Spirit (especially Static Remnant vision) indicate a slight curbing of early-mid game aggressive pick-offs and vision control. This might slow down the game's tempo slightly or make vision more contested.",
       "impactedRoles": [
-        "Carry",
         "Mid",
-        "Offlane"
-      ]
-    },
-    {
-      "theme": "Support Mana Economy Tightening",
-      "description": "The nerf to Arcane Boots' mana regeneration directly impacts the early game sustainability of many supports. This makes mana management a more critical aspect for position 4 and 5 players, potentially favoring heroes with lower mana costs or those who can generate mana through other means. Supports will need to be more judicious with their spell usage or invest in alternative mana solutions.",
-      "impactedRoles": [
         "SoftSupport",
         "HardSupport"
       ]
@@ -38,85 +36,138 @@
   ],
   "synergisticWinners": [
     {
-      "entity": "Phantom Assassin",
-      "synergyExplanation": "Receives buffs to base damage and starting evasion, improving her laning and early survivability. The buff to Silver Edge's break duration is also highly synergistic, as it's a core item for her to disable key passives and burst targets."
+      "entity": "Silver Edge",
+      "synergyExplanation": "The increased Shadow Walk Break duration from 5s to 6s significantly benefits heroes who rely on break to disable passive abilities (e.g., Bristleback, Spectre, Phantom Assassin) or those who want extended invisibility for positioning and burst.",
+      "temporalAssessment": "Net Gain"
     },
     {
-      "entity": "Spectre",
-      "synergyExplanation": "Desolate's bonus damage is increased at all levels, along with its corresponding talent. This significantly improves her early-mid game damage output, accelerating her farm and making her more impactful in skirmishes, allowing her to come online faster."
+      "entity": "Meteor Hammer",
+      "synergyExplanation": "The mana cost reduction from 100 to 75 makes Meteor Hammer more spammable for heroes who build it for wave clear and siege, allowing for more sustained pressure on objectives.",
+      "temporalAssessment": "Net Gain"
     },
     {
-      "entity": "Nature's Prophet",
-      "synergyExplanation": "Treant damage is increased across all levels of Nature's Call. This directly buffs his farming speed, pushing power, and ability to apply global pressure, making him a more potent split-pusher and map controller."
-    },
-    {
-      "entity": "Invoker",
-      "synergyExplanation": "Mastermind now triggers if units under Invoker's control land a deny. This is a significant quality-of-life and mana sustain buff, especially for Exort Invoker builds utilizing Forge Spirits, allowing for more consistent spell spam and farming efficiency."
+      "entity": "Arcane Blink",
+      "synergyExplanation": "While the cooldown increased, the health restored increased from 200 to 250, providing a small but valuable buff to survivability for blink initiators and spellcasters who rely on blinking into fights.",
+      "temporalAssessment": "Net Gain"
     }
   ],
   "synergisticLosers": [
     {
-      "entity": "Meepo / Arc Warden",
-      "synergyExplanation": "The direct nerf to Urn of Shadows and Spirit Vessel, preventing charges from being added when duplicated, severely impacts these heroes' unique item interactions and early-mid game power spikes, making them less effective at snowballing."
+      "entity": "Phylactery",
+      "synergyExplanation": "The recipe cost increase from 200 to 400 (and total cost increase) directly impacts spell-burst heroes who relied on this item for an early power spike, making it harder to acquire quickly and delaying their impact. Khanda is also affected by this change, making it more expensive for its users as well."
     },
     {
-      "entity": "Bloodthorn / Khanda / Phylactery Builders",
-      "synergyExplanation": "Phylactery's cost increase directly impacts Khanda's cost, making these early-mid game burst items less accessible. Bloodthorn's mechanic change, where Soul Rend no longer deals damage if the silence is dispelled, significantly reduces its reliability as a kill item against heroes with dispels, impacting many burst spellcasters."
+      "entity": "Bloodthorn",
+      "synergyExplanation": "Soul Rend no longer dealing damage if the silence is dispelled is a significant nerf against heroes with dispels (e.g., Manta Style, Eul's Scepter), reducing the reliability of Bloodthorn's burst damage."
     },
     {
-      "entity": "Radiance Carriers",
-      "synergyExplanation": "The decrease in Radiance's burn radius directly impacts the farming speed and teamfight aura presence of heroes who rely on this item, making them slightly slower to scale and less impactful in large engagements."
+      "entity": "Radiance",
+      "synergyExplanation": "The decreased Burn Radius from 700 to 650 hurts heroes who rely on it for farming, pushing, and teamfight aura, especially illusion heroes (e.g., Naga Siren, Phantom Lancer) and tanky aura carriers."
     },
     {
-      "entity": "Early Game Mana-Reliant Supports",
-      "synergyExplanation": "The mana regeneration decrease on Arcane Boots is a systemic nerf to the early game sustainability of many supports who rely on this item for consistent spell casting and mana distribution to their cores."
+      "entity": "Arcane Boots",
+      "synergyExplanation": "The Mana Regen decrease from 0.75 to 0.5 significantly impacts mana-hungry supports and offlaners who relied on it for sustained spellcasting and early game lane presence."
     }
   ],
   "roleSpecificWinners": {
     "Carry": [
       {
+        "hero": "Drow Ranger",
+        "explanation": "Multishot projectile speed buff makes her wave clear and teamfight damage more reliable, while the Level 20 Gust Self Movement Speed talent buff enhances her kiting and positioning.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
         "hero": "Phantom Assassin",
-        "explanation": "Buffs to her base damage and starting evasion make her a stronger laning carry, allowing her to trade more effectively and survive harassment. The Silver Edge buff, a core item for her, further enhances her ability to initiate and shut down key passive abilities."
+        "explanation": "Base damage increase and Immaterial starting evasion buff make her laning and early skirmishes stronger, helping her reach critical items faster and improving her survivability.",
+        "temporalAssessment": "Net Gain"
       },
       {
         "hero": "Spectre",
-        "explanation": "Desolate damage buffs at all levels and its corresponding talent significantly increase her early-mid game damage output. This accelerates her farming speed and makes her more potent in skirmishes, allowing her to reach her critical mass faster and exert map pressure."
+        "explanation": "Desolate bonus damage and Level 15 talent buffs significantly increase her burst potential, especially against isolated targets, making her a more potent threat in skirmishes and teamfights.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
+        "hero": "Sven",
+        "explanation": "While Wrath of God received a minor nerf, the overall physical carry rebalancing and nerfs to other strong offlaners might make him a more appealing pick as a hard-hitting carry.",
+        "temporalAssessment": "Recovery"
       },
       {
         "hero": "Razor",
-        "explanation": "The Storm Surge damage buff makes him an even more dominant laning carry. He can harass opponents more effectively, secure last hits with greater ease, and translate this lane advantage into stronger mid-game presence and objective taking."
+        "explanation": "Storm Surge damage buff makes him a stronger lane dominator and mid-game brawler, fitting the current tempo of the game and allowing him to apply more pressure.",
+        "temporalAssessment": "Net Gain"
       }
     ],
     "Mid": [
       {
-        "hero": "Invoker",
-        "explanation": "The Mastermind buff, allowing denies with controlled units to trigger mana gain, provides better mana sustain and farming efficiency, particularly for Exort builds utilizing Forge Spirits. This enables more consistent spell spam and faster item timings."
+        "hero": "Razor",
+        "explanation": "Storm Surge damage buff makes him a stronger lane dominator and mid-game brawler, allowing him to secure last hits, harass opponents, and contribute more damage in early skirmishes.",
+        "temporalAssessment": "Net Gain"
       },
       {
-        "hero": "Razor",
-        "explanation": "As a strong mid-lane option, Razor benefits from the Storm Surge damage buff, making him an oppressive laner against many matchups. His ability to dominate the mid-lane translates directly into map control and early pressure."
+        "hero": "Invoker",
+        "explanation": "Mastermind now also triggers if units under Invoker's control land the deny, which is a quality-of-life improvement that helps his laning and overall XP/gold gain, especially for Exort builds.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
+        "hero": "Sand King",
+        "explanation": "Sand Storm damage per second buff makes him a more potent mid-game threat, especially if played as a core, improving his farming speed and teamfight presence.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
+        "hero": "Snapfire",
+        "explanation": "Lil' Shredder attack damage buff makes her a stronger lane presence and burst damage dealer, which can be highly effective in the mid lane for securing last hits and harassing opponents.",
+        "temporalAssessment": "Net Gain"
       }
     ],
     "Offlane": [
       {
-        "hero": "Sand King",
-        "explanation": "The Sand Storm DPS buff significantly improves his farming speed, push potential, and damage output in teamfights. This makes him a more threatening initiator and area controller, capable of clearing waves and contributing more damage in engagements."
+        "hero": "Tidehunter",
+        "explanation": "Kraken Shell damage block rescaled to be slightly better at early levels (15/35/55/75 from 16/32/54/70), making him marginally tankier in the crucial laning phase.",
+        "temporalAssessment": "Net Gain"
       },
       {
         "hero": "Nature's Prophet",
-        "explanation": "Increased Treant damage enhances his ability to push lanes, farm the jungle, and apply global pressure. As an offlaner, he can create significant space for his team, force rotations, and secure objectives more effectively."
+        "explanation": "Treant damage increased on each level makes his pushing and farming more efficient, allowing him to apply map pressure effectively and accelerate his item timings.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
+        "hero": "Abaddon",
+        "explanation": "While his Scepter range was nerfed, the damage threshold buff on Borrowed Time and talent adjustments (Curse of Avernus slow, Borrowed Time Immolation DPS) make him a bit more resilient and impactful in fights.",
+        "temporalAssessment": "Recovery"
+      },
+      {
+        "hero": "Sven",
+        "explanation": "Can be played offlane, and the general shift away from tanky offlaners might make his damage output and Warcry utility more valuable in the current meta.",
+        "temporalAssessment": "Recovery"
       }
     ],
     "SoftSupport": [
       {
-        "hero": "None",
-        "explanation": "No specific Soft Support heroes received direct buffs that significantly elevate their standing. The general meta shift might indirectly benefit some, but no clear winners emerge from the patch notes for this role."
+        "hero": "Sand King",
+        "explanation": "Sand Storm damage buff makes him a more impactful presence in teamfights and for securing objectives, especially with his mobility and area control as a position 4.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
+        "hero": "Night Stalker",
+        "explanation": "Crippling Fear now only starts costing mana per second with Aghanim's Scepter if the duration is extended, making his late-game lockdown more sustainable, though it's a niche buff.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
+        "hero": "Snapfire",
+        "explanation": "Lil' Shredder attack damage buff improves her early game harass and burst potential, making her a stronger lane partner and more effective in early skirmishes.",
+        "temporalAssessment": "Net Gain"
       }
     ],
     "HardSupport": [
       {
-        "hero": "None",
-        "explanation": "No specific Hard Support heroes received direct buffs. The nerf to Arcane Boots' mana regeneration is a general hit to the role's early game sustainability, making mana management more challenging for all hard supports."
+        "hero": "Warlock",
+        "explanation": "Golem health adjustment is minor, but Warlock remains a strong teamfight support with good lane presence, and was not directly nerfed significantly, making him a stable and reliable pick.",
+        "temporalAssessment": "N/A"
+      },
+      {
+        "hero": "Snapfire",
+        "explanation": "Lil' Shredder attack damage buff improves her early game harass and burst potential, making her a stronger lane partner and more effective at securing range creeps or denying.",
+        "temporalAssessment": "Net Gain"
       }
     ]
   },
@@ -124,75 +175,95 @@
     "Carry": [
       {
         "hero": "Weaver",
-        "explanation": "Significant nerfs to Geminate Attack damage and Shukuchi mana cost severely hamper his early game farming, harassment, and burst potential. This makes his laning phase much weaker and slows down his critical item timings."
+        "explanation": "Geminate Attack damage and Shukuchi mana cost nerfs significantly reduce his early-mid game burst and farming efficiency, making him weaker in lane and slower to snowball."
       },
       {
         "hero": "Lifestealer",
-        "explanation": "Corpse Eater nerfs reduce his general tankiness gained from farming creeps, making him less durable unless he's actively securing hero kills. This makes his scaling less consistent and his early-mid game more vulnerable."
+        "explanation": "Corpse Eater nerfs (less max health from creeps, more from heroes) make his farming slower and less reliable, forcing him into riskier hero kills to scale effectively."
       },
       {
-        "hero": "Shadow Fiend",
-        "explanation": "Early Shadowraze damage nerfs and Necromastery changes (no souls from non-hero/creep units) significantly slow down his early farming and burst potential. This delays his mid-game power spike and makes him less impactful in early skirmishes."
+        "hero": "Chaos Knight",
+        "explanation": "Strength gain and Level 15 talent nerfs reduce his overall tankiness and illusion power, making him less effective as a hard carry who relies on raw stats and illusion damage."
       }
     ],
     "Mid": [
       {
+        "hero": "Shadow Fiend",
+        "explanation": "Necromastery no longer increasing souls from other unit types and early Shadowraze bonus per stack nerfs significantly reduce his farming speed and early-game burst, making his laning phase much weaker and slowing his power spikes."
+      },
+      {
         "hero": "Storm Spirit",
-        "explanation": "Nerfs to Galvanized charges and Static Remnant vision reduce his early game mobility and scouting capabilities. This makes his ganking and farming less efficient and riskier, impacting his ability to snowball from the mid-lane."
+        "explanation": "Galvanized charges decreased from 5 to 3 and Static Remnant vision radius decreased severely impact his early-mid game mobility, burst, and vision control, making him much harder to play effectively."
       },
       {
         "hero": "Templar Assassin",
-        "explanation": "Refraction and Psionic Trap nerfs, along with talent adjustments, reduce her early burst and control. This makes her less dominant in the mid-lane and harder to snowball, requiring more precise execution to secure kills."
+        "explanation": "Refraction barrier per instance rescaled, Psionic Trap slow nerfs, and talent reductions make her less survivable and her traps less impactful, reducing her map control and pick-off potential."
       },
       {
         "hero": "Ember Spirit",
-        "explanation": "The Sleight of Fist bonus hero damage nerf slightly reduces his burst potential. While minor, it makes him marginally less effective in skirmishes and pick-offs, potentially requiring more items to achieve the same impact."
+        "explanation": "Sleight of Fist bonus hero damage decreased reduces his burst potential, making him less effective in skirmishes and slowing his farming speed, impacting his ability to snowball."
+      },
+      {
+        "hero": "Leshrac",
+        "explanation": "Lightning Storm cast range decreased from 650 to 600 makes him more vulnerable when trying to harass or initiate, reducing his safety and effectiveness in lane and teamfights."
       }
     ],
     "Offlane": [
       {
         "hero": "Axe",
-        "explanation": "Nerfs to One Man Army linger duration and Culling Blade talents reduce his tankiness and kill threat. This makes him less effective at diving enemy carries and controlling the lane, diminishing his overall impact as a frontline initiator."
+        "explanation": "One Man Army linger duration and Culling Blade talent nerfs reduce his survivability and late-game impact, making him less of a dominant frontliner and initiator."
       },
       {
         "hero": "Pudge",
-        "explanation": "Flesh Heap strength gain and Meat Shield duration nerfs reduce his inherent tankiness and sustain. This makes him more vulnerable in the offlane and less impactful in early rotations, requiring more careful positioning."
+        "explanation": "Flesh Heap bonus Strength and Meat Shield duration nerfs significantly reduce his tankiness and sustain, making him easier to burst down and less effective in prolonged fights."
+      },
+      {
+        "hero": "Enigma",
+        "explanation": "Base movement speed and Eidolon nerfs (health and damage) reduce his early game presence, farming speed, and overall impact, making him a less threatening initiator and pusher."
       },
       {
         "hero": "Centaur Warrunner",
-        "explanation": "Base health regen and Rawhide max health gain nerfs reduce his lane sustain and overall tankiness. This makes him easier to harass out of lane and less durable in teamfights, continuing the trend of anti-tank nerfs."
+        "explanation": "Base Health Regen and Rawhide Max Health Gain nerfs make him significantly weaker in lane and less tanky throughout the game, reducing his front-line presence and survivability."
       },
       {
         "hero": "Dark Seer",
-        "explanation": "Wall of Replica damage and Normal Punch stun nerfs reduce his teamfight impact and ability to control enemy cores. This makes him less effective at creating chaos and setting up kills for his team."
+        "explanation": "Wall of Replica damage and Normal Punch max stun duration nerfs reduce his teamfight impact and pick-off potential, making him less effective at controlling fights and creating illusions."
       }
     ],
     "SoftSupport": [
       {
         "hero": "Vengeful Spirit",
-        "explanation": "Magic Missile stun and damage nerfs, along with a Wave of Terror talent nerf, severely reduce her early game impact in skirmishes and her ability to secure kills. This makes her less potent as a roaming or aggressive support."
+        "explanation": "Magic Missile stun duration and damage nerfs, along with Wave of Terror armor reduction talent, significantly reduce her early game burst and control, making her less impactful in skirmishes."
       },
       {
         "hero": "Clockwerk",
-        "explanation": "Power Cogs cooldown and mana burn nerfs significantly reduce his early game lane dominance and ganking potential. This makes him less effective at controlling the enemy carry and securing early pick-offs."
+        "explanation": "Power Cogs cooldown and mana burn nerfs make him less spammable and less effective at controlling lanes and mana-draining enemies, reducing his overall disruption and early game pressure."
       },
       {
         "hero": "Bounty Hunter",
-        "explanation": "Track duration and damage amplification nerfs reduce his team's kill potential and vision control. This makes him less impactful as a roaming support who relies on securing kills and providing vision for his team."
-      },
-      {
-        "hero": "Pangolier",
-        "explanation": "Roll Up duration and Shield Crash barrier nerfs reduce his survivability and control. This makes him a less reliable initiator and playmaker, as he becomes more vulnerable during his key abilities."
+        "explanation": "Track duration and damage amplification nerfs reduce his team's burst potential and gold advantage from kills, making him less effective as a snowballing support and vision provider."
       },
       {
         "hero": "Dark Willow",
-        "explanation": "Bramble Maze duration and Bedlam changes (no longer castable on allies) reduce her control and utility. This makes her less effective at zoning enemies, protecting allies, and setting up kills."
+        "explanation": "Bramble Maze duration and Bedlam no longer castable on allies nerfs reduce her area control and burst potential, making her less versatile and impactful in fights and pick-offs."
+      },
+      {
+        "hero": "Hoodwink",
+        "explanation": "Acorn Shot bonus attack range nerf reduces her harass potential and safety in lane, making her less effective as an aggressive ranged support and reducing her early game impact."
       }
     ],
     "HardSupport": [
       {
-        "hero": "Arcane Boots dependent supports",
-        "explanation": "The mana regeneration decrease on Arcane Boots is a direct nerf to the early game sustainability of many hard supports. This makes it harder for them to spam spells, sustain their core, and maintain map presence without running out of mana."
+        "hero": "Treant Protector",
+        "explanation": "Nature's Guise Aghanim's Shard no longer increasing bonus movement speed reduces his mobility and ability to position for initiations or saves, making him less impactful in the mid-game rotations."
+      },
+      {
+        "hero": "Abaddon",
+        "explanation": "Borrowed Time Aghanim's Scepter range decreased from 1200 to 900 reduces his ability to save allies from a distance, making him less effective as a global or semi-global protector."
+      },
+      {
+        "hero": "Spirit Breaker",
+        "explanation": "Nether Strike cooldown increased from 70/50/30s to 75/55/35s makes his ultimate less available for pick-offs and initiations, reducing his overall impact as a roaming support."
       }
     ]
   }

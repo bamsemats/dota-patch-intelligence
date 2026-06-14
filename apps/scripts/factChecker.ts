@@ -28,7 +28,14 @@ const ALLOWED_ENTITIES = new Set([
     "Watchers", "Tormentor", "Tormentors", "Wisdom Rune", "Wisdom Runes", 
     "Lotus Pool", "Lotus Pools", "Twin Gate", "Twin Gates", "New Frontiers",
     "Universal Heroes", "Universal Hero Archetype", "Map Expansion", "Roshan",
-    "Aghanim's Shard", "Aghanim's Scepter", "Talents", "Attributes"
+    "Aghanim's Shard", "Aghanim's Scepter", "Talents", "Attributes",
+    "Outpost", "Outposts", "Bounty Rune", "Bounty Runes", "Power Rune", "Power Runes",
+    "River", "High Ground", "Jungle", "Ancient", "Ancients", "Neutral Creeps",
+    "Glyph of Fortification", "Scan", "Courier", "Backdoor Protection",
+    "Spell Immunity", "Debuff Immunity", "Pure Damage", "Magic Resistance",
+    "Armor", "Strength", "Agility", "Intelligence", "Movement Speed",
+    "Attack Range", "Cast Range", "Cooldown Reduction", "Mana Cost",
+    "Health Regeneration", "Mana Regeneration", "Lifesteal", "Spell Lifesteal"
 ]);
 
 function checkEntity(entity: string, mappings: Mappings): { valid: boolean; type?: string } {
