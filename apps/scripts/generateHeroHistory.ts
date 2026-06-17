@@ -133,7 +133,10 @@ async function generate() {
 
   // Write individual hero files
   for (const heroName in heroData) {
-    const safeName = heroName.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+    const safeName = heroName.toLowerCase()
+      .replace(/[^a-z0-9]+/g, '_')
+      .replace(/^_+|_+$/g, '');
+      
     await fs.writeFile(
       path.join(outputDir, `${safeName}.json`),
       JSON.stringify(heroData[heroName], null, 2)

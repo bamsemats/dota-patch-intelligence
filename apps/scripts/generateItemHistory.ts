@@ -7,47 +7,54 @@ const outputDir = path.join(researchDir, "item-history");
 const metaDir = path.join(researchDir, "meta-analysis");
 const mappingPath = path.join(researchDir, "mappings", "items.json");
 const richItemDataPath = path.join(researchDir, "mappings", "itemdata.json");
+const categoryPath = path.join(researchDir, "mappings", "item_categories.json");
 
 async function generate() {
-  console.log("Generating smart item history index...");
+  console.log("Generating smart item history index using curated list...");
   
   if (!(await fs.stat(outputDir).catch(() => null))) {
     await fs.mkdir(outputDir);
   }
 
-  const itemMapping = JSON.parse(await fs.readFile(mappingPath, "utf-8"));
-  // Deduplicate names
-  const itemNames = Array.from(new Set(Object.values(itemMapping))) as string[];
+  // 1. Load Curated List
+  const rawCategories = await fs.readFile(categoryPath, "utf-8");
+  const categories = JSON.parse(rawCategories);
+  const curatedItemNames: string[] = [];
   
-  // Load OpenDota rich data to map names to rich descriptions
+  for (const mainGroup in categories) {
+    for (const subGroup in categories[mainGroup]) {
+      curatedItemNames.push(...categories[mainGroup][subGroup]);
+    }
+  }
+
+  // 2. Load Rich Meta
   let richItemData: any = {};
   try {
      richItemData = JSON.parse(await fs.readFile(richItemDataPath, "utf-8"));
-  } catch(e) {
-     console.warn("Could not load rich item data.");
-  }
+  } catch(e) {}
 
-  // Build a fast lookup from item name -> rich data
   const richDataLookup: Record<string, any> = {};
   for (const [key, data] of Object.entries(richItemData)) {
-      if ((data as any).dname) {
-          richDataLookup[(data as any).dname] = data;
-      }
+      if ((data as any).dname) richDataLookup[(data as any).dname] = data;
   }
 
-  const files = await fs.readdir(patchesDir);
-  const jsonFiles = files
-    .filter(f => f.endsWith(".json"))
-    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
-
+  // 3. Initialize Item Data for Curated Names
   const itemData: Record<string, any> = {};
-  for (const name of itemNames) {
-    if (!name || name.toLowerCase().endsWith(" recipe") || name.toLowerCase().startsWith("recipe_") || name.length < 3) continue;
+  const valveToCuratedMap: Record<string, string> = {};
 
-    const richMeta = richDataLookup[name];
+  for (const name of curatedItemNames) {
+    // Determine the likely "Valve Name" (e.g. "Vital Enhancement" -> "Vital")
+    let valveName = name;
+    if (name.endsWith(" Enhancement")) {
+      valveName = name.replace(" Enhancement", "");
+    }
+    valveToCuratedMap[valveName] = name;
+
+    const richMeta = richDataLookup[valveName] || richDataLookup[name];
 
     itemData[name] = {
       name: name,
+      valveName: valveName,
       cost: richMeta?.cost || null,
       lore: richMeta?.lore || null,
       description: richMeta?.hint?.[0] || richMeta?.notes || null,
@@ -56,24 +63,25 @@ async function generate() {
     };
   }
 
+  const files = await fs.readdir(patchesDir);
+  const jsonFiles = files
+    .filter(f => f.endsWith(".json"))
+    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
+
   for (const file of jsonFiles) {
     const patchVersion = file.replace(".json", "");
     const rawPatch = await fs.readFile(path.join(patchesDir, file), "utf-8");
     const patch = JSON.parse(rawPatch);
 
-    // Load meta-analysis for temporal assessments
     const temporalMap: Record<string, string> = {};
     try {
       const rawMeta = await fs.readFile(path.join(metaDir, `meta-${patchVersion}.json`), "utf-8");
       const meta = JSON.parse(rawMeta);
-      
-      // Extract from overall synergistic winners
       (meta.synergisticWinners || []).forEach((w: any) => {
         if (w.temporalAssessment) temporalMap[w.entity] = w.temporalAssessment;
       });
     } catch (e) {}
 
-    // Track which items have changes in this patch
     const patchChanges: Record<string, any[]> = {};
     if (patch.changes) {
       for (const change of patch.changes) {
@@ -85,29 +93,39 @@ async function generate() {
       }
     }
 
-    // For EVERY tracked item, create history entry
-    for (const name in itemData) {
-      itemData[name].history.push({
+    // Match patch changes to curated items
+    for (const curatedName in itemData) {
+      const vName = itemData[curatedName].valveName;
+      // Check for changes under either name
+      const changes = [...(patchChanges[vName] || []), ...(patchChanges[curatedName] || [])];
+      
+      // Deduplicate by originalSource
+      const uniqueChanges = Array.from(new Map(changes.map(c => [c.originalSource || c.rawNote, c])).values());
+
+      itemData[curatedName].history.push({
         version: patchVersion,
         date: patch.timestamp || new Date().toISOString(),
-        changes: patchChanges[name] || [],
-        temporalAssessment: temporalMap[name] || null
+        changes: uniqueChanges,
+        temporalAssessment: temporalMap[vName] || temporalMap[curatedName] || null
       });
     }
   }
 
   // Write individual item files
   let count = 0;
-  for (const itemName in itemData) {
-    const safeName = itemName.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+  for (const curatedName in itemData) {
+    const safeName = curatedName.toLowerCase()
+      .replace(/[^a-z0-9]+/g, '_')
+      .replace(/^_+|_+$/g, '');
+      
     await fs.writeFile(
       path.join(outputDir, `${safeName}.json`),
-      JSON.stringify(itemData[itemName], null, 2)
+      JSON.stringify(itemData[curatedName], null, 2)
     );
     count++;
   }
 
-  console.log(`Generated item history for ${count} items.`);
+  console.log(`Generated curated item history for ${count} items.`);
 }
 
 generate().catch(console.error);

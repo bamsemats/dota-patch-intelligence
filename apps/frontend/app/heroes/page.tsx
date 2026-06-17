@@ -87,10 +87,14 @@ export default async function HeroesPage() {
       <div className={styles.grid}>
         {heroNames.map((name) => {
           const vectors = getSignificantVectors(heroTraj[name]);
+          const safeName = name.toLowerCase()
+            .replace(/[^a-z0-9]+/g, '_')
+            .replace(/^_+|_+$/g, '');
+
           return (
             <Link 
               key={name} 
-              href={`/hero/${getHeroSlug(name)}`}
+              href={`/hero/${safeName}`}
               className={`${styles.card} ${styles.clickable}`}
               style={{ textDecoration: 'none', color: 'inherit', minHeight: '150px' }}
             >

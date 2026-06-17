@@ -31,6 +31,8 @@ export default async function ItemsPage() {
     if (slug === "aghanims_shard") slug = "aghanims_shard";
     if (slug === "town_portal_scroll") slug = "tpscroll";
     if (slug === "boots_of_speed") slug = "boots";
+    if (slug === "boots_of_travel") slug = "travel_boots";
+    if (slug === "boots_of_travel_2") slug = "travel_boots_2";
     if (slug === "gem_of_true_sight") slug = "gem";
     if (slug === "observer_ward") slug = "ward_observer";
     if (slug === "sentry_ward") slug = "ward_sentry";
@@ -45,11 +47,14 @@ export default async function ItemsPage() {
     if (slug === "shadow_amulet") slug = "shadow_amulet";
     if (slug === "magic_stick") slug = "magic_stick";
     if (slug === "magic_wand") slug = "magic_wand";
+    if (slug === "manta_style") slug = "manta";
+    if (slug === "gunpowder_gauntlet") slug = "gunpowder_gauntlets";
 
-    const enhancements = ["crude", "brawny", "quickened", "tough", "greedy", "mystical", "keen", "toxic", "stalwart", "swift", "alert", "timeless", "titanic", "vital", "audacious", "evolved", "feverish", "fleetfooted", "hulking", "manic", "vampiric", "keen_eyed", "boundless", "nimble", "vast", "wise"];
-    if (enhancements.includes(slug)) {
-      slug = `enhancement_${slug}`;
+    // Neutral Enhancements (ISSUE-20 Fix)
+    if (slug.endsWith("_enhancement")) {
+      slug = `enhancement_${slug.replace("_enhancement", "")}`;
     }
+
     return `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/${slug}.png`;
   };
 
@@ -90,10 +95,14 @@ export default async function ItemsPage() {
               
               <div className={styles.grid}>
                 {items.map((name) => {
-                  const safeName = name.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+                  const safeName = name.toLowerCase()
+                    .replace(/[^a-z0-9]+/g, '_')
+                    .replace(/^_+|_+$/g, '');
+
                   return (
                     <Link 
                       href={`/item/${safeName}`}
+
                       key={name} 
                       className={`${styles.card} ${styles.clickable}`}
                       style={{ minHeight: '120px', textDecoration: 'none', color: 'inherit' }}

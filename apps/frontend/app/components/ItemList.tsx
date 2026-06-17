@@ -66,6 +66,7 @@ export default function ItemList({ title, items }: ItemListProps) {
     if (slug === "shadow_amulet") slug = "shadow_amulet";
     if (slug === "magic_stick") slug = "magic_stick";
     if (slug === "magic_wand") slug = "magic_wand";
+    if (slug === "gunpowder_gauntlet") slug = "gunpowder_gauntlets";
 
     // Neutral Enhancements (Phase 20 Fix)
     const enhancements = ["crude", "brawny", "quickened", "tough", "greedy", "mystical", "keen", "toxic", "stalwart", "swift", "alert", "timeless", "titanic", "vital", "audacious", "evolved", "feverish", "fleetfooted", "hulking", "manic", "vampiric", "keen_eyed", "boundless", "nimble", "vast", "wise"];
@@ -115,7 +116,9 @@ export default function ItemList({ title, items }: ItemListProps) {
 
       <div className={styles.grid}>
         {filteredItems.map((item) => {
-          const safeName = item.itemName.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+          const safeName = item.itemName.toLowerCase()
+            .replace(/[^a-z0-9]+/g, '_')
+            .replace(/^_+|_+$/g, '');
           return (
           <Link 
             key={item.itemName} 

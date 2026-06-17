@@ -1,0 +1,702 @@
+{
+  "name": "Crimson Guard",
+  "valveName": "Crimson Guard",
+  "cost": 3725,
+  "lore": "A cuirass originally built to protect against the dreaded Year Beast.",
+  "description": "Multiple sources of damage block do not stack.\nWhen the Guard buff is applied to ranged heroes, Guard blocks 25 less damage.\nGuard does not affect units that have been affected by Guard within Crimson Guard's cooldown.",
+  "attributes": [
+    {
+      "key": "bonus_health",
+      "display": "+ {value} Health",
+      "value": "250"
+    },
+    {
+      "key": "bonus_health_regen",
+      "display": "+ {value} Health Regeneration",
+      "value": "12"
+    },
+    {
+      "key": "bonus_armor",
+      "display": "+ {value} Armor",
+      "value": "6"
+    },
+    {
+      "key": "block_damage_melee",
+      "value": "75"
+    },
+    {
+      "key": "block_damage_ranged",
+      "value": "50"
+    },
+    {
+      "key": "block_chance",
+      "value": "60"
+    },
+    {
+      "key": "duration",
+      "value": "7"
+    },
+    {
+      "key": "bonus_aoe_radius",
+      "value": "1200"
+    },
+    {
+      "key": "block_damage_active",
+      "value": "70"
+    },
+    {
+      "key": "block_chance_active",
+      "value": "100"
+    },
+    {
+      "key": "block_penalty_ranged",
+      "value": "25"
+    },
+    {
+      "key": "max_hp_pct",
+      "value": "2.0"
+    }
+  ],
+  "history": [
+    {
+      "version": "7.33",
+      "date": "2026-06-17T22:45:42.715Z",
+      "changes": [
+        {
+          "category": "item",
+          "entityName": "Crimson Guard",
+          "rawNote": "Recipe cost increased from 800 to 925 (Total cost unchanged)",
+          "originalSource": "Recipe cost increased from 800 to 925 (Total cost unchanged)",
+          "indentLevel": 1,
+          "metric": "Recipe cost",
+          "changeType": "INCREASED",
+          "oldValue": "800",
+          "newValue": "925 (Total cost unchanged)",
+          "metadata": {
+            "entityId": 242
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a negative metric (recipe cost)."
+          }
+        },
+        {
+          "category": "item",
+          "entityName": "Crimson Guard",
+          "rawNote": "Guard Blocked Damage rescaled from 75 to 70 + 60% of caster's Strength",
+          "originalSource": "Guard Blocked Damage rescaled from 75 to 70 + 60% of caster's Strength",
+          "indentLevel": 1,
+          "metric": "Guard Blocked Damage",
+          "changeType": "RESCALE",
+          "oldValue": "75",
+          "newValue": "70 + 60% of caster's Strength",
+          "metadata": {
+            "entityId": 242
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "item",
+          "entityName": "Crimson Guard",
+          "rawNote": "Guard Duration decreased from 12s to 8s",
+          "originalSource": "Guard Duration decreased from 12s to 8s",
+          "indentLevel": 1,
+          "metric": "Guard Duration",
+          "changeType": "DECREASED",
+          "oldValue": "12s",
+          "newValue": "8s",
+          "metadata": {
+            "entityId": 242
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a positive metric (guard duration)."
+          }
+        }
+      ],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.33b",
+      "date": "2026-06-17T22:45:42.717Z",
+      "changes": [
+        {
+          "category": "item",
+          "entityName": "Crimson Guard",
+          "rawNote": "Guard Strength to blocked damage decreased from 60% to 50%",
+          "originalSource": "Guard Strength to blocked damage decreased from 60% to 50%",
+          "indentLevel": 1,
+          "metric": "Guard Strength to blocked damage",
+          "changeType": "DECREASED",
+          "oldValue": "60%",
+          "newValue": "50%",
+          "metadata": {
+            "entityId": 242
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (guard strength to blocked damage)."
+          }
+        }
+      ],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.33c",
+      "date": "2026-06-17T22:45:42.719Z",
+      "changes": [
+        {
+          "category": "item",
+          "entityName": "Crimson Guard",
+          "rawNote": "Recipe cost increased from 925 to 1050. Total cost increased from 3600 to 3725",
+          "originalSource": "Recipe cost increased from 925 to 1050. Total cost increased from 3600 to 3725",
+          "indentLevel": 1,
+          "metric": "Recipe cost",
+          "changeType": "INCREASED",
+          "oldValue": "925",
+          "newValue": "1050. Total cost increased from 3600 to 3725",
+          "metadata": {
+            "entityId": 242
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a negative metric (recipe cost)."
+          }
+        },
+        {
+          "category": "item",
+          "entityName": "Crimson Guard",
+          "rawNote": "Guard now costs 75 mana to activate",
+          "originalSource": "Guard now costs 75 mana to activate",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 242
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        }
+      ],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.33d",
+      "date": "2026-06-17T22:45:42.721Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.33e",
+      "date": "2026-06-17T22:45:42.723Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.34",
+      "date": "2026-06-17T22:45:42.727Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.34b",
+      "date": "2026-06-17T22:45:42.729Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.34c",
+      "date": "2026-06-17T22:45:42.731Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.34d",
+      "date": "2026-06-17T22:45:42.732Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.34e",
+      "date": "2026-06-17T22:45:42.734Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.35",
+      "date": "2026-06-17T22:45:42.738Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.35b",
+      "date": "2026-06-17T22:45:42.739Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.35c",
+      "date": "2026-06-17T22:45:42.741Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.35d",
+      "date": "2026-06-17T22:45:42.742Z",
+      "changes": [],
+      "temporalAssessment": "Net Gain"
+    },
+    {
+      "version": "7.36",
+      "date": "2026-06-17T22:45:42.748Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.36a",
+      "date": "2026-06-17T22:45:42.750Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.36b",
+      "date": "2026-06-17T22:45:42.752Z",
+      "changes": [
+        {
+          "category": "item",
+          "entityName": "Crimson Guard",
+          "rawNote": "Guard Damage Block now equals to 70 + 2.5% of the caster's max health, instead of Strength",
+          "originalSource": "Guard Damage Block now equals to 70 + 2.5% of the caster's max health, instead of Strength",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 242
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "ROSHAN_INTERACTION",
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        }
+      ],
+      "temporalAssessment": "Net Gain"
+    },
+    {
+      "version": "7.36c",
+      "date": "2026-06-17T22:45:42.753Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.37",
+      "date": "2026-06-17T22:45:42.757Z",
+      "changes": [
+        {
+          "category": "item",
+          "entityName": "Crimson Guard",
+          "rawNote": "Guard cooldown increased from 35s to 40s",
+          "originalSource": "Guard cooldown increased from 35s to 40s",
+          "indentLevel": 1,
+          "metric": "Guard cooldown",
+          "changeType": "INCREASED",
+          "oldValue": "35s",
+          "newValue": "40s",
+          "metadata": {
+            "entityId": 242
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Increased a negative metric (guard cooldown)."
+          }
+        },
+        {
+          "category": "item",
+          "entityName": "Crimson Guard",
+          "rawNote": "Guard additional damage block based on caster’s max health decreased from 2.5% to 2.2%",
+          "originalSource": "Guard additional damage block based on caster’s max health decreased from 2.5% to 2.2%",
+          "indentLevel": 1,
+          "metric": "Guard additional damage block based on caster’s max health",
+          "changeType": "DECREASED",
+          "oldValue": "2.5%",
+          "newValue": "2.2%",
+          "metadata": {
+            "entityId": 242
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Decreased a positive metric (guard additional damage block based on caster’s max health)."
+          }
+        }
+      ],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.37b",
+      "date": "2026-06-17T22:45:42.761Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.37c",
+      "date": "2026-06-17T22:45:42.762Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.37d",
+      "date": "2026-06-17T22:45:42.763Z",
+      "changes": [
+        {
+          "category": "item",
+          "entityName": "Crimson Guard",
+          "rawNote": "Guard duration decreased from 8s to 7s",
+          "originalSource": "Guard duration decreased from 8s to 7s",
+          "indentLevel": 1,
+          "metric": "Guard duration",
+          "changeType": "DECREASED",
+          "oldValue": "8s",
+          "newValue": "7s",
+          "metadata": {
+            "entityId": 242
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a positive metric (guard duration)."
+          }
+        }
+      ],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.37e",
+      "date": "2026-06-17T22:45:42.765Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.38",
+      "date": "2026-06-17T22:45:42.771Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.38b",
+      "date": "2026-06-17T22:45:42.772Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.38c",
+      "date": "2026-06-17T22:45:42.774Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.39",
+      "date": "2026-06-17T22:45:42.778Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.39b",
+      "date": "2026-06-17T22:45:42.779Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.39c",
+      "date": "2026-06-17T22:45:42.780Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.39d",
+      "date": "2026-06-17T22:45:42.782Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.39e",
+      "date": "2026-06-17T22:45:42.784Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.40",
+      "date": "2026-06-17T22:45:42.790Z",
+      "changes": [
+        {
+          "category": "item",
+          "entityName": "Crimson Guard",
+          "rawNote": "Guard buff is no longer dispellable",
+          "originalSource": "Guard buff is no longer dispellable",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 242
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        }
+      ],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.40b",
+      "date": "2026-06-17T22:45:42.792Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.40c",
+      "date": "2026-06-17T22:45:42.794Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.41",
+      "date": "2026-06-17T22:45:42.802Z",
+      "changes": [
+        {
+          "category": "item",
+          "entityName": "Crimson Guard",
+          "rawNote": "Armor bonus decreased from +8 to +6",
+          "originalSource": "Armor bonus decreased from +8 to +6",
+          "indentLevel": 1,
+          "metric": "Armor bonus",
+          "changeType": "DECREASED",
+          "oldValue": "+8",
+          "newValue": "+6",
+          "metadata": {
+            "entityId": 242
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (armor bonus)."
+          }
+        },
+        {
+          "category": "item",
+          "entityName": "Crimson Guard",
+          "rawNote": "Guard base damage block rescaled from 70 for all units to 70 on melee heroes and buildings and 45 on ranged heroes",
+          "originalSource": "Guard base damage block rescaled from 70 for all units to 70 on melee heroes and buildings and 45 on ranged heroes",
+          "indentLevel": 1,
+          "metric": "Guard base damage block",
+          "changeType": "RESCALE",
+          "oldValue": "70 for all units",
+          "newValue": "70 on melee heroes and buildings and 45 on ranged heroes",
+          "metadata": {
+            "entityId": 242
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "item",
+          "entityName": "Crimson Guard",
+          "rawNote": "Guard max health damage block decreased from 2.2% to 2%",
+          "originalSource": "Guard max health damage block decreased from 2.2% to 2%",
+          "indentLevel": 1,
+          "metric": "Guard max health damage block",
+          "changeType": "DECREASED",
+          "oldValue": "2.2%",
+          "newValue": "2%",
+          "metadata": {
+            "entityId": 242
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Decreased a positive metric (guard max health damage block)."
+          }
+        }
+      ],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.41a",
+      "date": "2026-06-17T22:45:42.804Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.41b",
+      "date": "2026-06-17T22:45:42.806Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.41c",
+      "date": "2026-06-17T22:45:42.807Z",
+      "changes": [],
+      "temporalAssessment": null
+    },
+    {
+      "version": "7.41d",
+      "date": "2026-06-17T22:45:42.809Z",
+      "changes": [],
+      "temporalAssessment": null
+    }
+  ]
+}

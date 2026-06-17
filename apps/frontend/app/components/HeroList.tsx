@@ -64,7 +64,9 @@ export default function HeroList({ heroes }: HeroListProps) {
   };
 
   const getHeroSlug = (name: string) => {
-    return name.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+    return name.toLowerCase()
+      .replace(/[^a-z0-9]+/g, '_')
+      .replace(/^_+|_+$/g, '');
   };
 
   const getImageUrl = (name: string) => {

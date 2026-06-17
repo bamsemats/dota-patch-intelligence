@@ -69,9 +69,9 @@ export default async function ItemPage({ params }: PageProps) {
     if (slug === "magic_stick") slug = "magic_stick";
     if (slug === "magic_wand") slug = "magic_wand";
 
-    const enhancements = ["crude", "brawny", "quickened", "tough", "greedy", "mystical", "keen", "toxic", "stalwart", "swift", "alert", "timeless", "titanic", "vital", "audacious", "evolved", "feverish", "fleetfooted", "hulking", "manic", "vampiric", "keen_eyed", "boundless", "nimble", "vast", "wise"];
-    if (enhancements.includes(slug)) {
-      slug = `enhancement_${slug}`;
+    // Neutral Enhancements (ISSUE-20 Fix)
+    if (slug.endsWith("_enhancement")) {
+      slug = `enhancement_${slug.replace("_enhancement", "")}`;
     }
 
     return `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/${slug}.png`;
