@@ -8,24 +8,24 @@ Dota 2 Patch Intelligence is a high-fidelity data pipeline and visualization pla
 
 ## 🚀 Key Features
 
-*   **Synergistic Meta Analysis:** Multi-LLM hybrid engine (Gemini 2.5 Flash & Claude 4 Sonnet) that identifies how systemic changes (economy, map) synergize with hero buffs to shift the meta.
+*   **Synergistic Meta Analysis:** Multi-LLM hybrid engine (Gemini 2.5 Flash) that identifies how systemic changes (economy, map) synergize with hero buffs to shift the meta.
 *   **Net Balance Trajectory:** Tracks the cumulative power shifts of heroes across 7 strategic dimensions (Farming, Mobility, Teamfight, etc.) since patch 7.33.
-*   **Historical Winrate Analytics:** Visualizes hero performance trends across multiple rank brackets (Herald to Divine) over the entire patch timeline.
-*   **Role-Specific Winners & Losers:** Deep analytical breakdown of the top 3 heroes impacted by each patch for every role (Carry, Mid, Offlane, Soft Support, Hard Support).
+*   **Empirical Truth Scores:** A built-in validation layer that compares AI predictions against actual post-patch winrate shifts, assigning an accuracy score to every analysis.
+*   **Global Hero & Item Rosters:** Dedicated, searchable directories (`/heroes`, `/items`) with stylish backgrounds and cumulative balance trajectories.
 *   **Temporal Intelligence:** The analysis engine considers previous patch states to determine if current changes are amplifying or correcting recent meta trends.
-*   **High-Fidelity Grounding:** Strict mechanical rules ensure AI insights are competitively valid and factually grounded in Dota 2 mechanics.
+*   **Zero-Touch Automation:** A fully automated CI/CD pipeline that detects new patches, processes them, and deploys updates to the web without manual intervention.
 
 ---
 
-## 🏗️ Architecture (v2.2)
+## 🏗️ Architecture (v2.5)
 
 The system uses a **Static-to-Dynamic Hybrid** architecture, combining the power of a relational database with the cost-efficiency of static hosting.
 
 1.  **Ingestion Layer:** Discovers patches via Valve's official JSON datafeed and OpenDota SQL Explorer.
-2.  **Intelligence Engine:** A tiered classification pipeline (Deterministic -> Semantic -> AI) that models balance changes into structured facts.
-3.  **Modeling Layer:** Calculates 7-dimensional **Hero Feature Vectors** and aggregates **Cumulative Balance Histories**.
-4.  **Meta Analysis Layer:** LLMs synthesize high-level themes with **Temporal Context** and **Mechanical Grounding**.
-5.  **Serving Layer:** A local **Fastify API** and **PostgreSQL** database powered by **Prisma ORM**.
+2.  **Intelligence Engine:** A tiered classification pipeline (Deterministic -> Semantic -> AI) that models balance changes into structured facts with **Partial Confidence** tagging.
+3.  **Modeling Layer:** Calculates 7-dimensional **Hero Feature Vectors**, aggregates **Cumulative Balance Histories**, and tracks **Ontology Versions**.
+4.  **Meta Analysis Layer:** A **Split-Prompt** LLM architecture that synthesizes high-level themes with **Temporal Context** and **Mechanical Grounding**.
+5.  **Validation Layer:** A **Surgical Fact-Checker** that audits LLM outputs and calculates **Empirical Truth Scores** against post-patch winrate deltas.
 6.  **Frontend:** A **Next.js** application optimized for **Static Site Generation (SSG)** with local-file failbacks for CI/CD robustness.
 
 ---
@@ -37,21 +37,18 @@ The project operates as a multi-stage CLI-driven pipeline:
 ### Core Pipeline
 For a step-by-step guide on how to process a new patch, see [Manual Patch Workflow](docs/MANUAL_PATCH_WORKFLOW.md).
 
-1.  **Ingestion:** `npm run patch:discovery` — Fetches raw data from Valve.
-2.  **Mapping:** `npm run patch:mappings` — Builds ID-to-name maps.
-3.  **Parsing:** `npm run patch:parse` — Decomposes raw notes into structured facts.
-4.  **Vectors:** `npm run patch:vectors` — Calculates 7D identity shifts for heroes.
-5.  **Winrates:** `npm run patch:fetch-winrates` — Syncs performance data from OpenDota (REST & SQL).
-6.  **History:** `npm run patch:generate-history` — Builds cumulative hero identity archives.
-
-### Intelligence Layer (LLM)
-7.  **Meta Analysis:** `npm run patch:meta -- <version>` — Generates high-fidelity strategic summaries.
-8.  **Historical Backfill:** `npm run patch:meta-backfill` — Runs the high-fidelity sequential re-analysis across the entire timeline.
+1.  **Automation:** `npm run patch:auto -- <version>` — Triggers the unified orchestrator script.
+2.  **Discovery:** `npm run patch:discovery` — Fetches raw data from Valve.
+3.  **Parsing:** `npm run patch:parse` — Decomposes raw notes into structured facts with `originalSource` preservation.
+4.  **Classification:** `npm run patch:classify` — Assigns polarity and confidence (System Estimates).
+5.  **Intelligence:** `npm run patch:meta -- <version>` — Generates high-fidelity strategic summaries.
+6.  **Audit:** `npm run patch:audit` — Calculates Empirical Truth Scores based on winrate deltas.
 
 ### Database & Serving
-9.  **Seed Database:** `npm run db:seed` — Syncs all JSON intelligence into the local PostgreSQL database.
-10. **Start API:** `npm run dev --prefix apps/api` — Starts the Fastify server.
-11. **Start UI:** `npm run dev --prefix apps/frontend` — Starts the Next.js dev server.
+7.  **Seed Database:** `npm run db:seed` — Syncs all JSON intelligence into the local PostgreSQL database.
+8.  **Backup DB:** `npm run db:backup` — Creates a Docker-aware SQL dump.
+9.  **Start API:** `npm run dev --prefix apps/api` — Starts the Fastify server.
+10. **Start UI:** `npm run dev --prefix apps/frontend` — Starts the Next.js dev server.
 
 ---
 
@@ -59,7 +56,7 @@ For a step-by-step guide on how to process a new patch, see [Manual Patch Workfl
 
 *   **Frontend:** Next.js (Static Export), TypeScript, Vanilla CSS (CSS Modules).
 *   **API:** Fastify, Prisma ORM, PostgreSQL (via Docker).
-*   **Intelligence:** Anthropic SDK (Claude 4), Google Gen AI (Gemini 2.5), Valve Datafeed, OpenDota SQL.
+*   **Intelligence:** Google Gen AI (Gemini 2.5), Valve Datafeed, OpenDota SQL.
 *   **Deployment:** GitHub Actions, GitHub Pages.
 
 ---
@@ -90,7 +87,7 @@ graph TD
 
     subgraph "Strategic Analysis"
         I --> J[Meta Analysis Engine]
-        J --> K[Claude 4 / Gemini 2.5]
+        J --> K[Gemini 2.5]
         K --> L[Context-Aware Meta Reports]
     end
 
@@ -106,12 +103,13 @@ graph TD
 
 ## 🗺️ Roadmap Status
 
-- **Phases 1-13**: [COMPLETE] Ingestion, Parsing, Vectors, Winrates, UI/UX, Local DB & Local API.
+- **Phases 1-13**: [COMPLETE] Foundation, Ingestion, Parsing, Vectors, Winrates, UI/UX, Local DB & API.
 - **Phase 14**: [COMPLETE] Historical Backfill (Gemini 2.5 Truth-Grounded Re-run).
 - **Phase 15**: [COMPLETE] Cross-Patch Trend Validation & Temporal Intelligence.
 - **Phase 16**: [COMPLETE] Stratz Exit & OpenDota Migration.
 - **Phase 18**: [COMPLETE] Mechanical Truth-Grounded Intelligence (Surgical Fact-Checking & Prompt Splitting).
-- **Phase 19**: [IN PROGRESS] Empirical Meta Validation & Algorithm Tuning.
+- **Phase 19**: [COMPLETE] Empirical Meta Validation & Algorithm Tuning (Truth Scores).
+- **Phase 20**: [COMPLETE] Zero-Touch Automation & CI/CD Pipeline.
 - **Phase 17**: [FUTURE] Advanced Resilience & Data Sourcing.
 
 ---

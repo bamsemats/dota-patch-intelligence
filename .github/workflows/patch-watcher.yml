@@ -1,0 +1,166 @@
+name: Dota Patch Watcher & Automation Pipeline
+
+on:
+  schedule:
+    # Run every 6 hours (adjust as needed during major tournament seasons)
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    # Allows manual triggering from the GitHub Actions UI
+    inputs:
+      force_version:
+        description: 'Force process a specific version (e.g., 7.42). Leave blank for auto-discovery.'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "patch-pipeline"
+  cancel-in-progress: false
+
+jobs:
+  check-and-process:
+    runs-on: ubuntu-latest
+    
+    # We need a PostgreSQL service for the db:seed step of the pipeline
+    services:
+      postgres:
+        image: postgres:15-alpine
+        env:
+          POSTGRES_USER: root
+          POSTGRES_PASSWORD: rootpassword
+          POSTGRES_DB: dota_patch_intel
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          # Fetch full history so we can commit back
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Initialize Database Schema
+        env:
+          DATABASE_URL: postgresql://root:rootpassword@localhost:5432/dota_patch_intel?schema=public
+        run: npx prisma db push --schema apps/api/prisma/schema.prisma
+
+      - name: Check for New Patch (Discovery)
+        id: discovery
+        run: |
+          if [ -n "${{ github.event.inputs.force_version }}" ]; then
+            echo "Forcing version: ${{ github.event.inputs.force_version }}"
+            echo "NEW_PATCH_VERSION=${{ github.event.inputs.force_version }}" >> $GITHUB_ENV
+            echo "FOUND_NEW=true" >> $GITHUB_ENV
+          else
+            # Run the discovery script and capture its output
+            # The script needs to be modified to output a specific flag if a new patch is found, 
+            # but for now we assume it writes to a temporary file or we parse stdout.
+            # Assuming patchDiscovery outputs something like "NEW_PATCH=7.42"
+            DISCOVERY_OUTPUT=$(npm run patch:discovery --silent)
+            echo "$DISCOVERY_OUTPUT"
+            
+            # Simple bash extraction (requires patchDiscovery.ts to be updated to output this format reliably)
+            # For this example, we'll look for a line starting with NEW_PATCH=
+            VERSION=$(echo "$DISCOVERY_OUTPUT" | grep "^NEW_PATCH=" | cut -d'=' -f2)
+            
+            if [ -n "$VERSION" ]; then
+              echo "Found new patch: $VERSION"
+              echo "NEW_PATCH_VERSION=$VERSION" >> $GITHUB_ENV
+              echo "FOUND_NEW=true" >> $GITHUB_ENV
+            else
+              echo "No new patch found."
+              echo "FOUND_NEW=false" >> $GITHUB_ENV
+            fi
+          fi
+
+      - name: Run Automation Pipeline
+        if: env.FOUND_NEW == 'true'
+        env:
+          DATABASE_URL: postgresql://root:rootpassword@localhost:5432/dota_patch_intel?schema=public
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          echo "Executing pipeline for version: ${{ env.NEW_PATCH_VERSION }}"
+          npx tsx apps/scripts/automationPipeline.ts ${{ env.NEW_PATCH_VERSION }}
+
+      - name: Commit and Push Generated Artifacts
+        if: env.FOUND_NEW == 'true'
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          
+          # Stage the new research-output JSON files
+          git add research-output/
+          
+          # Only commit if there are changes
+          if git diff --staged --quiet; then
+            echo "No artifacts generated to commit."
+          else
+            git commit -m "chore(data): auto-process patch ${{ env.NEW_PATCH_VERSION }}"
+            git push
+          fi
+
+  # If a new patch was processed (or triggered manually), deploy the updated site
+  deploy-frontend:
+    needs: check-and-process
+    # We always deploy on workflow_dispatch, or if check-and-process found a new patch
+    # We can't easily pass the FOUND_NEW env var between jobs without outputs, 
+    # so we'll just run this job if the previous job succeeded. If no new patch was found,
+    # the previous job still succeeds (it just skips the pipeline steps), so it would rebuild.
+    # To optimize, we should only run if there was an actual change.
+    
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        # We need to pull the latest commit that the previous job just pushed!
+        with:
+          ref: main
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build Next.js Static Site
+        # The Next.js build uses the local JSON fallback mechanism, 
+        # so it doesn't strictly need the DB to be populated here during the build step,
+        # but it will use the newly committed JSON files in research-output/
+        run: npm run build --prefix apps/frontend
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './apps/frontend/out'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

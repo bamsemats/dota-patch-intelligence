@@ -85,9 +85,39 @@ export default async function HeroPage({ params }: PageProps) {
     return "var(--color-common)";
   };
 
+  const getImageUrl = (name: string) => {
+    let slug = name.replace(/ /g, '_').replace(/[^a-zA-Z0-9_]/g, '').toLowerCase();
+    if (slug === "natures_prophet") slug = "furion";
+    if (slug === "outworld_destroyer") slug = "obsidian_destroyer";
+    if (slug === "vengeful_spirit") slug = "vengefulspirit";
+    if (slug === "anti_mage" || slug === "antimage") slug = "antimage";
+    if (slug === "centaur_warrunner") slug = "centaur";
+    if (slug === "clockwerk") slug = "rattletrap";
+    if (slug === "doom") slug = "doom_bringer";
+    if (slug === "io") slug = "wisp";
+    if (slug === "lifestealer") slug = "life_stealer";
+    if (slug === "magnus") slug = "magnataur";
+    if (slug === "necrophos") slug = "necrolyte";
+    if (slug === "queen_of_pain") slug = "queenofpain";
+    if (slug === "shadow_fiend") slug = "nevermore";
+    if (slug === "treant_protector") slug = "treant";
+    if (slug === "underlord") slug = "abyssal_underlord";
+    if (slug === "wraith_king") slug = "skeleton_king";
+    if (slug === "zeus") slug = "zuus";
+    return `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/${slug}.png`;
+  };
+
   return (
-    <div className="container">
-      <div style={{ marginBottom: '40px' }}>
+    <div className="container" style={{ position: 'relative' }}>
+      <div className={styles.heroImageWrapper} style={{ position: 'absolute', top: '-40px', left: '-20px', width: 'calc(100% + 40px)', height: '400px', zIndex: -1 }}>
+        <img 
+          src={getImageUrl(heroData.name)} 
+          alt="" 
+          className={styles.heroImage} 
+        />
+      </div>
+
+      <div style={{ marginBottom: '40px', paddingTop: '40px' }}>
         <h1 style={{ color: "var(--color-artifact)", margin: 0, fontSize: "clamp(2rem, 5vw, 3rem)" }}>
           {heroData.name}
         </h1>

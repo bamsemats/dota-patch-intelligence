@@ -17,6 +17,8 @@ export default function TopNav() {
   const isSummaryActive = pathname === summaryHref || pathname === '/';
   const isNotesActive = pathname.includes('/full-notes');
   const isSearchActive = pathname.includes('/search');
+  const isHeroesActive = pathname.includes('/heroes');
+  const isItemsActive = pathname.includes('/items');
 
   return (
     <nav style={{ 
@@ -51,6 +53,24 @@ export default function TopNav() {
           }}>
             Full Patch Notes
           </Link>
+          <Link href="/heroes" style={{ 
+            color: isHeroesActive ? 'var(--color-buff)' : 'var(--text-color)', 
+            textDecoration: 'none', 
+            fontWeight: 600,
+            borderBottom: isHeroesActive ? '2px solid var(--color-buff)' : '2px solid transparent',
+            paddingBottom: '4px'
+          }}>
+            Heroes
+          </Link>
+          <Link href="/items" style={{ 
+            color: isItemsActive ? 'var(--color-buff)' : 'var(--text-color)', 
+            textDecoration: 'none', 
+            fontWeight: 600,
+            borderBottom: isItemsActive ? '2px solid var(--color-buff)' : '2px solid transparent',
+            paddingBottom: '4px'
+          }}>
+            Items
+          </Link>
           <Link href="/search" style={{ 
             color: isSearchActive ? 'var(--color-buff)' : 'var(--text-color)', 
             textDecoration: 'none', 
@@ -58,7 +78,7 @@ export default function TopNav() {
             borderBottom: isSearchActive ? '2px solid var(--color-buff)' : '2px solid transparent',
             paddingBottom: '4px'
           }}>
-            Global Search
+            Search
           </Link>
         </div>
       </div>

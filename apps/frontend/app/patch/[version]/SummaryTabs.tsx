@@ -57,6 +57,15 @@ export default function SummaryTabs({ metaData }: SummaryTabsProps) {
 
         {activeTab === "synergies" && (
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "20px" }}>
+            
+            {/* Truth Score Banner */}
+            {metaData.truthScore && (
+              <div style={{ gridColumn: "1 / -1", background: "rgba(26, 135, 249, 0.1)", border: "1px solid var(--color-rare)", padding: "15px", borderRadius: "8px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <span style={{ fontWeight: "bold", color: "var(--color-rare)" }}>Empirical Truth Score</span>
+                <span style={{ fontSize: "1.2rem", fontWeight: "bold", color: "var(--text-color)" }}>{metaData.truthScore.accuracy}% <span style={{fontSize: "0.8rem", color: "#888", fontWeight: "normal"}}>({metaData.truthScore.correct}/{metaData.truthScore.total} predictions matched reality)</span></span>
+              </div>
+            )}
+
             <div style={{ background: "var(--bg-panel)", padding: "20px", borderRadius: "10px", border: "1px solid var(--border-color)" }}>
               <h2 style={{ color: "var(--color-buff)", marginTop: 0, borderBottom: "1px solid var(--border-color)", paddingBottom: "10px" }}>
                 Overall Synergistic Winners
@@ -65,7 +74,14 @@ export default function SummaryTabs({ metaData }: SummaryTabsProps) {
                 {metaData.synergisticWinners?.map((winner: any, idx: number) => (
                   <div key={idx}>
                     <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "4px" }}>
-                      <h4 style={{ margin: 0, color: "var(--color-epic)" }}>{winner.entity}</h4>
+                      <h4 style={{ margin: 0, color: "var(--color-epic)" }}>
+                        {winner.entity}
+                        {winner.isCorrectPrediction !== undefined && (
+                           <span title={`Actual Winrate Delta: ${winner.actualDelta}`} style={{ marginLeft: '6px', fontSize: '1.1rem' }}>
+                             {winner.isCorrectPrediction ? '✅' : '❌'}
+                           </span>
+                        )}
+                      </h4>
                       {winner.temporalAssessment && winner.temporalAssessment !== "N/A" && (
                         <span style={{ 
                           fontSize: "0.65rem", 
@@ -94,7 +110,16 @@ export default function SummaryTabs({ metaData }: SummaryTabsProps) {
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", marginTop: "16px" }}>
                 {metaData.synergisticLosers?.map((loser: any, idx: number) => (
                   <div key={idx}>
-                    <h4 style={{ margin: "0 0 4px 0", color: "var(--color-epic)" }}>{loser.entity}</h4>
+                    <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "4px" }}>
+                      <h4 style={{ margin: 0, color: "var(--color-epic)" }}>
+                        {loser.entity}
+                        {loser.isCorrectPrediction !== undefined && (
+                           <span title={`Actual Winrate Delta: ${loser.actualDelta}`} style={{ marginLeft: '6px', fontSize: '1.1rem' }}>
+                             {loser.isCorrectPrediction ? '✅' : '❌'}
+                           </span>
+                        )}
+                      </h4>
+                    </div>
                     <p style={{ margin: 0, fontSize: "0.9rem", color: "#ccc", lineHeight: "1.4" }}>{loser.synergyExplanation}</p>
                   </div>
                 ))}

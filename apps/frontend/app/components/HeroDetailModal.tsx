@@ -67,19 +67,51 @@ export default function HeroDetailModal({
     return "var(--color-common)";
   };
 
+  const getImageUrl = (name: string) => {
+    let slug = name.replace(/ /g, '_').replace(/[^a-zA-Z0-9_]/g, '').toLowerCase();
+    
+    if (slug === "natures_prophet") slug = "furion";
+    if (slug === "outworld_destroyer") slug = "obsidian_destroyer";
+    if (slug === "vengeful_spirit") slug = "vengefulspirit";
+    if (slug === "anti_mage" || slug === "antimage") slug = "antimage";
+    if (slug === "centaur_warrunner") slug = "centaur";
+    if (slug === "clockwerk") slug = "rattletrap";
+    if (slug === "doom") slug = "doom_bringer";
+    if (slug === "io") slug = "wisp";
+    if (slug === "lifestealer") slug = "life_stealer";
+    if (slug === "magnus") slug = "magnataur";
+    if (slug === "necrophos") slug = "necrolyte";
+    if (slug === "queen_of_pain") slug = "queenofpain";
+    if (slug === "shadow_fiend") slug = "nevermore";
+    if (slug === "treant_protector") slug = "treant";
+    if (slug === "underlord") slug = "abyssal_underlord";
+    if (slug === "wraith_king") slug = "skeleton_king";
+    if (slug === "zeus") slug = "zuus";
+
+    return `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/${slug}.png`;
+  };
+
   return (
     <div className={styles.overlay} onClick={onClose}>
       <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
+        <div className={styles.heroImageWrapper}>
+          <img 
+            src={getImageUrl(heroName)} 
+            alt="" 
+            className={styles.heroImage} 
+            onError={(e) => { e.currentTarget.style.display = 'none'; }}
+          />
+        </div>
         <button className={styles.closeBtn} onClick={onClose}>&times;</button>
         
-        <div className={styles.header}>
+        <div className={styles.header} style={{ position: 'relative', zIndex: 1 }}>
           <h2 className={styles.title}>{heroName}</h2>
           <div className={`${styles.netScore} ${netScore > 0 ? styles.positive : netScore < 0 ? styles.negative : styles.neutral}`}>
             Strategic Impact Score: {netScore > 0 ? `+${netScore}` : netScore}
           </div>
         </div>
 
-        <div className={styles.content}>
+        <div className={styles.content} style={{ position: 'relative', zIndex: 1 }}>
           <div className={styles.section}>
             <h3>Patch Changes</h3>
             <div className={styles.changesList}>

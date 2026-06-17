@@ -339,13 +339,23 @@ Goals:
 
 # Phase 19 — Empirical Meta Validation & Algorithm Tuning
 
-Status: **In Progress**
+Status: **Complete**
 
 Goals:
 *   **Winrate Calibration Loop:** Successfully integrated the `GLOBAL_BLEND` metric (Pro, Immortal, Divine weighted average) into `calibrateWeights.ts`. The auto-tuner now empirically adjusts ontology weights based on real-world winrate shifts. (Done)
-*   **Predictive Accuracy Scoring:** Assign a "Truth Score" to historical meta analyses based on how well they predicted the real-world shift.
-*   **Algorithm Refinement**: Use the correlation data to fine-tune the `BALANCE_ONTOLOGY.md` weights—if the LLM consistently misses a specific hero archetype's rise, adjust the underlying mechanic weights.
-*   **Role Insight Optimization:** Strictly enforce the 5-hero-per-role limit in the synthesis layer to eliminate bloat and ensure high-signal output. (Done)
+*   **Predictive Accuracy Scoring (Truth Score):** Developed `auditPredictions.ts` which injects accuracy metrics directly into the meta-analysis files. (Done)
+*   **UI Truth Indicators:** Implemented the "Empirical Truth Score" banner and visual markers (✅/❌) on the frontend to bridge the gap between AI predictions and reality. (Done)
+
+---
+
+# Phase 20 — Automation & CI/CD Pipeline
+
+Status: **Complete**
+
+Goals:
+*   **Pipeline Orchestrator:** Created `apps/scripts/automationPipeline.ts` to string together the entire 13-step processing sequence into a single command. (Done)
+*   **Automated Trigger:** Implemented `.github/workflows/patch-watcher.yml` to automatically detect, process, and deploy new patches every 6 hours. (Done)
+*   **Zero-Touch Deployment:** Integrated the pipeline with GitHub Pages for fully autonomous site updates. (Done)
 
 ---
 

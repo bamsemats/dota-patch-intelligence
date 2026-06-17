@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import styles from "./EntityList.module.css";
 
 type ChangeType = "Buff" | "Nerf" | "Rework" | "Adjustment";
@@ -44,6 +45,37 @@ export default function ItemList({ title, items }: ItemListProps) {
     return true;
   });
 
+  const getItemImageUrl = (name: string) => {
+    let slug = name.replace(/ /g, '_').replace(/[^a-zA-Z0-9_]/g, '').toLowerCase();
+    
+    if (slug === "aghanims_scepter") slug = "ultimate_scepter";
+    if (slug === "aghanims_shard") slug = "aghanims_shard";
+    if (slug === "town_portal_scroll") slug = "tpscroll";
+    if (slug === "boots_of_speed") slug = "boots";
+    if (slug === "gem_of_true_sight") slug = "gem";
+    if (slug === "observer_ward") slug = "ward_observer";
+    if (slug === "sentry_ward") slug = "ward_sentry";
+    if (slug === "tango") slug = "tango";
+    if (slug === "clarity") slug = "clarity";
+    if (slug === "healing_salve") slug = "flask";
+    if (slug === "smoke_of_deceit") slug = "smoke_of_deceit";
+    if (slug === "dust_of_appearance") slug = "dust";
+    if (slug === "bottle") slug = "bottle";
+    if (slug === "animal_courier") slug = "courier";
+    if (slug === "flying_courier") slug = "flying_courier";
+    if (slug === "shadow_amulet") slug = "shadow_amulet";
+    if (slug === "magic_stick") slug = "magic_stick";
+    if (slug === "magic_wand") slug = "magic_wand";
+
+    // Neutral Enhancements (Phase 20 Fix)
+    const enhancements = ["crude", "brawny", "quickened", "tough", "greedy", "mystical", "keen", "toxic", "stalwart", "swift", "alert", "timeless", "titanic", "vital", "audacious", "evolved", "feverish", "fleetfooted", "hulking", "manic", "vampiric", "keen_eyed", "boundless", "nimble", "vast", "wise"];
+    if (enhancements.includes(slug)) {
+      slug = `enhancement_${slug}`;
+    }
+
+    return `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/${slug}.png`;
+  };
+
   return (
     <div className={styles.listContainer}>
       <div className={styles.controlsRow}>
@@ -82,8 +114,24 @@ export default function ItemList({ title, items }: ItemListProps) {
       </div>
 
       <div className={styles.grid}>
-        {filteredItems.map((item) => (
-          <div key={item.itemName} className={styles.card}>
+        {filteredItems.map((item) => {
+          const safeName = item.itemName.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+          return (
+          <Link 
+            key={item.itemName} 
+            href={`/item/${safeName}`}
+            className={`${styles.card} ${styles.clickable}`}
+            style={{ textDecoration: 'none', color: 'inherit' }}
+          >
+            <div className={styles.heroImageWrapper}>
+              <img 
+                src={getItemImageUrl(item.itemName)} 
+                alt="" 
+                className={styles.itemImage} 
+                onError={(e) => { e.currentTarget.style.display = 'none'; }}
+              />
+            </div>
+            
             <div className={styles.cardHeader}>
               <div>
                 <h3 className={styles.itemName}>{item.itemName}</h3>
@@ -104,7 +152,9 @@ export default function ItemList({ title, items }: ItemListProps) {
                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                     <div>
                       {change.subEntityName && (
-                        <span className={styles.subEntity}>{change.subEntityName}</span>
+                        <span className={styles.subEntity} style={{ display: 'inline', marginRight: '4px' }}>
+                          {change.subEntityName}:
+                        </span>
                       )}
                       <span className={styles.note}>{change.rawNote}</span>
                     </div>
@@ -138,8 +188,8 @@ export default function ItemList({ title, items }: ItemListProps) {
                 </div>
               ))}
             </div>
-          </div>
-        ))}
+          </Link>
+        )})}
       </div>
     </div>
   );

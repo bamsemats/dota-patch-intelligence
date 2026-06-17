@@ -98,7 +98,8 @@ async function main() {
             console.log(`✔️  Retrieved historical data for ${rows.length} heroes.`);
 
             const patchData: Record<string, any> = {
-                "PROFESSIONAL": {}
+                "PROFESSIONAL": {},
+                "GLOBAL_BLEND": {} // Added to support Truth Score / Calibration (ISSUE-6/19)
             };
 
             for (const row of rows) {
@@ -107,11 +108,16 @@ async function main() {
                 const picks = parseInt(row.picks);
                 const winrate = picks > 0 ? (wins / picks) : 0;
                 
-                patchData["PROFESSIONAL"][heroId] = { 
+                const stats = { 
                     winrate: parseFloat(winrate.toFixed(4)), 
                     matchCount: picks,
                     isHistorical: true 
                 };
+
+                patchData["PROFESSIONAL"][heroId] = stats;
+                // For historical queries via SQL Explorer, we use Professional as a proxy for the Blend
+                // because querying historical public matches by tier causes extreme timeouts.
+                patchData["GLOBAL_BLEND"][heroId] = stats; 
             }
 
             const outputPath = path.join(OUTPUT_DIR, `winrates-${patch}.json`);

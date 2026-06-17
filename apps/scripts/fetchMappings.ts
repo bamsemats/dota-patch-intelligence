@@ -96,6 +96,15 @@ async function main() {
          console.warn("[Mappings] Warning: Invalid or missing item data.");
     }
 
+    let itemDataMap: Record<string, any> = {};
+    try {
+        console.log("[Mappings] Fetching rich item data from OpenDota...");
+        const odItemsResponse = await fetchJson("https://api.opendota.com/api/constants/items");
+        itemDataMap = odItemsResponse;
+    } catch (e) {
+        console.warn("[Mappings] Warning: Could not fetch rich item data from OpenDota.");
+    }
+
     // Validation
     if (Object.keys(heroMap).length === 0) throw new Error("Validation Failed: No heroes mapped.");
     if (Object.keys(itemMap).length === 0) throw new Error("Validation Failed: No items mapped.");
@@ -104,11 +113,13 @@ async function main() {
     await writeFile(path.join(MAPPINGS_DIR, "herodata.json"), JSON.stringify(heroDataMap, null, 2), "utf8");
     await writeFile(path.join(MAPPINGS_DIR, "abilities.json"), JSON.stringify(abilityMap, null, 2), "utf8");
     await writeFile(path.join(MAPPINGS_DIR, "items.json"), JSON.stringify(itemMap, null, 2), "utf8");
+    await writeFile(path.join(MAPPINGS_DIR, "itemdata.json"), JSON.stringify(itemDataMap, null, 2), "utf8");
 
     console.log(`\n[Summary] Successfully updated mappings:`);
     console.log(`- Heroes: ${Object.keys(heroMap).length}`);
     console.log(`- Abilities/Talents: ${Object.keys(abilityMap).length}`);
     console.log(`- Items: ${Object.keys(itemMap).length}`);
+    console.log(`- Rich Item Data: ${Object.keys(itemDataMap).length}`);
 }
 
 main().catch((error) => {

@@ -67,6 +67,34 @@ export default function HeroList({ heroes }: HeroListProps) {
     return name.replace(/[^a-z0-9]/gi, '_').toLowerCase();
   };
 
+  const getImageUrl = (name: string) => {
+    // 1. Replace spaces with underscores
+    // 2. Remove all other non-alphanumeric characters (like hyphens, apostrophes)
+    // 3. Lowercase
+    let slug = name.replace(/ /g, '_').replace(/[^a-zA-Z0-9_]/g, '').toLowerCase();
+    
+    // Basic mapping for common mismatches.
+    if (slug === "natures_prophet") slug = "furion";
+    if (slug === "outworld_destroyer") slug = "obsidian_destroyer";
+    if (slug === "vengeful_spirit") slug = "vengefulspirit";
+    if (slug === "anti_mage" || slug === "antimage") slug = "antimage";
+    if (slug === "centaur_warrunner") slug = "centaur";
+    if (slug === "clockwerk") slug = "rattletrap";
+    if (slug === "doom") slug = "doom_bringer";
+    if (slug === "io") slug = "wisp";
+    if (slug === "lifestealer") slug = "life_stealer";
+    if (slug === "magnus") slug = "magnataur";
+    if (slug === "necrophos") slug = "necrolyte";
+    if (slug === "queen_of_pain") slug = "queenofpain";
+    if (slug === "shadow_fiend") slug = "nevermore";
+    if (slug === "treant_protector") slug = "treant";
+    if (slug === "underlord") slug = "abyssal_underlord";
+    if (slug === "wraith_king") slug = "skeleton_king";
+    if (slug === "zeus") slug = "zuus";
+
+    return `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/${slug}.png`;
+  };
+
   return (
     <div className={styles.listContainer}>
       <h2>Hero Changes</h2>
@@ -114,6 +142,15 @@ export default function HeroList({ heroes }: HeroListProps) {
               className={`${styles.card} ${styles.clickable}`}
               style={{ textDecoration: 'none', color: 'inherit' }}
             >
+              <div className={styles.heroImageWrapper}>
+                <img 
+                  src={getImageUrl(hero.heroName)} 
+                  alt="" 
+                  className={styles.heroImage} 
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                />
+              </div>
+
               <div className={styles.cardHeader}>
                 <h3 className={styles.heroName}>{hero.heroName}</h3>
                 <span className={`${styles.netScore} ${hero.netScore > 0 ? styles.positive : hero.netScore < 0 ? styles.negative : styles.neutral}`}>
@@ -127,9 +164,12 @@ export default function HeroList({ heroes }: HeroListProps) {
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                       <div>
                         {change.subEntityName && (
-                          <span className={styles.subEntity}>{change.subEntityName}</span>
+                          <span className={styles.subEntity} style={{ display: 'inline', marginRight: '4px' }}>
+                            {change.subEntityName}:
+                          </span>
                         )}
                         <span className={styles.note}>{change.rawNote}</span>
+
                       </div>
                     </div>
                   </div>

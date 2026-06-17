@@ -9,6 +9,9 @@
   margin-bottom: 30px;
   overflow-x: auto;
   scrollbar-width: none; /* Firefox */
+  @media(max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .tabHeader::-webkit-scrollbar {

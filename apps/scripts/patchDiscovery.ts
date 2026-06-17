@@ -257,6 +257,14 @@ async function main() {
     }
 
     console.log(`\n[Summary] Discovered and processed ${results.length} new patch candidates across ${totalItemsAnalyzed} news items.`);
+    
+    // Output for automation pipeline
+    if (results.length > 0) {
+        // Sort by version so the newest is last
+        results.sort((a, b) => a.version.localeCompare(b.version, undefined, { numeric: true, sensitivity: 'base' }));
+        const newestVersion = results[results.length - 1].version;
+        console.log(`NEW_PATCH=${newestVersion}`);
+    }
 }
 
 main().catch((error) => {
