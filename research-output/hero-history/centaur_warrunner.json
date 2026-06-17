@@ -3,13 +3,14 @@
   "history": [
     {
       "version": "7.33",
-      "date": "2026-06-14T21:53:54.726Z",
+      "date": "2026-06-17T18:07:14.843Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Centaur Warrunner",
           "subEntityName": "Hoof Stomp",
-          "rawNote": "Stun Duration decreased from 2/2.2/2.4/2.6s to 1.6/1.8/2/2.2s ",
+          "rawNote": "Stun Duration decreased from 2/2.2/2.4/2.6s to 1.6/1.8/2/2.2s",
+          "originalSource": "Stun Duration decreased from 2/2.2/2.4/2.6s to 1.6/1.8/2/2.2s ",
           "indentLevel": 1,
           "metric": "Stun Duration",
           "changeType": "DECREASED",
@@ -40,6 +41,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Double Edge",
           "rawNote": "Cast Point improved from 0.3s to 0.25s",
+          "originalSource": "Cast Point improved from 0.3s to 0.25s",
           "indentLevel": 1,
           "metric": "Cast Point",
           "changeType": "INCREASED",
@@ -70,6 +72,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Retaliate",
           "rawNote": "Strength Return Damage rescaled from 20/26/32/38% to 16/24/32/40%",
+          "originalSource": "Strength Return Damage rescaled from 20/26/32/38% to 16/24/32/40%",
           "indentLevel": 1,
           "metric": "Strength Return Damage",
           "changeType": "RESCALE",
@@ -100,6 +103,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent Hoof Stomp Stun Duration decreased from +1s to +0.8s",
+          "originalSource": "Level 25 Talent Hoof Stomp Stun Duration decreased from +1s to +0.8s",
           "indentLevel": 1,
           "metric": "Level 25 Talent Hoof Stomp Stun Duration",
           "changeType": "DECREASED",
@@ -125,7 +129,15 @@
           }
         }
       ],
-      "vectorDelta": null,
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": 0,
+        "siege": 0,
+        "utility": -10
+      },
       "totalVector": {
         "farming": 0,
         "mobility": 0,
@@ -133,14 +145,14 @@
         "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 0
+        "utility": -10
       },
       "winrates": {},
       "temporalAssessment": null
     },
     {
       "version": "7.33b",
-      "date": "2026-06-14T21:53:54.731Z",
+      "date": "2026-06-17T18:07:14.846Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -150,7 +162,7 @@
         "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 0
+        "utility": -10
       },
       "winrates": {
         "HERALD": {
@@ -186,7 +198,7 @@
     },
     {
       "version": "7.33c",
-      "date": "2026-06-14T21:53:54.736Z",
+      "date": "2026-06-17T18:07:14.849Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -196,7 +208,7 @@
         "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 0
+        "utility": -10
       },
       "winrates": {
         "HERALD": {
@@ -232,7 +244,7 @@
     },
     {
       "version": "7.33d",
-      "date": "2026-06-14T21:53:54.740Z",
+      "date": "2026-06-17T18:07:14.851Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -242,7 +254,7 @@
         "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 0
+        "utility": -10
       },
       "winrates": {
         "HERALD": {
@@ -278,7 +290,7 @@
     },
     {
       "version": "7.33e",
-      "date": "2026-06-14T21:53:54.744Z",
+      "date": "2026-06-17T18:07:14.854Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -288,7 +300,7 @@
         "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 0
+        "utility": -10
       },
       "winrates": {
         "HERALD": {
@@ -324,13 +336,14 @@
     },
     {
       "version": "7.34",
-      "date": "2026-06-14T21:53:54.750Z",
+      "date": "2026-06-17T18:07:14.859Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Centaur Warrunner",
           "subEntityName": "Hoof Stomp",
           "rawNote": "Radius decreased from 350 to 325",
+          "originalSource": "Radius decreased from 350 to 325",
           "indentLevel": 1,
           "metric": "Radius",
           "changeType": "DECREASED",
@@ -361,6 +374,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Hoof Stomp",
           "rawNote": "Cast Point improved from 0.5s to 0s",
+          "originalSource": "Cast Point improved from 0.5s to 0s",
           "indentLevel": 1,
           "metric": "Cast Point",
           "changeType": "INCREASED",
@@ -391,6 +405,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Hoof Stomp",
           "rawNote": "Now winds up for 0.5s before the stomp. Centaur Warrunner can move during this time but can't attack. Casting other abilities, using items or issuing either \"Hold Position\" or \"Cancel Current Action\" commands will cancel the cast",
+          "originalSource": "Now winds up for 0.5s before the stomp. Centaur Warrunner can move during this time but can't attack. Casting other abilities, using items or issuing either \"Hold Position\" or \"Cancel Current Action\" commands will cancel the cast",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -418,6 +433,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Double Edge",
           "rawNote": "Cooldown decreased from 4s to 3.5s",
+          "originalSource": "Cooldown decreased from 4s to 3.5s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "DECREASED",
@@ -448,6 +464,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Double Edge",
           "rawNote": "Strength Damage increased from 60/80/100/120% to 60/90/120/150%",
+          "originalSource": "Strength Damage increased from 60/80/100/120% to 60/90/120/150%",
           "indentLevel": 1,
           "metric": "Strength Damage",
           "changeType": "INCREASED",
@@ -478,6 +495,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Work Horse",
           "rawNote": "New ability granted by Aghanim's Scepter",
+          "originalSource": "New ability granted by Aghanim's Scepter",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -505,6 +523,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Work Horse",
           "rawNote": "Centaur Warrunner deploys and pulls a cart for 8s, gaining the Stampede buff for the first 3.5/4/4.5s (depending on the level of Stampede). While active, the Work Horse ability is replaced with the Hitch a Ride sub-ability that can be activated with previous effect. The Work Horse goes on cooldown once the cart disappears. Mana Cost: 75; Cooldown: 30s (unchanged from the previous Upgrade)",
+          "originalSource": "Centaur Warrunner deploys and pulls a cart for 8s, gaining the Stampede buff for the first 3.5/4/4.5s (depending on the level of Stampede). While active, the Work Horse ability is replaced with the Hitch a Ride sub-ability that can be activated with previous effect. The Work Horse goes on cooldown once the cart disappears. Mana Cost: 75; Cooldown: 30s (unchanged from the previous Upgrade)",
           "indentLevel": 2,
           "metric": "Centaur Warrunner deploys and pulls a cart for 8s, gaining the Stampede buff for the first 3.5/4/4.5s (depending on the level of Stampede). While active, the Work Horse ability is",
           "changeType": "REWORK",
@@ -534,36 +553,36 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -4.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": -16
+        "utility": -10
       },
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -4.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": -16
+        "utility": -20
       },
       "winrates": {},
       "temporalAssessment": null
     },
     {
       "version": "7.34b",
-      "date": "2026-06-14T21:53:54.755Z",
+      "date": "2026-06-17T18:07:14.863Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -4.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": -16
+        "utility": -20
       },
       "winrates": {
         "HERALD": {
@@ -599,12 +618,13 @@
     },
     {
       "version": "7.34c",
-      "date": "2026-06-14T21:53:54.759Z",
+      "date": "2026-06-17T18:07:14.868Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Centaur Warrunner",
           "rawNote": "Base Movement Speed increased from 300 to 310",
+          "originalSource": "Base Movement Speed increased from 300 to 310",
           "indentLevel": 1,
           "metric": "Base Movement Speed",
           "changeType": "INCREASED",
@@ -634,6 +654,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Stampede",
           "rawNote": "Cooldown decreased from 100s to 90s",
+          "originalSource": "Cooldown decreased from 100s to 90s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "DECREASED",
@@ -664,6 +685,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Work Horse",
           "rawNote": "Cooldown decreased from 30s to 24s",
+          "originalSource": "Cooldown decreased from 30s to 24s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "DECREASED",
@@ -694,7 +716,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 3,
+        "teamfight": 2,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -703,10 +725,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": 2,
         "laning": 0,
         "siege": 0,
-        "utility": -16
+        "utility": -20
       },
       "winrates": {
         "HERALD": {
@@ -742,17 +764,17 @@
     },
     {
       "version": "7.34d",
-      "date": "2026-06-14T21:53:54.764Z",
+      "date": "2026-06-17T18:07:14.871Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": 2,
         "laning": 0,
         "siege": 0,
-        "utility": -16
+        "utility": -20
       },
       "winrates": {
         "HERALD": {
@@ -788,17 +810,17 @@
     },
     {
       "version": "7.34e",
-      "date": "2026-06-14T21:53:54.768Z",
+      "date": "2026-06-17T18:07:14.873Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": 2,
         "laning": 0,
         "siege": 0,
-        "utility": -16
+        "utility": -20
       },
       "winrates": {
         "HERALD": {
@@ -834,13 +856,14 @@
     },
     {
       "version": "7.35",
-      "date": "2026-06-14T21:53:54.772Z",
+      "date": "2026-06-17T18:07:14.877Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Centaur Warrunner",
           "subEntityName": "Hoof Stomp",
           "rawNote": "Stomp Damage decreased from 120/180/240/300 to 90/160/230/300",
+          "originalSource": "Stomp Damage decreased from 120/180/240/300 to 90/160/230/300",
           "indentLevel": 1,
           "metric": "Stomp Damage",
           "changeType": "DECREASED",
@@ -871,6 +894,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Double Edge Strength Damage decreased from +40% to +35%",
+          "originalSource": "Level 15 Talent Double Edge Strength Damage decreased from +40% to +35%",
           "indentLevel": 1,
           "metric": "Level 15 Talent Double Edge Strength Damage",
           "changeType": "DECREASED",
@@ -901,10 +925,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": 2,
         "laning": 0,
         "siege": 0,
-        "utility": -16
+        "utility": -20
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -917,17 +941,17 @@
     },
     {
       "version": "7.35b",
-      "date": "2026-06-14T21:53:54.775Z",
+      "date": "2026-06-17T18:07:14.879Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": 2,
         "laning": 0,
         "siege": 0,
-        "utility": -16
+        "utility": -20
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -940,17 +964,17 @@
     },
     {
       "version": "7.35c",
-      "date": "2026-06-14T21:53:54.782Z",
+      "date": "2026-06-17T18:07:14.881Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": 2,
         "laning": 0,
         "siege": 0,
-        "utility": -16
+        "utility": -20
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -963,13 +987,14 @@
     },
     {
       "version": "7.35d",
-      "date": "2026-06-14T21:53:54.785Z",
+      "date": "2026-06-17T18:07:14.884Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Centaur Warrunner",
           "subEntityName": "Hoof Stomp",
           "rawNote": "Damage decreased from 90/160/230/300 to 70/140/210/280",
+          "originalSource": "Damage decreased from 90/160/230/300 to 70/140/210/280",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "DECREASED",
@@ -1000,6 +1025,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Health Regen decreased from +5 to +4",
+          "originalSource": "Level 10 Talent Health Regen decreased from +5 to +4",
           "indentLevel": 1,
           "metric": "Level 10 Talent Health Regen",
           "changeType": "DECREASED",
@@ -1026,22 +1052,22 @@
         }
       ],
       "vectorDelta": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8,
-        "laning": -8,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -9.5,
-        "laning": -8,
+        "teamfight": 1,
+        "laning": -1,
         "siege": 0,
-        "utility": -16
+        "utility": -20
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1050,16 +1076,17 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.36",
-      "date": "2026-06-14T21:53:54.791Z",
+      "date": "2026-06-17T18:07:14.890Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Centaur Warrunner",
           "rawNote": "Base Health Regen decreased from 5 to 4",
+          "originalSource": "Base Health Regen decreased from 5 to 4",
           "indentLevel": 1,
           "metric": "Base Health Regen",
           "changeType": "DECREASED",
@@ -1088,6 +1115,7 @@
           "category": "hero",
           "entityName": "Centaur Warrunner",
           "rawNote": "Base Movement Speed decreased from 310 to 305",
+          "originalSource": "Base Movement Speed decreased from 310 to 305",
           "indentLevel": 1,
           "metric": "Base Movement Speed",
           "changeType": "DECREASED",
@@ -1117,6 +1145,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Stampede",
           "rawNote": "Cooldown increased from 90s to 100/95/90s",
+          "originalSource": "Cooldown increased from 90s to 100/95/90s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "INCREASED",
@@ -1147,6 +1176,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Unknown Ability (980)",
           "rawNote": "Now grants invulnerability to the mounted target",
+          "originalSource": "Now grants invulnerability to the mounted target",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -1174,6 +1204,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Unknown Ability (980)",
           "rawNote": "No longer ends when blinking/teleporting",
+          "originalSource": "No longer ends when blinking/teleporting",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1201,19 +1232,19 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -11,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": -16
+        "utility": -20
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1226,17 +1257,17 @@
     },
     {
       "version": "7.36a",
-      "date": "2026-06-14T21:53:54.794Z",
+      "date": "2026-06-17T18:07:14.892Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -11,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": -16
+        "utility": -20
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1249,12 +1280,13 @@
     },
     {
       "version": "7.36b",
-      "date": "2026-06-14T21:53:54.797Z",
+      "date": "2026-06-17T18:07:14.896Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Centaur Warrunner",
           "rawNote": "Rawhide: Max health gain decreased from +40 to +35",
+          "originalSource": "Rawhide: Max health gain decreased from +40 to +35",
           "indentLevel": 1,
           "metric": "Rawhide: Max health gain",
           "changeType": "DECREASED",
@@ -1284,6 +1316,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Horsepower",
           "rawNote": "Strength to movement speed decreased from 40% to 35%",
+          "originalSource": "Strength to movement speed decreased from 40% to 35%",
           "indentLevel": 1,
           "metric": "Strength to movement speed",
           "changeType": "DECREASED",
@@ -1314,6 +1347,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Double Edge",
           "rawNote": "Aghanim's Shard Bonus Strength decreased from +15% to +12%",
+          "originalSource": "Aghanim's Shard Bonus Strength decreased from +15% to +12%",
           "indentLevel": 1,
           "metric": "Aghanim's Shard Bonus Strength",
           "changeType": "DECREASED",
@@ -1344,6 +1378,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Strength decreased from +15 to +12",
+          "originalSource": "Level 15 Talent Strength decreased from +15 to +12",
           "indentLevel": 1,
           "metric": "Level 15 Talent Strength",
           "changeType": "DECREASED",
@@ -1373,6 +1408,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Double Edge Strength Damage decreased from +35% to +30%",
+          "originalSource": "Level 15 Talent Double Edge Strength Damage decreased from +35% to +30%",
           "indentLevel": 1,
           "metric": "Level 15 Talent Double Edge Strength Damage",
           "changeType": "DECREASED",
@@ -1400,13 +1436,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -11,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": -16
+        "utility": -20
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1419,12 +1455,13 @@
     },
     {
       "version": "7.36c",
-      "date": "2026-06-14T21:53:54.800Z",
+      "date": "2026-06-17T18:07:14.898Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Centaur Warrunner",
           "rawNote": "Base Health Regen decreased from 4 to 3",
+          "originalSource": "Base Health Regen decreased from 4 to 3",
           "indentLevel": 1,
           "metric": "Base Health Regen",
           "changeType": "DECREASED",
@@ -1453,6 +1490,7 @@
           "category": "hero",
           "entityName": "Centaur Warrunner",
           "rawNote": "Rawhide: Max Health Gain decreased from 35 to 30",
+          "originalSource": "Rawhide: Max Health Gain decreased from 35 to 30",
           "indentLevel": 1,
           "metric": "Rawhide: Max Health Gain",
           "changeType": "DECREASED",
@@ -1480,13 +1518,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -11,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": -16
+        "utility": -20
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1495,21 +1533,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.37",
-      "date": "2026-06-14T21:53:54.805Z",
+      "date": "2026-06-17T18:07:14.902Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -11,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": -16
+        "utility": -20
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1518,17 +1556,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.37b",
-      "date": "2026-06-14T21:53:54.807Z",
+      "date": "2026-06-17T18:07:14.904Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Centaur Warrunner",
           "subEntityName": "Horsepower",
           "rawNote": "Strength as movement speed decreased from 35% to 30%",
+          "originalSource": "Strength as movement speed decreased from 35% to 30%",
           "indentLevel": 1,
           "metric": "Strength as movement speed",
           "changeType": "DECREASED",
@@ -1557,13 +1596,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -11,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": -16
+        "utility": -20
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1572,21 +1611,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.37c",
-      "date": "2026-06-14T21:53:54.810Z",
+      "date": "2026-06-17T18:07:14.906Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -11,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": -16
+        "utility": -20
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1595,21 +1634,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.37d",
-      "date": "2026-06-14T21:53:54.813Z",
+      "date": "2026-06-17T18:07:14.909Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -11,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": -16
+        "utility": -20
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1622,17 +1661,17 @@
     },
     {
       "version": "7.37e",
-      "date": "2026-06-14T21:53:54.815Z",
+      "date": "2026-06-17T18:07:14.912Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -11,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": -16
+        "utility": -20
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1645,13 +1684,14 @@
     },
     {
       "version": "7.38",
-      "date": "2026-06-14T21:53:54.824Z",
+      "date": "2026-06-17T18:07:14.919Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Centaur Warrunner",
           "subEntityName": "Retaliate",
           "rawNote": "Damage done is now classified as reflection damage",
+          "originalSource": "Damage done is now classified as reflection damage",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -1659,19 +1699,20 @@
             "subEntityId": 5516
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ROSHAN_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -1679,6 +1720,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Movement Speed decreased from +20 to +15",
+          "originalSource": "Level 10 Talent Movement Speed decreased from +20 to +15",
           "indentLevel": 1,
           "metric": "Level 10 Talent Movement Speed",
           "changeType": "DECREASED",
@@ -1706,13 +1748,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -11,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": -16
+        "utility": -20
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1725,17 +1767,17 @@
     },
     {
       "version": "7.38b",
-      "date": "2026-06-14T21:53:54.827Z",
+      "date": "2026-06-17T18:07:14.921Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -11,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": -16
+        "utility": -20
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1748,17 +1790,17 @@
     },
     {
       "version": "7.38c",
-      "date": "2026-06-14T21:53:54.830Z",
+      "date": "2026-06-17T18:07:14.924Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -11,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": -16
+        "utility": -20
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1771,13 +1813,14 @@
     },
     {
       "version": "7.39",
-      "date": "2026-06-14T21:53:54.836Z",
+      "date": "2026-06-17T18:07:14.928Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Centaur Warrunner",
           "subEntityName": "Double Edge",
           "rawNote": "Cast Range increased from 150 to 175",
+          "originalSource": "Cast Range increased from 150 to 175",
           "indentLevel": 1,
           "metric": "Cast Range",
           "changeType": "INCREASED",
@@ -1811,16 +1854,16 @@
         "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -11,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": -1
+        "utility": -17
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1833,13 +1876,14 @@
     },
     {
       "version": "7.39b",
-      "date": "2026-06-14T21:53:54.839Z",
+      "date": "2026-06-17T18:07:14.931Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Centaur Warrunner",
           "subEntityName": "Horsepower",
           "rawNote": "Max Movement Speed decreased from 600 to 575",
+          "originalSource": "Max Movement Speed decreased from 600 to 575",
           "indentLevel": 1,
           "metric": "Max Movement Speed",
           "changeType": "DECREASED",
@@ -1868,13 +1912,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -11,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": -1
+        "utility": -17
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1887,17 +1931,17 @@
     },
     {
       "version": "7.39c",
-      "date": "2026-06-14T21:53:54.843Z",
+      "date": "2026-06-17T18:07:14.933Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -11,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": -1
+        "utility": -17
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1910,17 +1954,17 @@
     },
     {
       "version": "7.39d",
-      "date": "2026-06-14T21:53:54.848Z",
+      "date": "2026-06-17T18:07:14.937Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -11,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": -1
+        "utility": -17
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1933,13 +1977,14 @@
     },
     {
       "version": "7.39e",
-      "date": "2026-06-14T21:53:54.851Z",
+      "date": "2026-06-17T18:07:14.939Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Centaur Warrunner",
           "subEntityName": "Work Horse",
           "rawNote": "Hitch a ride cast range decreased from 300 to 250",
+          "originalSource": "Hitch a ride cast range decreased from 300 to 250",
           "indentLevel": 1,
           "metric": "Hitch a ride cast range",
           "changeType": "DECREASED",
@@ -1968,13 +2013,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -11,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": -1
+        "utility": -17
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1983,16 +2028,17 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.40",
-      "date": "2026-06-14T21:53:54.859Z",
+      "date": "2026-06-17T18:07:14.945Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Centaur Warrunner",
           "rawNote": "Rawhide: Bonus Max Health decreased from 30 to 25",
+          "originalSource": "Rawhide: Bonus Max Health decreased from 30 to 25",
           "indentLevel": 1,
           "metric": "Rawhide: Bonus Max Health",
           "changeType": "DECREASED",
@@ -2022,6 +2068,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Work Horse",
           "rawNote": "Cooldown increased from 24s to 35s",
+          "originalSource": "Cooldown increased from 24s to 35s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "INCREASED",
@@ -2052,6 +2099,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Work Horse",
           "rawNote": "Duration decreased from 8s to 7s",
+          "originalSource": "Duration decreased from 8s to 7s",
           "indentLevel": 1,
           "metric": "Duration",
           "changeType": "DECREASED",
@@ -2082,19 +2130,19 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
+        "teamfight": -2,
         "laning": 0,
         "siege": 0,
-        "utility": -10
+        "utility": -2
       },
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17.5,
-        "laning": -8,
+        "teamfight": -2,
+        "laning": -1,
         "siege": 0,
-        "utility": -11
+        "utility": -19
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2103,16 +2151,17 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.40b",
-      "date": "2026-06-14T21:53:54.866Z",
+      "date": "2026-06-17T18:07:14.948Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Centaur Warrunner",
           "rawNote": "Base Movement Speed decreased from 305 to 300",
+          "originalSource": "Base Movement Speed decreased from 305 to 300",
           "indentLevel": 1,
           "metric": "Base Movement Speed",
           "changeType": "DECREASED",
@@ -2142,6 +2191,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Work Horse",
           "rawNote": "Total Duration decreased from 7s to 6s",
+          "originalSource": "Total Duration decreased from 7s to 6s",
           "indentLevel": 1,
           "metric": "Total Duration",
           "changeType": "DECREASED",
@@ -2172,6 +2222,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Strength decreased from +12 to +10",
+          "originalSource": "Level 15 Talent Strength decreased from +12 to +10",
           "indentLevel": 1,
           "metric": "Level 15 Talent Strength",
           "changeType": "DECREASED",
@@ -2199,13 +2250,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17.5,
-        "laning": -8,
+        "teamfight": -2,
+        "laning": -1,
         "siege": 0,
-        "utility": -11
+        "utility": -19
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2218,17 +2269,17 @@
     },
     {
       "version": "7.40c",
-      "date": "2026-06-14T21:53:54.872Z",
+      "date": "2026-06-17T18:07:14.950Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17.5,
-        "laning": -8,
+        "teamfight": -2,
+        "laning": -1,
         "siege": 0,
-        "utility": -11
+        "utility": -19
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2241,12 +2292,13 @@
     },
     {
       "version": "7.41",
-      "date": "2026-06-14T21:53:54.887Z",
+      "date": "2026-06-17T18:07:14.959Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Centaur Warrunner",
           "rawNote": "Strength gain increased from 4.0 to 4.2",
+          "originalSource": "Strength gain increased from 4.0 to 4.2",
           "indentLevel": 1,
           "metric": "Strength gain",
           "changeType": "INCREASED",
@@ -2275,15 +2327,16 @@
           "category": "hero",
           "entityName": "Centaur Warrunner",
           "rawNote": "Removed Rawhide innate ability",
+          "originalSource": "Removed Rawhide innate ability",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
             "entityId": 96
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -2293,7 +2346,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2301,6 +2355,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Horsepower",
           "rawNote": "New innate ability",
+          "originalSource": "New innate ability",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2328,6 +2383,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Horsepower",
           "rawNote": "Centaur Warrunner gains 30% of his strength as bonus movement speed. This movement speed bonus does not stack with bonuses from boots",
+          "originalSource": "Centaur Warrunner gains 30% of his strength as bonus movement speed. This movement speed bonus does not stack with bonuses from boots",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2335,31 +2391,32 @@
             "subEntityId": 1379
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "AURA_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         }
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17.5,
-        "laning": -8,
+        "teamfight": -2,
+        "laning": -1,
         "siege": 0,
-        "utility": -11
+        "utility": -19
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2372,13 +2429,14 @@
     },
     {
       "version": "7.41a",
-      "date": "2026-06-14T21:53:54.892Z",
+      "date": "2026-06-17T18:07:14.961Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Centaur Warrunner",
           "subEntityName": "Horsepower",
           "rawNote": "Strength as Bonus Movement Speed increased from 30% to 40%",
+          "originalSource": "Strength as Bonus Movement Speed increased from 30% to 40%",
           "indentLevel": 1,
           "metric": "Strength as Bonus Movement Speed",
           "changeType": "INCREASED",
@@ -2407,13 +2465,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17.5,
-        "laning": -8,
+        "teamfight": -2,
+        "laning": -1,
         "siege": 0,
-        "utility": -11
+        "utility": -19
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2422,21 +2480,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.41b",
-      "date": "2026-06-14T21:53:54.896Z",
+      "date": "2026-06-17T18:07:14.964Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17.5,
-        "laning": -8,
+        "teamfight": -2,
+        "laning": -1,
         "siege": 0,
-        "utility": -11
+        "utility": -19
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2445,16 +2503,17 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.41c",
-      "date": "2026-06-14T21:53:54.902Z",
+      "date": "2026-06-17T18:07:14.966Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Centaur Warrunner",
           "rawNote": "Base Strength increased from 27 to 28",
+          "originalSource": "Base Strength increased from 27 to 28",
           "indentLevel": 1,
           "metric": "Base Strength",
           "changeType": "INCREASED",
@@ -2483,6 +2542,7 @@
           "category": "hero",
           "entityName": "Centaur Warrunner",
           "rawNote": "Damage at level 1 increased from 63-65 to 64-66",
+          "originalSource": "Damage at level 1 increased from 63-65 to 64-66",
           "indentLevel": 2,
           "metric": "Damage at level 1",
           "changeType": "INCREASED",
@@ -2511,6 +2571,7 @@
           "category": "hero",
           "entityName": "Centaur Warrunner",
           "rawNote": "Strength gain increased from 4.2 to 4.3",
+          "originalSource": "Strength gain increased from 4.2 to 4.3",
           "indentLevel": 1,
           "metric": "Strength gain",
           "changeType": "INCREASED",
@@ -2540,6 +2601,7 @@
           "entityName": "Centaur Warrunner",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent Hoof Stomp Duration increased from +0.8s to +1.0s",
+          "originalSource": "Level 25 Talent Hoof Stomp Duration increased from +0.8s to +1.0s",
           "indentLevel": 1,
           "metric": "Level 25 Talent Hoof Stomp Duration",
           "changeType": "INCREASED",
@@ -2567,13 +2629,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17.5,
-        "laning": -8,
+        "teamfight": -2,
+        "laning": -1,
         "siege": 0,
-        "utility": -11
+        "utility": -19
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2582,50 +2644,62 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.41d",
-      "date": "2026-06-14T21:53:54.908Z",
+      "date": "2026-06-17T18:07:14.969Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17.5,
-        "laning": -8,
+        "teamfight": -2,
+        "laning": -1,
         "siege": 0,
-        "utility": -11
+        "utility": -19
       },
       "winrates": {
         "HERALD": {
-          "winrate": 0.5082,
-          "matchCount": 13540
+          "winrate": 0.5152,
+          "matchCount": 12119
         },
         "GUARDIAN": {
-          "winrate": 0.5079,
-          "matchCount": 28411
+          "winrate": 0.515,
+          "matchCount": 26273
         },
         "CRUSADER": {
-          "winrate": 0.5057,
-          "matchCount": 33135
+          "winrate": 0.5129,
+          "matchCount": 30565
         },
         "ARCHON": {
-          "winrate": 0.5075,
-          "matchCount": 31518
+          "winrate": 0.5049,
+          "matchCount": 29253
         },
         "LEGEND": {
-          "winrate": 0.5003,
-          "matchCount": 23907
+          "winrate": 0.4971,
+          "matchCount": 22102
         },
         "ANCIENT": {
-          "winrate": 0.5072,
-          "matchCount": 15420
+          "winrate": 0.504,
+          "matchCount": 14011
         },
         "DIVINE": {
-          "winrate": 0.495,
-          "matchCount": 14807
+          "winrate": 0.4944,
+          "matchCount": 13648
+        },
+        "IMMORTAL": {
+          "winrate": 0,
+          "matchCount": 0
+        },
+        "PRO": {
+          "winrate": 0,
+          "matchCount": 1
+        },
+        "GLOBAL_BLEND": {
+          "winrate": 0.4942,
+          "matchCount": 13649
         }
       },
       "temporalAssessment": null

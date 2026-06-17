@@ -84,38 +84,42 @@ async function calibrateAllPatches() {
             continue;
         }
 
-        // Process all 7 brackets per patch
-        for (const [stratBracket, bracketKey] of Object.entries(BRACKET_MAP)) {
-            const bracketWinrates = winrates[stratBracket];
-            if (!bracketWinrates || Object.keys(bracketWinrates).length === 0) continue;
+        // ISSUE-6: Use the new GLOBAL_BLEND for empirical tuning
+        const bracketWinrates = winrates["GLOBAL_BLEND"];
+        if (!bracketWinrates || Object.keys(bracketWinrates).length === 0) {
+            console.log(`[Auto-Tuner] Skipping Patch ${version} (No GLOBAL_BLEND data).`);
+            continue;
+        }
 
-            for (const [heroIdStr, stats] of Object.entries(bracketWinrates)) {
-                const heroName = heroesMap[heroIdStr as any];
-                if (!heroName) continue;
+        // We calibrate the "Divine" weight based on the Global Blend
+        const bracketKey = "Divine";
 
-                const { score, metrics } = calculateScoreForHero(heroName, patchData, weights, bracketKey);
-                const winrateShift = (stats as any).winrate - 0.50;
+        for (const [heroIdStr, stats] of Object.entries(bracketWinrates)) {
+            const heroName = heroesMap[heroIdStr as any];
+            if (!heroName) continue;
 
-                let isMismatch = false;
-                let direction: "REDUCE" | "INCREASE" | null = null;
+            const { score, metrics } = calculateScoreForHero(heroName, patchData, weights, bracketKey);
+            const winrateShift = (stats as any).winrate - 0.50;
 
-                // Prediction significantly opposes reality
-                if (score >= 5 && winrateShift <= -0.01) { 
-                    isMismatch = true;
-                    direction = "REDUCE";
-                } else if (score <= -5 && winrateShift >= 0.01) {
-                    isMismatch = true;
-                    direction = "REDUCE";
-                }
+            let isMismatch = false;
+            let direction: "REDUCE" | "INCREASE" | null = null;
 
-                if (isMismatch && direction && metrics.length > 0) {
-                    for (const m of metrics) {
-                        if (weights.metrics[m]) {
-                            const oldVal = weights.metrics[m].weights[bracketKey];
-                            const newVal = direction === "REDUCE" ? Math.max(1, oldVal - NUDGE_FACTOR) : Math.min(10, oldVal + NUDGE_FACTOR);
-                            weights.metrics[m].weights[bracketKey] = newVal;
-                            totalAdjustments++;
-                        }
+            // Prediction significantly opposes reality
+            if (score >= 5 && winrateShift <= -0.01) { 
+                isMismatch = true;
+                direction = "REDUCE";
+            } else if (score <= -5 && winrateShift >= 0.01) {
+                isMismatch = true;
+                direction = "REDUCE";
+            }
+
+            if (isMismatch && direction && metrics.length > 0) {
+                for (const m of metrics) {
+                    if (weights.metrics[m]) {
+                        const oldVal = weights.metrics[m].weights[bracketKey];
+                        const newVal = direction === "REDUCE" ? Math.max(1, oldVal - NUDGE_FACTOR) : Math.min(10, oldVal + NUDGE_FACTOR);
+                        weights.metrics[m].weights[bracketKey] = newVal;
+                        totalAdjustments++;
                     }
                 }
             }

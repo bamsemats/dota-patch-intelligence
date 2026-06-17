@@ -41,19 +41,20 @@ Every parsed change exists in one of four states, determining its path through t
 
 ### State 3: PARTIALLY_CLASSIFIED
 
-*   **Description:** Changes that resemble known categories but contain ambiguity or minor variations.
-*   **Detection:** Heuristic matching with low confidence scores.
-*   **Handling:** An LLM may be used to propose a resolution.
+*   **Description:** Changes that fail deterministic matching but share significant vocabulary with known semantic patterns.
+*   **Detection:** "Keyword Weighting" heuristic. The system extracts core keywords (length > 4) from the ontology patterns and counts hits within the raw note.
+*   **Handling:** The system assigns a 0.5 confidence "Best Guess" tag and flags it for human review. It is displayed optimistically in the frontend with a "SYSTEM ESTIMATE" badge.
 *   **Data Structure:**
     ```json
     {
       "state": "PARTIALLY_CLASSIFIED",
-      "proposedTag": "DISPEL_INTERACTION",
-      "confidence": 0.65,
-      "flaggedForReview": true
+      "classificationType": "Unknown",
+      "semanticTag": "DISPEL_INTERACTION",
+      "confidenceScore": 0.5,
+      "reasoning": "Partial semantic match based on keywords. Requires human review."
     }
     ```
-*   **Next Step:** Routed to the Human Review Queue for confirmation.
+*   **Next Step:** Routed to the Human Review Queue for confirmation or correction. Optimistically rendered in the UI.
 
 ### State 4: UNKNOWN
 

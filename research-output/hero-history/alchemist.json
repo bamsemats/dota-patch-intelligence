@@ -3,13 +3,14 @@
   "history": [
     {
       "version": "7.33",
-      "date": "2026-06-14T21:53:54.726Z",
+      "date": "2026-06-17T18:07:14.843Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Alchemist",
           "subEntityName": "Acid Spray",
           "rawNote": "Cast Point improved from 0.2s to 0.1s",
+          "originalSource": "Cast Point improved from 0.2s to 0.1s",
           "indentLevel": 1,
           "metric": "Cast Point",
           "changeType": "INCREASED",
@@ -40,6 +41,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Acid Spray",
           "rawNote": "Cooldown decreased from 22s to 22/21/20/19s",
+          "originalSource": "Cooldown decreased from 22s to 22/21/20/19s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "DECREASED",
@@ -70,6 +72,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Acid Spray",
           "rawNote": "Mana Cost decreased from 130 to 120",
+          "originalSource": "Mana Cost decreased from 130 to 120",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "DECREASED",
@@ -100,6 +103,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Acid Spray",
           "rawNote": "Duration decreased from 16s to 15s",
+          "originalSource": "Duration decreased from 16s to 15s",
           "indentLevel": 1,
           "metric": "Duration",
           "changeType": "DECREASED",
@@ -130,6 +134,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Acid Spray",
           "rawNote": "Damage per second increased from 20/25/30/35 to 25/30/35/40",
+          "originalSource": "Damage per second increased from 20/25/30/35 to 25/30/35/40",
           "indentLevel": 1,
           "metric": "Damage per second",
           "changeType": "INCREASED",
@@ -159,7 +164,8 @@
           "category": "hero",
           "entityName": "Alchemist",
           "subEntityName": "Unstable Concoction",
-          "rawNote": "Max Stun Duration decreased from 2.2/2.8/3.4/4s to 1.7/2.2/2.7/3.2s ",
+          "rawNote": "Max Stun Duration decreased from 2.2/2.8/3.4/4s to 1.7/2.2/2.7/3.2s",
+          "originalSource": "Max Stun Duration decreased from 2.2/2.8/3.4/4s to 1.7/2.2/2.7/3.2s ",
           "indentLevel": 1,
           "metric": "Max Stun Duration",
           "changeType": "DECREASED",
@@ -190,6 +196,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Greevil's Greed",
           "rawNote": "Now an innate ability",
+          "originalSource": "Now an innate ability",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -217,6 +224,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Greevil's Greed",
           "rawNote": "Max Bonus Gold per kill rescaled from 15/18/21/24 to 18",
+          "originalSource": "Max Bonus Gold per kill rescaled from 15/18/21/24 to 18",
           "indentLevel": 1,
           "metric": "Max Bonus Gold per kill",
           "changeType": "RESCALE",
@@ -247,6 +255,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Greevil's Greed",
           "rawNote": "Bounty Rune Multiplier rescaled from 1.8/2.2/2.6/3 to 2",
+          "originalSource": "Bounty Rune Multiplier rescaled from 1.8/2.2/2.6/3 to 2",
           "indentLevel": 1,
           "metric": "Bounty Rune Multiplier",
           "changeType": "RESCALE",
@@ -277,6 +286,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Corrosive Weaponry",
           "rawNote": "New basic passive ability",
+          "originalSource": "New basic passive ability",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -304,6 +314,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Corrosive Weaponry",
           "rawNote": "Attacks apply a stacking debuff on enemies that reduces movement speed by 3/4/5/6% and status resistance by 3/4/5/6% per stack. Applying a new stack refreshes the duration. Has no effect on buildings or Roshan. Max Stacks: 5/7/9/11. Debuff Duration: 3.5s",
+          "originalSource": "Attacks apply a stacking debuff on enemies that reduces movement speed by 3/4/5/6% and status resistance by 3/4/5/6% per stack. Applying a new stack refreshes the duration. Has no effect on buildings or Roshan. Max Stacks: 5/7/9/11. Debuff Duration: 3.5s",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -311,9 +322,9 @@
             "subEntityId": 1116
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DAMAGE_INTERACTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -323,7 +334,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -331,6 +343,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Chemical Rage",
           "rawNote": "Bonus Health Regen increased from 50/75/100 to 50/80/110",
+          "originalSource": "Bonus Health Regen increased from 50/75/100 to 50/80/110",
           "indentLevel": 1,
           "metric": "Bonus Health Regen",
           "changeType": "INCREASED",
@@ -361,6 +374,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Damage per Greevil's Greed stack increased from +1.5 to +3",
+          "originalSource": "Level 15 Talent Damage per Greevil's Greed stack increased from +1.5 to +3",
           "indentLevel": 1,
           "metric": "Level 15 Talent Damage per Greevil's Greed stack",
           "changeType": "INCREASED",
@@ -386,27 +400,36 @@
           }
         }
       ],
-      "vectorDelta": null,
-      "totalVector": {
-        "farming": 0,
+      "vectorDelta": {
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
         "teamfight": 0,
-        "laning": 0,
+        "laning": 1,
         "siege": 0,
-        "utility": 0
+        "utility": -11
+      },
+      "totalVector": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0,
+        "laning": 1,
+        "siege": 0,
+        "utility": -11
       },
       "winrates": {},
       "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.33b",
-      "date": "2026-06-14T21:53:54.731Z",
+      "date": "2026-06-17T18:07:14.846Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Alchemist",
           "rawNote": "Base Movement Speed reduced from 305 to 300",
+          "originalSource": "Base Movement Speed reduced from 305 to 300",
           "indentLevel": 1,
           "metric": "Base Movement Speed",
           "changeType": "DECREASED",
@@ -436,6 +459,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Acid Spray",
           "rawNote": "Radius decreased from 475/525/575/625 to 400/475/550/625",
+          "originalSource": "Radius decreased from 475/525/575/625 to 400/475/550/625",
           "indentLevel": 1,
           "metric": "Radius",
           "changeType": "DECREASED",
@@ -466,6 +490,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Acid Spray",
           "rawNote": "Armor reduction reduced from 4/5/6/7 to 3/4/5/6",
+          "originalSource": "Armor reduction reduced from 4/5/6/7 to 3/4/5/6",
           "indentLevel": 1,
           "metric": "Armor reduction",
           "changeType": "DECREASED",
@@ -496,19 +521,19 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": 0,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6,
-        "laning": 0,
+        "teamfight": -1,
+        "laning": 1,
         "siege": 0,
-        "utility": 0
+        "utility": -11
       },
       "winrates": {
         "HERALD": {
@@ -544,12 +569,13 @@
     },
     {
       "version": "7.33c",
-      "date": "2026-06-14T21:53:54.736Z",
+      "date": "2026-06-17T18:07:14.849Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Alchemist",
           "rawNote": "Base Movement Speed decreased from 300 to 295",
+          "originalSource": "Base Movement Speed decreased from 300 to 295",
           "indentLevel": 1,
           "metric": "Base Movement Speed",
           "changeType": "DECREASED",
@@ -579,6 +605,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Unstable Concoction",
           "rawNote": "Cooldown increased from 13s to 15s",
+          "originalSource": "Cooldown increased from 13s to 15s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "INCREASED",
@@ -609,6 +636,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Greevil's Greed",
           "rawNote": "Base Bonus Gold decreased from +3 to +2",
+          "originalSource": "Base Bonus Gold decreased from +3 to +2",
           "indentLevel": 1,
           "metric": "Base Bonus Gold",
           "changeType": "DECREASED",
@@ -639,6 +667,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Greevil's Greed",
           "rawNote": "Extra Bonus Gold decreased from +3 to +2",
+          "originalSource": "Extra Bonus Gold decreased from +3 to +2",
           "indentLevel": 1,
           "metric": "Extra Bonus Gold",
           "changeType": "DECREASED",
@@ -669,6 +698,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Chemical Rage",
           "rawNote": "Bonus Movement Speed decreased from 40/50/60 to 20/40/60",
+          "originalSource": "Bonus Movement Speed decreased from 40/50/60 to 20/40/60",
           "indentLevel": 1,
           "metric": "Bonus Movement Speed",
           "changeType": "DECREASED",
@@ -699,6 +729,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Damage per Greevil's Greed stack decreased from +3 to +2",
+          "originalSource": "Level 15 Talent Damage per Greevil's Greed stack decreased from +3 to +2",
           "indentLevel": 1,
           "metric": "Level 15 Talent Damage per Greevil's Greed stack",
           "changeType": "DECREASED",
@@ -728,19 +759,19 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": 0,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -7.5,
-        "laning": 0,
+        "teamfight": -2,
+        "laning": 1,
         "siege": 0,
-        "utility": 0
+        "utility": -11
       },
       "winrates": {
         "HERALD": {
@@ -776,17 +807,17 @@
     },
     {
       "version": "7.33d",
-      "date": "2026-06-14T21:53:54.740Z",
+      "date": "2026-06-17T18:07:14.851Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -7.5,
-        "laning": 0,
+        "teamfight": -2,
+        "laning": 1,
         "siege": 0,
-        "utility": 0
+        "utility": -11
       },
       "winrates": {
         "HERALD": {
@@ -822,17 +853,17 @@
     },
     {
       "version": "7.33e",
-      "date": "2026-06-14T21:53:54.743Z",
+      "date": "2026-06-17T18:07:14.854Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -7.5,
-        "laning": 0,
+        "teamfight": -2,
+        "laning": 1,
         "siege": 0,
-        "utility": 0
+        "utility": -11
       },
       "winrates": {
         "HERALD": {
@@ -868,13 +899,14 @@
     },
     {
       "version": "7.34",
-      "date": "2026-06-14T21:53:54.750Z",
+      "date": "2026-06-17T18:07:14.859Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Alchemist",
           "subEntityName": "Corrosive Weaponry",
           "rawNote": "Max Stacks decreased from 5/7/9/11 to 4/6/8/10",
+          "originalSource": "Max Stacks decreased from 5/7/9/11 to 4/6/8/10",
           "indentLevel": 1,
           "metric": "Max Stacks",
           "changeType": "DECREASED",
@@ -905,6 +937,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Corrosive Weaponry",
           "rawNote": "Movement Slow and Status Resistance Reduction per stack is now increased by 1.5% whenever Alchemist is in Chemical Rage",
+          "originalSource": "Movement Slow and Status Resistance Reduction per stack is now increased by 1.5% whenever Alchemist is in Chemical Rage",
           "indentLevel": 1,
           "metric": "Movement Slow and Status Resistance Reduction per stack is now",
           "changeType": "INCREASED",
@@ -932,25 +965,26 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -7.5,
-        "laning": 0,
+        "teamfight": -2,
+        "laning": 1,
         "siege": 0,
-        "utility": 0
+        "utility": -11
       },
       "winrates": {},
       "temporalAssessment": null
     },
     {
       "version": "7.34b",
-      "date": "2026-06-14T21:53:54.755Z",
+      "date": "2026-06-17T18:07:14.863Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Alchemist",
           "rawNote": "Base Armor increased by 1",
+          "originalSource": "Base Armor increased by 1",
           "indentLevel": 1,
           "metric": "Base Armor",
           "changeType": "INCREASED",
@@ -979,6 +1013,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Chemical Rage",
           "rawNote": "Bonus Move Speed increased from 20/40/60 to 30/45/60",
+          "originalSource": "Bonus Move Speed increased from 20/40/60 to 30/45/60",
           "indentLevel": 1,
           "metric": "Bonus Move Speed",
           "changeType": "INCREASED",
@@ -1007,13 +1042,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -7.5,
-        "laning": 0,
+        "teamfight": -2,
+        "laning": 1,
         "siege": 0,
-        "utility": 0
+        "utility": -11
       },
       "winrates": {
         "HERALD": {
@@ -1049,17 +1084,17 @@
     },
     {
       "version": "7.34c",
-      "date": "2026-06-14T21:53:54.759Z",
+      "date": "2026-06-17T18:07:14.868Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -7.5,
-        "laning": 0,
+        "teamfight": -2,
+        "laning": 1,
         "siege": 0,
-        "utility": 0
+        "utility": -11
       },
       "winrates": {
         "HERALD": {
@@ -1095,17 +1130,17 @@
     },
     {
       "version": "7.34d",
-      "date": "2026-06-14T21:53:54.764Z",
+      "date": "2026-06-17T18:07:14.871Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -7.5,
-        "laning": 0,
+        "teamfight": -2,
+        "laning": 1,
         "siege": 0,
-        "utility": 0
+        "utility": -11
       },
       "winrates": {
         "HERALD": {
@@ -1141,17 +1176,17 @@
     },
     {
       "version": "7.34e",
-      "date": "2026-06-14T21:53:54.768Z",
+      "date": "2026-06-17T18:07:14.873Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -7.5,
-        "laning": 0,
+        "teamfight": -2,
+        "laning": 1,
         "siege": 0,
-        "utility": 0
+        "utility": -11
       },
       "winrates": {
         "HERALD": {
@@ -1187,13 +1222,14 @@
     },
     {
       "version": "7.35",
-      "date": "2026-06-14T21:53:54.772Z",
+      "date": "2026-06-17T18:07:14.877Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Alchemist",
           "subEntityName": "Acid Spray",
           "rawNote": "Mana Cost decreased from 120 to 110",
+          "originalSource": "Mana Cost decreased from 120 to 110",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "DECREASED",
@@ -1224,6 +1260,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Corrosive Weaponry",
           "rawNote": "Debuff Duration increased from 3.5s to 4s",
+          "originalSource": "Debuff Duration increased from 3.5s to 4s",
           "indentLevel": 1,
           "metric": "Debuff Duration",
           "changeType": "INCREASED",
@@ -1260,13 +1297,13 @@
         "utility": 1
       },
       "totalVector": {
-        "farming": 1,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -7.5,
-        "laning": 1,
+        "teamfight": -2,
+        "laning": 2,
         "siege": 0,
-        "utility": 1
+        "utility": -10
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1279,13 +1316,14 @@
     },
     {
       "version": "7.35b",
-      "date": "2026-06-14T21:53:54.775Z",
+      "date": "2026-06-17T18:07:14.879Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Alchemist",
           "subEntityName": "Corrosive Weaponry",
           "rawNote": "Movement Slow per stack increased from 3/4/5/6% to 4/5/6/7%",
+          "originalSource": "Movement Slow per stack increased from 3/4/5/6% to 4/5/6/7%",
           "indentLevel": 1,
           "metric": "Movement Slow per stack",
           "changeType": "INCREASED",
@@ -1314,13 +1352,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 1,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -7.5,
-        "laning": 1,
+        "teamfight": -2,
+        "laning": 2,
         "siege": 0,
-        "utility": 1
+        "utility": -10
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1333,17 +1371,17 @@
     },
     {
       "version": "7.35c",
-      "date": "2026-06-14T21:53:54.782Z",
+      "date": "2026-06-17T18:07:14.881Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 1,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -7.5,
-        "laning": 1,
+        "teamfight": -2,
+        "laning": 2,
         "siege": 0,
-        "utility": 1
+        "utility": -10
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1356,17 +1394,17 @@
     },
     {
       "version": "7.35d",
-      "date": "2026-06-14T21:53:54.785Z",
+      "date": "2026-06-17T18:07:14.883Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 1,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -7.5,
-        "laning": 1,
+        "teamfight": -2,
+        "laning": 2,
         "siege": 0,
-        "utility": 1
+        "utility": -10
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1379,12 +1417,13 @@
     },
     {
       "version": "7.36",
-      "date": "2026-06-14T21:53:54.791Z",
+      "date": "2026-06-17T18:07:14.890Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Alchemist",
           "rawNote": "Base Attack Speed increased from 100 to 110",
+          "originalSource": "Base Attack Speed increased from 100 to 110",
           "indentLevel": 1,
           "metric": "Base Attack Speed",
           "changeType": "INCREASED",
@@ -1414,6 +1453,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Corrosive Weaponry",
           "rawNote": "No longer reduces Status Resistance by 3/4/5/6% per stack",
+          "originalSource": "No longer reduces Status Resistance by 3/4/5/6% per stack",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1441,6 +1481,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Corrosive Weaponry",
           "rawNote": "Now reduces Base Attack Damage by 3/4/5/6% per stack",
+          "originalSource": "Now reduces Base Attack Damage by 3/4/5/6% per stack",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -1468,6 +1509,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Corrosive Weaponry",
           "rawNote": "Stats are no longer multiplied during Chemical Rage",
+          "originalSource": "Stats are no longer multiplied during Chemical Rage",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1495,6 +1537,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Chemical Rage",
           "rawNote": "Bonus Health Regen increased from 50/80/110 to 60/90/120",
+          "originalSource": "Bonus Health Regen increased from 50/80/110 to 60/90/120",
           "indentLevel": 1,
           "metric": "Bonus Health Regen",
           "changeType": "INCREASED",
@@ -1523,13 +1566,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 1,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -7.5,
-        "laning": 1,
+        "teamfight": -2,
+        "laning": 2,
         "siege": 0,
-        "utility": 1
+        "utility": -10
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1542,17 +1585,17 @@
     },
     {
       "version": "7.36a",
-      "date": "2026-06-14T21:53:54.794Z",
+      "date": "2026-06-17T18:07:14.892Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 1,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -7.5,
-        "laning": 1,
+        "teamfight": -2,
+        "laning": 2,
         "siege": 0,
-        "utility": 1
+        "utility": -10
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1565,17 +1608,17 @@
     },
     {
       "version": "7.36b",
-      "date": "2026-06-14T21:53:54.797Z",
+      "date": "2026-06-17T18:07:14.896Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 1,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -7.5,
-        "laning": 1,
+        "teamfight": -2,
+        "laning": 2,
         "siege": 0,
-        "utility": 1
+        "utility": -10
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1588,17 +1631,17 @@
     },
     {
       "version": "7.36c",
-      "date": "2026-06-14T21:53:54.800Z",
+      "date": "2026-06-17T18:07:14.898Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 1,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -7.5,
-        "laning": 1,
+        "teamfight": -2,
+        "laning": 2,
         "siege": 0,
-        "utility": 1
+        "utility": -10
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1611,17 +1654,17 @@
     },
     {
       "version": "7.37",
-      "date": "2026-06-14T21:53:54.804Z",
+      "date": "2026-06-17T18:07:14.902Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 1,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -7.5,
-        "laning": 1,
+        "teamfight": -2,
+        "laning": 2,
         "siege": 0,
-        "utility": 1
+        "utility": -10
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1634,13 +1677,14 @@
     },
     {
       "version": "7.37b",
-      "date": "2026-06-14T21:53:54.807Z",
+      "date": "2026-06-17T18:07:14.904Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Alchemist",
           "subEntityName": "Greevil's Greed",
           "rawNote": "Recent Kill Window increased from 36s to 40s",
+          "originalSource": "Recent Kill Window increased from 36s to 40s",
           "indentLevel": 1,
           "metric": "Recent Kill Window",
           "changeType": "INCREASED",
@@ -1671,6 +1715,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Berserk Potion",
           "rawNote": "Duration increased from 10s to 15s",
+          "originalSource": "Duration increased from 10s to 15s",
           "indentLevel": 1,
           "metric": "Duration",
           "changeType": "INCREASED",
@@ -1701,19 +1746,19 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 5,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
-        "utility": 10
+        "utility": 2
       },
       "totalVector": {
-        "farming": 1,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -2.5,
-        "laning": 1,
+        "teamfight": -1,
+        "laning": 2,
         "siege": 0,
-        "utility": 11
+        "utility": -8
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1726,17 +1771,17 @@
     },
     {
       "version": "7.37c",
-      "date": "2026-06-14T21:53:54.810Z",
+      "date": "2026-06-17T18:07:14.906Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 1,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -2.5,
-        "laning": 1,
+        "teamfight": -1,
+        "laning": 2,
         "siege": 0,
-        "utility": 11
+        "utility": -8
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1749,17 +1794,17 @@
     },
     {
       "version": "7.37d",
-      "date": "2026-06-14T21:53:54.812Z",
+      "date": "2026-06-17T18:07:14.909Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 1,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -2.5,
-        "laning": 1,
+        "teamfight": -1,
+        "laning": 2,
         "siege": 0,
-        "utility": 11
+        "utility": -8
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1772,13 +1817,14 @@
     },
     {
       "version": "7.37e",
-      "date": "2026-06-14T21:53:54.815Z",
+      "date": "2026-06-17T18:07:14.912Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Alchemist",
           "subEntityName": "Acid Spray",
           "rawNote": "Mana Cost rescaled from 110 to 105/110/115/120",
+          "originalSource": "Mana Cost rescaled from 110 to 105/110/115/120",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "RESCALE",
@@ -1809,6 +1855,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Unstable Concoction",
           "rawNote": "Cooldown increased from 15s to 17s",
+          "originalSource": "Cooldown increased from 15s to 17s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "INCREASED",
@@ -1839,19 +1886,19 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": 1,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -4,
-        "laning": 1,
+        "teamfight": -2,
+        "laning": 2,
         "siege": 0,
-        "utility": 11
+        "utility": -8
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1864,21 +1911,22 @@
     },
     {
       "version": "7.38",
-      "date": "2026-06-14T21:53:54.824Z",
+      "date": "2026-06-17T18:07:14.919Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Alchemist",
           "rawNote": "Aghanim's Scepter granting moved from Chemical Rage to Greevil's Greed",
+          "originalSource": "Aghanim's Scepter granting moved from Chemical Rage to Greevil's Greed",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
             "entityId": 73
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -1888,7 +1936,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -1896,6 +1945,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Greevil's Greed",
           "rawNote": "Aghanim's Scepter granting range increased from 600 to Global",
+          "originalSource": "Aghanim's Scepter granting range increased from 600 to Global",
           "indentLevel": 1,
           "metric": "Aghanim's Scepter granting range",
           "changeType": "INCREASED",
@@ -1926,6 +1976,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Greevil's Greed",
           "rawNote": "Aghanim's Scepter granting is now announced to all allies and spectators",
+          "originalSource": "Aghanim's Scepter granting is now announced to all allies and spectators",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -1933,9 +1984,9 @@
             "subEntityId": 1333
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -1945,7 +1996,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -1953,6 +2005,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Acid Spray",
           "rawNote": "Radius decreased from 400/475/550/625 to 350/400/450/500",
+          "originalSource": "Radius decreased from 400/475/550/625 to 350/400/450/500",
           "indentLevel": 1,
           "metric": "Radius",
           "changeType": "DECREASED",
@@ -1983,6 +2036,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Acid Spray",
           "rawNote": "Now applies 1 Corrosive Weaponry stack with each tick of damage",
+          "originalSource": "Now applies 1 Corrosive Weaponry stack with each tick of damage",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2010,6 +2064,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Unstable Concoction",
           "rawNote": "Now applies 1 Corrosive Weaponry stack per second of brew time",
+          "originalSource": "Now applies 1 Corrosive Weaponry stack per second of brew time",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2037,6 +2092,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Corrosive Weaponry",
           "rawNote": "Stacks are also applied when enemies take damage from Alchemist's spells. Acid Spray applies 1 stack per second. Unstable Concoction applies 1 stack per second of brew time",
+          "originalSource": "Stacks are also applied when enemies take damage from Alchemist's spells. Acid Spray applies 1 stack per second. Unstable Concoction applies 1 stack per second of brew time",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2044,19 +2100,20 @@
             "subEntityId": 1116
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ILLUSION_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2064,6 +2121,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Corrosive Weaponry",
           "rawNote": "Stacks per attack increased from 1 to 2",
+          "originalSource": "Stacks per attack increased from 1 to 2",
           "indentLevel": 1,
           "metric": "Stacks per attack",
           "changeType": "INCREASED",
@@ -2094,6 +2152,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Corrosive Weaponry",
           "rawNote": "Max Stacks increased from 4/6/8/10 to 10/12/14/16",
+          "originalSource": "Max Stacks increased from 4/6/8/10 to 10/12/14/16",
           "indentLevel": 1,
           "metric": "Max Stacks",
           "changeType": "INCREASED",
@@ -2124,6 +2183,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Corrosive Weaponry",
           "rawNote": "Movement Slow per stack decreased from 4/5/6/7% to 1.5/2/2.5/3%",
+          "originalSource": "Movement Slow per stack decreased from 4/5/6/7% to 1.5/2/2.5/3%",
           "indentLevel": 1,
           "metric": "Movement Slow per stack",
           "changeType": "DECREASED",
@@ -2154,6 +2214,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Corrosive Weaponry",
           "rawNote": "Base Attack Damage Reduction per stack decreased from 3/4/5/6% to 1.5/2/2.5/3%",
+          "originalSource": "Base Attack Damage Reduction per stack decreased from 3/4/5/6% to 1.5/2/2.5/3%",
           "indentLevel": 1,
           "metric": "Base Attack Damage Reduction per stack",
           "changeType": "DECREASED",
@@ -2184,6 +2245,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Chemical Rage",
           "rawNote": "Bonus Move Speed decreased from 30/45/60 to 20/30/40",
+          "originalSource": "Bonus Move Speed decreased from 30/45/60 to 20/30/40",
           "indentLevel": 1,
           "metric": "Bonus Move Speed",
           "changeType": "DECREASED",
@@ -2214,19 +2276,19 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": 1,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -10,
-        "laning": 1,
+        "teamfight": -3,
+        "laning": 2,
         "siege": 0,
-        "utility": 11
+        "utility": -8
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2235,17 +2297,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.38b",
-      "date": "2026-06-14T21:53:54.826Z",
+      "date": "2026-06-17T18:07:14.921Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Alchemist",
           "subEntityName": "Greevil's Greed",
           "rawNote": "Gifting Aghanim's Scepters no longer provides Spell Amplification",
+          "originalSource": "Gifting Aghanim's Scepters no longer provides Spell Amplification",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -2271,13 +2334,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 1,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -10,
-        "laning": 1,
+        "teamfight": -3,
+        "laning": 2,
         "siege": 0,
-        "utility": 11
+        "utility": -8
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2290,13 +2353,14 @@
     },
     {
       "version": "7.38c",
-      "date": "2026-06-14T21:53:54.830Z",
+      "date": "2026-06-17T18:07:14.924Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Alchemist",
           "subEntityName": "Corrosive Weaponry",
           "rawNote": "Unstable Concoction stack count per second of brew time now rounds up to the nearest second (minimum 1 stack)",
+          "originalSource": "Unstable Concoction stack count per second of brew time now rounds up to the nearest second (minimum 1 stack)",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2322,13 +2386,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 1,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -10,
-        "laning": 1,
+        "teamfight": -3,
+        "laning": 2,
         "siege": 0,
-        "utility": 11
+        "utility": -8
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2341,13 +2405,14 @@
     },
     {
       "version": "7.39",
-      "date": "2026-06-14T21:53:54.836Z",
+      "date": "2026-06-17T18:07:14.928Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Alchemist",
           "subEntityName": "Corrosive Weaponry",
           "rawNote": "Max Stacks decreased from 10/12/14/16 to 7/10/13/16",
+          "originalSource": "Max Stacks decreased from 10/12/14/16 to 7/10/13/16",
           "indentLevel": 1,
           "metric": "Max Stacks",
           "changeType": "DECREASED",
@@ -2378,6 +2443,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Corrosive Weaponry",
           "rawNote": "Movement Slow per stack increased from 1.5/2/2.5/3% to 2/2.5/3/3.5%",
+          "originalSource": "Movement Slow per stack increased from 1.5/2/2.5/3% to 2/2.5/3/3.5%",
           "indentLevel": 1,
           "metric": "Movement Slow per stack",
           "changeType": "INCREASED",
@@ -2408,6 +2474,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Corrosive Weaponry",
           "rawNote": "Base Attack Damage Reduction per stack increased from 1.5/2/2.5/3% to 2/2.5/3/3.5%",
+          "originalSource": "Base Attack Damage Reduction per stack increased from 1.5/2/2.5/3% to 2/2.5/3/3.5%",
           "indentLevel": 1,
           "metric": "Base Attack Damage Reduction per stack",
           "changeType": "INCREASED",
@@ -2436,13 +2503,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 1,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -10,
-        "laning": 1,
+        "teamfight": -3,
+        "laning": 2,
         "siege": 0,
-        "utility": 11
+        "utility": -8
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2455,17 +2522,17 @@
     },
     {
       "version": "7.39b",
-      "date": "2026-06-14T21:53:54.839Z",
+      "date": "2026-06-17T18:07:14.930Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 1,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -10,
-        "laning": 1,
+        "teamfight": -3,
+        "laning": 2,
         "siege": 0,
-        "utility": 11
+        "utility": -8
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2478,17 +2545,17 @@
     },
     {
       "version": "7.39c",
-      "date": "2026-06-14T21:53:54.843Z",
+      "date": "2026-06-17T18:07:14.932Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 1,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -10,
-        "laning": 1,
+        "teamfight": -3,
+        "laning": 2,
         "siege": 0,
-        "utility": 11
+        "utility": -8
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2501,17 +2568,17 @@
     },
     {
       "version": "7.39d",
-      "date": "2026-06-14T21:53:54.848Z",
+      "date": "2026-06-17T18:07:14.937Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 1,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -10,
-        "laning": 1,
+        "teamfight": -3,
+        "laning": 2,
         "siege": 0,
-        "utility": 11
+        "utility": -8
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2524,17 +2591,17 @@
     },
     {
       "version": "7.39e",
-      "date": "2026-06-14T21:53:54.851Z",
+      "date": "2026-06-17T18:07:14.939Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 1,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -10,
-        "laning": 1,
+        "teamfight": -3,
+        "laning": 2,
         "siege": 0,
-        "utility": 11
+        "utility": -8
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2547,13 +2614,14 @@
     },
     {
       "version": "7.40",
-      "date": "2026-06-14T21:53:54.859Z",
+      "date": "2026-06-17T18:07:14.945Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Alchemist",
           "subEntityName": "Acid Spray",
           "rawNote": "Mana Cost increased from 105/110/115/120 to 120",
+          "originalSource": "Mana Cost increased from 105/110/115/120 to 120",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "INCREASED",
@@ -2584,6 +2652,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Damage per Greevil's Greed stack increased from +2 to +2.5",
+          "originalSource": "Level 15 Talent Damage per Greevil's Greed stack increased from +2 to +2.5",
           "indentLevel": 1,
           "metric": "Level 15 Talent Damage per Greevil's Greed stack",
           "changeType": "INCREASED",
@@ -2619,13 +2688,13 @@
         "utility": -1
       },
       "totalVector": {
-        "farming": 0,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -10,
-        "laning": 0,
+        "teamfight": -3,
+        "laning": 1,
         "siege": 0,
-        "utility": 10
+        "utility": -9
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2638,17 +2707,17 @@
     },
     {
       "version": "7.40b",
-      "date": "2026-06-14T21:53:54.866Z",
+      "date": "2026-06-17T18:07:14.948Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -10,
-        "laning": 0,
+        "teamfight": -3,
+        "laning": 1,
         "siege": 0,
-        "utility": 10
+        "utility": -9
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2661,17 +2730,17 @@
     },
     {
       "version": "7.40c",
-      "date": "2026-06-14T21:53:54.872Z",
+      "date": "2026-06-17T18:07:14.950Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -10,
-        "laning": 0,
+        "teamfight": -3,
+        "laning": 1,
         "siege": 0,
-        "utility": 10
+        "utility": -9
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2684,13 +2753,14 @@
     },
     {
       "version": "7.41",
-      "date": "2026-06-14T21:53:54.887Z",
+      "date": "2026-06-17T18:07:14.959Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Alchemist",
           "subEntityName": "Greevil's Greed",
           "rawNote": "Aghanim's Scepter now also increases Base Bonus Gold and Max Bonus Gold per kill by 6 per melted Aghanim's Scepter",
+          "originalSource": "Aghanim's Scepter now also increases Base Bonus Gold and Max Bonus Gold per kill by 6 per melted Aghanim's Scepter",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2718,6 +2788,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Corrosive Weaponry",
           "rawNote": "Movement Slow per stack increased from 2/2.5/3/3.5% to 2.5/3/3.5/4%",
+          "originalSource": "Movement Slow per stack increased from 2/2.5/3/3.5% to 2.5/3/3.5/4%",
           "indentLevel": 1,
           "metric": "Movement Slow per stack",
           "changeType": "INCREASED",
@@ -2748,6 +2819,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Corrosive Weaponry",
           "rawNote": "Base Attack Damage Reduction per stack increased from 2/2.5/3/3.5% to 2.5/3/3.5/4%",
+          "originalSource": "Base Attack Damage Reduction per stack increased from 2/2.5/3/3.5% to 2.5/3/3.5/4%",
           "indentLevel": 1,
           "metric": "Base Attack Damage Reduction per stack",
           "changeType": "INCREASED",
@@ -2778,6 +2850,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Unstable Concoction Radius increased from +125 to +150",
+          "originalSource": "Level 10 Talent Unstable Concoction Radius increased from +125 to +150",
           "indentLevel": 1,
           "metric": "Level 10 Talent Unstable Concoction Radius",
           "changeType": "INCREASED",
@@ -2807,6 +2880,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Damage per Greevil's Greed stack increased from +2.5 to +3",
+          "originalSource": "Level 15 Talent Damage per Greevil's Greed stack increased from +2.5 to +3",
           "indentLevel": 1,
           "metric": "Level 15 Talent Damage per Greevil's Greed stack",
           "changeType": "INCREASED",
@@ -2836,6 +2910,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Acid Spray grants armor to allies replaced with +1% Corrosive Weaponry Slow/Damage Reduction Per Stack",
+          "originalSource": "Level 15 Talent Acid Spray grants armor to allies replaced with +1% Corrosive Weaponry Slow/Damage Reduction Per Stack",
           "indentLevel": 1,
           "metric": "Level 15 Talent Acid Spray grants armor to allies",
           "changeType": "REWORK",
@@ -2862,13 +2937,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -10,
-        "laning": 0,
+        "teamfight": -3,
+        "laning": 1,
         "siege": 0,
-        "utility": 10
+        "utility": -9
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2881,12 +2956,13 @@
     },
     {
       "version": "7.41a",
-      "date": "2026-06-14T21:53:54.892Z",
+      "date": "2026-06-17T18:07:14.961Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Alchemist",
           "rawNote": "Base movement speed decreased from 295 to 290",
+          "originalSource": "Base movement speed decreased from 295 to 290",
           "indentLevel": 1,
           "metric": "Base movement speed",
           "changeType": "DECREASED",
@@ -2916,6 +2992,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Greevil's Greed",
           "rawNote": "Max Bonus Gold Per Kill decreased from 18 to 16",
+          "originalSource": "Max Bonus Gold Per Kill decreased from 18 to 16",
           "indentLevel": 1,
           "metric": "Max Bonus Gold Per Kill",
           "changeType": "DECREASED",
@@ -2946,6 +3023,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Greevil's Greed",
           "rawNote": "Bonus Damage per Scepter decreased from +25 to +15",
+          "originalSource": "Bonus Damage per Scepter decreased from +25 to +15",
           "indentLevel": 1,
           "metric": "Bonus Damage per Scepter",
           "changeType": "DECREASED",
@@ -2974,13 +3052,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -10,
-        "laning": 0,
+        "teamfight": -3,
+        "laning": 1,
         "siege": 0,
-        "utility": 10
+        "utility": -9
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2993,12 +3071,13 @@
     },
     {
       "version": "7.41b",
-      "date": "2026-06-14T21:53:54.896Z",
+      "date": "2026-06-17T18:07:14.963Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Alchemist",
           "rawNote": "Base Agility decreased from 22 to 19",
+          "originalSource": "Base Agility decreased from 22 to 19",
           "indentLevel": 1,
           "metric": "Base Agility",
           "changeType": "DECREASED",
@@ -3028,6 +3107,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent +1 Acid Spray Armor Reduction replaced with +1% Corrosive Weaponry Slow / Damage Reduction Per Stack",
+          "originalSource": "Level 10 Talent +1 Acid Spray Armor Reduction replaced with +1% Corrosive Weaponry Slow / Damage Reduction Per Stack",
           "indentLevel": 1,
           "metric": "Level 10 Talent +1 Acid Spray Armor Reduction",
           "changeType": "REWORK",
@@ -3056,6 +3136,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent +1% Corrosive Weaponry Slow / Damage Reduction Per Stack replaced with +1 Acid Spray Armor Reduction",
+          "originalSource": "Level 15 Talent +1% Corrosive Weaponry Slow / Damage Reduction Per Stack replaced with +1 Acid Spray Armor Reduction",
           "indentLevel": 1,
           "metric": "Level 15 Talent +1% Corrosive Weaponry Slow / Damage Reduction Per Stack",
           "changeType": "REWORK",
@@ -3082,13 +3163,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -10,
-        "laning": 0,
+        "teamfight": -3,
+        "laning": 1,
         "siege": 0,
-        "utility": 10
+        "utility": -9
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3101,13 +3182,14 @@
     },
     {
       "version": "7.41c",
-      "date": "2026-06-14T21:53:54.902Z",
+      "date": "2026-06-17T18:07:14.966Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Alchemist",
           "subEntityName": "Greevil's Greed",
           "rawNote": "Bonus base/max Extra Gold per melted Scepter decreased from +6 to +3",
+          "originalSource": "Bonus base/max Extra Gold per melted Scepter decreased from +6 to +3",
           "indentLevel": 1,
           "metric": "Bonus base/max Extra Gold per melted Scepter",
           "changeType": "DECREASED",
@@ -3138,6 +3220,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Acid Spray",
           "rawNote": "Cooldown rescaled from 22/21/20/19s to 21s",
+          "originalSource": "Cooldown rescaled from 22/21/20/19s to 21s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "RESCALE",
@@ -3168,6 +3251,7 @@
           "entityName": "Alchemist",
           "subEntityName": "Chemical Rage",
           "rawNote": "Bonus Health Regen decreased from 60/90/120 to 50/85/120",
+          "originalSource": "Bonus Health Regen decreased from 60/90/120 to 50/85/120",
           "indentLevel": 1,
           "metric": "Bonus Health Regen",
           "changeType": "DECREASED",
@@ -3196,13 +3280,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -10,
-        "laning": 0,
+        "teamfight": -3,
+        "laning": 1,
         "siege": 0,
-        "utility": 10
+        "utility": -9
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3215,46 +3299,58 @@
     },
     {
       "version": "7.41d",
-      "date": "2026-06-14T21:53:54.908Z",
+      "date": "2026-06-17T18:07:14.968Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -10,
-        "laning": 0,
+        "teamfight": -3,
+        "laning": 1,
         "siege": 0,
-        "utility": 10
+        "utility": -9
       },
       "winrates": {
         "HERALD": {
-          "winrate": 0.4928,
-          "matchCount": 13591
+          "winrate": 0.4824,
+          "matchCount": 11647
         },
         "GUARDIAN": {
-          "winrate": 0.4827,
-          "matchCount": 29313
+          "winrate": 0.4769,
+          "matchCount": 25038
         },
         "CRUSADER": {
-          "winrate": 0.4767,
-          "matchCount": 34076
+          "winrate": 0.4781,
+          "matchCount": 29002
         },
         "ARCHON": {
-          "winrate": 0.4763,
-          "matchCount": 31911
+          "winrate": 0.4785,
+          "matchCount": 27206
         },
         "LEGEND": {
-          "winrate": 0.4728,
-          "matchCount": 23989
+          "winrate": 0.4714,
+          "matchCount": 20246
         },
         "ANCIENT": {
-          "winrate": 0.464,
-          "matchCount": 15310
+          "winrate": 0.4705,
+          "matchCount": 12728
         },
         "DIVINE": {
-          "winrate": 0.4548,
-          "matchCount": 14651
+          "winrate": 0.4529,
+          "matchCount": 12289
+        },
+        "IMMORTAL": {
+          "winrate": 0,
+          "matchCount": 0
+        },
+        "PRO": {
+          "winrate": 0.6667,
+          "matchCount": 3
+        },
+        "GLOBAL_BLEND": {
+          "winrate": 0.4532,
+          "matchCount": 12292
         }
       },
       "temporalAssessment": null

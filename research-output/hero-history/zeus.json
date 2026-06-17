@@ -3,13 +3,14 @@
   "history": [
     {
       "version": "7.33",
-      "date": "2026-06-14T21:53:54.725Z",
+      "date": "2026-06-17T18:07:14.843Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Zeus",
           "subEntityName": "Arc Lightning",
           "rawNote": "Base Damage decreased from 90/120/150/180 to 85/110/135/160",
+          "originalSource": "Base Damage decreased from 90/120/150/180 to 85/110/135/160",
           "indentLevel": 1,
           "metric": "Base Damage",
           "changeType": "DECREASED",
@@ -40,6 +41,7 @@
           "entityName": "Zeus",
           "subEntityName": "Arc Lightning",
           "rawNote": "Now also deals 3/4/5/6% of current enemy health as damage",
+          "originalSource": "Now also deals 3/4/5/6% of current enemy health as damage",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -67,6 +69,7 @@
           "entityName": "Zeus",
           "subEntityName": "Lightning Bolt",
           "rawNote": "Ministun Duration decreased from 0.3s to 0.25s",
+          "originalSource": "Ministun Duration decreased from 0.3s to 0.25s",
           "indentLevel": 1,
           "metric": "Ministun Duration",
           "changeType": "DECREASED",
@@ -97,6 +100,7 @@
           "entityName": "Zeus",
           "subEntityName": "Heavenly Jump",
           "rawNote": "Now always moves Zeus forward",
+          "originalSource": "Now always moves Zeus forward",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -124,6 +128,7 @@
           "entityName": "Zeus",
           "subEntityName": "Heavenly Jump",
           "rawNote": "No longer increases enemy cast time",
+          "originalSource": "No longer increases enemy cast time",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -151,6 +156,7 @@
           "entityName": "Zeus",
           "subEntityName": "Static Field",
           "rawNote": "Ability removed",
+          "originalSource": "Ability removed",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -178,6 +184,7 @@
           "entityName": "Zeus",
           "subEntityName": "Lightning Hands",
           "rawNote": "New passive ability granted by Aghanim's Shard",
+          "originalSource": "New passive ability granted by Aghanim's Shard",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -205,6 +212,7 @@
           "entityName": "Zeus",
           "subEntityName": "Lightning Hands",
           "rawNote": "Increases Zeus' attack range by 100. Zeus' attacks create Arc Lightnings that deal 50% of its damage (illusions deal 20%)",
+          "originalSource": "Increases Zeus' attack range by 100. Zeus' attacks create Arc Lightnings that deal 50% of its damage (illusions deal 20%)",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -212,19 +220,20 @@
             "subEntityId": 1110
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ILLUSION_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -232,6 +241,7 @@
           "entityName": "Zeus",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Lightning Bolt Ministun decreased from +0.4s to +0.3s",
+          "originalSource": "Level 20 Talent Lightning Bolt Ministun decreased from +0.4s to +0.3s",
           "indentLevel": 1,
           "metric": "Level 20 Talent Lightning Bolt Ministun",
           "changeType": "DECREASED",
@@ -261,6 +271,7 @@
           "entityName": "Zeus",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +100 Thundergod's Wrath Damage replaced with +4% Arc Lightning Current Health as Damage",
+          "originalSource": "Level 20 Talent +100 Thundergod's Wrath Damage replaced with +4% Arc Lightning Current Health as Damage",
           "indentLevel": 1,
           "metric": "Level 20 Talent +100 Thundergod's Wrath Damage",
           "changeType": "REWORK",
@@ -289,6 +300,7 @@
           "entityName": "Zeus",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent +100 Arc Lightning Damage replaced with +150 Thundergod's Wrath Damage",
+          "originalSource": "Level 25 Talent +100 Arc Lightning Damage replaced with +150 Thundergod's Wrath Damage",
           "indentLevel": 1,
           "metric": "Level 25 Talent +100 Arc Lightning Damage",
           "changeType": "REWORK",
@@ -328,7 +340,7 @@
     },
     {
       "version": "7.33b",
-      "date": "2026-06-14T21:53:54.730Z",
+      "date": "2026-06-17T18:07:14.846Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -374,13 +386,14 @@
     },
     {
       "version": "7.33c",
-      "date": "2026-06-14T21:53:54.735Z",
+      "date": "2026-06-17T18:07:14.849Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Zeus",
           "subEntityName": "Arc Lightning",
           "rawNote": "Mana Cost decreased from 80/85/90/95 to 75/80/85/90",
+          "originalSource": "Mana Cost decreased from 80/85/90/95 to 75/80/85/90",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "DECREASED",
@@ -411,6 +424,7 @@
           "entityName": "Zeus",
           "subEntityName": "Thundergod's Wrath",
           "rawNote": "Damage increased from 300/425/550 to 350/475/600",
+          "originalSource": "Damage increased from 300/425/550 to 350/475/600",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "INCREASED",
@@ -441,6 +455,7 @@
           "entityName": "Zeus",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Lightning Bolt Ministun increased from +0.3s to +0.5s",
+          "originalSource": "Level 20 Talent Lightning Bolt Ministun increased from +0.3s to +0.5s",
           "indentLevel": 1,
           "metric": "Level 20 Talent Lightning Bolt Ministun",
           "changeType": "INCREASED",
@@ -470,6 +485,7 @@
           "entityName": "Zeus",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Arc Lightning Current Health As Damage increased from +4% to +6%",
+          "originalSource": "Level 20 Talent Arc Lightning Current Health As Damage increased from +4% to +6%",
           "indentLevel": 1,
           "metric": "Level 20 Talent Arc Lightning Current Health As Damage",
           "changeType": "INCREASED",
@@ -496,20 +512,20 @@
         }
       ],
       "vectorDelta": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 9,
+        "teamfight": 1,
+        "laning": 2,
         "siege": 0,
         "utility": 1
       },
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 9,
+        "teamfight": 1,
+        "laning": 2,
         "siege": 0,
         "utility": 1
       },
@@ -547,13 +563,14 @@
     },
     {
       "version": "7.33d",
-      "date": "2026-06-14T21:53:54.740Z",
+      "date": "2026-06-17T18:07:14.851Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Zeus",
           "subEntityName": "Thundergod's Wrath",
           "rawNote": "Damage increased from 350/475/600 to 350/500/650",
+          "originalSource": "Damage increased from 350/475/600 to 350/500/650",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "INCREASED",
@@ -581,20 +598,20 @@
         }
       ],
       "vectorDelta": {
-        "farming": 8,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 8,
+        "teamfight": 1,
+        "laning": 1,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": 17,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 16,
-        "laning": 17,
+        "teamfight": 2,
+        "laning": 3,
         "siege": 0,
         "utility": 1
       },
@@ -632,15 +649,15 @@
     },
     {
       "version": "7.33e",
-      "date": "2026-06-14T21:53:54.743Z",
+      "date": "2026-06-17T18:07:14.854Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 17,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 16,
-        "laning": 17,
+        "teamfight": 2,
+        "laning": 3,
         "siege": 0,
         "utility": 1
       },
@@ -678,13 +695,14 @@
     },
     {
       "version": "7.34",
-      "date": "2026-06-14T21:53:54.750Z",
+      "date": "2026-06-17T18:07:14.859Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Zeus",
           "subEntityName": "Thundergod's Wrath",
           "rawNote": "Damage decreased from 350/500/650 to 300/425/550",
+          "originalSource": "Damage decreased from 350/500/650 to 300/425/550",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "DECREASED",
@@ -715,6 +733,7 @@
           "entityName": "Zeus",
           "subEntityName": "Thundergod's Wrath",
           "rawNote": "Now also deals damage equal to 5/7.5/10% of target's max HP",
+          "originalSource": "Now also deals damage equal to 5/7.5/10% of target's max HP",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -742,6 +761,7 @@
           "entityName": "Zeus",
           "subEntityName": "Lightning Hands",
           "rawNote": "Ability changed from auto-cast to toggle",
+          "originalSource": "Ability changed from auto-cast to toggle",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -749,9 +769,9 @@
             "subEntityId": 1110
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -761,25 +781,26 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         }
       ],
       "vectorDelta": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8,
-        "laning": -8,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 9,
+        "teamfight": 1,
+        "laning": 2,
         "siege": 0,
         "utility": 1
       },
@@ -788,15 +809,15 @@
     },
     {
       "version": "7.34b",
-      "date": "2026-06-14T21:53:54.754Z",
+      "date": "2026-06-17T18:07:14.863Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 9,
+        "teamfight": 1,
+        "laning": 2,
         "siege": 0,
         "utility": 1
       },
@@ -834,13 +855,14 @@
     },
     {
       "version": "7.34c",
-      "date": "2026-06-14T21:53:54.759Z",
+      "date": "2026-06-17T18:07:14.868Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Zeus",
           "subEntityName": "Lightning Bolt",
           "rawNote": "Ministun Duration increased from 0.25s to 0.35s",
+          "originalSource": "Ministun Duration increased from 0.25s to 0.35s",
           "indentLevel": 1,
           "metric": "Ministun Duration",
           "changeType": "INCREASED",
@@ -871,6 +893,7 @@
           "entityName": "Zeus",
           "subEntityName": "Thundergod's Wrath",
           "rawNote": "Cooldown decreased from 130/125/120s to 120s",
+          "originalSource": "Cooldown decreased from 130/125/120s to 120s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "DECREASED",
@@ -901,6 +924,7 @@
           "entityName": "Zeus",
           "subEntityName": "Thundergod's Wrath",
           "rawNote": "Mana Cost decreased from 300/400/500 to 250/375/500",
+          "originalSource": "Mana Cost decreased from 300/400/500 to 250/375/500",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "DECREASED",
@@ -931,17 +955,17 @@
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1.5,
+        "teamfight": 1,
         "laning": 1,
         "siege": 0,
         "utility": 1
       },
       "totalVector": {
-        "farming": 10,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 9.5,
-        "laning": 10,
+        "teamfight": 2,
+        "laning": 3,
         "siege": 0,
         "utility": 2
       },
@@ -979,15 +1003,15 @@
     },
     {
       "version": "7.34d",
-      "date": "2026-06-14T21:53:54.764Z",
+      "date": "2026-06-17T18:07:14.870Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 10,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 9.5,
-        "laning": 10,
+        "teamfight": 2,
+        "laning": 3,
         "siege": 0,
         "utility": 2
       },
@@ -1025,15 +1049,15 @@
     },
     {
       "version": "7.34e",
-      "date": "2026-06-14T21:53:54.767Z",
+      "date": "2026-06-17T18:07:14.873Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 10,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 9.5,
-        "laning": 10,
+        "teamfight": 2,
+        "laning": 3,
         "siege": 0,
         "utility": 2
       },
@@ -1071,13 +1095,14 @@
     },
     {
       "version": "7.35",
-      "date": "2026-06-14T21:53:54.772Z",
+      "date": "2026-06-17T18:07:14.877Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Zeus",
           "subEntityName": "Lightning Bolt",
           "rawNote": "Now deals 2x damage to creeps",
+          "originalSource": "Now deals 2x damage to creeps",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -1103,11 +1128,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 10,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 9.5,
-        "laning": 10,
+        "teamfight": 2,
+        "laning": 3,
         "siege": 0,
         "utility": 2
       },
@@ -1118,19 +1143,19 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.35b",
-      "date": "2026-06-14T21:53:54.775Z",
+      "date": "2026-06-17T18:07:14.879Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 10,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 9.5,
-        "laning": 10,
+        "teamfight": 2,
+        "laning": 3,
         "siege": 0,
         "utility": 2
       },
@@ -1145,15 +1170,15 @@
     },
     {
       "version": "7.35c",
-      "date": "2026-06-14T21:53:54.782Z",
+      "date": "2026-06-17T18:07:14.881Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 10,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 9.5,
-        "laning": 10,
+        "teamfight": 2,
+        "laning": 3,
         "siege": 0,
         "utility": 2
       },
@@ -1164,19 +1189,19 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.35d",
-      "date": "2026-06-14T21:53:54.785Z",
+      "date": "2026-06-17T18:07:14.883Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 10,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 9.5,
-        "laning": 10,
+        "teamfight": 2,
+        "laning": 3,
         "siege": 0,
         "utility": 2
       },
@@ -1191,13 +1216,14 @@
     },
     {
       "version": "7.36",
-      "date": "2026-06-14T21:53:54.791Z",
+      "date": "2026-06-17T18:07:14.889Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Zeus",
           "subEntityName": "Arc Lightning",
           "rawNote": "No longer deals damage based on the enemy's current health",
+          "originalSource": "No longer deals damage based on the enemy's current health",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1225,6 +1251,7 @@
           "entityName": "Zeus",
           "subEntityName": "Arc Lightning",
           "rawNote": "Damage increased from 85/110/135/160 to 90/120/150/180",
+          "originalSource": "Damage increased from 85/110/135/160 to 90/120/150/180",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "INCREASED",
@@ -1255,6 +1282,7 @@
           "entityName": "Zeus",
           "subEntityName": "Thundergod's Wrath",
           "rawNote": "No longer deals damage based on opponent's health",
+          "originalSource": "No longer deals damage based on opponent's health",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1282,6 +1310,7 @@
           "entityName": "Zeus",
           "subEntityName": "Thundergod's Wrath",
           "rawNote": "Damage increased from 300/425/500 to 300/475/650",
+          "originalSource": "Damage increased from 300/425/500 to 300/475/650",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "INCREASED",
@@ -1312,6 +1341,7 @@
           "entityName": "Zeus",
           "subEntityName": "Lightning Hands",
           "rawNote": "No longer grants +100 attack range",
+          "originalSource": "No longer grants +100 attack range",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -1339,6 +1369,7 @@
           "entityName": "Zeus",
           "subEntityName": "Lightning Hands",
           "rawNote": "Now grants +30 attack speed",
+          "originalSource": "Now grants +30 attack speed",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -1366,6 +1397,7 @@
           "entityName": "Zeus",
           "subEntityName": "Lightning Hands",
           "rawNote": "Illusion damage reduction now also applies to damage from Static Field",
+          "originalSource": "Illusion damage reduction now also applies to damage from Static Field",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -1393,6 +1425,7 @@
           "entityName": "Zeus",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +6% Arc Lightning Current Health As Damage replaced with +60 Arc Lightning Damage",
+          "originalSource": "Level 20 Talent +6% Arc Lightning Current Health As Damage replaced with +60 Arc Lightning Damage",
           "indentLevel": 1,
           "metric": "Level 20 Talent +6% Arc Lightning Current Health As Damage",
           "changeType": "REWORK",
@@ -1418,20 +1451,20 @@
         }
       ],
       "vectorDelta": {
-        "farming": 16,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 16,
-        "laning": 16,
+        "teamfight": 2,
+        "laning": 2,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": 26,
+        "farming": 5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 25.5,
-        "laning": 26,
+        "teamfight": 4,
+        "laning": 5,
         "siege": 0,
         "utility": 2
       },
@@ -1446,15 +1479,15 @@
     },
     {
       "version": "7.36a",
-      "date": "2026-06-14T21:53:54.794Z",
+      "date": "2026-06-17T18:07:14.892Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 26,
+        "farming": 5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 25.5,
-        "laning": 26,
+        "teamfight": 4,
+        "laning": 5,
         "siege": 0,
         "utility": 2
       },
@@ -1465,17 +1498,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.36b",
-      "date": "2026-06-14T21:53:54.797Z",
+      "date": "2026-06-17T18:07:14.895Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Zeus",
           "subEntityName": "Static Field",
           "rawNote": "Now scales with Thundergod's Wrath",
+          "originalSource": "Now scales with Thundergod's Wrath",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -1503,6 +1537,7 @@
           "entityName": "Zeus",
           "subEntityName": "Static Field",
           "rawNote": "Current Health as Damage rescaled from 4% to 2.5/3/3.5/4%",
+          "originalSource": "Current Health as Damage rescaled from 4% to 2.5/3/3.5/4%",
           "indentLevel": 1,
           "metric": "Current Health as Damage",
           "changeType": "RESCALE",
@@ -1533,6 +1568,7 @@
           "entityName": "Zeus",
           "subEntityName": "Arc Lightning",
           "rawNote": "Cast Range decreased from 850 to 800",
+          "originalSource": "Cast Range decreased from 850 to 800",
           "indentLevel": 1,
           "metric": "Cast Range",
           "changeType": "DECREASED",
@@ -1563,6 +1599,7 @@
           "entityName": "Zeus",
           "subEntityName": "Lightning Bolt",
           "rawNote": "No longer deals bonus damage to creeps",
+          "originalSource": "No longer deals bonus damage to creeps",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1590,6 +1627,7 @@
           "entityName": "Zeus",
           "subEntityName": "Thundergod's Wrath",
           "rawNote": "Cooldown increased from 120s to 130s",
+          "originalSource": "Cooldown increased from 120s to 130s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "INCREASED",
@@ -1620,6 +1658,7 @@
           "entityName": "Zeus",
           "subEntityName": "Lightning Hands",
           "rawNote": "No longer applied by Illusions",
+          "originalSource": "No longer applied by Illusions",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1647,6 +1686,7 @@
           "entityName": "Zeus",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Health decreased from +250 to +200",
+          "originalSource": "Level 10 Talent Health decreased from +250 to +200",
           "indentLevel": 1,
           "metric": "Level 10 Talent Health",
           "changeType": "DECREASED",
@@ -1676,6 +1716,7 @@
           "entityName": "Zeus",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Movement Speed after Heavenly Jump decreased from +30 to +25",
+          "originalSource": "Level 15 Talent Movement Speed after Heavenly Jump decreased from +30 to +25",
           "indentLevel": 1,
           "metric": "Level 15 Talent Movement Speed after Heavenly Jump",
           "changeType": "DECREASED",
@@ -1705,19 +1746,19 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
-        "utility": -15
+        "utility": -3
       },
       "totalVector": {
-        "farming": 26,
+        "farming": 5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 24,
-        "laning": 26,
+        "teamfight": 3,
+        "laning": 5,
         "siege": 0,
-        "utility": -13
+        "utility": -1
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1730,17 +1771,17 @@
     },
     {
       "version": "7.36c",
-      "date": "2026-06-14T21:53:54.800Z",
+      "date": "2026-06-17T18:07:14.897Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 26,
+        "farming": 5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 24,
-        "laning": 26,
+        "teamfight": 3,
+        "laning": 5,
         "siege": 0,
-        "utility": -13
+        "utility": -1
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1753,17 +1794,17 @@
     },
     {
       "version": "7.37",
-      "date": "2026-06-14T21:53:54.804Z",
+      "date": "2026-06-17T18:07:14.902Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 26,
+        "farming": 5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 24,
-        "laning": 26,
+        "teamfight": 3,
+        "laning": 5,
         "siege": 0,
-        "utility": -13
+        "utility": -1
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1776,13 +1817,14 @@
     },
     {
       "version": "7.37b",
-      "date": "2026-06-14T21:53:54.807Z",
+      "date": "2026-06-17T18:07:14.904Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Zeus",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent -4s Heavenly Jump Cooldown replaced with +1.75 Mana Regen",
+          "originalSource": "Level 10 Talent -4s Heavenly Jump Cooldown replaced with +1.75 Mana Regen",
           "indentLevel": 1,
           "metric": "Level 10 Talent -4s Heavenly Jump Cooldown",
           "changeType": "REWORK",
@@ -1811,6 +1853,7 @@
           "entityName": "Zeus",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent +25 Movement Speed after Heavenly Jump replaced with +75 Thundergod's Wrath Damage",
+          "originalSource": "Level 15 Talent +25 Movement Speed after Heavenly Jump replaced with +75 Thundergod's Wrath Damage",
           "indentLevel": 1,
           "metric": "Level 15 Talent +25 Movement Speed after Heavenly Jump",
           "changeType": "REWORK",
@@ -1839,6 +1882,7 @@
           "entityName": "Zeus",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent +150 Thundergod's Wrath Damage replaced with +1% Static Field Damage",
+          "originalSource": "Level 25 Talent +150 Thundergod's Wrath Damage replaced with +1% Static Field Damage",
           "indentLevel": 1,
           "metric": "Level 25 Talent +150 Thundergod's Wrath Damage",
           "changeType": "REWORK",
@@ -1865,13 +1909,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 26,
+        "farming": 5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 24,
-        "laning": 26,
+        "teamfight": 3,
+        "laning": 5,
         "siege": 0,
-        "utility": -13
+        "utility": -1
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1884,13 +1928,14 @@
     },
     {
       "version": "7.37c",
-      "date": "2026-06-14T21:53:54.809Z",
+      "date": "2026-06-17T18:07:14.906Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Zeus",
           "subEntityName": "Lightning Bolt",
           "rawNote": "Damage increased from 125/200/275/350 to 140/220/300/380",
+          "originalSource": "Damage increased from 125/200/275/350 to 140/220/300/380",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "INCREASED",
@@ -1921,6 +1966,7 @@
           "entityName": "Zeus",
           "subEntityName": "Nimbus",
           "rawNote": "Mana Cost decreased from 325 to 275",
+          "originalSource": "Mana Cost decreased from 325 to 275",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "DECREASED",
@@ -1948,22 +1994,22 @@
         }
       ],
       "vectorDelta": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 9,
+        "teamfight": 1,
+        "laning": 2,
         "siege": 0,
         "utility": 1
       },
       "totalVector": {
-        "farming": 35,
+        "farming": 7,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 32,
-        "laning": 35,
+        "teamfight": 4,
+        "laning": 7,
         "siege": 0,
-        "utility": -12
+        "utility": 0
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1972,21 +2018,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": "Net Gain"
+      "temporalAssessment": null
     },
     {
       "version": "7.37d",
-      "date": "2026-06-14T21:53:54.812Z",
+      "date": "2026-06-17T18:07:14.908Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 35,
+        "farming": 7,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 32,
-        "laning": 35,
+        "teamfight": 4,
+        "laning": 7,
         "siege": 0,
-        "utility": -12
+        "utility": 0
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1999,17 +2045,17 @@
     },
     {
       "version": "7.37e",
-      "date": "2026-06-14T21:53:54.815Z",
+      "date": "2026-06-17T18:07:14.912Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 35,
+        "farming": 7,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 32,
-        "laning": 35,
+        "teamfight": 4,
+        "laning": 7,
         "siege": 0,
-        "utility": -12
+        "utility": 0
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2022,13 +2068,14 @@
     },
     {
       "version": "7.38",
-      "date": "2026-06-14T21:53:54.824Z",
+      "date": "2026-06-17T18:07:14.919Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Zeus",
           "subEntityName": "Arc Lightning",
           "rawNote": "Mana Cost increased from 75/80/85/90 to 75/85/95/105",
+          "originalSource": "Mana Cost increased from 75/80/85/90 to 75/85/95/105",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "INCREASED",
@@ -2059,6 +2106,7 @@
           "entityName": "Zeus",
           "subEntityName": "Arc Lightning",
           "rawNote": "Jump Radius decreased from 500 to 450",
+          "originalSource": "Jump Radius decreased from 500 to 450",
           "indentLevel": 1,
           "metric": "Jump Radius",
           "changeType": "DECREASED",
@@ -2089,6 +2137,7 @@
           "entityName": "Zeus",
           "subEntityName": "Heavenly Jump",
           "rawNote": "Leap Distance rescaled from 500 to 300/400/500/600",
+          "originalSource": "Leap Distance rescaled from 500 to 300/400/500/600",
           "indentLevel": 1,
           "metric": "Leap Distance",
           "changeType": "RESCALE",
@@ -2119,6 +2168,7 @@
           "entityName": "Zeus",
           "subEntityName": "Heavenly Jump",
           "rawNote": "Slow Duration decreased from 1.6s to 1.4s",
+          "originalSource": "Slow Duration decreased from 1.6s to 1.4s",
           "indentLevel": 1,
           "metric": "Slow Duration",
           "changeType": "DECREASED",
@@ -2149,6 +2199,7 @@
           "entityName": "Zeus",
           "subEntityName": "Heavenly Jump",
           "rawNote": "Vision Radius is now affected by changes to Area of Effect",
+          "originalSource": "Vision Radius is now affected by changes to Area of Effect",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2156,9 +2207,9 @@
             "subEntityId": 641
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "VISION_INTERACTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -2168,7 +2219,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         }
       ],
@@ -2182,13 +2234,13 @@
         "utility": -1
       },
       "totalVector": {
-        "farming": 34,
+        "farming": 6,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 32,
-        "laning": 34,
+        "teamfight": 4,
+        "laning": 6,
         "siege": 0,
-        "utility": -13
+        "utility": -1
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2201,12 +2253,13 @@
     },
     {
       "version": "7.38b",
-      "date": "2026-06-14T21:53:54.826Z",
+      "date": "2026-06-17T18:07:14.921Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Zeus",
           "rawNote": "Base damage decreased by 4",
+          "originalSource": "Base damage decreased by 4",
           "indentLevel": 1,
           "metric": "Base damage",
           "changeType": "DECREASED",
@@ -2234,6 +2287,7 @@
           "category": "hero",
           "entityName": "Zeus",
           "rawNote": "Damage at level 1 decreased by 4 (from 55-63 to 51-59)",
+          "originalSource": "Damage at level 1 decreased by 4 (from 55-63 to 51-59)",
           "indentLevel": 1,
           "metric": "Damage at level 1",
           "changeType": "DECREASED",
@@ -2263,6 +2317,7 @@
           "entityName": "Zeus",
           "subEntityName": "Lightning Bolt",
           "rawNote": "Sight Radius decreased from 750 to 500",
+          "originalSource": "Sight Radius decreased from 750 to 500",
           "indentLevel": 1,
           "metric": "Sight Radius",
           "changeType": "DECREASED",
@@ -2291,13 +2346,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 34,
+        "farming": 6,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 32,
-        "laning": 34,
+        "teamfight": 4,
+        "laning": 6,
         "siege": 0,
-        "utility": -13
+        "utility": -1
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2310,17 +2365,17 @@
     },
     {
       "version": "7.38c",
-      "date": "2026-06-14T21:53:54.830Z",
+      "date": "2026-06-17T18:07:14.924Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 34,
+        "farming": 6,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 32,
-        "laning": 34,
+        "teamfight": 4,
+        "laning": 6,
         "siege": 0,
-        "utility": -13
+        "utility": -1
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2333,13 +2388,14 @@
     },
     {
       "version": "7.39",
-      "date": "2026-06-14T21:53:54.836Z",
+      "date": "2026-06-17T18:07:14.928Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Zeus",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent +1.75 Mana Regen replaced with +1 Heavenly Jump Target",
+          "originalSource": "Level 10 Talent +1.75 Mana Regen replaced with +1 Heavenly Jump Target",
           "indentLevel": 1,
           "metric": "Level 10 Talent +1.75 Mana Regen",
           "changeType": "REWORK",
@@ -2368,6 +2424,7 @@
           "entityName": "Zeus",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent +1 Heavenly Jump Target replaced with -0.4s Arc Lightning Cooldown",
+          "originalSource": "Level 15 Talent +1 Heavenly Jump Target replaced with -0.4s Arc Lightning Cooldown",
           "indentLevel": 1,
           "metric": "Level 15 Talent +1 Heavenly Jump Target",
           "changeType": "REWORK",
@@ -2396,6 +2453,7 @@
           "entityName": "Zeus",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent Static Field Damage increased from +1% to +1.5%",
+          "originalSource": "Level 25 Talent Static Field Damage increased from +1% to +1.5%",
           "indentLevel": 1,
           "metric": "Level 25 Talent Static Field Damage",
           "changeType": "INCREASED",
@@ -2423,13 +2481,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 34,
+        "farming": 6,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 32,
-        "laning": 34,
+        "teamfight": 4,
+        "laning": 6,
         "siege": 0,
-        "utility": -13
+        "utility": -1
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2442,17 +2500,17 @@
     },
     {
       "version": "7.39b",
-      "date": "2026-06-14T21:53:54.839Z",
+      "date": "2026-06-17T18:07:14.930Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 34,
+        "farming": 6,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 32,
-        "laning": 34,
+        "teamfight": 4,
+        "laning": 6,
         "siege": 0,
-        "utility": -13
+        "utility": -1
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2465,12 +2523,13 @@
     },
     {
       "version": "7.39c",
-      "date": "2026-06-14T21:53:54.843Z",
+      "date": "2026-06-17T18:07:14.932Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Zeus",
           "rawNote": "Base intelligence increased from 22 to 23",
+          "originalSource": "Base intelligence increased from 22 to 23",
           "indentLevel": 1,
           "metric": "Base intelligence",
           "changeType": "INCREASED",
@@ -2498,13 +2557,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 34,
+        "farming": 6,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 32,
-        "laning": 34,
+        "teamfight": 4,
+        "laning": 6,
         "siege": 0,
-        "utility": -13
+        "utility": -1
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2513,17 +2572,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.39d",
-      "date": "2026-06-14T21:53:54.848Z",
+      "date": "2026-06-17T18:07:14.937Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Zeus",
           "subEntityName": "Heavenly Jump",
           "rawNote": "Leap Distance increased from 300/400/500/600 to 375/450/525/600",
+          "originalSource": "Leap Distance increased from 300/400/500/600 to 375/450/525/600",
           "indentLevel": 1,
           "metric": "Leap Distance",
           "changeType": "INCREASED",
@@ -2552,13 +2612,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 34,
+        "farming": 6,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 32,
-        "laning": 34,
+        "teamfight": 4,
+        "laning": 6,
         "siege": 0,
-        "utility": -13
+        "utility": -1
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2571,17 +2631,17 @@
     },
     {
       "version": "7.39e",
-      "date": "2026-06-14T21:53:54.851Z",
+      "date": "2026-06-17T18:07:14.939Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 34,
+        "farming": 6,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 32,
-        "laning": 34,
+        "teamfight": 4,
+        "laning": 6,
         "siege": 0,
-        "utility": -13
+        "utility": -1
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2594,13 +2654,14 @@
     },
     {
       "version": "7.40",
-      "date": "2026-06-14T21:53:54.859Z",
+      "date": "2026-06-17T18:07:14.945Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Zeus",
           "subEntityName": "Arc Lightning",
           "rawNote": "Jumps decreased from 5/7/9/15 to 5/7/9/11",
+          "originalSource": "Jumps decreased from 5/7/9/15 to 5/7/9/11",
           "indentLevel": 1,
           "metric": "Jumps",
           "changeType": "DECREASED",
@@ -2631,6 +2692,7 @@
           "entityName": "Zeus",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent Static Field Damage increased from +1.5% to +2%",
+          "originalSource": "Level 25 Talent Static Field Damage increased from +1.5% to +2%",
           "indentLevel": 1,
           "metric": "Level 25 Talent Static Field Damage",
           "changeType": "INCREASED",
@@ -2658,13 +2720,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 34,
+        "farming": 6,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 32,
-        "laning": 34,
+        "teamfight": 4,
+        "laning": 6,
         "siege": 0,
-        "utility": -13
+        "utility": -1
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2677,13 +2739,14 @@
     },
     {
       "version": "7.40b",
-      "date": "2026-06-14T21:53:54.865Z",
+      "date": "2026-06-17T18:07:14.948Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Zeus",
           "subEntityName": "Static Field",
           "rawNote": "Current HP Damage increased from 2.5/3/3.5/4% to 2.5/3.25/4/4.75%",
+          "originalSource": "Current HP Damage increased from 2.5/3/3.5/4% to 2.5/3.25/4/4.75%",
           "indentLevel": 1,
           "metric": "Current HP Damage",
           "changeType": "INCREASED",
@@ -2712,13 +2775,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 34,
+        "farming": 6,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 32,
-        "laning": 34,
+        "teamfight": 4,
+        "laning": 6,
         "siege": 0,
-        "utility": -13
+        "utility": -1
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2727,21 +2790,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.40c",
-      "date": "2026-06-14T21:53:54.872Z",
+      "date": "2026-06-17T18:07:14.950Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 34,
+        "farming": 6,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 32,
-        "laning": 34,
+        "teamfight": 4,
+        "laning": 6,
         "siege": 0,
-        "utility": -13
+        "utility": -1
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2754,12 +2817,13 @@
     },
     {
       "version": "7.41",
-      "date": "2026-06-14T21:53:54.887Z",
+      "date": "2026-06-17T18:07:14.959Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Zeus",
           "rawNote": "Base Strength increased from 19 to 21",
+          "originalSource": "Base Strength increased from 19 to 21",
           "indentLevel": 1,
           "metric": "Base Strength",
           "changeType": "INCREASED",
@@ -2787,7 +2851,8 @@
         {
           "category": "hero",
           "entityName": "Zeus",
-          "rawNote": "Base Damage increased by 1–3 ",
+          "rawNote": "Base Damage increased by 1–3",
+          "originalSource": "Base Damage increased by 1–3 ",
           "indentLevel": 1,
           "metric": "Base Damage",
           "changeType": "INCREASED",
@@ -2815,6 +2880,7 @@
           "category": "hero",
           "entityName": "Zeus",
           "rawNote": "Damage at level 1 increased from 52–60 to 53–63",
+          "originalSource": "Damage at level 1 increased from 52–60 to 53–63",
           "indentLevel": 2,
           "metric": "Damage at level 1",
           "changeType": "INCREASED",
@@ -2843,6 +2909,7 @@
           "category": "hero",
           "entityName": "Zeus",
           "rawNote": "Base Movement Speed decreased from 315 to 305",
+          "originalSource": "Base Movement Speed decreased from 315 to 305",
           "indentLevel": 1,
           "metric": "Base Movement Speed",
           "changeType": "DECREASED",
@@ -2871,6 +2938,7 @@
           "category": "hero",
           "entityName": "Zeus",
           "rawNote": "Base Armor decreased by 1",
+          "originalSource": "Base Armor decreased by 1",
           "indentLevel": 1,
           "metric": "Base Armor",
           "changeType": "DECREASED",
@@ -2899,6 +2967,7 @@
           "entityName": "Zeus",
           "subEntityName": "Static Field",
           "rawNote": "No longer levels with Thundergod's Wrath",
+          "originalSource": "No longer levels with Thundergod's Wrath",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -2926,6 +2995,7 @@
           "entityName": "Zeus",
           "subEntityName": "Static Field",
           "rawNote": "Damage changed from 2.5/3/3.5/4% to 3.45% + 0.05% per level",
+          "originalSource": "Damage changed from 2.5/3/3.5/4% to 3.45% + 0.05% per level",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2933,19 +3003,20 @@
             "subEntityId": 5112
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2953,6 +3024,7 @@
           "entityName": "Zeus",
           "subEntityName": "Arc Lightning",
           "rawNote": "Mana Cost rescaled from 75/85/95/105 to 85/90/95/100",
+          "originalSource": "Mana Cost rescaled from 75/85/95/105 to 85/90/95/100",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "RESCALE",
@@ -2983,6 +3055,7 @@
           "entityName": "Zeus",
           "subEntityName": "Arc Lightning",
           "rawNote": "Base Damage increased from 90/120/150/180 to 105/130/155/180",
+          "originalSource": "Base Damage increased from 90/120/150/180 to 105/130/155/180",
           "indentLevel": 1,
           "metric": "Base Damage",
           "changeType": "INCREASED",
@@ -3013,6 +3086,7 @@
           "entityName": "Zeus",
           "subEntityName": "Lightning Bolt",
           "rawNote": "Vision and True Sight radius increased from 500 to 600",
+          "originalSource": "Vision and True Sight radius increased from 500 to 600",
           "indentLevel": 1,
           "metric": "Vision and True Sight radius",
           "changeType": "INCREASED",
@@ -3042,7 +3116,8 @@
           "category": "hero",
           "entityName": "Zeus",
           "subEntityName": "Thundergod's Wrath",
-          "rawNote": "Now applies the True Sight before the damage and strikes even untargetable and still invisible enemies ",
+          "rawNote": "Now applies the True Sight before the damage and strikes even untargetable and still invisible enemies",
+          "originalSource": "Now applies the True Sight before the damage and strikes even untargetable and still invisible enemies ",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -3070,6 +3145,7 @@
           "entityName": "Zeus",
           "subEntityName": "Thundergod's Wrath",
           "rawNote": "Vision and True Sight radius increased from 500 to 600",
+          "originalSource": "Vision and True Sight radius increased from 500 to 600",
           "indentLevel": 1,
           "metric": "Vision and True Sight radius",
           "changeType": "INCREASED",
@@ -3100,6 +3176,7 @@
           "entityName": "Zeus",
           "subEntityName": "Nimbus",
           "rawNote": "Damage source changed from Nimbus to the caster",
+          "originalSource": "Damage source changed from Nimbus to the caster",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -3107,19 +3184,20 @@
             "subEntityId": 6325
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -3127,6 +3205,7 @@
           "entityName": "Zeus",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent -0.4s Arc Lightning Cooldown replaced with -20% Arc Lightning Mana Cost/Cooldown",
+          "originalSource": "Level 15 Talent -0.4s Arc Lightning Cooldown replaced with -20% Arc Lightning Mana Cost/Cooldown",
           "indentLevel": 1,
           "metric": "Level 15 Talent -0.4s Arc Lightning Cooldown",
           "changeType": "REWORK",
@@ -3155,6 +3234,7 @@
           "entityName": "Zeus",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent +2% Static Field Damage replaced with 3 Heavenly Jump Charges",
+          "originalSource": "Level 25 Talent +2% Static Field Damage replaced with 3 Heavenly Jump Charges",
           "indentLevel": 1,
           "metric": "Level 25 Talent +2% Static Field Damage",
           "changeType": "REWORK",
@@ -3181,13 +3261,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 34,
+        "farming": 6,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 32,
-        "laning": 34,
+        "teamfight": 4,
+        "laning": 6,
         "siege": 0,
-        "utility": -13
+        "utility": -1
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3196,21 +3276,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.41a",
-      "date": "2026-06-14T21:53:54.891Z",
+      "date": "2026-06-17T18:07:14.961Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 34,
+        "farming": 6,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 32,
-        "laning": 34,
+        "teamfight": 4,
+        "laning": 6,
         "siege": 0,
-        "utility": -13
+        "utility": -1
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3223,17 +3303,17 @@
     },
     {
       "version": "7.41b",
-      "date": "2026-06-14T21:53:54.896Z",
+      "date": "2026-06-17T18:07:14.963Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 34,
+        "farming": 6,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 32,
-        "laning": 34,
+        "teamfight": 4,
+        "laning": 6,
         "siege": 0,
-        "utility": -13
+        "utility": -1
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3246,17 +3326,17 @@
     },
     {
       "version": "7.41c",
-      "date": "2026-06-14T21:53:54.901Z",
+      "date": "2026-06-17T18:07:14.966Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 34,
+        "farming": 6,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 32,
-        "laning": 34,
+        "teamfight": 4,
+        "laning": 6,
         "siege": 0,
-        "utility": -13
+        "utility": -1
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3269,46 +3349,58 @@
     },
     {
       "version": "7.41d",
-      "date": "2026-06-14T21:53:54.907Z",
+      "date": "2026-06-17T18:07:14.968Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 34,
+        "farming": 6,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 32,
-        "laning": 34,
+        "teamfight": 4,
+        "laning": 6,
         "siege": 0,
-        "utility": -13
+        "utility": -1
       },
       "winrates": {
         "HERALD": {
-          "winrate": 0.5165,
-          "matchCount": 54582
+          "winrate": 0.5176,
+          "matchCount": 49929
         },
         "GUARDIAN": {
-          "winrate": 0.5201,
-          "matchCount": 107604
+          "winrate": 0.5181,
+          "matchCount": 100307
         },
         "CRUSADER": {
-          "winrate": 0.5172,
-          "matchCount": 121736
+          "winrate": 0.5163,
+          "matchCount": 114195
         },
         "ARCHON": {
-          "winrate": 0.5186,
-          "matchCount": 114290
+          "winrate": 0.5156,
+          "matchCount": 108535
         },
         "LEGEND": {
-          "winrate": 0.5151,
-          "matchCount": 90265
+          "winrate": 0.5141,
+          "matchCount": 85170
         },
         "ANCIENT": {
-          "winrate": 0.5123,
-          "matchCount": 61003
+          "winrate": 0.5127,
+          "matchCount": 57846
         },
         "DIVINE": {
-          "winrate": 0.5073,
-          "matchCount": 67013
+          "winrate": 0.51,
+          "matchCount": 64123
+        },
+        "IMMORTAL": {
+          "winrate": 0,
+          "matchCount": 0
+        },
+        "PRO": {
+          "winrate": 0.5,
+          "matchCount": 6
+        },
+        "GLOBAL_BLEND": {
+          "winrate": 0.51,
+          "matchCount": 64129
         }
       },
       "temporalAssessment": null

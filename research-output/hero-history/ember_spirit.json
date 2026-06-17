@@ -3,12 +3,13 @@
   "history": [
     {
       "version": "7.33",
-      "date": "2026-06-14T21:53:54.726Z",
+      "date": "2026-06-17T18:07:14.843Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ember Spirit",
           "rawNote": "Base Armor increased by 1",
+          "originalSource": "Base Armor increased by 1",
           "indentLevel": 1,
           "metric": "Base Armor",
           "changeType": "INCREASED",
@@ -37,6 +38,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Flame Guard",
           "rawNote": "Now stacks additively with other sources of Magic Barriers",
+          "originalSource": "Now stacks additively with other sources of Magic Barriers",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -64,6 +66,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Flame Guard",
           "rawNote": "Magic Absorb decreased from 85/190/295/400 to 65/145/225/305",
+          "originalSource": "Magic Absorb decreased from 85/190/295/400 to 65/145/225/305",
           "indentLevel": 1,
           "metric": "Magic Absorb",
           "changeType": "DECREASED",
@@ -105,7 +108,7 @@
     },
     {
       "version": "7.33b",
-      "date": "2026-06-14T21:53:54.731Z",
+      "date": "2026-06-17T18:07:14.846Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -151,7 +154,7 @@
     },
     {
       "version": "7.33c",
-      "date": "2026-06-14T21:53:54.736Z",
+      "date": "2026-06-17T18:07:14.849Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -197,7 +200,7 @@
     },
     {
       "version": "7.33d",
-      "date": "2026-06-14T21:53:54.740Z",
+      "date": "2026-06-17T18:07:14.851Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -243,13 +246,14 @@
     },
     {
       "version": "7.33e",
-      "date": "2026-06-14T21:53:54.744Z",
+      "date": "2026-06-17T18:07:14.854Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ember Spirit",
           "subEntityName": "Sleight of Fist",
           "rawNote": "Attack Interval increased from 0.2s to 0.25s",
+          "originalSource": "Attack Interval increased from 0.2s to 0.25s",
           "indentLevel": 1,
           "metric": "Attack Interval",
           "changeType": "INCREASED",
@@ -280,6 +284,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Flame Guard",
           "rawNote": "Magic Barrier decreased from 65/145/225/305 to 60/135/210/285",
+          "originalSource": "Magic Barrier decreased from 65/145/225/305 to 60/135/210/285",
           "indentLevel": 1,
           "metric": "Magic Barrier",
           "changeType": "DECREASED",
@@ -350,13 +355,14 @@
     },
     {
       "version": "7.34",
-      "date": "2026-06-14T21:53:54.750Z",
+      "date": "2026-06-17T18:07:14.859Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ember Spirit",
           "subEntityName": "Flame Guard",
           "rawNote": "Radius increased from 400 to 450",
+          "originalSource": "Radius increased from 400 to 450",
           "indentLevel": 1,
           "metric": "Radius",
           "changeType": "INCREASED",
@@ -387,6 +393,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Fire Remnant",
           "rawNote": "Cast Point increased from 0.1s to 0.2s",
+          "originalSource": "Cast Point increased from 0.1s to 0.2s",
           "indentLevel": 1,
           "metric": "Cast Point",
           "changeType": "INCREASED",
@@ -417,6 +424,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Fire Remnant",
           "rawNote": "Aghanim's Shard Burn Radius decreased from 600 to 450",
+          "originalSource": "Aghanim's Shard Burn Radius decreased from 600 to 450",
           "indentLevel": 1,
           "metric": "Aghanim's Shard Burn Radius",
           "changeType": "DECREASED",
@@ -447,6 +455,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Fire Remnant",
           "rawNote": "Aghanim's Shard Burn now only starts dealing damage once the Remnant stops moving",
+          "originalSource": "Aghanim's Shard Burn now only starts dealing damage once the Remnant stops moving",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -454,19 +463,20 @@
             "subEntityId": 5606
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ROSHAN_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -474,6 +484,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Activate Fire Remnant",
           "rawNote": "Cast Point increased from 0.1s to 0.2s",
+          "originalSource": "Cast Point increased from 0.1s to 0.2s",
           "indentLevel": 1,
           "metric": "Cast Point",
           "changeType": "INCREASED",
@@ -504,36 +515,36 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
-        "utility": -32
+        "utility": -20
       },
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
-        "utility": -32
+        "utility": -20
       },
       "winrates": {},
       "temporalAssessment": null
     },
     {
       "version": "7.34b",
-      "date": "2026-06-14T21:53:54.755Z",
+      "date": "2026-06-17T18:07:14.863Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
-        "utility": -32
+        "utility": -20
       },
       "winrates": {
         "HERALD": {
@@ -569,12 +580,13 @@
     },
     {
       "version": "7.34c",
-      "date": "2026-06-14T21:53:54.759Z",
+      "date": "2026-06-17T18:07:14.868Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ember Spirit",
           "rawNote": "Base Health Regen decreased from 1.25 to 0.5",
+          "originalSource": "Base Health Regen decreased from 1.25 to 0.5",
           "indentLevel": 1,
           "metric": "Base Health Regen",
           "changeType": "DECREASED",
@@ -604,6 +616,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Sleight of Fist",
           "rawNote": "Mana Cost increased from 50 to 60",
+          "originalSource": "Mana Cost increased from 50 to 60",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "INCREASED",
@@ -643,10 +656,10 @@
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6,
+        "teamfight": 1,
         "laning": -1,
         "siege": 0,
-        "utility": -33
+        "utility": -21
       },
       "winrates": {
         "HERALD": {
@@ -682,17 +695,17 @@
     },
     {
       "version": "7.34d",
-      "date": "2026-06-14T21:53:54.764Z",
+      "date": "2026-06-17T18:07:14.871Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6,
+        "teamfight": 1,
         "laning": -1,
         "siege": 0,
-        "utility": -33
+        "utility": -21
       },
       "winrates": {
         "HERALD": {
@@ -728,17 +741,17 @@
     },
     {
       "version": "7.34e",
-      "date": "2026-06-14T21:53:54.768Z",
+      "date": "2026-06-17T18:07:14.873Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6,
+        "teamfight": 1,
         "laning": -1,
         "siege": 0,
-        "utility": -33
+        "utility": -21
       },
       "winrates": {
         "HERALD": {
@@ -774,13 +787,14 @@
     },
     {
       "version": "7.35",
-      "date": "2026-06-14T21:53:54.772Z",
+      "date": "2026-06-17T18:07:14.877Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ember Spirit",
           "subEntityName": "Searing Chains",
           "rawNote": "Unit Count increased from 2 to 3",
+          "originalSource": "Unit Count increased from 2 to 3",
           "indentLevel": 1,
           "metric": "Unit Count",
           "changeType": "INCREASED",
@@ -811,6 +825,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Sleight of Fist",
           "rawNote": "Bonus Hero Damage increased from 45/80/115/150 to 45/85/125/165",
+          "originalSource": "Bonus Hero Damage increased from 45/80/115/150 to 45/85/125/165",
           "indentLevel": 1,
           "metric": "Bonus Hero Damage",
           "changeType": "INCREASED",
@@ -841,6 +856,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Flame Guard",
           "rawNote": "Radius increased from 450 to 500",
+          "originalSource": "Radius increased from 450 to 500",
           "indentLevel": 1,
           "metric": "Radius",
           "changeType": "INCREASED",
@@ -871,7 +887,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -880,10 +896,10 @@
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 12,
+        "teamfight": 2,
         "laning": -1,
         "siege": 0,
-        "utility": -33
+        "utility": -21
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -892,21 +908,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.35b",
-      "date": "2026-06-14T21:53:54.775Z",
+      "date": "2026-06-17T18:07:14.879Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 12,
+        "teamfight": 2,
         "laning": -1,
         "siege": 0,
-        "utility": -33
+        "utility": -21
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -919,13 +935,14 @@
     },
     {
       "version": "7.35c",
-      "date": "2026-06-14T21:53:54.782Z",
+      "date": "2026-06-17T18:07:14.881Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ember Spirit",
           "subEntityName": "Sleight of Fist",
           "rawNote": "Mana Cost increased from 60 to 65",
+          "originalSource": "Mana Cost increased from 60 to 65",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "INCREASED",
@@ -965,10 +982,10 @@
         "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 12,
+        "teamfight": 2,
         "laning": -2,
         "siege": 0,
-        "utility": -34
+        "utility": -22
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -981,13 +998,14 @@
     },
     {
       "version": "7.35d",
-      "date": "2026-06-14T21:53:54.785Z",
+      "date": "2026-06-17T18:07:14.884Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ember Spirit",
           "subEntityName": "Fire Remnant",
           "rawNote": "Base Charge Restore Time decreased from 38s to 35s",
+          "originalSource": "Base Charge Restore Time decreased from 38s to 35s",
           "indentLevel": 1,
           "metric": "Base Charge Restore Time",
           "changeType": "DECREASED",
@@ -1019,10 +1037,10 @@
         "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 12,
+        "teamfight": 2,
         "laning": -2,
         "siege": 0,
-        "utility": -34
+        "utility": -22
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1035,13 +1053,14 @@
     },
     {
       "version": "7.36",
-      "date": "2026-06-14T21:53:54.791Z",
+      "date": "2026-06-17T18:07:14.890Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ember Spirit",
           "subEntityName": "Sleight of Fist",
           "rawNote": "Cooldown decreased from 15/12/9/6s to 12/10/8/6s",
+          "originalSource": "Cooldown decreased from 15/12/9/6s to 12/10/8/6s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "DECREASED",
@@ -1071,7 +1090,8 @@
           "category": "hero",
           "entityName": "Ember Spirit",
           "subEntityName": "Talents",
-          "rawNote": "Level 15 Talent +50 Flame Guard DPS replaced with +100% Flame Guard DPS ",
+          "rawNote": "Level 15 Talent +50 Flame Guard DPS replaced with +100% Flame Guard DPS",
+          "originalSource": "Level 15 Talent +50 Flame Guard DPS replaced with +100% Flame Guard DPS ",
           "indentLevel": 1,
           "metric": "Level 15 Talent +50 Flame Guard DPS",
           "changeType": "REWORK",
@@ -1100,6 +1120,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +1 Searing Chains Target replaced with +60 Searing Chains Damage",
+          "originalSource": "Level 20 Talent +1 Searing Chains Target replaced with +60 Searing Chains Damage",
           "indentLevel": 1,
           "metric": "Level 20 Talent +1 Searing Chains Target",
           "changeType": "REWORK",
@@ -1128,7 +1149,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1.5,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1137,10 +1158,10 @@
         "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 13.5,
+        "teamfight": 3,
         "laning": -2,
         "siege": 0,
-        "utility": -34
+        "utility": -22
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1153,17 +1174,17 @@
     },
     {
       "version": "7.36a",
-      "date": "2026-06-14T21:53:54.794Z",
+      "date": "2026-06-17T18:07:14.892Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 13.5,
+        "teamfight": 3,
         "laning": -2,
         "siege": 0,
-        "utility": -34
+        "utility": -22
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1176,17 +1197,17 @@
     },
     {
       "version": "7.36b",
-      "date": "2026-06-14T21:53:54.797Z",
+      "date": "2026-06-17T18:07:14.896Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 13.5,
+        "teamfight": 3,
         "laning": -2,
         "siege": 0,
-        "utility": -34
+        "utility": -22
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1199,13 +1220,14 @@
     },
     {
       "version": "7.36c",
-      "date": "2026-06-14T21:53:54.800Z",
+      "date": "2026-06-17T18:07:14.898Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ember Spirit",
           "subEntityName": "Sleight of Fist",
           "rawNote": "Bonus Hero Damage decreased from 45/85/125/165 to 40/80/120/160",
+          "originalSource": "Bonus Hero Damage decreased from 45/85/125/165 to 40/80/120/160",
           "indentLevel": 1,
           "metric": "Bonus Hero Damage",
           "changeType": "DECREASED",
@@ -1237,10 +1259,10 @@
         "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 13.5,
+        "teamfight": 3,
         "laning": -2,
         "siege": 0,
-        "utility": -34
+        "utility": -22
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1249,17 +1271,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.37",
-      "date": "2026-06-14T21:53:54.805Z",
+      "date": "2026-06-17T18:07:14.902Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ember Spirit",
           "subEntityName": "Immolation",
           "rawNote": "New Innate ability. Passive, scales with Fire Remnant",
+          "originalSource": "New Innate ability. Passive, scales with Fire Remnant",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -1287,6 +1310,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Immolation",
           "rawNote": "Ember Spirit deals 10/20/30/40 damage per second in a 175 AoE around him at all times",
+          "originalSource": "Ember Spirit deals 10/20/30/40 damage per second in a 175 AoE around him at all times",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -1294,26 +1318,28 @@
             "subEntityId": 1484
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
           "category": "hero",
           "entityName": "Ember Spirit",
           "subEntityName": "Immolation",
-          "rawNote": "Can be upgraded with Aghanim's Shard. Increases damage by 10, radius by 175, and grants Fire Remnants the current level of Immolation ",
+          "rawNote": "Can be upgraded with Aghanim's Shard. Increases damage by 10, radius by 175, and grants Fire Remnants the current level of Immolation",
+          "originalSource": "Can be upgraded with Aghanim's Shard. Increases damage by 10, radius by 175, and grants Fire Remnants the current level of Immolation ",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -1341,6 +1367,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Searing Chains",
           "rawNote": "Mana Cost increased from 80/90/100/110 to 95/100/105/110",
+          "originalSource": "Mana Cost increased from 80/90/100/110 to 95/100/105/110",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "INCREASED",
@@ -1371,6 +1398,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Flame Guard",
           "rawNote": "No longer an innate ability nor has a passive component",
+          "originalSource": "No longer an innate ability nor has a passive component",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1398,6 +1426,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Flame Guard",
           "rawNote": "Duration rescaled from 10/12/14/16/18s to 12/14/16/18s",
+          "originalSource": "Duration rescaled from 10/12/14/16/18s to 12/14/16/18s",
           "indentLevel": 1,
           "metric": "Duration",
           "changeType": "RESCALE",
@@ -1428,6 +1457,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Flame Guard",
           "rawNote": "Damage per second rescaled from 15/25/35/45/55 to 20/30/40/50",
+          "originalSource": "Damage per second rescaled from 15/25/35/45/55 to 20/30/40/50",
           "indentLevel": 1,
           "metric": "Damage per second",
           "changeType": "RESCALE",
@@ -1458,6 +1488,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Flame Guard",
           "rawNote": "Magic damage barrier rescaled from 30/60/135/210/285 to 60/135/210/285",
+          "originalSource": "Magic damage barrier rescaled from 30/60/135/210/285 to 60/135/210/285",
           "indentLevel": 1,
           "metric": "Magic damage barrier",
           "changeType": "RESCALE",
@@ -1497,10 +1528,10 @@
         "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 13.5,
+        "teamfight": 3,
         "laning": -3,
         "siege": 0,
-        "utility": -35
+        "utility": -23
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1513,13 +1544,14 @@
     },
     {
       "version": "7.37b",
-      "date": "2026-06-14T21:53:54.807Z",
+      "date": "2026-06-17T18:07:14.904Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ember Spirit",
           "subEntityName": "Immolation",
           "rawNote": "Damage debuff no longer has a linger duration",
+          "originalSource": "Damage debuff no longer has a linger duration",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1547,6 +1579,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Immolation",
           "rawNote": "Damage decreased from 10/20/30/40 to 10/18/26/34",
+          "originalSource": "Damage decreased from 10/20/30/40 to 10/18/26/34",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "DECREASED",
@@ -1577,6 +1610,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Sleight of Fist",
           "rawNote": "Cooldown increased from 12/10/8/6s to 13/11/9/7s",
+          "originalSource": "Cooldown increased from 12/10/8/6s to 13/11/9/7s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "INCREASED",
@@ -1607,6 +1641,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Flame Guard Barrier Amount decreased from +200 to +165",
+          "originalSource": "Level 10 Talent Flame Guard Barrier Amount decreased from +200 to +165",
           "indentLevel": 1,
           "metric": "Level 10 Talent Flame Guard Barrier Amount",
           "changeType": "DECREASED",
@@ -1636,6 +1671,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Sleight of Fist Hero Damage decreased from +55 to +50",
+          "originalSource": "Level 20 Talent Sleight of Fist Hero Damage decreased from +55 to +50",
           "indentLevel": 1,
           "metric": "Level 20 Talent Sleight of Fist Hero Damage",
           "changeType": "DECREASED",
@@ -1662,22 +1698,22 @@
         }
       ],
       "vectorDelta": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -9.5,
-        "laning": -8,
+        "teamfight": -2,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -11,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 4,
-        "laning": -11,
+        "teamfight": 1,
+        "laning": -4,
         "siege": 0,
-        "utility": -35
+        "utility": -23
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1690,13 +1726,14 @@
     },
     {
       "version": "7.37c",
-      "date": "2026-06-14T21:53:54.810Z",
+      "date": "2026-06-17T18:07:14.906Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ember Spirit",
           "subEntityName": "Sleight of Fist",
           "rawNote": "Mana Cost rescaled from 65 to 60/65/70/75",
+          "originalSource": "Mana Cost rescaled from 65 to 60/65/70/75",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "RESCALE",
@@ -1727,6 +1764,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Flame Guard",
           "rawNote": "Damage per second decreased from 20/30/40/50 to 15/25/35/45",
+          "originalSource": "Damage per second decreased from 20/30/40/50 to 15/25/35/45",
           "indentLevel": 1,
           "metric": "Damage per second",
           "changeType": "DECREASED",
@@ -1755,13 +1793,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -11,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 4,
-        "laning": -11,
+        "teamfight": 1,
+        "laning": -4,
         "siege": 0,
-        "utility": -35
+        "utility": -23
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1770,21 +1808,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": "Recovery"
+      "temporalAssessment": null
     },
     {
       "version": "7.37d",
-      "date": "2026-06-14T21:53:54.813Z",
+      "date": "2026-06-17T18:07:14.909Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -11,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 4,
-        "laning": -11,
+        "teamfight": 1,
+        "laning": -4,
         "siege": 0,
-        "utility": -35
+        "utility": -23
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1797,17 +1835,17 @@
     },
     {
       "version": "7.37e",
-      "date": "2026-06-14T21:53:54.815Z",
+      "date": "2026-06-17T18:07:14.912Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -11,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 4,
-        "laning": -11,
+        "teamfight": 1,
+        "laning": -4,
         "siege": 0,
-        "utility": -35
+        "utility": -23
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1820,13 +1858,14 @@
     },
     {
       "version": "7.38",
-      "date": "2026-06-14T21:53:54.824Z",
+      "date": "2026-06-17T18:07:14.919Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ember Spirit",
           "subEntityName": "Searing Chains",
-          "rawNote": "Unit Count decreased from 3 to 2 ",
+          "rawNote": "Unit Count decreased from 3 to 2",
+          "originalSource": "Unit Count decreased from 3 to 2 ",
           "indentLevel": 1,
           "metric": "Unit Count",
           "changeType": "DECREASED",
@@ -1857,6 +1896,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Flame Guard",
           "rawNote": "Damage per second increased from 15/25/35/45 to 20/30/40/50",
+          "originalSource": "Damage per second increased from 15/25/35/45 to 20/30/40/50",
           "indentLevel": 1,
           "metric": "Damage per second",
           "changeType": "INCREASED",
@@ -1887,6 +1927,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Flame Guard",
           "rawNote": "Magic Barrier increased from 60/135/210/285 to 60/140/220/300",
+          "originalSource": "Magic Barrier increased from 60/135/210/285 to 60/140/220/300",
           "indentLevel": 1,
           "metric": "Magic Barrier",
           "changeType": "INCREASED",
@@ -1916,7 +1957,8 @@
           "category": "hero",
           "entityName": "Ember Spirit",
           "subEntityName": "Fire Remnant",
-          "rawNote": "Cast Point decreased from 0.2s to 0s ",
+          "rawNote": "Cast Point decreased from 0.2s to 0s",
+          "originalSource": "Cast Point decreased from 0.2s to 0s ",
           "indentLevel": 1,
           "metric": "Cast Point",
           "changeType": "DECREASED",
@@ -1950,16 +1992,16 @@
         "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 16
+        "utility": 10
       },
       "totalVector": {
-        "farming": -11,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 4,
-        "laning": -11,
+        "teamfight": 1,
+        "laning": -4,
         "siege": 0,
-        "utility": -19
+        "utility": -13
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1968,16 +2010,17 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": "Net Gain"
+      "temporalAssessment": null
     },
     {
       "version": "7.38b",
-      "date": "2026-06-14T21:53:54.827Z",
+      "date": "2026-06-17T18:07:14.921Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ember Spirit",
           "rawNote": "Strength gain decreased from 2.6 to 2.3",
+          "originalSource": "Strength gain decreased from 2.6 to 2.3",
           "indentLevel": 1,
           "metric": "Strength gain",
           "changeType": "DECREASED",
@@ -2005,13 +2048,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -11,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 4,
-        "laning": -11,
+        "teamfight": 1,
+        "laning": -4,
         "siege": 0,
-        "utility": -19
+        "utility": -13
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2024,13 +2067,14 @@
     },
     {
       "version": "7.38c",
-      "date": "2026-06-14T21:53:54.830Z",
+      "date": "2026-06-17T18:07:14.924Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ember Spirit",
           "subEntityName": "Sleight of Fist",
           "rawNote": "Bonus Hero Damage decreased from 40/80/120/160 to 25/70/115/160",
+          "originalSource": "Bonus Hero Damage decreased from 40/80/120/160 to 25/70/115/160",
           "indentLevel": 1,
           "metric": "Bonus Hero Damage",
           "changeType": "DECREASED",
@@ -2059,13 +2103,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -11,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 4,
-        "laning": -11,
+        "teamfight": 1,
+        "laning": -4,
         "siege": 0,
-        "utility": -19
+        "utility": -13
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2078,17 +2122,17 @@
     },
     {
       "version": "7.39",
-      "date": "2026-06-14T21:53:54.836Z",
+      "date": "2026-06-17T18:07:14.928Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -11,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 4,
-        "laning": -11,
+        "teamfight": 1,
+        "laning": -4,
         "siege": 0,
-        "utility": -19
+        "utility": -13
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2101,17 +2145,17 @@
     },
     {
       "version": "7.39b",
-      "date": "2026-06-14T21:53:54.839Z",
+      "date": "2026-06-17T18:07:14.931Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -11,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 4,
-        "laning": -11,
+        "teamfight": 1,
+        "laning": -4,
         "siege": 0,
-        "utility": -19
+        "utility": -13
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2124,17 +2168,17 @@
     },
     {
       "version": "7.39c",
-      "date": "2026-06-14T21:53:54.843Z",
+      "date": "2026-06-17T18:07:14.933Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -11,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 4,
-        "laning": -11,
+        "teamfight": 1,
+        "laning": -4,
         "siege": 0,
-        "utility": -19
+        "utility": -13
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2147,13 +2191,14 @@
     },
     {
       "version": "7.39d",
-      "date": "2026-06-14T21:53:54.848Z",
+      "date": "2026-06-17T18:07:14.937Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ember Spirit",
           "subEntityName": "Searing Chains",
           "rawNote": "Mana Cost increased from 95/100/105/110 to 95/105/115/125",
+          "originalSource": "Mana Cost increased from 95/100/105/110 to 95/105/115/125",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "INCREASED",
@@ -2190,13 +2235,13 @@
         "utility": -1
       },
       "totalVector": {
-        "farming": -12,
+        "farming": -5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 4,
-        "laning": -12,
+        "teamfight": 1,
+        "laning": -5,
         "siege": 0,
-        "utility": -20
+        "utility": -14
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2209,17 +2254,17 @@
     },
     {
       "version": "7.39e",
-      "date": "2026-06-14T21:53:54.851Z",
+      "date": "2026-06-17T18:07:14.939Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -12,
+        "farming": -5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 4,
-        "laning": -12,
+        "teamfight": 1,
+        "laning": -5,
         "siege": 0,
-        "utility": -20
+        "utility": -14
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2232,13 +2277,14 @@
     },
     {
       "version": "7.40",
-      "date": "2026-06-14T21:53:54.859Z",
+      "date": "2026-06-17T18:07:14.945Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ember Spirit",
           "subEntityName": "Flame Guard",
           "rawNote": "Cooldown decreased from 35s to 32s",
+          "originalSource": "Cooldown decreased from 35s to 32s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "DECREASED",
@@ -2269,6 +2315,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Searing Chains Duration decreased from +1s to +0.8s",
+          "originalSource": "Level 15 Talent Searing Chains Duration decreased from +1s to +0.8s",
           "indentLevel": 1,
           "metric": "Level 15 Talent Searing Chains Duration",
           "changeType": "DECREASED",
@@ -2298,6 +2345,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Searing Chains Damage decreased from +60 to +50",
+          "originalSource": "Level 20 Talent Searing Chains Damage decreased from +60 to +50",
           "indentLevel": 1,
           "metric": "Level 20 Talent Searing Chains Damage",
           "changeType": "DECREASED",
@@ -2327,19 +2375,19 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1.5,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -12,
+        "farming": -5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 5.5,
-        "laning": -12,
+        "teamfight": 2,
+        "laning": -5,
         "siege": 0,
-        "utility": -20
+        "utility": -14
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2352,17 +2400,17 @@
     },
     {
       "version": "7.40b",
-      "date": "2026-06-14T21:53:54.866Z",
+      "date": "2026-06-17T18:07:14.948Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -12,
+        "farming": -5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 5.5,
-        "laning": -12,
+        "teamfight": 2,
+        "laning": -5,
         "siege": 0,
-        "utility": -20
+        "utility": -14
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2375,13 +2423,14 @@
     },
     {
       "version": "7.40c",
-      "date": "2026-06-14T21:53:54.872Z",
+      "date": "2026-06-17T18:07:14.950Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ember Spirit",
           "subEntityName": "Searing Chains",
           "rawNote": "Duration decreased from 1.5/2/2.5/3s to 1.25/1.75/2.25/2.75s",
+          "originalSource": "Duration decreased from 1.5/2/2.5/3s to 1.25/1.75/2.25/2.75s",
           "indentLevel": 1,
           "metric": "Duration",
           "changeType": "DECREASED",
@@ -2412,6 +2461,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Searing Chains",
           "rawNote": "Damage Per Second rescaled from 50/70/90/110 to 100",
+          "originalSource": "Damage Per Second rescaled from 50/70/90/110 to 100",
           "indentLevel": 1,
           "metric": "Damage Per Second",
           "changeType": "RESCALE",
@@ -2442,19 +2492,19 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
-        "utility": -10
+        "utility": -2
       },
       "totalVector": {
-        "farming": -12,
+        "farming": -5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0.5,
-        "laning": -12,
+        "teamfight": 1,
+        "laning": -5,
         "siege": 0,
-        "utility": -30
+        "utility": -16
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2467,12 +2517,13 @@
     },
     {
       "version": "7.41",
-      "date": "2026-06-14T21:53:54.887Z",
+      "date": "2026-06-17T18:07:14.959Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ember Spirit",
           "rawNote": "Strength gain increased from 2.3 to 2.5",
+          "originalSource": "Strength gain increased from 2.3 to 2.5",
           "indentLevel": 1,
           "metric": "Strength gain",
           "changeType": "INCREASED",
@@ -2502,6 +2553,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Immolation",
           "rawNote": "No longer levels with Fire Remnant",
+          "originalSource": "No longer levels with Fire Remnant",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -2529,6 +2581,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Immolation",
           "rawNote": "Damage per second changed from 10/18/26/34 to 10 + 1 per level",
+          "originalSource": "Damage per second changed from 10/18/26/34 to 10 + 1 per level",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2536,19 +2589,20 @@
             "subEntityId": 1484
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2556,6 +2610,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Immolation",
           "rawNote": "Radius increased from 175 to 200",
+          "originalSource": "Radius increased from 175 to 200",
           "indentLevel": 1,
           "metric": "Radius",
           "changeType": "INCREASED",
@@ -2585,7 +2640,8 @@
           "category": "hero",
           "entityName": "Ember Spirit",
           "subEntityName": "Immolation",
-          "rawNote": "Aghanim's Shard bonus radius decreased from 175 to 150 ",
+          "rawNote": "Aghanim's Shard bonus radius decreased from 175 to 150",
+          "originalSource": "Aghanim's Shard bonus radius decreased from 175 to 150 ",
           "indentLevel": 1,
           "metric": "Aghanim's Shard bonus radius",
           "changeType": "DECREASED",
@@ -2616,6 +2672,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Searing Chains",
           "rawNote": "Mana Cost decreased from 95/105/115/125 to 80/90/100/110",
+          "originalSource": "Mana Cost decreased from 95/105/115/125 to 80/90/100/110",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "DECREASED",
@@ -2646,6 +2703,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Sleight of Fist",
           "rawNote": "Bonus Hero Damage increased from 25/70/115/160 to 50/90/130/170",
+          "originalSource": "Bonus Hero Damage increased from 25/70/115/160 to 50/90/130/170",
           "indentLevel": 1,
           "metric": "Bonus Hero Damage",
           "changeType": "INCREASED",
@@ -2676,19 +2734,19 @@
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6,
+        "teamfight": 1,
         "laning": 1,
         "siege": 0,
         "utility": 1
       },
       "totalVector": {
-        "farming": -11,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6.5,
-        "laning": -11,
+        "teamfight": 2,
+        "laning": -4,
         "siege": 0,
-        "utility": -29
+        "utility": -15
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2697,21 +2755,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.41a",
-      "date": "2026-06-14T21:53:54.892Z",
+      "date": "2026-06-17T18:07:14.961Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -11,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6.5,
-        "laning": -11,
+        "teamfight": 2,
+        "laning": -4,
         "siege": 0,
-        "utility": -29
+        "utility": -15
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2724,12 +2782,13 @@
     },
     {
       "version": "7.41b",
-      "date": "2026-06-14T21:53:54.896Z",
+      "date": "2026-06-17T18:07:14.964Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ember Spirit",
           "rawNote": "Base Damage decreased by 3",
+          "originalSource": "Base Damage decreased by 3",
           "indentLevel": 1,
           "metric": "Base Damage",
           "changeType": "DECREASED",
@@ -2757,6 +2816,7 @@
           "category": "hero",
           "entityName": "Ember Spirit",
           "rawNote": "Damage at level 1 decreased from 55-59 to 52-56",
+          "originalSource": "Damage at level 1 decreased from 55-59 to 52-56",
           "indentLevel": 2,
           "metric": "Damage at level 1",
           "changeType": "DECREASED",
@@ -2786,6 +2846,7 @@
           "entityName": "Ember Spirit",
           "subEntityName": "Sleight of Fist",
           "rawNote": "Mana Cost increased from 60/65/70/75 to 75",
+          "originalSource": "Mana Cost increased from 60/65/70/75 to 75",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "INCREASED",
@@ -2822,13 +2883,13 @@
         "utility": -1
       },
       "totalVector": {
-        "farming": -12,
+        "farming": -5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6.5,
-        "laning": -12,
+        "teamfight": 2,
+        "laning": -5,
         "siege": 0,
-        "utility": -30
+        "utility": -16
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2841,12 +2902,13 @@
     },
     {
       "version": "7.41c",
-      "date": "2026-06-14T21:53:54.902Z",
+      "date": "2026-06-17T18:07:14.966Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ember Spirit",
           "rawNote": "Base Strength decreased from 22 to 21",
+          "originalSource": "Base Strength decreased from 22 to 21",
           "indentLevel": 1,
           "metric": "Base Strength",
           "changeType": "DECREASED",
@@ -2874,13 +2936,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -12,
+        "farming": -5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6.5,
-        "laning": -12,
+        "teamfight": 2,
+        "laning": -5,
         "siege": 0,
-        "utility": -30
+        "utility": -16
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2893,13 +2955,14 @@
     },
     {
       "version": "7.41d",
-      "date": "2026-06-14T21:53:54.908Z",
+      "date": "2026-06-17T18:07:14.969Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ember Spirit",
           "subEntityName": "Sleight of Fist",
           "rawNote": "Bonus Hero Damage decreased from 50/90/130/170 to 40/80/120/160",
+          "originalSource": "Bonus Hero Damage decreased from 50/90/130/170 to 40/80/120/160",
           "indentLevel": 1,
           "metric": "Bonus Hero Damage",
           "changeType": "DECREASED",
@@ -2928,42 +2991,54 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -12,
+        "farming": -5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6.5,
-        "laning": -12,
+        "teamfight": 2,
+        "laning": -5,
         "siege": 0,
-        "utility": -30
+        "utility": -16
       },
       "winrates": {
         "HERALD": {
-          "winrate": 0.4572,
-          "matchCount": 12234
+          "winrate": 0.4583,
+          "matchCount": 10694
         },
         "GUARDIAN": {
-          "winrate": 0.4706,
-          "matchCount": 27076
+          "winrate": 0.4759,
+          "matchCount": 23803
         },
         "CRUSADER": {
-          "winrate": 0.4798,
-          "matchCount": 34720
+          "winrate": 0.4812,
+          "matchCount": 30837
         },
         "ARCHON": {
-          "winrate": 0.4891,
-          "matchCount": 36782
+          "winrate": 0.4886,
+          "matchCount": 32076
         },
         "LEGEND": {
-          "winrate": 0.4964,
-          "matchCount": 31925
+          "winrate": 0.4986,
+          "matchCount": 28372
         },
         "ANCIENT": {
-          "winrate": 0.5041,
-          "matchCount": 23847
+          "winrate": 0.5072,
+          "matchCount": 21449
         },
         "DIVINE": {
-          "winrate": 0.5109,
-          "matchCount": 30185
+          "winrate": 0.5114,
+          "matchCount": 26987
+        },
+        "IMMORTAL": {
+          "winrate": 0,
+          "matchCount": 0
+        },
+        "PRO": {
+          "winrate": 0.2778,
+          "matchCount": 18
+        },
+        "GLOBAL_BLEND": {
+          "winrate": 0.5106,
+          "matchCount": 27005
         }
       },
       "temporalAssessment": null

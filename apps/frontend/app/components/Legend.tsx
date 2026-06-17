@@ -38,6 +38,13 @@ export default function Legend() {
         <span style={{ fontSize: '0.7rem', padding: '1px 5px', borderRadius: '3px', background: 'rgba(255, 152, 0, 0.2)', color: '#ffb74d', border: '1px solid #ff9800', fontWeight: 'bold' }}>RECOVERY</span>
         <span style={{ fontSize: '0.85rem', color: '#888', marginLeft: '4px' }}>(Post-Nerf Buff)</span>
       </div>
+
+      <span className={styles.legendLabel} style={{ marginLeft: '20px' }}>Classification:</span>
+      
+      <div className={styles.legendItem}>
+        <span style={{ fontSize: '0.6rem', padding: '2px 6px', borderRadius: '4px', background: 'rgba(255, 255, 255, 0.1)', color: '#ddd', border: '1px solid #666', fontWeight: 'bold' }}>SYSTEM ESTIMATE</span>
+        <span style={{ fontSize: '0.85rem', color: '#888', marginLeft: '4px' }}>(Requires Review)</span>
+      </div>
     </div>
   );
 }

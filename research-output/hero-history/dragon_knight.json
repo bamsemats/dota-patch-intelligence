@@ -3,12 +3,13 @@
   "history": [
     {
       "version": "7.33",
-      "date": "2026-06-14T21:53:54.725Z",
+      "date": "2026-06-17T18:07:14.843Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Dragon Knight",
           "rawNote": "Strength gain increased from 3.4 to 3.6",
+          "originalSource": "Strength gain increased from 3.4 to 3.6",
           "indentLevel": 1,
           "metric": "Strength gain",
           "changeType": "INCREASED",
@@ -38,6 +39,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Breathe Fire",
           "rawNote": "While in Elder Dragon Form, applies Corrosive Breath or Frost Breath effect corresponding to the current form",
+          "originalSource": "While in Elder Dragon Form, applies Corrosive Breath or Frost Breath effect corresponding to the current form",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -45,26 +47,28 @@
             "subEntityId": 5226
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ILLUSION_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
           "category": "hero",
           "entityName": "Dragon Knight",
           "subEntityName": "Dragon Tail",
-          "rawNote": "Stun Duration decreased from 2.25/2.5/2.75/3s to 1.8/2/2.2/2.4s ",
+          "rawNote": "Stun Duration decreased from 2.25/2.5/2.75/3s to 1.8/2/2.2/2.4s",
+          "originalSource": "Stun Duration decreased from 2.25/2.5/2.75/3s to 1.8/2/2.2/2.4s ",
           "indentLevel": 1,
           "metric": "Stun Duration",
           "changeType": "DECREASED",
@@ -95,6 +99,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Dragon Tail Stun Duration decreased from +0.5s to +0.4s",
+          "originalSource": "Level 15 Talent Dragon Tail Stun Duration decreased from +0.5s to +0.4s",
           "indentLevel": 1,
           "metric": "Level 15 Talent Dragon Tail Stun Duration",
           "changeType": "DECREASED",
@@ -124,6 +129,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Elder Dragon Form Attack Range decreased from +175 to +150",
+          "originalSource": "Level 20 Talent Elder Dragon Form Attack Range decreased from +175 to +150",
           "indentLevel": 1,
           "metric": "Level 20 Talent Elder Dragon Form Attack Range",
           "changeType": "DECREASED",
@@ -164,7 +170,7 @@
     },
     {
       "version": "7.33b",
-      "date": "2026-06-14T21:53:54.731Z",
+      "date": "2026-06-17T18:07:14.846Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -210,12 +216,13 @@
     },
     {
       "version": "7.33c",
-      "date": "2026-06-14T21:53:54.735Z",
+      "date": "2026-06-17T18:07:14.849Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Dragon Knight",
           "rawNote": "Base Movement Speed increased from 310 to 315",
+          "originalSource": "Base Movement Speed increased from 310 to 315",
           "indentLevel": 1,
           "metric": "Base Movement Speed",
           "changeType": "INCREASED",
@@ -244,6 +251,7 @@
           "category": "hero",
           "entityName": "Dragon Knight",
           "rawNote": "Base Attack Time improved from 1.7s to 1.6s",
+          "originalSource": "Base Attack Time improved from 1.7s to 1.6s",
           "indentLevel": 1,
           "metric": "Base Attack Time",
           "changeType": "INCREASED",
@@ -313,7 +321,7 @@
     },
     {
       "version": "7.33d",
-      "date": "2026-06-14T21:53:54.740Z",
+      "date": "2026-06-17T18:07:14.851Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -359,7 +367,7 @@
     },
     {
       "version": "7.33e",
-      "date": "2026-06-14T21:53:54.743Z",
+      "date": "2026-06-17T18:07:14.854Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -405,13 +413,14 @@
     },
     {
       "version": "7.34",
-      "date": "2026-06-14T21:53:54.750Z",
+      "date": "2026-06-17T18:07:14.859Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Dragon Knight",
           "subEntityName": "Dragon Tail",
           "rawNote": "Cast Range during Dragon Form increased from 400 to 450",
+          "originalSource": "Cast Range during Dragon Form increased from 400 to 450",
           "indentLevel": 1,
           "metric": "Cast Range during Dragon Form",
           "changeType": "INCREASED",
@@ -442,6 +451,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
           "rawNote": "Bonus Move Speed increased from 25/30/35/35 to 30/35/40/45",
+          "originalSource": "Bonus Move Speed increased from 25/30/35/35 to 30/35/40/45",
           "indentLevel": 1,
           "metric": "Bonus Move Speed",
           "changeType": "INCREASED",
@@ -472,6 +482,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
           "rawNote": "Corrosive Breath Damage per second increased from 20/20/20/30 to 25/25/25/35",
+          "originalSource": "Corrosive Breath Damage per second increased from 20/20/20/30 to 25/25/25/35",
           "indentLevel": 1,
           "metric": "Corrosive Breath Damage per second",
           "changeType": "INCREASED",
@@ -502,6 +513,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Breathe Fire Damage/Cast Range in Dragon Form increased from +75% to +85%",
+          "originalSource": "Level 20 Talent Breathe Fire Damage/Cast Range in Dragon Form increased from +75% to +85%",
           "indentLevel": 1,
           "metric": "Level 20 Talent Breathe Fire Damage/Cast Range in Dragon Form",
           "changeType": "INCREASED",
@@ -542,7 +554,7 @@
     },
     {
       "version": "7.34b",
-      "date": "2026-06-14T21:53:54.755Z",
+      "date": "2026-06-17T18:07:14.863Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -588,7 +600,7 @@
     },
     {
       "version": "7.34c",
-      "date": "2026-06-14T21:53:54.759Z",
+      "date": "2026-06-17T18:07:14.868Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -634,7 +646,7 @@
     },
     {
       "version": "7.34d",
-      "date": "2026-06-14T21:53:54.764Z",
+      "date": "2026-06-17T18:07:14.870Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -680,7 +692,7 @@
     },
     {
       "version": "7.34e",
-      "date": "2026-06-14T21:53:54.768Z",
+      "date": "2026-06-17T18:07:14.873Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -726,13 +738,14 @@
     },
     {
       "version": "7.35",
-      "date": "2026-06-14T21:53:54.772Z",
+      "date": "2026-06-17T18:07:14.877Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Dragon Knight",
           "subEntityName": "Breathe Fire",
           "rawNote": "Now applies the corresponding Corrosive Breath and Frost Breath debuffs from his current level of Elder Dragon Form even in human form",
+          "originalSource": "Now applies the corresponding Corrosive Breath and Frost Breath debuffs from his current level of Elder Dragon Form even in human form",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -777,7 +790,7 @@
     },
     {
       "version": "7.35b",
-      "date": "2026-06-14T21:53:54.775Z",
+      "date": "2026-06-17T18:07:14.879Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -800,13 +813,14 @@
     },
     {
       "version": "7.35c",
-      "date": "2026-06-14T21:53:54.782Z",
+      "date": "2026-06-17T18:07:14.881Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
           "rawNote": "Frost Breath movement slow decreased from 0/0/40/60% to 0/0/30/45%",
+          "originalSource": "Frost Breath movement slow decreased from 0/0/40/60% to 0/0/30/45%",
           "indentLevel": 1,
           "metric": "Frost Breath movement slow",
           "changeType": "DECREASED",
@@ -837,6 +851,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
           "rawNote": "Frost Breath attack slow decreased from 0/0/40/60 to 0/0/30/45",
+          "originalSource": "Frost Breath attack slow decreased from 0/0/40/60 to 0/0/30/45",
           "indentLevel": 1,
           "metric": "Frost Breath attack slow",
           "changeType": "DECREASED",
@@ -867,6 +882,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
           "rawNote": "Aghanim's Scepter Black Dragon Magic Resistance bonus decreased from 25% to 20%",
+          "originalSource": "Aghanim's Scepter Black Dragon Magic Resistance bonus decreased from 25% to 20%",
           "indentLevel": 1,
           "metric": "Aghanim's Scepter Black Dragon Magic Resistance bonus",
           "changeType": "DECREASED",
@@ -914,13 +930,14 @@
     },
     {
       "version": "7.35d",
-      "date": "2026-06-14T21:53:54.785Z",
+      "date": "2026-06-17T18:07:14.883Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
           "rawNote": "Illusions no longer apply dragon's on-hit effects if they have reverted back to melee form",
+          "originalSource": "Illusions no longer apply dragon's on-hit effects if they have reverted back to melee form",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -948,6 +965,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
           "rawNote": "Corrosive Breath debuff duration decreased from 5s to 3s",
+          "originalSource": "Corrosive Breath debuff duration decreased from 5s to 3s",
           "indentLevel": 1,
           "metric": "Corrosive Breath debuff duration",
           "changeType": "DECREASED",
@@ -978,6 +996,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Health decreased from +400 to +300",
+          "originalSource": "Level 15 Talent Health decreased from +400 to +300",
           "indentLevel": 1,
           "metric": "Level 15 Talent Health",
           "changeType": "DECREASED",
@@ -1024,21 +1043,22 @@
     },
     {
       "version": "7.36",
-      "date": "2026-06-14T21:53:54.791Z",
+      "date": "2026-06-17T18:07:14.889Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Dragon Knight",
           "rawNote": "Added new ability Wyrm's Wrath. It replaces Dragon Blood, providing and upgrading Dragon Knight's attack modifiers set by Facet",
+          "originalSource": "Added new ability Wyrm's Wrath. It replaces Dragon Blood, providing and upgrading Dragon Knight's attack modifiers set by Facet",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
             "entityId": 49
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -1048,7 +1068,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -1056,6 +1077,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Breathe Fire",
           "rawNote": "No longer applies dragon's attack effects",
+          "originalSource": "No longer applies dragon's attack effects",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1083,6 +1105,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Wyrm's Wrath",
           "rawNote": "New basic ability",
+          "originalSource": "New basic ability",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -1110,6 +1133,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Wyrm's Wrath",
           "rawNote": "Provides and improves attack modifiers of the chosen Facet for both human and dragon forms. Illusions can't apply Wyrm's Wrath's attack modifiers. Now upgradeable with Aghanim's Scepter. Improves attack modifiers of the chosen Facet",
+          "originalSource": "Provides and improves attack modifiers of the chosen Facet for both human and dragon forms. Illusions can't apply Wyrm's Wrath's attack modifiers. Now upgradeable with Aghanim's Scepter. Improves attack modifiers of the chosen Facet",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -1117,9 +1141,9 @@
             "subEntityId": 1752
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "VISION_INTERACTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -1129,7 +1153,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -1137,6 +1162,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
           "rawNote": "No longer changes Dragon type with each level. Now the dragon form depends on a chosen Hero Facet",
+          "originalSource": "No longer changes Dragon type with each level. Now the dragon form depends on a chosen Hero Facet",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1164,6 +1190,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
           "rawNote": "Now increases attack damage by 20/60/100",
+          "originalSource": "Now increases attack damage by 20/60/100",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -1191,6 +1218,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
           "rawNote": "Aghanim's Scepter Black Dragon form no longer increases Magic Resistance",
+          "originalSource": "Aghanim's Scepter Black Dragon form no longer increases Magic Resistance",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1235,7 +1263,7 @@
     },
     {
       "version": "7.36a",
-      "date": "2026-06-14T21:53:54.794Z",
+      "date": "2026-06-17T18:07:14.892Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1258,13 +1286,14 @@
     },
     {
       "version": "7.36b",
-      "date": "2026-06-14T21:53:54.797Z",
+      "date": "2026-06-17T18:07:14.896Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Dragon Knight",
           "subEntityName": "Dragon Blood",
           "rawNote": "Health Regen decreased from 4 to 2",
+          "originalSource": "Health Regen decreased from 4 to 2",
           "indentLevel": 1,
           "metric": "Health Regen",
           "changeType": "DECREASED",
@@ -1295,6 +1324,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Dragon Tail",
           "rawNote": "Damage decreased from 70/100/130/160 to 60/90/120/150",
+          "originalSource": "Damage decreased from 70/100/130/160 to 60/90/120/150",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "DECREASED",
@@ -1322,20 +1352,20 @@
         }
       ],
       "vectorDelta": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": -6,
-        "teamfight": -8,
-        "laning": -14,
+        "survivability": -5.5,
+        "teamfight": -1,
+        "laning": -6.5,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": -6,
-        "teamfight": -8,
-        "laning": -14,
+        "survivability": -5.5,
+        "teamfight": -1,
+        "laning": -6.5,
         "siege": 0,
         "utility": 0
       },
@@ -1350,15 +1380,15 @@
     },
     {
       "version": "7.36c",
-      "date": "2026-06-14T21:53:54.800Z",
+      "date": "2026-06-17T18:07:14.898Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": -6,
-        "teamfight": -8,
-        "laning": -14,
+        "survivability": -5.5,
+        "teamfight": -1,
+        "laning": -6.5,
         "siege": 0,
         "utility": 0
       },
@@ -1369,19 +1399,19 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.37",
-      "date": "2026-06-14T21:53:54.804Z",
+      "date": "2026-06-17T18:07:14.902Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": -6,
-        "teamfight": -8,
-        "laning": -14,
+        "survivability": -5.5,
+        "teamfight": -1,
+        "laning": -6.5,
         "siege": 0,
         "utility": 0
       },
@@ -1396,15 +1426,15 @@
     },
     {
       "version": "7.37b",
-      "date": "2026-06-14T21:53:54.807Z",
+      "date": "2026-06-17T18:07:14.904Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": -6,
-        "teamfight": -8,
-        "laning": -14,
+        "survivability": -5.5,
+        "teamfight": -1,
+        "laning": -6.5,
         "siege": 0,
         "utility": 0
       },
@@ -1419,15 +1449,15 @@
     },
     {
       "version": "7.37c",
-      "date": "2026-06-14T21:53:54.809Z",
+      "date": "2026-06-17T18:07:14.906Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": -6,
-        "teamfight": -8,
-        "laning": -14,
+        "survivability": -5.5,
+        "teamfight": -1,
+        "laning": -6.5,
         "siege": 0,
         "utility": 0
       },
@@ -1442,15 +1472,15 @@
     },
     {
       "version": "7.37d",
-      "date": "2026-06-14T21:53:54.812Z",
+      "date": "2026-06-17T18:07:14.908Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": -6,
-        "teamfight": -8,
-        "laning": -14,
+        "survivability": -5.5,
+        "teamfight": -1,
+        "laning": -6.5,
         "siege": 0,
         "utility": 0
       },
@@ -1465,15 +1495,15 @@
     },
     {
       "version": "7.37e",
-      "date": "2026-06-14T21:53:54.815Z",
+      "date": "2026-06-17T18:07:14.912Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": -6,
-        "teamfight": -8,
-        "laning": -14,
+        "survivability": -5.5,
+        "teamfight": -1,
+        "laning": -6.5,
         "siege": 0,
         "utility": 0
       },
@@ -1488,13 +1518,14 @@
     },
     {
       "version": "7.38",
-      "date": "2026-06-14T21:53:54.824Z",
+      "date": "2026-06-17T18:07:14.919Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
           "rawNote": "While in dragon form, attacks now apply 30/40/50/60% of the damage to targets in the attack splash AoE",
+          "originalSource": "While in dragon form, attacks now apply 30/40/50/60% of the damage to targets in the attack splash AoE",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -1502,26 +1533,28 @@
             "subEntityId": 5229
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "TARGETING_RULE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
           "category": "hero",
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
-          "rawNote": "Now improves effects of Wyrm's Wrath by 20/30/40/50% regardless of the chosen facet ",
+          "rawNote": "Now improves effects of Wyrm's Wrath by 20/30/40/50% regardless of the chosen facet",
+          "originalSource": "Now improves effects of Wyrm's Wrath by 20/30/40/50% regardless of the chosen facet ",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -1549,6 +1582,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
           "rawNote": "Attack splash AoE decreased from 350 to 275",
+          "originalSource": "Attack splash AoE decreased from 350 to 275",
           "indentLevel": 1,
           "metric": "Attack splash AoE",
           "changeType": "DECREASED",
@@ -1579,6 +1613,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
           "rawNote": "Bonus Move Speed decreased from 30/35/40/45 to 20/25/30/35",
+          "originalSource": "Bonus Move Speed decreased from 30/35/40/45 to 20/25/30/35",
           "indentLevel": 1,
           "metric": "Bonus Move Speed",
           "changeType": "DECREASED",
@@ -1609,6 +1644,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Fireball",
           "rawNote": "Radius decreased from 350 to 275",
+          "originalSource": "Radius decreased from 350 to 275",
           "indentLevel": 1,
           "metric": "Radius",
           "changeType": "DECREASED",
@@ -1639,6 +1675,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent +400 AoE Dragon Tail During Elder Dragon Form replaced with +50% Wyrm's Wrath effect during Elder Dragon Form",
+          "originalSource": "Level 25 Talent +400 AoE Dragon Tail During Elder Dragon Form replaced with +50% Wyrm's Wrath effect during Elder Dragon Form",
           "indentLevel": 1,
           "metric": "Level 25 Talent +400 AoE Dragon Tail During Elder Dragon Form",
           "changeType": "REWORK",
@@ -1667,17 +1704,17 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": -6,
-        "teamfight": -14,
-        "laning": -14,
+        "survivability": -5.5,
+        "teamfight": -2,
+        "laning": -6.5,
         "siege": 0,
         "utility": 0
       },
@@ -1692,15 +1729,15 @@
     },
     {
       "version": "7.38b",
-      "date": "2026-06-14T21:53:54.826Z",
+      "date": "2026-06-17T18:07:14.921Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": -6,
-        "teamfight": -14,
-        "laning": -14,
+        "survivability": -5.5,
+        "teamfight": -2,
+        "laning": -6.5,
         "siege": 0,
         "utility": 0
       },
@@ -1715,13 +1752,14 @@
     },
     {
       "version": "7.38c",
-      "date": "2026-06-14T21:53:54.830Z",
+      "date": "2026-06-17T18:07:14.924Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
           "rawNote": "Bonus Move Speed decreased from 20/25/30/35 to 20",
+          "originalSource": "Bonus Move Speed decreased from 20/25/30/35 to 20",
           "indentLevel": 1,
           "metric": "Bonus Move Speed",
           "changeType": "DECREASED",
@@ -1750,11 +1788,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": -6,
-        "teamfight": -14,
-        "laning": -14,
+        "survivability": -5.5,
+        "teamfight": -2,
+        "laning": -6.5,
         "siege": 0,
         "utility": 0
       },
@@ -1769,15 +1807,15 @@
     },
     {
       "version": "7.39",
-      "date": "2026-06-14T21:53:54.836Z",
+      "date": "2026-06-17T18:07:14.928Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": -6,
-        "teamfight": -14,
-        "laning": -14,
+        "survivability": -5.5,
+        "teamfight": -2,
+        "laning": -6.5,
         "siege": 0,
         "utility": 0
       },
@@ -1792,15 +1830,15 @@
     },
     {
       "version": "7.39b",
-      "date": "2026-06-14T21:53:54.839Z",
+      "date": "2026-06-17T18:07:14.930Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": -6,
-        "teamfight": -14,
-        "laning": -14,
+        "survivability": -5.5,
+        "teamfight": -2,
+        "laning": -6.5,
         "siege": 0,
         "utility": 0
       },
@@ -1815,15 +1853,15 @@
     },
     {
       "version": "7.39c",
-      "date": "2026-06-14T21:53:54.843Z",
+      "date": "2026-06-17T18:07:14.932Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": -6,
-        "teamfight": -14,
-        "laning": -14,
+        "survivability": -5.5,
+        "teamfight": -2,
+        "laning": -6.5,
         "siege": 0,
         "utility": 0
       },
@@ -1838,15 +1876,15 @@
     },
     {
       "version": "7.39d",
-      "date": "2026-06-14T21:53:54.848Z",
+      "date": "2026-06-17T18:07:14.937Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": -6,
-        "teamfight": -14,
-        "laning": -14,
+        "survivability": -5.5,
+        "teamfight": -2,
+        "laning": -6.5,
         "siege": 0,
         "utility": 0
       },
@@ -1861,15 +1899,15 @@
     },
     {
       "version": "7.39e",
-      "date": "2026-06-14T21:53:54.851Z",
+      "date": "2026-06-17T18:07:14.939Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": -6,
-        "teamfight": -14,
-        "laning": -14,
+        "survivability": -5.5,
+        "teamfight": -2,
+        "laning": -6.5,
         "siege": 0,
         "utility": 0
       },
@@ -1884,12 +1922,13 @@
     },
     {
       "version": "7.40",
-      "date": "2026-06-14T21:53:54.859Z",
+      "date": "2026-06-17T18:07:14.945Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Dragon Knight",
           "rawNote": "Base Agility decreased from 16 to 14",
+          "originalSource": "Base Agility decreased from 16 to 14",
           "indentLevel": 1,
           "metric": "Base Agility",
           "changeType": "DECREASED",
@@ -1919,6 +1958,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
           "rawNote": "Bonus Attack Damage decreased from 20/60/100/140 to 20/50/80/110",
+          "originalSource": "Bonus Attack Damage decreased from 20/60/100/140 to 20/50/80/110",
           "indentLevel": 1,
           "metric": "Bonus Attack Damage",
           "changeType": "DECREASED",
@@ -1949,6 +1989,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent 30% Breathe Fire Damage Reduction replaced with -2s Breathe Fire Cooldown",
+          "originalSource": "Level 10 Talent 30% Breathe Fire Damage Reduction replaced with -2s Breathe Fire Cooldown",
           "indentLevel": 1,
           "metric": "Level 10 Talent 30% Breathe Fire Damage Reduction",
           "changeType": "REWORK",
@@ -1977,6 +2018,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +85% Breathe Fire Damage/Cast Range in Dragon Form replaced with +60% Breathe Fire Damage/Cast Range",
+          "originalSource": "Level 20 Talent +85% Breathe Fire Damage/Cast Range in Dragon Form replaced with +60% Breathe Fire Damage/Cast Range",
           "indentLevel": 1,
           "metric": "Level 20 Talent +85% Breathe Fire Damage/Cast Range in Dragon Form",
           "changeType": "REWORK",
@@ -2003,11 +2045,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": -6,
-        "teamfight": -14,
-        "laning": -14,
+        "survivability": -5.5,
+        "teamfight": -2,
+        "laning": -6.5,
         "siege": 0,
         "utility": 0
       },
@@ -2022,15 +2064,15 @@
     },
     {
       "version": "7.40b",
-      "date": "2026-06-14T21:53:54.866Z",
+      "date": "2026-06-17T18:07:14.948Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": -6,
-        "teamfight": -14,
-        "laning": -14,
+        "survivability": -5.5,
+        "teamfight": -2,
+        "laning": -6.5,
         "siege": 0,
         "utility": 0
       },
@@ -2045,15 +2087,15 @@
     },
     {
       "version": "7.40c",
-      "date": "2026-06-14T21:53:54.872Z",
+      "date": "2026-06-17T18:07:14.950Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": -6,
-        "teamfight": -14,
-        "laning": -14,
+        "survivability": -5.5,
+        "teamfight": -2,
+        "laning": -6.5,
         "siege": 0,
         "utility": 0
       },
@@ -2068,12 +2110,13 @@
     },
     {
       "version": "7.41",
-      "date": "2026-06-14T21:53:54.887Z",
+      "date": "2026-06-17T18:07:14.959Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Dragon Knight",
           "rawNote": "Strength gain decreased from 3.6 to 3.2",
+          "originalSource": "Strength gain decreased from 3.6 to 3.2",
           "indentLevel": 1,
           "metric": "Strength gain",
           "changeType": "DECREASED",
@@ -2102,6 +2145,7 @@
           "category": "hero",
           "entityName": "Dragon Knight",
           "rawNote": "Base Movement Speed decreased from 315 to 310",
+          "originalSource": "Base Movement Speed decreased from 315 to 310",
           "indentLevel": 1,
           "metric": "Base Movement Speed",
           "changeType": "DECREASED",
@@ -2131,6 +2175,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Breathe Fire",
           "rawNote": "Damage Reduction rescaled from 30% to 20/24/28/32%",
+          "originalSource": "Damage Reduction rescaled from 30% to 20/24/28/32%",
           "indentLevel": 1,
           "metric": "Damage Reduction",
           "changeType": "RESCALE",
@@ -2161,6 +2206,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Breathe Fire",
           "rawNote": "Cast range increased from 600 to 1000",
+          "originalSource": "Cast range increased from 600 to 1000",
           "indentLevel": 1,
           "metric": "Cast range",
           "changeType": "INCREASED",
@@ -2191,6 +2237,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Breathe Fire",
           "rawNote": "Fixed the cast indicator not matching the actual damage range of the ability, and also to properly reflect cast range bonuses",
+          "originalSource": "Fixed the cast indicator not matching the actual damage range of the ability, and also to properly reflect cast range bonuses",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2198,9 +2245,9 @@
             "subEntityId": 5226
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -2210,7 +2257,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2218,6 +2266,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Dragon Tail",
           "rawNote": "No longer has an Elder Dragon specific cast range",
+          "originalSource": "No longer has an Elder Dragon specific cast range",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -2245,6 +2294,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Dragon Tail",
           "rawNote": "Now has 25 radius AoE by default",
+          "originalSource": "Now has 25 radius AoE by default",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2272,6 +2322,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Wyrm's Wrath",
           "rawNote": "Now always grants the 10/20/30/40 bonus magic damage on attack, and 25/50/75/100 Area of Effect bonus",
+          "originalSource": "Now always grants the 10/20/30/40 bonus magic damage on attack, and 25/50/75/100 Area of Effect bonus",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2299,6 +2350,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
           "rawNote": "Now evolves per level. The bonuses are cumulative",
+          "originalSource": "Now evolves per level. The bonuses are cumulative",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2326,6 +2378,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
           "rawNote": "Level 1: Green Dragon: Attacks apply a Corrosive poison that deals 25 magical damage per second for 3 seconds. Affects buildings",
+          "originalSource": "Level 1: Green Dragon: Attacks apply a Corrosive poison that deals 25 magical damage per second for 3 seconds. Affects buildings",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2333,19 +2386,20 @@
             "subEntityId": 5229
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2353,6 +2407,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
           "rawNote": "Level 2: Red Dragon: Attacks have splash damage that deals 75% of attack damage to all enemies within 275 AoE range",
+          "originalSource": "Level 2: Red Dragon: Attacks have splash damage that deals 75% of attack damage to all enemies within 275 AoE range",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2360,19 +2415,20 @@
             "subEntityId": 5229
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2380,6 +2436,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
           "rawNote": "Applies Corrosive poison to all affected units. Other attack modifiers will affect only the primary target",
+          "originalSource": "Applies Corrosive poison to all affected units. Other attack modifiers will affect only the primary target",
           "indentLevel": 3,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2387,19 +2444,20 @@
             "subEntityId": 5229
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "TARGETING_RULE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2407,6 +2465,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
           "rawNote": "Level 3: Blue Dragon: Attacks also apply a Frost debuff, which pierces Debuff Immunity and slows attack by 50 and movement by 30%",
+          "originalSource": "Level 3: Blue Dragon: Attacks also apply a Frost debuff, which pierces Debuff Immunity and slows attack by 50 and movement by 30%",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2414,19 +2473,20 @@
             "subEntityId": 5229
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "SPELL_IMMUNITY_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 9,
+              "Guardian": 9,
+              "Crusader": 9,
+              "Archon": 9,
+              "Legend": 9,
+              "Ancient": 9,
+              "Divine": 9
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2434,6 +2494,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
           "rawNote": "Splash attacks apply Corrosive poison and Frost slow to all affected units. Other attack modifiers will affect only the primary target",
+          "originalSource": "Splash attacks apply Corrosive poison and Frost slow to all affected units. Other attack modifiers will affect only the primary target",
           "indentLevel": 3,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2441,19 +2502,20 @@
             "subEntityId": 5229
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "TARGETING_RULE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2461,6 +2523,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
           "rawNote": "Bonus Move Speed increased from 20 to 25/30/35",
+          "originalSource": "Bonus Move Speed increased from 20 to 25/30/35",
           "indentLevel": 1,
           "metric": "Bonus Move Speed",
           "changeType": "INCREASED",
@@ -2491,6 +2554,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
           "rawNote": "No longer provides bonus attack damage",
+          "originalSource": "No longer provides bonus attack damage",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -2517,7 +2581,8 @@
           "category": "hero",
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
-          "rawNote": "Now also increases cast range of all abilities by 350 ",
+          "rawNote": "Now also increases cast range of all abilities by 350",
+          "originalSource": "Now also increases cast range of all abilities by 350 ",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2545,6 +2610,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
           "rawNote": "Aghanim's Scepter no longer improves Wyrm's Wrath effectiveness while in Dragon Form",
+          "originalSource": "Aghanim's Scepter no longer improves Wyrm's Wrath effectiveness while in Dragon Form",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -2572,6 +2638,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
           "rawNote": "Aghanim's Scepter Black Dragon stats slightly rescaled",
+          "originalSource": "Aghanim's Scepter Black Dragon stats slightly rescaled",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2599,6 +2666,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Elder Dragon Form",
           "rawNote": "Level 4 Black Dragon has the following stats: 40 Bonus Move Speed, 35 Corrosive Damage, 100% Splash Damage, 350 Splash Radius, 65 Attack Slow, 45% Movement Slow, and also provides +20% Magic Resistance and free pathing",
+          "originalSource": "Level 4 Black Dragon has the following stats: 40 Bonus Move Speed, 35 Corrosive Damage, 100% Splash Damage, 350 Splash Radius, 65 Attack Slow, 45% Movement Slow, and also provides +20% Magic Resistance and free pathing",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2606,19 +2674,20 @@
             "subEntityId": 5229
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "AURA_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2626,6 +2695,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Fireball",
           "rawNote": "No longer has an Elder Dragon specific cast range",
+          "originalSource": "No longer has an Elder Dragon specific cast range",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -2653,6 +2723,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Fireball",
           "rawNote": "Damage per second increased from 75 to 85",
+          "originalSource": "Damage per second increased from 75 to 85",
           "indentLevel": 1,
           "metric": "Damage per second",
           "changeType": "INCREASED",
@@ -2683,6 +2754,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Fireball",
           "rawNote": "Duration decreased from 8s to 6s",
+          "originalSource": "Duration decreased from 8s to 6s",
           "indentLevel": 1,
           "metric": "Duration",
           "changeType": "DECREASED",
@@ -2713,6 +2785,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +60% Breathe Fire Damage/Cast Range replaced with +200 Breathe Fire Damage",
+          "originalSource": "Level 20 Talent +60% Breathe Fire Damage/Cast Range replaced with +200 Breathe Fire Damage",
           "indentLevel": 1,
           "metric": "Level 20 Talent +60% Breathe Fire Damage/Cast Range",
           "changeType": "REWORK",
@@ -2741,6 +2814,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent +50% Wyrm's Wrath effect during Elder Dragon Form replaced with +50% Wyrm's Wrath Bonuses",
+          "originalSource": "Level 25 Talent +50% Wyrm's Wrath effect during Elder Dragon Form replaced with +50% Wyrm's Wrath Bonuses",
           "indentLevel": 1,
           "metric": "Level 25 Talent +50% Wyrm's Wrath effect during Elder Dragon Form",
           "changeType": "REWORK",
@@ -2769,19 +2843,19 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
-        "utility": 5
+        "utility": 1
       },
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": -6,
-        "teamfight": -19,
-        "laning": -14,
+        "survivability": -5.5,
+        "teamfight": -3,
+        "laning": -6.5,
         "siege": 0,
-        "utility": 5
+        "utility": 1
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2794,17 +2868,17 @@
     },
     {
       "version": "7.41a",
-      "date": "2026-06-14T21:53:54.892Z",
+      "date": "2026-06-17T18:07:14.961Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": -6,
-        "teamfight": -19,
-        "laning": -14,
+        "survivability": -5.5,
+        "teamfight": -3,
+        "laning": -6.5,
         "siege": 0,
-        "utility": 5
+        "utility": 1
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2817,17 +2891,17 @@
     },
     {
       "version": "7.41b",
-      "date": "2026-06-14T21:53:54.896Z",
+      "date": "2026-06-17T18:07:14.963Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": -6,
-        "teamfight": -19,
-        "laning": -14,
+        "survivability": -5.5,
+        "teamfight": -3,
+        "laning": -6.5,
         "siege": 0,
-        "utility": 5
+        "utility": 1
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2840,17 +2914,17 @@
     },
     {
       "version": "7.41c",
-      "date": "2026-06-14T21:53:54.901Z",
+      "date": "2026-06-17T18:07:14.966Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": -6,
-        "teamfight": -19,
-        "laning": -14,
+        "survivability": -5.5,
+        "teamfight": -3,
+        "laning": -6.5,
         "siege": 0,
-        "utility": 5
+        "utility": 1
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2863,13 +2937,14 @@
     },
     {
       "version": "7.41d",
-      "date": "2026-06-14T21:53:54.907Z",
+      "date": "2026-06-17T18:07:14.968Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Dragon Knight",
           "subEntityName": "Dragon Tail",
           "rawNote": "AoE increased from 25 to 50",
+          "originalSource": "AoE increased from 25 to 50",
           "indentLevel": 1,
           "metric": "AoE",
           "changeType": "INCREASED",
@@ -2900,6 +2975,7 @@
           "entityName": "Dragon Knight",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Breathe Fire Damage increased from +200 to +220",
+          "originalSource": "Level 20 Talent Breathe Fire Damage increased from +200 to +220",
           "indentLevel": 1,
           "metric": "Level 20 Talent Breathe Fire Damage",
           "changeType": "INCREASED",
@@ -2927,45 +3003,57 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": -6,
-        "teamfight": -19,
-        "laning": -14,
+        "survivability": -5.5,
+        "teamfight": -3,
+        "laning": -6.5,
         "siege": 0,
-        "utility": 5
+        "utility": 1
       },
       "winrates": {
         "HERALD": {
-          "winrate": 0.5057,
-          "matchCount": 17169
+          "winrate": 0.4999,
+          "matchCount": 15724
         },
         "GUARDIAN": {
-          "winrate": 0.4938,
-          "matchCount": 28268
+          "winrate": 0.4958,
+          "matchCount": 26382
         },
         "CRUSADER": {
-          "winrate": 0.4905,
-          "matchCount": 27235
+          "winrate": 0.491,
+          "matchCount": 25255
         },
         "ARCHON": {
-          "winrate": 0.4898,
-          "matchCount": 21115
+          "winrate": 0.4946,
+          "matchCount": 19613
         },
         "LEGEND": {
-          "winrate": 0.4853,
-          "matchCount": 13934
+          "winrate": 0.493,
+          "matchCount": 12975
         },
         "ANCIENT": {
-          "winrate": 0.4933,
-          "matchCount": 7553
+          "winrate": 0.4822,
+          "matchCount": 7028
         },
         "DIVINE": {
-          "winrate": 0.4836,
-          "matchCount": 6327
+          "winrate": 0.4732,
+          "matchCount": 5719
+        },
+        "IMMORTAL": {
+          "winrate": 0,
+          "matchCount": 0
+        },
+        "PRO": {
+          "winrate": 0,
+          "matchCount": 0
+        },
+        "GLOBAL_BLEND": {
+          "winrate": 0.4732,
+          "matchCount": 5719
         }
       },
-      "temporalAssessment": "Net Gain"
+      "temporalAssessment": null
     }
   ]
 }

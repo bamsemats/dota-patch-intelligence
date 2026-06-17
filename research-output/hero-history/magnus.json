@@ -3,12 +3,13 @@
   "history": [
     {
       "version": "7.33",
-      "date": "2026-06-14T21:53:54.726Z",
+      "date": "2026-06-17T18:07:14.843Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Now is a Universal Hero",
+          "originalSource": "Now is a Universal Hero",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -34,6 +35,7 @@
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Base Damage decreased from 32-40 to 17-25",
+          "originalSource": "Base Damage decreased from 32-40 to 17-25",
           "indentLevel": 1,
           "metric": "Base Damage",
           "changeType": "DECREASED",
@@ -62,6 +64,7 @@
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Strength gain decreased from 3.5 to 3.0",
+          "originalSource": "Strength gain decreased from 3.5 to 3.0",
           "indentLevel": 1,
           "metric": "Strength gain",
           "changeType": "DECREASED",
@@ -90,6 +93,7 @@
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Agility gain decreased from 2.5 to 1.9",
+          "originalSource": "Agility gain decreased from 2.5 to 1.9",
           "indentLevel": 1,
           "metric": "Agility gain",
           "changeType": "DECREASED",
@@ -118,6 +122,7 @@
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Intelligence gain decreased from 2.1 to 1.6",
+          "originalSource": "Intelligence gain decreased from 2.1 to 1.6",
           "indentLevel": 1,
           "metric": "Intelligence gain",
           "changeType": "DECREASED",
@@ -146,6 +151,7 @@
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Damage on level 1 decreased by 5 (from 57-65 to 52-60)",
+          "originalSource": "Damage on level 1 decreased by 5 (from 57-65 to 52-60)",
           "indentLevel": 1,
           "metric": "Damage on level 1",
           "changeType": "DECREASED",
@@ -174,6 +180,7 @@
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Damage gain per level increased from +3.5 to +3.9",
+          "originalSource": "Damage gain per level increased from +3.5 to +3.9",
           "indentLevel": 1,
           "metric": "Damage gain per level",
           "changeType": "INCREASED",
@@ -203,6 +210,7 @@
           "entityName": "Magnus",
           "subEntityName": "Empower",
           "rawNote": "Mana Cost decreased from 45/60/75/90 to 45/55/65/75",
+          "originalSource": "Mana Cost decreased from 45/60/75/90 to 45/55/65/75",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "DECREASED",
@@ -233,6 +241,7 @@
           "entityName": "Magnus",
           "subEntityName": "Shockwave",
           "rawNote": "Mana Cost decreased from 80/90/100/110 to 70/80/90/110",
+          "originalSource": "Mana Cost decreased from 80/90/100/110 to 70/80/90/110",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "DECREASED",
@@ -263,6 +272,7 @@
           "entityName": "Magnus",
           "subEntityName": "Shockwave",
           "rawNote": "Aghanim's Scepter Upgrade removed",
+          "originalSource": "Aghanim's Scepter Upgrade removed",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -290,6 +300,7 @@
           "entityName": "Magnus",
           "subEntityName": "Shockwave",
           "rawNote": "Now upgradable by Aghanim's Shard",
+          "originalSource": "Now upgradable by Aghanim's Shard",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -317,6 +328,7 @@
           "entityName": "Magnus",
           "subEntityName": "Shockwave",
           "rawNote": "Increases range by 400 and wave speed by 300. Causes Shockwave to return towards the caster's original cast location after reaching max length, hitting enemies a second time for 50% of the damage",
+          "originalSource": "Increases range by 400 and wave speed by 300. Causes Shockwave to return towards the caster's original cast location after reaching max length, hitting enemies a second time for 50% of the damage",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -324,26 +336,28 @@
             "subEntityId": 5518
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ROSHAN_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
           "category": "hero",
           "entityName": "Magnus",
           "subEntityName": "Reverse Polarity",
-          "rawNote": "Stun Duration decreased from 2.75/3.25/3.75s to 2.5/3.0/3.5s ",
+          "rawNote": "Stun Duration decreased from 2.75/3.25/3.75s to 2.5/3.0/3.5s",
+          "originalSource": "Stun Duration decreased from 2.75/3.25/3.75s to 2.5/3.0/3.5s ",
           "indentLevel": 1,
           "metric": "Stun Duration",
           "changeType": "DECREASED",
@@ -374,6 +388,7 @@
           "entityName": "Magnus",
           "subEntityName": "Horn Toss",
           "rawNote": "Now granted by Aghanim's Scepter",
+          "originalSource": "Now granted by Aghanim's Scepter",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -401,6 +416,7 @@
           "entityName": "Magnus",
           "subEntityName": "Horn Toss",
           "rawNote": "Now stuns for 0.75s instead of slowing",
+          "originalSource": "Now stuns for 0.75s instead of slowing",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -428,6 +444,7 @@
           "entityName": "Magnus",
           "subEntityName": "Horn Toss",
           "rawNote": "Damage increased from 200 to 275",
+          "originalSource": "Damage increased from 200 to 275",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "INCREASED",
@@ -458,6 +475,7 @@
           "entityName": "Magnus",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent +16 Strength per hero hit with Reverse Polarity replaced with +5 All Stats per hero hit with Reverse Polarity",
+          "originalSource": "Level 15 Talent +16 Strength per hero hit with Reverse Polarity replaced with +5 All Stats per hero hit with Reverse Polarity",
           "indentLevel": 1,
           "metric": "Level 15 Talent +16 Strength per hero hit with Reverse Polarity",
           "changeType": "REWORK",
@@ -486,6 +504,7 @@
           "entityName": "Magnus",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent Reverse Polarity Stun Duration decreased from +1s to +0.8s",
+          "originalSource": "Level 25 Talent Reverse Polarity Stun Duration decreased from +1s to +0.8s",
           "indentLevel": 1,
           "metric": "Level 25 Talent Reverse Polarity Stun Duration",
           "changeType": "DECREASED",
@@ -511,27 +530,36 @@
           }
         }
       ],
-      "vectorDelta": null,
-      "totalVector": {
-        "farming": 0,
+      "vectorDelta": {
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": 0,
+        "teamfight": 1,
+        "laning": 3,
         "siege": 0,
-        "utility": 0
+        "utility": 2
+      },
+      "totalVector": {
+        "farming": 3,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 1,
+        "laning": 3,
+        "siege": 0,
+        "utility": 2
       },
       "winrates": {},
       "temporalAssessment": null
     },
     {
       "version": "7.33b",
-      "date": "2026-06-14T21:53:54.731Z",
+      "date": "2026-06-17T18:07:14.846Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Strength gain increased from 3.0 to 3.1",
+          "originalSource": "Strength gain increased from 3.0 to 3.1",
           "indentLevel": 1,
           "metric": "Strength gain",
           "changeType": "INCREASED",
@@ -560,6 +588,7 @@
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Agility gain increased from 1.9 to 2.0",
+          "originalSource": "Agility gain increased from 1.9 to 2.0",
           "indentLevel": 1,
           "metric": "Agility gain",
           "changeType": "INCREASED",
@@ -589,6 +618,7 @@
           "entityName": "Magnus",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent All Stats per hero hit with Reverse Polarity increased from +5 to +6",
+          "originalSource": "Level 15 Talent All Stats per hero hit with Reverse Polarity increased from +5 to +6",
           "indentLevel": 1,
           "metric": "Level 15 Talent All Stats per hero hit with Reverse Polarity",
           "changeType": "INCREASED",
@@ -616,13 +646,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": 0,
+        "teamfight": 1,
+        "laning": 3,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "HERALD": {
@@ -658,12 +688,13 @@
     },
     {
       "version": "7.33c",
-      "date": "2026-06-14T21:53:54.736Z",
+      "date": "2026-06-17T18:07:14.849Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Base Damage decreased by 8 (Level 1 damage decreased by 2)",
+          "originalSource": "Base Damage decreased by 8 (Level 1 damage decreased by 2)",
           "indentLevel": 1,
           "metric": "Base Damage",
           "changeType": "DECREASED",
@@ -690,13 +721,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": 0,
+        "teamfight": 1,
+        "laning": 3,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "HERALD": {
@@ -732,12 +763,13 @@
     },
     {
       "version": "7.33d",
-      "date": "2026-06-14T21:53:54.740Z",
+      "date": "2026-06-17T18:07:14.851Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Base Agility decreased from 15 to 9",
+          "originalSource": "Base Agility decreased from 15 to 9",
           "indentLevel": 1,
           "metric": "Base Agility",
           "changeType": "DECREASED",
@@ -767,6 +799,7 @@
           "entityName": "Magnus",
           "subEntityName": "Empower",
           "rawNote": "Bonus effect on self-cast decreased from 75% to 50%",
+          "originalSource": "Bonus effect on self-cast decreased from 75% to 50%",
           "indentLevel": 1,
           "metric": "Bonus effect on self-cast",
           "changeType": "DECREASED",
@@ -795,13 +828,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": 0,
+        "teamfight": 1,
+        "laning": 3,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "HERALD": {
@@ -837,17 +870,17 @@
     },
     {
       "version": "7.33e",
-      "date": "2026-06-14T21:53:54.744Z",
+      "date": "2026-06-17T18:07:14.854Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": 0,
+        "teamfight": 1,
+        "laning": 3,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "HERALD": {
@@ -883,13 +916,14 @@
     },
     {
       "version": "7.34",
-      "date": "2026-06-14T21:53:54.750Z",
+      "date": "2026-06-17T18:07:14.859Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Magnus",
           "subEntityName": "Horn Toss",
           "rawNote": "Now stuns enemies for the duration of the air time",
+          "originalSource": "Now stuns enemies for the duration of the air time",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -917,6 +951,7 @@
           "entityName": "Magnus",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent All Stats per hero hit with Reverse Polarity increased from +6 to +8",
+          "originalSource": "Level 15 Talent All Stats per hero hit with Reverse Polarity increased from +6 to +8",
           "indentLevel": 1,
           "metric": "Level 15 Talent All Stats per hero hit with Reverse Polarity",
           "changeType": "INCREASED",
@@ -944,26 +979,27 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": 0,
+        "teamfight": 1,
+        "laning": 3,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {},
       "temporalAssessment": null
     },
     {
       "version": "7.34b",
-      "date": "2026-06-14T21:53:54.755Z",
+      "date": "2026-06-17T18:07:14.863Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Magnus",
           "subEntityName": "Shockwave",
           "rawNote": "Aghanim's Shard Damage Multiplier on return increased from 50% to 75%",
+          "originalSource": "Aghanim's Shard Damage Multiplier on return increased from 50% to 75%",
           "indentLevel": 1,
           "metric": "Aghanim's Shard Damage Multiplier on return",
           "changeType": "INCREASED",
@@ -994,6 +1030,7 @@
           "entityName": "Magnus",
           "subEntityName": "Empower",
           "rawNote": "Bonus Damage increased from 12/20/28/36% to 16/24/32/40%",
+          "originalSource": "Bonus Damage increased from 12/20/28/36% to 16/24/32/40%",
           "indentLevel": 1,
           "metric": "Bonus Damage",
           "changeType": "INCREASED",
@@ -1024,6 +1061,7 @@
           "entityName": "Magnus",
           "subEntityName": "Empower",
           "rawNote": "Cleave Damage increased from 10/20/30/40% to 16/24/32/40%",
+          "originalSource": "Cleave Damage increased from 10/20/30/40% to 16/24/32/40%",
           "indentLevel": 1,
           "metric": "Cleave Damage",
           "changeType": "INCREASED",
@@ -1052,13 +1090,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": 0,
+        "teamfight": 1,
+        "laning": 3,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "HERALD": {
@@ -1094,12 +1132,13 @@
     },
     {
       "version": "7.34c",
-      "date": "2026-06-14T21:53:54.759Z",
+      "date": "2026-06-17T18:07:14.868Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Base Attack Range increased from 150 to 200",
+          "originalSource": "Base Attack Range increased from 150 to 200",
           "indentLevel": 1,
           "metric": "Base Attack Range",
           "changeType": "INCREASED",
@@ -1129,6 +1168,7 @@
           "entityName": "Magnus",
           "subEntityName": "Reverse Polarity",
           "rawNote": "Pull Radius increased from 410 to 430",
+          "originalSource": "Pull Radius increased from 410 to 430",
           "indentLevel": 1,
           "metric": "Pull Radius",
           "changeType": "INCREASED",
@@ -1157,13 +1197,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": 0,
+        "teamfight": 1,
+        "laning": 3,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "HERALD": {
@@ -1199,13 +1239,14 @@
     },
     {
       "version": "7.34d",
-      "date": "2026-06-14T21:53:54.764Z",
+      "date": "2026-06-17T18:07:14.871Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Magnus",
           "subEntityName": "Shockwave",
           "rawNote": "Mana Cost rescaled from 70/80/90/100 to 75",
+          "originalSource": "Mana Cost rescaled from 70/80/90/100 to 75",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "RESCALE",
@@ -1234,13 +1275,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": 0,
+        "teamfight": 1,
+        "laning": 3,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "HERALD": {
@@ -1276,17 +1317,17 @@
     },
     {
       "version": "7.34e",
-      "date": "2026-06-14T21:53:54.768Z",
+      "date": "2026-06-17T18:07:14.873Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": 0,
+        "teamfight": 1,
+        "laning": 3,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "HERALD": {
@@ -1322,13 +1363,14 @@
     },
     {
       "version": "7.35",
-      "date": "2026-06-14T21:53:54.772Z",
+      "date": "2026-06-17T18:07:14.877Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Magnus",
           "subEntityName": "Skewer",
           "rawNote": "Now additionally deals 6/9/12/15% of distance traveled as damage",
+          "originalSource": "Now additionally deals 6/9/12/15% of distance traveled as damage",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -1356,6 +1398,7 @@
           "entityName": "Magnus",
           "subEntityName": "Skewer",
           "rawNote": "Damage decreased from 90/180/270/360 to 70/140/210/280",
+          "originalSource": "Damage decreased from 90/180/270/360 to 70/140/210/280",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "DECREASED",
@@ -1386,6 +1429,7 @@
           "entityName": "Magnus",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent All Stats per hero hit with Reverse Polarity increased from +8 to +10",
+          "originalSource": "Level 15 Talent All Stats per hero hit with Reverse Polarity increased from +8 to +10",
           "indentLevel": 1,
           "metric": "Level 15 Talent All Stats per hero hit with Reverse Polarity",
           "changeType": "INCREASED",
@@ -1412,22 +1456,22 @@
         }
       ],
       "vectorDelta": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8,
-        "laning": -8,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -8,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": 2,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1440,17 +1484,17 @@
     },
     {
       "version": "7.35b",
-      "date": "2026-06-14T21:53:54.775Z",
+      "date": "2026-06-17T18:07:14.879Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": 2,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1463,13 +1507,14 @@
     },
     {
       "version": "7.35c",
-      "date": "2026-06-14T21:53:54.782Z",
+      "date": "2026-06-17T18:07:14.881Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Magnus",
           "subEntityName": "Skewer",
-          "rawNote": "Fixed interactions between Skewer and other forced movement abilities (e.g: Primal Beast Pulverize) causing Skewer to deal damage relative to the distance between the target and the center of the map.",
+          "rawNote": "Fixed interactions between Skewer and other forced movement abilities (e.g: Primal Beast Pulverize) causing Skewer to deal damage relative to the distance between the target and the center of the map",
+          "originalSource": "Fixed interactions between Skewer and other forced movement abilities (e.g: Primal Beast Pulverize) causing Skewer to deal damage relative to the distance between the target and the center of the map.",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -1477,9 +1522,9 @@
             "subEntityId": 5520
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -1489,7 +1534,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -1497,6 +1543,7 @@
           "entityName": "Magnus",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Skewer Cooldown Reduction decreased from 7s to 5s",
+          "originalSource": "Level 15 Talent Skewer Cooldown Reduction decreased from 7s to 5s",
           "indentLevel": 1,
           "metric": "Level 15 Talent Skewer Cooldown Reduction",
           "changeType": "DECREASED",
@@ -1526,6 +1573,7 @@
           "entityName": "Magnus",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Skewer Range decreased from +375 to +275",
+          "originalSource": "Level 20 Talent Skewer Range decreased from +375 to +275",
           "indentLevel": 1,
           "metric": "Level 20 Talent Skewer Range",
           "changeType": "DECREASED",
@@ -1553,13 +1601,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": 2,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1568,21 +1616,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": "Net Gain"
+      "temporalAssessment": null
     },
     {
       "version": "7.35d",
-      "date": "2026-06-14T21:53:54.785Z",
+      "date": "2026-06-17T18:07:14.884Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": 2,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1595,13 +1643,14 @@
     },
     {
       "version": "7.36",
-      "date": "2026-06-14T21:53:54.791Z",
+      "date": "2026-06-17T18:07:14.890Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Magnus",
           "subEntityName": "Shockwave",
           "rawNote": "Slow Duration rescaled from 0.9s to 0.7/0.8/0.9/1.0s",
+          "originalSource": "Slow Duration rescaled from 0.9s to 0.7/0.8/0.9/1.0s",
           "indentLevel": 1,
           "metric": "Slow Duration",
           "changeType": "RESCALE",
@@ -1632,6 +1681,7 @@
           "entityName": "Magnus",
           "subEntityName": "Shockwave",
           "rawNote": "Projectile Speed increased from 900 to 1200",
+          "originalSource": "Projectile Speed increased from 900 to 1200",
           "indentLevel": 1,
           "metric": "Projectile Speed",
           "changeType": "INCREASED",
@@ -1662,6 +1712,7 @@
           "entityName": "Magnus",
           "subEntityName": "Shockwave",
           "rawNote": "Aghanim's Shard Projectile Speed Bonus increased from 300 to 400",
+          "originalSource": "Aghanim's Shard Projectile Speed Bonus increased from 300 to 400",
           "indentLevel": 1,
           "metric": "Aghanim's Shard Projectile Speed Bonus",
           "changeType": "INCREASED",
@@ -1692,6 +1743,7 @@
           "entityName": "Magnus",
           "subEntityName": "Empower",
           "rawNote": "Duration rescaled from 35s to 30/33/36/39s",
+          "originalSource": "Duration rescaled from 35s to 30/33/36/39s",
           "indentLevel": 1,
           "metric": "Duration",
           "changeType": "RESCALE",
@@ -1722,6 +1774,7 @@
           "entityName": "Magnus",
           "subEntityName": "Skewer",
           "rawNote": "No longer slows enemy attack speed by 10/20/30/40",
+          "originalSource": "No longer slows enemy attack speed by 10/20/30/40",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1749,6 +1802,7 @@
           "entityName": "Magnus",
           "subEntityName": "Skewer",
           "rawNote": "No longer deals 6/9/12/15% of the distance as damage",
+          "originalSource": "No longer deals 6/9/12/15% of the distance as damage",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1776,6 +1830,7 @@
           "entityName": "Magnus",
           "subEntityName": "Reverse Polarity",
           "rawNote": "Damage increased from 75/150/225 to 100/200/300",
+          "originalSource": "Damage increased from 75/150/225 to 100/200/300",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "INCREASED",
@@ -1806,6 +1861,7 @@
           "entityName": "Magnus",
           "subEntityName": "Horn Toss",
           "rawNote": "Damage increased from 275 to 300",
+          "originalSource": "Damage increased from 275 to 300",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "INCREASED",
@@ -1836,6 +1892,7 @@
           "entityName": "Magnus",
           "subEntityName": "Horn Toss",
           "rawNote": "Mana Cost decreased from 125 to 100",
+          "originalSource": "Mana Cost decreased from 125 to 100",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "DECREASED",
@@ -1863,22 +1920,22 @@
         }
       ],
       "vectorDelta": {
-        "farming": 17,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 16,
-        "laning": 17,
+        "teamfight": 2,
+        "laning": 3,
         "siege": 0,
         "utility": 1
       },
       "totalVector": {
-        "farming": 9,
+        "farming": 5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 9,
+        "teamfight": 2,
+        "laning": 5,
         "siege": 0,
-        "utility": 1
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1891,17 +1948,17 @@
     },
     {
       "version": "7.36a",
-      "date": "2026-06-14T21:53:54.794Z",
+      "date": "2026-06-17T18:07:14.892Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 9,
+        "teamfight": 2,
+        "laning": 5,
         "siege": 0,
-        "utility": 1
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1914,12 +1971,13 @@
     },
     {
       "version": "7.36b",
-      "date": "2026-06-14T21:53:54.797Z",
+      "date": "2026-06-17T18:07:14.896Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Base Intelligence increased from 19 to 20",
+          "originalSource": "Base Intelligence increased from 19 to 20",
           "indentLevel": 1,
           "metric": "Base Intelligence",
           "changeType": "INCREASED",
@@ -1949,6 +2007,7 @@
           "entityName": "Magnus",
           "subEntityName": "Solid Core",
           "rawNote": "Now reduces knockback effects instead of forced movement",
+          "originalSource": "Now reduces knockback effects instead of forced movement",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -1976,6 +2035,7 @@
           "entityName": "Magnus",
           "subEntityName": "Skewer",
           "rawNote": "Damage increased from 70/140/210/280 to 75/150/225/300",
+          "originalSource": "Damage increased from 70/140/210/280 to 75/150/225/300",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "INCREASED",
@@ -2006,6 +2066,7 @@
           "entityName": "Magnus",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent All Stats per hero hit with Reverse Polarity increased from +10 to +12",
+          "originalSource": "Level 15 Talent All Stats per hero hit with Reverse Polarity increased from +10 to +12",
           "indentLevel": 1,
           "metric": "Level 15 Talent All Stats per hero hit with Reverse Polarity",
           "changeType": "INCREASED",
@@ -2032,22 +2093,22 @@
         }
       ],
       "vectorDelta": {
-        "farming": 8,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 8,
+        "teamfight": 1,
+        "laning": 1,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": 17,
+        "farming": 6,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 16,
-        "laning": 17,
+        "teamfight": 3,
+        "laning": 6,
         "siege": 0,
-        "utility": 1
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2060,17 +2121,17 @@
     },
     {
       "version": "7.36c",
-      "date": "2026-06-14T21:53:54.800Z",
+      "date": "2026-06-17T18:07:14.898Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 17,
+        "farming": 6,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 16,
-        "laning": 17,
+        "teamfight": 3,
+        "laning": 6,
         "siege": 0,
-        "utility": 1
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2083,13 +2144,14 @@
     },
     {
       "version": "7.37",
-      "date": "2026-06-14T21:53:54.805Z",
+      "date": "2026-06-17T18:07:14.902Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Magnus",
           "subEntityName": "Skewer",
           "rawNote": "Now deals additional damage when skewering enemies into trees or cliffs",
+          "originalSource": "Now deals additional damage when skewering enemies into trees or cliffs",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2117,6 +2179,7 @@
           "entityName": "Magnus",
           "subEntityName": "Skewer",
           "rawNote": "Tree Hit Damage increased from 10/15/20/25 to 15/20/25/30",
+          "originalSource": "Tree Hit Damage increased from 10/15/20/25 to 15/20/25/30",
           "indentLevel": 1,
           "metric": "Tree Hit Damage",
           "changeType": "INCREASED",
@@ -2147,6 +2210,7 @@
           "entityName": "Magnus",
           "subEntityName": "Skewer",
           "rawNote": "Cliff Hit Damage increased from 40/60/80/100 to 50/75/100/125",
+          "originalSource": "Cliff Hit Damage increased from 40/60/80/100 to 50/75/100/125",
           "indentLevel": 1,
           "metric": "Cliff Hit Damage",
           "changeType": "INCREASED",
@@ -2175,13 +2239,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 17,
+        "farming": 6,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 16,
-        "laning": 17,
+        "teamfight": 3,
+        "laning": 6,
         "siege": 0,
-        "utility": 1
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2190,16 +2254,17 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.37b",
-      "date": "2026-06-14T21:53:54.807Z",
+      "date": "2026-06-17T18:07:14.904Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Base Agility increased by 3",
+          "originalSource": "Base Agility increased by 3",
           "indentLevel": 1,
           "metric": "Base Agility",
           "changeType": "INCREASED",
@@ -2228,6 +2293,7 @@
           "entityName": "Magnus",
           "subEntityName": "Solid Core",
           "rawNote": "Now also provides 20/30/40/50% slow resistance, scales with Reverse Polarity",
+          "originalSource": "Now also provides 20/30/40/50% slow resistance, scales with Reverse Polarity",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2255,6 +2321,7 @@
           "entityName": "Magnus",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent All Stats per hero hit with Reverse Polarity duration increased from 15s to 20s",
+          "originalSource": "Level 15 Talent All Stats per hero hit with Reverse Polarity duration increased from 15s to 20s",
           "indentLevel": 1,
           "metric": "Level 15 Talent All Stats per hero hit with Reverse Polarity duration",
           "changeType": "INCREASED",
@@ -2284,6 +2351,7 @@
           "entityName": "Magnus",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent All Stats per hero hit with Reverse Polarity now stacks instead of refreshing",
+          "originalSource": "Level 15 Talent All Stats per hero hit with Reverse Polarity now stacks instead of refreshing",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2308,13 +2376,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 17,
+        "farming": 6,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 16,
-        "laning": 17,
+        "teamfight": 3,
+        "laning": 6,
         "siege": 0,
-        "utility": 1
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2323,17 +2391,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.37c",
-      "date": "2026-06-14T21:53:54.810Z",
+      "date": "2026-06-17T18:07:14.906Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Magnus",
           "subEntityName": "Skewer",
           "rawNote": "Damage increased from 75/150/225/300 to 80/160/240/320",
+          "originalSource": "Damage increased from 75/150/225/300 to 80/160/240/320",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "INCREASED",
@@ -2364,6 +2433,7 @@
           "entityName": "Magnus",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Shockwave Slow Duration increased from +0.5s to +0.75s",
+          "originalSource": "Level 10 Talent Shockwave Slow Duration increased from +0.5s to +0.75s",
           "indentLevel": 1,
           "metric": "Level 10 Talent Shockwave Slow Duration",
           "changeType": "INCREASED",
@@ -2390,22 +2460,22 @@
         }
       ],
       "vectorDelta": {
-        "farming": 8,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 8,
+        "teamfight": 1,
+        "laning": 1,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": 25,
+        "farming": 7,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 24,
-        "laning": 25,
+        "teamfight": 4,
+        "laning": 7,
         "siege": 0,
-        "utility": 1
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2418,17 +2488,17 @@
     },
     {
       "version": "7.37d",
-      "date": "2026-06-14T21:53:54.813Z",
+      "date": "2026-06-17T18:07:14.909Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 25,
+        "farming": 7,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 24,
-        "laning": 25,
+        "teamfight": 4,
+        "laning": 7,
         "siege": 0,
-        "utility": 1
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2441,17 +2511,17 @@
     },
     {
       "version": "7.37e",
-      "date": "2026-06-14T21:53:54.815Z",
+      "date": "2026-06-17T18:07:14.912Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 25,
+        "farming": 7,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 24,
-        "laning": 25,
+        "teamfight": 4,
+        "laning": 7,
         "siege": 0,
-        "utility": 1
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2464,12 +2534,13 @@
     },
     {
       "version": "7.38",
-      "date": "2026-06-14T21:53:54.824Z",
+      "date": "2026-06-17T18:07:14.919Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Base Damage increased by 21",
+          "originalSource": "Base Damage increased by 21",
           "indentLevel": 1,
           "metric": "Base Damage",
           "changeType": "INCREASED",
@@ -2497,6 +2568,7 @@
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Damage at level 1 increased by 7 (from 48-56 to 55-63)",
+          "originalSource": "Damage at level 1 increased by 7 (from 48-56 to 55-63)",
           "indentLevel": 1,
           "metric": "Damage at level 1",
           "changeType": "INCREASED",
@@ -2525,6 +2597,7 @@
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Intelligence gain increased from 1.6 to 2.1",
+          "originalSource": "Intelligence gain increased from 1.6 to 2.1",
           "indentLevel": 1,
           "metric": "Intelligence gain",
           "changeType": "INCREASED",
@@ -2553,6 +2626,7 @@
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Damage gain per level decreased from +4.7 to +3.2",
+          "originalSource": "Damage gain per level decreased from +4.7 to +3.2",
           "indentLevel": 1,
           "metric": "Damage gain per level",
           "changeType": "DECREASED",
@@ -2581,6 +2655,7 @@
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Damage at level 30 decreased by 46 (from 214-222 to 168-176)",
+          "originalSource": "Damage at level 30 decreased by 46 (from 214-222 to 168-176)",
           "indentLevel": 1,
           "metric": "Damage at level 30",
           "changeType": "DECREASED",
@@ -2608,16 +2683,17 @@
         {
           "category": "hero",
           "entityName": "Magnus",
-          "rawNote": "Removed Reverse Polarity and Reverse Reverse Polarity Facets ",
+          "rawNote": "Removed Reverse Polarity and Reverse Reverse Polarity Facets",
+          "originalSource": "Removed Reverse Polarity and Reverse Reverse Polarity Facets ",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
             "entityId": 97
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -2627,14 +2703,16 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
           "category": "hero",
           "entityName": "Magnus",
           "subEntityName": "Shockwave",
-          "rawNote": "No longer upgraded with Aghanim's Shard ",
+          "rawNote": "No longer upgraded with Aghanim's Shard",
+          "originalSource": "No longer upgraded with Aghanim's Shard ",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -2662,6 +2740,7 @@
           "entityName": "Magnus",
           "subEntityName": "Shockwave",
           "rawNote": "Mana Cost increased from 75 to 85/90/95/100",
+          "originalSource": "Mana Cost increased from 75 to 85/90/95/100",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "INCREASED",
@@ -2692,6 +2771,7 @@
           "entityName": "Magnus",
           "subEntityName": "Skewer",
           "rawNote": "Now deals 6/9/12/15% of the distance traveled as damage",
+          "originalSource": "Now deals 6/9/12/15% of the distance traveled as damage",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2719,6 +2799,7 @@
           "entityName": "Magnus",
           "subEntityName": "Skewer",
           "rawNote": "No longer deals damage per tree/cliff hit by default",
+          "originalSource": "No longer deals damage per tree/cliff hit by default",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -2746,6 +2827,7 @@
           "entityName": "Magnus",
           "subEntityName": "Skewer",
           "rawNote": "Now upgraded with Aghanim's Shard",
+          "originalSource": "Now upgraded with Aghanim's Shard",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2773,6 +2855,7 @@
           "entityName": "Magnus",
           "subEntityName": "Skewer",
           "rawNote": "Increases Skewer range by 275 and deals and additional 30 damage per tree hit and 125 damage for cliff hit",
+          "originalSource": "Increases Skewer range by 275 and deals and additional 30 damage per tree hit and 125 damage for cliff hit",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2780,19 +2863,20 @@
             "subEntityId": 5520
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2800,6 +2884,7 @@
           "entityName": "Magnus",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent +0.75s Shockwave Slow Duration replaced with +1.25s Skewer Slow Duration",
+          "originalSource": "Level 10 Talent +0.75s Shockwave Slow Duration replaced with +1.25s Skewer Slow Duration",
           "indentLevel": 1,
           "metric": "Level 10 Talent +0.75s Shockwave Slow Duration",
           "changeType": "REWORK",
@@ -2828,6 +2913,7 @@
           "entityName": "Magnus",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent +10s Empower Duration replaced with +1.5 Mana Regen",
+          "originalSource": "Level 10 Talent +10s Empower Duration replaced with +1.5 Mana Regen",
           "indentLevel": 1,
           "metric": "Level 10 Talent +10s Empower Duration",
           "changeType": "REWORK",
@@ -2862,13 +2948,13 @@
         "utility": -1
       },
       "totalVector": {
-        "farming": 24,
+        "farming": 6,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 24,
-        "laning": 24,
+        "teamfight": 4,
+        "laning": 6,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2877,16 +2963,17 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": "Net Gain"
+      "temporalAssessment": null
     },
     {
       "version": "7.38b",
-      "date": "2026-06-14T21:53:54.827Z",
+      "date": "2026-06-17T18:07:14.921Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Magnus: Eternal Empowerment: Empower: Max self bonus decreased from 10/15/20/25% to 8/12/16/20%",
+          "originalSource": "Magnus: Eternal Empowerment: Empower: Max self bonus decreased from 10/15/20/25% to 8/12/16/20%",
           "indentLevel": 1,
           "metric": "Magnus: Eternal Empowerment: Empower: Max self bonus",
           "changeType": "DECREASED",
@@ -2916,6 +3003,7 @@
           "entityName": "Magnus",
           "subEntityName": "Skewer",
           "rawNote": "Distance decreased from 900/975/1050/1125 to 800/900/1000/1100",
+          "originalSource": "Distance decreased from 900/975/1050/1125 to 800/900/1000/1100",
           "indentLevel": 1,
           "metric": "Distance",
           "changeType": "DECREASED",
@@ -2946,6 +3034,7 @@
           "entityName": "Magnus",
           "subEntityName": "Skewer",
           "rawNote": "Aghanim's Shard Distance decreased from 1175/1250/1325/1400 to 1075/1175/1275/1375",
+          "originalSource": "Aghanim's Shard Distance decreased from 1175/1250/1325/1400 to 1075/1175/1275/1375",
           "indentLevel": 1,
           "metric": "Aghanim's Shard Distance",
           "changeType": "DECREASED",
@@ -2974,13 +3063,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 24,
+        "farming": 6,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 24,
-        "laning": 24,
+        "teamfight": 4,
+        "laning": 6,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2993,12 +3082,13 @@
     },
     {
       "version": "7.38c",
-      "date": "2026-06-14T21:53:54.830Z",
+      "date": "2026-06-17T18:07:14.924Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Base Strength decreased from 25 to 23",
+          "originalSource": "Base Strength decreased from 25 to 23",
           "indentLevel": 1,
           "metric": "Base Strength",
           "changeType": "DECREASED",
@@ -3027,6 +3117,7 @@
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Damage at level 1 decreased from 55–63 to 54–62",
+          "originalSource": "Damage at level 1 decreased from 55–63 to 54–62",
           "indentLevel": 1,
           "metric": "Damage at level 1",
           "changeType": "DECREASED",
@@ -3056,6 +3147,7 @@
           "entityName": "Magnus",
           "subEntityName": "Shockwave",
           "rawNote": "Damage decreased from 90/160/230/300 to 75/150/225/300",
+          "originalSource": "Damage decreased from 90/160/230/300 to 75/150/225/300",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "DECREASED",
@@ -3086,6 +3178,7 @@
           "entityName": "Magnus",
           "subEntityName": "Empower",
           "rawNote": "Self bonus decreased from 50% to 30%",
+          "originalSource": "Self bonus decreased from 50% to 30%",
           "indentLevel": 1,
           "metric": "Self bonus",
           "changeType": "DECREASED",
@@ -3113,22 +3206,22 @@
         }
       ],
       "vectorDelta": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8,
-        "laning": -8,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": 16,
+        "farming": 5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 16,
-        "laning": 16,
+        "teamfight": 3,
+        "laning": 5,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3141,13 +3234,14 @@
     },
     {
       "version": "7.39",
-      "date": "2026-06-14T21:53:54.836Z",
+      "date": "2026-06-17T18:07:14.928Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Magnus",
           "subEntityName": "Shockwave",
           "rawNote": "Slow Duration decreased from 0.7/0.8/0.9/1s to 0.4/0.6/0.8/1s",
+          "originalSource": "Slow Duration decreased from 0.7/0.8/0.9/1s to 0.4/0.6/0.8/1s",
           "indentLevel": 1,
           "metric": "Slow Duration",
           "changeType": "DECREASED",
@@ -3178,6 +3272,7 @@
           "entityName": "Magnus",
           "subEntityName": "Skewer",
           "rawNote": "Aghanim's Shard Tree Hit Damage increased from 30 to 40",
+          "originalSource": "Aghanim's Shard Tree Hit Damage increased from 30 to 40",
           "indentLevel": 1,
           "metric": "Aghanim's Shard Tree Hit Damage",
           "changeType": "INCREASED",
@@ -3208,6 +3303,7 @@
           "entityName": "Magnus",
           "subEntityName": "Skewer",
           "rawNote": "Aghanim's Shard Cliff Hit Damage increased from 125 to 150",
+          "originalSource": "Aghanim's Shard Cliff Hit Damage increased from 125 to 150",
           "indentLevel": 1,
           "metric": "Aghanim's Shard Cliff Hit Damage",
           "changeType": "INCREASED",
@@ -3236,13 +3332,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 16,
+        "farming": 5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 16,
-        "laning": 16,
+        "teamfight": 3,
+        "laning": 5,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3255,17 +3351,17 @@
     },
     {
       "version": "7.39b",
-      "date": "2026-06-14T21:53:54.839Z",
+      "date": "2026-06-17T18:07:14.931Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 16,
+        "farming": 5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 16,
-        "laning": 16,
+        "teamfight": 3,
+        "laning": 5,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3278,17 +3374,17 @@
     },
     {
       "version": "7.39c",
-      "date": "2026-06-14T21:53:54.843Z",
+      "date": "2026-06-17T18:07:14.933Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 16,
+        "farming": 5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 16,
-        "laning": 16,
+        "teamfight": 3,
+        "laning": 5,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3301,17 +3397,17 @@
     },
     {
       "version": "7.39d",
-      "date": "2026-06-14T21:53:54.848Z",
+      "date": "2026-06-17T18:07:14.937Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 16,
+        "farming": 5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 16,
-        "laning": 16,
+        "teamfight": 3,
+        "laning": 5,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3324,13 +3420,14 @@
     },
     {
       "version": "7.39e",
-      "date": "2026-06-14T21:53:54.851Z",
+      "date": "2026-06-17T18:07:14.939Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Magnus",
           "subEntityName": "Skewer",
-          "rawNote": "Movement is now cancelled if Magnus is interrupted ",
+          "rawNote": "Movement is now cancelled if Magnus is interrupted",
+          "originalSource": "Movement is now cancelled if Magnus is interrupted ",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -3356,13 +3453,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 16,
+        "farming": 5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 16,
-        "laning": 16,
+        "teamfight": 3,
+        "laning": 5,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3375,12 +3472,13 @@
     },
     {
       "version": "7.40",
-      "date": "2026-06-14T21:53:54.859Z",
+      "date": "2026-06-17T18:07:14.945Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Base Damage increased by 1",
+          "originalSource": "Base Damage increased by 1",
           "indentLevel": 1,
           "metric": "Base Damage",
           "changeType": "INCREASED",
@@ -3408,6 +3506,7 @@
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Damage at level 1 increased from 54–62 to 55–63",
+          "originalSource": "Damage at level 1 increased from 54–62 to 55–63",
           "indentLevel": 1,
           "metric": "Damage at level 1",
           "changeType": "INCREASED",
@@ -3437,6 +3536,7 @@
           "entityName": "Magnus",
           "subEntityName": "Reverse Polarity",
           "rawNote": "Cooldown decreased from 120s to 115s",
+          "originalSource": "Cooldown decreased from 120s to 115s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "DECREASED",
@@ -3467,19 +3567,19 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1.5,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": 16,
+        "farming": 5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 17.5,
-        "laning": 16,
+        "teamfight": 4,
+        "laning": 5,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3492,17 +3592,17 @@
     },
     {
       "version": "7.40b",
-      "date": "2026-06-14T21:53:54.866Z",
+      "date": "2026-06-17T18:07:14.948Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 16,
+        "farming": 5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 17.5,
-        "laning": 16,
+        "teamfight": 4,
+        "laning": 5,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3515,17 +3615,17 @@
     },
     {
       "version": "7.40c",
-      "date": "2026-06-14T21:53:54.872Z",
+      "date": "2026-06-17T18:07:14.950Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 16,
+        "farming": 5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 17.5,
-        "laning": 16,
+        "teamfight": 4,
+        "laning": 5,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3538,12 +3638,13 @@
     },
     {
       "version": "7.41",
-      "date": "2026-06-14T21:53:54.887Z",
+      "date": "2026-06-17T18:07:14.959Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Base Agility increased from 12 to 14",
+          "originalSource": "Base Agility increased from 12 to 14",
           "indentLevel": 1,
           "metric": "Base Agility",
           "changeType": "INCREASED",
@@ -3572,6 +3673,7 @@
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Damage at level 1 increased from 55–63 to 56–64",
+          "originalSource": "Damage at level 1 increased from 55–63 to 56–64",
           "indentLevel": 2,
           "metric": "Damage at level 1",
           "changeType": "INCREASED",
@@ -3601,6 +3703,7 @@
           "entityName": "Magnus",
           "subEntityName": "Solid Core",
           "rawNote": "No longer levels with Reverse Polarity",
+          "originalSource": "No longer levels with Reverse Polarity",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -3628,6 +3731,7 @@
           "entityName": "Magnus",
           "subEntityName": "Solid Core",
           "rawNote": "Slow Resistance rescaled from 20/30/40/50% to 24% + 1% per level",
+          "originalSource": "Slow Resistance rescaled from 20/30/40/50% to 24% + 1% per level",
           "indentLevel": 1,
           "metric": "Slow Resistance",
           "changeType": "RESCALE",
@@ -3658,6 +3762,7 @@
           "entityName": "Magnus",
           "subEntityName": "Empower",
           "rawNote": "Now always affects Magnus with 30% increased values and can't be cast on himself",
+          "originalSource": "Now always affects Magnus with 30% increased values and can't be cast on himself",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -3685,6 +3790,7 @@
           "entityName": "Magnus",
           "subEntityName": "Skewer",
           "rawNote": "Aghanim's Shard bonus distance increased from +275 to +300",
+          "originalSource": "Aghanim's Shard bonus distance increased from +275 to +300",
           "indentLevel": 1,
           "metric": "Aghanim's Shard bonus distance",
           "changeType": "INCREASED",
@@ -3715,6 +3821,7 @@
           "entityName": "Magnus",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent +10% Empower Damage/Cleave replaced with Shockwave Returns to Magnus",
+          "originalSource": "Level 25 Talent +10% Empower Damage/Cleave replaced with Shockwave Returns to Magnus",
           "indentLevel": 1,
           "metric": "Level 25 Talent +10% Empower Damage/Cleave",
           "changeType": "REWORK",
@@ -3741,13 +3848,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 16,
+        "farming": 5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 17.5,
-        "laning": 16,
+        "teamfight": 4,
+        "laning": 5,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3760,17 +3867,17 @@
     },
     {
       "version": "7.41a",
-      "date": "2026-06-14T21:53:54.892Z",
+      "date": "2026-06-17T18:07:14.961Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 16,
+        "farming": 5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 17.5,
-        "laning": 16,
+        "teamfight": 4,
+        "laning": 5,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3783,12 +3890,13 @@
     },
     {
       "version": "7.41b",
-      "date": "2026-06-14T21:53:54.896Z",
+      "date": "2026-06-17T18:07:14.964Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Agility gain increased from 2.0 to 2.2",
+          "originalSource": "Agility gain increased from 2.0 to 2.2",
           "indentLevel": 1,
           "metric": "Agility gain",
           "changeType": "INCREASED",
@@ -3817,6 +3925,7 @@
           "category": "hero",
           "entityName": "Magnus",
           "rawNote": "Damage gain per level increased from 3.2 to 3.3",
+          "originalSource": "Damage gain per level increased from 3.2 to 3.3",
           "indentLevel": 2,
           "metric": "Damage gain per level",
           "changeType": "INCREASED",
@@ -3844,13 +3953,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 16,
+        "farming": 5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 17.5,
-        "laning": 16,
+        "teamfight": 4,
+        "laning": 5,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3863,13 +3972,14 @@
     },
     {
       "version": "7.41c",
-      "date": "2026-06-14T21:53:54.902Z",
+      "date": "2026-06-17T18:07:14.966Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Magnus",
           "subEntityName": "Shockwave",
           "rawNote": "Slow Duration increased from 0.4/0.6/0.8/1.0s to 0.55/0.7/0.85/1.0s",
+          "originalSource": "Slow Duration increased from 0.4/0.6/0.8/1.0s to 0.55/0.7/0.85/1.0s",
           "indentLevel": 1,
           "metric": "Slow Duration",
           "changeType": "INCREASED",
@@ -3900,6 +4010,7 @@
           "entityName": "Magnus",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent All Attributes per hero hit with Reverse Polarity increased from +12 to +14",
+          "originalSource": "Level 15 Talent All Attributes per hero hit with Reverse Polarity increased from +12 to +14",
           "indentLevel": 1,
           "metric": "Level 15 Talent All Attributes per hero hit with Reverse Polarity",
           "changeType": "INCREASED",
@@ -3927,13 +4038,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 16,
+        "farming": 5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 17.5,
-        "laning": 16,
+        "teamfight": 4,
+        "laning": 5,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3946,46 +4057,58 @@
     },
     {
       "version": "7.41d",
-      "date": "2026-06-14T21:53:54.908Z",
+      "date": "2026-06-17T18:07:14.969Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 16,
+        "farming": 5,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 17.5,
-        "laning": 16,
+        "teamfight": 4,
+        "laning": 5,
         "siege": 0,
-        "utility": 0
+        "utility": 2
       },
       "winrates": {
         "HERALD": {
-          "winrate": 0.4708,
-          "matchCount": 15507
+          "winrate": 0.4691,
+          "matchCount": 13405
         },
         "GUARDIAN": {
-          "winrate": 0.4798,
-          "matchCount": 43063
+          "winrate": 0.4768,
+          "matchCount": 38678
         },
         "CRUSADER": {
-          "winrate": 0.4898,
-          "matchCount": 60577
+          "winrate": 0.488,
+          "matchCount": 54850
         },
         "ARCHON": {
-          "winrate": 0.4903,
-          "matchCount": 63517
+          "winrate": 0.4929,
+          "matchCount": 58126
         },
         "LEGEND": {
-          "winrate": 0.4947,
-          "matchCount": 53639
+          "winrate": 0.4962,
+          "matchCount": 48939
         },
         "ANCIENT": {
-          "winrate": 0.5036,
-          "matchCount": 36720
+          "winrate": 0.5015,
+          "matchCount": 34036
         },
         "DIVINE": {
-          "winrate": 0.4989,
-          "matchCount": 36804
+          "winrate": 0.502,
+          "matchCount": 34898
+        },
+        "IMMORTAL": {
+          "winrate": 0,
+          "matchCount": 0
+        },
+        "PRO": {
+          "winrate": 0.5,
+          "matchCount": 2
+        },
+        "GLOBAL_BLEND": {
+          "winrate": 0.502,
+          "matchCount": 34900
         }
       },
       "temporalAssessment": null

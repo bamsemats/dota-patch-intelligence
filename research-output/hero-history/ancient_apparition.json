@@ -3,13 +3,14 @@
   "history": [
     {
       "version": "7.33",
-      "date": "2026-06-14T21:53:54.726Z",
+      "date": "2026-06-17T18:07:14.843Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ancient Apparition",
           "subEntityName": "Cold Feet",
-          "rawNote": "Stun Duration decreased from 2/2.5/3/3.5s to 1.6/2/2.4/2.8s ",
+          "rawNote": "Stun Duration decreased from 2/2.5/3/3.5s to 1.6/2/2.4/2.8s",
+          "originalSource": "Stun Duration decreased from 2/2.5/3/3.5s to 1.6/2/2.4/2.8s ",
           "indentLevel": 1,
           "metric": "Stun Duration",
           "changeType": "DECREASED",
@@ -40,6 +41,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Ice Vortex",
           "rawNote": "Aghanim's Shard Upgrade removed",
+          "originalSource": "Aghanim's Shard Upgrade removed",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -67,6 +69,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Ice Vortex",
           "rawNote": "Now deals 12/20/28/36 damage per second to enemy units in the area",
+          "originalSource": "Now deals 12/20/28/36 damage per second to enemy units in the area",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -94,6 +97,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Ice Vortex",
           "rawNote": "Duration decreased from 16s to 6/9/12/15s",
+          "originalSource": "Duration decreased from 16s to 6/9/12/15s",
           "indentLevel": 1,
           "metric": "Duration",
           "changeType": "DECREASED",
@@ -124,6 +128,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Ice Vortex",
           "rawNote": "Cooldown increased from 7/6/5/4s to 10/8/6/4s",
+          "originalSource": "Cooldown increased from 7/6/5/4s to 10/8/6/4s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "INCREASED",
@@ -154,6 +159,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Ice Blast",
           "rawNote": "Now upgradable by Aghanim's Shard",
+          "originalSource": "Now upgradable by Aghanim's Shard",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -181,6 +187,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Ice Blast",
           "rawNote": "Enemies hit by Ice Blast explosion are stunned with the current level of Cold Feet for 60% of its duration. Doesn't stun Debuff Immune enemies",
+          "originalSource": "Enemies hit by Ice Blast explosion are stunned with the current level of Cold Feet for 60% of its duration. Doesn't stun Debuff Immune enemies",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -188,44 +195,54 @@
             "subEntityId": 5348
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "CAST_WHILE_DISABLED",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 9,
+              "Guardian": 9,
+              "Crusader": 9,
+              "Archon": 9,
+              "Legend": 9,
+              "Ancient": 9,
+              "Divine": 9
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         }
       ],
-      "vectorDelta": null,
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -2,
+        "laning": 0,
+        "siege": 0,
+        "utility": -2
+      },
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -2,
         "laning": 0,
         "siege": 0,
-        "utility": 0
+        "utility": -2
       },
       "winrates": {},
       "temporalAssessment": null
     },
     {
       "version": "7.33b",
-      "date": "2026-06-14T21:53:54.731Z",
+      "date": "2026-06-17T18:07:14.846Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ancient Apparition",
           "subEntityName": "Cold Feet",
           "rawNote": "Cooldown increased from 12/11/10/9s to 15/13/11/9s",
+          "originalSource": "Cooldown increased from 12/11/10/9s to 15/13/11/9s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "INCREASED",
@@ -256,7 +273,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -265,10 +282,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -3,
         "laning": 0,
         "siege": 0,
-        "utility": 0
+        "utility": -2
       },
       "winrates": {
         "HERALD": {
@@ -304,12 +321,13 @@
     },
     {
       "version": "7.33c",
-      "date": "2026-06-14T21:53:54.736Z",
+      "date": "2026-06-17T18:07:14.849Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ancient Apparition",
           "rawNote": "Intelligence gain decreased from 3.4 to 3.1",
+          "originalSource": "Intelligence gain decreased from 3.4 to 3.1",
           "indentLevel": 1,
           "metric": "Intelligence gain",
           "changeType": "DECREASED",
@@ -340,10 +358,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -3,
         "laning": 0,
         "siege": 0,
-        "utility": 0
+        "utility": -2
       },
       "winrates": {
         "HERALD": {
@@ -379,17 +397,17 @@
     },
     {
       "version": "7.33d",
-      "date": "2026-06-14T21:53:54.740Z",
+      "date": "2026-06-17T18:07:14.851Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -3,
         "laning": 0,
         "siege": 0,
-        "utility": 0
+        "utility": -2
       },
       "winrates": {
         "HERALD": {
@@ -425,17 +443,17 @@
     },
     {
       "version": "7.33e",
-      "date": "2026-06-14T21:53:54.743Z",
+      "date": "2026-06-17T18:07:14.854Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -3,
         "laning": 0,
         "siege": 0,
-        "utility": 0
+        "utility": -2
       },
       "winrates": {
         "HERALD": {
@@ -471,13 +489,14 @@
     },
     {
       "version": "7.34",
-      "date": "2026-06-14T21:53:54.750Z",
+      "date": "2026-06-17T18:07:14.859Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ancient Apparition",
           "subEntityName": "Ice Vortex",
           "rawNote": "Duration decreased from 6/9/12/15s to 6/8/10/12s",
+          "originalSource": "Duration decreased from 6/9/12/15s to 6/8/10/12s",
           "indentLevel": 1,
           "metric": "Duration",
           "changeType": "DECREASED",
@@ -508,6 +527,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Ice Vortex",
           "rawNote": "Vision Radius increased from 200 to 200/220/240/260",
+          "originalSource": "Vision Radius increased from 200 to 200/220/240/260",
           "indentLevel": 1,
           "metric": "Vision Radius",
           "changeType": "INCREASED",
@@ -538,6 +558,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +5% Ice Vortex Slow/Increased Magic Damage replaced with +4s Ice Vortex Duration",
+          "originalSource": "Level 20 Talent +5% Ice Vortex Slow/Increased Magic Damage replaced with +4s Ice Vortex Duration",
           "indentLevel": 1,
           "metric": "Level 20 Talent +5% Ice Vortex Slow/Increased Magic Damage",
           "changeType": "REWORK",
@@ -566,36 +587,36 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
-        "utility": -10
+        "utility": -2
       },
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
+        "teamfight": -4,
         "laning": 0,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {},
       "temporalAssessment": null
     },
     {
       "version": "7.34b",
-      "date": "2026-06-14T21:53:54.755Z",
+      "date": "2026-06-17T18:07:14.863Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
+        "teamfight": -4,
         "laning": 0,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "HERALD": {
@@ -631,17 +652,17 @@
     },
     {
       "version": "7.34c",
-      "date": "2026-06-14T21:53:54.759Z",
+      "date": "2026-06-17T18:07:14.868Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
+        "teamfight": -4,
         "laning": 0,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "HERALD": {
@@ -677,17 +698,17 @@
     },
     {
       "version": "7.34d",
-      "date": "2026-06-14T21:53:54.764Z",
+      "date": "2026-06-17T18:07:14.871Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
+        "teamfight": -4,
         "laning": 0,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "HERALD": {
@@ -723,13 +744,14 @@
     },
     {
       "version": "7.34e",
-      "date": "2026-06-14T21:53:54.768Z",
+      "date": "2026-06-17T18:07:14.873Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ancient Apparition",
           "subEntityName": "Ice Vortex",
           "rawNote": "Damage per second decreased from 12/20/28/36 to 12/18/24/30",
+          "originalSource": "Damage per second decreased from 12/20/28/36 to 12/18/24/30",
           "indentLevel": 1,
           "metric": "Damage per second",
           "changeType": "DECREASED",
@@ -760,6 +782,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Ice Blast",
           "rawNote": "Frostbitten Duration decreased from 10/11/12s to 10s",
+          "originalSource": "Frostbitten Duration decreased from 10/11/12s to 10s",
           "indentLevel": 1,
           "metric": "Frostbitten Duration",
           "changeType": "DECREASED",
@@ -791,10 +814,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
+        "teamfight": -4,
         "laning": 0,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "HERALD": {
@@ -830,13 +853,14 @@
     },
     {
       "version": "7.35",
-      "date": "2026-06-14T21:53:54.772Z",
+      "date": "2026-06-17T18:07:14.877Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ancient Apparition",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +4s Ice Vortex Duration replaced with +5s Ice Blast Frostbitten Duration",
+          "originalSource": "Level 20 Talent +4s Ice Vortex Duration replaced with +5s Ice Blast Frostbitten Duration",
           "indentLevel": 1,
           "metric": "Level 20 Talent +4s Ice Vortex Duration",
           "changeType": "REWORK",
@@ -866,10 +890,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
+        "teamfight": -4,
         "laning": 0,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -882,17 +906,17 @@
     },
     {
       "version": "7.35b",
-      "date": "2026-06-14T21:53:54.775Z",
+      "date": "2026-06-17T18:07:14.879Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
+        "teamfight": -4,
         "laning": 0,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -905,17 +929,17 @@
     },
     {
       "version": "7.35c",
-      "date": "2026-06-14T21:53:54.782Z",
+      "date": "2026-06-17T18:07:14.881Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
+        "teamfight": -4,
         "laning": 0,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -928,13 +952,14 @@
     },
     {
       "version": "7.35d",
-      "date": "2026-06-14T21:53:54.785Z",
+      "date": "2026-06-17T18:07:14.883Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ancient Apparition",
           "subEntityName": "Cold Feet",
           "rawNote": "Mana Cost decreased from 125 to 110/115/120/125",
+          "originalSource": "Mana Cost decreased from 125 to 110/115/120/125",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "DECREASED",
@@ -974,10 +999,10 @@
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
+        "teamfight": -4,
         "laning": 1,
         "siege": 0,
-        "utility": -9
+        "utility": -3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -990,13 +1015,14 @@
     },
     {
       "version": "7.36",
-      "date": "2026-06-14T21:53:54.791Z",
+      "date": "2026-06-17T18:07:14.890Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ancient Apparition",
           "subEntityName": "Cold Feet",
           "rawNote": "No longer deals damage on its own. Now applies 2/4/6/8 Death Rime stacks. Stacks are dispelled when leaving the break area",
+          "originalSource": "No longer deals damage on its own. Now applies 2/4/6/8 Death Rime stacks. Stacks are dispelled when leaving the break area",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1024,6 +1050,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Cold Feet",
           "rawNote": "Break distance increased from 715 to 725/750/775/800",
+          "originalSource": "Break distance increased from 715 to 725/750/775/800",
           "indentLevel": 1,
           "metric": "Break distance",
           "changeType": "INCREASED",
@@ -1054,6 +1081,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Cold Feet",
           "rawNote": "Stun Duration increased from 1.6/2.0/2.4/2.8s to 1.9/2.2/2.5/2.8s",
+          "originalSource": "Stun Duration increased from 1.6/2.0/2.4/2.8s to 1.9/2.2/2.5/2.8s",
           "indentLevel": 1,
           "metric": "Stun Duration",
           "changeType": "INCREASED",
@@ -1084,6 +1112,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Ice Vortex",
           "rawNote": "No longer deals damage or slows movement speed on its own. Now applies 1/2/3/4 Death Rime stacks to targets in its area of effect. Stacks are dispelled when leaving the AoE",
+          "originalSource": "No longer deals damage or slows movement speed on its own. Now applies 1/2/3/4 Death Rime stacks to targets in its area of effect. Stacks are dispelled when leaving the AoE",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1110,7 +1139,8 @@
           "category": "hero",
           "entityName": "Ancient Apparition",
           "subEntityName": "Chilling Touch",
-          "rawNote": "Applies 2 Death Rime stack that lasts for 4 seconds ",
+          "rawNote": "Applies 2 Death Rime stack that lasts for 4 seconds",
+          "originalSource": "Applies 2 Death Rime stack that lasts for 4 seconds ",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -1118,19 +1148,20 @@
             "subEntityId": 5347
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ILLUSION_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -1138,6 +1169,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Chilling Touch",
           "rawNote": "Bonus Damage decreased from 40/80/120/160 to 30/60/90/120",
+          "originalSource": "Bonus Damage decreased from 40/80/120/160 to 30/60/90/120",
           "indentLevel": 1,
           "metric": "Bonus Damage",
           "changeType": "DECREASED",
@@ -1168,6 +1200,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Chilling Touch",
           "rawNote": "Mana Cost increased from 30/40/50/60 to 45/50/55/60",
+          "originalSource": "Mana Cost increased from 30/40/50/60 to 45/50/55/60",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "INCREASED",
@@ -1198,6 +1231,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Ice Blast",
           "rawNote": "No longer deals damage over time on its own. Now applies 2 Death Rime stack for the duration of the debuff",
+          "originalSource": "No longer deals damage over time on its own. Now applies 2 Death Rime stack for the duration of the debuff",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1225,6 +1259,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent +40 Cold Feet Damage Per Second replaced with +2 Cold Feet Death Rime Stacks",
+          "originalSource": "Level 10 Talent +40 Cold Feet Damage Per Second replaced with +2 Cold Feet Death Rime Stacks",
           "indentLevel": 1,
           "metric": "Level 10 Talent +40 Cold Feet Damage Per Second",
           "changeType": "REWORK",
@@ -1253,6 +1288,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent 450 AoE Cold Feet replaced with +50% Death Rime Slow/Damage",
+          "originalSource": "Level 25 Talent 450 AoE Cold Feet replaced with +50% Death Rime Slow/Damage",
           "indentLevel": 1,
           "metric": "Level 25 Talent 450 AoE Cold Feet",
           "changeType": "REWORK",
@@ -1290,10 +1326,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
+        "teamfight": -4,
         "laning": 0,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1306,13 +1342,14 @@
     },
     {
       "version": "7.36a",
-      "date": "2026-06-14T21:53:54.794Z",
+      "date": "2026-06-17T18:07:14.892Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ancient Apparition",
           "subEntityName": "Chilling Touch",
           "rawNote": "Death Rime Stacks decreased from 2 to 1",
+          "originalSource": "Death Rime Stacks decreased from 2 to 1",
           "indentLevel": 1,
           "metric": "Death Rime Stacks",
           "changeType": "DECREASED",
@@ -1344,10 +1381,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
+        "teamfight": -4,
         "laning": 0,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1356,21 +1393,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": "Recovery"
+      "temporalAssessment": null
     },
     {
       "version": "7.36b",
-      "date": "2026-06-14T21:53:54.797Z",
+      "date": "2026-06-17T18:07:14.896Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
+        "teamfight": -4,
         "laning": 0,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1383,17 +1420,17 @@
     },
     {
       "version": "7.36c",
-      "date": "2026-06-14T21:53:54.800Z",
+      "date": "2026-06-17T18:07:14.898Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
+        "teamfight": -4,
         "laning": 0,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1406,17 +1443,17 @@
     },
     {
       "version": "7.37",
-      "date": "2026-06-14T21:53:54.804Z",
+      "date": "2026-06-17T18:07:14.902Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
+        "teamfight": -4,
         "laning": 0,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1429,12 +1466,13 @@
     },
     {
       "version": "7.37b",
-      "date": "2026-06-14T21:53:54.807Z",
+      "date": "2026-06-17T18:07:14.904Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ancient Apparition",
           "rawNote": "Death Rime: Movement Slow per stack increased from 1.5% to 2.0%",
+          "originalSource": "Death Rime: Movement Slow per stack increased from 1.5% to 2.0%",
           "indentLevel": 1,
           "metric": "Death Rime: Movement Slow per stack",
           "changeType": "INCREASED",
@@ -1465,10 +1503,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
+        "teamfight": -4,
         "laning": 0,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1481,13 +1519,14 @@
     },
     {
       "version": "7.37c",
-      "date": "2026-06-14T21:53:54.809Z",
+      "date": "2026-06-17T18:07:14.906Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ancient Apparition",
           "subEntityName": "Ice Blast",
           "rawNote": "Frostbitten Duration increased from 10s to 10/11/12s",
+          "originalSource": "Frostbitten Duration increased from 10s to 10/11/12s",
           "indentLevel": 1,
           "metric": "Frostbitten Duration",
           "changeType": "INCREASED",
@@ -1519,10 +1558,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
+        "teamfight": -4,
         "laning": 0,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1531,21 +1570,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": "Net Gain"
+      "temporalAssessment": null
     },
     {
       "version": "7.37d",
-      "date": "2026-06-14T21:53:54.812Z",
+      "date": "2026-06-17T18:07:14.909Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
+        "teamfight": -4,
         "laning": 0,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1558,17 +1597,17 @@
     },
     {
       "version": "7.37e",
-      "date": "2026-06-14T21:53:54.815Z",
+      "date": "2026-06-17T18:07:14.912Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
+        "teamfight": -4,
         "laning": 0,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1581,13 +1620,14 @@
     },
     {
       "version": "7.38",
-      "date": "2026-06-14T21:53:54.824Z",
+      "date": "2026-06-17T18:07:14.919Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ancient Apparition",
           "subEntityName": "Cold Feet",
           "rawNote": "Stun Duration rescaled from 1.9/2.2/2.5/2.8s to 1.8/2.2/2.6/3s",
+          "originalSource": "Stun Duration rescaled from 1.9/2.2/2.5/2.8s to 1.8/2.2/2.6/3s",
           "indentLevel": 1,
           "metric": "Stun Duration",
           "changeType": "RESCALE",
@@ -1618,6 +1658,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Cold Feet",
           "rawNote": "Break Distance is no longer affected by AoE bonuses",
+          "originalSource": "Break Distance is no longer affected by AoE bonuses",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1645,6 +1686,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Chilling Touch",
           "rawNote": "Attack Range Bonus rescaled from 60/120/180/240 to 80/120/160/200",
+          "originalSource": "Attack Range Bonus rescaled from 60/120/180/240 to 80/120/160/200",
           "indentLevel": 1,
           "metric": "Attack Range Bonus",
           "changeType": "RESCALE",
@@ -1675,6 +1717,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Chilling Touch",
           "rawNote": "Death Rime Stacks increased from 1 to 2",
+          "originalSource": "Death Rime Stacks increased from 1 to 2",
           "indentLevel": 1,
           "metric": "Death Rime Stacks",
           "changeType": "INCREASED",
@@ -1705,6 +1748,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Chilling Touch",
           "rawNote": "Death Rime duration decreased from 4s to 3s",
+          "originalSource": "Death Rime duration decreased from 4s to 3s",
           "indentLevel": 1,
           "metric": "Death Rime duration",
           "changeType": "DECREASED",
@@ -1735,6 +1779,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Chilling Touch",
           "rawNote": "Aghanim's Scepter Mana Cost reduction decreased from 50% to 40%",
+          "originalSource": "Aghanim's Scepter Mana Cost reduction decreased from 50% to 40%",
           "indentLevel": 1,
           "metric": "Aghanim's Scepter Mana Cost reduction",
           "changeType": "DECREASED",
@@ -1765,6 +1810,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Ice Blast",
           "rawNote": "Release sub-ability can now be cast while silenced",
+          "originalSource": "Release sub-ability can now be cast while silenced",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -1772,19 +1818,20 @@
             "subEntityId": 5348
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "CAST_WHILE_DISABLED",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 9,
+              "Guardian": 9,
+              "Crusader": 9,
+              "Archon": 9,
+              "Legend": 9,
+              "Ancient": 9,
+              "Divine": 9
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -1792,6 +1839,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Ice Blast",
           "rawNote": "Frostbitten heroes will now have a visual indicator on their overhead health bar showing where the shatter threshold is. The indicator is visible to everyone",
+          "originalSource": "Frostbitten heroes will now have a visual indicator on their overhead health bar showing where the shatter threshold is. The indicator is visible to everyone",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -1799,9 +1847,9 @@
             "subEntityId": 5348
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -1811,7 +1859,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         }
       ],
@@ -1820,10 +1869,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
+        "teamfight": -4,
         "laning": 0,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1832,16 +1881,17 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": "Recovery"
+      "temporalAssessment": null
     },
     {
       "version": "7.38b",
-      "date": "2026-06-14T21:53:54.826Z",
+      "date": "2026-06-17T18:07:14.921Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ancient Apparition",
           "rawNote": "Agility gain decreased from 2.2 to 2.0",
+          "originalSource": "Agility gain decreased from 2.2 to 2.0",
           "indentLevel": 1,
           "metric": "Agility gain",
           "changeType": "DECREASED",
@@ -1872,10 +1922,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
+        "teamfight": -4,
         "laning": 0,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1888,13 +1938,14 @@
     },
     {
       "version": "7.38c",
-      "date": "2026-06-14T21:53:54.830Z",
+      "date": "2026-06-17T18:07:14.924Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ancient Apparition",
           "subEntityName": "Ice Vortex",
           "rawNote": "Mana Cost increased from 40/50/60/70 to 40/55/70/85",
+          "originalSource": "Mana Cost increased from 40/50/60/70 to 40/55/70/85",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "INCREASED",
@@ -1925,6 +1976,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Chilling Touch",
           "rawNote": "Attack Range Bonus decreased from 80/120/160/200 to 60/90/120/150",
+          "originalSource": "Attack Range Bonus decreased from 80/120/160/200 to 60/90/120/150",
           "indentLevel": 1,
           "metric": "Attack Range Bonus",
           "changeType": "DECREASED",
@@ -1964,10 +2016,10 @@
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
+        "teamfight": -4,
         "laning": -1,
         "siege": 0,
-        "utility": -11
+        "utility": -5
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1980,13 +2032,14 @@
     },
     {
       "version": "7.39",
-      "date": "2026-06-14T21:53:54.836Z",
+      "date": "2026-06-17T18:07:14.928Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ancient Apparition",
           "subEntityName": "Ice Vortex",
           "rawNote": "Cast Range decreased from 1500 to 1200",
+          "originalSource": "Cast Range decreased from 1500 to 1200",
           "indentLevel": 1,
           "metric": "Cast Range",
           "changeType": "DECREASED",
@@ -2017,6 +2070,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Ice Vortex",
           "rawNote": "Radius decreased from 300 to 275",
+          "originalSource": "Radius decreased from 300 to 275",
           "indentLevel": 1,
           "metric": "Radius",
           "changeType": "DECREASED",
@@ -2047,6 +2101,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Ice Blast",
           "rawNote": "Aghanim's Shard Cold Feet stun duration decreased from 60% to 50%",
+          "originalSource": "Aghanim's Shard Cold Feet stun duration decreased from 60% to 50%",
           "indentLevel": 1,
           "metric": "Aghanim's Shard Cold Feet stun duration",
           "changeType": "DECREASED",
@@ -2077,6 +2132,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Ice Blast Frostbitten Duration decreased from +5s to +4s",
+          "originalSource": "Level 20 Talent Ice Blast Frostbitten Duration decreased from +5s to +4s",
           "indentLevel": 1,
           "metric": "Level 20 Talent Ice Blast Frostbitten Duration",
           "changeType": "DECREASED",
@@ -2106,19 +2162,19 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
-        "utility": -15
+        "utility": -3
       },
       "totalVector": {
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -12.5,
+        "teamfight": -5,
         "laning": -1,
         "siege": 0,
-        "utility": -26
+        "utility": -8
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2131,17 +2187,17 @@
     },
     {
       "version": "7.39b",
-      "date": "2026-06-14T21:53:54.839Z",
+      "date": "2026-06-17T18:07:14.930Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -12.5,
+        "teamfight": -5,
         "laning": -1,
         "siege": 0,
-        "utility": -26
+        "utility": -8
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2154,17 +2210,17 @@
     },
     {
       "version": "7.39c",
-      "date": "2026-06-14T21:53:54.843Z",
+      "date": "2026-06-17T18:07:14.932Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -12.5,
+        "teamfight": -5,
         "laning": -1,
         "siege": 0,
-        "utility": -26
+        "utility": -8
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2177,17 +2233,17 @@
     },
     {
       "version": "7.39d",
-      "date": "2026-06-14T21:53:54.848Z",
+      "date": "2026-06-17T18:07:14.937Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -12.5,
+        "teamfight": -5,
         "laning": -1,
         "siege": 0,
-        "utility": -26
+        "utility": -8
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2200,17 +2256,17 @@
     },
     {
       "version": "7.39e",
-      "date": "2026-06-14T21:53:54.851Z",
+      "date": "2026-06-17T18:07:14.939Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -12.5,
+        "teamfight": -5,
         "laning": -1,
         "siege": 0,
-        "utility": -26
+        "utility": -8
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2223,17 +2279,17 @@
     },
     {
       "version": "7.40",
-      "date": "2026-06-14T21:53:54.859Z",
+      "date": "2026-06-17T18:07:14.945Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -12.5,
+        "teamfight": -5,
         "laning": -1,
         "siege": 0,
-        "utility": -26
+        "utility": -8
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2246,17 +2302,17 @@
     },
     {
       "version": "7.40b",
-      "date": "2026-06-14T21:53:54.866Z",
+      "date": "2026-06-17T18:07:14.948Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -12.5,
+        "teamfight": -5,
         "laning": -1,
         "siege": 0,
-        "utility": -26
+        "utility": -8
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2269,17 +2325,17 @@
     },
     {
       "version": "7.40c",
-      "date": "2026-06-14T21:53:54.872Z",
+      "date": "2026-06-17T18:07:14.950Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -12.5,
+        "teamfight": -5,
         "laning": -1,
         "siege": 0,
-        "utility": -26
+        "utility": -8
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2292,21 +2348,22 @@
     },
     {
       "version": "7.41",
-      "date": "2026-06-14T21:53:54.887Z",
+      "date": "2026-06-17T18:07:14.959Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ancient Apparition",
           "rawNote": "Removed Death Rime innate ability",
+          "originalSource": "Removed Death Rime innate ability",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
             "entityId": 68
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -2316,7 +2373,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2324,6 +2382,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Bone Chill",
           "rawNote": "New innate ability. Passive, improves with Ancient Apparition's level",
+          "originalSource": "New innate ability. Passive, improves with Ancient Apparition's level",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2351,6 +2410,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Bone Chill",
           "rawNote": "When Ancient Apparition deals magic damage with his abilities, affected enemies are chilled for 4s, reducing their movespeed by 2% per stack. If the target is an enemy hero, debuff also reduces their Strength by 0.1 + 0.1 per 3 levels. Each instance stacks and has independent duration",
+          "originalSource": "When Ancient Apparition deals magic damage with his abilities, affected enemies are chilled for 4s, reducing their movespeed by 2% per stack. If the target is an enemy hero, debuff also reduces their Strength by 0.1 + 0.1 per 3 levels. Each instance stacks and has independent duration",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2358,19 +2418,20 @@
             "subEntityId": 1756
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2378,6 +2439,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Bone Chill",
           "rawNote": "Upgraded with Aghanim's Scepter",
+          "originalSource": "Upgraded with Aghanim's Scepter",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2405,6 +2467,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Bone Chill",
           "rawNote": "Increases Base Strength Reduction by 0.3",
+          "originalSource": "Increases Base Strength Reduction by 0.3",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2432,6 +2495,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Cold Feet",
           "rawNote": "Now deals 20/40/60/80 damage per second",
+          "originalSource": "Now deals 20/40/60/80 damage per second",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2459,6 +2523,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Ice Vortex",
           "rawNote": "Now deals 10/20/30/40 damage per second",
+          "originalSource": "Now deals 10/20/30/40 damage per second",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2486,6 +2551,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Ice Vortex",
           "rawNote": "Now slows movement by 8%",
+          "originalSource": "Now slows movement by 8%",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2513,6 +2579,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Chilling Touch",
           "rawNote": "Mana Cost decreased from 45/50/55/60 to 35",
+          "originalSource": "Mana Cost decreased from 45/50/55/60 to 35",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "DECREASED",
@@ -2543,6 +2610,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Chilling Touch",
           "rawNote": "Aghanim's Scepter no longer reduces mana cost",
+          "originalSource": "Aghanim's Scepter no longer reduces mana cost",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -2570,6 +2638,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Ice Blast",
           "rawNote": "Now deals 12/24/36 damage per second",
+          "originalSource": "Now deals 12/24/36 damage per second",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2597,6 +2666,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent +2 Cold Feet Death Rime Stacks replaced with +30 Cold Feet Damage Per Second",
+          "originalSource": "Level 10 Talent +2 Cold Feet Death Rime Stacks replaced with +30 Cold Feet Damage Per Second",
           "indentLevel": 1,
           "metric": "Level 10 Talent +2 Cold Feet Death Rime Stacks",
           "changeType": "REWORK",
@@ -2625,6 +2695,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Cold Feet Break Distance decreased from +300 to +250",
+          "originalSource": "Level 15 Talent Cold Feet Break Distance decreased from +300 to +250",
           "indentLevel": 1,
           "metric": "Level 15 Talent Cold Feet Break Distance",
           "changeType": "DECREASED",
@@ -2654,6 +2725,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent +50% Death Rime Slow/Damage replaced with 450 AoE Cold Feet",
+          "originalSource": "Level 25 Talent +50% Death Rime Slow/Damage replaced with 450 AoE Cold Feet",
           "indentLevel": 1,
           "metric": "Level 25 Talent +50% Death Rime Slow/Damage",
           "changeType": "REWORK",
@@ -2691,10 +2763,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -12.5,
+        "teamfight": -5,
         "laning": 0,
         "siege": 0,
-        "utility": -25
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2703,17 +2775,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.41a",
-      "date": "2026-06-14T21:53:54.892Z",
+      "date": "2026-06-17T18:07:14.961Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ancient Apparition",
           "subEntityName": "Bone Chill",
           "rawNote": "Base Strength Reduction increased from 0.1 to 0.2",
+          "originalSource": "Base Strength Reduction increased from 0.1 to 0.2",
           "indentLevel": 1,
           "metric": "Base Strength Reduction",
           "changeType": "INCREASED",
@@ -2745,10 +2818,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -12.5,
+        "teamfight": -5,
         "laning": 0,
         "siege": 0,
-        "utility": -25
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2757,17 +2830,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.41b",
-      "date": "2026-06-14T21:53:54.896Z",
+      "date": "2026-06-17T18:07:14.963Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ancient Apparition",
           "subEntityName": "Bone Chill",
           "rawNote": "Aghanim's Scepter Strength Reduction bonus increased from 0.3 to 0.8",
+          "originalSource": "Aghanim's Scepter Strength Reduction bonus increased from 0.3 to 0.8",
           "indentLevel": 1,
           "metric": "Aghanim's Scepter Strength Reduction bonus",
           "changeType": "INCREASED",
@@ -2799,10 +2873,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -12.5,
+        "teamfight": -5,
         "laning": 0,
         "siege": 0,
-        "utility": -25
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2815,13 +2889,14 @@
     },
     {
       "version": "7.41c",
-      "date": "2026-06-14T21:53:54.902Z",
+      "date": "2026-06-17T18:07:14.966Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ancient Apparition",
           "subEntityName": "Ice Blast",
           "rawNote": "Path Radius increased from 275 to 300",
+          "originalSource": "Path Radius increased from 275 to 300",
           "indentLevel": 1,
           "metric": "Path Radius",
           "changeType": "INCREASED",
@@ -2852,6 +2927,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Ice Blast",
           "rawNote": "Base Area of Effect Radius increased from 275 to 300",
+          "originalSource": "Base Area of Effect Radius increased from 275 to 300",
           "indentLevel": 1,
           "metric": "Base Area of Effect Radius",
           "changeType": "INCREASED",
@@ -2882,6 +2958,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Chilling Touch Damage increased from +80 to +100",
+          "originalSource": "Level 20 Talent Chilling Touch Damage increased from +80 to +100",
           "indentLevel": 1,
           "metric": "Level 20 Talent Chilling Touch Damage",
           "changeType": "INCREASED",
@@ -2912,10 +2989,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -12.5,
+        "teamfight": -5,
         "laning": 0,
         "siege": 0,
-        "utility": -25
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2924,17 +3001,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.41d",
-      "date": "2026-06-14T21:53:54.908Z",
+      "date": "2026-06-17T18:07:14.968Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ancient Apparition",
           "subEntityName": "Cold Feet",
           "rawNote": "Damage per second increased from 20/40/60/80 to 25/45/65/85",
+          "originalSource": "Damage per second increased from 20/40/60/80 to 25/45/65/85",
           "indentLevel": 1,
           "metric": "Damage per second",
           "changeType": "INCREASED",
@@ -2965,6 +3043,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Chilling Touch",
           "rawNote": "Cooldown decreased from 12/9/6/3s to 10/7.5/5/2.5s",
+          "originalSource": "Cooldown decreased from 12/9/6/3s to 10/7.5/5/2.5s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "DECREASED",
@@ -2995,6 +3074,7 @@
           "entityName": "Ancient Apparition",
           "subEntityName": "Chilling Touch",
           "rawNote": "Damage increased from 30/60/90/120 to 35/65/95/125",
+          "originalSource": "Damage increased from 30/60/90/120 to 35/65/95/125",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "INCREASED",
@@ -3022,51 +3102,63 @@
         }
       ],
       "vectorDelta": {
-        "farming": 8,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 9.5,
-        "laning": 8,
+        "teamfight": 2,
+        "laning": 1,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": 8,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
         "teamfight": -3,
-        "laning": 8,
+        "laning": 1,
         "siege": 0,
-        "utility": -25
+        "utility": -7
       },
       "winrates": {
         "HERALD": {
-          "winrate": 0.5213,
-          "matchCount": 20903
+          "winrate": 0.5136,
+          "matchCount": 18356
         },
         "GUARDIAN": {
-          "winrate": 0.519,
-          "matchCount": 38573
+          "winrate": 0.5169,
+          "matchCount": 34538
         },
         "CRUSADER": {
-          "winrate": 0.5146,
-          "matchCount": 41749
+          "winrate": 0.512,
+          "matchCount": 37181
         },
         "ARCHON": {
-          "winrate": 0.5143,
-          "matchCount": 37334
+          "winrate": 0.5114,
+          "matchCount": 33544
         },
         "LEGEND": {
-          "winrate": 0.5066,
-          "matchCount": 28026
+          "winrate": 0.5099,
+          "matchCount": 24755
         },
         "ANCIENT": {
-          "winrate": 0.5007,
-          "matchCount": 17389
+          "winrate": 0.5035,
+          "matchCount": 15363
         },
         "DIVINE": {
-          "winrate": 0.5014,
-          "matchCount": 16538
+          "winrate": 0.4854,
+          "matchCount": 14269
+        },
+        "IMMORTAL": {
+          "winrate": 0,
+          "matchCount": 0
+        },
+        "PRO": {
+          "winrate": 1,
+          "matchCount": 2
+        },
+        "GLOBAL_BLEND": {
+          "winrate": 0.4858,
+          "matchCount": 14271
         }
       },
       "temporalAssessment": "Net Gain"

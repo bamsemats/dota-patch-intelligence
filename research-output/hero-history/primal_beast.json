@@ -3,13 +3,14 @@
   "history": [
     {
       "version": "7.33",
-      "date": "2026-06-14T21:53:54.726Z",
+      "date": "2026-06-17T18:07:14.843Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Primal Beast",
           "subEntityName": "Onslaught",
           "rawNote": "Cast Point decreased from 0.15s to 0s",
+          "originalSource": "Cast Point decreased from 0.15s to 0s",
           "indentLevel": 1,
           "metric": "Cast Point",
           "changeType": "DECREASED",
@@ -39,7 +40,8 @@
           "category": "hero",
           "entityName": "Primal Beast",
           "subEntityName": "Onslaught",
-          "rawNote": "Stun Duration decreased from 1/1.2/1.4/1.6s to 0.8/1/1.2/1.4s ",
+          "rawNote": "Stun Duration decreased from 1/1.2/1.4/1.6s to 0.8/1/1.2/1.4s",
+          "originalSource": "Stun Duration decreased from 1/1.2/1.4/1.6s to 0.8/1/1.2/1.4s ",
           "indentLevel": 1,
           "metric": "Stun Duration",
           "changeType": "DECREASED",
@@ -70,6 +72,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Onslaught",
           "rawNote": "Max Channel Time increased from 2s to 2.2s",
+          "originalSource": "Max Channel Time increased from 2s to 2.2s",
           "indentLevel": 1,
           "metric": "Max Channel Time",
           "changeType": "INCREASED",
@@ -100,6 +103,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Onslaught",
           "rawNote": "Time to Max Charge increased from 1.5s to 1.7s",
+          "originalSource": "Time to Max Charge increased from 1.5s to 1.7s",
           "indentLevel": 1,
           "metric": "Time to Max Charge",
           "changeType": "INCREASED",
@@ -130,6 +134,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Onslaught",
           "rawNote": "Min Charge Distance decreased from 300 to 100",
+          "originalSource": "Min Charge Distance decreased from 300 to 100",
           "indentLevel": 1,
           "metric": "Min Charge Distance",
           "changeType": "DECREASED",
@@ -160,6 +165,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Onslaught",
           "rawNote": "No longer reduced by damage block",
+          "originalSource": "No longer reduced by damage block",
           "indentLevel": 1,
           "metric": "No longer",
           "changeType": "DECREASED",
@@ -189,6 +195,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Pulverize",
           "rawNote": "Now pierces debuff immunity",
+          "originalSource": "Now pierces debuff immunity",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -216,6 +223,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Pulverize",
           "rawNote": "Hit Damage decreased from 150/210/270 to 100/150/200",
+          "originalSource": "Hit Damage decreased from 150/210/270 to 100/150/200",
           "indentLevel": 1,
           "metric": "Hit Damage",
           "changeType": "DECREASED",
@@ -245,7 +253,8 @@
           "category": "hero",
           "entityName": "Primal Beast",
           "subEntityName": "Pulverize",
-          "rawNote": "Stun Duration decreased from 0.25s to 0.2s ",
+          "rawNote": "Stun Duration decreased from 0.25s to 0.2s",
+          "originalSource": "Stun Duration decreased from 0.25s to 0.2s ",
           "indentLevel": 1,
           "metric": "Stun Duration",
           "changeType": "DECREASED",
@@ -276,6 +285,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Pulverize",
           "rawNote": "Cooldown increased from 32/28/24s to 36/32/28s",
+          "originalSource": "Cooldown increased from 32/28/24s to 36/32/28s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "INCREASED",
@@ -305,7 +315,8 @@
           "category": "hero",
           "entityName": "Primal Beast",
           "subEntityName": "Rock Throw",
-          "rawNote": "Stun Duration decreased from 1.75s to 1.4s ",
+          "rawNote": "Stun Duration decreased from 1.75s to 1.4s",
+          "originalSource": "Stun Duration decreased from 1.75s to 1.4s ",
           "indentLevel": 1,
           "metric": "Stun Duration",
           "changeType": "DECREASED",
@@ -336,6 +347,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Rock Throw",
           "rawNote": "No longer reduced by damage block",
+          "originalSource": "No longer reduced by damage block",
           "indentLevel": 1,
           "metric": "No longer",
           "changeType": "DECREASED",
@@ -365,6 +377,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent Pulverize Pierces Spell Immunity replaced with Cannot Be Rooted Or Slowed During Trample",
+          "originalSource": "Level 25 Talent Pulverize Pierces Spell Immunity replaced with Cannot Be Rooted Or Slowed During Trample",
           "indentLevel": 1,
           "metric": "Level 25 Talent Pulverize Pierces Spell Immunity",
           "changeType": "REWORK",
@@ -389,32 +402,40 @@
           }
         }
       ],
-      "vectorDelta": null,
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -1,
+        "laning": 0,
+        "siege": 0,
+        "utility": 10
+      },
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
-        "utility": 0
+        "utility": 10
       },
       "winrates": {},
       "temporalAssessment": null
     },
     {
       "version": "7.33b",
-      "date": "2026-06-14T21:53:54.731Z",
+      "date": "2026-06-17T18:07:14.846Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
-        "utility": 0
+        "utility": 10
       },
       "winrates": {
         "HERALD": {
@@ -450,12 +471,13 @@
     },
     {
       "version": "7.33c",
-      "date": "2026-06-14T21:53:54.736Z",
+      "date": "2026-06-17T18:07:14.849Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Primal Beast",
           "rawNote": "Intelligence gain increased from 1.4 to 1.7",
+          "originalSource": "Intelligence gain increased from 1.4 to 1.7",
           "indentLevel": 1,
           "metric": "Intelligence gain",
           "changeType": "INCREASED",
@@ -485,6 +507,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Uproar",
           "rawNote": "Roar Bonus Armor per stack increased from 1/2/3/4 to 2/3/4/5",
+          "originalSource": "Roar Bonus Armor per stack increased from 1/2/3/4 to 2/3/4/5",
           "indentLevel": 1,
           "metric": "Roar Bonus Armor per stack",
           "changeType": "INCREASED",
@@ -515,6 +538,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Pulverize",
           "rawNote": "Hit Damage increased from 100/150/200 to 125/175/225",
+          "originalSource": "Hit Damage increased from 100/150/200 to 125/175/225",
           "indentLevel": 1,
           "metric": "Hit Damage",
           "changeType": "INCREASED",
@@ -545,6 +569,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Uproar Armor Per Stack increased from +4 to +6",
+          "originalSource": "Level 20 Talent Uproar Armor Per Stack increased from +4 to +6",
           "indentLevel": 1,
           "metric": "Level 20 Talent Uproar Armor Per Stack",
           "changeType": "INCREASED",
@@ -575,10 +600,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
-        "utility": 0
+        "utility": 10
       },
       "winrates": {
         "HERALD": {
@@ -614,13 +639,14 @@
     },
     {
       "version": "7.33d",
-      "date": "2026-06-14T21:53:54.740Z",
+      "date": "2026-06-17T18:07:14.852Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Primal Beast",
           "subEntityName": "Pulverize",
           "rawNote": "Each time the target is slammed, Hit Damage is now increased by 30/50/70 for the spell's duration",
+          "originalSource": "Each time the target is slammed, Hit Damage is now increased by 30/50/70 for the spell's duration",
           "indentLevel": 1,
           "metric": "Each time the target is slammed, Hit Damage is now",
           "changeType": "INCREASED",
@@ -651,10 +677,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
-        "utility": 0
+        "utility": 10
       },
       "winrates": {
         "HERALD": {
@@ -690,17 +716,17 @@
     },
     {
       "version": "7.33e",
-      "date": "2026-06-14T21:53:54.744Z",
+      "date": "2026-06-17T18:07:14.855Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
-        "utility": 0
+        "utility": 10
       },
       "winrates": {
         "HERALD": {
@@ -736,13 +762,14 @@
     },
     {
       "version": "7.34",
-      "date": "2026-06-14T21:53:54.750Z",
+      "date": "2026-06-17T18:07:14.859Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Primal Beast",
           "subEntityName": "Pulverize",
           "rawNote": "Bonus Damage per hit decreased from 30/50/70 to 20/40/60",
+          "originalSource": "Bonus Damage per hit decreased from 30/50/70 to 20/40/60",
           "indentLevel": 1,
           "metric": "Bonus Damage per hit",
           "changeType": "DECREASED",
@@ -773,6 +800,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Rock Throw",
           "rawNote": "Now provides an Uproar stack per each enemy hero hit",
+          "originalSource": "Now provides an Uproar stack per each enemy hero hit",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -800,6 +828,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Magic Resistance During Trample increased from +20% to +25%",
+          "originalSource": "Level 10 Talent Magic Resistance During Trample increased from +20% to +25%",
           "indentLevel": 1,
           "metric": "Level 10 Talent Magic Resistance During Trample",
           "changeType": "INCREASED",
@@ -829,6 +858,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Uproar Armor Per Stack increased from +6 to +7",
+          "originalSource": "Level 20 Talent Uproar Armor Per Stack increased from +6 to +7",
           "indentLevel": 1,
           "metric": "Level 20 Talent Uproar Armor Per Stack",
           "changeType": "INCREASED",
@@ -858,6 +888,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Trample Attack Multiplier decreased from +25% to +20%",
+          "originalSource": "Level 20 Talent Trample Attack Multiplier decreased from +25% to +20%",
           "indentLevel": 1,
           "metric": "Level 20 Talent Trample Attack Multiplier",
           "changeType": "DECREASED",
@@ -888,27 +919,27 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
-        "utility": 0
+        "utility": 10
       },
       "winrates": {},
       "temporalAssessment": null
     },
     {
       "version": "7.34b",
-      "date": "2026-06-14T21:53:54.755Z",
+      "date": "2026-06-17T18:07:14.864Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
-        "utility": 0
+        "utility": 10
       },
       "winrates": {
         "HERALD": {
@@ -944,13 +975,14 @@
     },
     {
       "version": "7.34c",
-      "date": "2026-06-14T21:53:54.759Z",
+      "date": "2026-06-17T18:07:14.868Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Primal Beast",
           "subEntityName": "Onslaught",
           "rawNote": "Damage decreased from 95/190/285/380 to 90/180/270/360",
+          "originalSource": "Damage decreased from 95/190/285/380 to 90/180/270/360",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "DECREASED",
@@ -981,6 +1013,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Uproar",
           "rawNote": "No longer counts damage from Roshan",
+          "originalSource": "No longer counts damage from Roshan",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1005,22 +1038,22 @@
         }
       ],
       "vectorDelta": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8,
-        "laning": -8,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8,
-        "laning": -8,
+        "teamfight": -2,
+        "laning": -1,
         "siege": 0,
-        "utility": 0
+        "utility": 10
       },
       "winrates": {
         "HERALD": {
@@ -1056,13 +1089,14 @@
     },
     {
       "version": "7.34d",
-      "date": "2026-06-14T21:53:54.764Z",
+      "date": "2026-06-17T18:07:14.871Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Primal Beast",
           "subEntityName": "Uproar",
           "rawNote": "Base Bonus Damage decreased from 6/12/18/24 to 5/10/15/20",
+          "originalSource": "Base Bonus Damage decreased from 6/12/18/24 to 5/10/15/20",
           "indentLevel": 1,
           "metric": "Base Bonus Damage",
           "changeType": "DECREASED",
@@ -1091,13 +1125,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8,
-        "laning": -8,
+        "teamfight": -2,
+        "laning": -1,
         "siege": 0,
-        "utility": 0
+        "utility": 10
       },
       "winrates": {
         "HERALD": {
@@ -1133,13 +1167,14 @@
     },
     {
       "version": "7.34e",
-      "date": "2026-06-14T21:53:54.768Z",
+      "date": "2026-06-17T18:07:14.873Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Primal Beast",
           "subEntityName": "Trample",
           "rawNote": "Mana Cost increased from 90/85/80/75 to 90",
+          "originalSource": "Mana Cost increased from 90/85/80/75 to 90",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "INCREASED",
@@ -1170,6 +1205,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Pulverize",
           "rawNote": "Cooldown increased from 36/32/28s to 40/36/32s",
+          "originalSource": "Cooldown increased from 36/32/28s to 40/36/32s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "INCREASED",
@@ -1200,6 +1236,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent Pulverize Duration decreased from +100% to +67%",
+          "originalSource": "Level 25 Talent Pulverize Duration decreased from +100% to +67%",
           "indentLevel": 1,
           "metric": "Level 25 Talent Pulverize Duration",
           "changeType": "DECREASED",
@@ -1229,19 +1266,19 @@
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -1,
         "laning": -1,
         "siege": 0,
         "utility": -1
       },
       "totalVector": {
-        "farming": -9,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -9.5,
-        "laning": -9,
+        "teamfight": -3,
+        "laning": -2,
         "siege": 0,
-        "utility": -1
+        "utility": 9
       },
       "winrates": {
         "HERALD": {
@@ -1277,13 +1314,14 @@
     },
     {
       "version": "7.35",
-      "date": "2026-06-14T21:53:54.772Z",
+      "date": "2026-06-17T18:07:14.877Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Primal Beast",
           "subEntityName": "Rock Throw",
           "rawNote": "Max Travel Time decreased from 1.7s to 1.5s",
+          "originalSource": "Max Travel Time decreased from 1.7s to 1.5s",
           "indentLevel": 1,
           "metric": "Max Travel Time",
           "changeType": "DECREASED",
@@ -1314,6 +1352,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Rock Throw",
           "rawNote": "Fragment Flight Distance decreased from 600 to 525",
+          "originalSource": "Fragment Flight Distance decreased from 600 to 525",
           "indentLevel": 1,
           "metric": "Fragment Flight Distance",
           "changeType": "DECREASED",
@@ -1344,6 +1383,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Rock Throw",
           "rawNote": "Fragment Flight Time decreased from 0.6s to 0.5s",
+          "originalSource": "Fragment Flight Time decreased from 0.6s to 0.5s",
           "indentLevel": 1,
           "metric": "Fragment Flight Time",
           "changeType": "DECREASED",
@@ -1374,6 +1414,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Rock Throw",
           "rawNote": "Fragment Impact Radius increased from 150 to 185",
+          "originalSource": "Fragment Impact Radius increased from 150 to 185",
           "indentLevel": 1,
           "metric": "Fragment Impact Radius",
           "changeType": "INCREASED",
@@ -1402,13 +1443,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -9,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -9.5,
-        "laning": -9,
+        "teamfight": -3,
+        "laning": -2,
         "siege": 0,
-        "utility": -1
+        "utility": 9
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1421,17 +1462,17 @@
     },
     {
       "version": "7.35b",
-      "date": "2026-06-14T21:53:54.775Z",
+      "date": "2026-06-17T18:07:14.879Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -9,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -9.5,
-        "laning": -9,
+        "teamfight": -3,
+        "laning": -2,
         "siege": 0,
-        "utility": -1
+        "utility": 9
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1444,17 +1485,17 @@
     },
     {
       "version": "7.35c",
-      "date": "2026-06-14T21:53:54.782Z",
+      "date": "2026-06-17T18:07:14.882Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -9,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -9.5,
-        "laning": -9,
+        "teamfight": -3,
+        "laning": -2,
         "siege": 0,
-        "utility": -1
+        "utility": 9
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1467,13 +1508,14 @@
     },
     {
       "version": "7.35d",
-      "date": "2026-06-14T21:53:54.785Z",
+      "date": "2026-06-17T18:07:14.884Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Primal Beast",
           "subEntityName": "Onslaught",
           "rawNote": "Damage decreased from 90/180/270/360 to 75/170/265/360",
+          "originalSource": "Damage decreased from 90/180/270/360 to 75/170/265/360",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "DECREASED",
@@ -1504,6 +1546,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Uproar",
           "rawNote": "Aghanim's Scepter Damage per line decreased from 100 to 85",
+          "originalSource": "Aghanim's Scepter Damage per line decreased from 100 to 85",
           "indentLevel": 1,
           "metric": "Aghanim's Scepter Damage per line",
           "changeType": "DECREASED",
@@ -1531,22 +1574,22 @@
         }
       ],
       "vectorDelta": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8,
-        "laning": -8,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -17,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17.5,
-        "laning": -17,
+        "teamfight": -4,
+        "laning": -3,
         "siege": 0,
-        "utility": -1
+        "utility": 9
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1555,17 +1598,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.36",
-      "date": "2026-06-14T21:53:54.791Z",
+      "date": "2026-06-17T18:07:14.890Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Primal Beast",
           "subEntityName": "Rock Throw",
           "rawNote": "Cast Point decreased from 0.5s to 0.25s",
+          "originalSource": "Cast Point decreased from 0.5s to 0.25s",
           "indentLevel": 1,
           "metric": "Cast Point",
           "changeType": "DECREASED",
@@ -1596,6 +1640,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Rock Throw",
           "rawNote": "Rock flight duration increased by 0.2s",
+          "originalSource": "Rock flight duration increased by 0.2s",
           "indentLevel": 1,
           "metric": "Rock flight duration",
           "changeType": "INCREASED",
@@ -1628,16 +1673,16 @@
         "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 16
+        "utility": 10
       },
       "totalVector": {
-        "farming": -17,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17.5,
-        "laning": -17,
+        "teamfight": -4,
+        "laning": -3,
         "siege": 0,
-        "utility": 15
+        "utility": 19
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1650,17 +1695,17 @@
     },
     {
       "version": "7.36a",
-      "date": "2026-06-14T21:53:54.794Z",
+      "date": "2026-06-17T18:07:14.892Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -17,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17.5,
-        "laning": -17,
+        "teamfight": -4,
+        "laning": -3,
         "siege": 0,
-        "utility": 15
+        "utility": 19
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1673,17 +1718,17 @@
     },
     {
       "version": "7.36b",
-      "date": "2026-06-14T21:53:54.797Z",
+      "date": "2026-06-17T18:07:14.896Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -17,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17.5,
-        "laning": -17,
+        "teamfight": -4,
+        "laning": -3,
         "siege": 0,
-        "utility": 15
+        "utility": 19
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1696,17 +1741,17 @@
     },
     {
       "version": "7.36c",
-      "date": "2026-06-14T21:53:54.800Z",
+      "date": "2026-06-17T18:07:14.898Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -17,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17.5,
-        "laning": -17,
+        "teamfight": -4,
+        "laning": -3,
         "siege": 0,
-        "utility": 15
+        "utility": 19
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1719,13 +1764,14 @@
     },
     {
       "version": "7.37",
-      "date": "2026-06-14T21:53:54.805Z",
+      "date": "2026-06-17T18:07:14.902Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Primal Beast",
           "subEntityName": "Uproar",
           "rawNote": "Slow per stack decreased from 8% to 5/6/7/8%",
+          "originalSource": "Slow per stack decreased from 8% to 5/6/7/8%",
           "indentLevel": 1,
           "metric": "Slow per stack",
           "changeType": "DECREASED",
@@ -1754,13 +1800,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -17,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17.5,
-        "laning": -17,
+        "teamfight": -4,
+        "laning": -3,
         "siege": 0,
-        "utility": 15
+        "utility": 19
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1773,17 +1819,17 @@
     },
     {
       "version": "7.37b",
-      "date": "2026-06-14T21:53:54.807Z",
+      "date": "2026-06-17T18:07:14.904Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -17,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17.5,
-        "laning": -17,
+        "teamfight": -4,
+        "laning": -3,
         "siege": 0,
-        "utility": 15
+        "utility": 19
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1796,12 +1842,13 @@
     },
     {
       "version": "7.37c",
-      "date": "2026-06-14T21:53:54.810Z",
+      "date": "2026-06-17T18:07:14.907Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Primal Beast",
           "rawNote": "Base Movement Speed decreased from 310 to 305",
+          "originalSource": "Base Movement Speed decreased from 310 to 305",
           "indentLevel": 1,
           "metric": "Base Movement Speed",
           "changeType": "DECREASED",
@@ -1829,13 +1876,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -17,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17.5,
-        "laning": -17,
+        "teamfight": -4,
+        "laning": -3,
         "siege": 0,
-        "utility": 15
+        "utility": 19
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1844,21 +1891,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": "Recovery"
+      "temporalAssessment": null
     },
     {
       "version": "7.37d",
-      "date": "2026-06-14T21:53:54.813Z",
+      "date": "2026-06-17T18:07:14.909Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -17,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17.5,
-        "laning": -17,
+        "teamfight": -4,
+        "laning": -3,
         "siege": 0,
-        "utility": 15
+        "utility": 19
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1871,13 +1918,14 @@
     },
     {
       "version": "7.37e",
-      "date": "2026-06-14T21:53:54.815Z",
+      "date": "2026-06-17T18:07:14.912Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Primal Beast",
           "subEntityName": "Trample",
           "rawNote": "Mana Cost increased from 90 to 100",
+          "originalSource": "Mana Cost increased from 90 to 100",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "INCREASED",
@@ -1908,6 +1956,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Pulverize",
           "rawNote": "Hit Damage rescaled from 125/175/225 to 100/175/250",
+          "originalSource": "Hit Damage rescaled from 125/175/225 to 100/175/250",
           "indentLevel": 1,
           "metric": "Hit Damage",
           "changeType": "RESCALE",
@@ -1938,6 +1987,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Onslaught Damage decreased from +90 to +80",
+          "originalSource": "Level 10 Talent Onslaught Damage decreased from +90 to +80",
           "indentLevel": 1,
           "metric": "Level 10 Talent Onslaught Damage",
           "changeType": "DECREASED",
@@ -1973,13 +2023,13 @@
         "utility": -1
       },
       "totalVector": {
-        "farming": -18,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17.5,
-        "laning": -18,
+        "teamfight": -4,
+        "laning": -4,
         "siege": 0,
-        "utility": 14
+        "utility": 18
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1992,21 +2042,22 @@
     },
     {
       "version": "7.38",
-      "date": "2026-06-14T21:53:54.824Z",
+      "date": "2026-06-17T18:07:14.919Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Primal Beast",
           "rawNote": "Removed Romp N' Stomp Facet",
+          "originalSource": "Removed Romp N' Stomp Facet",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
             "entityId": 137
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -2016,7 +2067,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2024,6 +2076,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Onslaught",
           "rawNote": "Knockback radius and distance are no longer affected by AoE increase",
+          "originalSource": "Knockback radius and distance are no longer affected by AoE increase",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -2051,6 +2104,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Uproar",
           "rawNote": "No longer passively grants base damage",
+          "originalSource": "No longer passively grants base damage",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2078,6 +2132,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Uproar",
           "rawNote": "Slow per stack rescaled from 5/6/7/8% to 4/6/8/10%",
+          "originalSource": "Slow per stack rescaled from 5/6/7/8% to 4/6/8/10%",
           "indentLevel": 1,
           "metric": "Slow per stack",
           "changeType": "RESCALE",
@@ -2108,6 +2163,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent +80 Onslaught Damage replaced with +20 Damage",
+          "originalSource": "Level 10 Talent +80 Onslaught Damage replaced with +20 Damage",
           "indentLevel": 1,
           "metric": "Level 10 Talent +80 Onslaught Damage",
           "changeType": "REWORK",
@@ -2134,13 +2190,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -18,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17.5,
-        "laning": -18,
+        "teamfight": -4,
+        "laning": -4,
         "siege": 0,
-        "utility": 14
+        "utility": 18
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2153,17 +2209,17 @@
     },
     {
       "version": "7.38b",
-      "date": "2026-06-14T21:53:54.827Z",
+      "date": "2026-06-17T18:07:14.922Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -18,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17.5,
-        "laning": -18,
+        "teamfight": -4,
+        "laning": -4,
         "siege": 0,
-        "utility": 14
+        "utility": 18
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2176,13 +2232,14 @@
     },
     {
       "version": "7.38c",
-      "date": "2026-06-14T21:53:54.830Z",
+      "date": "2026-06-17T18:07:14.924Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Primal Beast",
           "subEntityName": "Uproar",
           "rawNote": "Max Stacks increased from 5 to 6",
+          "originalSource": "Max Stacks increased from 5 to 6",
           "indentLevel": 1,
           "metric": "Max Stacks",
           "changeType": "INCREASED",
@@ -2211,13 +2268,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -18,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17.5,
-        "laning": -18,
+        "teamfight": -4,
+        "laning": -4,
         "siege": 0,
-        "utility": 14
+        "utility": 18
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2226,21 +2283,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.39",
-      "date": "2026-06-14T21:53:54.836Z",
+      "date": "2026-06-17T18:07:14.929Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -18,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17.5,
-        "laning": -18,
+        "teamfight": -4,
+        "laning": -4,
         "siege": 0,
-        "utility": 14
+        "utility": 18
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2253,17 +2310,17 @@
     },
     {
       "version": "7.39b",
-      "date": "2026-06-14T21:53:54.840Z",
+      "date": "2026-06-17T18:07:14.931Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -18,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17.5,
-        "laning": -18,
+        "teamfight": -4,
+        "laning": -4,
         "siege": 0,
-        "utility": 14
+        "utility": 18
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2276,13 +2333,14 @@
     },
     {
       "version": "7.39c",
-      "date": "2026-06-14T21:53:54.844Z",
+      "date": "2026-06-17T18:07:14.933Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Primal Beast",
           "subEntityName": "Rock Throw",
           "rawNote": "Cooldown decreased from 25s to 20s",
+          "originalSource": "Cooldown decreased from 25s to 20s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "DECREASED",
@@ -2313,6 +2371,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Damage increased from +20 to +30",
+          "originalSource": "Level 10 Talent Damage increased from +20 to +30",
           "indentLevel": 1,
           "metric": "Level 10 Talent Damage",
           "changeType": "INCREASED",
@@ -2342,19 +2401,19 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1.5,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -18,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -16,
-        "laning": -18,
+        "teamfight": -3,
+        "laning": -4,
         "siege": 0,
-        "utility": 14
+        "utility": 18
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2363,17 +2422,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.39d",
-      "date": "2026-06-14T21:53:54.848Z",
+      "date": "2026-06-17T18:07:14.937Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Primal Beast",
           "subEntityName": "Pulverize",
           "rawNote": "Cooldown decreased from 40/36/32s to 40/35/30s",
+          "originalSource": "Cooldown decreased from 40/36/32s to 40/35/30s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "DECREASED",
@@ -2404,19 +2464,19 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1.5,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -18,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -14.5,
-        "laning": -18,
+        "teamfight": -2,
+        "laning": -4,
         "siege": 0,
-        "utility": 14
+        "utility": 18
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2425,21 +2485,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.39e",
-      "date": "2026-06-14T21:53:54.851Z",
+      "date": "2026-06-17T18:07:14.940Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -18,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -14.5,
-        "laning": -18,
+        "teamfight": -2,
+        "laning": -4,
         "siege": 0,
-        "utility": 14
+        "utility": 18
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2452,17 +2512,17 @@
     },
     {
       "version": "7.40",
-      "date": "2026-06-14T21:53:54.859Z",
+      "date": "2026-06-17T18:07:14.946Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -18,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -14.5,
-        "laning": -18,
+        "teamfight": -2,
+        "laning": -4,
         "siege": 0,
-        "utility": 14
+        "utility": 18
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2475,13 +2535,14 @@
     },
     {
       "version": "7.40b",
-      "date": "2026-06-14T21:53:54.866Z",
+      "date": "2026-06-17T18:07:14.948Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Primal Beast",
           "subEntityName": "Onslaught",
           "rawNote": "Stun Duration rescaled from 0.8/1/1.2/1.4s to 0.7/1/1.3/1.6s",
+          "originalSource": "Stun Duration rescaled from 0.8/1/1.2/1.4s to 0.7/1/1.3/1.6s",
           "indentLevel": 1,
           "metric": "Stun Duration",
           "changeType": "RESCALE",
@@ -2512,6 +2573,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Basic Self-Dispel on Uproar Cast replaced with +6 Uproar Armor Per Stack",
+          "originalSource": "Level 15 Talent Basic Self-Dispel on Uproar Cast replaced with +6 Uproar Armor Per Stack",
           "indentLevel": 1,
           "metric": "Level 15 Talent Basic Self-Dispel on Uproar Cast",
           "changeType": "REWORK",
@@ -2540,6 +2602,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +7 Uproar Armor Per Stack replaced with Basic Self-Dispel on Uproar Cast",
+          "originalSource": "Level 20 Talent +7 Uproar Armor Per Stack replaced with Basic Self-Dispel on Uproar Cast",
           "indentLevel": 1,
           "metric": "Level 20 Talent +7 Uproar Armor Per Stack",
           "changeType": "REWORK",
@@ -2566,13 +2629,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -18,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -14.5,
-        "laning": -18,
+        "teamfight": -2,
+        "laning": -4,
         "siege": 0,
-        "utility": 14
+        "utility": 18
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2585,17 +2648,17 @@
     },
     {
       "version": "7.40c",
-      "date": "2026-06-14T21:53:54.873Z",
+      "date": "2026-06-17T18:07:14.950Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -18,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -14.5,
-        "laning": -18,
+        "teamfight": -2,
+        "laning": -4,
         "siege": 0,
-        "utility": 14
+        "utility": 18
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2608,13 +2671,14 @@
     },
     {
       "version": "7.41",
-      "date": "2026-06-14T21:53:54.887Z",
+      "date": "2026-06-17T18:07:14.959Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Primal Beast",
           "subEntityName": "Colossal",
           "rawNote": "Innate ability reworked",
+          "originalSource": "Innate ability reworked",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2622,9 +2686,9 @@
             "subEntityId": 1432
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -2634,7 +2698,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2642,6 +2707,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Colossal",
           "rawNote": "Primal Beast has 10% base Slow Resistance and gains +0.5% Area of Effect and +1% Slow Resistance for every 100 Max Health",
+          "originalSource": "Primal Beast has 10% base Slow Resistance and gains +0.5% Area of Effect and +1% Slow Resistance for every 100 Max Health",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2649,9 +2715,9 @@
             "subEntityId": 1432
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -2661,7 +2727,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2669,6 +2736,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Pulverize",
           "rawNote": "AoE Radius decreased from 600 to 575",
+          "originalSource": "AoE Radius decreased from 600 to 575",
           "indentLevel": 1,
           "metric": "AoE Radius",
           "changeType": "DECREASED",
@@ -2699,6 +2767,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent Cannot Be Slowed Or Rooted During Trample replaced with Colossal 2x Bonuses During Trample",
+          "originalSource": "Level 25 Talent Cannot Be Slowed Or Rooted During Trample replaced with Colossal 2x Bonuses During Trample",
           "indentLevel": 1,
           "metric": "Level 25 Talent Cannot Be Slowed Or Rooted During Trample",
           "changeType": "REWORK",
@@ -2725,13 +2794,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -18,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -14.5,
-        "laning": -18,
+        "teamfight": -2,
+        "laning": -4,
         "siege": 0,
-        "utility": 14
+        "utility": 18
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2744,13 +2813,14 @@
     },
     {
       "version": "7.41a",
-      "date": "2026-06-14T21:53:54.892Z",
+      "date": "2026-06-17T18:07:14.961Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Primal Beast",
           "subEntityName": "Colossal",
           "rawNote": "Now slightly grows in size when crossing an HP threshold",
+          "originalSource": "Now slightly grows in size when crossing an HP threshold",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2776,13 +2846,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -18,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -14.5,
-        "laning": -18,
+        "teamfight": -2,
+        "laning": -4,
         "siege": 0,
-        "utility": 14
+        "utility": 18
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2795,13 +2865,14 @@
     },
     {
       "version": "7.41b",
-      "date": "2026-06-14T21:53:54.897Z",
+      "date": "2026-06-17T18:07:14.964Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Primal Beast",
           "subEntityName": "Pulverize",
           "rawNote": "Cooldown increased from 40/35/30s to 45/40/35s",
+          "originalSource": "Cooldown increased from 40/35/30s to 45/40/35s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "INCREASED",
@@ -2832,6 +2903,7 @@
           "entityName": "Primal Beast",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Damage decreased from +30 to +25",
+          "originalSource": "Level 10 Talent Damage decreased from +30 to +25",
           "indentLevel": 1,
           "metric": "Level 10 Talent Damage",
           "changeType": "DECREASED",
@@ -2861,19 +2933,19 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -18,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -16,
-        "laning": -18,
+        "teamfight": -3,
+        "laning": -4,
         "siege": 0,
-        "utility": 14
+        "utility": 18
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2886,13 +2958,14 @@
     },
     {
       "version": "7.41c",
-      "date": "2026-06-14T21:53:54.902Z",
+      "date": "2026-06-17T18:07:14.966Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Primal Beast",
           "subEntityName": "Trample",
           "rawNote": "Damage AoE decreased from 230 to 200",
+          "originalSource": "Damage AoE decreased from 230 to 200",
           "indentLevel": 1,
           "metric": "Damage AoE",
           "changeType": "DECREASED",
@@ -2921,13 +2994,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -18,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -16,
-        "laning": -18,
+        "teamfight": -3,
+        "laning": -4,
         "siege": 0,
-        "utility": 14
+        "utility": 18
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2940,46 +3013,58 @@
     },
     {
       "version": "7.41d",
-      "date": "2026-06-14T21:53:54.908Z",
+      "date": "2026-06-17T18:07:14.969Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -18,
+        "farming": -4,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -16,
-        "laning": -18,
+        "teamfight": -3,
+        "laning": -4,
         "siege": 0,
-        "utility": 14
+        "utility": 18
       },
       "winrates": {
         "HERALD": {
-          "winrate": 0.4904,
-          "matchCount": 11512
+          "winrate": 0.4922,
+          "matchCount": 9916
         },
         "GUARDIAN": {
-          "winrate": 0.4834,
-          "matchCount": 22683
+          "winrate": 0.4818,
+          "matchCount": 19632
         },
         "CRUSADER": {
-          "winrate": 0.4839,
-          "matchCount": 24082
+          "winrate": 0.4853,
+          "matchCount": 20630
         },
         "ARCHON": {
-          "winrate": 0.4825,
-          "matchCount": 21417
+          "winrate": 0.481,
+          "matchCount": 18494
         },
         "LEGEND": {
-          "winrate": 0.4897,
-          "matchCount": 16527
+          "winrate": 0.4949,
+          "matchCount": 14226
         },
         "ANCIENT": {
-          "winrate": 0.497,
-          "matchCount": 11768
+          "winrate": 0.498,
+          "matchCount": 10100
         },
         "DIVINE": {
-          "winrate": 0.504,
-          "matchCount": 13942
+          "winrate": 0.5023,
+          "matchCount": 11834
+        },
+        "IMMORTAL": {
+          "winrate": 0,
+          "matchCount": 0
+        },
+        "PRO": {
+          "winrate": 0.4286,
+          "matchCount": 7
+        },
+        "GLOBAL_BLEND": {
+          "winrate": 0.5021,
+          "matchCount": 11841
         }
       },
       "temporalAssessment": null

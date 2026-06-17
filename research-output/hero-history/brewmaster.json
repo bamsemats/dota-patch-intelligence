@@ -3,12 +3,13 @@
   "history": [
     {
       "version": "7.33",
-      "date": "2026-06-14T21:53:54.726Z",
+      "date": "2026-06-17T18:07:14.843Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Brewmaster",
           "rawNote": "Now is a Universal Hero",
+          "originalSource": "Now is a Universal Hero",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -34,6 +35,7 @@
           "category": "hero",
           "entityName": "Brewmaster",
           "rawNote": "Base Damage decreased from 29-36 to 14-21",
+          "originalSource": "Base Damage decreased from 29-36 to 14-21",
           "indentLevel": 1,
           "metric": "Base Damage",
           "changeType": "DECREASED",
@@ -62,6 +64,7 @@
           "category": "hero",
           "entityName": "Brewmaster",
           "rawNote": "Damage on level 1 decreased by 4 (from 52-59 to 48-55)",
+          "originalSource": "Damage on level 1 decreased by 4 (from 52-59 to 48-55)",
           "indentLevel": 1,
           "metric": "Damage on level 1",
           "changeType": "DECREASED",
@@ -90,6 +93,7 @@
           "category": "hero",
           "entityName": "Brewmaster",
           "rawNote": "Damage gain per level increased from +3.7 to +4.38",
+          "originalSource": "Damage gain per level increased from +3.7 to +4.38",
           "indentLevel": 1,
           "metric": "Damage gain per level",
           "changeType": "INCREASED",
@@ -119,6 +123,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Void Stance is now part of the basic ability",
+          "originalSource": "Void Stance is now part of the basic ability",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -126,19 +131,20 @@
             "subEntityId": 5402
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DISPEL_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -146,6 +152,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Void Stance Status Resistance decreased from 20% to 5/10/15/20%",
+          "originalSource": "Void Stance Status Resistance decreased from 20% to 5/10/15/20%",
           "indentLevel": 1,
           "metric": "Void Stance Status Resistance",
           "changeType": "DECREASED",
@@ -176,6 +183,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Void Stance Slow on attack decreased from 25% to 10/15/20/25%",
+          "originalSource": "Void Stance Slow on attack decreased from 25% to 10/15/20/25%",
           "indentLevel": 1,
           "metric": "Void Stance Slow on attack",
           "changeType": "DECREASED",
@@ -206,6 +214,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Earth Brewling's Spell Immunity replaced with Debuff Immunity with 50% Magic Resistance",
+          "originalSource": "Earth Brewling's Spell Immunity replaced with Debuff Immunity with 50% Magic Resistance",
           "indentLevel": 1,
           "metric": "Earth Brewling's Spell Immunity",
           "changeType": "REWORK",
@@ -235,6 +244,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Earth Brewling Damage decreased from 30/60/90 to 20/50/80",
+          "originalSource": "Earth Brewling Damage decreased from 30/60/90 to 20/50/80",
           "indentLevel": 1,
           "metric": "Earth Brewling Damage",
           "changeType": "DECREASED",
@@ -264,7 +274,8 @@
           "category": "hero",
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
-          "rawNote": "Earth Brewling's Hurl Boulder Stun Duration decreased from 2s to 1.6s ",
+          "rawNote": "Earth Brewling's Hurl Boulder Stun Duration decreased from 2s to 1.6s",
+          "originalSource": "Earth Brewling's Hurl Boulder Stun Duration decreased from 2s to 1.6s ",
           "indentLevel": 1,
           "metric": "Earth Brewling's Hurl Boulder Stun Duration",
           "changeType": "DECREASED",
@@ -295,6 +306,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Storm Brewling Damage decreased from 30/50/70 to 20/40/60",
+          "originalSource": "Storm Brewling Damage decreased from 30/50/70 to 20/40/60",
           "indentLevel": 1,
           "metric": "Storm Brewling Damage",
           "changeType": "DECREASED",
@@ -325,6 +337,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Storm Brewling's Cyclone Hero Duration decreased from 6s to 5s (Non-Hero Duration from 20s to 16s)",
+          "originalSource": "Storm Brewling's Cyclone Hero Duration decreased from 6s to 5s (Non-Hero Duration from 20s to 16s)",
           "indentLevel": 1,
           "metric": "Storm Brewling's Cyclone Hero Duration",
           "changeType": "DECREASED",
@@ -355,6 +368,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Fire Brewling Damage rescaled from 80/120/160 to 70/120/170",
+          "originalSource": "Fire Brewling Damage rescaled from 80/120/160 to 70/120/170",
           "indentLevel": 1,
           "metric": "Fire Brewling Damage",
           "changeType": "RESCALE",
@@ -385,6 +399,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Void Brewling is now part of the basic ability",
+          "originalSource": "Void Brewling is now part of the basic ability",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -392,19 +407,20 @@
             "subEntityId": 5403
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DISPEL_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -412,6 +428,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Aghanim's Shard now extends Primal Split duration by 12s and grants Brewlings the Primal Split Cancel ability",
+          "originalSource": "Aghanim's Shard now extends Primal Split duration by 12s and grants Brewlings the Primal Split Cancel ability",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -439,6 +456,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Void Brewling Astral Pulse ability replaced with Astral Pull. Can target allies and enemies. Pulls the target and the Void Brewling in the target direction. Enemies receive 50/100/150 damage upon arrival. Distance: 300/500/700. Cast Range: 150. Cooldown: 8s",
+          "originalSource": "Void Brewling Astral Pulse ability replaced with Astral Pull. Can target allies and enemies. Pulls the target and the Void Brewling in the target direction. Enemies receive 50/100/150 damage upon arrival. Distance: 300/500/700. Cast Range: 150. Cooldown: 8s",
           "indentLevel": 1,
           "metric": "Void Brewling Astral Pulse ability",
           "changeType": "REWORK",
@@ -468,6 +486,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent +15 Damage replaced with +10 Brewlings Damage",
+          "originalSource": "Level 10 Talent +15 Damage replaced with +10 Brewlings Damage",
           "indentLevel": 1,
           "metric": "Level 10 Talent +15 Damage",
           "changeType": "REWORK",
@@ -507,7 +526,7 @@
     },
     {
       "version": "7.33b",
-      "date": "2026-06-14T21:53:54.731Z",
+      "date": "2026-06-17T18:07:14.846Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -553,12 +572,13 @@
     },
     {
       "version": "7.33c",
-      "date": "2026-06-14T21:53:54.736Z",
+      "date": "2026-06-17T18:07:14.849Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Brewmaster",
           "rawNote": "Base Damage decreased by 5 (Level 1 damage unchanged)",
+          "originalSource": "Base Damage decreased by 5 (Level 1 damage unchanged)",
           "indentLevel": 1,
           "metric": "Base Damage",
           "changeType": "DECREASED",
@@ -627,7 +647,7 @@
     },
     {
       "version": "7.33d",
-      "date": "2026-06-14T21:53:54.740Z",
+      "date": "2026-06-17T18:07:14.851Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -673,7 +693,7 @@
     },
     {
       "version": "7.33e",
-      "date": "2026-06-14T21:53:54.743Z",
+      "date": "2026-06-17T18:07:14.854Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -719,12 +739,13 @@
     },
     {
       "version": "7.34",
-      "date": "2026-06-14T21:53:54.750Z",
+      "date": "2026-06-17T18:07:14.859Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Brewmaster",
           "rawNote": "Base Armor increased by 1",
+          "originalSource": "Base Armor increased by 1",
           "indentLevel": 1,
           "metric": "Base Armor",
           "changeType": "INCREASED",
@@ -752,25 +773,27 @@
           "category": "hero",
           "entityName": "Brewmaster",
           "rawNote": "Primal Companion Fixed an issue when Brewlings did not get increased health from level 20 talent",
+          "originalSource": "Primal Companion Fixed an issue when Brewlings did not get increased health from level 20 talent",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
             "entityId": 78
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ROSHAN_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -778,6 +801,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Cinder Brew",
           "rawNote": "Dealing or receiving magic damage also extends Brewmaster's own Brewed Up duration",
+          "originalSource": "Dealing or receiving magic damage also extends Brewmaster's own Brewed Up duration",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -785,19 +809,20 @@
             "subEntityId": 7310
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "SPELL_IMMUNITY_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 9,
+              "Guardian": 9,
+              "Crusader": 9,
+              "Archon": 9,
+              "Legend": 9,
+              "Ancient": 9,
+              "Divine": 9
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -805,6 +830,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Fire Stance now additionally grants 10/15/20/25 attack speed. Bonus triples when Brewed Up",
+          "originalSource": "Fire Stance now additionally grants 10/15/20/25 attack speed. Bonus triples when Brewed Up",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -832,6 +858,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Fire Stance Crit Chance decreased from 24% to 20%",
+          "originalSource": "Fire Stance Crit Chance decreased from 24% to 20%",
           "indentLevel": 1,
           "metric": "Fire Stance Crit Chance",
           "changeType": "DECREASED",
@@ -873,13 +900,14 @@
     },
     {
       "version": "7.34b",
-      "date": "2026-06-14T21:53:54.755Z",
+      "date": "2026-06-17T18:07:14.863Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Fire Stance Critical Damage decreased from 145/160/175/190% to 120/140/160/180%",
+          "originalSource": "Fire Stance Critical Damage decreased from 145/160/175/190% to 120/140/160/180%",
           "indentLevel": 1,
           "metric": "Fire Stance Critical Damage",
           "changeType": "DECREASED",
@@ -950,13 +978,14 @@
     },
     {
       "version": "7.34c",
-      "date": "2026-06-14T21:53:54.759Z",
+      "date": "2026-06-17T18:07:14.868Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Brewmaster",
           "subEntityName": "Cinder Brew",
           "rawNote": "Cooldown increased from 20/17/14/11s to 22/19/16/13s",
+          "originalSource": "Cooldown increased from 20/17/14/11s to 22/19/16/13s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "INCREASED",
@@ -987,7 +1016,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -996,7 +1025,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1035,13 +1064,14 @@
     },
     {
       "version": "7.34d",
-      "date": "2026-06-14T21:53:54.764Z",
+      "date": "2026-06-17T18:07:14.871Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Brewed Up Multiplier decreased from 3x to 2.5x",
+          "originalSource": "Brewed Up Multiplier decreased from 3x to 2.5x",
           "indentLevel": 1,
           "metric": "Brewed Up Multiplier",
           "changeType": "DECREASED",
@@ -1072,6 +1102,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Mana Cost increased from 125/150/175 to 150/200/250",
+          "originalSource": "Mana Cost increased from 125/150/175 to 150/200/250",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "INCREASED",
@@ -1102,6 +1133,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Aghanim's Shard Cancel now always make Brewmaster reappear according to regular Brewling priority, regardless of which Brewling activated it",
+          "originalSource": "Aghanim's Shard Cancel now always make Brewmaster reappear according to regular Brewling priority, regardless of which Brewling activated it",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -1109,9 +1141,9 @@
             "subEntityId": 5403
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -1121,7 +1153,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         }
       ],
@@ -1138,7 +1171,7 @@
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -1,
         "laning": -1,
         "siege": 0,
         "utility": -1
@@ -1177,14 +1210,14 @@
     },
     {
       "version": "7.34e",
-      "date": "2026-06-14T21:53:54.768Z",
+      "date": "2026-06-17T18:07:14.873Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -1,
         "laning": -1,
         "siege": 0,
         "utility": -1
@@ -1223,13 +1256,14 @@
     },
     {
       "version": "7.35",
-      "date": "2026-06-14T21:53:54.772Z",
+      "date": "2026-06-17T18:07:14.877Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Earth Brewling's Demolish Bonus Building Damage decreased from 90/180/270 to 90/170/250",
+          "originalSource": "Earth Brewling's Demolish Bonus Building Damage decreased from 90/180/270 to 90/170/250",
           "indentLevel": 1,
           "metric": "Earth Brewling's Demolish Bonus Building Damage",
           "changeType": "DECREASED",
@@ -1260,6 +1294,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Attack Speed increased from +80 to +90",
+          "originalSource": "Level 20 Talent Attack Speed increased from +80 to +90",
           "indentLevel": 1,
           "metric": "Level 20 Talent Attack Speed",
           "changeType": "INCREASED",
@@ -1290,7 +1325,7 @@
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -1,
         "laning": -1,
         "siege": 0,
         "utility": -1
@@ -1306,14 +1341,14 @@
     },
     {
       "version": "7.35b",
-      "date": "2026-06-14T21:53:54.775Z",
+      "date": "2026-06-17T18:07:14.879Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -1,
         "laning": -1,
         "siege": 0,
         "utility": -1
@@ -1329,14 +1364,14 @@
     },
     {
       "version": "7.35c",
-      "date": "2026-06-14T21:53:54.782Z",
+      "date": "2026-06-17T18:07:14.881Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -1,
         "laning": -1,
         "siege": 0,
         "utility": -1
@@ -1352,14 +1387,14 @@
     },
     {
       "version": "7.35d",
-      "date": "2026-06-14T21:53:54.785Z",
+      "date": "2026-06-17T18:07:14.883Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -1,
         "laning": -1,
         "siege": 0,
         "utility": -1
@@ -1375,12 +1410,13 @@
     },
     {
       "version": "7.36",
-      "date": "2026-06-14T21:53:54.791Z",
+      "date": "2026-06-17T18:07:14.890Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Brewmaster",
           "rawNote": "Primal Companion: Brewlings no longer have any movement, cooldown or casting penalties",
+          "originalSource": "Primal Companion: Brewlings no longer have any movement, cooldown or casting penalties",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1407,6 +1443,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Thunder Clap",
           "rawNote": "Damage decreased from 90/160/230/300 to 75/150/225/300",
+          "originalSource": "Damage decreased from 90/160/230/300 to 75/150/225/300",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "DECREASED",
@@ -1437,6 +1474,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Thunder Clap",
           "rawNote": "Movement Speed Slow rescaled from 25/35/45/55% to 15/30/45/60%",
+          "originalSource": "Movement Speed Slow rescaled from 25/35/45/55% to 15/30/45/60%",
           "indentLevel": 1,
           "metric": "Movement Speed Slow",
           "changeType": "RESCALE",
@@ -1467,6 +1505,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Thunder Clap",
           "rawNote": "Attack Speed Slow rescaled from 25/35/45/55 to 15/30/45/60",
+          "originalSource": "Attack Speed Slow rescaled from 25/35/45/55 to 15/30/45/60",
           "indentLevel": 1,
           "metric": "Attack Speed Slow",
           "changeType": "RESCALE",
@@ -1497,6 +1536,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Cinder Brew",
           "rawNote": "Can now be ignited only from magical and pure damage. Physical damage spells will not ignite the target",
+          "originalSource": "Can now be ignited only from magical and pure damage. Physical damage spells will not ignite the target",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -1504,19 +1544,20 @@
             "subEntityId": 7310
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "SPELL_IMMUNITY_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 9,
+              "Guardian": 9,
+              "Crusader": 9,
+              "Archon": 9,
+              "Legend": 9,
+              "Ancient": 9,
+              "Divine": 9
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -1524,6 +1565,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Earth Brewling's Demolish Damage decreased from 90/170/250 to 80/140/200",
+          "originalSource": "Earth Brewling's Demolish Damage decreased from 90/170/250 to 80/140/200",
           "indentLevel": 1,
           "metric": "Earth Brewling's Demolish Damage",
           "changeType": "DECREASED",
@@ -1554,6 +1596,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Storm Brewling's Cyclone Hero Duration decreased from 5s to 3/4/5s",
+          "originalSource": "Storm Brewling's Cyclone Hero Duration decreased from 5s to 3/4/5s",
           "indentLevel": 1,
           "metric": "Storm Brewling's Cyclone Hero Duration",
           "changeType": "DECREASED",
@@ -1584,6 +1627,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Storm Brewling's Wind Walk Cooldown increased from 5s to 20/14/8s",
+          "originalSource": "Storm Brewling's Wind Walk Cooldown increased from 5s to 20/14/8s",
           "indentLevel": 1,
           "metric": "Storm Brewling's Wind Walk Cooldown",
           "changeType": "INCREASED",
@@ -1614,6 +1658,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Storm Brewling's Wind Walk Bonus Speed decreased from 50% to 20/30/40%",
+          "originalSource": "Storm Brewling's Wind Walk Bonus Speed decreased from 50% to 20/30/40%",
           "indentLevel": 1,
           "metric": "Storm Brewling's Wind Walk Bonus Speed",
           "changeType": "DECREASED",
@@ -1641,20 +1686,20 @@
         }
       ],
       "vectorDelta": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8,
-        "laning": -8,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -9,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -9.5,
-        "laning": -9,
+        "teamfight": -2,
+        "laning": -2,
         "siege": 0,
         "utility": -1
       },
@@ -1669,15 +1714,15 @@
     },
     {
       "version": "7.36a",
-      "date": "2026-06-14T21:53:54.794Z",
+      "date": "2026-06-17T18:07:14.892Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -9,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -9.5,
-        "laning": -9,
+        "teamfight": -2,
+        "laning": -2,
         "siege": 0,
         "utility": -1
       },
@@ -1692,15 +1737,15 @@
     },
     {
       "version": "7.36b",
-      "date": "2026-06-14T21:53:54.797Z",
+      "date": "2026-06-17T18:07:14.896Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -9,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -9.5,
-        "laning": -9,
+        "teamfight": -2,
+        "laning": -2,
         "siege": 0,
         "utility": -1
       },
@@ -1715,13 +1760,14 @@
     },
     {
       "version": "7.36c",
-      "date": "2026-06-14T21:53:54.800Z",
+      "date": "2026-06-17T18:07:14.898Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Aghanim's Shard bonus duration decreased from +12s to +8s",
+          "originalSource": "Aghanim's Shard bonus duration decreased from +12s to +8s",
           "indentLevel": 1,
           "metric": "Aghanim's Shard bonus duration",
           "changeType": "DECREASED",
@@ -1750,11 +1796,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -9,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -9.5,
-        "laning": -9,
+        "teamfight": -2,
+        "laning": -2,
         "siege": 0,
         "utility": -1
       },
@@ -1769,21 +1815,22 @@
     },
     {
       "version": "7.37",
-      "date": "2026-06-14T21:53:54.804Z",
+      "date": "2026-06-17T18:07:14.902Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Brewmaster",
           "rawNote": "Belligerent: New Innate ability. Passive, can't be leveled up",
+          "originalSource": "Belligerent: New Innate ability. Passive, can't be leveled up",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
             "entityId": 78
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -1793,32 +1840,35 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
           "category": "hero",
           "entityName": "Brewmaster",
           "rawNote": "Whenever Brewmaster respawns or comes out of Primal Split, he gains 20% attack damage bonus. Duration when respawning: 30s. Duration after coming out of Primal Split: 15s",
+          "originalSource": "Whenever Brewmaster respawns or comes out of Primal Split, he gains 20% attack damage bonus. Duration when respawning: 30s. Duration after coming out of Primal Split: 15s",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
             "entityId": 78
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ROSHAN_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -1826,6 +1876,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Thunder Clap",
           "rawNote": "Cooldown increased from 13s to 16/15/14/13s",
+          "originalSource": "Cooldown increased from 13s to 16/15/14/13s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "INCREASED",
@@ -1856,6 +1907,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Thunder Clap",
           "rawNote": "Radius decreased from 400 to 325/350/375/400",
+          "originalSource": "Radius decreased from 400 to 325/350/375/400",
           "indentLevel": 1,
           "metric": "Radius",
           "changeType": "DECREASED",
@@ -1886,6 +1938,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "No longer an innate ability",
+          "originalSource": "No longer an innate ability",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1913,6 +1966,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Earth Brawler bonus armor rescaled from 1/3/5/7/9 to 1/3/5/7",
+          "originalSource": "Earth Brawler bonus armor rescaled from 1/3/5/7/9 to 1/3/5/7",
           "indentLevel": 1,
           "metric": "Earth Brawler bonus armor",
           "changeType": "RESCALE",
@@ -1943,6 +1997,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Earth Brawler bonus magic resistance rescaled from 4/8/12/16/20% to 5/10/15/20%",
+          "originalSource": "Earth Brawler bonus magic resistance rescaled from 4/8/12/16/20% to 5/10/15/20%",
           "indentLevel": 1,
           "metric": "Earth Brawler bonus magic resistance",
           "changeType": "RESCALE",
@@ -1973,6 +2028,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Storm Brawler bonus evasion rescaled from 10/15/20/25/30% to 15/20/25/30%",
+          "originalSource": "Storm Brawler bonus evasion rescaled from 10/15/20/25/30% to 15/20/25/30%",
           "indentLevel": 1,
           "metric": "Storm Brawler bonus evasion",
           "changeType": "RESCALE",
@@ -2003,6 +2059,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Storm Brawler bonus movement speed rescaled from 4/6/8/10/12% to 5/7/9/11%",
+          "originalSource": "Storm Brawler bonus movement speed rescaled from 4/6/8/10/12% to 5/7/9/11%",
           "indentLevel": 1,
           "metric": "Storm Brawler bonus movement speed",
           "changeType": "RESCALE",
@@ -2033,6 +2090,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Fire Brawler crit multiplier rescaled from 120/135/150/165/180% to 120/140/160/180%",
+          "originalSource": "Fire Brawler crit multiplier rescaled from 120/135/150/165/180% to 120/140/160/180%",
           "indentLevel": 1,
           "metric": "Fire Brawler crit multiplier",
           "changeType": "RESCALE",
@@ -2063,6 +2121,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Fire Brawler bonus attack speed rescaled from 10/15/20/25/30 to 10/15/20/25",
+          "originalSource": "Fire Brawler bonus attack speed rescaled from 10/15/20/25/30 to 10/15/20/25",
           "indentLevel": 1,
           "metric": "Fire Brawler bonus attack speed",
           "changeType": "RESCALE",
@@ -2093,6 +2152,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Void Brawler bonus status resistance now stacks with other sources of status resistance",
+          "originalSource": "Void Brawler bonus status resistance now stacks with other sources of status resistance",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2100,9 +2160,9 @@
             "subEntityId": 5402
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DAMAGE_INTERACTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -2112,7 +2172,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2120,6 +2181,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Void Brawler bonus status resistance rescaled from 4/8/12/16/20% to 5/10/15/20%",
+          "originalSource": "Void Brawler bonus status resistance rescaled from 4/8/12/16/20% to 5/10/15/20%",
           "indentLevel": 1,
           "metric": "Void Brawler bonus status resistance",
           "changeType": "RESCALE",
@@ -2150,6 +2212,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Void Brawler slow on attack rescaled from 5/10/15/20/25% to 10/15/20/25%",
+          "originalSource": "Void Brawler slow on attack rescaled from 5/10/15/20/25% to 10/15/20/25%",
           "indentLevel": 1,
           "metric": "Void Brawler slow on attack",
           "changeType": "RESCALE",
@@ -2180,17 +2243,17 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -7.5,
+        "teamfight": -2,
         "laning": 0,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -9,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17,
-        "laning": -9,
+        "teamfight": -4,
+        "laning": -2,
         "siege": 0,
         "utility": -1
       },
@@ -2205,15 +2268,15 @@
     },
     {
       "version": "7.37b",
-      "date": "2026-06-14T21:53:54.807Z",
+      "date": "2026-06-17T18:07:14.904Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -9,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17,
-        "laning": -9,
+        "teamfight": -4,
+        "laning": -2,
         "siege": 0,
         "utility": -1
       },
@@ -2228,15 +2291,15 @@
     },
     {
       "version": "7.37c",
-      "date": "2026-06-14T21:53:54.810Z",
+      "date": "2026-06-17T18:07:14.906Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -9,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17,
-        "laning": -9,
+        "teamfight": -4,
+        "laning": -2,
         "siege": 0,
         "utility": -1
       },
@@ -2251,15 +2314,15 @@
     },
     {
       "version": "7.37d",
-      "date": "2026-06-14T21:53:54.812Z",
+      "date": "2026-06-17T18:07:14.909Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -9,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17,
-        "laning": -9,
+        "teamfight": -4,
+        "laning": -2,
         "siege": 0,
         "utility": -1
       },
@@ -2274,12 +2337,13 @@
     },
     {
       "version": "7.37e",
-      "date": "2026-06-14T21:53:54.815Z",
+      "date": "2026-06-17T18:07:14.912Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Brewmaster",
           "rawNote": "Base Intelligence increased from 15 to 17",
+          "originalSource": "Base Intelligence increased from 15 to 17",
           "indentLevel": 1,
           "metric": "Base Intelligence",
           "changeType": "INCREASED",
@@ -2309,6 +2373,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Earth Brawler stance armor increased from 1/3/5/7 to 2/4/6/8",
+          "originalSource": "Earth Brawler stance armor increased from 1/3/5/7 to 2/4/6/8",
           "indentLevel": 1,
           "metric": "Earth Brawler stance armor",
           "changeType": "INCREASED",
@@ -2337,11 +2402,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -9,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17,
-        "laning": -9,
+        "teamfight": -4,
+        "laning": -2,
         "siege": 0,
         "utility": -1
       },
@@ -2356,12 +2421,13 @@
     },
     {
       "version": "7.38",
-      "date": "2026-06-14T21:53:54.824Z",
+      "date": "2026-06-17T18:07:14.919Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Brewmaster",
           "rawNote": "Base Damage increased by 17",
+          "originalSource": "Base Damage increased by 17",
           "indentLevel": 1,
           "metric": "Base Damage",
           "changeType": "INCREASED",
@@ -2389,6 +2455,7 @@
           "category": "hero",
           "entityName": "Brewmaster",
           "rawNote": "Damage at level 1 increased by 2 (from 50-57 to 52-59)",
+          "originalSource": "Damage at level 1 increased by 2 (from 50-57 to 52-59)",
           "indentLevel": 1,
           "metric": "Damage at level 1",
           "changeType": "INCREASED",
@@ -2417,6 +2484,7 @@
           "category": "hero",
           "entityName": "Brewmaster",
           "rawNote": "Damage gain per level decreased from +5.1 to +3.3",
+          "originalSource": "Damage gain per level decreased from +5.1 to +3.3",
           "indentLevel": 1,
           "metric": "Damage gain per level",
           "changeType": "DECREASED",
@@ -2445,6 +2513,7 @@
           "category": "hero",
           "entityName": "Brewmaster",
           "rawNote": "Damage at level 30 decreased by 61 (from 227-234 to 166-173)",
+          "originalSource": "Damage at level 30 decreased by 61 (from 227-234 to 166-173)",
           "indentLevel": 1,
           "metric": "Damage at level 30",
           "changeType": "DECREASED",
@@ -2473,6 +2542,7 @@
           "category": "hero",
           "entityName": "Brewmaster",
           "rawNote": "Belligerent: Bonus Attack Damage increased from 20% to 25%",
+          "originalSource": "Belligerent: Bonus Attack Damage increased from 20% to 25%",
           "indentLevel": 1,
           "metric": "Belligerent: Bonus Attack Damage",
           "changeType": "INCREASED",
@@ -2502,6 +2572,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Storm Brawler Bonus Move Speed decreased from 5/7/9/11% to 4/6/8/10%",
+          "originalSource": "Storm Brawler Bonus Move Speed decreased from 5/7/9/11% to 4/6/8/10%",
           "indentLevel": 1,
           "metric": "Storm Brawler Bonus Move Speed",
           "changeType": "DECREASED",
@@ -2532,6 +2603,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Attack Speed increased from +90 to +100",
+          "originalSource": "Level 20 Talent Attack Speed increased from +90 to +100",
           "indentLevel": 1,
           "metric": "Level 20 Talent Attack Speed",
           "changeType": "INCREASED",
@@ -2559,11 +2631,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -9,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17,
-        "laning": -9,
+        "teamfight": -4,
+        "laning": -2,
         "siege": 0,
         "utility": -1
       },
@@ -2578,12 +2650,13 @@
     },
     {
       "version": "7.38b",
-      "date": "2026-06-14T21:53:54.826Z",
+      "date": "2026-06-17T18:07:14.921Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Brewmaster",
           "rawNote": "Belligerent: Duration on respawn increased from 30s to 45s",
+          "originalSource": "Belligerent: Duration on respawn increased from 30s to 45s",
           "indentLevel": 1,
           "metric": "Belligerent: Duration on respawn",
           "changeType": "INCREASED",
@@ -2613,6 +2686,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent +200 Thunder Clap AoE replaced with +1.5s Thunder Clap Duration",
+          "originalSource": "Level 10 Talent +200 Thunder Clap AoE replaced with +1.5s Thunder Clap Duration",
           "indentLevel": 1,
           "metric": "Level 10 Talent +200 Thunder Clap AoE",
           "changeType": "REWORK",
@@ -2639,11 +2713,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -9,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17,
-        "laning": -9,
+        "teamfight": -4,
+        "laning": -2,
         "siege": 0,
         "utility": -1
       },
@@ -2654,17 +2728,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.38c",
-      "date": "2026-06-14T21:53:54.830Z",
+      "date": "2026-06-17T18:07:14.924Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Earth Brewling's Debuff Immunity magic resistance increased from 50% to 80%",
+          "originalSource": "Earth Brewling's Debuff Immunity magic resistance increased from 50% to 80%",
           "indentLevel": 1,
           "metric": "Earth Brewling's Debuff Immunity magic resistance",
           "changeType": "INCREASED",
@@ -2695,6 +2770,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Void Brewling's Astral Pull Damage increased from 50/100/150 to 75/150/225",
+          "originalSource": "Void Brewling's Astral Pull Damage increased from 50/100/150 to 75/150/225",
           "indentLevel": 1,
           "metric": "Void Brewling's Astral Pull Damage",
           "changeType": "INCREASED",
@@ -2725,6 +2801,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Void Brewling's Astral Pull Distance increased from 300/500/700 to 450/575/700",
+          "originalSource": "Void Brewling's Astral Pull Distance increased from 300/500/700 to 450/575/700",
           "indentLevel": 1,
           "metric": "Void Brewling's Astral Pull Distance",
           "changeType": "INCREASED",
@@ -2753,11 +2830,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -9,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -17,
-        "laning": -9,
+        "teamfight": -4,
+        "laning": -2,
         "siege": 0,
         "utility": -1
       },
@@ -2768,17 +2845,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.39",
-      "date": "2026-06-14T21:53:54.836Z",
+      "date": "2026-06-17T18:07:14.928Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Brewmaster",
           "subEntityName": "Thunder Clap",
           "rawNote": "Cast Point improved from 0.4s to 0.35s",
+          "originalSource": "Cast Point improved from 0.4s to 0.35s",
           "indentLevel": 1,
           "metric": "Cast Point",
           "changeType": "INCREASED",
@@ -2809,6 +2887,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Thunder Clap",
           "rawNote": "Cooldown rescaled from 16/15/14/13s to 18/16/14/12s",
+          "originalSource": "Cooldown rescaled from 16/15/14/13s to 18/16/14/12s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "RESCALE",
@@ -2839,6 +2918,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Thunder Clap",
           "rawNote": "Damage increased from 75/150/225/300 to 80/160/240/320",
+          "originalSource": "Damage increased from 75/150/225/300 to 80/160/240/320",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "INCREASED",
@@ -2869,6 +2949,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Cinder Brew",
           "rawNote": "Cooldown decreased from 22/19/16/13s to 19/17/15/13s",
+          "originalSource": "Cooldown decreased from 22/19/16/13s to 19/17/15/13s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "DECREASED",
@@ -2898,7 +2979,8 @@
           "category": "hero",
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
-          "rawNote": "Earth Brewling's attack damage increased by 5/10/15 ",
+          "rawNote": "Earth Brewling's attack damage increased by 5/10/15",
+          "originalSource": "Earth Brewling's attack damage increased by 5/10/15 ",
           "indentLevel": 1,
           "metric": "Earth Brewling's attack damage",
           "changeType": "INCREASED",
@@ -2928,6 +3010,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Earth Brewling's Demolish Bonus Building Damage decreased from 80/140/200 to 50/100/150",
+          "originalSource": "Earth Brewling's Demolish Bonus Building Damage decreased from 80/140/200 to 50/100/150",
           "indentLevel": 1,
           "metric": "Earth Brewling's Demolish Bonus Building Damage",
           "changeType": "DECREASED",
@@ -2958,6 +3041,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Storm Brewling's Cyclone now deals 75 damage when the target unit lands",
+          "originalSource": "Storm Brewling's Cyclone now deals 75 damage when the target unit lands",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2965,19 +3049,20 @@
             "subEntityId": 5403
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2985,6 +3070,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Storm Brewling's Wind Walk Bonus Movement Speed increased from 20/30/40% to 25/35/45%",
+          "originalSource": "Storm Brewling's Wind Walk Bonus Movement Speed increased from 20/30/40% to 25/35/45%",
           "indentLevel": 1,
           "metric": "Storm Brewling's Wind Walk Bonus Movement Speed",
           "changeType": "INCREASED",
@@ -3015,6 +3101,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Fire Brewling's Permanent Immolation radius increased from 220 to 250",
+          "originalSource": "Fire Brewling's Permanent Immolation radius increased from 220 to 250",
           "indentLevel": 1,
           "metric": "Fire Brewling's Permanent Immolation radius",
           "changeType": "INCREASED",
@@ -3045,6 +3132,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Attack Speed increased from +100 to +110",
+          "originalSource": "Level 20 Talent Attack Speed increased from +100 to +110",
           "indentLevel": 1,
           "metric": "Level 20 Talent Attack Speed",
           "changeType": "INCREASED",
@@ -3071,22 +3159,22 @@
         }
       ],
       "vectorDelta": {
-        "farming": 8,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 9.5,
-        "laning": 8,
+        "teamfight": 2,
+        "laning": 1,
         "siege": 0,
-        "utility": -16
+        "utility": -10
       },
       "totalVector": {
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -7.5,
+        "teamfight": -2,
         "laning": -1,
         "siege": 0,
-        "utility": -17
+        "utility": -11
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3099,17 +3187,17 @@
     },
     {
       "version": "7.39b",
-      "date": "2026-06-14T21:53:54.839Z",
+      "date": "2026-06-17T18:07:14.930Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -7.5,
+        "teamfight": -2,
         "laning": -1,
         "siege": 0,
-        "utility": -17
+        "utility": -11
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3122,17 +3210,17 @@
     },
     {
       "version": "7.39c",
-      "date": "2026-06-14T21:53:54.843Z",
+      "date": "2026-06-17T18:07:14.932Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -7.5,
+        "teamfight": -2,
         "laning": -1,
         "siege": 0,
-        "utility": -17
+        "utility": -11
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3145,17 +3233,17 @@
     },
     {
       "version": "7.39d",
-      "date": "2026-06-14T21:53:54.848Z",
+      "date": "2026-06-17T18:07:14.937Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -7.5,
+        "teamfight": -2,
         "laning": -1,
         "siege": 0,
-        "utility": -17
+        "utility": -11
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3168,12 +3256,13 @@
     },
     {
       "version": "7.39e",
-      "date": "2026-06-14T21:53:54.851Z",
+      "date": "2026-06-17T18:07:14.939Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Brewmaster",
           "rawNote": "Base armor increased by 1",
+          "originalSource": "Base armor increased by 1",
           "indentLevel": 1,
           "metric": "Base armor",
           "changeType": "INCREASED",
@@ -3203,10 +3292,10 @@
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -7.5,
+        "teamfight": -2,
         "laning": -1,
         "siege": 0,
-        "utility": -17
+        "utility": -11
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3215,16 +3304,17 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.40",
-      "date": "2026-06-14T21:53:54.859Z",
+      "date": "2026-06-17T18:07:14.945Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Brewmaster",
           "rawNote": "Strength gain decreased from 3.7 to 3.2",
+          "originalSource": "Strength gain decreased from 3.7 to 3.2",
           "indentLevel": 1,
           "metric": "Strength gain",
           "changeType": "DECREASED",
@@ -3253,6 +3343,7 @@
           "category": "hero",
           "entityName": "Brewmaster",
           "rawNote": "Intelligence gain increased from 1.6 to 1.9",
+          "originalSource": "Intelligence gain increased from 1.6 to 1.9",
           "indentLevel": 1,
           "metric": "Intelligence gain",
           "changeType": "INCREASED",
@@ -3281,15 +3372,16 @@
           "category": "hero",
           "entityName": "Brewmaster",
           "rawNote": "Removed Roll Out The Barrel and Drunken Master facets",
+          "originalSource": "Removed Roll Out The Barrel and Drunken Master facets",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
             "entityId": 78
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -3299,22 +3391,24 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
           "category": "hero",
           "entityName": "Brewmaster",
           "rawNote": "Removed Primal Companion ability",
+          "originalSource": "Removed Primal Companion ability",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
             "entityId": 78
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -3324,22 +3418,24 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
           "category": "hero",
           "entityName": "Brewmaster",
           "rawNote": "Removed Belligerent innate ability",
+          "originalSource": "Removed Belligerent innate ability",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
             "entityId": 78
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -3349,7 +3445,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -3357,6 +3454,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Liquid Courage",
           "rawNote": "New innate ability. Passive, improves with Brewmaster's level",
+          "originalSource": "New innate ability. Passive, improves with Brewmaster's level",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -3384,6 +3482,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Liquid Courage",
           "rawNote": "When Brewmaster drops below 50% Health he gains a Status Resistance buff and his movement speed alternates every 1 second between being faster and being slower. The effect becomes stronger at lower health, scaling from 0 up to max values at 20% Health. Max Status Resistance is 10.5% + 0.5% per Brewmaster's level up, Max Speed Increase is 25%, Max Speed Slow is 10%",
+          "originalSource": "When Brewmaster drops below 50% Health he gains a Status Resistance buff and his movement speed alternates every 1 second between being faster and being slower. The effect becomes stronger at lower health, scaling from 0 up to max values at 20% Health. Max Status Resistance is 10.5% + 0.5% per Brewmaster's level up, Max Speed Increase is 25%, Max Speed Slow is 10%",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -3391,9 +3490,9 @@
             "subEntityId": 1681
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -3403,7 +3502,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -3411,6 +3511,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Liquid Courage",
           "rawNote": "Upgraded with Aghanim's Shard",
+          "originalSource": "Upgraded with Aghanim's Shard",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -3438,6 +3539,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Liquid Courage",
           "rawNote": "Brewmaster may activate the ability to toss a strong drink to himself or a teammate, granting the max effects of his innate for 5 seconds, and also providing 2% Max HP Regen per second. Cast Range: 800. Mana Cost: 50. Cooldown: 20s",
+          "originalSource": "Brewmaster may activate the ability to toss a strong drink to himself or a teammate, granting the max effects of his innate for 5 seconds, and also providing 2% Max HP Regen per second. Cast Range: 800. Mana Cost: 50. Cooldown: 20s",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -3445,9 +3547,9 @@
             "subEntityId": 1681
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -3457,7 +3559,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -3465,6 +3568,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Thunder Clap",
           "rawNote": "Cast point improved from 0.35s to 0.3s",
+          "originalSource": "Cast point improved from 0.35s to 0.3s",
           "indentLevel": 1,
           "metric": "Cast point",
           "changeType": "INCREASED",
@@ -3495,6 +3599,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Thunder Clap",
           "rawNote": "Mana Cost rescaled from 90/100/110/120 to 100",
+          "originalSource": "Mana Cost rescaled from 90/100/110/120 to 100",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "RESCALE",
@@ -3525,6 +3630,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Thunder Clap",
           "rawNote": "Radius rescaled from 325/350/375/400 to 375",
+          "originalSource": "Radius rescaled from 325/350/375/400 to 375",
           "indentLevel": 1,
           "metric": "Radius",
           "changeType": "RESCALE",
@@ -3555,6 +3661,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Cinder Brew",
           "rawNote": "Now rolls a barrel of ale that deals 40/70/100/130 physical damage to enemies in its path and drenches enemies along the way and around the target location",
+          "originalSource": "Now rolls a barrel of ale that deals 40/70/100/130 physical damage to enemies in its path and drenches enemies along the way and around the target location",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -3582,6 +3689,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Moved Brewed Up effect from Cinder Brew to Drunken Brawler",
+          "originalSource": "Moved Brewed Up effect from Cinder Brew to Drunken Brawler",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -3589,9 +3697,9 @@
             "subEntityId": 5402
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -3601,7 +3709,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -3609,6 +3718,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "When Brewmaster casts any ability, he becomes Brewed Up for 5 seconds, gaining +150% to his stance bonuses. If he is already Brewed Up, the duration is extended by 1s. After Brewed Up ends, Brewmaster is hungover and cannot become Brewed Up again for 9 seconds",
+          "originalSource": "When Brewmaster casts any ability, he becomes Brewed Up for 5 seconds, gaining +150% to his stance bonuses. If he is already Brewed Up, the duration is extended by 1s. After Brewed Up ends, Brewmaster is hungover and cannot become Brewed Up again for 9 seconds",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -3616,9 +3726,9 @@
             "subEntityId": 5402
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -3628,7 +3738,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -3636,6 +3747,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Earth Stance Magic Resistance increased from 5/10/15/20% to 8/12/16/20%",
+          "originalSource": "Earth Stance Magic Resistance increased from 5/10/15/20% to 8/12/16/20%",
           "indentLevel": 1,
           "metric": "Earth Stance Magic Resistance",
           "changeType": "INCREASED",
@@ -3666,6 +3778,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Fire Stance Attack Speed increased from 10/15/20/25 to 10/20/30/40",
+          "originalSource": "Fire Stance Attack Speed increased from 10/15/20/25 to 10/20/30/40",
           "indentLevel": 1,
           "metric": "Fire Stance Attack Speed",
           "changeType": "INCREASED",
@@ -3696,6 +3809,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Void Stance removed",
+          "originalSource": "Void Stance removed",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -3723,6 +3837,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Stance visual indicator is now always present around Brewmaster",
+          "originalSource": "Stance visual indicator is now always present around Brewmaster",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -3730,9 +3845,9 @@
             "subEntityId": 5402
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -3742,7 +3857,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -3750,6 +3866,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Stances can now be switched without cancelling channeling or invisibility",
+          "originalSource": "Stances can now be switched without cancelling channeling or invisibility",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -3777,6 +3894,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Void Brewling removed",
+          "originalSource": "Void Brewling removed",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -3804,6 +3922,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Duration increased from 16/18/20s to 16/20/24s",
+          "originalSource": "Duration increased from 16/18/20s to 16/20/24s",
           "indentLevel": 1,
           "metric": "Duration",
           "changeType": "INCREASED",
@@ -3834,6 +3953,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "All Brewlings now receive their respective Drunken Brawler stances",
+          "originalSource": "All Brewlings now receive their respective Drunken Brawler stances",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -3861,6 +3981,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Earth Brewling's Debuff Immunity ability renamed to Earth Element as it no longer grants Debuff Immunity. Now it provides 80% Status Resistance and 60% Magic Resistance instead",
+          "originalSource": "Earth Brewling's Debuff Immunity ability renamed to Earth Element as it no longer grants Debuff Immunity. Now it provides 80% Status Resistance and 60% Magic Resistance instead",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -3888,6 +4009,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Earth Brewling's Demolish Bonus Building Damage decreased from 50/100/150 to 40/80/120",
+          "originalSource": "Earth Brewling's Demolish Bonus Building Damage decreased from 50/100/150 to 40/80/120",
           "indentLevel": 1,
           "metric": "Earth Brewling's Demolish Bonus Building Damage",
           "changeType": "DECREASED",
@@ -3918,6 +4040,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Earth Brewling's movement speed increased from 330/350/370 to 330/355/380",
+          "originalSource": "Earth Brewling's movement speed increased from 330/350/370 to 330/355/380",
           "indentLevel": 1,
           "metric": "Earth Brewling's movement speed",
           "changeType": "INCREASED",
@@ -3947,7 +4070,8 @@
           "category": "hero",
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
-          "rawNote": "Earth Brewling's damage increased from 25/60/95 to 35/70/105 ",
+          "rawNote": "Earth Brewling's damage increased from 25/60/95 to 35/70/105",
+          "originalSource": "Earth Brewling's damage increased from 25/60/95 to 35/70/105 ",
           "indentLevel": 1,
           "metric": "Earth Brewling's damage",
           "changeType": "INCREASED",
@@ -3977,7 +4101,8 @@
           "category": "hero",
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
-          "rawNote": "Storm Brewling's damage increased from 20/40/60 to 30/50/70 ",
+          "rawNote": "Storm Brewling's damage increased from 20/40/60 to 30/50/70",
+          "originalSource": "Storm Brewling's damage increased from 20/40/60 to 30/50/70 ",
           "indentLevel": 1,
           "metric": "Storm Brewling's damage",
           "changeType": "INCREASED",
@@ -4008,6 +4133,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "No longer upgraded with Aghanim's Shard",
+          "originalSource": "No longer upgraded with Aghanim's Shard",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -4035,6 +4161,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Now upgraded with Aghanim's Scepter",
+          "originalSource": "Now upgraded with Aghanim's Scepter",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -4062,6 +4189,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Allows Brewmaster to cancel the ability early and provides Brewed Up bonus to all Brewlings on cast. Also increases ability's level to 4, improving Brewlings' stats and abilities",
+          "originalSource": "Allows Brewmaster to cancel the ability early and provides Brewed Up bonus to all Brewlings on cast. Also increases ability's level to 4, improving Brewlings' stats and abilities",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -4069,19 +4197,20 @@
             "subEntityId": 5403
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "AURA_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -4089,6 +4218,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Earth: 4100 Health, 8 Health Regen, 135–145 Damage, 9 Armor. Other base stats are unchanged",
+          "originalSource": "Earth: 4100 Health, 8 Health Regen, 135–145 Damage, 9 Armor. Other base stats are unchanged",
           "indentLevel": 3,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -4096,19 +4226,20 @@
             "subEntityId": 5403
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -4116,6 +4247,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Hurl Boulder: 200 Damage and 2s Stun Duration",
+          "originalSource": "Hurl Boulder: 200 Damage and 2s Stun Duration",
           "indentLevel": 4,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -4123,19 +4255,20 @@
             "subEntityId": 5403
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ROSHAN_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -4143,6 +4276,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Demolish: 160 Bonus Building Damage",
+          "originalSource": "Demolish: 160 Bonus Building Damage",
           "indentLevel": 4,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -4150,19 +4284,20 @@
             "subEntityId": 5403
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ROSHAN_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -4170,6 +4305,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Storm: 2500 Health, 8 Health Regen, 85–95 Damage. Other base stats are unchanged",
+          "originalSource": "Storm: 2500 Health, 8 Health Regen, 85–95 Damage. Other base stats are unchanged",
           "indentLevel": 3,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -4177,19 +4313,20 @@
             "subEntityId": 5403
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -4197,6 +4334,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Wind Walk: 320 Bonus Damage and 55% Bonus Movement Speed",
+          "originalSource": "Wind Walk: 320 Bonus Damage and 55% Bonus Movement Speed",
           "indentLevel": 4,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -4204,19 +4342,20 @@
             "subEntityId": 5403
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ROSHAN_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -4224,6 +4363,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Cyclone: 6s Hero Duration and 100 Damage on Landing",
+          "originalSource": "Cyclone: 6s Hero Duration and 100 Damage on Landing",
           "indentLevel": 4,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -4231,19 +4371,20 @@
             "subEntityId": 5403
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ROSHAN_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -4251,6 +4392,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Fire: 1750 Health, 8 Health Regen, 215–225 Damage, 24 Armor. Other base stats are unchanged",
+          "originalSource": "Fire: 1750 Health, 8 Health Regen, 215–225 Damage, 24 Armor. Other base stats are unchanged",
           "indentLevel": 3,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -4258,19 +4400,20 @@
             "subEntityId": 5403
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -4278,6 +4421,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Permanent Immolation: 100 Damage per second",
+          "originalSource": "Permanent Immolation: 100 Damage per second",
           "indentLevel": 4,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -4285,19 +4429,20 @@
             "subEntityId": 5403
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ROSHAN_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -4305,6 +4450,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent +1.5s Thunder Clap Duration replaced with +1s Drunken Brawler Brew Up / Extend Duration",
+          "originalSource": "Level 10 Talent +1.5s Thunder Clap Duration replaced with +1s Drunken Brawler Brew Up / Extend Duration",
           "indentLevel": 1,
           "metric": "Level 10 Talent +1.5s Thunder Clap Duration",
           "changeType": "REWORK",
@@ -4333,6 +4479,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent +10 Brewlings Damage replaced with +14 Brewlings Base Damage",
+          "originalSource": "Level 10 Talent +10 Brewlings Damage replaced with +14 Brewlings Base Damage",
           "indentLevel": 1,
           "metric": "Level 10 Talent +10 Brewlings Damage",
           "changeType": "REWORK",
@@ -4361,6 +4508,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Cinder Brew Damage/Duration increased from +30% to 40%",
+          "originalSource": "Level 15 Talent Cinder Brew Damage/Duration increased from +30% to 40%",
           "indentLevel": 1,
           "metric": "Level 15 Talent Cinder Brew Damage/Duration",
           "changeType": "INCREASED",
@@ -4390,6 +4538,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent +1x Brewed Up multiplier for Drunken Brawler replaced with +600 Brewlings Health",
+          "originalSource": "Level 15 Talent +1x Brewed Up multiplier for Drunken Brawler replaced with +600 Brewlings Health",
           "indentLevel": 1,
           "metric": "Level 15 Talent +1x Brewed Up multiplier for Drunken Brawler",
           "changeType": "REWORK",
@@ -4418,6 +4567,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +1200 Brewlings Health replaced with -15s Primal Split Cooldown",
+          "originalSource": "Level 20 Talent +1200 Brewlings Health replaced with -15s Primal Split Cooldown",
           "indentLevel": 1,
           "metric": "Level 20 Talent +1200 Brewlings Health",
           "changeType": "REWORK",
@@ -4446,6 +4596,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent Brewlings Gain Drunken Brawler Passive replaced with 1.5x Drunken Brawler Stance Bonuses",
+          "originalSource": "Level 25 Talent Brewlings Gain Drunken Brawler Passive replaced with 1.5x Drunken Brawler Stance Bonuses",
           "indentLevel": 1,
           "metric": "Level 25 Talent Brewlings Gain Drunken Brawler Passive",
           "changeType": "REWORK",
@@ -4474,19 +4625,19 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 5,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
-        "utility": -6
+        "utility": -8
       },
       "totalVector": {
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -2.5,
+        "teamfight": -1,
         "laning": -1,
         "siege": 0,
-        "utility": -23
+        "utility": -19
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -4499,12 +4650,13 @@
     },
     {
       "version": "7.40b",
-      "date": "2026-06-14T21:53:54.866Z",
+      "date": "2026-06-17T18:07:14.948Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Brewmaster",
           "rawNote": "Base Strength increased from 23 to 24",
+          "originalSource": "Base Strength increased from 23 to 24",
           "indentLevel": 1,
           "metric": "Base Strength",
           "changeType": "INCREASED",
@@ -4533,6 +4685,7 @@
           "category": "hero",
           "entityName": "Brewmaster",
           "rawNote": "Damage at level 1 increased from 52–59 to 53–60",
+          "originalSource": "Damage at level 1 increased from 52–59 to 53–60",
           "indentLevel": 1,
           "metric": "Damage at level 1",
           "changeType": "INCREASED",
@@ -4562,6 +4715,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Liquid Courage",
           "rawNote": "Max Speed Increase increased from 25% to 30%",
+          "originalSource": "Max Speed Increase increased from 25% to 30%",
           "indentLevel": 1,
           "metric": "Max Speed Increase",
           "changeType": "INCREASED",
@@ -4592,6 +4746,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Thunder Clap",
           "rawNote": "Radius increased from 375 to 400",
+          "originalSource": "Radius increased from 375 to 400",
           "indentLevel": 1,
           "metric": "Radius",
           "changeType": "INCREASED",
@@ -4622,6 +4777,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Brewed Up extend duration increased from 1s to 2s",
+          "originalSource": "Brewed Up extend duration increased from 1s to 2s",
           "indentLevel": 1,
           "metric": "Brewed Up extend duration",
           "changeType": "INCREASED",
@@ -4652,6 +4808,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Toggling is no longer disabled by silence",
+          "originalSource": "Toggling is no longer disabled by silence",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -4679,6 +4836,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Earth Brewling's Earth Element now also provides 80% Slow Resistance",
+          "originalSource": "Earth Brewling's Earth Element now also provides 80% Slow Resistance",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -4706,7 +4864,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -4715,10 +4873,10 @@
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 3.5,
+        "teamfight": 0,
         "laning": -1,
         "siege": 0,
-        "utility": -23
+        "utility": -19
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -4727,17 +4885,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.40c",
-      "date": "2026-06-14T21:53:54.872Z",
+      "date": "2026-06-17T18:07:14.950Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Brewmaster",
           "subEntityName": "Liquid Courage",
           "rawNote": "Aghanim's Shard Max HP Regen per second increased from 2% to 2.5%",
+          "originalSource": "Aghanim's Shard Max HP Regen per second increased from 2% to 2.5%",
           "indentLevel": 1,
           "metric": "Aghanim's Shard Max HP Regen per second",
           "changeType": "INCREASED",
@@ -4768,6 +4927,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Drunken Brawler",
           "rawNote": "Earth Brawler Armor increased from 2/4/6/8 to 3/5/7/9",
+          "originalSource": "Earth Brawler Armor increased from 2/4/6/8 to 3/5/7/9",
           "indentLevel": 1,
           "metric": "Earth Brawler Armor",
           "changeType": "INCREASED",
@@ -4799,10 +4959,10 @@
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 3.5,
+        "teamfight": 0,
         "laning": -1,
         "siege": 0,
-        "utility": -23
+        "utility": -19
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -4811,17 +4971,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.41",
-      "date": "2026-06-14T21:53:54.887Z",
+      "date": "2026-06-17T18:07:14.959Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Brewmaster",
           "subEntityName": "Liquid Courage",
-          "rawNote": "Max Status Resist changed from 10.5% + 0.5% per level up to 10% + 0.5% per level ",
+          "rawNote": "Max Status Resist changed from 10.5% + 0.5% per level up to 10% + 0.5% per level",
+          "originalSource": "Max Status Resist changed from 10.5% + 0.5% per level up to 10% + 0.5% per level ",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -4829,19 +4990,20 @@
             "subEntityId": 1681
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -4849,6 +5011,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Earth Brewling's Hurl Boulder Stun Duration decreased from 1.6/1.6/1.6/2s to 1.6/1.6/1.6/1.8s",
+          "originalSource": "Earth Brewling's Hurl Boulder Stun Duration decreased from 1.6/1.6/1.6/2s to 1.6/1.6/1.6/1.8s",
           "indentLevel": 1,
           "metric": "Earth Brewling's Hurl Boulder Stun Duration",
           "changeType": "DECREASED",
@@ -4879,6 +5042,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Storm Brewling's Cyclone Duration decreased from 3/4/5/6s to 3/3.75/4.5/5.25s",
+          "originalSource": "Storm Brewling's Cyclone Duration decreased from 3/4/5/6s to 3/3.75/4.5/5.25s",
           "indentLevel": 1,
           "metric": "Storm Brewling's Cyclone Duration",
           "changeType": "DECREASED",
@@ -4909,6 +5073,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent +1s Drunken Brawler Brewed Up / Extend Duration replaced with +2/1s Drunken Brawler Brewed Up / Extend Duration",
+          "originalSource": "Level 10 Talent +1s Drunken Brawler Brewed Up / Extend Duration replaced with +2/1s Drunken Brawler Brewed Up / Extend Duration",
           "indentLevel": 1,
           "metric": "Level 10 Talent +1s Drunken Brawler Brewed Up / Extend Duration",
           "changeType": "REWORK",
@@ -4938,10 +5103,10 @@
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 3.5,
+        "teamfight": 0,
         "laning": -1,
         "siege": 0,
-        "utility": -23
+        "utility": -19
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -4954,17 +5119,17 @@
     },
     {
       "version": "7.41a",
-      "date": "2026-06-14T21:53:54.892Z",
+      "date": "2026-06-17T18:07:14.961Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 3.5,
+        "teamfight": 0,
         "laning": -1,
         "siege": 0,
-        "utility": -23
+        "utility": -19
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -4977,17 +5142,17 @@
     },
     {
       "version": "7.41b",
-      "date": "2026-06-14T21:53:54.896Z",
+      "date": "2026-06-17T18:07:14.963Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 3.5,
+        "teamfight": 0,
         "laning": -1,
         "siege": 0,
-        "utility": -23
+        "utility": -19
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -5000,13 +5165,14 @@
     },
     {
       "version": "7.41c",
-      "date": "2026-06-14T21:53:54.902Z",
+      "date": "2026-06-17T18:07:14.966Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Brewmaster",
           "subEntityName": "Primal Split",
           "rawNote": "Cancel Split now has a 3s initial cooldown",
+          "originalSource": "Cancel Split now has a 3s initial cooldown",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -5014,19 +5180,20 @@
             "subEntityId": 5403
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "COOLDOWN_RESET_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         }
       ],
@@ -5035,10 +5202,10 @@
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 3.5,
+        "teamfight": 0,
         "laning": -1,
         "siege": 0,
-        "utility": -23
+        "utility": -19
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -5051,13 +5218,14 @@
     },
     {
       "version": "7.41d",
-      "date": "2026-06-14T21:53:54.908Z",
+      "date": "2026-06-17T18:07:14.969Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Brewmaster",
           "subEntityName": "Liquid Courage",
           "rawNote": "Aghanim's Shard max HP regen per second increased from 2.5% to 3%",
+          "originalSource": "Aghanim's Shard max HP regen per second increased from 2.5% to 3%",
           "indentLevel": 1,
           "metric": "Aghanim's Shard max HP regen per second",
           "changeType": "INCREASED",
@@ -5088,6 +5256,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Thunder Clap",
           "rawNote": "Slow duration increased from 4s to 4/4.25/4.5/4.75s",
+          "originalSource": "Slow duration increased from 4s to 4/4.25/4.5/4.75s",
           "indentLevel": 1,
           "metric": "Slow duration",
           "changeType": "INCREASED",
@@ -5118,6 +5287,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Brewlings Base Damage decreased from +14 to +13",
+          "originalSource": "Level 10 Talent Brewlings Base Damage decreased from +14 to +13",
           "indentLevel": 1,
           "metric": "Level 10 Talent Brewlings Base Damage",
           "changeType": "DECREASED",
@@ -5147,6 +5317,7 @@
           "entityName": "Brewmaster",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Primal Split Cooldown Reduction decreased from 15s to 12s",
+          "originalSource": "Level 20 Talent Primal Split Cooldown Reduction decreased from 15s to 12s",
           "indentLevel": 1,
           "metric": "Level 20 Talent Primal Split Cooldown Reduction",
           "changeType": "DECREASED",
@@ -5177,39 +5348,51 @@
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 3.5,
+        "teamfight": 0,
         "laning": -1,
         "siege": 0,
-        "utility": -23
+        "utility": -19
       },
       "winrates": {
         "HERALD": {
-          "winrate": 0.4954,
-          "matchCount": 3688
+          "winrate": 0.5017,
+          "matchCount": 3157
         },
         "GUARDIAN": {
-          "winrate": 0.5107,
-          "matchCount": 6615
+          "winrate": 0.5088,
+          "matchCount": 5861
         },
         "CRUSADER": {
-          "winrate": 0.5077,
-          "matchCount": 7231
+          "winrate": 0.5109,
+          "matchCount": 6573
         },
         "ARCHON": {
-          "winrate": 0.5022,
-          "matchCount": 7041
+          "winrate": 0.5184,
+          "matchCount": 6429
         },
         "LEGEND": {
-          "winrate": 0.5116,
-          "matchCount": 6155
+          "winrate": 0.5226,
+          "matchCount": 5522
         },
         "ANCIENT": {
-          "winrate": 0.5243,
-          "matchCount": 4343
+          "winrate": 0.5051,
+          "matchCount": 4118
         },
         "DIVINE": {
-          "winrate": 0.5249,
-          "matchCount": 6523
+          "winrate": 0.5332,
+          "matchCount": 5775
+        },
+        "IMMORTAL": {
+          "winrate": 0,
+          "matchCount": 0
+        },
+        "PRO": {
+          "winrate": 0.5,
+          "matchCount": 4
+        },
+        "GLOBAL_BLEND": {
+          "winrate": 0.5331,
+          "matchCount": 5779
         }
       },
       "temporalAssessment": "Net Gain"

@@ -21,12 +21,18 @@ interface Classification {
 
 let semanticOntology: any[] = [];
 let balanceOntology: any = {};
+let ontologyVersions: { semanticOntology: number, balanceOntology: number } = { semanticOntology: 0, balanceOntology: 0 };
 
 async function loadOntologies() {
     try {
         semanticOntology = JSON.parse(await readFile(path.join(ONTOLOGY_DIR, "semantic_tags.json"), "utf8"));
         balanceOntology = JSON.parse(await readFile(path.join(ONTOLOGY_DIR, "balance_metrics.json"), "utf8"));
-        console.log("[Classifier] Ontologies loaded successfully.");
+        try {
+            ontologyVersions = JSON.parse(await readFile(path.join(ONTOLOGY_DIR, "version.json"), "utf8"));
+        } catch (e) {
+            console.warn("[Classifier] version.json not found, using default version 0.");
+        }
+        console.log(`[Classifier] Ontologies loaded (Semantic v${ontologyVersions.semanticOntology}, Balance v${ontologyVersions.balanceOntology}).`);
     } catch (e) {
         console.warn("[Classifier] Could not load ontologies, falling back to defaults.");
         semanticOntology = [];
@@ -111,7 +117,7 @@ function determineClassification(change: any): Classification {
     if (changeType === "ADDITION") return { state: "KNOWN_SEMANTIC", classificationType: "Buff", confidenceScore: 0.9, strategicWeight: wrapWeight(7), reasoning: "Addition of a new mechanic or feature." };
     if (changeType === "REMOVAL") return { state: "KNOWN_SEMANTIC", classificationType: "Nerf", confidenceScore: 0.9, strategicWeight: wrapWeight(7), reasoning: "Removal of a mechanic or feature." };
 
-    // 2. Check Semantic Ontology for KNOWN_SEMANTIC
+    // 2. Check Semantic Ontology for KNOWN_SEMANTIC (Exact Matches)
     for (const entry of semanticOntology) {
         for (const pattern of entry.matchPatterns) {
             if (rawNoteLower.includes(pattern.toLowerCase())) {
@@ -121,13 +127,50 @@ function determineClassification(change: any): Classification {
                     semanticTag: entry.tag,
                     strategicWeight: wrapWeight(entry.defaultWeight || 5),
                     confidenceScore: 0.95,
-                    reasoning: `Matches semantic pattern: "${pattern}"`
+                    reasoning: `Matches exact semantic pattern: "${pattern}"`
                 };
             }
         }
     }
 
-    // 3. Fallback to UNKNOWN (Human Review Required)
+    // 3. Check for Partial Confidence State (ISSUE-2)
+    // Extract core keywords from the ontology patterns to find "best guesses"
+    let bestCandidate: any = null;
+    let maxKeywordHits = 0;
+
+    for (const entry of semanticOntology) {
+        let keywordHits = 0;
+        // Simple heuristic: break patterns into words > 4 chars and count hits
+        const keywords = new Set(
+            entry.matchPatterns
+                .join(" ")
+                .toLowerCase()
+                .split(/[\s,]+/)
+                .filter((w: string) => w.length > 4)
+        );
+
+        keywords.forEach((kw: string) => {
+            if (rawNoteLower.includes(kw)) keywordHits++;
+        });
+
+        if (keywordHits > maxKeywordHits && keywordHits >= 1) {
+            maxKeywordHits = keywordHits;
+            bestCandidate = entry;
+        }
+    }
+
+    if (bestCandidate) {
+        return {
+            state: "PARTIALLY_CLASSIFIED",
+            classificationType: "Unknown", // Needs human review for polarity
+            semanticTag: bestCandidate.tag,
+            strategicWeight: wrapWeight(bestCandidate.defaultWeight || 5),
+            confidenceScore: 0.5,
+            reasoning: `Partial semantic match based on keywords. Requires human review.`
+        };
+    }
+
+    // 4. Fallback to UNKNOWN (Human Review Required)
     return {
         state: "UNKNOWN",
         classificationType: "Unknown",
@@ -147,6 +190,7 @@ async function classifyPatch(filePath: string) {
     return {
         schemaVersion: data.schemaVersion,
         version: data.version,
+        ontologyVersion: ontologyVersions.semanticOntology, // Preservation (ISSUE-1)
         changes: classifiedChanges
     };
 }

@@ -3,37 +3,40 @@
   "history": [
     {
       "version": "7.33",
-      "date": "2026-06-14T21:53:54.726Z",
+      "date": "2026-06-17T18:07:14.843Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ogre Magi",
           "rawNote": "Primary Attribute changed to Strength",
+          "originalSource": "Primary Attribute changed to Strength",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
             "entityId": 84
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
           "category": "hero",
           "entityName": "Ogre Magi",
           "rawNote": "Strength gain increased from 3.3 to 4.2",
+          "originalSource": "Strength gain increased from 3.3 to 4.2",
           "indentLevel": 1,
           "metric": "Strength gain",
           "changeType": "INCREASED",
@@ -62,6 +65,7 @@
           "category": "hero",
           "entityName": "Ogre Magi",
           "rawNote": "Base Intelligence decreased from 15 to 0",
+          "originalSource": "Base Intelligence decreased from 15 to 0",
           "indentLevel": 1,
           "metric": "Base Intelligence",
           "changeType": "DECREASED",
@@ -90,6 +94,7 @@
           "category": "hero",
           "entityName": "Ogre Magi",
           "rawNote": "Intelligence gain decreased from 2.5 to 0",
+          "originalSource": "Intelligence gain decreased from 2.5 to 0",
           "indentLevel": 1,
           "metric": "Intelligence gain",
           "changeType": "DECREASED",
@@ -117,16 +122,17 @@
         {
           "category": "hero",
           "entityName": "Ogre Magi",
-          "rawNote": "Always has 0 Intelligence. Always.",
+          "rawNote": "Always has 0 Intelligence. Always",
+          "originalSource": "Always has 0 Intelligence. Always.",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
             "entityId": 84
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -136,13 +142,15 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
           "category": "hero",
           "entityName": "Ogre Magi",
           "rawNote": "Base Mana increased from 75 to 120",
+          "originalSource": "Base Mana increased from 75 to 120",
           "indentLevel": 1,
           "metric": "Base Mana",
           "changeType": "INCREASED",
@@ -171,6 +179,7 @@
           "category": "hero",
           "entityName": "Ogre Magi",
           "rawNote": "Base Damage decreased from 54-60 to 44-50",
+          "originalSource": "Base Damage decreased from 54-60 to 44-50",
           "indentLevel": 1,
           "metric": "Base Damage",
           "changeType": "DECREASED",
@@ -200,6 +209,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Dumb Luck",
           "rawNote": "New innate ability",
+          "originalSource": "New innate ability",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -227,6 +237,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Dumb Luck",
           "rawNote": "Max Intelligence is 0. Ogre Magi receives 6 points of maximum mana and 0.03 mana regeneration per point of Strength. Each 20 points of Strength also increase Multicast Cast Chance by 1% (only affects multipliers over 0% so the 4x Cast Chance won't trigger on level 1 etc.)",
+          "originalSource": "Max Intelligence is 0. Ogre Magi receives 6 points of maximum mana and 0.03 mana regeneration per point of Strength. Each 20 points of Strength also increase Multicast Cast Chance by 1% (only affects multipliers over 0% so the 4x Cast Chance won't trigger on level 1 etc.)",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -234,26 +245,28 @@
             "subEntityId": 1115
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "TARGETING_RULE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
           "category": "hero",
           "entityName": "Ogre Magi",
           "subEntityName": "Fireblast",
-          "rawNote": "Stun Duration decreased from 1.5s to 1.2s ",
+          "rawNote": "Stun Duration decreased from 1.5s to 1.2s",
+          "originalSource": "Stun Duration decreased from 1.5s to 1.2s ",
           "indentLevel": 1,
           "metric": "Stun Duration",
           "changeType": "DECREASED",
@@ -283,7 +296,8 @@
           "category": "hero",
           "entityName": "Ogre Magi",
           "subEntityName": "Unrefined Fireblast",
-          "rawNote": "Stun Duration decreased from 1.5s to 1.2s ",
+          "rawNote": "Stun Duration decreased from 1.5s to 1.2s",
+          "originalSource": "Stun Duration decreased from 1.5s to 1.2s ",
           "indentLevel": 1,
           "metric": "Stun Duration",
           "changeType": "DECREASED",
@@ -325,7 +339,7 @@
     },
     {
       "version": "7.33b",
-      "date": "2026-06-14T21:53:54.731Z",
+      "date": "2026-06-17T18:07:14.846Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -371,7 +385,7 @@
     },
     {
       "version": "7.33c",
-      "date": "2026-06-14T21:53:54.736Z",
+      "date": "2026-06-17T18:07:14.849Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -417,7 +431,7 @@
     },
     {
       "version": "7.33d",
-      "date": "2026-06-14T21:53:54.740Z",
+      "date": "2026-06-17T18:07:14.851Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -463,7 +477,7 @@
     },
     {
       "version": "7.33e",
-      "date": "2026-06-14T21:53:54.743Z",
+      "date": "2026-06-17T18:07:14.854Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -509,13 +523,14 @@
     },
     {
       "version": "7.34",
-      "date": "2026-06-14T21:53:54.750Z",
+      "date": "2026-06-17T18:07:14.859Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ogre Magi",
           "subEntityName": "Unrefined Fireblast",
           "rawNote": "Damage decreased from 275 to 150",
+          "originalSource": "Damage decreased from 275 to 150",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "DECREASED",
@@ -546,6 +561,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Unrefined Fireblast",
           "rawNote": "Now also deals damage equal to 1.5x of Ogre Magi's Strength",
+          "originalSource": "Now also deals damage equal to 1.5x of Ogre Magi's Strength",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -573,6 +589,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Unrefined Fireblast",
           "rawNote": "Now also affected by level 10 talent -1s Cooldown",
+          "originalSource": "Now also affected by level 10 talent -1s Cooldown",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -597,20 +614,20 @@
         }
       ],
       "vectorDelta": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8,
-        "laning": -8,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8,
-        "laning": -8,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
@@ -619,15 +636,15 @@
     },
     {
       "version": "7.34b",
-      "date": "2026-06-14T21:53:54.755Z",
+      "date": "2026-06-17T18:07:14.863Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8,
-        "laning": -8,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
@@ -665,12 +682,13 @@
     },
     {
       "version": "7.34c",
-      "date": "2026-06-14T21:53:54.759Z",
+      "date": "2026-06-17T18:07:14.868Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ogre Magi",
           "rawNote": "Base Health Regen increased from 0.75 to 1.5",
+          "originalSource": "Base Health Regen increased from 0.75 to 1.5",
           "indentLevel": 1,
           "metric": "Base Health Regen",
           "changeType": "INCREASED",
@@ -700,6 +718,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Bloodlust",
           "rawNote": "Mana Cost rescaled from 50/55/60/65 to 40/50/60/70",
+          "originalSource": "Mana Cost rescaled from 50/55/60/65 to 40/50/60/70",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "RESCALE",
@@ -730,6 +749,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Fire Shield",
           "rawNote": "Cooldown decreased from 16s to 15s",
+          "originalSource": "Cooldown decreased from 16s to 15s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "DECREASED",
@@ -760,17 +780,17 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1.5,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
@@ -808,13 +828,14 @@
     },
     {
       "version": "7.34d",
-      "date": "2026-06-14T21:53:54.764Z",
+      "date": "2026-06-17T18:07:14.871Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ogre Magi",
           "subEntityName": "Fireblast",
           "rawNote": "Cast Range increased from 475 to 525",
+          "originalSource": "Cast Range increased from 475 to 525",
           "indentLevel": 1,
           "metric": "Cast Range",
           "changeType": "INCREASED",
@@ -845,6 +866,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Bloodlust",
           "rawNote": "Bonus Attack Speed increased from 30/40/50/60 to 30/45/60/75",
+          "originalSource": "Bonus Attack Speed increased from 30/40/50/60 to 30/45/60/75",
           "indentLevel": 1,
           "metric": "Bonus Attack Speed",
           "changeType": "INCREASED",
@@ -875,6 +897,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Bloodlust",
           "rawNote": "Self Bonus Attack Speed increased from 30/50/70/90 to 40/60/80/100",
+          "originalSource": "Self Bonus Attack Speed increased from 30/50/70/90 to 40/60/80/100",
           "indentLevel": 1,
           "metric": "Self Bonus Attack Speed",
           "changeType": "INCREASED",
@@ -905,6 +928,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Unrefined Fireblast",
           "rawNote": "Cast Range increased from 475 to 525",
+          "originalSource": "Cast Range increased from 475 to 525",
           "indentLevel": 1,
           "metric": "Cast Range",
           "changeType": "INCREASED",
@@ -938,16 +962,16 @@
         "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "HERALD": {
@@ -979,21 +1003,21 @@
           "matchCount": 117193
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.34e",
-      "date": "2026-06-14T21:53:54.768Z",
+      "date": "2026-06-17T18:07:14.873Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "HERALD": {
@@ -1029,13 +1053,14 @@
     },
     {
       "version": "7.35",
-      "date": "2026-06-14T21:53:54.772Z",
+      "date": "2026-06-17T18:07:14.877Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ogre Magi",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Ignite DPS decreased from +16 to +15",
+          "originalSource": "Level 10 Talent Ignite DPS decreased from +16 to +15",
           "indentLevel": 1,
           "metric": "Level 10 Talent Ignite DPS",
           "changeType": "DECREASED",
@@ -1065,6 +1090,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent +250 Health replaced with +2/0.01 Dumb Luck Max Mana/Mana Regen Per Strength",
+          "originalSource": "Level 15 Talent +250 Health replaced with +2/0.01 Dumb Luck Max Mana/Mana Regen Per Strength",
           "indentLevel": 1,
           "metric": "Level 15 Talent +250 Health",
           "changeType": "REWORK",
@@ -1091,13 +1117,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1110,17 +1136,17 @@
     },
     {
       "version": "7.35b",
-      "date": "2026-06-14T21:53:54.775Z",
+      "date": "2026-06-17T18:07:14.879Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1133,17 +1159,17 @@
     },
     {
       "version": "7.35c",
-      "date": "2026-06-14T21:53:54.782Z",
+      "date": "2026-06-17T18:07:14.881Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1152,21 +1178,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": "Net Gain"
+      "temporalAssessment": null
     },
     {
       "version": "7.35d",
-      "date": "2026-06-14T21:53:54.785Z",
+      "date": "2026-06-17T18:07:14.883Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1179,13 +1205,14 @@
     },
     {
       "version": "7.36",
-      "date": "2026-06-14T21:53:54.791Z",
+      "date": "2026-06-17T18:07:14.890Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ogre Magi",
           "subEntityName": "Bloodlust",
           "rawNote": "Multicasts now prioritize Ogre Magi himself, followed by heroes, then buildings, then creeps. Still skips units that already have the buff",
+          "originalSource": "Multicasts now prioritize Ogre Magi himself, followed by heroes, then buildings, then creeps. Still skips units that already have the buff",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -1193,19 +1220,20 @@
             "subEntityId": 5440
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "SUMMON_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -1213,6 +1241,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Bloodlust Attack Speed increased from +25 to +30",
+          "originalSource": "Level 20 Talent Bloodlust Attack Speed increased from +25 to +30",
           "indentLevel": 1,
           "metric": "Level 20 Talent Bloodlust Attack Speed",
           "changeType": "INCREASED",
@@ -1240,13 +1269,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1259,17 +1288,17 @@
     },
     {
       "version": "7.36a",
-      "date": "2026-06-14T21:53:54.794Z",
+      "date": "2026-06-17T18:07:14.892Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1282,17 +1311,17 @@
     },
     {
       "version": "7.36b",
-      "date": "2026-06-14T21:53:54.797Z",
+      "date": "2026-06-17T18:07:14.896Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1305,17 +1334,17 @@
     },
     {
       "version": "7.36c",
-      "date": "2026-06-14T21:53:54.800Z",
+      "date": "2026-06-17T18:07:14.898Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1324,17 +1353,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.37",
-      "date": "2026-06-14T21:53:54.805Z",
+      "date": "2026-06-17T18:07:14.902Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ogre Magi",
           "subEntityName": "Dumb Luck",
           "rawNote": "Mana Regen per Strength decreased from 0.03 to 0.02",
+          "originalSource": "Mana Regen per Strength decreased from 0.03 to 0.02",
           "indentLevel": 1,
           "metric": "Mana Regen per Strength",
           "changeType": "DECREASED",
@@ -1363,13 +1393,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1382,17 +1412,17 @@
     },
     {
       "version": "7.37b",
-      "date": "2026-06-14T21:53:54.807Z",
+      "date": "2026-06-17T18:07:14.904Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1405,13 +1435,14 @@
     },
     {
       "version": "7.37c",
-      "date": "2026-06-14T21:53:54.810Z",
+      "date": "2026-06-17T18:07:14.906Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ogre Magi",
           "subEntityName": "Bloodlust",
           "rawNote": "Bonus Attack Speed increased from 30/45/60/75 to 35/50/65/80",
+          "originalSource": "Bonus Attack Speed increased from 30/45/60/75 to 35/50/65/80",
           "indentLevel": 1,
           "metric": "Bonus Attack Speed",
           "changeType": "INCREASED",
@@ -1442,6 +1473,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Fire Shield",
           "rawNote": "Multicasts now prioritize Ogre Magi himself, followed by heroes, then buildings, then creeps, skipping units that already have the buff",
+          "originalSource": "Multicasts now prioritize Ogre Magi himself, followed by heroes, then buildings, then creeps, skipping units that already have the buff",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -1449,31 +1481,32 @@
             "subEntityId": 648
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "SUMMON_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         }
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1486,17 +1519,17 @@
     },
     {
       "version": "7.37d",
-      "date": "2026-06-14T21:53:54.813Z",
+      "date": "2026-06-17T18:07:14.909Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1509,17 +1542,17 @@
     },
     {
       "version": "7.37e",
-      "date": "2026-06-14T21:53:54.815Z",
+      "date": "2026-06-17T18:07:14.912Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1532,13 +1565,14 @@
     },
     {
       "version": "7.38",
-      "date": "2026-06-14T21:53:54.824Z",
+      "date": "2026-06-17T18:07:14.919Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ogre Magi",
           "subEntityName": "Bloodlust",
           "rawNote": "Bonus Move Speed decreased from 7/9/11/13% to 6/8/10/12%",
+          "originalSource": "Bonus Move Speed decreased from 7/9/11/13% to 6/8/10/12%",
           "indentLevel": 1,
           "metric": "Bonus Move Speed",
           "changeType": "DECREASED",
@@ -1569,6 +1603,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Ignite DPS decreased from +15 to +12",
+          "originalSource": "Level 10 Talent Ignite DPS decreased from +15 to +12",
           "indentLevel": 1,
           "metric": "Level 10 Talent Ignite DPS",
           "changeType": "DECREASED",
@@ -1598,6 +1633,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent Fireblast Damage decreased from +240 to +220",
+          "originalSource": "Level 25 Talent Fireblast Damage decreased from +240 to +220",
           "indentLevel": 1,
           "metric": "Level 25 Talent Fireblast Damage",
           "changeType": "DECREASED",
@@ -1625,13 +1661,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1644,17 +1680,17 @@
     },
     {
       "version": "7.38b",
-      "date": "2026-06-14T21:53:54.826Z",
+      "date": "2026-06-17T18:07:14.921Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1667,17 +1703,17 @@
     },
     {
       "version": "7.38c",
-      "date": "2026-06-14T21:53:54.830Z",
+      "date": "2026-06-17T18:07:14.924Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1690,12 +1726,13 @@
     },
     {
       "version": "7.39",
-      "date": "2026-06-14T21:53:54.836Z",
+      "date": "2026-06-17T18:07:14.928Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ogre Magi",
           "rawNote": "Base Strength increased from 23 to 25",
+          "originalSource": "Base Strength increased from 23 to 25",
           "indentLevel": 1,
           "metric": "Base Strength",
           "changeType": "INCREASED",
@@ -1724,6 +1761,7 @@
           "category": "hero",
           "entityName": "Ogre Magi",
           "rawNote": "Damage at level 1 increased by 2 (from 67–73 to 69–75)",
+          "originalSource": "Damage at level 1 increased by 2 (from 67–73 to 69–75)",
           "indentLevel": 1,
           "metric": "Damage at level 1",
           "changeType": "INCREASED",
@@ -1753,6 +1791,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Ignite",
           "rawNote": "Slow rescaled from 20/23/26/29% to 25%",
+          "originalSource": "Slow rescaled from 20/23/26/29% to 25%",
           "indentLevel": 1,
           "metric": "Slow",
           "changeType": "RESCALE",
@@ -1781,13 +1820,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1796,21 +1835,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.39b",
-      "date": "2026-06-14T21:53:54.839Z",
+      "date": "2026-06-17T18:07:14.931Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1823,17 +1862,17 @@
     },
     {
       "version": "7.39c",
-      "date": "2026-06-14T21:53:54.843Z",
+      "date": "2026-06-17T18:07:14.932Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1846,17 +1885,17 @@
     },
     {
       "version": "7.39d",
-      "date": "2026-06-14T21:53:54.848Z",
+      "date": "2026-06-17T18:07:14.937Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1869,17 +1908,17 @@
     },
     {
       "version": "7.39e",
-      "date": "2026-06-14T21:53:54.851Z",
+      "date": "2026-06-17T18:07:14.939Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1892,12 +1931,13 @@
     },
     {
       "version": "7.40",
-      "date": "2026-06-14T21:53:54.859Z",
+      "date": "2026-06-17T18:07:14.945Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ogre Magi",
           "rawNote": "Base Damage increased by 1",
+          "originalSource": "Base Damage increased by 1",
           "indentLevel": 1,
           "metric": "Base Damage",
           "changeType": "INCREASED",
@@ -1925,6 +1965,7 @@
           "category": "hero",
           "entityName": "Ogre Magi",
           "rawNote": "Damage at level 1 increased from 69–75 to 70–76",
+          "originalSource": "Damage at level 1 increased from 69–75 to 70–76",
           "indentLevel": 1,
           "metric": "Damage at level 1",
           "changeType": "INCREASED",
@@ -1954,6 +1995,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Bloodlust",
           "rawNote": "Cast range increased from 600 to 650",
+          "originalSource": "Cast range increased from 600 to 650",
           "indentLevel": 1,
           "metric": "Cast range",
           "changeType": "INCREASED",
@@ -1984,6 +2026,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Bloodlust",
           "rawNote": "Can no longer target invulnerable units",
+          "originalSource": "Can no longer target invulnerable units",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -2011,6 +2054,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Bloodlust",
           "rawNote": "Can still target invulnerable buildings (i.e. Tier 2-4 towers when the previous ones are not destroyed)",
+          "originalSource": "Can still target invulnerable buildings (i.e. Tier 2-4 towers when the previous ones are not destroyed)",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2018,19 +2062,20 @@
             "subEntityId": 5440
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "TARGETING_RULE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2038,6 +2083,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Bloodlust Attack Speed increased from +30 to +35",
+          "originalSource": "Level 20 Talent Bloodlust Attack Speed increased from +30 to +35",
           "indentLevel": 1,
           "metric": "Level 20 Talent Bloodlust Attack Speed",
           "changeType": "INCREASED",
@@ -2070,16 +2116,16 @@
         "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": 45
+        "utility": 9
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2092,17 +2138,17 @@
     },
     {
       "version": "7.40b",
-      "date": "2026-06-14T21:53:54.866Z",
+      "date": "2026-06-17T18:07:14.948Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": 45
+        "utility": 9
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2115,17 +2161,17 @@
     },
     {
       "version": "7.40c",
-      "date": "2026-06-14T21:53:54.872Z",
+      "date": "2026-06-17T18:07:14.950Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6.5,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
-        "utility": 45
+        "utility": 9
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2138,13 +2184,14 @@
     },
     {
       "version": "7.41",
-      "date": "2026-06-14T21:53:54.887Z",
+      "date": "2026-06-17T18:07:14.959Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ogre Magi",
           "subEntityName": "Fireblast",
           "rawNote": "Now also upgraded by Aghanim's Scepter",
+          "originalSource": "Now also upgraded by Aghanim's Scepter",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2172,6 +2219,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Fireblast",
           "rawNote": "Becomes Refined Fireblast, reducing its cooldown by 1s and increasing its cast speed by 25%",
+          "originalSource": "Becomes Refined Fireblast, reducing its cooldown by 1s and increasing its cast speed by 25%",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2179,19 +2227,20 @@
             "subEntityId": 5438
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "COOLDOWN_RESET_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2199,6 +2248,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Multicast",
           "rawNote": "Each point of Strength increases chances of Multicast by 0.0625%, so every 16 Strength points add 1%",
+          "originalSource": "Each point of Strength increases chances of Multicast by 0.0625%, so every 16 Strength points add 1%",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2206,9 +2256,9 @@
             "subEntityId": 5441
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -2218,7 +2268,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2226,6 +2277,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Unrefined Fireblast",
           "rawNote": "Cooldown increased from 6s to 7s",
+          "originalSource": "Cooldown increased from 6s to 7s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "INCREASED",
@@ -2256,6 +2308,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent -1s Fireblast Cooldown replaced with +2/0.01 Dumb Luck Mana / Mana Regen Per Strength",
+          "originalSource": "Level 10 Talent -1s Fireblast Cooldown replaced with +2/0.01 Dumb Luck Mana / Mana Regen Per Strength",
           "indentLevel": 1,
           "metric": "Level 10 Talent -1s Fireblast Cooldown",
           "changeType": "REWORK",
@@ -2284,6 +2337,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Ignite Burn Damage decreased from +12 to +10",
+          "originalSource": "Level 10 Talent Ignite Burn Damage decreased from +12 to +10",
           "indentLevel": 1,
           "metric": "Level 10 Talent Ignite Burn Damage",
           "changeType": "DECREASED",
@@ -2313,6 +2367,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent +2/0.01 Dumb Luck Mana / Mana Regen Per Strength replaced with +20/35 Bloodlust / Self Attack Speed",
+          "originalSource": "Level 15 Talent +2/0.01 Dumb Luck Mana / Mana Regen Per Strength replaced with +20/35 Bloodlust / Self Attack Speed",
           "indentLevel": 1,
           "metric": "Level 15 Talent +2/0.01 Dumb Luck Mana / Mana Regen Per Strength",
           "changeType": "REWORK",
@@ -2341,6 +2396,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +35 Bloodlust Attack Speed replaced with +175 Fireblast Damage",
+          "originalSource": "Level 20 Talent +35 Bloodlust Attack Speed replaced with +175 Fireblast Damage",
           "indentLevel": 1,
           "metric": "Level 20 Talent +35 Bloodlust Attack Speed",
           "changeType": "REWORK",
@@ -2369,6 +2425,7 @@
           "entityName": "Ogre Magi",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent +220 Fireblast Damage replaced with +10% Multicast Chances (affects all types of multicast)",
+          "originalSource": "Level 25 Talent +220 Fireblast Damage replaced with +10% Multicast Chances (affects all types of multicast)",
           "indentLevel": 1,
           "metric": "Level 25 Talent +220 Fireblast Damage",
           "changeType": "REWORK",
@@ -2397,19 +2454,19 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8,
-        "laning": -8,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
-        "utility": 45
+        "utility": 9
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2422,17 +2479,17 @@
     },
     {
       "version": "7.41a",
-      "date": "2026-06-14T21:53:54.892Z",
+      "date": "2026-06-17T18:07:14.961Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8,
-        "laning": -8,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
-        "utility": 45
+        "utility": 9
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2445,17 +2502,17 @@
     },
     {
       "version": "7.41b",
-      "date": "2026-06-14T21:53:54.896Z",
+      "date": "2026-06-17T18:07:14.964Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8,
-        "laning": -8,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
-        "utility": 45
+        "utility": 9
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2468,12 +2525,13 @@
     },
     {
       "version": "7.41c",
-      "date": "2026-06-14T21:53:54.902Z",
+      "date": "2026-06-17T18:07:14.966Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ogre Magi",
           "rawNote": "Strength gain decreased from 4.2 to 4.0",
+          "originalSource": "Strength gain decreased from 4.2 to 4.0",
           "indentLevel": 1,
           "metric": "Strength gain",
           "changeType": "DECREASED",
@@ -2501,13 +2559,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8,
-        "laning": -8,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
-        "utility": 45
+        "utility": 9
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2520,12 +2578,13 @@
     },
     {
       "version": "7.41d",
-      "date": "2026-06-14T21:53:54.908Z",
+      "date": "2026-06-17T18:07:14.969Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Ogre Magi",
           "rawNote": "Base Strength increased from 25 to 26",
+          "originalSource": "Base Strength increased from 25 to 26",
           "indentLevel": 1,
           "metric": "Base Strength",
           "changeType": "INCREASED",
@@ -2554,6 +2613,7 @@
           "category": "hero",
           "entityName": "Ogre Magi",
           "rawNote": "Damage at level 1 increased by 1 (from 70-76 to 71-77)",
+          "originalSource": "Damage at level 1 increased by 1 (from 70-76 to 71-77)",
           "indentLevel": 2,
           "metric": "Damage at level 1",
           "changeType": "INCREASED",
@@ -2581,45 +2641,57 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8,
-        "laning": -8,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
-        "utility": 45
+        "utility": 9
       },
       "winrates": {
         "HERALD": {
-          "winrate": 0.5234,
-          "matchCount": 60079
+          "winrate": 0.5204,
+          "matchCount": 54101
         },
         "GUARDIAN": {
-          "winrate": 0.5101,
-          "matchCount": 112117
+          "winrate": 0.5111,
+          "matchCount": 101572
         },
         "CRUSADER": {
-          "winrate": 0.5067,
-          "matchCount": 113413
+          "winrate": 0.5028,
+          "matchCount": 101311
         },
         "ARCHON": {
-          "winrate": 0.5027,
-          "matchCount": 92509
+          "winrate": 0.5026,
+          "matchCount": 83241
         },
         "LEGEND": {
-          "winrate": 0.5038,
-          "matchCount": 62746
+          "winrate": 0.4997,
+          "matchCount": 56722
         },
         "ANCIENT": {
-          "winrate": 0.4964,
-          "matchCount": 36405
+          "winrate": 0.496,
+          "matchCount": 33037
         },
         "DIVINE": {
-          "winrate": 0.4915,
-          "matchCount": 29280
+          "winrate": 0.4878,
+          "matchCount": 26925
+        },
+        "IMMORTAL": {
+          "winrate": 0,
+          "matchCount": 0
+        },
+        "PRO": {
+          "winrate": 0.5,
+          "matchCount": 4
+        },
+        "GLOBAL_BLEND": {
+          "winrate": 0.4878,
+          "matchCount": 26929
         }
       },
-      "temporalAssessment": "Net Gain"
+      "temporalAssessment": null
     }
   ]
 }

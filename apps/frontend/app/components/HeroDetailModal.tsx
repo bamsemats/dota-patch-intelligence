@@ -86,7 +86,24 @@ export default function HeroDetailModal({
               {changes.map((change, idx) => (
                 <div key={idx} className={`${styles.changeItem} ${styles[change.classification.classificationType]}`}>
                   {change.subEntityName && <div className={styles.subEntity}>{change.subEntityName}</div>}
-                  <div className={styles.note}>{change.rawNote}</div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <div className={styles.note}>{change.rawNote}</div>
+                    {/* @ts-ignore - Assuming state exists in data even if missing from interface */}
+                    {change.classification.state === "PARTIALLY_CLASSIFIED" && (
+                      <span style={{
+                        fontSize: '0.6rem',
+                        padding: '2px 6px',
+                        borderRadius: '4px',
+                        background: 'rgba(255, 255, 255, 0.1)',
+                        color: '#ddd',
+                        border: '1px solid #666',
+                        fontWeight: 'bold',
+                        whiteSpace: 'nowrap'
+                      }}>
+                        SYSTEM ESTIMATE
+                      </span>
+                    )}
+                  </div>
                   <div className={styles.reasoning}>
                     <strong>Reasoning:</strong> {change.classification.reasoning}
                   </div>

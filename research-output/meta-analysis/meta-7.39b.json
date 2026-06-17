@@ -1,8 +1,43 @@
 {
   "metaShifts": [
     {
-      "theme": "Neutral Item Power Curve Flattening",
-      "description": "Continuing the trend from 7.38c, this patch systematically nerfs overperforming neutral items: Dezun Bloodrite no longer affects attack-based abilities (major nerf to OD/Viper), Giant's Maul duration reduced, Magnifying Monocle range decreased, and Helm of Undying cooldown doubled. Only Crude receives meaningful buffs. This further flattens the neutral item power spike and reduces game-deciding RNG.",
+      "theme": "The Anti-Sustain & Early Burst Dominance",
+      "description": "The meta continues to heavily punish sustain-reliant strategies. Morphling's Attribute Shift now interacts negatively with health restoration debuffs, making him vulnerable. Doom's base regen nerf and the buff to Jidi Pollen Bag further solidify this trend, favoring heroes and lineups that can deliver high burst damage and negate enemy healing in the early to mid-game.",
+      "impactedRoles": [
+        "Carry",
+        "Offlane",
+        "SoftSupport",
+        "HardSupport"
+      ]
+    },
+    {
+      "theme": "Proactive Mid-Game Tempo & Mana Efficiency",
+      "description": "This patch rewards heroes who can exert early game pressure and sustain their spellcasting through skirmishes. Buffs to heroes like Sand King, Lich, Underlord, and Skywrath Mage, particularly their mana economies, enable more frequent spell usage and impactful rotations. The slight dampening of mid-game item power spikes also shifts focus towards hero kits and consistent pressure rather than singular item timings.",
+      "impactedRoles": [
+        "Mid",
+        "Offlane",
+        "SoftSupport",
+        "HardSupport"
+      ]
+    },
+    {
+      "theme": "Agility Carry Re-evaluation & Objective Focus",
+      "description": "Following previous reworks, specific agility carries are being re-tuned. Kez receives significant buffs to recover viability, emphasizing mobility and early game presence. Ursa's buff to Roshan reset time highlights a preference for carries with strong objective control, accelerating game tempo through Aegis timings.",
+      "impactedRoles": [
+        "Carry",
+        "Mid"
+      ]
+    },
+    {
+      "theme": "Offlane Hierarchy Shift & Global Presence",
+      "description": "A clear shift in the offlane meta is evident, with nerfs to many traditional sustain or utility-focused offlaners (Dark Seer, Omniknight, Doom, Centaur, Night Stalker). Conversely, buffs to Sand King and Underlord favor offlaners with reliable initiation, early game impact, and global mobility, aligning with a more proactive and aggressive playstyle.",
+      "impactedRoles": [
+        "Offlane"
+      ]
+    },
+    {
+      "theme": "Adaptive Map Control & Vision",
+      "description": "Subtle but impactful terrain changes, including tower repositioning and juke path alterations, alongside warding spot fixes, reinforce the need for teams to constantly adapt their map control and vision strategies. Teams that quickly identify and exploit these changes will gain a significant advantage in securing farm and gank opportunities.",
       "impactedRoles": [
         "Carry",
         "Mid",
@@ -10,164 +45,248 @@
         "SoftSupport",
         "HardSupport"
       ]
-    },
-    {
-      "theme": "Spell-Heavy Hero Correction Continues",
-      "description": "Building on 7.38c's spell-based nerfs, this patch targets remaining overperformers: Shadow Shaman damage/cooldown nerfs, Templar Assassin Refraction gutted (mana +10, damage severely reduced), Nature's Prophet ultimate damage decreased, and Dark Seer Ion Shell duration reduced. This reinforces the physical damage renaissance by removing spell-dominant lane controllers.",
-      "impactedRoles": [
-        "Mid",
-        "Offlane",
-        "SoftSupport"
-      ]
-    },
-    {
-      "theme": "Micro-Mobility and Positioning Refinements",
-      "description": "Following 7.38c's mobility standardization, this patch makes surgical adjustments: Night Stalker Void duration scaling nerfed early game, Centaur max speed reduced, Elder Titan base speed decreased, and terrain changes affecting juke paths. These changes demand more precise positioning without major mechanical overhauls.",
-      "impactedRoles": [
-        "Mid",
-        "Offlane",
-        "SoftSupport"
-      ]
-    },
-    {
-      "theme": "Support Role Micro-Balancing",
-      "description": "After 7.38c's healing meta reinforcement, this patch fine-tunes support power levels: Omniknight Hammer of Purity severely nerfed (cooldown and damage), Oracle slightly weakened, but Lich Death Charge buffed and Skywrath Mage Arcane Bolt improved. This prevents any single support archetype from dominating while maintaining healing meta viability.",
-      "impactedRoles": [
-        "SoftSupport",
-        "HardSupport"
-      ]
     }
   ],
   "synergisticWinners": [
     {
-      "entity": "Sand King + Blink Dagger",
-      "synergyExplanation": "Burrowstrike mana cost reduction (110→100 at level 1) combined with +200 cast range talent buff creates more reliable initiation windows. Lower mana costs allow for more frequent rotations, while extended range improves Blink→Burrowstrike→Epicenter combos."
+      "entity": "Lich",
+      "synergyExplanation": "The increased mana restored by Death Charge on hero death synergizes perfectly with the 'Proactive Mid-Game Tempo & Mana Efficiency' theme. Lich can now sustain his spellcasting much more effectively in early and mid-game teamfights, allowing him to chain Frost Blasts and Chain Frosts, especially when allies or enemies are falling.",
+      "temporalAssessment": "Net Gain"
     },
     {
-      "entity": "Kez + Attack Modifier Items",
-      "synergyExplanation": "Falcon Rush now works with unit-targeted attacks, enabling synergy with items like Diffusal Blade, Desolator, and Skadi. Combined with Talon Toss mana reduction and Shodo Sai parry buffs, Kez becomes significantly more viable as a right-click core in the physical damage meta."
+      "entity": "Ursa",
+      "synergyExplanation": "The reduced Fury Swipes reset time on Roshan directly synergizes with Ursa's core identity as a Roshan-focused carry. This buff allows him to take Roshan even faster and more reliably, securing crucial Aegis timings and reinforcing the 'Agility Carry Re-evaluation & Objective Focus' by favoring objective-focused carries.",
+      "temporalAssessment": "Net Gain"
     },
     {
-      "entity": "Sniper + Physical Damage Items",
-      "synergyExplanation": "Base armor +1 buff combined with the ongoing physical damage renaissance (Desolator buffs from 7.38c) makes Sniper more survivable in right-click focused games. The spell-heavy hero nerfs (Shadow Shaman, TA, NP) remove his primary counters."
+      "entity": "Enigma",
+      "synergyExplanation": "Eidolons created from multiplying now automatically attack the same target as their parent. This is a significant quality-of-life buff that streamlines Enigma's micro-management, making his jungle farming and pushing more efficient and less demanding, allowing him to focus more on macro-level plays and fitting into a faster tempo.",
+      "temporalAssessment": "Net Gain"
     },
     {
-      "entity": "Lich + Mana-Intensive Supports",
-      "synergyExplanation": "Death Charge mana restoration increased from 15% to 25% creates powerful synergy with mana-hungry supports like Crystal Maiden, Invoker, or Skywrath Mage. In teamfight-heavy metas, this provides significant sustain for spell-casting allies."
+      "entity": "Warlock",
+      "synergyExplanation": "The Golem's Permanent Immolation now being affected by Warlock's AoE increases creates a strong synergy with items like Shiva's Guard or Octarine Core. This allows Warlock to significantly amplify the Golem's area damage in teamfights, making his ultimate even more impactful in the 'Proactive Mid-Game Tempo' meta.",
+      "temporalAssessment": "Net Gain"
+    },
+    {
+      "entity": "Jidi Pollen Bag",
+      "synergyExplanation": "Its Pollinate health restoration loss increased from 20% to 30%, making it a significantly stronger counter to all forms of health gain. This directly synergizes with the broader 'Anti-Sustain & Early Burst Dominance' meta, making it a priority pick-up against sustain-heavy lineups.",
+      "temporalAssessment": "Net Gain"
+    },
+    {
+      "entity": "Crude",
+      "synergyExplanation": "Increased health restoration bonus and reduced intelligence penalty make it a more efficient and appealing sustain item. This benefits heroes who value tankiness and staying power, especially those who don't rely heavily on intelligence for their primary attributes, offering a niche counter to the anti-sustain trend for specific heroes.",
+      "temporalAssessment": "Net Gain"
     }
   ],
   "synergisticLosers": [
     {
-      "entity": "Outworld Destroyer + Dezun Bloodrite",
-      "synergyExplanation": "Dezun Bloodrite no longer affects attack-based abilities, completely removing the synergy with Arcane Orb. This was a core power spike for OD in mid-game teamfights, significantly reducing his neutral item scaling potential."
+      "entity": "Giant's Maul",
+      "synergyExplanation": "Nerfs to this popular mid-game item reduce the power spike it provides, dampening the mid-game impact for heroes who relied on it for burst damage and scaling, aligning with the 'Mid-Game Item Power Dampening' theme."
     },
     {
-      "entity": "Viper + Dezun Bloodrite",
-      "synergyExplanation": "Similar to OD, Poison Attack no longer benefits from Dezun Bloodrite's spell amplification. This removes a significant mid-game power spike for Viper, who relied on this interaction for enhanced teamfight presence."
+      "entity": "Magnifying Monocle",
+      "synergyExplanation": "As a key mid-game item for spellcasters, its nerf reduces the early-mid game burst potential and farming efficiency for heroes who relied on it, contributing to the 'Mid-Game Item Power Dampening' trend."
     },
     {
-      "entity": "Templar Assassin + Early Game Items",
-      "synergyExplanation": "Refraction mana cost increase (85→95) and damage reduction (20/40/60/80→15/30/45/60) severely impacts her laning efficiency. Items like Bottle and early stat items become less effective when her core ability is significantly weaker."
+      "entity": "Helm of the Undying",
+      "synergyExplanation": "The nerf to this item reduces the survivability and sustain it offered in the mid-game, making heroes who relied on its tankiness more vulnerable and less impactful during crucial skirmishes, fitting the 'Mid-Game Item Power Dampening' theme."
     },
     {
-      "entity": "Shadow Shaman + Aether Lens",
-      "synergyExplanation": "Ether Shock damage nerfs and Shackles cooldown increases reduce the effectiveness of cast range extensions. The hero's reduced burst potential makes positioning items less impactful when the base abilities are weaker."
+      "entity": "Dezun Bloodrite",
+      "synergyExplanation": "Nerfs to this item reduce its effectiveness as a damage and sustain tool in the mid-game, impacting heroes who used it for aggressive plays and survivability, aligning with the 'Mid-Game Item Power Dampening' trend."
     }
   ],
   "roleSpecificWinners": {
     "Carry": [
       {
+        "hero": "Ursa",
+        "explanation": "The reduced Fury Swipes reset time on Roshan significantly buffs Ursa's ability to take objectives, making him a premier Roshan-taker and accelerating his item timings. This directly benefits his role as a snowballing carry in an objective-focused meta.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
         "hero": "Sniper",
-        "explanation": "Base armor +1 improves survivability in the physical damage meta. Spell-heavy counter heroes (TA, Shadow Shaman, Nature's Prophet) all received significant nerfs, creating a more favorable environment for his positioning-based playstyle."
+        "explanation": "A base armor increase helps Sniper immensely in the early laning phase, making him more resilient to harass and enabling him to secure farm more safely. This small buff improves his survivability as a fragile carry, allowing him to reach his late-game power spikes more consistently.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
+        "hero": "Kez",
+        "explanation": "Multiple buffs to Falcon Rush (duration, unit-targeted attacks) and Talon Toss (mana cost) provide Kez with much-needed recovery after previous nerfs. These changes enhance his mobility, initiation, and early game presence, making him a more viable carry option that can participate in early skirmishes.",
+        "temporalAssessment": "Recovery"
       }
     ],
     "Mid": [
       {
+        "hero": "Sniper",
+        "explanation": "The base armor buff is particularly impactful for Sniper in the mid lane, where he often faces aggressive matchups. Increased survivability allows him to farm more consistently and reach his power spikes faster, making him a safer and more reliable mid-lane pick.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
         "hero": "Kez",
-        "explanation": "Falcon Rush improvements (duration buff, unit-targeted attack compatibility) and Talon Toss mana reduction significantly improve his mid-game impact. Shodo Sai parry buffs enhance his teamfight contribution, making him more viable as a tempo-controlling mid."
+        "explanation": "Kez's buffs to Falcon Rush and Talon Toss make him a more potent mid-lane threat. Improved mobility and lower mana costs for his initiation and burst allow him to control the lane and rotate more effectively, recovering his mid-lane viability and fitting the proactive tempo.",
+        "temporalAssessment": "Recovery"
       },
       {
         "hero": "Skywrath Mage",
-        "explanation": "Arcane Bolt base damage increase (60/85/110/135→60/90/120/150) improves his laning phase and early game impact. With spell-heavy competitors nerfed, he becomes a stronger mid option for magical burst strategies."
+        "explanation": "The Arcane Bolt base damage increase significantly boosts Skywrath Mage's early game harass and kill potential in the mid lane. This allows him to dominate the lane, secure runes, and transition into early ganks with greater impact, aligning with the 'Early Burst Dominance' theme.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
+        "hero": "Techies",
+        "explanation": "Sticky Bomb's damage increase provides Techies with stronger early lane presence and burst potential. As a mid, this allows him to harass opponents more effectively, secure last hits, and set up kills with his high early damage output, contributing to early game aggression.",
+        "temporalAssessment": "Net Gain"
       }
     ],
     "Offlane": [
       {
         "hero": "Sand King",
-        "explanation": "Burrowstrike mana cost reduction and talent buffs (+200 cast range, +25 Sand Storm damage) significantly improve his initiation reliability and farming efficiency. Lower mana costs enable more frequent rotations and better lane presence."
+        "explanation": "Burrowstrike's mana cost reduction and multiple talent buffs (Stinger Slow, Burrowstrike Cast Range, Sand Storm DPS) make Sand King a significantly stronger offlaner. He can now sustain his lane presence, initiate more frequently, and scale better into teamfights, fitting the 'Proactive Mid-Game Tempo' theme.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
+        "hero": "Underlord",
+        "explanation": "Fiend's Gate mana cost reduction makes Underlord's global mobility and teamfight utility more accessible. This allows him to facilitate rotations and objective plays more frequently, enhancing his strategic value as an offlaner in a meta that rewards early aggression and map control.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
+        "hero": "Beastmaster",
+        "explanation": "While Rugged received a minor nerf against towers, Beastmaster's core kit for early game aggression, lane dominance with Wild Axes, and powerful initiation with Primal Roar remains untouched. With several other offlaners receiving more impactful nerfs, Beastmaster's relative strength in the 'Offlane Hierarchy Shift' has increased.",
+        "temporalAssessment": "Net Gain"
       }
     ],
     "SoftSupport": [
       {
-        "hero": "Techies",
-        "explanation": "Sticky Bomb damage increase (80/160/240/320→95/170/245/320) improves his zoning and teamfight contribution. In a meta moving away from spell-heavy cores, his area denial becomes more valuable for controlling objectives."
+        "hero": "Sand King",
+        "explanation": "The mana cost reduction on Burrowstrike and talent buffs make Sand King a much more potent soft support. He can roam more effectively, initiate ganks with lower mana commitment, and contribute significantly to early teamfights, aligning with the 'Proactive Mid-Game Tempo' theme.",
+        "temporalAssessment": "Net Gain"
       },
       {
-        "hero": "Underlord",
-        "explanation": "Fiend's Gate mana cost reduction (200→175) improves his utility as a position 4. Better mana efficiency allows for more frequent rotations and map control, valuable in the current positioning-focused meta."
+        "hero": "Lich",
+        "explanation": "Lich's Death Charge mana restore buff is a huge boon for a soft support, allowing him to sustain his spellcasting through prolonged skirmishes and teamfights. This enables more Frost Blasts and Chain Frosts, increasing his impact in the early and mid-game and fitting the 'Mana Efficiency' theme.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
+        "hero": "Skywrath Mage",
+        "explanation": "The increased base damage on Arcane Bolt makes Skywrath Mage an even more oppressive soft support in the laning phase. His ability to harass and secure kills is amplified, contributing heavily to early game aggression and securing lane dominance, fitting the 'Early Burst Dominance' meta.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
+        "hero": "Techies",
+        "explanation": "Sticky Bomb's damage increase provides Techies with stronger early game harass and burst as a soft support. This allows him to apply significant pressure in lane, zone enemies, and contribute to early pick-offs, fitting the aggressive early game meta.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
+        "hero": "Enchantress",
+        "explanation": "The slight increase in Wisp count for Nature's Attendants provides Enchantress with a small but noticeable buff to her healing and damage output. This enhances her sustain and skirmishing potential as a soft support, making her slightly more impactful in early engagements.",
+        "temporalAssessment": "Net Gain"
       }
     ],
     "HardSupport": [
       {
         "hero": "Lich",
-        "explanation": "Death Charge mana restoration buff (15%→25%) significantly improves his teamfight sustain utility. This makes him more valuable in extended engagements and provides better support for mana-intensive allies."
+        "explanation": "As a hard support, Lich benefits immensely from the Death Charge mana restore. This allows him to be more active with his spells, especially in chaotic early teamfights, ensuring he can provide consistent utility and damage without running out of mana, crucial for 'Mana Efficiency'.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
+        "hero": "Skywrath Mage",
+        "explanation": "The Arcane Bolt damage buff makes Skywrath Mage a formidable hard support in the early game. His ability to harass and secure kills is amplified, allowing him to create space and pressure enemy cores effectively from minute one, aligning with the 'Early Burst Dominance' theme.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
+        "hero": "Techies",
+        "explanation": "The Sticky Bomb damage increase makes Techies a stronger hard support for lane harassment and early burst. He can zone enemies more effectively and contribute to early pick-offs, fitting the aggressive early game meta and providing crucial early pressure.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
+        "hero": "Enchantress",
+        "explanation": "The minor buff to Nature's Attendants' wisp count provides Enchantress with slightly improved healing and damage. This helps her sustain her lane partner and contribute more effectively to early skirmishes as a hard support, offering some counter-sustain.",
+        "temporalAssessment": "Net Gain"
       }
     ]
   },
   "roleSpecificLosers": {
     "Carry": [
       {
-        "hero": "Terrorblade",
-        "explanation": "Dark Unity damage penalty increase (50%→60%) reduces his illusion-based farming and fighting efficiency. This directly impacts his core identity as an illusion carry, making him less effective in both farming patterns and teamfights."
+        "hero": "Templar Assassin",
+        "explanation": "Significant nerfs to Refraction's mana cost and bonus damage severely impact Templar Assassin's laning phase and early burst potential. This makes it harder for her to secure farm and snowball, weakening her as a carry in a meta that favors early aggression."
       },
       {
         "hero": "Slark",
-        "explanation": "Barracuda health gain reduction at level 1 (10→5) significantly weakens his early game survivability. This impacts his ability to trade efficiently in lane and reduces his snowball potential in the early-mid game transition."
+        "explanation": "The early game health gain reduction on Barracuda significantly impacts Slark's laning sustain and ability to jungle efficiently in the early stages. This makes him more vulnerable and slows down his crucial early farm, making him less resilient against 'Anti-Sustain' strategies."
+      },
+      {
+        "hero": "Terrorblade",
+        "explanation": "The increased damage penalty on Dark Unity (Aghanim's Scepter) makes Terrorblade's global split-pushing strategy less effective. This reduces the value of a key late-game item, impacting his ability to apply map pressure as a carry and slowing his overall tempo."
       }
     ],
     "Mid": [
       {
         "hero": "Templar Assassin",
-        "explanation": "Refraction nerfs are devastating: mana cost increase (85→95) and damage reduction (20/40/60/80→15/30/45/60) severely impact her laning dominance and farming efficiency. Her core mid-game power spike is significantly diminished."
+        "explanation": "The Refraction nerfs directly hit Templar Assassin's mid-lane dominance. Reduced damage and higher mana costs make it harder to win the lane, secure last hits, and burst down opponents, diminishing her impact as a mid hero in an 'Early Burst Dominance' meta."
       },
       {
-        "hero": "Outworld Destroyer",
-        "explanation": "Dezun Bloodrite no longer affecting Arcane Orb removes a crucial neutral item synergy. This reduces his mid-game teamfight scaling and makes him less reliable as a magical damage core."
+        "hero": "Nature's Prophet",
+        "explanation": "The base damage reduction on Wrath of Nature slightly reduces Nature's Prophet's farming speed and global presence. This makes him less efficient at clearing waves and contributing to global pressure, impacting his mid-lane farming and scaling in a tempo-driven meta."
+      },
+      {
+        "hero": "Night Stalker",
+        "explanation": "The decreased Night Duration on Void impacts Night Stalker's crucial early night power spike. As a mid, this reduces his window of opportunity to dominate the lane and secure early kills, making his timing less potent and harder to execute in a 'Proactive Mid-Game Tempo' meta."
+      },
+      {
+        "hero": "Doom",
+        "explanation": "Doom's base health regen nerf significantly impacts his mid-lane sustain. This makes him more vulnerable to harass and reduces his ability to trade effectively, making his laning phase much harder against aggressive mids and directly impacting him in the 'Anti-Sustain' meta."
       }
     ],
     "Offlane": [
       {
         "hero": "Dark Seer",
-        "explanation": "Ion Shell duration reduction (21/24/27/30s→20/22/24/26s) and Wall of Replica cast range nerf (1300→1000) significantly impact his farming efficiency and teamfight initiation. His core offlane identity as a farming initiator is weakened."
+        "explanation": "Nerfs to Ion Shell duration and Wall of Replica cast range significantly reduce Dark Seer's lane presence and teamfight initiation potential. He struggles to apply consistent pressure and set up impactful walls, weakening his role as an offlaner in the 'Offlane Hierarchy Shift'."
       },
       {
-        "hero": "Nature's Prophet",
-        "explanation": "Wrath of Nature base damage reduction (100/140/180→90/130/170) reduces his global impact and teamfight contribution. This weakens his ability to influence multiple lanes and secure kills across the map."
+        "hero": "Omniknight",
+        "explanation": "Hammer of Purity's increased cooldown and decreased damage severely impact Omniknight's early game damage and laning presence. This makes him less effective at trading and securing farm, diminishing his impact as an offlaner in a meta favoring early aggression."
       },
       {
-        "hero": "Beastmaster",
-        "explanation": "Rugged no longer increasing block chance against towers removes his tower-diving and high-ground defense capabilities. This reduces his effectiveness in both aggressive plays and defensive situations."
+        "hero": "Doom",
+        "explanation": "Doom's base health regen nerf makes his laning phase as an offlaner much more challenging. He struggles to sustain against harass, making it harder to secure farm and maintain pressure in the offlane, directly impacting him in the 'Anti-Sustain' meta."
+      },
+      {
+        "hero": "Centaur Warrunner",
+        "explanation": "The decreased Max Movement Speed from Horsepower impacts Centaur Warrunner's ability to initiate and chase effectively. This reduces his mobility and overall threat as an offlaner, making it harder to secure kills and control the lane in a 'Proactive Mid-Game Tempo' meta."
+      },
+      {
+        "hero": "Night Stalker",
+        "explanation": "The decreased Night Duration on Void impacts Night Stalker's crucial early night power spike. As an offlaner, this reduces his window of opportunity to dominate the lane and secure early kills, making his timing less potent and harder to execute in the 'Offlane Hierarchy Shift'."
       }
     ],
     "SoftSupport": [
       {
         "hero": "Shadow Shaman",
-        "explanation": "Ether Shock damage nerfs (140/200/260/320→125/190/255/320) and Shackles cooldown increase (13/12/11/10s→14/13/12/11s) significantly reduce his laning presence and teamfight burst. His core utility as a disable-heavy support is diminished."
+        "explanation": "Nerfs to Ether Shock damage and Shackles cooldown significantly reduce Shadow Shaman's early game aggression and control. This makes him less effective at harassing, securing kills, and setting up ganks as a soft support in a meta that rewards early impact."
       },
       {
-        "hero": "Night Stalker",
-        "explanation": "Void duration scaling nerf (2/2.5/3/3.5/4s→1.6/2.2/2.8/3.4/4s) particularly impacts early-mid game, reducing his ganking effectiveness during his power spike timings. This weakens his roaming support viability."
+        "hero": "Disruptor",
+        "explanation": "The decreased slow duration on Thunder Strike slightly reduces Disruptor's early game control and gank potential. While minor, it makes it slightly harder to secure kills and zone enemies as a soft support, impacting his ability to create early tempo."
+      },
+      {
+        "hero": "Oracle",
+        "explanation": "Oracle's strength gain decrease and Rain of Destiny heal amplification reduction impact his survivability and healing output as a soft support. These nerfs make him slightly more fragile and less potent in sustaining his team, making him less effective in the 'Anti-Sustain' meta."
       }
     ],
     "HardSupport": [
       {
-        "hero": "Omniknight",
-        "explanation": "Hammer of Purity receives massive nerfs: cooldown increase (16/12/8/4s→20/15/10/5s) and damage reduction (40/60/80/100→25/50/75/100). This severely impacts his laning presence and early game trading ability as a position 5."
+        "hero": "Shadow Shaman",
+        "explanation": "As a hard support, Shadow Shaman's nerfs to Ether Shock damage and Shackles cooldown directly impact his ability to harass, secure kills, and provide early game control, making him less impactful in the laning phase and early rotations in a meta that values early aggression."
+      },
+      {
+        "hero": "Disruptor",
+        "explanation": "The reduced slow duration on Thunder Strike slightly diminishes Disruptor's early game control and gank setup as a hard support. This makes it marginally harder to secure kills and zone enemies effectively, impacting his ability to create early tempo and pressure."
       },
       {
         "hero": "Oracle",
-        "explanation": "Strength gain reduction (2.4→2.2) and Rain of Destiny heal amplification decrease (20%→15%) reduce both his survivability and healing utility. This makes him less effective in the current healing-focused support meta."
+        "explanation": "Oracle's strength gain decrease and Rain of Destiny heal amplification reduction impact his survivability and healing output as a hard support. These nerfs make him slightly more fragile and less potent in sustaining his team, especially in the early game, making him less effective in the 'Anti-Sustain' meta."
       }
     ]
-  }
+  },
+  "validationState": "VALIDATED"
 }

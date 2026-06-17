@@ -3,13 +3,14 @@
   "history": [
     {
       "version": "7.33",
-      "date": "2026-06-14T21:53:54.725Z",
+      "date": "2026-06-17T18:07:14.843Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Kunkka",
           "subEntityName": "Tidebringer",
           "rawNote": "No longer disabled by silences. Instead disabled by break",
+          "originalSource": "No longer disabled by silences. Instead disabled by break",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -36,7 +37,8 @@
           "category": "hero",
           "entityName": "Kunkka",
           "subEntityName": "Ghostship",
-          "rawNote": "Stun Duration decreased from 1.4s to 1.2s ",
+          "rawNote": "Stun Duration decreased from 1.4s to 1.2s",
+          "originalSource": "Stun Duration decreased from 1.4s to 1.2s ",
           "indentLevel": 1,
           "metric": "Stun Duration",
           "changeType": "DECREASED",
@@ -67,6 +69,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Unknown Ability (319)",
           "rawNote": "Now area targeted with a 900 cast range and 1100 radius",
+          "originalSource": "Now area targeted with a 900 cast range and 1100 radius",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -93,7 +96,8 @@
           "category": "hero",
           "entityName": "Kunkka",
           "subEntityName": "Tidal Wave",
-          "rawNote": "Duration decreased from 1.25s to 1s ",
+          "rawNote": "Duration decreased from 1.25s to 1s",
+          "originalSource": "Duration decreased from 1.25s to 1s ",
           "indentLevel": 1,
           "metric": "Duration",
           "changeType": "DECREASED",
@@ -120,32 +124,40 @@
           }
         }
       ],
-      "vectorDelta": null,
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -1,
+        "laning": 0,
+        "siege": 0,
+        "utility": -2
+      },
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
-        "utility": 0
+        "utility": -2
       },
       "winrates": {},
       "temporalAssessment": null
     },
     {
       "version": "7.33b",
-      "date": "2026-06-14T21:53:54.730Z",
+      "date": "2026-06-17T18:07:14.846Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
-        "utility": 0
+        "utility": -2
       },
       "winrates": {
         "HERALD": {
@@ -181,17 +193,17 @@
     },
     {
       "version": "7.33c",
-      "date": "2026-06-14T21:53:54.735Z",
+      "date": "2026-06-17T18:07:14.849Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
-        "utility": 0
+        "utility": -2
       },
       "winrates": {
         "HERALD": {
@@ -227,17 +239,17 @@
     },
     {
       "version": "7.33d",
-      "date": "2026-06-14T21:53:54.740Z",
+      "date": "2026-06-17T18:07:14.851Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
-        "utility": 0
+        "utility": -2
       },
       "winrates": {
         "HERALD": {
@@ -273,17 +285,17 @@
     },
     {
       "version": "7.33e",
-      "date": "2026-06-14T21:53:54.743Z",
+      "date": "2026-06-17T18:07:14.854Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
-        "utility": 0
+        "utility": -2
       },
       "winrates": {
         "HERALD": {
@@ -319,13 +331,14 @@
     },
     {
       "version": "7.34",
-      "date": "2026-06-14T21:53:54.750Z",
+      "date": "2026-06-17T18:07:14.859Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Kunkka",
           "subEntityName": "Torrent",
           "rawNote": "Damage and slow are now applied to all enemies in the torrent area throughout the duration, not just to enemies caught by the stun",
+          "originalSource": "Damage and slow are now applied to all enemies in the torrent area throughout the duration, not just to enemies caught by the stun",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -333,19 +346,20 @@
             "subEntityId": 5031
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ROSHAN_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -353,6 +367,7 @@
           "entityName": "Kunkka",
           "subEntityName": "X Marks the Spot",
           "rawNote": "Return Cast Point decreased from 0.4s to 0.2s",
+          "originalSource": "Return Cast Point decreased from 0.4s to 0.2s",
           "indentLevel": 1,
           "metric": "Return Cast Point",
           "changeType": "DECREASED",
@@ -384,27 +399,27 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
-        "utility": 0
+        "utility": -2
       },
       "winrates": {},
       "temporalAssessment": null
     },
     {
       "version": "7.34b",
-      "date": "2026-06-14T21:53:54.754Z",
+      "date": "2026-06-17T18:07:14.863Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
-        "utility": 0
+        "utility": -2
       },
       "winrates": {
         "HERALD": {
@@ -440,17 +455,17 @@
     },
     {
       "version": "7.34c",
-      "date": "2026-06-14T21:53:54.759Z",
+      "date": "2026-06-17T18:07:14.868Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
-        "utility": 0
+        "utility": -2
       },
       "winrates": {
         "HERALD": {
@@ -486,13 +501,14 @@
     },
     {
       "version": "7.34d",
-      "date": "2026-06-14T21:53:54.764Z",
+      "date": "2026-06-17T18:07:14.870Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Kunkka",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Torrent AoE decreased from +80 to +65",
+          "originalSource": "Level 20 Talent Torrent AoE decreased from +80 to +65",
           "indentLevel": 1,
           "metric": "Level 20 Talent Torrent AoE",
           "changeType": "DECREASED",
@@ -523,10 +539,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
-        "utility": 0
+        "utility": -2
       },
       "winrates": {
         "HERALD": {
@@ -562,13 +578,14 @@
     },
     {
       "version": "7.34e",
-      "date": "2026-06-14T21:53:54.767Z",
+      "date": "2026-06-17T18:07:14.873Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Kunkka",
           "subEntityName": "Ghostship",
           "rawNote": "Damage Delayed decreased from 45% to 35%",
+          "originalSource": "Damage Delayed decreased from 45% to 35%",
           "indentLevel": 1,
           "metric": "Damage Delayed",
           "changeType": "DECREASED",
@@ -599,6 +616,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Tidal Wave",
           "rawNote": "Damage decreased from 250 to 180",
+          "originalSource": "Damage decreased from 250 to 180",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "DECREASED",
@@ -629,6 +647,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Unknown Ability (319)",
           "rawNote": "Duration decreased from 5s to 4s",
+          "originalSource": "Duration decreased from 5s to 4s",
           "indentLevel": 1,
           "metric": "Duration",
           "changeType": "DECREASED",
@@ -659,6 +678,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Unknown Ability (319)",
           "rawNote": "Cooldown increased from 70s to 75s",
+          "originalSource": "Cooldown increased from 70s to 75s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "INCREASED",
@@ -686,22 +706,22 @@
         }
       ],
       "vectorDelta": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -14.5,
-        "laning": -8,
+        "teamfight": -3,
+        "laning": -1,
         "siege": 0,
-        "utility": -10
+        "utility": -2
       },
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -14.5,
-        "laning": -8,
+        "teamfight": -4,
+        "laning": -1,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "HERALD": {
@@ -737,13 +757,14 @@
     },
     {
       "version": "7.35",
-      "date": "2026-06-14T21:53:54.772Z",
+      "date": "2026-06-17T18:07:14.877Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Kunkka",
           "subEntityName": "Unknown Ability (319)",
           "rawNote": "Mana Cost increased from 250 to 275",
+          "originalSource": "Mana Cost increased from 250 to 275",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "INCREASED",
@@ -774,6 +795,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Unknown Ability (319)",
           "rawNote": "Minimum spawn distance decreased from 300 to 115",
+          "originalSource": "Minimum spawn distance decreased from 300 to 115",
           "indentLevel": 1,
           "metric": "Minimum spawn distance",
           "changeType": "DECREASED",
@@ -804,6 +826,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +65 Torrent AoE replaced with -4s Torrent Cooldown",
+          "originalSource": "Level 20 Talent +65 Torrent AoE replaced with -4s Torrent Cooldown",
           "indentLevel": 1,
           "metric": "Level 20 Talent +65 Torrent AoE",
           "changeType": "REWORK",
@@ -838,13 +861,13 @@
         "utility": -1
       },
       "totalVector": {
-        "farming": -9,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -14.5,
-        "laning": -9,
+        "teamfight": -4,
+        "laning": -2,
         "siege": 0,
-        "utility": -11
+        "utility": -5
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -857,17 +880,17 @@
     },
     {
       "version": "7.35b",
-      "date": "2026-06-14T21:53:54.775Z",
+      "date": "2026-06-17T18:07:14.879Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -9,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -14.5,
-        "laning": -9,
+        "teamfight": -4,
+        "laning": -2,
         "siege": 0,
-        "utility": -11
+        "utility": -5
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -880,17 +903,17 @@
     },
     {
       "version": "7.35c",
-      "date": "2026-06-14T21:53:54.782Z",
+      "date": "2026-06-17T18:07:14.881Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -9,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -14.5,
-        "laning": -9,
+        "teamfight": -4,
+        "laning": -2,
         "siege": 0,
-        "utility": -11
+        "utility": -5
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -903,13 +926,14 @@
     },
     {
       "version": "7.35d",
-      "date": "2026-06-14T21:53:54.785Z",
+      "date": "2026-06-17T18:07:14.883Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Kunkka",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Torrent Damage/Knock Up Duration decreased from +30% to +25%",
+          "originalSource": "Level 15 Talent Torrent Damage/Knock Up Duration decreased from +30% to +25%",
           "indentLevel": 1,
           "metric": "Level 15 Talent Torrent Damage/Knock Up Duration",
           "changeType": "DECREASED",
@@ -937,13 +961,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -9,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -14.5,
-        "laning": -9,
+        "teamfight": -4,
+        "laning": -2,
         "siege": 0,
-        "utility": -11
+        "utility": -5
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -956,12 +980,13 @@
     },
     {
       "version": "7.36",
-      "date": "2026-06-14T21:53:54.791Z",
+      "date": "2026-06-17T18:07:14.889Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Kunkka",
           "rawNote": "Strength gain decreased from 3.8 to 3.6",
+          "originalSource": "Strength gain decreased from 3.8 to 3.6",
           "indentLevel": 1,
           "metric": "Strength gain",
           "changeType": "DECREASED",
@@ -991,6 +1016,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Torrent",
           "rawNote": "Stun Duration decreased from 1.6 to 1.4s",
+          "originalSource": "Stun Duration decreased from 1.6 to 1.4s",
           "indentLevel": 1,
           "metric": "Stun Duration",
           "changeType": "DECREASED",
@@ -1021,6 +1047,7 @@
           "entityName": "Kunkka",
           "subEntityName": "X Marks the Spot",
           "rawNote": "Enemy Delay decreased from 4s to 3s",
+          "originalSource": "Enemy Delay decreased from 4s to 3s",
           "indentLevel": 1,
           "metric": "Enemy Delay",
           "changeType": "DECREASED",
@@ -1051,6 +1078,7 @@
           "entityName": "Kunkka",
           "subEntityName": "X Marks the Spot",
           "rawNote": "Allied Delay decreased from 8s to 6s",
+          "originalSource": "Allied Delay decreased from 8s to 6s",
           "indentLevel": 1,
           "metric": "Allied Delay",
           "changeType": "DECREASED",
@@ -1081,6 +1109,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Torrent Damage/Knock Up Duration decreased from +25% to 20%",
+          "originalSource": "Level 15 Talent Torrent Damage/Knock Up Duration decreased from +25% to 20%",
           "indentLevel": 1,
           "metric": "Level 15 Talent Torrent Damage/Knock Up Duration",
           "changeType": "DECREASED",
@@ -1110,6 +1139,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent +45 Damage replaced with +60 Tidebringer Damage",
+          "originalSource": "Level 15 Talent +45 Damage replaced with +60 Tidebringer Damage",
           "indentLevel": 1,
           "metric": "Level 15 Talent +45 Damage",
           "changeType": "REWORK",
@@ -1138,6 +1168,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +70% Tidebringer Cleave replaced with +15% Rum Damage Delay",
+          "originalSource": "Level 20 Talent +70% Tidebringer Cleave replaced with +15% Rum Damage Delay",
           "indentLevel": 1,
           "metric": "Level 20 Talent +70% Tidebringer Cleave",
           "changeType": "REWORK",
@@ -1166,6 +1197,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent -2s Tidebringer Cooldown replaced with +100% Tidebringer Cleave Damage",
+          "originalSource": "Level 25 Talent -2s Tidebringer Cooldown replaced with +100% Tidebringer Cleave Damage",
           "indentLevel": 1,
           "metric": "Level 25 Talent -2s Tidebringer Cooldown",
           "changeType": "REWORK",
@@ -1192,13 +1224,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -9,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -14.5,
-        "laning": -9,
+        "teamfight": -4,
+        "laning": -2,
         "siege": 0,
-        "utility": -11
+        "utility": -5
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1211,17 +1243,17 @@
     },
     {
       "version": "7.36a",
-      "date": "2026-06-14T21:53:54.794Z",
+      "date": "2026-06-17T18:07:14.892Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -9,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -14.5,
-        "laning": -9,
+        "teamfight": -4,
+        "laning": -2,
         "siege": 0,
-        "utility": -11
+        "utility": -5
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1234,17 +1266,17 @@
     },
     {
       "version": "7.36b",
-      "date": "2026-06-14T21:53:54.797Z",
+      "date": "2026-06-17T18:07:14.895Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -9,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -14.5,
-        "laning": -9,
+        "teamfight": -4,
+        "laning": -2,
         "siege": 0,
-        "utility": -11
+        "utility": -5
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1257,17 +1289,17 @@
     },
     {
       "version": "7.36c",
-      "date": "2026-06-14T21:53:54.800Z",
+      "date": "2026-06-17T18:07:14.897Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -9,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -14.5,
-        "laning": -9,
+        "teamfight": -4,
+        "laning": -2,
         "siege": 0,
-        "utility": -11
+        "utility": -5
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1276,16 +1308,17 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.37",
-      "date": "2026-06-14T21:53:54.804Z",
+      "date": "2026-06-17T18:07:14.902Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Kunkka",
           "rawNote": "Min damage increased by 4",
+          "originalSource": "Min damage increased by 4",
           "indentLevel": 1,
           "metric": "Min damage",
           "changeType": "INCREASED",
@@ -1314,6 +1347,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Admiral's Rum",
           "rawNote": "New Innate ability. Passive, can't be leveled up",
+          "originalSource": "New Innate ability. Passive, can't be leveled up",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -1341,6 +1375,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Admiral's Rum",
           "rawNote": "Taking damage from a hero, building, or Roshan that would reduce Kunkka below 65% health automatically triggers Admiral’s Rum over 10s, providing 10% bonus movement speed and delaying 20% of the damage taken. Delayed damage is dealt evenly over 10s once the buff ends. Stacks additively with other sources of Admiral’s Rum. Cooldown: 60s",
+          "originalSource": "Taking damage from a hero, building, or Roshan that would reduce Kunkka below 65% health automatically triggers Admiral’s Rum over 10s, providing 10% bonus movement speed and delaying 20% of the damage taken. Delayed damage is dealt evenly over 10s once the buff ends. Stacks additively with other sources of Admiral’s Rum. Cooldown: 60s",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -1348,19 +1383,20 @@
             "subEntityId": 1452
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ROSHAN_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -1368,6 +1404,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Torrent",
           "rawNote": "Radius increased from 225 to 250",
+          "originalSource": "Radius increased from 225 to 250",
           "indentLevel": 1,
           "metric": "Radius",
           "changeType": "INCREASED",
@@ -1398,6 +1435,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Torrent",
           "rawNote": "Mana Cost decreased from 100 to 90",
+          "originalSource": "Mana Cost decreased from 100 to 90",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "DECREASED",
@@ -1428,6 +1466,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Tidebringer",
           "rawNote": "No longer an innate ability",
+          "originalSource": "No longer an innate ability",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1455,6 +1494,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Tidebringer",
           "rawNote": "Cleave Range rescaled from 500/650/800/950/1100 to 650/800/950/1100",
+          "originalSource": "Cleave Range rescaled from 500/650/800/950/1100 to 650/800/950/1100",
           "indentLevel": 1,
           "metric": "Cleave Range",
           "changeType": "RESCALE",
@@ -1485,6 +1525,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Tidebringer",
           "rawNote": "Damage Bonus rescaled from 10/30/60/90/120 to 30/60/90/120",
+          "originalSource": "Damage Bonus rescaled from 10/30/60/90/120 to 30/60/90/120",
           "indentLevel": 1,
           "metric": "Damage Bonus",
           "changeType": "RESCALE",
@@ -1515,6 +1556,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Tidebringer",
           "rawNote": "Cooldown rescaled from 16/13/10/7/4s to 13/10/7/4s",
+          "originalSource": "Cooldown rescaled from 16/13/10/7/4s to 13/10/7/4s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "RESCALE",
@@ -1544,7 +1586,8 @@
           "category": "hero",
           "entityName": "Kunkka",
           "subEntityName": "Ghostship",
-          "rawNote": "Allied heroes touched by the Ghostship receive a stronger Admiral's Rum. Rum bonus speed: 15%. Damage delayed: 35% ",
+          "rawNote": "Allied heroes touched by the Ghostship receive a stronger Admiral's Rum. Rum bonus speed: 15%. Damage delayed: 35%",
+          "originalSource": "Allied heroes touched by the Ghostship receive a stronger Admiral's Rum. Rum bonus speed: 15%. Damage delayed: 35% ",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -1552,19 +1595,20 @@
             "subEntityId": 5035
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ROSHAN_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -1572,6 +1616,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Ghostship",
           "rawNote": "Now upgraded with Aghanim's Scepter. Creates a fleet of 2 ships at the target point on a 2.5 second interval. Each ship also fires 3 waves of 4 cannonballs from the port and starboard side that deal 40% of Ghostship's damage as they pass through enemies. Each unit can only be hit by 1 cannonball per volley. Cannonball projectile radius: 100. Cannonball projectile speed: 1400",
+          "originalSource": "Now upgraded with Aghanim's Scepter. Creates a fleet of 2 ships at the target point on a 2.5 second interval. Each ship also fires 3 waves of 4 cannonballs from the port and starboard side that deal 40% of Ghostship's damage as they pass through enemies. Each unit can only be hit by 1 cannonball per volley. Cannonball projectile radius: 100. Cannonball projectile speed: 1400",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -1599,6 +1644,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Unknown Ability (319)",
           "rawNote": "Ability removed",
+          "originalSource": "Ability removed",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1626,6 +1672,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent Ghostship Fleet replaced with +100 Spell AoE",
+          "originalSource": "Level 25 Talent Ghostship Fleet replaced with +100 Spell AoE",
           "indentLevel": 1,
           "metric": "Level 25 Talent Ghostship Fleet",
           "changeType": "REWORK",
@@ -1654,19 +1701,19 @@
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6,
+        "teamfight": 1,
         "laning": 1,
         "siege": 0,
         "utility": 1
       },
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8.5,
-        "laning": -8,
+        "teamfight": -3,
+        "laning": -1,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1679,17 +1726,17 @@
     },
     {
       "version": "7.37b",
-      "date": "2026-06-14T21:53:54.807Z",
+      "date": "2026-06-17T18:07:14.904Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8.5,
-        "laning": -8,
+        "teamfight": -3,
+        "laning": -1,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1702,17 +1749,17 @@
     },
     {
       "version": "7.37c",
-      "date": "2026-06-14T21:53:54.809Z",
+      "date": "2026-06-17T18:07:14.906Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8.5,
-        "laning": -8,
+        "teamfight": -3,
+        "laning": -1,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1725,13 +1772,14 @@
     },
     {
       "version": "7.37d",
-      "date": "2026-06-14T21:53:54.812Z",
+      "date": "2026-06-17T18:07:14.908Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Kunkka",
           "subEntityName": "Admiral's Rum",
-          "rawNote": "Rum Duration decreased from 10s to 6s ",
+          "rawNote": "Rum Duration decreased from 10s to 6s",
+          "originalSource": "Rum Duration decreased from 10s to 6s ",
           "indentLevel": 1,
           "metric": "Rum Duration",
           "changeType": "DECREASED",
@@ -1762,6 +1810,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Ghostship",
           "rawNote": "Damage decreased from 400/500/600 to 350/475/600",
+          "originalSource": "Damage decreased from 400/500/600 to 350/475/600",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "DECREASED",
@@ -1792,6 +1841,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Ghostship",
           "rawNote": "Cooldown increased from 80/70/60s to 90/80/70s",
+          "originalSource": "Cooldown increased from 80/70/60s to 90/80/70s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "INCREASED",
@@ -1819,22 +1869,22 @@
         }
       ],
       "vectorDelta": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -9.5,
-        "laning": -8,
+        "teamfight": -2,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -16,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -18,
-        "laning": -16,
+        "teamfight": -5,
+        "laning": -2,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1847,17 +1897,17 @@
     },
     {
       "version": "7.37e",
-      "date": "2026-06-14T21:53:54.815Z",
+      "date": "2026-06-17T18:07:14.912Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -16,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -18,
-        "laning": -16,
+        "teamfight": -5,
+        "laning": -2,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1870,13 +1920,14 @@
     },
     {
       "version": "7.38",
-      "date": "2026-06-14T21:53:54.824Z",
+      "date": "2026-06-17T18:07:14.919Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Kunkka",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent +25% X Marks the Spot Move Speed replaced with -15s Admiral's Rum Cooldown",
+          "originalSource": "Level 10 Talent +25% X Marks the Spot Move Speed replaced with -15s Admiral's Rum Cooldown",
           "indentLevel": 1,
           "metric": "Level 10 Talent +25% X Marks the Spot Move Speed",
           "changeType": "REWORK",
@@ -1905,6 +1956,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Tidebringer Damage increased from +60 to +70",
+          "originalSource": "Level 15 Talent Tidebringer Damage increased from +60 to +70",
           "indentLevel": 1,
           "metric": "Level 15 Talent Tidebringer Damage",
           "changeType": "INCREASED",
@@ -1934,6 +1986,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Torrent Damage/Knock Up Duration increased from +20% to +25%",
+          "originalSource": "Level 15 Talent Torrent Damage/Knock Up Duration increased from +20% to +25%",
           "indentLevel": 1,
           "metric": "Level 15 Talent Torrent Damage/Knock Up Duration",
           "changeType": "INCREASED",
@@ -1963,6 +2016,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent Tidebringer Cleave Damage increased from +100% to +120%",
+          "originalSource": "Level 25 Talent Tidebringer Cleave Damage increased from +100% to +120%",
           "indentLevel": 1,
           "metric": "Level 25 Talent Tidebringer Cleave Damage",
           "changeType": "INCREASED",
@@ -1990,13 +2044,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -16,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -18,
-        "laning": -16,
+        "teamfight": -5,
+        "laning": -2,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2005,21 +2059,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.38b",
-      "date": "2026-06-14T21:53:54.826Z",
+      "date": "2026-06-17T18:07:14.921Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -16,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -18,
-        "laning": -16,
+        "teamfight": -5,
+        "laning": -2,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2032,13 +2086,14 @@
     },
     {
       "version": "7.38c",
-      "date": "2026-06-14T21:53:54.830Z",
+      "date": "2026-06-17T18:07:14.924Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Kunkka",
           "subEntityName": "Tidebringer",
           "rawNote": "Damage Bonus increased from 30/60/90/120 to 35/70/105/140",
+          "originalSource": "Damage Bonus increased from 30/60/90/120 to 35/70/105/140",
           "indentLevel": 1,
           "metric": "Damage Bonus",
           "changeType": "INCREASED",
@@ -2067,13 +2122,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -16,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -18,
-        "laning": -16,
+        "teamfight": -5,
+        "laning": -2,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2082,21 +2137,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.39",
-      "date": "2026-06-14T21:53:54.836Z",
+      "date": "2026-06-17T18:07:14.928Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -16,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -18,
-        "laning": -16,
+        "teamfight": -5,
+        "laning": -2,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2109,17 +2164,17 @@
     },
     {
       "version": "7.39b",
-      "date": "2026-06-14T21:53:54.839Z",
+      "date": "2026-06-17T18:07:14.930Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -16,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -18,
-        "laning": -16,
+        "teamfight": -5,
+        "laning": -2,
         "siege": 0,
-        "utility": -10
+        "utility": -4
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2132,13 +2187,14 @@
     },
     {
       "version": "7.39c",
-      "date": "2026-06-14T21:53:54.843Z",
+      "date": "2026-06-17T18:07:14.932Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Kunkka",
           "subEntityName": "Tidal Wave",
           "rawNote": "Wave Distance decreased from 2300 to 1800",
+          "originalSource": "Wave Distance decreased from 2300 to 1800",
           "indentLevel": 1,
           "metric": "Wave Distance",
           "changeType": "DECREASED",
@@ -2168,7 +2224,8 @@
           "category": "hero",
           "entityName": "Kunkka",
           "subEntityName": "Tidal Wave",
-          "rawNote": "Cast Range decreased from 1400 to 1050 ",
+          "rawNote": "Cast Range decreased from 1400 to 1050",
+          "originalSource": "Cast Range decreased from 1400 to 1050 ",
           "indentLevel": 1,
           "metric": "Cast Range",
           "changeType": "DECREASED",
@@ -2202,16 +2259,16 @@
         "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": -15
+        "utility": -3
       },
       "totalVector": {
-        "farming": -16,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -18,
-        "laning": -16,
+        "teamfight": -5,
+        "laning": -2,
         "siege": 0,
-        "utility": -25
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2224,13 +2281,14 @@
     },
     {
       "version": "7.39d",
-      "date": "2026-06-14T21:53:54.848Z",
+      "date": "2026-06-17T18:07:14.937Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Kunkka",
           "subEntityName": "Tidebringer",
           "rawNote": "Cleave Range decreased from 650/800/950/1100 to 650/775/900/1025",
+          "originalSource": "Cleave Range decreased from 650/800/950/1100 to 650/775/900/1025",
           "indentLevel": 1,
           "metric": "Cleave Range",
           "changeType": "DECREASED",
@@ -2259,13 +2317,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -16,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -18,
-        "laning": -16,
+        "teamfight": -5,
+        "laning": -2,
         "siege": 0,
-        "utility": -25
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2278,17 +2336,17 @@
     },
     {
       "version": "7.39e",
-      "date": "2026-06-14T21:53:54.851Z",
+      "date": "2026-06-17T18:07:14.939Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -16,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -18,
-        "laning": -16,
+        "teamfight": -5,
+        "laning": -2,
         "siege": 0,
-        "utility": -25
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2301,13 +2359,14 @@
     },
     {
       "version": "7.40",
-      "date": "2026-06-14T21:53:54.859Z",
+      "date": "2026-06-17T18:07:14.945Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Kunkka",
           "subEntityName": "Torrent",
           "rawNote": "Damage increased from 80/160/240/320 to 110/180/250/320",
+          "originalSource": "Damage increased from 80/160/240/320 to 110/180/250/320",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "INCREASED",
@@ -2338,6 +2397,7 @@
           "entityName": "Kunkka",
           "subEntityName": "X Marks the Spot",
           "rawNote": "Cooldown decreased from 30/24/18/12s to 24/20/16/12s",
+          "originalSource": "Cooldown decreased from 30/24/18/12s to 24/20/16/12s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "DECREASED",
@@ -2365,22 +2425,22 @@
         }
       ],
       "vectorDelta": {
-        "farming": 8,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 9.5,
-        "laning": 8,
+        "teamfight": 2,
+        "laning": 1,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8.5,
-        "laning": -8,
+        "teamfight": -3,
+        "laning": -1,
         "siege": 0,
-        "utility": -25
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2389,17 +2449,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.40b",
-      "date": "2026-06-14T21:53:54.865Z",
+      "date": "2026-06-17T18:07:14.948Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Kunkka",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent Tidebringer Cleave Damage increased from +120% to +130%",
+          "originalSource": "Level 25 Talent Tidebringer Cleave Damage increased from +120% to +130%",
           "indentLevel": 1,
           "metric": "Level 25 Talent Tidebringer Cleave Damage",
           "changeType": "INCREASED",
@@ -2427,13 +2488,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8.5,
-        "laning": -8,
+        "teamfight": -3,
+        "laning": -1,
         "siege": 0,
-        "utility": -25
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2442,21 +2503,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.40c",
-      "date": "2026-06-14T21:53:54.872Z",
+      "date": "2026-06-17T18:07:14.950Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8.5,
-        "laning": -8,
+        "teamfight": -3,
+        "laning": -1,
         "siege": 0,
-        "utility": -25
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2469,13 +2530,14 @@
     },
     {
       "version": "7.41",
-      "date": "2026-06-14T21:53:54.887Z",
+      "date": "2026-06-17T18:07:14.959Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Kunkka",
           "subEntityName": "Admiral's Rum",
           "rawNote": "Can no longer be applied by multiple sources, and will no longer trigger passively if Ghostship already applied the buff",
+          "originalSource": "Can no longer be applied by multiple sources, and will no longer trigger passively if Ghostship already applied the buff",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -2503,6 +2565,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Admiral's Rum",
           "rawNote": "Cooldown changed from 60s to 60.5s - 0.5s per level",
+          "originalSource": "Cooldown changed from 60s to 60.5s - 0.5s per level",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2510,19 +2573,20 @@
             "subEntityId": 1452
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "COOLDOWN_RESET_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2530,6 +2594,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Admiral's Rum",
           "rawNote": "Bonus Movement Speed rescaled from 10% to 7.75% + 0.25% per level",
+          "originalSource": "Bonus Movement Speed rescaled from 10% to 7.75% + 0.25% per level",
           "indentLevel": 1,
           "metric": "Bonus Movement Speed",
           "changeType": "RESCALE",
@@ -2560,6 +2625,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Admiral's Rum",
           "rawNote": "Duration decreased from 6s to 5s",
+          "originalSource": "Duration decreased from 6s to 5s",
           "indentLevel": 1,
           "metric": "Duration",
           "changeType": "DECREASED",
@@ -2590,6 +2656,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Admiral's Rum",
           "rawNote": "Delayed Damage decreased from 20% to 18%",
+          "originalSource": "Delayed Damage decreased from 20% to 18%",
           "indentLevel": 1,
           "metric": "Delayed Damage",
           "changeType": "DECREASED",
@@ -2620,6 +2687,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Ghostship",
           "rawNote": "Now applies Admiral's Rum at a 2x factor",
+          "originalSource": "Now applies Admiral's Rum at a 2x factor",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2647,6 +2715,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Ghostship",
           "rawNote": "Multiplication applies to duration, delayed damage and movement speed bonus",
+          "originalSource": "Multiplication applies to duration, delayed damage and movement speed bonus",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2654,19 +2723,20 @@
             "subEntityId": 5035
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ILLUSION_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2674,6 +2744,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent -15s Admiral's Rum Cooldown replaced with +1s Admiral's Rum Buff Duration",
+          "originalSource": "Level 10 Talent -15s Admiral's Rum Cooldown replaced with +1s Admiral's Rum Buff Duration",
           "indentLevel": 1,
           "metric": "Level 10 Talent -15s Admiral's Rum Cooldown",
           "changeType": "REWORK",
@@ -2702,6 +2773,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Tidebringer Damage increased from +70 to +75",
+          "originalSource": "Level 15 Talent Tidebringer Damage increased from +70 to +75",
           "indentLevel": 1,
           "metric": "Level 15 Talent Tidebringer Damage",
           "changeType": "INCREASED",
@@ -2731,6 +2803,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +15% Admiral's Rum Damage Delayed replaced with +80% Tidebringer Cleave",
+          "originalSource": "Level 20 Talent +15% Admiral's Rum Damage Delayed replaced with +80% Tidebringer Cleave",
           "indentLevel": 1,
           "metric": "Level 20 Talent +15% Admiral's Rum Damage Delayed",
           "changeType": "REWORK",
@@ -2759,6 +2832,7 @@
           "entityName": "Kunkka",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent +130% Tidebringer Cleave replaced with Tidebringer Ignores 25% Armor",
+          "originalSource": "Level 25 Talent +130% Tidebringer Cleave replaced with Tidebringer Ignores 25% Armor",
           "indentLevel": 1,
           "metric": "Level 25 Talent +130% Tidebringer Cleave",
           "changeType": "REWORK",
@@ -2787,19 +2861,19 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
-        "utility": -10
+        "utility": -2
       },
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -13.5,
-        "laning": -8,
+        "teamfight": -4,
+        "laning": -1,
         "siege": 0,
-        "utility": -35
+        "utility": -9
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2812,17 +2886,17 @@
     },
     {
       "version": "7.41a",
-      "date": "2026-06-14T21:53:54.891Z",
+      "date": "2026-06-17T18:07:14.961Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -13.5,
-        "laning": -8,
+        "teamfight": -4,
+        "laning": -1,
         "siege": 0,
-        "utility": -35
+        "utility": -9
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2835,17 +2909,17 @@
     },
     {
       "version": "7.41b",
-      "date": "2026-06-14T21:53:54.896Z",
+      "date": "2026-06-17T18:07:14.963Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -13.5,
-        "laning": -8,
+        "teamfight": -4,
+        "laning": -1,
         "siege": 0,
-        "utility": -35
+        "utility": -9
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2858,13 +2932,14 @@
     },
     {
       "version": "7.41c",
-      "date": "2026-06-14T21:53:54.901Z",
+      "date": "2026-06-17T18:07:14.966Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Kunkka",
           "subEntityName": "Admiral's Rum",
           "rawNote": "Cooldown decreased from 60.5s - 0.5s per level to 50.5s - 0.5s per level",
+          "originalSource": "Cooldown decreased from 60.5s - 0.5s per level to 50.5s - 0.5s per level",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "DECREASED",
@@ -2895,19 +2970,19 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1.5,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -12,
-        "laning": -8,
+        "teamfight": -3,
+        "laning": -1,
         "siege": 0,
-        "utility": -35
+        "utility": -9
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2920,46 +2995,58 @@
     },
     {
       "version": "7.41d",
-      "date": "2026-06-14T21:53:54.907Z",
+      "date": "2026-06-17T18:07:14.968Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -12,
-        "laning": -8,
+        "teamfight": -3,
+        "laning": -1,
         "siege": 0,
-        "utility": -35
+        "utility": -9
       },
       "winrates": {
         "HERALD": {
-          "winrate": 0.4916,
-          "matchCount": 14970
+          "winrate": 0.4909,
+          "matchCount": 13076
         },
         "GUARDIAN": {
-          "winrate": 0.4772,
-          "matchCount": 27144
+          "winrate": 0.4814,
+          "matchCount": 24360
         },
         "CRUSADER": {
-          "winrate": 0.4907,
-          "matchCount": 30544
+          "winrate": 0.4887,
+          "matchCount": 27208
         },
         "ARCHON": {
-          "winrate": 0.4927,
-          "matchCount": 28207
+          "winrate": 0.494,
+          "matchCount": 24939
         },
         "LEGEND": {
-          "winrate": 0.4947,
-          "matchCount": 22183
+          "winrate": 0.5021,
+          "matchCount": 20005
         },
         "ANCIENT": {
-          "winrate": 0.4946,
-          "matchCount": 14780
+          "winrate": 0.4982,
+          "matchCount": 13195
         },
         "DIVINE": {
-          "winrate": 0.4933,
-          "matchCount": 14937
+          "winrate": 0.4955,
+          "matchCount": 13633
+        },
+        "IMMORTAL": {
+          "winrate": 0,
+          "matchCount": 0
+        },
+        "PRO": {
+          "winrate": 0.5,
+          "matchCount": 2
+        },
+        "GLOBAL_BLEND": {
+          "winrate": 0.4955,
+          "matchCount": 13635
         }
       },
       "temporalAssessment": null

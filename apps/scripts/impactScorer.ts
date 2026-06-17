@@ -7,6 +7,16 @@ import { GoogleGenAI, Type } from "@google/genai";
 require('dotenv').config();
 const INPUT_DIR = path.resolve("research-output", "classified-patches");
 const OUTPUT_DIR = path.resolve("research-output", "impact-scored-patches");
+const ONTOLOGY_DIR = path.resolve("research-output", "ontology");
+let ontologyVersions: { semanticOntology: number, balanceOntology: number } = { semanticOntology: 0, balanceOntology: 0 };
+
+async function loadVersions() {
+    try {
+        ontologyVersions = JSON.parse(await readFile(path.join(ONTOLOGY_DIR, "version.json"), "utf8"));
+    } catch (e) {
+        console.warn("[Impact Scorer] version.json not found, using default version 0.");
+    }
+}
 
 // Check for API key and determine if we are running in mock mode
 const hasApiKey = !!process.env.GEMINI_API_KEY;
@@ -91,7 +101,7 @@ async function scoreEntityBatch(entityName: string, changes: any[], retries = 4,
     }
 }
 
-async function scorePatch(filePath: string) {
+async function scorePatch(filePath: string, isFullRun: boolean) {
     const data = JSON.parse(await readFile(filePath, "utf8"));
     const version = data.version;
 
@@ -109,7 +119,6 @@ async function scorePatch(filePath: string) {
     const scoredHeroes: Record<string, any> = {};
 
     console.log(`[Impact Scorer] Found ${heroGroups.size} heroes to score in patch ${version}...`);
-    const isFullRun = process.argv.includes("--full");
     if (!isFullRun) {
         console.log(`[Impact Scorer] Running in PROTOTYPE mode. Only scoring the first 3 heroes to avoid API limits. Use --full to process all.`);
     }
@@ -148,27 +157,46 @@ async function scorePatch(filePath: string) {
     return {
         schemaVersion: "2.0-scored",
         version: version,
+        scorerVersion: ontologyVersions.balanceOntology, // Preservation (ISSUE-1)
         scoredHeroes
     };
 }
 
 async function main() {
+    await loadVersions();
     await mkdir(OUTPUT_DIR, { recursive: true });
     
-    const targetVersion = process.argv[2] || "7.41d"; // Default to a small recent patch for testing
-    const fileToProcess = path.join(INPUT_DIR, `${targetVersion}.json`);
-    
-    console.log(`[Impact Scorer] Initiating contextual impact scoring for ${targetVersion}...`);
-    
-    const scoredData = await scorePatch(fileToProcess);
-    
-    await writeFile(
-        path.join(OUTPUT_DIR, `${targetVersion}-scored.json`),
-        JSON.stringify(scoredData, null, 2),
-        "utf8"
-    );
+    const args = process.argv.slice(2);
+    const targetVersion = args.find(a => !a.startsWith("--")) || "7.41d";
+    const isFullRun = process.argv.includes("--full");
 
-    console.log(`\n[Summary] Successfully scored and saved impact data for ${targetVersion}.`);
+    if (targetVersion === "all") {
+        const files = (await readdir(INPUT_DIR)).filter(f => f.endsWith(".json"));
+        console.log(`[Impact Scorer] Processing all ${files.length} patches...`);
+        for (const file of files) {
+            const version = file.replace(".json", "");
+            await processVersion(version, isFullRun);
+        }
+    } else {
+        await processVersion(targetVersion, isFullRun);
+    }
+}
+
+async function processVersion(version: string, isFullRun: boolean) {
+    const filePath = path.join(INPUT_DIR, `${version}.json`);
+    console.log(`[Impact Scorer] Initiating contextual impact scoring for ${version}...`);
+    
+    try {
+        const scoredData = await scorePatch(filePath, isFullRun);
+        await writeFile(
+            path.join(OUTPUT_DIR, `${version}-scored.json`),
+            JSON.stringify(scoredData, null, 2),
+            "utf8"
+        );
+        console.log(`[Success] Scored and saved impact data for ${version}.`);
+    } catch (e: any) {
+        console.error(`[Error] Failed to process ${version}:`, e.message);
+    }
 }
 
 main().catch(error => {

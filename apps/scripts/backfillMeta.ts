@@ -119,12 +119,29 @@ const responseSchema = {
     required: ["metaShifts", "synergisticWinners", "synergisticLosers", "roleSpecificWinners", "roleSpecificLosers"]
 };
 
-async function generateMetaAnalysis(patchData: any, herodata: any, previousAnalysis: any = null, retries = 3, backoff = 10000): Promise<any> {
+async function generateMetaAnalysis(patchData: any, herodata: any, previousAnalysis: any = null): Promise<any> {
+    const heroChanges = patchData.changes.filter((c: any) => c.category === "hero");
+    const itemChanges = patchData.changes.filter((c: any) => c.category === "item" || c.category === "neutral");
+    const generalChanges = patchData.changes.filter((c: any) => c.category === "general");
+
+    console.log(`[LLM] Splitting analysis: ${heroChanges.length} Hero, ${itemChanges.length} Item, ${generalChanges.length} General changes.`);
+
+    // 1. Hero Analysis (Winners/Losers)
+    const heroAnalysis = await analyzeCategory("Heroes", heroChanges, herodata, previousAnalysis);
+    
+    // 2. Item & System Analysis (Thematic Shifts)
+    const systemAnalysis = await analyzeCategory("Items & Systems", [...itemChanges, ...generalChanges], herodata, previousAnalysis);
+
+    // 3. Final Synthesis
+    return synthesizeAnalysis(patchData.version, heroAnalysis, systemAnalysis, previousAnalysis);
+}
+
+async function analyzeCategory(name: string, changes: any[], herodata: any, previousAnalysis: any, retries = 3): Promise<any> {
+    if (changes.length === 0) return null;
+
     const changedHeroes = new Set<string>();
-    patchData.changes.forEach((c: any) => {
-        if (c.category === "hero" && c.entityName) {
-            changedHeroes.add(c.entityName);
-        }
+    changes.forEach((c: any) => {
+        if (c.category === "hero" && c.entityName) changedHeroes.add(c.entityName);
     });
 
     let factualGuide = "### FACTUAL_REFERENCE_GUIDE\n";
@@ -132,69 +149,66 @@ async function generateMetaAnalysis(patchData: any, herodata: any, previousAnaly
         const heroId = Object.keys(herodata).find(id => herodata[id].name_loc === heroName);
         if (heroId) {
             const h = herodata[heroId];
-            factualGuide += `#### ${heroName}\n`;
-            factualGuide += `- Primary Attribute: ${getAttr(h.primary_attr)}\n`;
-            factualGuide += `- Base Stats: STR ${h.str_base}, AGI ${h.agi_base}, INT ${h.int_base}\n`;
-            const abilities = (h.abilities || []).map((a: any) => a.name_loc).filter(Boolean);
-            factualGuide += `- Abilities: ${abilities.join(", ")}\n`;
-            
-            // Hallucination Prevention
-            if (heroName === "Morphling") {
-                factualGuide += `- REJECT: Any mention of "Intelligence Form" or "Intelligence Shift". Morphling only shifts between Strength and Agility.\n`;
-            }
+            factualGuide += `#### ${heroName}\n- Primary Attribute: ${getAttr(h.primary_attr)}\n- Abilities: ${(h.abilities || []).map((a: any) => a.name_loc).filter(Boolean).join(", ")}\n`;
         }
     });
 
-    const simplifiedData = {
-        version: patchData.version,
-        changes: patchData.changes.map((c: any) => ({
-            category: c.category,
-            entityName: c.entityName,
-            subEntityName: c.subEntityName,
-            note: c.rawNote,
-            polarity: c.classification?.classificationType || "Unknown"
-        }))
-    };
+    const payload = JSON.stringify(changes.map(c => ({
+        entity: c.entityName, subEntity: c.subEntityName, note: c.rawNote, polarity: c.classification?.classificationType || "Unknown"
+    })));
 
-    const payloadString = JSON.stringify(simplifiedData);
-    const contextPrompt = previousAnalysis 
-        ? `\n\nCONTEXT FROM PREVIOUS PATCH (${previousAnalysis.version}):\n${JSON.stringify(previousAnalysis.metaShifts)}\nUse this to understand if the current changes are amplifying or reversing recent trends.`
-        : "";
-    
+    const contextPrompt = previousAnalysis ? `\n\nPREVIOUS CONTEXT: ${JSON.stringify(previousAnalysis.metaShifts)}` : "";
+
     try {
         const response = await ai!.models.generateContent({
             model: 'gemini-2.5-flash',
-            contents: `${factualGuide}\n\nAnalyze this Dota 2 patch and output the meta analysis:\n\nPATCH DATA:\n${payloadString}${contextPrompt}`,
+            contents: `${factualGuide}\n\nAnalyze these Dota 2 ${name} changes and identify key winners, losers, and thematic shifts:\n\nDATA:\n${payload}${contextPrompt}`,
             config: {
-                systemInstruction: SYSTEM_PROMPT,
+                systemInstruction: SYSTEM_PROMPT + "\nOutput a partial analysis for this category.",
+                responseMimeType: "application/json",
+                responseSchema: responseSchema, // Use same schema for consistency
+                temperature: 0.1,
+            }
+        });
+        return response.text ? JSON.parse(response.text) : null;
+    } catch (error: any) {
+        if (retries > 0 && error.status === 429) {
+             console.warn(`[LLM] Rate limit during ${name} analysis. Retrying...`);
+             await new Promise(r => setTimeout(r, 15000));
+             return analyzeCategory(name, changes, herodata, previousAnalysis, retries - 1);
+        }
+        return null;
+    }
+}
+
+async function synthesizeAnalysis(version: string, heroPart: any, systemPart: any, previousAnalysis: any): Promise<any> {
+    console.log(`[LLM] Synthesizing final analysis for ${version}...`);
+    
+    const combinedData = {
+        heroTrends: heroPart?.metaShifts || [],
+        systemTrends: systemPart?.metaShifts || [],
+        heroWinners: heroPart?.roleSpecificWinners || {},
+        heroLosers: heroPart?.roleSpecificLosers || {},
+        allSynergies: [...(heroPart?.synergisticWinners || []), ...(systemPart?.synergisticWinners || [])]
+    };
+
+    const prompt = `Synthesize these partial analyses into a final comprehensive meta analysis for Patch ${version}. Ensure the themes are high-level and strategic.\n\nPARTIAL DATA:\n${JSON.stringify(combinedData)}`;
+
+    try {
+        const response = await ai!.models.generateContent({
+            model: 'gemini-2.5-flash',
+            contents: prompt,
+            config: {
+                systemInstruction: SYSTEM_PROMPT + "\nYou MUST identification exactly 3-5 heroes per role for final Winners/Losers.",
                 responseMimeType: "application/json",
                 responseSchema: responseSchema,
                 temperature: 0.1,
             }
         });
-
-        if (response.text) {
-             const analysis = JSON.parse(response.text);
-             if (!analysis.synergisticLosers) analysis.synergisticLosers = [];
-             if (!analysis.synergisticWinners) analysis.synergisticWinners = [];
-             if (!analysis.metaShifts) analysis.metaShifts = [];
-             return analysis;
-        }
-        return null;
-    } catch (error: any) {
-        const errorMsg = error.message || "";
-        if (error.status === 429 && errorMsg.includes("quota")) {
-            console.error(`[LLM] FATAL: Daily Quota Exhausted. Stopping backfill.`);
-            process.exit(1); // Stop everything
-        }
-
-        if (retries > 0 && error.status && (error.status === 429 || error.status === 503 || error.status >= 500)) {
-            console.warn(`[LLM] API Error (Status: ${error.status}) for ${patchData.version}. Retrying in ${backoff / 1000}s...`);
-            await new Promise(resolve => setTimeout(resolve, backoff));
-            return generateMetaAnalysis(patchData, herodata, previousAnalysis, retries - 1, backoff * 2);
-        }
-        console.error(`[LLM] Meta Analysis failed for ${patchData.version}:`, error.message || error);
-        return null;
+        return response.text ? JSON.parse(response.text) : null;
+    } catch (e) {
+        console.error("[LLM] Synthesis failed:", e);
+        return heroPart || systemPart; // Fallback to partial if synthesis fails
     }
 }
 

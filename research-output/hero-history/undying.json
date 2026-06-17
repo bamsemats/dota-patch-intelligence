@@ -3,13 +3,14 @@
   "history": [
     {
       "version": "7.33",
-      "date": "2026-06-14T21:53:54.726Z",
+      "date": "2026-06-17T18:07:14.843Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Undying",
           "subEntityName": "Tombstone",
           "rawNote": "Now upgradable by Aghanim's Shard",
+          "originalSource": "Now upgradable by Aghanim's Shard",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -37,6 +38,7 @@
           "entityName": "Undying",
           "subEntityName": "Tombstone",
           "rawNote": "Allows up to 1 allied hero to bunker inside of the Tombstone. Ally can bunker by pressing RMB on the Tombstone while in 350 radius. Bunkered units cannot leave the Tombstone for 3 seconds after entering. Unit that left the Tombstone cannot re-enter it for 3 seconds. If Undying decides to enter the Tombstone while another ally is inside, the ally is forcefully evicted. Undying also receives the Grab Ally ability, which bunkers a hero to the nearest Tombstone within 400 range (this ability is also present on the Tombstone itself)",
+          "originalSource": "Allows up to 1 allied hero to bunker inside of the Tombstone. Ally can bunker by pressing RMB on the Tombstone while in 350 radius. Bunkered units cannot leave the Tombstone for 3 seconds after entering. Unit that left the Tombstone cannot re-enter it for 3 seconds. If Undying decides to enter the Tombstone while another ally is inside, the ally is forcefully evicted. Undying also receives the Grab Ally ability, which bunkers a hero to the nearest Tombstone within 400 range (this ability is also present on the Tombstone itself)",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -44,9 +46,9 @@
             "subEntityId": 5444
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -56,7 +58,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -64,6 +67,7 @@
           "entityName": "Undying",
           "subEntityName": "Flesh Golem",
           "rawNote": "Aghanim's Shard Upgrade removed",
+          "originalSource": "Aghanim's Shard Upgrade removed",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -91,6 +95,7 @@
           "entityName": "Undying",
           "subEntityName": "Flesh Golem",
           "rawNote": "Cooldown increased from 125s to 140s",
+          "originalSource": "Cooldown increased from 125s to 140s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "INCREASED",
@@ -121,6 +126,7 @@
           "entityName": "Undying",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent Reincarnation replaced with +60% Flesh Golem Strength Bonus",
+          "originalSource": "Level 25 Talent Reincarnation replaced with +60% Flesh Golem Strength Bonus",
           "indentLevel": 1,
           "metric": "Level 25 Talent Reincarnation",
           "changeType": "REWORK",
@@ -145,12 +151,20 @@
           }
         }
       ],
-      "vectorDelta": null,
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -1,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -160,14 +174,14 @@
     },
     {
       "version": "7.33b",
-      "date": "2026-06-14T21:53:54.731Z",
+      "date": "2026-06-17T18:07:14.846Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -206,14 +220,14 @@
     },
     {
       "version": "7.33c",
-      "date": "2026-06-14T21:53:54.736Z",
+      "date": "2026-06-17T18:07:14.849Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -252,14 +266,14 @@
     },
     {
       "version": "7.33d",
-      "date": "2026-06-14T21:53:54.740Z",
+      "date": "2026-06-17T18:07:14.851Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -298,12 +312,13 @@
     },
     {
       "version": "7.33e",
-      "date": "2026-06-14T21:53:54.743Z",
+      "date": "2026-06-17T18:07:14.854Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Undying",
           "rawNote": "Base Health Regen decreased from 0.25 to -0.25 (+1.9 HP Regen at Lvl 1)",
+          "originalSource": "Base Health Regen decreased from 0.25 to -0.25 (+1.9 HP Regen at Lvl 1)",
           "indentLevel": 1,
           "metric": "Base Health Regen",
           "changeType": "DECREASED",
@@ -333,6 +348,7 @@
           "entityName": "Undying",
           "subEntityName": "Tombstone",
           "rawNote": "Aghanim's Shard now allows Tombstone to be unit targeted on cast. If cast on an allied hero, they will be automatically bunkered",
+          "originalSource": "Aghanim's Shard now allows Tombstone to be unit targeted on cast. If cast on an allied hero, they will be automatically bunkered",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -340,19 +356,20 @@
             "subEntityId": 5444
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "TARGETING_RULE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -360,6 +377,7 @@
           "entityName": "Undying",
           "subEntityName": "Tombstone",
           "rawNote": "Aghanim's Shard no longer grants the Grab Ally ability to neither Undying nor the Tombstone. Allies still can right-click the Tombstone to get inside",
+          "originalSource": "Aghanim's Shard no longer grants the Grab Ally ability to neither Undying nor the Tombstone. Allies still can right-click the Tombstone to get inside",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -388,7 +406,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -427,12 +445,13 @@
     },
     {
       "version": "7.34",
-      "date": "2026-06-14T21:53:54.750Z",
+      "date": "2026-06-17T18:07:14.859Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Undying",
           "rawNote": "Base Damage decreased by 4",
+          "originalSource": "Base Damage decreased by 4",
           "indentLevel": 1,
           "metric": "Base Damage",
           "changeType": "DECREASED",
@@ -461,6 +480,7 @@
           "entityName": "Undying",
           "subEntityName": "Decay",
           "rawNote": "Cooldown increased from 10/8/6/4s to 13/10/7/4s",
+          "originalSource": "Cooldown increased from 10/8/6/4s to 13/10/7/4s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "INCREASED",
@@ -491,6 +511,7 @@
           "entityName": "Undying",
           "subEntityName": "Soul Rip",
           "rawNote": "Mana Cost decreased from 120 to 110",
+          "originalSource": "Mana Cost decreased from 120 to 110",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "DECREASED",
@@ -521,7 +542,7 @@
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -1,
         "laning": 1,
         "siege": 0,
         "utility": 1
@@ -530,7 +551,7 @@
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -2,
         "laning": 1,
         "siege": 0,
         "utility": 1
@@ -540,31 +561,33 @@
     },
     {
       "version": "7.34b",
-      "date": "2026-06-14T21:53:54.755Z",
+      "date": "2026-06-17T18:07:14.863Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Undying",
           "rawNote": "Heroes inside the tombstone (with Aghanim's Shard) are now stunned for 3s if it gets destroyed",
+          "originalSource": "Heroes inside the tombstone (with Aghanim's Shard) are now stunned for 3s if it gets destroyed",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
             "entityId": 85
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "CAST_WHILE_DISABLED",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 9,
+              "Guardian": 9,
+              "Crusader": 9,
+              "Archon": 9,
+              "Legend": 9,
+              "Ancient": 9,
+              "Divine": 9
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -572,6 +595,7 @@
           "entityName": "Undying",
           "subEntityName": "Flesh Golem",
           "rawNote": "Bonus Movespeed decreased from 30/40/50 to 20/30/40",
+          "originalSource": "Bonus Movespeed decreased from 30/40/50 to 20/30/40",
           "indentLevel": 1,
           "metric": "Bonus Movespeed",
           "changeType": "DECREASED",
@@ -603,7 +627,7 @@
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -2,
         "laning": 1,
         "siege": 0,
         "utility": 1
@@ -642,13 +666,14 @@
     },
     {
       "version": "7.34c",
-      "date": "2026-06-14T21:53:54.759Z",
+      "date": "2026-06-17T18:07:14.868Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Undying",
           "subEntityName": "Tombstone",
           "rawNote": "Tombstone Vision Range decreased from 1500 to 1200 on all levels",
+          "originalSource": "Tombstone Vision Range decreased from 1500 to 1200 on all levels",
           "indentLevel": 1,
           "metric": "Tombstone Vision Range",
           "changeType": "DECREASED",
@@ -680,7 +705,7 @@
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -2,
         "laning": 1,
         "siege": 0,
         "utility": 1
@@ -719,14 +744,14 @@
     },
     {
       "version": "7.34d",
-      "date": "2026-06-14T21:53:54.764Z",
+      "date": "2026-06-17T18:07:14.871Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -2,
         "laning": 1,
         "siege": 0,
         "utility": 1
@@ -765,14 +790,14 @@
     },
     {
       "version": "7.34e",
-      "date": "2026-06-14T21:53:54.768Z",
+      "date": "2026-06-17T18:07:14.873Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -2,
         "laning": 1,
         "siege": 0,
         "utility": 1
@@ -811,13 +836,14 @@
     },
     {
       "version": "7.35",
-      "date": "2026-06-14T21:53:54.772Z",
+      "date": "2026-06-17T18:07:14.877Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Undying",
           "subEntityName": "Soul Rip",
           "rawNote": "Now takes Undying into account when counting nearby units",
+          "originalSource": "Now takes Undying into account when counting nearby units",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -845,6 +871,7 @@
           "entityName": "Undying",
           "subEntityName": "Soul Rip",
           "rawNote": "Mana Cost decreased from 110 to 100",
+          "originalSource": "Mana Cost decreased from 110 to 100",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "DECREASED",
@@ -875,6 +902,7 @@
           "entityName": "Undying",
           "subEntityName": "Tombstone",
           "rawNote": "Aghanim's Shard Stun Duration on Tombstone's destruction decreased from 3s to 2s",
+          "originalSource": "Aghanim's Shard Stun Duration on Tombstone's destruction decreased from 3s to 2s",
           "indentLevel": 1,
           "metric": "Aghanim's Shard Stun Duration on Tombstone's destruction",
           "changeType": "DECREASED",
@@ -905,6 +933,7 @@
           "entityName": "Undying",
           "subEntityName": "Flesh Golem",
           "rawNote": "Slow Duration decreased from 6s to 4s",
+          "originalSource": "Slow Duration decreased from 6s to 4s",
           "indentLevel": 1,
           "metric": "Slow Duration",
           "changeType": "DECREASED",
@@ -944,7 +973,7 @@
         "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -2,
         "laning": 2,
         "siege": 0,
         "utility": 2
@@ -960,14 +989,14 @@
     },
     {
       "version": "7.35b",
-      "date": "2026-06-14T21:53:54.775Z",
+      "date": "2026-06-17T18:07:14.879Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -2,
         "laning": 2,
         "siege": 0,
         "utility": 2
@@ -983,14 +1012,14 @@
     },
     {
       "version": "7.35c",
-      "date": "2026-06-14T21:53:54.782Z",
+      "date": "2026-06-17T18:07:14.881Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -2,
         "laning": 2,
         "siege": 0,
         "utility": 2
@@ -1002,18 +1031,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": "Net Gain"
+      "temporalAssessment": null
     },
     {
       "version": "7.35d",
-      "date": "2026-06-14T21:53:54.785Z",
+      "date": "2026-06-17T18:07:14.883Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -2,
         "laning": 2,
         "siege": 0,
         "utility": 2
@@ -1029,13 +1058,14 @@
     },
     {
       "version": "7.36",
-      "date": "2026-06-14T21:53:54.791Z",
+      "date": "2026-06-17T18:07:14.890Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Undying",
           "subEntityName": "Tombstone",
           "rawNote": "Zombie vision range decreased from 1400 to 900",
+          "originalSource": "Zombie vision range decreased from 1400 to 900",
           "indentLevel": 1,
           "metric": "Zombie vision range",
           "changeType": "DECREASED",
@@ -1066,6 +1096,7 @@
           "entityName": "Undying",
           "subEntityName": "Tombstone",
           "rawNote": "Mana Cost increased from 120/140/160/180 to 125/150/175/200",
+          "originalSource": "Mana Cost increased from 120/140/160/180 to 125/150/175/200",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "INCREASED",
@@ -1096,6 +1127,7 @@
           "entityName": "Undying",
           "subEntityName": "Tombstone",
           "rawNote": "Aghanim's Shard time restraint to leave or re-enter decreased from 3s to 2s",
+          "originalSource": "Aghanim's Shard time restraint to leave or re-enter decreased from 3s to 2s",
           "indentLevel": 1,
           "metric": "Aghanim's Shard time restraint to leave or re-enter",
           "changeType": "DECREASED",
@@ -1126,6 +1158,7 @@
           "entityName": "Undying",
           "subEntityName": "Flesh Golem",
           "rawNote": "Slow Duration decreased from 4s to 3s",
+          "originalSource": "Slow Duration decreased from 4s to 3s",
           "indentLevel": 1,
           "metric": "Slow Duration",
           "changeType": "DECREASED",
@@ -1165,7 +1198,7 @@
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -2,
         "laning": 1,
         "siege": 0,
         "utility": 1
@@ -1181,14 +1214,14 @@
     },
     {
       "version": "7.36a",
-      "date": "2026-06-14T21:53:54.794Z",
+      "date": "2026-06-17T18:07:14.892Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -2,
         "laning": 1,
         "siege": 0,
         "utility": 1
@@ -1204,13 +1237,14 @@
     },
     {
       "version": "7.36b",
-      "date": "2026-06-14T21:53:54.797Z",
+      "date": "2026-06-17T18:07:14.896Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Undying",
           "subEntityName": "Decay",
           "rawNote": "Steal Duration decreased from 40s to 35s",
+          "originalSource": "Steal Duration decreased from 40s to 35s",
           "indentLevel": 1,
           "metric": "Steal Duration",
           "changeType": "DECREASED",
@@ -1242,7 +1276,7 @@
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -2,
         "laning": 1,
         "siege": 0,
         "utility": 1
@@ -1258,14 +1292,14 @@
     },
     {
       "version": "7.36c",
-      "date": "2026-06-14T21:53:54.800Z",
+      "date": "2026-06-17T18:07:14.898Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -2,
         "laning": 1,
         "siege": 0,
         "utility": 1
@@ -1277,17 +1311,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.37",
-      "date": "2026-06-14T21:53:54.805Z",
+      "date": "2026-06-17T18:07:14.902Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Undying",
           "subEntityName": "Ceaseless Dirge",
           "rawNote": "Can no longer be refreshed",
+          "originalSource": "Can no longer be refreshed",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1315,6 +1350,7 @@
           "entityName": "Undying",
           "subEntityName": "Tombstone",
           "rawNote": "Cooldown rescaled from 90/85/80/75s to 80s",
+          "originalSource": "Cooldown rescaled from 90/85/80/75s to 80s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "RESCALE",
@@ -1345,6 +1381,7 @@
           "entityName": "Undying",
           "subEntityName": "Flesh Golem",
           "rawNote": "Slow decreased from 40/45/50% to 35/40/45%",
+          "originalSource": "Slow decreased from 40/45/50% to 35/40/45%",
           "indentLevel": 1,
           "metric": "Slow",
           "changeType": "DECREASED",
@@ -1375,6 +1412,7 @@
           "entityName": "Undying",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent Flesh Golem Strength Bonus decreased from +60% to +50%",
+          "originalSource": "Level 25 Talent Flesh Golem Strength Bonus decreased from +60% to +50%",
           "indentLevel": 1,
           "metric": "Level 25 Talent Flesh Golem Strength Bonus",
           "changeType": "DECREASED",
@@ -1405,7 +1443,7 @@
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -2,
         "laning": 1,
         "siege": 0,
         "utility": 1
@@ -1421,14 +1459,14 @@
     },
     {
       "version": "7.37b",
-      "date": "2026-06-14T21:53:54.807Z",
+      "date": "2026-06-17T18:07:14.904Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -2,
         "laning": 1,
         "siege": 0,
         "utility": 1
@@ -1444,14 +1482,14 @@
     },
     {
       "version": "7.37c",
-      "date": "2026-06-14T21:53:54.810Z",
+      "date": "2026-06-17T18:07:14.906Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -2,
         "laning": 1,
         "siege": 0,
         "utility": 1
@@ -1467,14 +1505,14 @@
     },
     {
       "version": "7.37d",
-      "date": "2026-06-14T21:53:54.813Z",
+      "date": "2026-06-17T18:07:14.909Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -2,
         "laning": 1,
         "siege": 0,
         "utility": 1
@@ -1490,13 +1528,14 @@
     },
     {
       "version": "7.37e",
-      "date": "2026-06-14T21:53:54.815Z",
+      "date": "2026-06-17T18:07:14.912Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Undying",
           "subEntityName": "Decay",
           "rawNote": "Base Damage increased from 0/40/80/120 to 10/50/90/130",
+          "originalSource": "Base Damage increased from 0/40/80/120 to 10/50/90/130",
           "indentLevel": 1,
           "metric": "Base Damage",
           "changeType": "INCREASED",
@@ -1528,7 +1567,7 @@
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -2,
         "laning": 1,
         "siege": 0,
         "utility": 1
@@ -1544,13 +1583,14 @@
     },
     {
       "version": "7.38",
-      "date": "2026-06-14T21:53:54.824Z",
+      "date": "2026-06-17T18:07:14.919Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Undying",
           "subEntityName": "Decay",
           "rawNote": "Damage increased from 10/50/90/130 to 20/60/100/140",
+          "originalSource": "Damage increased from 10/50/90/130 to 20/60/100/140",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "INCREASED",
@@ -1581,6 +1621,7 @@
           "entityName": "Undying",
           "subEntityName": "Soul Rip",
           "rawNote": "Mana Cost rescaled from 100 to 80/90/100/110",
+          "originalSource": "Mana Cost rescaled from 100 to 80/90/100/110",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "RESCALE",
@@ -1611,6 +1652,7 @@
           "entityName": "Undying",
           "subEntityName": "Flesh Golem",
           "rawNote": "Slow decreased from 35/40/45% to 30/35/40%",
+          "originalSource": "Slow decreased from 35/40/45% to 30/35/40%",
           "indentLevel": 1,
           "metric": "Slow",
           "changeType": "DECREASED",
@@ -1641,6 +1683,7 @@
           "entityName": "Undying",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Decay Damage decreased from +50 to +40",
+          "originalSource": "Level 10 Talent Decay Damage decreased from +50 to +40",
           "indentLevel": 1,
           "metric": "Level 10 Talent Decay Damage",
           "changeType": "DECREASED",
@@ -1667,20 +1710,20 @@
         }
       ],
       "vectorDelta": {
-        "farming": 8,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 8,
+        "teamfight": 1,
+        "laning": 1,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6.5,
-        "laning": 9,
+        "teamfight": -1,
+        "laning": 2,
         "siege": 0,
         "utility": 1
       },
@@ -1691,19 +1734,19 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.38b",
-      "date": "2026-06-14T21:53:54.826Z",
+      "date": "2026-06-17T18:07:14.921Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6.5,
-        "laning": 9,
+        "teamfight": -1,
+        "laning": 2,
         "siege": 0,
         "utility": 1
       },
@@ -1718,15 +1761,15 @@
     },
     {
       "version": "7.38c",
-      "date": "2026-06-14T21:53:54.830Z",
+      "date": "2026-06-17T18:07:14.924Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6.5,
-        "laning": 9,
+        "teamfight": -1,
+        "laning": 2,
         "siege": 0,
         "utility": 1
       },
@@ -1741,12 +1784,13 @@
     },
     {
       "version": "7.39",
-      "date": "2026-06-14T21:53:54.836Z",
+      "date": "2026-06-17T18:07:14.928Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Undying",
           "rawNote": "Base Damage increased by 2",
+          "originalSource": "Base Damage increased by 2",
           "indentLevel": 1,
           "metric": "Base Damage",
           "changeType": "INCREASED",
@@ -1774,6 +1818,7 @@
           "category": "hero",
           "entityName": "Undying",
           "rawNote": "Damage at level 1 increased from 53–61 to 55–63",
+          "originalSource": "Damage at level 1 increased from 53–61 to 55–63",
           "indentLevel": 1,
           "metric": "Damage at level 1",
           "changeType": "INCREASED",
@@ -1803,6 +1848,7 @@
           "entityName": "Undying",
           "subEntityName": "Soul Rip",
           "rawNote": "Damage/Heal per unit rescaled from 15/25/35/45 to 14/26/38/50",
+          "originalSource": "Damage/Heal per unit rescaled from 15/25/35/45 to 14/26/38/50",
           "indentLevel": 1,
           "metric": "Damage/Heal per unit",
           "changeType": "RESCALE",
@@ -1831,11 +1877,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6.5,
-        "laning": 9,
+        "teamfight": -1,
+        "laning": 2,
         "siege": 0,
         "utility": 1
       },
@@ -1850,15 +1896,15 @@
     },
     {
       "version": "7.39b",
-      "date": "2026-06-14T21:53:54.839Z",
+      "date": "2026-06-17T18:07:14.931Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6.5,
-        "laning": 9,
+        "teamfight": -1,
+        "laning": 2,
         "siege": 0,
         "utility": 1
       },
@@ -1873,13 +1919,14 @@
     },
     {
       "version": "7.39c",
-      "date": "2026-06-14T21:53:54.843Z",
+      "date": "2026-06-17T18:07:14.932Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Undying",
           "subEntityName": "Flesh Golem",
           "rawNote": "Bonus Movespeed decreased from 20/30/40 to 20",
+          "originalSource": "Bonus Movespeed decreased from 20/30/40 to 20",
           "indentLevel": 1,
           "metric": "Bonus Movespeed",
           "changeType": "DECREASED",
@@ -1910,6 +1957,7 @@
           "entityName": "Undying",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Tombstone on Death replaced with to +4 Tombstone Attacks to Destroy",
+          "originalSource": "Level 20 Talent Tombstone on Death replaced with to +4 Tombstone Attacks to Destroy",
           "indentLevel": 1,
           "metric": "Level 20 Talent Tombstone on Death",
           "changeType": "REWORK",
@@ -1938,6 +1986,7 @@
           "entityName": "Undying",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent +6 Tombstone Attacks to Destroy replaced with Tombstone on Death",
+          "originalSource": "Level 25 Talent +6 Tombstone Attacks to Destroy replaced with Tombstone on Death",
           "indentLevel": 1,
           "metric": "Level 25 Talent +6 Tombstone Attacks to Destroy",
           "changeType": "REWORK",
@@ -1964,11 +2013,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6.5,
-        "laning": 9,
+        "teamfight": -1,
+        "laning": 2,
         "siege": 0,
         "utility": 1
       },
@@ -1983,13 +2032,14 @@
     },
     {
       "version": "7.39d",
-      "date": "2026-06-14T21:53:54.848Z",
+      "date": "2026-06-17T18:07:14.937Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Undying",
           "subEntityName": "Tombstone",
           "rawNote": "Zombie vision range decreased from 900/900 to 800/800",
+          "originalSource": "Zombie vision range decreased from 900/900 to 800/800",
           "indentLevel": 1,
           "metric": "Zombie vision range",
           "changeType": "DECREASED",
@@ -2020,6 +2070,7 @@
           "entityName": "Undying",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Decay Damage decreased from +40 to +30",
+          "originalSource": "Level 10 Talent Decay Damage decreased from +40 to +30",
           "indentLevel": 1,
           "metric": "Level 10 Talent Decay Damage",
           "changeType": "DECREASED",
@@ -2047,11 +2098,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6.5,
-        "laning": 9,
+        "teamfight": -1,
+        "laning": 2,
         "siege": 0,
         "utility": 1
       },
@@ -2066,15 +2117,15 @@
     },
     {
       "version": "7.39e",
-      "date": "2026-06-14T21:53:54.851Z",
+      "date": "2026-06-17T18:07:14.939Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6.5,
-        "laning": 9,
+        "teamfight": -1,
+        "laning": 2,
         "siege": 0,
         "utility": 1
       },
@@ -2089,13 +2140,14 @@
     },
     {
       "version": "7.40",
-      "date": "2026-06-14T21:53:54.859Z",
+      "date": "2026-06-17T18:07:14.945Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Undying",
           "subEntityName": "Soul Rip",
           "rawNote": "Cooldown decreased from 18/14/10/6s to 15/12/9/6s",
+          "originalSource": "Cooldown decreased from 18/14/10/6s to 15/12/9/6s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "DECREASED",
@@ -2126,6 +2178,7 @@
           "entityName": "Undying",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Soul Rip Damage/Heal increased from +10 to +12",
+          "originalSource": "Level 15 Talent Soul Rip Damage/Heal increased from +10 to +12",
           "indentLevel": 1,
           "metric": "Level 15 Talent Soul Rip Damage/Heal",
           "changeType": "INCREASED",
@@ -2155,17 +2208,17 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1.5,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 9,
+        "teamfight": 0,
+        "laning": 2,
         "siege": 0,
         "utility": 1
       },
@@ -2180,15 +2233,15 @@
     },
     {
       "version": "7.40b",
-      "date": "2026-06-14T21:53:54.866Z",
+      "date": "2026-06-17T18:07:14.948Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 9,
+        "teamfight": 0,
+        "laning": 2,
         "siege": 0,
         "utility": 1
       },
@@ -2203,15 +2256,15 @@
     },
     {
       "version": "7.40c",
-      "date": "2026-06-14T21:53:54.872Z",
+      "date": "2026-06-17T18:07:14.950Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 9,
+        "teamfight": 0,
+        "laning": 2,
         "siege": 0,
         "utility": 1
       },
@@ -2226,12 +2279,13 @@
     },
     {
       "version": "7.41",
-      "date": "2026-06-14T21:53:54.887Z",
+      "date": "2026-06-17T18:07:14.959Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Undying",
           "rawNote": "Base Agility increased from 10 to 13",
+          "originalSource": "Base Agility increased from 10 to 13",
           "indentLevel": 1,
           "metric": "Base Agility",
           "changeType": "INCREASED",
@@ -2260,6 +2314,7 @@
           "category": "hero",
           "entityName": "Undying",
           "rawNote": "Base Armor decreased by 1",
+          "originalSource": "Base Armor decreased by 1",
           "indentLevel": 1,
           "metric": "Base Armor",
           "changeType": "DECREASED",
@@ -2288,6 +2343,7 @@
           "entityName": "Undying",
           "subEntityName": "Flesh Golem",
           "rawNote": "Attacks now spawn the current level of Tombstone Zombie",
+          "originalSource": "Attacks now spawn the current level of Tombstone Zombie",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2313,11 +2369,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 9,
+        "teamfight": 0,
+        "laning": 2,
         "siege": 0,
         "utility": 1
       },
@@ -2332,15 +2388,15 @@
     },
     {
       "version": "7.41a",
-      "date": "2026-06-14T21:53:54.892Z",
+      "date": "2026-06-17T18:07:14.961Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 9,
+        "teamfight": 0,
+        "laning": 2,
         "siege": 0,
         "utility": 1
       },
@@ -2355,15 +2411,15 @@
     },
     {
       "version": "7.41b",
-      "date": "2026-06-14T21:53:54.896Z",
+      "date": "2026-06-17T18:07:14.964Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 9,
+        "teamfight": 0,
+        "laning": 2,
         "siege": 0,
         "utility": 1
       },
@@ -2378,15 +2434,15 @@
     },
     {
       "version": "7.41c",
-      "date": "2026-06-14T21:53:54.902Z",
+      "date": "2026-06-17T18:07:14.966Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 9,
+        "teamfight": 0,
+        "laning": 2,
         "siege": 0,
         "utility": 1
       },
@@ -2401,12 +2457,13 @@
     },
     {
       "version": "7.41d",
-      "date": "2026-06-14T21:53:54.908Z",
+      "date": "2026-06-17T18:07:14.969Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Undying",
           "rawNote": "Base Mana Regen increased by 0.25",
+          "originalSource": "Base Mana Regen increased by 0.25",
           "indentLevel": 1,
           "metric": "Base Mana Regen",
           "changeType": "INCREASED",
@@ -2433,45 +2490,57 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 9,
+        "teamfight": 0,
+        "laning": 2,
         "siege": 0,
         "utility": 1
       },
       "winrates": {
         "HERALD": {
-          "winrate": 0.5139,
-          "matchCount": 31912
+          "winrate": 0.5165,
+          "matchCount": 29167
         },
         "GUARDIAN": {
-          "winrate": 0.515,
-          "matchCount": 62230
+          "winrate": 0.5166,
+          "matchCount": 57122
         },
         "CRUSADER": {
-          "winrate": 0.5251,
-          "matchCount": 67313
+          "winrate": 0.524,
+          "matchCount": 61427
         },
         "ARCHON": {
-          "winrate": 0.5218,
-          "matchCount": 58409
+          "winrate": 0.5191,
+          "matchCount": 53216
         },
         "LEGEND": {
-          "winrate": 0.5271,
-          "matchCount": 42653
+          "winrate": 0.5268,
+          "matchCount": 38773
         },
         "ANCIENT": {
-          "winrate": 0.527,
-          "matchCount": 28282
+          "winrate": 0.5246,
+          "matchCount": 25784
         },
         "DIVINE": {
-          "winrate": 0.5301,
-          "matchCount": 31062
+          "winrate": 0.5211,
+          "matchCount": 28820
+        },
+        "IMMORTAL": {
+          "winrate": 0,
+          "matchCount": 0
+        },
+        "PRO": {
+          "winrate": 0.5385,
+          "matchCount": 13
+        },
+        "GLOBAL_BLEND": {
+          "winrate": 0.5211,
+          "matchCount": 28833
         }
       },
-      "temporalAssessment": "Net Gain"
+      "temporalAssessment": null
     }
   ]
 }

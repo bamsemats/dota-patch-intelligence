@@ -3,12 +3,13 @@
   "history": [
     {
       "version": "7.33",
-      "date": "2026-06-14T21:53:54.726Z",
+      "date": "2026-06-17T18:07:14.843Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "rawNote": "Now is a Universal Hero",
+          "originalSource": "Now is a Universal Hero",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -34,6 +35,7 @@
           "category": "hero",
           "entityName": "Techies",
           "rawNote": "Base Damage decreased from 21-23 to 12-14",
+          "originalSource": "Base Damage decreased from 21-23 to 12-14",
           "indentLevel": 1,
           "metric": "Base Damage",
           "changeType": "DECREASED",
@@ -62,31 +64,34 @@
           "category": "hero",
           "entityName": "Techies",
           "rawNote": "Damage on level 1 unchanged (46-48)",
+          "originalSource": "Damage on level 1 unchanged (46-48)",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
             "entityId": 105
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
           "category": "hero",
           "entityName": "Techies",
           "rawNote": "Damage gain per level increased from +3 to +4.08",
+          "originalSource": "Damage gain per level increased from +3 to +4.08",
           "indentLevel": 1,
           "metric": "Damage gain per level",
           "changeType": "INCREASED",
@@ -116,6 +121,7 @@
           "entityName": "Techies",
           "subEntityName": "Reactive Tazer",
           "rawNote": "Aghanim's Scepter Upgrade moved to Aghanim's Shard (effect is unchanged)",
+          "originalSource": "Aghanim's Scepter Upgrade moved to Aghanim's Shard (effect is unchanged)",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -123,9 +129,9 @@
             "subEntityId": 886
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -135,7 +141,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -143,6 +150,7 @@
           "entityName": "Techies",
           "subEntityName": "Blast Off!",
           "rawNote": "Aghanim's Shard Upgrade removed",
+          "originalSource": "Aghanim's Shard Upgrade removed",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -170,6 +178,7 @@
           "entityName": "Techies",
           "subEntityName": "Blast Off!",
           "rawNote": "No longer silences enemies",
+          "originalSource": "No longer silences enemies",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -197,6 +206,7 @@
           "entityName": "Techies",
           "subEntityName": "Blast Off!",
           "rawNote": "Now stuns enemies for 0.8/1/1.2/1.4s",
+          "originalSource": "Now stuns enemies for 0.8/1/1.2/1.4s",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -224,6 +234,7 @@
           "entityName": "Techies",
           "subEntityName": "Proximity Mines",
           "rawNote": "Magic Resistance Reduction debuff now stacks independently",
+          "originalSource": "Magic Resistance Reduction debuff now stacks independently",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -231,19 +242,20 @@
             "subEntityId": 5599
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "SPELL_IMMUNITY_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 9,
+              "Guardian": 9,
+              "Crusader": 9,
+              "Archon": 9,
+              "Legend": 9,
+              "Ancient": 9,
+              "Divine": 9
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -251,6 +263,7 @@
           "entityName": "Techies",
           "subEntityName": "Minefield Sign",
           "rawNote": "Cast Time increased from 1s to 2s",
+          "originalSource": "Cast Time increased from 1s to 2s",
           "indentLevel": 1,
           "metric": "Cast Time",
           "changeType": "INCREASED",
@@ -281,6 +294,7 @@
           "entityName": "Techies",
           "subEntityName": "Minefield Sign",
           "rawNote": "Now upgradable by Aghanim's Scepter",
+          "originalSource": "Now upgradable by Aghanim's Scepter",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -308,6 +322,7 @@
           "entityName": "Techies",
           "subEntityName": "Minefield Sign",
           "rawNote": "Increases effect radius to 1000 and duration to 4 minutes. When an enemy hero gets within 200 units of the sign, the entire 1000 radius area becomes a minefield for 10 seconds. Enemy units will take 300 damage for every 200 units moved. Minefield area is visible to enemies once activated. The sign is destroyed after the minefield expires. Only one sign can exist at a time",
+          "originalSource": "Increases effect radius to 1000 and duration to 4 minutes. When an enemy hero gets within 200 units of the sign, the entire 1000 radius area becomes a minefield for 10 seconds. Enemy units will take 300 damage for every 200 units moved. Minefield area is visible to enemies once activated. The sign is destroyed after the minefield expires. Only one sign can exist at a time",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -315,9 +330,9 @@
             "subEntityId": 5644
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -327,7 +342,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         }
       ],
@@ -346,7 +362,7 @@
     },
     {
       "version": "7.33b",
-      "date": "2026-06-14T21:53:54.731Z",
+      "date": "2026-06-17T18:07:14.846Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -392,12 +408,13 @@
     },
     {
       "version": "7.33c",
-      "date": "2026-06-14T21:53:54.736Z",
+      "date": "2026-06-17T18:07:14.849Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "rawNote": "Base Damage decreased by 6 (Level 1 damage unchanged)",
+          "originalSource": "Base Damage decreased by 6 (Level 1 damage unchanged)",
           "indentLevel": 1,
           "metric": "Base Damage",
           "changeType": "DECREASED",
@@ -466,12 +483,13 @@
     },
     {
       "version": "7.33d",
-      "date": "2026-06-14T21:53:54.740Z",
+      "date": "2026-06-17T18:07:14.851Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "rawNote": "Base Attack Speed decreased from 100 to 90",
+          "originalSource": "Base Attack Speed decreased from 100 to 90",
           "indentLevel": 1,
           "metric": "Base Attack Speed",
           "changeType": "DECREASED",
@@ -501,6 +519,7 @@
           "entityName": "Techies",
           "subEntityName": "Sticky Bomb",
           "rawNote": "Damage decreased from 90/180/270/360 to 80/160/240/320",
+          "originalSource": "Damage decreased from 90/180/270/360 to 80/160/240/320",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "DECREASED",
@@ -531,6 +550,7 @@
           "entityName": "Techies",
           "subEntityName": "Blast Off!",
           "rawNote": "Stun Duration decreased from 0.8/1/1.2/1.4s to 0.8/0.95/1.1/1.25s",
+          "originalSource": "Stun Duration decreased from 0.8/1/1.2/1.4s to 0.8/0.95/1.1/1.25s",
           "indentLevel": 1,
           "metric": "Stun Duration",
           "changeType": "DECREASED",
@@ -558,20 +578,20 @@
         }
       ],
       "vectorDelta": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8,
-        "laning": -8,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8,
-        "laning": -8,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
@@ -609,12 +629,13 @@
     },
     {
       "version": "7.33e",
-      "date": "2026-06-14T21:53:54.744Z",
+      "date": "2026-06-17T18:07:14.854Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "rawNote": "Base Armor decreased by 1",
+          "originalSource": "Base Armor decreased by 1",
           "indentLevel": 1,
           "metric": "Base Armor",
           "changeType": "DECREASED",
@@ -642,6 +663,7 @@
           "category": "hero",
           "entityName": "Techies",
           "rawNote": "Base Damage decreased by 3",
+          "originalSource": "Base Damage decreased by 3",
           "indentLevel": 1,
           "metric": "Base Damage",
           "changeType": "DECREASED",
@@ -670,6 +692,7 @@
           "entityName": "Techies",
           "subEntityName": "Sticky Bomb",
           "rawNote": "Cooldown increased from 12/10/8/6s to 13/11/9/7s",
+          "originalSource": "Cooldown increased from 12/10/8/6s to 13/11/9/7s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "INCREASED",
@@ -700,17 +723,17 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -9.5,
-        "laning": -8,
+        "teamfight": -2,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
@@ -748,13 +771,14 @@
     },
     {
       "version": "7.34",
-      "date": "2026-06-14T21:53:54.750Z",
+      "date": "2026-06-17T18:07:14.859Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "subEntityName": "Reactive Tazer",
           "rawNote": "Can now be detonated via Detonate Tazer sub-ability at any time during its effect to end it with an AoE explosion",
+          "originalSource": "Can now be detonated via Detonate Tazer sub-ability at any time during its effect to end it with an AoE explosion",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -762,9 +786,9 @@
             "subEntityId": 886
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -774,7 +798,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -782,6 +807,7 @@
           "entityName": "Techies",
           "subEntityName": "Reactive Tazer",
           "rawNote": "The sub-ability replaces Reactive Tazer for the duration of the buff but is unavailable for the first 0.5s to prevent accidental detonation. Cooldown starts upon cast",
+          "originalSource": "The sub-ability replaces Reactive Tazer for the duration of the buff but is unavailable for the first 0.5s to prevent accidental detonation. Cooldown starts upon cast",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -789,9 +815,9 @@
             "subEntityId": 886
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -801,7 +827,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -809,6 +836,7 @@
           "entityName": "Techies",
           "subEntityName": "Reactive Tazer",
           "rawNote": "Cooldown rescaled from 28/24/20/16s to 30/25/20/15s",
+          "originalSource": "Cooldown rescaled from 28/24/20/16s to 30/25/20/15s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "RESCALE",
@@ -837,11 +865,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -9.5,
-        "laning": -8,
+        "teamfight": -2,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
@@ -850,13 +878,14 @@
     },
     {
       "version": "7.34b",
-      "date": "2026-06-14T21:53:54.755Z",
+      "date": "2026-06-17T18:07:14.863Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "subEntityName": "Blast Off!",
           "rawNote": "Stun Duration increased from 0.8/0.95/1.1/1.25s to 0.8/1.0/1.2/1.4s",
+          "originalSource": "Stun Duration increased from 0.8/0.95/1.1/1.25s to 0.8/1.0/1.2/1.4s",
           "indentLevel": 1,
           "metric": "Stun Duration",
           "changeType": "INCREASED",
@@ -885,11 +914,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -9.5,
-        "laning": -8,
+        "teamfight": -2,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
@@ -927,15 +956,15 @@
     },
     {
       "version": "7.34c",
-      "date": "2026-06-14T21:53:54.759Z",
+      "date": "2026-06-17T18:07:14.868Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -9.5,
-        "laning": -8,
+        "teamfight": -2,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
@@ -973,13 +1002,14 @@
     },
     {
       "version": "7.34d",
-      "date": "2026-06-14T21:53:54.764Z",
+      "date": "2026-06-17T18:07:14.871Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "subEntityName": "Blast Off!",
           "rawNote": "Cooldown rescaled from 39/36/33/30s to 40/35/30/25s",
+          "originalSource": "Cooldown rescaled from 39/36/33/30s to 40/35/30/25s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "RESCALE",
@@ -1010,6 +1040,7 @@
           "entityName": "Techies",
           "subEntityName": "Proximity Mines",
           "rawNote": "All flying hero units can now trigger the mines",
+          "originalSource": "All flying hero units can now trigger the mines",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -1035,11 +1066,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -9.5,
-        "laning": -8,
+        "teamfight": -2,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
@@ -1073,19 +1104,19 @@
           "matchCount": 44703
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.34e",
-      "date": "2026-06-14T21:53:54.768Z",
+      "date": "2026-06-17T18:07:14.873Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -9.5,
-        "laning": -8,
+        "teamfight": -2,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
@@ -1123,13 +1154,14 @@
     },
     {
       "version": "7.35",
-      "date": "2026-06-14T21:53:54.772Z",
+      "date": "2026-06-17T18:07:14.877Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "subEntityName": "Blast Off!",
           "rawNote": "Current HP Self Damage decreased from 35/30/25/20% to 20%",
+          "originalSource": "Current HP Self Damage decreased from 35/30/25/20% to 20%",
           "indentLevel": 1,
           "metric": "Current HP Self Damage",
           "changeType": "DECREASED",
@@ -1158,11 +1190,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -9.5,
-        "laning": -8,
+        "teamfight": -2,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
@@ -1177,13 +1209,14 @@
     },
     {
       "version": "7.35b",
-      "date": "2026-06-14T21:53:54.775Z",
+      "date": "2026-06-17T18:07:14.879Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "subEntityName": "Sticky Bomb",
           "rawNote": "Stick Radius increased from 250 to 300",
+          "originalSource": "Stick Radius increased from 250 to 300",
           "indentLevel": 1,
           "metric": "Stick Radius",
           "changeType": "INCREASED",
@@ -1214,6 +1247,7 @@
           "entityName": "Techies",
           "subEntityName": "Sticky Bomb",
           "rawNote": "Explosion Radius increased from 300 to 350",
+          "originalSource": "Explosion Radius increased from 300 to 350",
           "indentLevel": 1,
           "metric": "Explosion Radius",
           "changeType": "INCREASED",
@@ -1242,11 +1276,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -9.5,
-        "laning": -8,
+        "teamfight": -2,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
@@ -1261,15 +1295,15 @@
     },
     {
       "version": "7.35c",
-      "date": "2026-06-14T21:53:54.782Z",
+      "date": "2026-06-17T18:07:14.881Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -9.5,
-        "laning": -8,
+        "teamfight": -2,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
@@ -1284,13 +1318,14 @@
     },
     {
       "version": "7.35d",
-      "date": "2026-06-14T21:53:54.785Z",
+      "date": "2026-06-17T18:07:14.884Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "subEntityName": "Sticky Bomb",
           "rawNote": "Cooldown increased from 13/11/9/7s to 16/13/10/7s",
+          "originalSource": "Cooldown increased from 13/11/9/7s to 16/13/10/7s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "INCREASED",
@@ -1321,17 +1356,17 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -11,
-        "laning": -8,
+        "teamfight": -3,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
@@ -1346,12 +1381,13 @@
     },
     {
       "version": "7.36",
-      "date": "2026-06-14T21:53:54.791Z",
+      "date": "2026-06-17T18:07:14.890Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "rawNote": "Base Attack Range decreased from 700 to 550",
+          "originalSource": "Base Attack Range decreased from 700 to 550",
           "indentLevel": 1,
           "metric": "Base Attack Range",
           "changeType": "DECREASED",
@@ -1379,11 +1415,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -11,
-        "laning": -8,
+        "teamfight": -3,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
@@ -1398,12 +1434,13 @@
     },
     {
       "version": "7.36a",
-      "date": "2026-06-14T21:53:54.794Z",
+      "date": "2026-06-17T18:07:14.892Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "rawNote": "Health Regen increased from 0.25 to 1.0",
+          "originalSource": "Health Regen increased from 0.25 to 1.0",
           "indentLevel": 1,
           "metric": "Health Regen",
           "changeType": "INCREASED",
@@ -1432,18 +1469,18 @@
       "vectorDelta": {
         "farming": 0,
         "mobility": 0,
-        "survivability": 6,
+        "survivability": 5.5,
         "teamfight": 0,
-        "laning": 6,
+        "laning": 5.5,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": 6,
-        "teamfight": -11,
-        "laning": -2,
+        "survivability": 5.5,
+        "teamfight": -3,
+        "laning": 4.5,
         "siege": 0,
         "utility": 0
       },
@@ -1454,16 +1491,17 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": "Net Gain"
+      "temporalAssessment": null
     },
     {
       "version": "7.36b",
-      "date": "2026-06-14T21:53:54.797Z",
+      "date": "2026-06-17T18:07:14.896Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "rawNote": "Base Attack Range increased by 50",
+          "originalSource": "Base Attack Range increased by 50",
           "indentLevel": 1,
           "metric": "Base Attack Range",
           "changeType": "INCREASED",
@@ -1492,6 +1530,7 @@
           "entityName": "Techies",
           "subEntityName": "Minefield Sign",
           "rawNote": "Cast Point decreased from 2.0s to 1.5s",
+          "originalSource": "Cast Point decreased from 2.0s to 1.5s",
           "indentLevel": 1,
           "metric": "Cast Point",
           "changeType": "DECREASED",
@@ -1525,16 +1564,16 @@
         "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 16
+        "utility": 10
       },
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": 6,
-        "teamfight": -11,
-        "laning": -2,
+        "survivability": 5.5,
+        "teamfight": -3,
+        "laning": 4.5,
         "siege": 0,
-        "utility": 16
+        "utility": 10
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1543,21 +1582,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": "Net Gain"
+      "temporalAssessment": null
     },
     {
       "version": "7.36c",
-      "date": "2026-06-14T21:53:54.800Z",
+      "date": "2026-06-17T18:07:14.898Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": 6,
-        "teamfight": -11,
-        "laning": -2,
+        "survivability": 5.5,
+        "teamfight": -3,
+        "laning": 4.5,
         "siege": 0,
-        "utility": 16
+        "utility": 10
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1570,17 +1609,17 @@
     },
     {
       "version": "7.37",
-      "date": "2026-06-14T21:53:54.805Z",
+      "date": "2026-06-17T18:07:14.902Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": 6,
-        "teamfight": -11,
-        "laning": -2,
+        "survivability": 5.5,
+        "teamfight": -3,
+        "laning": 4.5,
         "siege": 0,
-        "utility": 16
+        "utility": 10
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1593,17 +1632,17 @@
     },
     {
       "version": "7.37b",
-      "date": "2026-06-14T21:53:54.807Z",
+      "date": "2026-06-17T18:07:14.904Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": 6,
-        "teamfight": -11,
-        "laning": -2,
+        "survivability": 5.5,
+        "teamfight": -3,
+        "laning": 4.5,
         "siege": 0,
-        "utility": 16
+        "utility": 10
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1616,17 +1655,17 @@
     },
     {
       "version": "7.37c",
-      "date": "2026-06-14T21:53:54.810Z",
+      "date": "2026-06-17T18:07:14.906Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": 6,
-        "teamfight": -11,
-        "laning": -2,
+        "survivability": 5.5,
+        "teamfight": -3,
+        "laning": 4.5,
         "siege": 0,
-        "utility": 16
+        "utility": 10
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1639,13 +1678,14 @@
     },
     {
       "version": "7.37d",
-      "date": "2026-06-14T21:53:54.813Z",
+      "date": "2026-06-17T18:07:14.909Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "subEntityName": "Proximity Mines",
           "rawNote": "Base Charge Restore Time decreased from 19/17/15s to 15s",
+          "originalSource": "Base Charge Restore Time decreased from 19/17/15s to 15s",
           "indentLevel": 1,
           "metric": "Base Charge Restore Time",
           "changeType": "DECREASED",
@@ -1674,13 +1714,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": 6,
-        "teamfight": -11,
-        "laning": -2,
+        "survivability": 5.5,
+        "teamfight": -3,
+        "laning": 4.5,
         "siege": 0,
-        "utility": 16
+        "utility": 10
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1693,17 +1733,17 @@
     },
     {
       "version": "7.37e",
-      "date": "2026-06-14T21:53:54.815Z",
+      "date": "2026-06-17T18:07:14.912Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": 6,
-        "teamfight": -11,
-        "laning": -2,
+        "survivability": 5.5,
+        "teamfight": -3,
+        "laning": 4.5,
         "siege": 0,
-        "utility": 16
+        "utility": 10
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1716,12 +1756,13 @@
     },
     {
       "version": "7.38",
-      "date": "2026-06-14T21:53:54.824Z",
+      "date": "2026-06-17T18:07:14.919Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "rawNote": "Base Damage increased by 17",
+          "originalSource": "Base Damage increased by 17",
           "indentLevel": 1,
           "metric": "Base Damage",
           "changeType": "INCREASED",
@@ -1749,6 +1790,7 @@
           "category": "hero",
           "entityName": "Techies",
           "rawNote": "Damage at level 1 increased by 3 (from 43-45 to 46-48)",
+          "originalSource": "Damage at level 1 increased by 3 (from 43-45 to 46-48)",
           "indentLevel": 1,
           "metric": "Damage at level 1",
           "changeType": "INCREASED",
@@ -1777,6 +1819,7 @@
           "category": "hero",
           "entityName": "Techies",
           "rawNote": "Strength gain increased from 2.5 to 2.6",
+          "originalSource": "Strength gain increased from 2.5 to 2.6",
           "indentLevel": 1,
           "metric": "Strength gain",
           "changeType": "INCREASED",
@@ -1805,6 +1848,7 @@
           "category": "hero",
           "entityName": "Techies",
           "rawNote": "Agility gain increased from 1.3 to 1.8",
+          "originalSource": "Agility gain increased from 1.3 to 1.8",
           "indentLevel": 1,
           "metric": "Agility gain",
           "changeType": "INCREASED",
@@ -1833,6 +1877,7 @@
           "category": "hero",
           "entityName": "Techies",
           "rawNote": "Intelligence gain decreased from 3.0 to 2.8",
+          "originalSource": "Intelligence gain decreased from 3.0 to 2.8",
           "indentLevel": 1,
           "metric": "Intelligence gain",
           "changeType": "DECREASED",
@@ -1861,6 +1906,7 @@
           "category": "hero",
           "entityName": "Techies",
           "rawNote": "Damage gain per level decreased from +4.8 to +3.2",
+          "originalSource": "Damage gain per level decreased from +4.8 to +3.2",
           "indentLevel": 1,
           "metric": "Damage gain per level",
           "changeType": "DECREASED",
@@ -1889,6 +1935,7 @@
           "category": "hero",
           "entityName": "Techies",
           "rawNote": "Damage at level 30 decreased by 52 (from 210-212 to 158-160)",
+          "originalSource": "Damage at level 30 decreased by 52 (from 210-212 to 158-160)",
           "indentLevel": 1,
           "metric": "Damage at level 30",
           "changeType": "DECREASED",
@@ -1918,6 +1965,7 @@
           "entityName": "Techies",
           "subEntityName": "Minefield Sign",
           "rawNote": "Cast Point decreased from 1.5s to 1.25s",
+          "originalSource": "Cast Point decreased from 1.5s to 1.25s",
           "indentLevel": 1,
           "metric": "Cast Point",
           "changeType": "DECREASED",
@@ -1948,6 +1996,7 @@
           "entityName": "Techies",
           "subEntityName": "Minefield Sign",
           "rawNote": "Now also causes Sticky Bombs and Proximity Mines within the radius to deal 15% more damage",
+          "originalSource": "Now also causes Sticky Bombs and Proximity Mines within the radius to deal 15% more damage",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -1978,16 +2027,16 @@
         "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 16
+        "utility": 10
       },
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": 6,
-        "teamfight": -11,
-        "laning": -2,
+        "survivability": 5.5,
+        "teamfight": -3,
+        "laning": 4.5,
         "siege": 0,
-        "utility": 32
+        "utility": 20
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2000,17 +2049,17 @@
     },
     {
       "version": "7.38b",
-      "date": "2026-06-14T21:53:54.827Z",
+      "date": "2026-06-17T18:07:14.921Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": 6,
-        "teamfight": -11,
-        "laning": -2,
+        "survivability": 5.5,
+        "teamfight": -3,
+        "laning": 4.5,
         "siege": 0,
-        "utility": 32
+        "utility": 20
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2023,17 +2072,17 @@
     },
     {
       "version": "7.38c",
-      "date": "2026-06-14T21:53:54.830Z",
+      "date": "2026-06-17T18:07:14.924Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": 6,
-        "teamfight": -11,
-        "laning": -2,
+        "survivability": 5.5,
+        "teamfight": -3,
+        "laning": 4.5,
         "siege": 0,
-        "utility": 32
+        "utility": 20
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2046,12 +2095,13 @@
     },
     {
       "version": "7.39",
-      "date": "2026-06-14T21:53:54.836Z",
+      "date": "2026-06-17T18:07:14.928Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "rawNote": "Base movement speed increased from 300 to 310",
+          "originalSource": "Base movement speed increased from 300 to 310",
           "indentLevel": 1,
           "metric": "Base movement speed",
           "changeType": "INCREASED",
@@ -2079,13 +2129,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": 6,
-        "teamfight": -11,
-        "laning": -2,
+        "survivability": 5.5,
+        "teamfight": -3,
+        "laning": 4.5,
         "siege": 0,
-        "utility": 32
+        "utility": 20
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2098,13 +2148,14 @@
     },
     {
       "version": "7.39b",
-      "date": "2026-06-14T21:53:54.839Z",
+      "date": "2026-06-17T18:07:14.931Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "subEntityName": "Sticky Bomb",
           "rawNote": "Damage increased from 80/160/240/320 to 95/170/245/320",
+          "originalSource": "Damage increased from 80/160/240/320 to 95/170/245/320",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "INCREASED",
@@ -2132,22 +2183,22 @@
         }
       ],
       "vectorDelta": {
-        "farming": 8,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 8,
+        "teamfight": 1,
+        "laning": 1,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
         "farming": 0,
         "mobility": 0,
-        "survivability": 6,
-        "teamfight": -3,
-        "laning": 6,
+        "survivability": 5.5,
+        "teamfight": -2,
+        "laning": 5.5,
         "siege": 0,
-        "utility": 32
+        "utility": 20
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2156,17 +2207,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.39c",
-      "date": "2026-06-14T21:53:54.843Z",
+      "date": "2026-06-17T18:07:14.933Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "subEntityName": "Reactive Tazer",
           "rawNote": "Explosion Radius increased from 400 to 450",
+          "originalSource": "Explosion Radius increased from 400 to 450",
           "indentLevel": 1,
           "metric": "Explosion Radius",
           "changeType": "INCREASED",
@@ -2197,11 +2249,11 @@
       "totalVector": {
         "farming": 0,
         "mobility": 0,
-        "survivability": 6,
-        "teamfight": -3,
-        "laning": 6,
+        "survivability": 5.5,
+        "teamfight": -2,
+        "laning": 5.5,
         "siege": 0,
-        "utility": 32
+        "utility": 20
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2210,16 +2262,17 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.39d",
-      "date": "2026-06-14T21:53:54.848Z",
+      "date": "2026-06-17T18:07:14.937Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "rawNote": "Intelligence gain increased from 2.8 to 3.0",
+          "originalSource": "Intelligence gain increased from 2.8 to 3.0",
           "indentLevel": 1,
           "metric": "Intelligence gain",
           "changeType": "INCREASED",
@@ -2249,11 +2302,11 @@
       "totalVector": {
         "farming": 0,
         "mobility": 0,
-        "survivability": 6,
-        "teamfight": -3,
-        "laning": 6,
+        "survivability": 5.5,
+        "teamfight": -2,
+        "laning": 5.5,
         "siege": 0,
-        "utility": 32
+        "utility": 20
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2266,13 +2319,14 @@
     },
     {
       "version": "7.39e",
-      "date": "2026-06-14T21:53:54.851Z",
+      "date": "2026-06-17T18:07:14.939Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "subEntityName": "Reactive Tazer",
           "rawNote": "Cooldown decreased from 30/25/20/15s to 26/22/18/14s",
+          "originalSource": "Cooldown decreased from 30/25/20/15s to 26/22/18/14s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "DECREASED",
@@ -2303,6 +2357,7 @@
           "entityName": "Techies",
           "subEntityName": "Proximity Mines",
           "rawNote": "Min damage at the edge increased from 50% to 60%",
+          "originalSource": "Min damage at the edge increased from 50% to 60%",
           "indentLevel": 1,
           "metric": "Min damage at the edge",
           "changeType": "INCREASED",
@@ -2333,7 +2388,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1.5,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -2341,11 +2396,11 @@
       "totalVector": {
         "farming": 0,
         "mobility": 0,
-        "survivability": 6,
-        "teamfight": -1.5,
-        "laning": 6,
+        "survivability": 5.5,
+        "teamfight": -1,
+        "laning": 5.5,
         "siege": 0,
-        "utility": 32
+        "utility": 20
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2354,16 +2409,17 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.40",
-      "date": "2026-06-14T21:53:54.859Z",
+      "date": "2026-06-17T18:07:14.945Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "rawNote": "Base Agility increased from 14 to 16",
+          "originalSource": "Base Agility increased from 14 to 16",
           "indentLevel": 1,
           "metric": "Base Agility",
           "changeType": "INCREASED",
@@ -2392,6 +2448,7 @@
           "category": "hero",
           "entityName": "Techies",
           "rawNote": "Damage at level 1 increased by 1 (from 46–48 to 47–49)",
+          "originalSource": "Damage at level 1 increased by 1 (from 46–48 to 47–49)",
           "indentLevel": 1,
           "metric": "Damage at level 1",
           "changeType": "INCREASED",
@@ -2421,6 +2478,7 @@
           "entityName": "Techies",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +125 Sticky Bomb Latch/Explosion Radius replaced with +160 Sticky Bomb Damage",
+          "originalSource": "Level 20 Talent +125 Sticky Bomb Latch/Explosion Radius replaced with +160 Sticky Bomb Damage",
           "indentLevel": 1,
           "metric": "Level 20 Talent +125 Sticky Bomb Latch/Explosion Radius",
           "changeType": "REWORK",
@@ -2449,11 +2507,11 @@
       "totalVector": {
         "farming": 0,
         "mobility": 0,
-        "survivability": 6,
-        "teamfight": -1.5,
-        "laning": 6,
+        "survivability": 5.5,
+        "teamfight": -1,
+        "laning": 5.5,
         "siege": 0,
-        "utility": 32
+        "utility": 20
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2466,13 +2524,14 @@
     },
     {
       "version": "7.40b",
-      "date": "2026-06-14T21:53:54.866Z",
+      "date": "2026-06-17T18:07:14.948Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "subEntityName": "Proximity Mines",
           "rawNote": "Cast range increased from 400 to 450",
+          "originalSource": "Cast range increased from 400 to 450",
           "indentLevel": 1,
           "metric": "Cast range",
           "changeType": "INCREASED",
@@ -2506,16 +2565,16 @@
         "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "totalVector": {
         "farming": 0,
         "mobility": 0,
-        "survivability": 6,
-        "teamfight": -1.5,
-        "laning": 6,
+        "survivability": 5.5,
+        "teamfight": -1,
+        "laning": 5.5,
         "siege": 0,
-        "utility": 47
+        "utility": 23
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2524,21 +2583,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.40c",
-      "date": "2026-06-14T21:53:54.872Z",
+      "date": "2026-06-17T18:07:14.950Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
-        "survivability": 6,
-        "teamfight": -1.5,
-        "laning": 6,
+        "survivability": 5.5,
+        "teamfight": -1,
+        "laning": 5.5,
         "siege": 0,
-        "utility": 47
+        "utility": 23
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2551,13 +2610,14 @@
     },
     {
       "version": "7.41",
-      "date": "2026-06-14T21:53:54.887Z",
+      "date": "2026-06-17T18:07:14.959Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "subEntityName": "M.A.D.",
           "rawNote": "New innate ability. Passive",
+          "originalSource": "New innate ability. Passive",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2585,6 +2645,7 @@
           "entityName": "Techies",
           "subEntityName": "M.A.D.",
           "rawNote": "Increases mana regen by a portion of Techies' max mana equal to 0.08% + 0.02% per level",
+          "originalSource": "Increases mana regen by a portion of Techies' max mana equal to 0.08% + 0.02% per level",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2612,6 +2673,7 @@
           "entityName": "Techies",
           "subEntityName": "M.A.D.",
           "rawNote": "When Techies die, they leave behind a barrel that explodes after 1.5s, dealing magical damage equal to 50 + 30% of their max mana to enemies in a 400 area of effect. The barrel provides 400 obstructed vision until it explodes",
+          "originalSource": "When Techies die, they leave behind a barrel that explodes after 1.5s, dealing magical damage equal to 50 + 30% of their max mana to enemies in a 400 area of effect. The barrel provides 400 obstructed vision until it explodes",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2619,9 +2681,9 @@
             "subEntityId": 1778
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "VISION_INTERACTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -2631,7 +2693,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2639,6 +2702,7 @@
           "entityName": "Techies",
           "subEntityName": "M.A.D.",
           "rawNote": "Upgraded with Aghanim's Shard",
+          "originalSource": "Upgraded with Aghanim's Shard",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2666,6 +2730,7 @@
           "entityName": "Techies",
           "subEntityName": "M.A.D.",
           "rawNote": "Increases mana to damage by 10%. Adds an active component. Techies plant the M.A.D. barrel, and detonate it later by using a sub-ability. The M.A.D. barrel is invisible and can be destroyed before the detonation process begins. Detonating the barrel makes it visible and immortal, and then it explodes after the same 1.5s delay. Only one M.A.D. can exist via the active cast at one time. Barrel Health: 200. Cast Range: 450. No Mana Cost. Cooldown: 30s. Cast Point: 1s",
+          "originalSource": "Increases mana to damage by 10%. Adds an active component. Techies plant the M.A.D. barrel, and detonate it later by using a sub-ability. The M.A.D. barrel is invisible and can be destroyed before the detonation process begins. Detonating the barrel makes it visible and immortal, and then it explodes after the same 1.5s delay. Only one M.A.D. can exist via the active cast at one time. Barrel Health: 200. Cast Range: 450. No Mana Cost. Cooldown: 30s. Cast Point: 1s",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2673,9 +2738,9 @@
             "subEntityId": 1778
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -2685,7 +2750,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2693,6 +2759,7 @@
           "entityName": "Techies",
           "subEntityName": "Reactive Tazer",
           "rawNote": "Can now always be cast on allies",
+          "originalSource": "Can now always be cast on allies",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2700,9 +2767,9 @@
             "subEntityId": 886
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -2712,7 +2779,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2720,6 +2788,7 @@
           "entityName": "Techies",
           "subEntityName": "Reactive Tazer",
           "rawNote": "Cast Range increased from 500 to 600",
+          "originalSource": "Cast Range increased from 500 to 600",
           "indentLevel": 1,
           "metric": "Cast Range",
           "changeType": "INCREASED",
@@ -2750,6 +2819,7 @@
           "entityName": "Techies",
           "subEntityName": "Reactive Tazer",
           "rawNote": "No longer upgraded with Aghanim's Shard",
+          "originalSource": "No longer upgraded with Aghanim's Shard",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -2777,6 +2847,7 @@
           "entityName": "Techies",
           "subEntityName": "Blast Off!",
           "rawNote": "Now deals its self damage before damaging enemies",
+          "originalSource": "Now deals its self damage before damaging enemies",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2804,6 +2875,7 @@
           "entityName": "Techies",
           "subEntityName": "Blast Off!",
           "rawNote": "Techies are now rooted and disarmed instead of self-stunned during Blast Off's leap animation",
+          "originalSource": "Techies are now rooted and disarmed instead of self-stunned during Blast Off's leap animation",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2811,19 +2883,20 @@
             "subEntityId": 5601
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "CAST_WHILE_DISABLED",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 9,
+              "Guardian": 9,
+              "Crusader": 9,
+              "Archon": 9,
+              "Legend": 9,
+              "Ancient": 9,
+              "Divine": 9
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2831,6 +2904,7 @@
           "entityName": "Techies",
           "subEntityName": "Proximity Mines",
           "rawNote": "Damage source changed from Proximity Mines to the caster",
+          "originalSource": "Damage source changed from Proximity Mines to the caster",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2838,19 +2912,20 @@
             "subEntityId": 5599
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2858,6 +2933,7 @@
           "entityName": "Techies",
           "subEntityName": "Minefield Sign",
           "rawNote": "Now only available with Aghanim's Scepter",
+          "originalSource": "Now only available with Aghanim's Scepter",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2885,6 +2961,7 @@
           "entityName": "Techies",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent +3 Mana Regen replaced with +25% Reactive Tazer Buff and Disarm Duration",
+          "originalSource": "Level 15 Talent +3 Mana Regen replaced with +25% Reactive Tazer Buff and Disarm Duration",
           "indentLevel": 1,
           "metric": "Level 15 Talent +3 Mana Regen",
           "changeType": "REWORK",
@@ -2913,6 +2990,7 @@
           "entityName": "Techies",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent Damage increased from +252 to +253",
+          "originalSource": "Level 25 Talent Damage increased from +252 to +253",
           "indentLevel": 1,
           "metric": "Level 25 Talent Damage",
           "changeType": "INCREASED",
@@ -2945,16 +3023,16 @@
         "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "totalVector": {
         "farming": 0,
         "mobility": 0,
-        "survivability": 6,
-        "teamfight": -1.5,
-        "laning": 6,
+        "survivability": 5.5,
+        "teamfight": -1,
+        "laning": 5.5,
         "siege": 0,
-        "utility": 62
+        "utility": 26
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2967,13 +3045,14 @@
     },
     {
       "version": "7.41a",
-      "date": "2026-06-14T21:53:54.892Z",
+      "date": "2026-06-17T18:07:14.961Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "subEntityName": "Proximity Mines",
           "rawNote": "Damage decreased from 450/575/750 to 400/550/700",
+          "originalSource": "Damage decreased from 450/575/750 to 400/550/700",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "DECREASED",
@@ -3004,6 +3083,7 @@
           "entityName": "Techies",
           "subEntityName": "Proximity Mines",
           "rawNote": "Portion of damage dealt on the edge of AoE decreased from 60% to 50%",
+          "originalSource": "Portion of damage dealt on the edge of AoE decreased from 60% to 50%",
           "indentLevel": 1,
           "metric": "Portion of damage dealt on the edge of AoE",
           "changeType": "DECREASED",
@@ -3034,6 +3114,7 @@
           "entityName": "Techies",
           "subEntityName": "Proximity Mines",
           "rawNote": "Minimum Damage decreased from 240/345/450 to 200/225/350",
+          "originalSource": "Minimum Damage decreased from 240/345/450 to 200/225/350",
           "indentLevel": 2,
           "metric": "Minimum Damage",
           "changeType": "DECREASED",
@@ -3064,6 +3145,7 @@
           "entityName": "Techies",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Proximity Mines Cooldown Reduction decreased from 3s to 2s",
+          "originalSource": "Level 10 Talent Proximity Mines Cooldown Reduction decreased from 3s to 2s",
           "indentLevel": 1,
           "metric": "Level 10 Talent Proximity Mines Cooldown Reduction",
           "changeType": "DECREASED",
@@ -3090,22 +3172,22 @@
         }
       ],
       "vectorDelta": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8,
-        "laning": -8,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": 6,
-        "teamfight": -9.5,
-        "laning": -2,
+        "survivability": 5.5,
+        "teamfight": -2,
+        "laning": 4.5,
         "siege": 0,
-        "utility": 62
+        "utility": 26
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3118,13 +3200,14 @@
     },
     {
       "version": "7.41b",
-      "date": "2026-06-14T21:53:54.896Z",
+      "date": "2026-06-17T18:07:14.964Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Magic Resistance decreased from +20% to +15%",
+          "originalSource": "Level 10 Talent Magic Resistance decreased from +20% to +15%",
           "indentLevel": 1,
           "metric": "Level 10 Talent Magic Resistance",
           "changeType": "DECREASED",
@@ -3154,6 +3237,7 @@
           "entityName": "Techies",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Blast Off! Damage decreased from +200 to +175",
+          "originalSource": "Level 15 Talent Blast Off! Damage decreased from +200 to +175",
           "indentLevel": 1,
           "metric": "Level 15 Talent Blast Off! Damage",
           "changeType": "DECREASED",
@@ -3181,13 +3265,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": 6,
-        "teamfight": -9.5,
-        "laning": -2,
+        "survivability": 5.5,
+        "teamfight": -2,
+        "laning": 4.5,
         "siege": 0,
-        "utility": 62
+        "utility": 26
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3200,12 +3284,13 @@
     },
     {
       "version": "7.41c",
-      "date": "2026-06-14T21:53:54.902Z",
+      "date": "2026-06-17T18:07:14.966Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "rawNote": "Base Mana Regen decreased by 0.5",
+          "originalSource": "Base Mana Regen decreased by 0.5",
           "indentLevel": 1,
           "metric": "Base Mana Regen",
           "changeType": "DECREASED",
@@ -3233,6 +3318,7 @@
           "category": "hero",
           "entityName": "Techies",
           "rawNote": "Intelligence gain decreased from 3.0 to 2.7",
+          "originalSource": "Intelligence gain decreased from 3.0 to 2.7",
           "indentLevel": 1,
           "metric": "Intelligence gain",
           "changeType": "DECREASED",
@@ -3261,6 +3347,7 @@
           "category": "hero",
           "entityName": "Techies",
           "rawNote": "Damage gain per level decreased from 3.3 to 3.2",
+          "originalSource": "Damage gain per level decreased from 3.3 to 3.2",
           "indentLevel": 2,
           "metric": "Damage gain per level",
           "changeType": "DECREASED",
@@ -3290,6 +3377,7 @@
           "entityName": "Techies",
           "subEntityName": "M.A.D.",
           "rawNote": "Mana Pool as Regen rescaled from 0.08% + 0.02% per level to 0.1% + 0.01% per level",
+          "originalSource": "Mana Pool as Regen rescaled from 0.08% + 0.02% per level to 0.1% + 0.01% per level",
           "indentLevel": 1,
           "metric": "Mana Pool as Regen",
           "changeType": "RESCALE",
@@ -3320,6 +3408,7 @@
           "entityName": "Techies",
           "subEntityName": "Reactive Tazer",
           "rawNote": "Explosion Radius decreased from 450 to 400",
+          "originalSource": "Explosion Radius decreased from 450 to 400",
           "indentLevel": 1,
           "metric": "Explosion Radius",
           "changeType": "DECREASED",
@@ -3348,13 +3437,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": 6,
-        "teamfight": -9.5,
-        "laning": -2,
+        "survivability": 5.5,
+        "teamfight": -2,
+        "laning": 4.5,
         "siege": 0,
-        "utility": 62
+        "utility": 26
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3367,13 +3456,14 @@
     },
     {
       "version": "7.41d",
-      "date": "2026-06-14T21:53:54.908Z",
+      "date": "2026-06-17T18:07:14.969Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Techies",
           "subEntityName": "Reactive Tazer",
           "rawNote": "Disarm duration decreased from 2.4/2.7/3/3.3s to 2.25/2.5/2.75/3s",
+          "originalSource": "Disarm duration decreased from 2.4/2.7/3/3.3s to 2.25/2.5/2.75/3s",
           "indentLevel": 1,
           "metric": "Disarm duration",
           "changeType": "DECREASED",
@@ -3404,6 +3494,7 @@
           "entityName": "Techies",
           "subEntityName": "Proximity Mines",
           "rawNote": "Debuff Duration decreased from 5s to 4s",
+          "originalSource": "Debuff Duration decreased from 5s to 4s",
           "indentLevel": 1,
           "metric": "Debuff Duration",
           "changeType": "DECREASED",
@@ -3432,42 +3523,54 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
-        "survivability": 6,
-        "teamfight": -9.5,
-        "laning": -2,
+        "survivability": 5.5,
+        "teamfight": -2,
+        "laning": 4.5,
         "siege": 0,
-        "utility": 62
+        "utility": 26
       },
       "winrates": {
         "HERALD": {
-          "winrate": 0.5121,
-          "matchCount": 36847
+          "winrate": 0.509,
+          "matchCount": 32288
         },
         "GUARDIAN": {
-          "winrate": 0.5117,
-          "matchCount": 65075
+          "winrate": 0.5147,
+          "matchCount": 58553
         },
         "CRUSADER": {
-          "winrate": 0.5073,
-          "matchCount": 67111
+          "winrate": 0.5115,
+          "matchCount": 59729
         },
         "ARCHON": {
-          "winrate": 0.5057,
-          "matchCount": 57983
+          "winrate": 0.5065,
+          "matchCount": 51718
         },
         "LEGEND": {
-          "winrate": 0.5024,
-          "matchCount": 43568
+          "winrate": 0.505,
+          "matchCount": 38680
         },
         "ANCIENT": {
-          "winrate": 0.5009,
-          "matchCount": 28758
+          "winrate": 0.5052,
+          "matchCount": 25859
         },
         "DIVINE": {
-          "winrate": 0.4998,
-          "matchCount": 30788
+          "winrate": 0.5024,
+          "matchCount": 27326
+        },
+        "IMMORTAL": {
+          "winrate": 0,
+          "matchCount": 0
+        },
+        "PRO": {
+          "winrate": 0.3636,
+          "matchCount": 11
+        },
+        "GLOBAL_BLEND": {
+          "winrate": 0.5021,
+          "matchCount": 27337
         }
       },
       "temporalAssessment": null

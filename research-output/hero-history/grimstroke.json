@@ -3,13 +3,14 @@
   "history": [
     {
       "version": "7.33",
-      "date": "2026-06-14T21:53:54.726Z",
+      "date": "2026-06-17T18:07:14.843Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Grimstroke",
           "subEntityName": "Ink Swell",
-          "rawNote": "Max Stun Duration decreased from 1.1/1.9/2.7/3.5s to 1/1.6/2.2/2.8s ",
+          "rawNote": "Max Stun Duration decreased from 1.1/1.9/2.7/3.5s to 1/1.6/2.2/2.8s",
+          "originalSource": "Max Stun Duration decreased from 1.1/1.9/2.7/3.5s to 1/1.6/2.2/2.8s ",
           "indentLevel": 1,
           "metric": "Max Stun Duration",
           "changeType": "DECREASED",
@@ -40,6 +41,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Ink Swell",
           "rawNote": "Movement Speed Bonus increased from 12/14/16/18% to 20%",
+          "originalSource": "Movement Speed Bonus increased from 12/14/16/18% to 20%",
           "indentLevel": 1,
           "metric": "Movement Speed Bonus",
           "changeType": "INCREASED",
@@ -70,6 +72,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Ink Swell",
           "rawNote": "Cooldown decreased from 30/26/22/18s to 27/24/21/18s",
+          "originalSource": "Cooldown decreased from 30/26/22/18s to 27/24/21/18s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "DECREASED",
@@ -100,6 +103,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Dark Portrait",
           "rawNote": "Illusion is now a Strong Illusion",
+          "originalSource": "Illusion is now a Strong Illusion",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -107,19 +111,20 @@
             "subEntityId": 7852
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DISPEL_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -127,6 +132,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Dark Portrait",
           "rawNote": "Spell Immunity replaced with Debuff Immunity with 95% Magic Resistance",
+          "originalSource": "Spell Immunity replaced with Debuff Immunity with 95% Magic Resistance",
           "indentLevel": 1,
           "metric": "Spell Immunity",
           "changeType": "REWORK",
@@ -156,6 +162,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Phantom's Embrace DPS increased from +50 to +65",
+          "originalSource": "Level 10 Talent Phantom's Embrace DPS increased from +50 to +65",
           "indentLevel": 1,
           "metric": "Level 10 Talent Phantom's Embrace DPS",
           "changeType": "INCREASED",
@@ -185,6 +192,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent Stroke of Fate Damage increased from +50% to +60%",
+          "originalSource": "Level 25 Talent Stroke of Fate Damage increased from +50% to +60%",
           "indentLevel": 1,
           "metric": "Level 25 Talent Stroke of Fate Damage",
           "changeType": "INCREASED",
@@ -210,12 +218,20 @@
           }
         }
       ],
-      "vectorDelta": null,
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 1,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -225,14 +241,14 @@
     },
     {
       "version": "7.33b",
-      "date": "2026-06-14T21:53:54.731Z",
+      "date": "2026-06-17T18:07:14.846Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -271,14 +287,14 @@
     },
     {
       "version": "7.33c",
-      "date": "2026-06-14T21:53:54.736Z",
+      "date": "2026-06-17T18:07:14.849Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -317,14 +333,14 @@
     },
     {
       "version": "7.33d",
-      "date": "2026-06-14T21:53:54.740Z",
+      "date": "2026-06-17T18:07:14.852Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -363,14 +379,14 @@
     },
     {
       "version": "7.33e",
-      "date": "2026-06-14T21:53:54.744Z",
+      "date": "2026-06-17T18:07:14.854Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -409,13 +425,14 @@
     },
     {
       "version": "7.34",
-      "date": "2026-06-14T21:53:54.750Z",
+      "date": "2026-06-17T18:07:14.859Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Grimstroke",
           "subEntityName": "Phantom's Embrace",
           "rawNote": "Now refreshes when the phantom reaches Grimstroke rather than the moment Rend Damage is dealt",
+          "originalSource": "Now refreshes when the phantom reaches Grimstroke rather than the moment Rend Damage is dealt",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -443,6 +460,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Phantom's Embrace",
           "rawNote": "Projectile Speed increased from 850 to 1150",
+          "originalSource": "Projectile Speed increased from 850 to 1150",
           "indentLevel": 1,
           "metric": "Projectile Speed",
           "changeType": "INCREASED",
@@ -473,6 +491,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Ink Swell",
           "rawNote": "Buff Duration increased from 3s to 5s",
+          "originalSource": "Buff Duration increased from 3s to 5s",
           "indentLevel": 1,
           "metric": "Buff Duration",
           "changeType": "INCREASED",
@@ -503,6 +522,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Ink Swell",
           "rawNote": "Can now be detonated via Ink Explosion sub-ability at any time during its effect to end it with an AoE explosion",
+          "originalSource": "Can now be detonated via Ink Explosion sub-ability at any time during its effect to end it with an AoE explosion",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -510,9 +530,9 @@
             "subEntityId": 8007
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -522,7 +542,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -530,6 +551,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Ink Swell",
           "rawNote": "The sub-ability replaces Ink Swell for the duration of the buff. Cooldown starts upon cast",
+          "originalSource": "The sub-ability replaces Ink Swell for the duration of the buff. Cooldown starts upon cast",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -537,9 +559,9 @@
             "subEntityId": 8007
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -549,7 +571,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -557,6 +580,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Ink Swell",
           "rawNote": "Max Stun Duration increased from 1/1.6/2.2/2.8s to 1.3/1.8/2.3/2.8s",
+          "originalSource": "Max Stun Duration increased from 1/1.6/2.2/2.8s to 1.3/1.8/2.3/2.8s",
           "indentLevel": 1,
           "metric": "Max Stun Duration",
           "changeType": "INCREASED",
@@ -587,6 +611,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Ink Swell",
           "rawNote": "Cast Range increased from 400/525/650/775 to 500/600/700/800",
+          "originalSource": "Cast Range increased from 400/525/650/775 to 500/600/700/800",
           "indentLevel": 1,
           "metric": "Cast Range",
           "changeType": "INCREASED",
@@ -617,6 +642,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Soulbind",
           "rawNote": "Now fully pierces debuff immunity",
+          "originalSource": "Now fully pierces debuff immunity",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -647,33 +673,33 @@
         "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {},
       "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.34b",
-      "date": "2026-06-14T21:53:54.755Z",
+      "date": "2026-06-17T18:07:14.863Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "HERALD": {
@@ -709,17 +735,17 @@
     },
     {
       "version": "7.34c",
-      "date": "2026-06-14T21:53:54.759Z",
+      "date": "2026-06-17T18:07:14.868Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "HERALD": {
@@ -755,13 +781,14 @@
     },
     {
       "version": "7.34d",
-      "date": "2026-06-14T21:53:54.764Z",
+      "date": "2026-06-17T18:07:14.871Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Grimstroke",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Ink Swell Movement Speed decreased from +16% to +14%",
+          "originalSource": "Level 15 Talent Ink Swell Movement Speed decreased from +16% to +14%",
           "indentLevel": 1,
           "metric": "Level 15 Talent Ink Swell Movement Speed",
           "changeType": "DECREASED",
@@ -792,10 +819,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "HERALD": {
@@ -831,13 +858,14 @@
     },
     {
       "version": "7.34e",
-      "date": "2026-06-14T21:53:54.768Z",
+      "date": "2026-06-17T18:07:14.873Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Grimstroke",
           "subEntityName": "Ink Swell",
           "rawNote": "Aghanim's Shard Spell Lifesteal now has a 20% penalty against creeps",
+          "originalSource": "Aghanim's Shard Spell Lifesteal now has a 20% penalty against creeps",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -845,19 +873,20 @@
             "subEntityId": 8007
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "SPELL_IMMUNITY_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 9,
+              "Guardian": 9,
+              "Crusader": 9,
+              "Archon": 9,
+              "Legend": 9,
+              "Ancient": 9,
+              "Divine": 9
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         }
       ],
@@ -866,10 +895,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "HERALD": {
@@ -905,13 +934,14 @@
     },
     {
       "version": "7.35",
-      "date": "2026-06-14T21:53:54.772Z",
+      "date": "2026-06-17T18:07:14.877Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Grimstroke",
           "subEntityName": "Ink Swell",
           "rawNote": "Aghanim's Shard Damage/Heal bonus decreased from 40% to 30%",
+          "originalSource": "Aghanim's Shard Damage/Heal bonus decreased from 40% to 30%",
           "indentLevel": 1,
           "metric": "Aghanim's Shard Damage/Heal bonus",
           "changeType": "DECREASED",
@@ -942,6 +972,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Soulbind",
           "rawNote": "Cooldown increased from 70/60/50s to 70/65/60s",
+          "originalSource": "Cooldown increased from 70/60/50s to 70/65/60s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "INCREASED",
@@ -972,6 +1003,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Ink Swell Cooldown Reduction decreased from 5s to 4s",
+          "originalSource": "Level 10 Talent Ink Swell Cooldown Reduction decreased from 5s to 4s",
           "indentLevel": 1,
           "metric": "Level 10 Talent Ink Swell Cooldown Reduction",
           "changeType": "DECREASED",
@@ -1001,6 +1033,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Ink Swell Movement Speed bonus decreased from +14% to +12%",
+          "originalSource": "Level 15 Talent Ink Swell Movement Speed bonus decreased from +14% to +12%",
           "indentLevel": 1,
           "metric": "Level 15 Talent Ink Swell Movement Speed bonus",
           "changeType": "DECREASED",
@@ -1030,6 +1063,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent Stroke of Fate Damage increased from +60% to +75%",
+          "originalSource": "Level 25 Talent Stroke of Fate Damage increased from +60% to +75%",
           "indentLevel": 1,
           "metric": "Level 25 Talent Stroke of Fate Damage",
           "changeType": "INCREASED",
@@ -1059,7 +1093,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1068,10 +1102,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1084,17 +1118,17 @@
     },
     {
       "version": "7.35b",
-      "date": "2026-06-14T21:53:54.775Z",
+      "date": "2026-06-17T18:07:14.879Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1107,17 +1141,17 @@
     },
     {
       "version": "7.35c",
-      "date": "2026-06-14T21:53:54.782Z",
+      "date": "2026-06-17T18:07:14.882Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1130,17 +1164,17 @@
     },
     {
       "version": "7.35d",
-      "date": "2026-06-14T21:53:54.785Z",
+      "date": "2026-06-17T18:07:14.884Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1153,13 +1187,14 @@
     },
     {
       "version": "7.36",
-      "date": "2026-06-14T21:53:54.791Z",
+      "date": "2026-06-17T18:07:14.890Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Grimstroke",
           "subEntityName": "Stroke of Fate",
           "rawNote": "Now applies Ink Trail effect on hit",
+          "originalSource": "Now applies Ink Trail effect on hit",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -1187,6 +1222,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Phantom's Embrace",
           "rawNote": "The phantom is no longer disjointable while returning to Grimstroke",
+          "originalSource": "The phantom is no longer disjointable while returning to Grimstroke",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1214,6 +1250,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Ink Swell",
           "rawNote": "Buff duration decreased from 5s to 3s",
+          "originalSource": "Buff duration decreased from 5s to 3s",
           "indentLevel": 1,
           "metric": "Buff duration",
           "changeType": "DECREASED",
@@ -1244,6 +1281,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Ink Swell",
           "rawNote": "No longer can be manually triggered by default",
+          "originalSource": "No longer can be manually triggered by default",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1271,6 +1309,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +1000 Stroke of Fate Cast Range replaced with +75% Stroke of Fate Damage",
+          "originalSource": "Level 20 Talent +1000 Stroke of Fate Cast Range replaced with +75% Stroke of Fate Damage",
           "indentLevel": 1,
           "metric": "Level 20 Talent +1000 Stroke of Fate Cast Range",
           "changeType": "REWORK",
@@ -1299,6 +1338,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent +75% Stroke of Fate Damage replaced with +70% Stroke of Fate Speed and Travel Range",
+          "originalSource": "Level 25 Talent +75% Stroke of Fate Damage replaced with +70% Stroke of Fate Speed and Travel Range",
           "indentLevel": 1,
           "metric": "Level 25 Talent +75% Stroke of Fate Damage",
           "changeType": "REWORK",
@@ -1328,10 +1368,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1344,17 +1384,17 @@
     },
     {
       "version": "7.36a",
-      "date": "2026-06-14T21:53:54.794Z",
+      "date": "2026-06-17T18:07:14.892Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1363,21 +1403,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.36b",
-      "date": "2026-06-14T21:53:54.797Z",
+      "date": "2026-06-17T18:07:14.896Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1390,17 +1430,17 @@
     },
     {
       "version": "7.36c",
-      "date": "2026-06-14T21:53:54.800Z",
+      "date": "2026-06-17T18:07:14.898Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1413,17 +1453,17 @@
     },
     {
       "version": "7.37",
-      "date": "2026-06-14T21:53:54.805Z",
+      "date": "2026-06-17T18:07:14.902Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1436,17 +1476,17 @@
     },
     {
       "version": "7.37b",
-      "date": "2026-06-14T21:53:54.807Z",
+      "date": "2026-06-17T18:07:14.904Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1459,17 +1499,17 @@
     },
     {
       "version": "7.37c",
-      "date": "2026-06-14T21:53:54.810Z",
+      "date": "2026-06-17T18:07:14.907Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1482,13 +1522,14 @@
     },
     {
       "version": "7.37d",
-      "date": "2026-06-14T21:53:54.813Z",
+      "date": "2026-06-17T18:07:14.909Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Grimstroke",
           "subEntityName": "Ink Swell",
           "rawNote": "Ink Tendrils DPS increased from 25/40/55/70 to 30/45/60/75",
+          "originalSource": "Ink Tendrils DPS increased from 25/40/55/70 to 30/45/60/75",
           "indentLevel": 1,
           "metric": "Ink Tendrils DPS",
           "changeType": "INCREASED",
@@ -1519,6 +1560,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Stroke of Fate Damage increased from +75% to +80%",
+          "originalSource": "Level 20 Talent Stroke of Fate Damage increased from +75% to +80%",
           "indentLevel": 1,
           "metric": "Level 20 Talent Stroke of Fate Damage",
           "changeType": "INCREASED",
@@ -1549,10 +1591,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1565,17 +1607,17 @@
     },
     {
       "version": "7.37e",
-      "date": "2026-06-14T21:53:54.815Z",
+      "date": "2026-06-17T18:07:14.912Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1588,13 +1630,14 @@
     },
     {
       "version": "7.38",
-      "date": "2026-06-14T21:53:54.824Z",
+      "date": "2026-06-17T18:07:14.919Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Grimstroke",
           "subEntityName": "Ink Swell",
           "rawNote": "Aghanim's Shard no longer applies a strong dispel when Ink Swell expires",
+          "originalSource": "Aghanim's Shard no longer applies a strong dispel when Ink Swell expires",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1622,6 +1665,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Ink Swell",
           "rawNote": "Aghanim's Shard now applies a basic dispel when Ink Swell is cast",
+          "originalSource": "Aghanim's Shard now applies a basic dispel when Ink Swell is cast",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -1642,7 +1686,7 @@
               "Divine": 8
             },
             "confidenceScore": 0.95,
-            "reasoning": "Matches semantic pattern: \"applies a basic dispel\""
+            "reasoning": "Matches exact semantic pattern: \"applies a basic dispel\""
           }
         },
         {
@@ -1650,6 +1694,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Ink Swell",
           "rawNote": "Aghanim's Shard Bonus damage increased from 30% to 40%",
+          "originalSource": "Aghanim's Shard Bonus damage increased from 30% to 40%",
           "indentLevel": 1,
           "metric": "Aghanim's Shard Bonus damage",
           "changeType": "INCREASED",
@@ -1680,6 +1725,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Ink Swell",
           "rawNote": "Aghanim's Shard Heal increased from 30% to 40%",
+          "originalSource": "Aghanim's Shard Heal increased from 30% to 40%",
           "indentLevel": 1,
           "metric": "Aghanim's Shard Heal",
           "changeType": "INCREASED",
@@ -1711,10 +1757,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1723,21 +1769,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": "Net Gain"
+      "temporalAssessment": null
     },
     {
       "version": "7.38b",
-      "date": "2026-06-14T21:53:54.827Z",
+      "date": "2026-06-17T18:07:14.922Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1750,17 +1796,17 @@
     },
     {
       "version": "7.38c",
-      "date": "2026-06-14T21:53:54.830Z",
+      "date": "2026-06-17T18:07:14.924Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1773,13 +1819,14 @@
     },
     {
       "version": "7.39",
-      "date": "2026-06-14T21:53:54.836Z",
+      "date": "2026-06-17T18:07:14.928Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Grimstroke",
           "subEntityName": "Stroke of Fate",
           "rawNote": "Point Vector Target behavior, previously exclusive to Fine Art facet, is now enabled by default",
+          "originalSource": "Point Vector Target behavior, previously exclusive to Fine Art facet, is now enabled by default",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -1787,26 +1834,28 @@
             "subEntityId": 8000
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "TARGETING_RULE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
           "category": "hero",
           "entityName": "Grimstroke",
           "subEntityName": "Stroke of Fate",
-          "rawNote": "20/30/40/50 bonus damage per unit replaced with separate values for heroes and creeps: 20/40/60/80 per hero and 10/20/30/40 per creep ",
+          "rawNote": "20/30/40/50 bonus damage per unit replaced with separate values for heroes and creeps: 20/40/60/80 per hero and 10/20/30/40 per creep",
+          "originalSource": "20/30/40/50 bonus damage per unit replaced with separate values for heroes and creeps: 20/40/60/80 per hero and 10/20/30/40 per creep ",
           "indentLevel": 1,
           "metric": "20/30/40/50 bonus damage per unit",
           "changeType": "REWORK",
@@ -1835,7 +1884,8 @@
           "category": "hero",
           "entityName": "Grimstroke",
           "subEntityName": "Soulbind",
-          "rawNote": "If the debuff ends on the primary target early due to status resistance, it will also be destroyed on the secondary target ",
+          "rawNote": "If the debuff ends on the primary target early due to status resistance, it will also be destroyed on the secondary target",
+          "originalSource": "If the debuff ends on the primary target early due to status resistance, it will also be destroyed on the secondary target ",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -1843,9 +1893,9 @@
             "subEntityId": 6491
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DAMAGE_INTERACTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -1855,7 +1905,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         }
       ],
@@ -1864,10 +1915,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1880,17 +1931,17 @@
     },
     {
       "version": "7.39b",
-      "date": "2026-06-14T21:53:54.840Z",
+      "date": "2026-06-17T18:07:14.931Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1903,17 +1954,17 @@
     },
     {
       "version": "7.39c",
-      "date": "2026-06-14T21:53:54.844Z",
+      "date": "2026-06-17T18:07:14.933Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1926,13 +1977,14 @@
     },
     {
       "version": "7.39d",
-      "date": "2026-06-14T21:53:54.848Z",
+      "date": "2026-06-17T18:07:14.937Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Grimstroke",
           "subEntityName": "Phantom's Embrace",
           "rawNote": "Cooldown decreased from 36/30/24/18s to 30/26/22/18s",
+          "originalSource": "Cooldown decreased from 36/30/24/18s to 30/26/22/18s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "DECREASED",
@@ -1963,6 +2015,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Ink Swell",
           "rawNote": "Max Stun Duration increased from 1.3/1.8/2.3/2.8s to 1.6/2/2.4/2.8s",
+          "originalSource": "Max Stun Duration increased from 1.3/1.8/2.3/2.8s to 1.6/2/2.4/2.8s",
           "indentLevel": 1,
           "metric": "Max Stun Duration",
           "changeType": "INCREASED",
@@ -1993,7 +2046,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1.5,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -2002,10 +2055,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2014,21 +2067,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.39e",
-      "date": "2026-06-14T21:53:54.851Z",
+      "date": "2026-06-17T18:07:14.940Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2041,13 +2094,14 @@
     },
     {
       "version": "7.40",
-      "date": "2026-06-14T21:53:54.859Z",
+      "date": "2026-06-17T18:07:14.945Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Grimstroke",
           "subEntityName": "Phantom's Embrace",
           "rawNote": "Cooldown is now also refreshed if the phantom's target dies before the phantom latches to it",
+          "originalSource": "Cooldown is now also refreshed if the phantom's target dies before the phantom latches to it",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2075,6 +2129,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Soulbind",
           "rawNote": "Ability can now be reflected",
+          "originalSource": "Ability can now be reflected",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2082,9 +2137,9 @@
             "subEntityId": 6491
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -2094,7 +2149,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2102,6 +2158,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Soulbind",
           "rawNote": "Reflected spells now get casted onto both units affected by Soulbind",
+          "originalSource": "Reflected spells now get casted onto both units affected by Soulbind",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2109,19 +2166,20 @@
             "subEntityId": 6491
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "SPELL_IMMUNITY_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 9,
+              "Guardian": 9,
+              "Crusader": 9,
+              "Archon": 9,
+              "Legend": 9,
+              "Ancient": 9,
+              "Divine": 9
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2129,6 +2187,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Dark Portrait",
           "rawNote": "Illusion Outgoing Damage decreased from 150% to 125%",
+          "originalSource": "Illusion Outgoing Damage decreased from 150% to 125%",
           "indentLevel": 1,
           "metric": "Illusion Outgoing Damage",
           "changeType": "DECREASED",
@@ -2159,6 +2218,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Dark Portrait",
           "rawNote": "Illusion Damage Taken decreased from 350% to 275%",
+          "originalSource": "Illusion Damage Taken decreased from 350% to 275%",
           "indentLevel": 1,
           "metric": "Illusion Damage Taken",
           "changeType": "DECREASED",
@@ -2190,10 +2250,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2206,17 +2266,17 @@
     },
     {
       "version": "7.40b",
-      "date": "2026-06-14T21:53:54.866Z",
+      "date": "2026-06-17T18:07:14.948Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2229,12 +2289,13 @@
     },
     {
       "version": "7.40c",
-      "date": "2026-06-14T21:53:54.873Z",
+      "date": "2026-06-17T18:07:14.950Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Grimstroke",
           "rawNote": "Base damage increased by 1",
+          "originalSource": "Base damage increased by 1",
           "indentLevel": 1,
           "metric": "Base damage",
           "changeType": "INCREASED",
@@ -2262,6 +2323,7 @@
           "category": "hero",
           "entityName": "Grimstroke",
           "rawNote": "Damage at level 1 decreased from 46–50 to 47–51",
+          "originalSource": "Damage at level 1 decreased from 46–50 to 47–51",
           "indentLevel": 1,
           "metric": "Damage at level 1",
           "changeType": "DECREASED",
@@ -2291,6 +2353,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Ink Swell",
           "rawNote": "Cast Range increased from 500/600/700/800 to 650/700/750/800",
+          "originalSource": "Cast Range increased from 500/600/700/800 to 650/700/750/800",
           "indentLevel": 1,
           "metric": "Cast Range",
           "changeType": "INCREASED",
@@ -2321,6 +2384,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Ink Swell Movement Speed increased from +12% to +15%",
+          "originalSource": "Level 15 Talent Ink Swell Movement Speed increased from +12% to +15%",
           "indentLevel": 1,
           "metric": "Level 15 Talent Ink Swell Movement Speed",
           "changeType": "INCREASED",
@@ -2353,16 +2417,16 @@
         "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 15
+        "utility": 3
       },
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2371,17 +2435,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.41",
-      "date": "2026-06-14T21:53:54.887Z",
+      "date": "2026-06-17T18:07:14.959Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Grimstroke",
           "subEntityName": "Ink Trail",
           "rawNote": "Now also applied when an enemy hero is affected by any of Grimstroke's abilities",
+          "originalSource": "Now also applied when an enemy hero is affected by any of Grimstroke's abilities",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2409,6 +2474,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Ink Trail",
           "rawNote": "Now also applied by attacks from Grimstroke's illusions (including Dark Portrait)",
+          "originalSource": "Now also applied by attacks from Grimstroke's illusions (including Dark Portrait)",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2436,6 +2502,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Ink Trail",
           "rawNote": "Grimstroke now takes 5% + 0.5% per level less damage from enemies affected by Ink Trail",
+          "originalSource": "Grimstroke now takes 5% + 0.5% per level less damage from enemies affected by Ink Trail",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2443,19 +2510,20 @@
             "subEntityId": 1414
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ROSHAN_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2463,6 +2531,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Stroke of Fate",
           "rawNote": "Can now be put on alt-cast to send the stroke straight",
+          "originalSource": "Can now be put on alt-cast to send the stroke straight",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2491,10 +2560,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2507,17 +2576,17 @@
     },
     {
       "version": "7.41a",
-      "date": "2026-06-14T21:53:54.892Z",
+      "date": "2026-06-17T18:07:14.961Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2530,17 +2599,17 @@
     },
     {
       "version": "7.41b",
-      "date": "2026-06-14T21:53:54.896Z",
+      "date": "2026-06-17T18:07:14.964Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2553,17 +2622,17 @@
     },
     {
       "version": "7.41c",
-      "date": "2026-06-14T21:53:54.902Z",
+      "date": "2026-06-17T18:07:14.966Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2576,13 +2645,14 @@
     },
     {
       "version": "7.41d",
-      "date": "2026-06-14T21:53:54.908Z",
+      "date": "2026-06-17T18:07:14.969Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Grimstroke",
           "subEntityName": "Dark Portrait",
           "rawNote": "Magic Resistance decreased from 95% to 90%",
+          "originalSource": "Magic Resistance decreased from 95% to 90%",
           "indentLevel": 1,
           "metric": "Magic Resistance",
           "changeType": "DECREASED",
@@ -2613,6 +2683,7 @@
           "entityName": "Grimstroke",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Attacks to Destroy Phantom decreased from +3 to +2",
+          "originalSource": "Level 20 Talent Attacks to Destroy Phantom decreased from +3 to +2",
           "indentLevel": 1,
           "metric": "Level 20 Talent Attacks to Destroy Phantom",
           "changeType": "DECREASED",
@@ -2643,39 +2714,51 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
-        "utility": 30
+        "utility": 6
       },
       "winrates": {
         "HERALD": {
-          "winrate": 0.5091,
-          "matchCount": 13744
+          "winrate": 0.5108,
+          "matchCount": 12188
         },
         "GUARDIAN": {
-          "winrate": 0.5118,
-          "matchCount": 29052
+          "winrate": 0.5125,
+          "matchCount": 26301
         },
         "CRUSADER": {
-          "winrate": 0.5171,
-          "matchCount": 35209
+          "winrate": 0.5185,
+          "matchCount": 32168
         },
         "ARCHON": {
-          "winrate": 0.5219,
-          "matchCount": 34000
+          "winrate": 0.5291,
+          "matchCount": 31388
         },
         "LEGEND": {
-          "winrate": 0.5201,
-          "matchCount": 27681
+          "winrate": 0.523,
+          "matchCount": 25209
         },
         "ANCIENT": {
-          "winrate": 0.5237,
-          "matchCount": 19332
+          "winrate": 0.5277,
+          "matchCount": 17936
         },
         "DIVINE": {
-          "winrate": 0.5203,
-          "matchCount": 22314
+          "winrate": 0.5233,
+          "matchCount": 20838
+        },
+        "IMMORTAL": {
+          "winrate": 0,
+          "matchCount": 0
+        },
+        "PRO": {
+          "winrate": 0.8,
+          "matchCount": 5
+        },
+        "GLOBAL_BLEND": {
+          "winrate": 0.5236,
+          "matchCount": 20843
         }
       },
       "temporalAssessment": null

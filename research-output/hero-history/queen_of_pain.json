@@ -3,13 +3,14 @@
   "history": [
     {
       "version": "7.33",
-      "date": "2026-06-14T21:53:54.725Z",
+      "date": "2026-06-17T18:07:14.843Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Queen of Pain",
           "subEntityName": "Shadow Strike",
           "rawNote": "Aghanim's Scepter Scream of Pain emitted from Shadow Strike expiring now also damages the target",
+          "originalSource": "Aghanim's Scepter Scream of Pain emitted from Shadow Strike expiring now also damages the target",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -48,7 +49,7 @@
     },
     {
       "version": "7.33b",
-      "date": "2026-06-14T21:53:54.731Z",
+      "date": "2026-06-17T18:07:14.846Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -94,7 +95,7 @@
     },
     {
       "version": "7.33c",
-      "date": "2026-06-14T21:53:54.735Z",
+      "date": "2026-06-17T18:07:14.849Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -140,13 +141,14 @@
     },
     {
       "version": "7.33d",
-      "date": "2026-06-14T21:53:54.740Z",
+      "date": "2026-06-17T18:07:14.851Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Queen of Pain",
           "subEntityName": "Shadow Strike",
           "rawNote": "Aghanim's Scepter Initial Damage Bonus decreased from +80 to +50",
+          "originalSource": "Aghanim's Scepter Initial Damage Bonus decreased from +80 to +50",
           "indentLevel": 1,
           "metric": "Aghanim's Scepter Initial Damage Bonus",
           "changeType": "DECREASED",
@@ -177,6 +179,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Blink",
           "rawNote": "Mana Cost increased from 60 to 65",
+          "originalSource": "Mana Cost increased from 60 to 65",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "INCREASED",
@@ -207,6 +210,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Strength decreased from +11 to +8",
+          "originalSource": "Level 10 Talent Strength decreased from +11 to +8",
           "indentLevel": 1,
           "metric": "Level 10 Talent Strength",
           "changeType": "DECREASED",
@@ -236,6 +240,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Damage decreased from +20 to +15",
+          "originalSource": "Level 10 Talent Damage decreased from +20 to +15",
           "indentLevel": 1,
           "metric": "Level 10 Talent Damage",
           "changeType": "DECREASED",
@@ -265,6 +270,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Scream of Pain Damage decreased from +120 to +100",
+          "originalSource": "Level 20 Talent Scream of Pain Damage decreased from +120 to +100",
           "indentLevel": 1,
           "metric": "Level 20 Talent Scream of Pain Damage",
           "changeType": "DECREASED",
@@ -342,7 +348,7 @@
     },
     {
       "version": "7.33e",
-      "date": "2026-06-14T21:53:54.743Z",
+      "date": "2026-06-17T18:07:14.854Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -388,13 +394,14 @@
     },
     {
       "version": "7.34",
-      "date": "2026-06-14T21:53:54.750Z",
+      "date": "2026-06-17T18:07:14.859Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Queen of Pain",
           "subEntityName": "Shadow Strike",
           "rawNote": "Cooldown decreased from 16/12/8/4s to 13/10/7/4s",
+          "originalSource": "Cooldown decreased from 16/12/8/4s to 13/10/7/4s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "DECREASED",
@@ -425,6 +432,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Scream Of Pain",
           "rawNote": "Radius increased from 550 to 600",
+          "originalSource": "Radius increased from 550 to 600",
           "indentLevel": 1,
           "metric": "Radius",
           "changeType": "INCREASED",
@@ -455,6 +463,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Sonic Wave",
           "rawNote": "Damage increased from 310/430/550 to 350/500/650",
+          "originalSource": "Damage increased from 310/430/550 to 350/500/650",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "INCREASED",
@@ -485,6 +494,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Sonic Wave",
           "rawNote": "Damage now gets gradually applied over the 1.4s duration of the knockback",
+          "originalSource": "Damage now gets gradually applied over the 1.4s duration of the knockback",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -492,19 +502,20 @@
             "subEntityId": 5176
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ROSHAN_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -512,6 +523,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Sonic Wave",
           "rawNote": "Knockback is now undispellable",
+          "originalSource": "Knockback is now undispellable",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -519,19 +531,20 @@
             "subEntityId": 5176
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DISPEL_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -539,6 +552,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Sonic Wave",
           "rawNote": "Cooldown decreased from 110/100/90s to 110/95/80s",
+          "originalSource": "Cooldown decreased from 110/100/90s to 110/95/80s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "DECREASED",
@@ -566,20 +580,20 @@
         }
       ],
       "vectorDelta": {
-        "farming": 8,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 17,
-        "laning": 8,
+        "teamfight": 4,
+        "laning": 1,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": 7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 17,
-        "laning": 7,
+        "teamfight": 4,
+        "laning": 0,
         "siege": 0,
         "utility": -1
       },
@@ -588,15 +602,15 @@
     },
     {
       "version": "7.34b",
-      "date": "2026-06-14T21:53:54.754Z",
+      "date": "2026-06-17T18:07:14.863Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 17,
-        "laning": 7,
+        "teamfight": 4,
+        "laning": 0,
         "siege": 0,
         "utility": -1
       },
@@ -634,15 +648,15 @@
     },
     {
       "version": "7.34c",
-      "date": "2026-06-14T21:53:54.759Z",
+      "date": "2026-06-17T18:07:14.868Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 17,
-        "laning": 7,
+        "teamfight": 4,
+        "laning": 0,
         "siege": 0,
         "utility": -1
       },
@@ -680,15 +694,15 @@
     },
     {
       "version": "7.34d",
-      "date": "2026-06-14T21:53:54.764Z",
+      "date": "2026-06-17T18:07:14.870Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 17,
-        "laning": 7,
+        "teamfight": 4,
+        "laning": 0,
         "siege": 0,
         "utility": -1
       },
@@ -726,15 +740,15 @@
     },
     {
       "version": "7.34e",
-      "date": "2026-06-14T21:53:54.768Z",
+      "date": "2026-06-17T18:07:14.873Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 17,
-        "laning": 7,
+        "teamfight": 4,
+        "laning": 0,
         "siege": 0,
         "utility": -1
       },
@@ -772,13 +786,14 @@
     },
     {
       "version": "7.35",
-      "date": "2026-06-14T21:53:54.772Z",
+      "date": "2026-06-17T18:07:14.877Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Queen of Pain",
           "subEntityName": "Shadow Strike",
           "rawNote": "Aghanim's Scepter Radius decreased from 400 to 375",
+          "originalSource": "Aghanim's Scepter Radius decreased from 400 to 375",
           "indentLevel": 1,
           "metric": "Aghanim's Scepter Radius",
           "changeType": "DECREASED",
@@ -809,6 +824,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Scream Of Pain",
           "rawNote": "Mana Cost rescaled from 100/110/120/130 to 120",
+          "originalSource": "Mana Cost rescaled from 100/110/120/130 to 120",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "RESCALE",
@@ -839,6 +855,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent +8 Strength replaced with +10 Shadow Strike Heal Per Tick",
+          "originalSource": "Level 10 Talent +8 Strength replaced with +10 Shadow Strike Heal Per Tick",
           "indentLevel": 1,
           "metric": "Level 10 Talent +8 Strength",
           "changeType": "REWORK",
@@ -867,6 +884,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Damage increased from +15 to +20",
+          "originalSource": "Level 10 Talent Damage increased from +15 to +20",
           "indentLevel": 1,
           "metric": "Level 10 Talent Damage",
           "changeType": "INCREASED",
@@ -896,6 +914,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Sonic Wave Cooldown Reduction increased from 40s to 45s",
+          "originalSource": "Level 20 Talent Sonic Wave Cooldown Reduction increased from 40s to 45s",
           "indentLevel": 1,
           "metric": "Level 20 Talent Sonic Wave Cooldown Reduction",
           "changeType": "INCREASED",
@@ -925,6 +944,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent Sonic Wave Damage increased from +200 to +250",
+          "originalSource": "Level 25 Talent Sonic Wave Damage increased from +200 to +250",
           "indentLevel": 1,
           "metric": "Level 25 Talent Sonic Wave Damage",
           "changeType": "INCREASED",
@@ -952,11 +972,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 17,
-        "laning": 7,
+        "teamfight": 4,
+        "laning": 0,
         "siege": 0,
         "utility": -1
       },
@@ -971,15 +991,15 @@
     },
     {
       "version": "7.35b",
-      "date": "2026-06-14T21:53:54.775Z",
+      "date": "2026-06-17T18:07:14.879Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 17,
-        "laning": 7,
+        "teamfight": 4,
+        "laning": 0,
         "siege": 0,
         "utility": -1
       },
@@ -994,15 +1014,15 @@
     },
     {
       "version": "7.35c",
-      "date": "2026-06-14T21:53:54.782Z",
+      "date": "2026-06-17T18:07:14.881Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 17,
-        "laning": 7,
+        "teamfight": 4,
+        "laning": 0,
         "siege": 0,
         "utility": -1
       },
@@ -1017,15 +1037,15 @@
     },
     {
       "version": "7.35d",
-      "date": "2026-06-14T21:53:54.785Z",
+      "date": "2026-06-17T18:07:14.883Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 17,
-        "laning": 7,
+        "teamfight": 4,
+        "laning": 0,
         "siege": 0,
         "utility": -1
       },
@@ -1040,13 +1060,14 @@
     },
     {
       "version": "7.36",
-      "date": "2026-06-14T21:53:54.791Z",
+      "date": "2026-06-17T18:07:14.889Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Queen of Pain",
           "subEntityName": "Shadow Strike",
           "rawNote": "No longer heals per tick",
+          "originalSource": "No longer heals per tick",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1073,7 +1094,8 @@
           "category": "hero",
           "entityName": "Queen of Pain",
           "subEntityName": "Shadow Strike",
-          "rawNote": "Duration increased from 15s to 16s ",
+          "rawNote": "Duration increased from 15s to 16s",
+          "originalSource": "Duration increased from 15s to 16s ",
           "indentLevel": 1,
           "metric": "Duration",
           "changeType": "INCREASED",
@@ -1104,6 +1126,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Shadow Strike",
           "rawNote": "Mana Cost decreased from 125/135/145/155 to 125/130/135/140",
+          "originalSource": "Mana Cost decreased from 125/135/145/155 to 125/130/135/140",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "DECREASED",
@@ -1134,6 +1157,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Scream Of Pain",
           "rawNote": "Cooldown rescaled from 7s to 7.5/7/6.5/6s",
+          "originalSource": "Cooldown rescaled from 7s to 7.5/7/6.5/6s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "RESCALE",
@@ -1164,6 +1188,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent +10 Shadow Strike Heal Per Tick replaced with +8 Strength",
+          "originalSource": "Level 10 Talent +10 Shadow Strike Heal Per Tick replaced with +8 Strength",
           "indentLevel": 1,
           "metric": "Level 10 Talent +10 Shadow Strike Heal Per Tick",
           "changeType": "REWORK",
@@ -1192,6 +1217,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent +30 Attack Speed replaced with +40 Attack Speed against Shadow Striked units",
+          "originalSource": "Level 15 Talent +30 Attack Speed replaced with +40 Attack Speed against Shadow Striked units",
           "indentLevel": 1,
           "metric": "Level 15 Talent +30 Attack Speed",
           "changeType": "REWORK",
@@ -1220,6 +1246,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Shadow Strike Damage Interval increased from -0.7s to -1s",
+          "originalSource": "Level 15 Talent Shadow Strike Damage Interval increased from -0.7s to -1s",
           "indentLevel": 1,
           "metric": "Level 15 Talent Shadow Strike Damage Interval",
           "changeType": "INCREASED",
@@ -1249,19 +1276,19 @@
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
+        "teamfight": 1,
+        "laning": 1,
+        "siege": 0,
+        "utility": 3
+      },
+      "totalVector": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": 0,
         "teamfight": 5,
         "laning": 1,
         "siege": 0,
-        "utility": 11
-      },
-      "totalVector": {
-        "farming": 8,
-        "mobility": 0,
-        "survivability": 0,
-        "teamfight": 22,
-        "laning": 8,
-        "siege": 0,
-        "utility": 10
+        "utility": 2
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1274,17 +1301,17 @@
     },
     {
       "version": "7.36a",
-      "date": "2026-06-14T21:53:54.794Z",
+      "date": "2026-06-17T18:07:14.892Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 8,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 22,
-        "laning": 8,
+        "teamfight": 5,
+        "laning": 1,
         "siege": 0,
-        "utility": 10
+        "utility": 2
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1297,17 +1324,17 @@
     },
     {
       "version": "7.36b",
-      "date": "2026-06-14T21:53:54.797Z",
+      "date": "2026-06-17T18:07:14.896Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 8,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 22,
-        "laning": 8,
+        "teamfight": 5,
+        "laning": 1,
         "siege": 0,
-        "utility": 10
+        "utility": 2
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1320,17 +1347,17 @@
     },
     {
       "version": "7.36c",
-      "date": "2026-06-14T21:53:54.800Z",
+      "date": "2026-06-17T18:07:14.897Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 8,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 22,
-        "laning": 8,
+        "teamfight": 5,
+        "laning": 1,
         "siege": 0,
-        "utility": 10
+        "utility": 2
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1343,12 +1370,13 @@
     },
     {
       "version": "7.37",
-      "date": "2026-06-14T21:53:54.804Z",
+      "date": "2026-06-17T18:07:14.902Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Queen of Pain",
           "rawNote": "Base Strength increased from 18 to 20",
+          "originalSource": "Base Strength increased from 18 to 20",
           "indentLevel": 1,
           "metric": "Base Strength",
           "changeType": "INCREASED",
@@ -1378,6 +1406,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Shadow Strike",
           "rawNote": "Mana Cost decreased from 125/130/135/140 to 100/110/120/130",
+          "originalSource": "Mana Cost decreased from 125/130/135/140 to 100/110/120/130",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "DECREASED",
@@ -1408,6 +1437,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent +20 Damage replaced with +35 Attack Speed against Shadow Striked units",
+          "originalSource": "Level 10 Talent +20 Damage replaced with +35 Attack Speed against Shadow Striked units",
           "indentLevel": 1,
           "metric": "Level 10 Talent +20 Damage",
           "changeType": "REWORK",
@@ -1436,6 +1466,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent +40 Attack Speed against Shadow Striked units replaced with +30 Damage",
+          "originalSource": "Level 15 Talent +40 Attack Speed against Shadow Striked units replaced with +30 Damage",
           "indentLevel": 1,
           "metric": "Level 15 Talent +40 Attack Speed against Shadow Striked units",
           "changeType": "REWORK",
@@ -1470,13 +1501,13 @@
         "utility": 1
       },
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 22,
-        "laning": 9,
+        "teamfight": 5,
+        "laning": 2,
         "siege": 0,
-        "utility": 11
+        "utility": 3
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1489,13 +1520,14 @@
     },
     {
       "version": "7.37b",
-      "date": "2026-06-14T21:53:54.807Z",
+      "date": "2026-06-17T18:07:14.904Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Queen of Pain",
           "subEntityName": "Shadow Strike",
           "rawNote": "Cast Point improved from 0.4s to 0.3s",
+          "originalSource": "Cast Point improved from 0.4s to 0.3s",
           "indentLevel": 1,
           "metric": "Cast Point",
           "changeType": "INCREASED",
@@ -1529,16 +1561,16 @@
         "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": -16
+        "utility": -10
       },
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 22,
-        "laning": 9,
+        "teamfight": 5,
+        "laning": 2,
         "siege": 0,
-        "utility": -5
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1551,17 +1583,17 @@
     },
     {
       "version": "7.37c",
-      "date": "2026-06-14T21:53:54.809Z",
+      "date": "2026-06-17T18:07:14.906Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 22,
-        "laning": 9,
+        "teamfight": 5,
+        "laning": 2,
         "siege": 0,
-        "utility": -5
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1570,21 +1602,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.37d",
-      "date": "2026-06-14T21:53:54.812Z",
+      "date": "2026-06-17T18:07:14.908Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 22,
-        "laning": 9,
+        "teamfight": 5,
+        "laning": 2,
         "siege": 0,
-        "utility": -5
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1597,13 +1629,14 @@
     },
     {
       "version": "7.37e",
-      "date": "2026-06-14T21:53:54.815Z",
+      "date": "2026-06-17T18:07:14.912Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Queen of Pain",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Strength decreased from +8 to +7",
+          "originalSource": "Level 10 Talent Strength decreased from +8 to +7",
           "indentLevel": 1,
           "metric": "Level 10 Talent Strength",
           "changeType": "DECREASED",
@@ -1631,13 +1664,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 22,
-        "laning": 9,
+        "teamfight": 5,
+        "laning": 2,
         "siege": 0,
-        "utility": -5
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1650,13 +1683,14 @@
     },
     {
       "version": "7.38",
-      "date": "2026-06-14T21:53:54.824Z",
+      "date": "2026-06-17T18:07:14.919Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Queen of Pain",
           "subEntityName": "Succubus",
           "rawNote": "Now is an innate ability",
+          "originalSource": "Now is an innate ability",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -1684,6 +1718,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Succubus",
           "rawNote": "Now also makes all sources of Spell Lifesteal apply to Pure Damage",
+          "originalSource": "Now also makes all sources of Spell Lifesteal apply to Pure Damage",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -1711,6 +1746,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Succubus",
           "rawNote": "Spell Lifesteal decreased from 12-18% to 2-14%",
+          "originalSource": "Spell Lifesteal decreased from 12-18% to 2-14%",
           "indentLevel": 1,
           "metric": "Spell Lifesteal",
           "changeType": "DECREASED",
@@ -1741,6 +1777,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Shadow Strike",
           "rawNote": "Initial Damage increased from 30/60/90/120 to 50/80/110/140",
+          "originalSource": "Initial Damage increased from 30/60/90/120 to 50/80/110/140",
           "indentLevel": 1,
           "metric": "Initial Damage",
           "changeType": "INCREASED",
@@ -1771,6 +1808,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Shadow Strike",
           "rawNote": "Aghanim's Scepter no longer increases initial damage by 50",
+          "originalSource": "Aghanim's Scepter no longer increases initial damage by 50",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1796,13 +1834,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 22,
-        "laning": 9,
+        "teamfight": 5,
+        "laning": 2,
         "siege": 0,
-        "utility": -5
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1811,21 +1849,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": "Net Gain"
+      "temporalAssessment": null
     },
     {
       "version": "7.38b",
-      "date": "2026-06-14T21:53:54.826Z",
+      "date": "2026-06-17T18:07:14.921Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 22,
-        "laning": 9,
+        "teamfight": 5,
+        "laning": 2,
         "siege": 0,
-        "utility": -5
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1838,17 +1876,17 @@
     },
     {
       "version": "7.38c",
-      "date": "2026-06-14T21:53:54.830Z",
+      "date": "2026-06-17T18:07:14.924Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 22,
-        "laning": 9,
+        "teamfight": 5,
+        "laning": 2,
         "siege": 0,
-        "utility": -5
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1861,13 +1899,14 @@
     },
     {
       "version": "7.39",
-      "date": "2026-06-14T21:53:54.836Z",
+      "date": "2026-06-17T18:07:14.928Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Queen of Pain",
           "subEntityName": "Shadow Strike",
           "rawNote": "Movement Slow rescaled from 20/35/50/65% to 25/35/45/55%",
+          "originalSource": "Movement Slow rescaled from 20/35/50/65% to 25/35/45/55%",
           "indentLevel": 1,
           "metric": "Movement Slow",
           "changeType": "RESCALE",
@@ -1896,13 +1935,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 22,
-        "laning": 9,
+        "teamfight": 5,
+        "laning": 2,
         "siege": 0,
-        "utility": -5
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1915,17 +1954,17 @@
     },
     {
       "version": "7.39b",
-      "date": "2026-06-14T21:53:54.839Z",
+      "date": "2026-06-17T18:07:14.930Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 22,
-        "laning": 9,
+        "teamfight": 5,
+        "laning": 2,
         "siege": 0,
-        "utility": -5
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1938,17 +1977,17 @@
     },
     {
       "version": "7.39c",
-      "date": "2026-06-14T21:53:54.843Z",
+      "date": "2026-06-17T18:07:14.932Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 22,
-        "laning": 9,
+        "teamfight": 5,
+        "laning": 2,
         "siege": 0,
-        "utility": -5
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1961,13 +2000,14 @@
     },
     {
       "version": "7.39d",
-      "date": "2026-06-14T21:53:54.848Z",
+      "date": "2026-06-17T18:07:14.937Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Queen of Pain",
           "subEntityName": "Succubus",
           "rawNote": "Range for Max Lifesteal decreased from 300 to 150",
+          "originalSource": "Range for Max Lifesteal decreased from 300 to 150",
           "indentLevel": 1,
           "metric": "Range for Max Lifesteal",
           "changeType": "DECREASED",
@@ -1996,13 +2036,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 22,
-        "laning": 9,
+        "teamfight": 5,
+        "laning": 2,
         "siege": 0,
-        "utility": -5
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2015,13 +2055,14 @@
     },
     {
       "version": "7.39e",
-      "date": "2026-06-14T21:53:54.851Z",
+      "date": "2026-06-17T18:07:14.939Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Queen of Pain",
           "subEntityName": "Sonic Wave",
           "rawNote": "Damage decreased from 350/500/650 to 325/475/625",
+          "originalSource": "Damage decreased from 350/500/650 to 325/475/625",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "DECREASED",
@@ -2049,11 +2090,11 @@
         }
       ],
       "vectorDelta": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8,
-        "laning": -8,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
@@ -2061,10 +2102,10 @@
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 14,
+        "teamfight": 4,
         "laning": 1,
         "siege": 0,
-        "utility": -5
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2077,17 +2118,17 @@
     },
     {
       "version": "7.40",
-      "date": "2026-06-14T21:53:54.859Z",
+      "date": "2026-06-17T18:07:14.945Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 14,
+        "teamfight": 4,
         "laning": 1,
         "siege": 0,
-        "utility": -5
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2100,17 +2141,17 @@
     },
     {
       "version": "7.40b",
-      "date": "2026-06-14T21:53:54.866Z",
+      "date": "2026-06-17T18:07:14.948Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 14,
+        "teamfight": 4,
         "laning": 1,
         "siege": 0,
-        "utility": -5
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2123,17 +2164,17 @@
     },
     {
       "version": "7.40c",
-      "date": "2026-06-14T21:53:54.872Z",
+      "date": "2026-06-17T18:07:14.950Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 14,
+        "teamfight": 4,
         "laning": 1,
         "siege": 0,
-        "utility": -5
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2146,13 +2187,14 @@
     },
     {
       "version": "7.41",
-      "date": "2026-06-14T21:53:54.887Z",
+      "date": "2026-06-17T18:07:14.959Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Queen of Pain",
           "subEntityName": "Scream Of Pain",
           "rawNote": "Damage increased from 75/150/225/300 to 90/175/260/345",
+          "originalSource": "Damage increased from 75/150/225/300 to 90/175/260/345",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "INCREASED",
@@ -2182,7 +2224,8 @@
           "category": "hero",
           "entityName": "Queen of Pain",
           "subEntityName": "Scream Of Pain",
-          "rawNote": "25% of the damage dealt to heroes with this ability is reflected back to her ",
+          "rawNote": "25% of the damage dealt to heroes with this ability is reflected back to her",
+          "originalSource": "25% of the damage dealt to heroes with this ability is reflected back to her ",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2190,19 +2233,20 @@
             "subEntityId": 5175
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ROSHAN_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2210,6 +2254,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Scream Of Pain",
           "rawNote": "Also applies to Scream of Pain instances cast by Shadow Strike upgraded with Aghanim's Scepter",
+          "originalSource": "Also applies to Scream of Pain instances cast by Shadow Strike upgraded with Aghanim's Scepter",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2217,19 +2262,20 @@
             "subEntityId": 5175
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ILLUSION_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2237,6 +2283,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Scream of Pain Damage increased from +100 to +115",
+          "originalSource": "Level 20 Talent Scream of Pain Damage increased from +100 to +115",
           "indentLevel": 1,
           "metric": "Level 20 Talent Scream of Pain Damage",
           "changeType": "INCREASED",
@@ -2263,22 +2310,22 @@
         }
       ],
       "vectorDelta": {
-        "farming": 8,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 8,
+        "teamfight": 1,
+        "laning": 1,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 22,
-        "laning": 9,
+        "teamfight": 5,
+        "laning": 2,
         "siege": 0,
-        "utility": -5
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2291,17 +2338,17 @@
     },
     {
       "version": "7.41a",
-      "date": "2026-06-14T21:53:54.892Z",
+      "date": "2026-06-17T18:07:14.961Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 22,
-        "laning": 9,
+        "teamfight": 5,
+        "laning": 2,
         "siege": 0,
-        "utility": -5
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2314,17 +2361,17 @@
     },
     {
       "version": "7.41b",
-      "date": "2026-06-14T21:53:54.896Z",
+      "date": "2026-06-17T18:07:14.963Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 22,
-        "laning": 9,
+        "teamfight": 5,
+        "laning": 2,
         "siege": 0,
-        "utility": -5
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2337,12 +2384,13 @@
     },
     {
       "version": "7.41c",
-      "date": "2026-06-14T21:53:54.901Z",
+      "date": "2026-06-17T18:07:14.966Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Queen of Pain",
           "rawNote": "Base Agility decreased from 22 to 20",
+          "originalSource": "Base Agility decreased from 22 to 20",
           "indentLevel": 1,
           "metric": "Base Agility",
           "changeType": "DECREASED",
@@ -2372,6 +2420,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Shadow Strike",
           "rawNote": "Cooldown rescaled from 13/10/7/4s to 11/9/7/5s",
+          "originalSource": "Cooldown rescaled from 13/10/7/4s to 11/9/7/5s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "RESCALE",
@@ -2402,6 +2451,7 @@
           "entityName": "Queen of Pain",
           "subEntityName": "Shadow Strike",
           "rawNote": "Aghanim's Scepter AoE decreased from 375 to 300",
+          "originalSource": "Aghanim's Scepter AoE decreased from 375 to 300",
           "indentLevel": 1,
           "metric": "Aghanim's Scepter AoE",
           "changeType": "DECREASED",
@@ -2430,13 +2480,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 22,
-        "laning": 9,
+        "teamfight": 5,
+        "laning": 2,
         "siege": 0,
-        "utility": -5
+        "utility": -7
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2449,46 +2499,58 @@
     },
     {
       "version": "7.41d",
-      "date": "2026-06-14T21:53:54.907Z",
+      "date": "2026-06-17T18:07:14.968Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 9,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 22,
-        "laning": 9,
+        "teamfight": 5,
+        "laning": 2,
         "siege": 0,
-        "utility": -5
+        "utility": -7
       },
       "winrates": {
         "HERALD": {
-          "winrate": 0.4621,
-          "matchCount": 28562
+          "winrate": 0.4615,
+          "matchCount": 25028
         },
         "GUARDIAN": {
-          "winrate": 0.4601,
-          "matchCount": 61222
+          "winrate": 0.4602,
+          "matchCount": 55117
         },
         "CRUSADER": {
-          "winrate": 0.4656,
-          "matchCount": 76356
+          "winrate": 0.4636,
+          "matchCount": 68169
         },
         "ARCHON": {
-          "winrate": 0.4667,
-          "matchCount": 72698
+          "winrate": 0.4641,
+          "matchCount": 64833
         },
         "LEGEND": {
-          "winrate": 0.4651,
-          "matchCount": 57564
+          "winrate": 0.4641,
+          "matchCount": 51020
         },
         "ANCIENT": {
-          "winrate": 0.4585,
-          "matchCount": 38105
+          "winrate": 0.4604,
+          "matchCount": 33532
         },
         "DIVINE": {
-          "winrate": 0.4605,
-          "matchCount": 39576
+          "winrate": 0.4621,
+          "matchCount": 34937
+        },
+        "IMMORTAL": {
+          "winrate": 0,
+          "matchCount": 0
+        },
+        "PRO": {
+          "winrate": 0.2857,
+          "matchCount": 7
+        },
+        "GLOBAL_BLEND": {
+          "winrate": 0.4619,
+          "matchCount": 34944
         }
       },
       "temporalAssessment": null

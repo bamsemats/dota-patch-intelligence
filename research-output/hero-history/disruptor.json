@@ -3,13 +3,14 @@
   "history": [
     {
       "version": "7.33",
-      "date": "2026-06-14T21:53:54.726Z",
+      "date": "2026-06-17T18:07:14.843Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Disruptor",
           "subEntityName": "Thunder Strike",
           "rawNote": "Aghanim's Shard Upgrade reworked",
+          "originalSource": "Aghanim's Shard Upgrade reworked",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -37,6 +38,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Thunder Strike",
           "rawNote": "When cast on ground, Thunder Strike now lies dormant (not striking) for up to 5 seconds. If an enemy comes within range during that time, Thunder Strike attaches to it. If no enemy comes within range, it strikes the ground. Aghanim's Shard also increases the number of strikes by 2 and cast range to 1600",
+          "originalSource": "When cast on ground, Thunder Strike now lies dormant (not striking) for up to 5 seconds. If an enemy comes within range during that time, Thunder Strike attaches to it. If no enemy comes within range, it strikes the ground. Aghanim's Shard also increases the number of strikes by 2 and cast range to 1600",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -44,9 +46,9 @@
             "subEntityId": 5458
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -56,7 +58,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -64,6 +67,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Glimpse",
           "rawNote": "Min Damage decreased from 50 to 25",
+          "originalSource": "Min Damage decreased from 50 to 25",
           "indentLevel": 1,
           "metric": "Min Damage",
           "changeType": "DECREASED",
@@ -94,6 +98,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Glimpse",
           "rawNote": "Max Damage decreased from 150/200/250/300 to 125/175/225/275",
+          "originalSource": "Max Damage decreased from 150/200/250/300 to 125/175/225/275",
           "indentLevel": 1,
           "metric": "Max Damage",
           "changeType": "DECREASED",
@@ -124,6 +129,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Kinetic Field",
           "rawNote": "Cooldown increased from 19/16/13/10s to 20/17/14/11s",
+          "originalSource": "Cooldown increased from 19/16/13/10s to 20/17/14/11s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "INCREASED",
@@ -154,6 +160,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent +30 Thunder Strike Damage replaced with +100 Thunder Strike Radius",
+          "originalSource": "Level 10 Talent +30 Thunder Strike Damage replaced with +100 Thunder Strike Radius",
           "indentLevel": 1,
           "metric": "Level 10 Talent +30 Thunder Strike Damage",
           "changeType": "REWORK",
@@ -182,6 +189,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Static Storm Duration decreased from +2s to +1.5s (+8 pulses to +6)",
+          "originalSource": "Level 15 Talent Static Storm Duration decreased from +2s to +1.5s (+8 pulses to +6)",
           "indentLevel": 1,
           "metric": "Level 15 Talent Static Storm Duration",
           "changeType": "DECREASED",
@@ -211,6 +219,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +3 Thunder Strike Hits replaced with +0.4s Thunder Strike Slow Duration",
+          "originalSource": "Level 20 Talent +3 Thunder Strike Hits replaced with +0.4s Thunder Strike Slow Duration",
           "indentLevel": 1,
           "metric": "Level 20 Talent +3 Thunder Strike Hits",
           "changeType": "REWORK",
@@ -235,12 +244,20 @@
           }
         }
       ],
-      "vectorDelta": null,
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -1,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0
+      },
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -250,14 +267,14 @@
     },
     {
       "version": "7.33b",
-      "date": "2026-06-14T21:53:54.731Z",
+      "date": "2026-06-17T18:07:14.846Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -296,14 +313,14 @@
     },
     {
       "version": "7.33c",
-      "date": "2026-06-14T21:53:54.736Z",
+      "date": "2026-06-17T18:07:14.849Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -342,12 +359,13 @@
     },
     {
       "version": "7.33d",
-      "date": "2026-06-14T21:53:54.740Z",
+      "date": "2026-06-17T18:07:14.851Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Disruptor",
           "rawNote": "Base Damage decreased by 2",
+          "originalSource": "Base Damage decreased by 2",
           "indentLevel": 1,
           "metric": "Base Damage",
           "changeType": "DECREASED",
@@ -376,6 +394,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Thunder Strike",
           "rawNote": "Strike Damage rescaled from 35/60/85/110 to 25/55/85/115",
+          "originalSource": "Strike Damage rescaled from 35/60/85/110 to 25/55/85/115",
           "indentLevel": 1,
           "metric": "Strike Damage",
           "changeType": "RESCALE",
@@ -407,7 +426,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -446,14 +465,14 @@
     },
     {
       "version": "7.33e",
-      "date": "2026-06-14T21:53:54.743Z",
+      "date": "2026-06-17T18:07:14.854Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -492,13 +511,14 @@
     },
     {
       "version": "7.34",
-      "date": "2026-06-14T21:53:54.750Z",
+      "date": "2026-06-17T18:07:14.859Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Disruptor",
           "subEntityName": "Thunder Strike",
           "rawNote": "If the target is trapped inside the Kinetic Field, Thunder Strike now hits all other enemies inside the field",
+          "originalSource": "If the target is trapped inside the Kinetic Field, Thunder Strike now hits all other enemies inside the field",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -506,19 +526,20 @@
             "subEntityId": 5458
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "TARGETING_RULE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -526,6 +547,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent +100 Thunder Strike Radius replaced with +10 Thunder Strike Damage per Strike",
+          "originalSource": "Level 10 Talent +100 Thunder Strike Radius replaced with +10 Thunder Strike Damage per Strike",
           "indentLevel": 1,
           "metric": "Level 10 Talent +100 Thunder Strike Radius",
           "changeType": "REWORK",
@@ -555,7 +577,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -565,14 +587,14 @@
     },
     {
       "version": "7.34b",
-      "date": "2026-06-14T21:53:54.755Z",
+      "date": "2026-06-17T18:07:14.863Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -611,14 +633,14 @@
     },
     {
       "version": "7.34c",
-      "date": "2026-06-14T21:53:54.759Z",
+      "date": "2026-06-17T18:07:14.868Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -657,14 +679,14 @@
     },
     {
       "version": "7.34d",
-      "date": "2026-06-14T21:53:54.764Z",
+      "date": "2026-06-17T18:07:14.871Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -703,14 +725,14 @@
     },
     {
       "version": "7.34e",
-      "date": "2026-06-14T21:53:54.768Z",
+      "date": "2026-06-17T18:07:14.873Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -749,13 +771,14 @@
     },
     {
       "version": "7.35",
-      "date": "2026-06-14T21:53:54.772Z",
+      "date": "2026-06-17T18:07:14.877Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Disruptor",
           "subEntityName": "Thunder Strike",
           "rawNote": "Aghanim's Shard dormant duration increased from 5s to 7s",
+          "originalSource": "Aghanim's Shard dormant duration increased from 5s to 7s",
           "indentLevel": 1,
           "metric": "Aghanim's Shard dormant duration",
           "changeType": "INCREASED",
@@ -786,6 +809,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Static Storm",
           "rawNote": "Radius increased from 500 to 550",
+          "originalSource": "Radius increased from 500 to 550",
           "indentLevel": 1,
           "metric": "Radius",
           "changeType": "INCREASED",
@@ -816,6 +840,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Glimpse Max Damage increased from +250 to +275",
+          "originalSource": "Level 15 Talent Glimpse Max Damage increased from +250 to +275",
           "indentLevel": 1,
           "metric": "Level 15 Talent Glimpse Max Damage",
           "changeType": "INCREASED",
@@ -845,6 +870,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Thunder Strike Slow Duration increased from +0.4s to +0.5s",
+          "originalSource": "Level 20 Talent Thunder Strike Slow Duration increased from +0.4s to +0.5s",
           "indentLevel": 1,
           "metric": "Level 20 Talent Thunder Strike Slow Duration",
           "changeType": "INCREASED",
@@ -874,7 +900,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -883,7 +909,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -895,18 +921,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.35b",
-      "date": "2026-06-14T21:53:54.775Z",
+      "date": "2026-06-17T18:07:14.879Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -922,14 +948,14 @@
     },
     {
       "version": "7.35c",
-      "date": "2026-06-14T21:53:54.782Z",
+      "date": "2026-06-17T18:07:14.881Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -941,17 +967,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.35d",
-      "date": "2026-06-14T21:53:54.785Z",
+      "date": "2026-06-17T18:07:14.883Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Disruptor",
           "subEntityName": "Thunder Strike",
           "rawNote": "Slow Duration increased from 0.1/0.2/0.3/0.4s to 0.4s",
+          "originalSource": "Slow Duration increased from 0.1/0.2/0.3/0.4s to 0.4s",
           "indentLevel": 1,
           "metric": "Slow Duration",
           "changeType": "INCREASED",
@@ -983,7 +1010,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -999,13 +1026,14 @@
     },
     {
       "version": "7.36",
-      "date": "2026-06-14T21:53:54.791Z",
+      "date": "2026-06-17T18:07:14.890Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Disruptor",
           "subEntityName": "Thunder Strike",
           "rawNote": "No longer has any Kinetic Field interactions by default",
+          "originalSource": "No longer has any Kinetic Field interactions by default",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1033,6 +1061,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Thunder Strike",
           "rawNote": "Aghanim's Shard bonus range decreased from 800 to 400",
+          "originalSource": "Aghanim's Shard bonus range decreased from 800 to 400",
           "indentLevel": 1,
           "metric": "Aghanim's Shard bonus range",
           "changeType": "DECREASED",
@@ -1063,6 +1092,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Thunder Strike",
           "rawNote": "Aghanim's Shard bonus strikes decreased from 2 to 1",
+          "originalSource": "Aghanim's Shard bonus strikes decreased from 2 to 1",
           "indentLevel": 1,
           "metric": "Aghanim's Shard bonus strikes",
           "changeType": "DECREASED",
@@ -1093,6 +1123,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Thunder Strike",
           "rawNote": "Aghanim's Shard Duration on the ground decreased from 7s to 5s",
+          "originalSource": "Aghanim's Shard Duration on the ground decreased from 7s to 5s",
           "indentLevel": 1,
           "metric": "Aghanim's Shard Duration on the ground",
           "changeType": "DECREASED",
@@ -1123,6 +1154,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Glimpse",
           "rawNote": "Max Damage rescaled from 125/175/225/275 to 100/160/220/280",
+          "originalSource": "Max Damage rescaled from 125/175/225/275 to 100/160/220/280",
           "indentLevel": 1,
           "metric": "Max Damage",
           "changeType": "RESCALE",
@@ -1153,6 +1185,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Kinetic Field",
           "rawNote": "Cooldown increased from 20/17/14/11s to 20/18/16/14s",
+          "originalSource": "Cooldown increased from 20/17/14/11s to 20/18/16/14s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "INCREASED",
@@ -1183,6 +1216,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent Static Storm Radius decreased from +200 to +150",
+          "originalSource": "Level 25 Talent Static Storm Radius decreased from +200 to +150",
           "indentLevel": 1,
           "metric": "Level 25 Talent Static Storm Radius",
           "changeType": "DECREASED",
@@ -1212,7 +1246,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1221,7 +1255,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 4.5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1237,13 +1271,14 @@
     },
     {
       "version": "7.36a",
-      "date": "2026-06-14T21:53:54.794Z",
+      "date": "2026-06-17T18:07:14.892Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Disruptor",
           "subEntityName": "Glimpse",
           "rawNote": "Can now be used on Lone Druid's Spirit Bear",
+          "originalSource": "Can now be used on Lone Druid's Spirit Bear",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -1272,7 +1307,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 4.5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1284,18 +1319,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": "Recovery"
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.36b",
-      "date": "2026-06-14T21:53:54.797Z",
+      "date": "2026-06-17T18:07:14.896Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 4.5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1311,14 +1346,14 @@
     },
     {
       "version": "7.36c",
-      "date": "2026-06-14T21:53:54.800Z",
+      "date": "2026-06-17T18:07:14.898Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 4.5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1330,17 +1365,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.37",
-      "date": "2026-06-14T21:53:54.805Z",
+      "date": "2026-06-17T18:07:14.902Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Disruptor",
           "subEntityName": "Glimpse",
           "rawNote": "Now deals 20/25/30/35% of the distance traveled as damage. Max damage remains 100/160/220/280",
+          "originalSource": "Now deals 20/25/30/35% of the distance traveled as damage. Max damage remains 100/160/220/280",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -1368,6 +1404,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent +275 Glimpse Max Damage replaced with +10%/+280 Glimpse Distance To Damage/Max Damage",
+          "originalSource": "Level 15 Talent +275 Glimpse Max Damage replaced with +10%/+280 Glimpse Distance To Damage/Max Damage",
           "indentLevel": 1,
           "metric": "Level 15 Talent +275 Glimpse Max Damage",
           "changeType": "REWORK",
@@ -1397,7 +1434,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 4.5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1413,14 +1450,14 @@
     },
     {
       "version": "7.37b",
-      "date": "2026-06-14T21:53:54.807Z",
+      "date": "2026-06-17T18:07:14.904Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 4.5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1432,18 +1469,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.37c",
-      "date": "2026-06-14T21:53:54.810Z",
+      "date": "2026-06-17T18:07:14.906Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 4.5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1455,18 +1492,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.37d",
-      "date": "2026-06-14T21:53:54.813Z",
+      "date": "2026-06-17T18:07:14.909Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 4.5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1482,13 +1519,14 @@
     },
     {
       "version": "7.37e",
-      "date": "2026-06-14T21:53:54.815Z",
+      "date": "2026-06-17T18:07:14.912Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Disruptor",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Glimpse Max Damage increased from 280 to 300",
+          "originalSource": "Level 15 Talent Glimpse Max Damage increased from 280 to 300",
           "indentLevel": 1,
           "metric": "Level 15 Talent Glimpse Max Damage",
           "changeType": "INCREASED",
@@ -1519,7 +1557,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 4.5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1535,13 +1573,14 @@
     },
     {
       "version": "7.38",
-      "date": "2026-06-14T21:53:54.824Z",
+      "date": "2026-06-17T18:07:14.919Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Disruptor",
           "subEntityName": "Thunder Strike",
           "rawNote": "Radius increased from 240 to 260",
+          "originalSource": "Radius increased from 240 to 260",
           "indentLevel": 1,
           "metric": "Radius",
           "changeType": "INCREASED",
@@ -1572,6 +1611,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Thunder Strike Damage per Strike increased from +10 to +15",
+          "originalSource": "Level 10 Talent Thunder Strike Damage per Strike increased from +10 to +15",
           "indentLevel": 1,
           "metric": "Level 10 Talent Thunder Strike Damage per Strike",
           "changeType": "INCREASED",
@@ -1601,6 +1641,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent -3s Kinetic Field Cooldown replaced with +20 Movement Speed",
+          "originalSource": "Level 10 Talent -3s Kinetic Field Cooldown replaced with +20 Movement Speed",
           "indentLevel": 1,
           "metric": "Level 10 Talent -3s Kinetic Field Cooldown",
           "changeType": "REWORK",
@@ -1629,6 +1670,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Thunder Strike Slow Duration increased from +0.5s to +0.6s",
+          "originalSource": "Level 20 Talent Thunder Strike Slow Duration increased from +0.5s to +0.6s",
           "indentLevel": 1,
           "metric": "Level 20 Talent Thunder Strike Slow Duration",
           "changeType": "INCREASED",
@@ -1658,7 +1700,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1667,7 +1709,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1683,14 +1725,14 @@
     },
     {
       "version": "7.38b",
-      "date": "2026-06-14T21:53:54.827Z",
+      "date": "2026-06-17T18:07:14.921Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1706,14 +1748,14 @@
     },
     {
       "version": "7.38c",
-      "date": "2026-06-14T21:53:54.830Z",
+      "date": "2026-06-17T18:07:14.924Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1729,13 +1771,14 @@
     },
     {
       "version": "7.39",
-      "date": "2026-06-14T21:53:54.836Z",
+      "date": "2026-06-17T18:07:14.928Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Disruptor",
           "subEntityName": "Thunder Strike",
           "rawNote": "Aghanim's Shard dormant duration decreased from 5s to 4s",
+          "originalSource": "Aghanim's Shard dormant duration decreased from 5s to 4s",
           "indentLevel": 1,
           "metric": "Aghanim's Shard dormant duration",
           "changeType": "DECREASED",
@@ -1766,6 +1809,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent +1.5s Static Storm Duration replaced with +60 Static Storm Max DPS",
+          "originalSource": "Level 15 Talent +1.5s Static Storm Duration replaced with +60 Static Storm Max DPS",
           "indentLevel": 1,
           "metric": "Level 15 Talent +1.5s Static Storm Duration",
           "changeType": "REWORK",
@@ -1794,6 +1838,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +0.6s Thunder Strike Slow Duration replaced with +150 Electromagnetic Repulsion Radius/Knockback",
+          "originalSource": "Level 20 Talent +0.6s Thunder Strike Slow Duration replaced with +150 Electromagnetic Repulsion Radius/Knockback",
           "indentLevel": 1,
           "metric": "Level 20 Talent +0.6s Thunder Strike Slow Duration",
           "changeType": "REWORK",
@@ -1822,6 +1867,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Kinetic Field Duration decreased from +2s to +1.5s",
+          "originalSource": "Level 20 Talent Kinetic Field Duration decreased from +2s to +1.5s",
           "indentLevel": 1,
           "metric": "Level 20 Talent Kinetic Field Duration",
           "changeType": "DECREASED",
@@ -1852,7 +1898,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1868,13 +1914,14 @@
     },
     {
       "version": "7.39b",
-      "date": "2026-06-14T21:53:54.839Z",
+      "date": "2026-06-17T18:07:14.931Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Disruptor",
           "subEntityName": "Thunder Strike",
-          "rawNote": "Slow duration decreased from 0.4s to 0.3s ",
+          "rawNote": "Slow duration decreased from 0.4s to 0.3s",
+          "originalSource": "Slow duration decreased from 0.4s to 0.3s ",
           "indentLevel": 1,
           "metric": "Slow duration",
           "changeType": "DECREASED",
@@ -1906,7 +1953,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 10.5,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1922,13 +1969,14 @@
     },
     {
       "version": "7.39c",
-      "date": "2026-06-14T21:53:54.843Z",
+      "date": "2026-06-17T18:07:14.932Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Disruptor",
           "subEntityName": "Electromagnetic Repulsion",
           "rawNote": "Cooldown increased from 4s to 5s",
+          "originalSource": "Cooldown increased from 4s to 5s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "INCREASED",
@@ -1959,6 +2007,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Kinetic Field Duration decreased from +1.5s to +1s",
+          "originalSource": "Level 20 Talent Kinetic Field Duration decreased from +1.5s to +1s",
           "indentLevel": 1,
           "metric": "Level 20 Talent Kinetic Field Duration",
           "changeType": "DECREASED",
@@ -1988,7 +2037,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1997,7 +2046,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 9,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -2013,14 +2062,14 @@
     },
     {
       "version": "7.39d",
-      "date": "2026-06-14T21:53:54.848Z",
+      "date": "2026-06-17T18:07:14.937Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 9,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -2036,13 +2085,14 @@
     },
     {
       "version": "7.39e",
-      "date": "2026-06-14T21:53:54.851Z",
+      "date": "2026-06-17T18:07:14.939Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Disruptor",
           "subEntityName": "Static Storm",
           "rawNote": "Cooldown increased from 90/80/70s to 100/85/70s",
+          "originalSource": "Cooldown increased from 90/80/70s to 100/85/70s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "INCREASED",
@@ -2073,7 +2123,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -2082,7 +2132,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 7.5,
+        "teamfight": -2,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -2098,14 +2148,14 @@
     },
     {
       "version": "7.40",
-      "date": "2026-06-14T21:53:54.859Z",
+      "date": "2026-06-17T18:07:14.945Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 7.5,
+        "teamfight": -2,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -2117,18 +2167,18 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.40b",
-      "date": "2026-06-14T21:53:54.866Z",
+      "date": "2026-06-17T18:07:14.948Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 7.5,
+        "teamfight": -2,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -2144,14 +2194,14 @@
     },
     {
       "version": "7.40c",
-      "date": "2026-06-14T21:53:54.872Z",
+      "date": "2026-06-17T18:07:14.950Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 7.5,
+        "teamfight": -2,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -2167,13 +2217,14 @@
     },
     {
       "version": "7.41",
-      "date": "2026-06-14T21:53:54.887Z",
+      "date": "2026-06-17T18:07:14.959Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Disruptor",
           "subEntityName": "Electromagnetic Repulsion",
           "rawNote": "Now deals damage equal to 1.5x of Disruptor's Intelligence",
+          "originalSource": "Now deals damage equal to 1.5x of Disruptor's Intelligence",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2201,6 +2252,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Thunder Strike",
           "rawNote": "Strike Damage increased from 25/55/85/115 to 30/60/90/120",
+          "originalSource": "Strike Damage increased from 25/55/85/115 to 30/60/90/120",
           "indentLevel": 1,
           "metric": "Strike Damage",
           "changeType": "INCREASED",
@@ -2231,6 +2283,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Thunder Strike",
           "rawNote": "No longer upgraded with Aghanim's Shard",
+          "originalSource": "No longer upgraded with Aghanim's Shard",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -2258,6 +2311,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Kinetic Fence",
           "rawNote": "Now granted by Aghanim's Shard",
+          "originalSource": "Now granted by Aghanim's Shard",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2285,6 +2339,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Kinetic Fence",
           "rawNote": "No longer shares level with Kinetic Field. Has only one level instead",
+          "originalSource": "No longer shares level with Kinetic Field. Has only one level instead",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -2312,6 +2367,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Kinetic Fence",
           "rawNote": "Cast Range increased from 1050 to 1200",
+          "originalSource": "Cast Range increased from 1050 to 1200",
           "indentLevel": 1,
           "metric": "Cast Range",
           "changeType": "INCREASED",
@@ -2342,6 +2398,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Kinetic Fence",
           "rawNote": "Cooldown decreased from 20/18/16/14s to 14s",
+          "originalSource": "Cooldown decreased from 20/18/16/14s to 14s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "DECREASED",
@@ -2372,6 +2429,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Kinetic Fence",
           "rawNote": "Duration increased from 2.6/3.2/3.8/4.4s to 4.4s",
+          "originalSource": "Duration increased from 2.6/3.2/3.8/4.4s to 4.4s",
           "indentLevel": 1,
           "metric": "Duration",
           "changeType": "INCREASED",
@@ -2402,6 +2460,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Kinetic Fence",
           "rawNote": "Can be increased with Kinetic Field Duration talent",
+          "originalSource": "Can be increased with Kinetic Field Duration talent",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2409,19 +2468,20 @@
             "subEntityId": 1362
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ROSHAN_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2429,6 +2489,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Kinetic Fence",
           "rawNote": "Formation Delay increased from 0.4s to 1s",
+          "originalSource": "Formation Delay increased from 0.4s to 1s",
           "indentLevel": 1,
           "metric": "Formation Delay",
           "changeType": "INCREASED",
@@ -2459,25 +2520,27 @@
           "entityName": "Disruptor",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent +10%/300 Glimpse Distance To Damage/Max increased to +15%/300",
+          "originalSource": "Level 15 Talent +10%/300 Glimpse Distance To Damage/Max increased to +15%/300",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
             "entityId": 87
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ROSHAN_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2485,6 +2548,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +150 Electromagnetic Repulsion Radius/Knockback replaced with +75 Static Storm Radius",
+          "originalSource": "Level 20 Talent +150 Electromagnetic Repulsion Radius/Knockback replaced with +75 Static Storm Radius",
           "indentLevel": 1,
           "metric": "Level 20 Talent +150 Electromagnetic Repulsion Radius/Knockback",
           "changeType": "REWORK",
@@ -2512,7 +2576,8 @@
           "category": "hero",
           "entityName": "Disruptor",
           "subEntityName": "Talents",
-          "rawNote": "Level 25 Talent +150 Static Storm Radius replaced with +6 Thunder Strike Strikes (also decreases Strike Interval by 50%) ",
+          "rawNote": "Level 25 Talent +150 Static Storm Radius replaced with +6 Thunder Strike Strikes (also decreases Strike Interval by 50%)",
+          "originalSource": "Level 25 Talent +150 Static Storm Radius replaced with +6 Thunder Strike Strikes (also decreases Strike Interval by 50%) ",
           "indentLevel": 1,
           "metric": "Level 25 Talent +150 Static Storm Radius",
           "changeType": "REWORK",
@@ -2541,6 +2606,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent -12s Glimpse Cooldown replaced with 2 Glimpse Charges",
+          "originalSource": "Level 25 Talent -12s Glimpse Cooldown replaced with 2 Glimpse Charges",
           "indentLevel": 1,
           "metric": "Level 25 Talent -12s Glimpse Cooldown",
           "changeType": "REWORK",
@@ -2569,19 +2635,19 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6.5,
+        "teamfight": 2,
         "laning": 0,
         "siege": 0,
-        "utility": 25
+        "utility": 5
       },
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 14,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 25
+        "utility": 5
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2590,21 +2656,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.41a",
-      "date": "2026-06-14T21:53:54.892Z",
+      "date": "2026-06-17T18:07:14.961Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 14,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 25
+        "utility": 5
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2617,17 +2683,17 @@
     },
     {
       "version": "7.41b",
-      "date": "2026-06-14T21:53:54.896Z",
+      "date": "2026-06-17T18:07:14.964Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 14,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 25
+        "utility": 5
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2636,21 +2702,21 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.41c",
-      "date": "2026-06-14T21:53:54.902Z",
+      "date": "2026-06-17T18:07:14.966Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 14,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 25
+        "utility": 5
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2663,12 +2729,13 @@
     },
     {
       "version": "7.41d",
-      "date": "2026-06-14T21:53:54.908Z",
+      "date": "2026-06-17T18:07:14.969Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Disruptor",
           "rawNote": "Base Movement Speed increased from 295 to 300",
+          "originalSource": "Base Movement Speed increased from 295 to 300",
           "indentLevel": 1,
           "metric": "Base Movement Speed",
           "changeType": "INCREASED",
@@ -2698,6 +2765,7 @@
           "entityName": "Disruptor",
           "subEntityName": "Thunder Strike",
           "rawNote": "Mana Cost decreased from 125/130/135/140 to 115/120/125/130",
+          "originalSource": "Mana Cost decreased from 125/130/135/140 to 115/120/125/130",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "DECREASED",
@@ -2737,39 +2805,51 @@
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 14,
+        "teamfight": 0,
         "laning": 1,
         "siege": 0,
-        "utility": 26
+        "utility": 6
       },
       "winrates": {
         "HERALD": {
-          "winrate": 0.4873,
-          "matchCount": 13529
+          "winrate": 0.4817,
+          "matchCount": 12027
         },
         "GUARDIAN": {
-          "winrate": 0.4884,
-          "matchCount": 31766
+          "winrate": 0.489,
+          "matchCount": 29308
         },
         "CRUSADER": {
-          "winrate": 0.4994,
-          "matchCount": 40538
+          "winrate": 0.502,
+          "matchCount": 37435
         },
         "ARCHON": {
-          "winrate": 0.4985,
-          "matchCount": 42149
+          "winrate": 0.5002,
+          "matchCount": 38521
         },
         "LEGEND": {
-          "winrate": 0.5017,
-          "matchCount": 35464
+          "winrate": 0.5035,
+          "matchCount": 32265
         },
         "ANCIENT": {
           "winrate": 0.508,
-          "matchCount": 24845
+          "matchCount": 22871
         },
         "DIVINE": {
-          "winrate": 0.507,
-          "matchCount": 28092
+          "winrate": 0.5099,
+          "matchCount": 26214
+        },
+        "IMMORTAL": {
+          "winrate": 0,
+          "matchCount": 0
+        },
+        "PRO": {
+          "winrate": 0,
+          "matchCount": 1
+        },
+        "GLOBAL_BLEND": {
+          "winrate": 0.5098,
+          "matchCount": 26215
         }
       },
       "temporalAssessment": "Net Gain"

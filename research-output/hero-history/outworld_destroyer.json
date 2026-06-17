@@ -3,13 +3,14 @@
   "history": [
     {
       "version": "7.33",
-      "date": "2026-06-14T21:53:54.726Z",
+      "date": "2026-06-17T18:07:14.843Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Outworld Destroyer",
           "subEntityName": "Astral Imprisonment",
           "rawNote": "Aghanim's Scepter Upgrade removed",
+          "originalSource": "Aghanim's Scepter Upgrade removed",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -36,7 +37,8 @@
           "category": "hero",
           "entityName": "Outworld Destroyer",
           "subEntityName": "Essence Flux",
-          "rawNote": "Now upgradable by Aghanim's Scepter.",
+          "rawNote": "Now upgradable by Aghanim's Scepter",
+          "originalSource": "Now upgradable by Aghanim's Scepter.",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -63,7 +65,8 @@
           "category": "hero",
           "entityName": "Outworld Destroyer",
           "subEntityName": "Essence Flux",
-          "rawNote": "Damage that brings Outworld Destroyer below 20% health triggers a strong dispel. Additionally, Outworld Destroyer consumes all of his mana to provide a damage barrier equal to 50% of his maximum mana. Lasts 15s. Cooldown: 60s. Cannot be refreshed. Effect is disabled by Break.",
+          "rawNote": "Damage that brings Outworld Destroyer below 20% health triggers a strong dispel. Additionally, Outworld Destroyer consumes all of his mana to provide a damage barrier equal to 50% of his maximum mana. Lasts 15s. Cooldown: 60s. Cannot be refreshed. Effect is disabled by Break",
+          "originalSource": "Damage that brings Outworld Destroyer below 20% health triggers a strong dispel. Additionally, Outworld Destroyer consumes all of his mana to provide a damage barrier equal to 50% of his maximum mana. Lasts 15s. Cooldown: 60s. Cannot be refreshed. Effect is disabled by Break.",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -71,19 +74,20 @@
             "subEntityId": 5684
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DISPEL_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -91,6 +95,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Sanity's Eclipse",
           "rawNote": "Now deals damage to all units. Treats the units without a mana pool as if they had 0 mana",
+          "originalSource": "Now deals damage to all units. Treats the units without a mana pool as if they had 0 mana",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -129,7 +134,7 @@
     },
     {
       "version": "7.33b",
-      "date": "2026-06-14T21:53:54.731Z",
+      "date": "2026-06-17T18:07:14.846Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -175,7 +180,7 @@
     },
     {
       "version": "7.33c",
-      "date": "2026-06-14T21:53:54.736Z",
+      "date": "2026-06-17T18:07:14.849Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -221,7 +226,7 @@
     },
     {
       "version": "7.33d",
-      "date": "2026-06-14T21:53:54.740Z",
+      "date": "2026-06-17T18:07:14.851Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -267,7 +272,7 @@
     },
     {
       "version": "7.33e",
-      "date": "2026-06-14T21:53:54.743Z",
+      "date": "2026-06-17T18:07:14.854Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -313,13 +318,14 @@
     },
     {
       "version": "7.34",
-      "date": "2026-06-14T21:53:54.750Z",
+      "date": "2026-06-17T18:07:14.859Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Outworld Destroyer",
           "subEntityName": "Astral Imprisonment",
           "rawNote": "Aghanim's Shard Ally Movement Speed increased from 60% to 70%",
+          "originalSource": "Aghanim's Shard Ally Movement Speed increased from 60% to 70%",
           "indentLevel": 1,
           "metric": "Aghanim's Shard Ally Movement Speed",
           "changeType": "INCREASED",
@@ -350,6 +356,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Essence Flux",
           "rawNote": "Aghanim's Scepter now fully prevents the damage that would put Outworld Destroyer's health below 20%",
+          "originalSource": "Aghanim's Scepter now fully prevents the damage that would put Outworld Destroyer's health below 20%",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -357,19 +364,20 @@
             "subEntityId": 5684
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ROSHAN_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -377,6 +385,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Essence Flux",
           "rawNote": "Aghanim's Scepter Max Mana as barrier increased from 50% to 75%",
+          "originalSource": "Aghanim's Scepter Max Mana as barrier increased from 50% to 75%",
           "indentLevel": 1,
           "metric": "Aghanim's Scepter Max Mana as barrier",
           "changeType": "INCREASED",
@@ -407,6 +416,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Sanity's Eclipse",
           "rawNote": "Now applies a Mana Allergy debuff to enemies for 7s, causing them to take damage every time they cast a spell equal to the mana cost of that spell. Outworld Destroyer is healed by 150% of mana spent by enemies. Also affects items",
+          "originalSource": "Now applies a Mana Allergy debuff to enemies for 7s, causing them to take damage every time they cast a spell equal to the mana cost of that spell. Outworld Destroyer is healed by 150% of mana spent by enemies. Also affects items",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -445,7 +455,7 @@
     },
     {
       "version": "7.34b",
-      "date": "2026-06-14T21:53:54.755Z",
+      "date": "2026-06-17T18:07:14.863Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -491,7 +501,7 @@
     },
     {
       "version": "7.34c",
-      "date": "2026-06-14T21:53:54.759Z",
+      "date": "2026-06-17T18:07:14.868Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -537,7 +547,7 @@
     },
     {
       "version": "7.34d",
-      "date": "2026-06-14T21:53:54.764Z",
+      "date": "2026-06-17T18:07:14.871Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -583,7 +593,7 @@
     },
     {
       "version": "7.34e",
-      "date": "2026-06-14T21:53:54.768Z",
+      "date": "2026-06-17T18:07:14.873Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -629,13 +639,14 @@
     },
     {
       "version": "7.35",
-      "date": "2026-06-14T21:53:54.772Z",
+      "date": "2026-06-17T18:07:14.877Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Outworld Destroyer",
           "subEntityName": "Sanity's Eclipse",
           "rawNote": "Radius increased from 400/500/600 to 450/525/600",
+          "originalSource": "Radius increased from 400/500/600 to 450/525/600",
           "indentLevel": 1,
           "metric": "Radius",
           "changeType": "INCREASED",
@@ -666,6 +677,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +20 Strength replaced with +20% Spell Lifesteal",
+          "originalSource": "Level 20 Talent +20 Strength replaced with +20% Spell Lifesteal",
           "indentLevel": 1,
           "metric": "Level 20 Talent +20 Strength",
           "changeType": "REWORK",
@@ -694,7 +706,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -703,7 +715,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -719,13 +731,14 @@
     },
     {
       "version": "7.35b",
-      "date": "2026-06-14T21:53:54.775Z",
+      "date": "2026-06-17T18:07:14.879Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Outworld Destroyer",
           "subEntityName": "Arcane Orb",
           "rawNote": "Mana Pool To Damage decreased from 13/14/15/16% to 12/13/14/15%",
+          "originalSource": "Mana Pool To Damage decreased from 13/14/15/16% to 12/13/14/15%",
           "indentLevel": 1,
           "metric": "Mana Pool To Damage",
           "changeType": "DECREASED",
@@ -756,6 +769,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Astral Imprisonment",
           "rawNote": "Damage decreased from 120/200/280/360 to 90/180/270/360",
+          "originalSource": "Damage decreased from 120/200/280/360 to 90/180/270/360",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "DECREASED",
@@ -786,6 +800,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Essence Flux",
           "rawNote": "Aghanim's Scepter Cooldown increased from 60s to 80s",
+          "originalSource": "Aghanim's Scepter Cooldown increased from 60s to 80s",
           "indentLevel": 1,
           "metric": "Aghanim's Scepter Cooldown",
           "changeType": "INCREASED",
@@ -816,6 +831,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Sanity's Eclipse",
           "rawNote": "Mana Allergy no longer deals damage",
+          "originalSource": "Mana Allergy no longer deals damage",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -840,20 +856,20 @@
         }
       ],
       "vectorDelta": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -8,
-        "laning": -8,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -2,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
@@ -868,13 +884,14 @@
     },
     {
       "version": "7.35c",
-      "date": "2026-06-14T21:53:54.782Z",
+      "date": "2026-06-17T18:07:14.881Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Outworld Destroyer",
           "subEntityName": "Essence Flux",
           "rawNote": "Aghanim's Scepter Max Mana as damage barrier decreased from 75% to 70%",
+          "originalSource": "Aghanim's Scepter Max Mana as damage barrier decreased from 75% to 70%",
           "indentLevel": 1,
           "metric": "Aghanim's Scepter Max Mana as damage barrier",
           "changeType": "DECREASED",
@@ -903,11 +920,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -2,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
@@ -922,15 +939,15 @@
     },
     {
       "version": "7.35d",
-      "date": "2026-06-14T21:53:54.785Z",
+      "date": "2026-06-17T18:07:14.883Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -8,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -2,
-        "laning": -8,
+        "teamfight": 0,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
@@ -945,12 +962,13 @@
     },
     {
       "version": "7.36",
-      "date": "2026-06-14T21:53:54.791Z",
+      "date": "2026-06-17T18:07:14.890Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Outworld Destroyer",
           "rawNote": "Base Movement Speed decreased from 320 to 315",
+          "originalSource": "Base Movement Speed decreased from 320 to 315",
           "indentLevel": 1,
           "metric": "Base Movement Speed",
           "changeType": "DECREASED",
@@ -979,6 +997,7 @@
           "category": "hero",
           "entityName": "Outworld Destroyer",
           "rawNote": "Base Armor decreased by 0.5",
+          "originalSource": "Base Armor decreased by 0.5",
           "indentLevel": 1,
           "metric": "Base Armor",
           "changeType": "DECREASED",
@@ -1007,6 +1026,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Arcane Orb",
           "rawNote": "Mana Pool to Damage decreased from 12/13/14/15% to 10/11/12/13%",
+          "originalSource": "Mana Pool to Damage decreased from 12/13/14/15% to 10/11/12/13%",
           "indentLevel": 1,
           "metric": "Mana Pool to Damage",
           "changeType": "DECREASED",
@@ -1037,6 +1057,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Astral Imprisonment",
           "rawNote": "Aghanim's Shard now allows Astral Imprisonment to deal damage in a 300 AoE",
+          "originalSource": "Aghanim's Shard now allows Astral Imprisonment to deal damage in a 300 AoE",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -1044,19 +1065,20 @@
             "subEntityId": 5392
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ROSHAN_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -1064,6 +1086,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Sanity's Eclipse",
           "rawNote": "No longer applies Mana Allergy debuff without Facet 2 chosen",
+          "originalSource": "No longer applies Mana Allergy debuff without Facet 2 chosen",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1091,6 +1114,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Sanity's Eclipse",
           "rawNote": "Mana Cost decreased from 200/325/450 to 200/300/400",
+          "originalSource": "Mana Cost decreased from 200/325/450 to 200/300/400",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "DECREASED",
@@ -1121,6 +1145,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Sanity's Eclipse",
           "rawNote": "Cooldown decreased from 160/145/130s to 150/135/120s",
+          "originalSource": "Cooldown decreased from 160/145/130s to 150/135/120s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "DECREASED",
@@ -1151,6 +1176,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent +20 Attack Speed replaced with +250 Mana",
+          "originalSource": "Level 10 Talent +20 Attack Speed replaced with +250 Mana",
           "indentLevel": 1,
           "metric": "Level 10 Talent +20 Attack Speed",
           "changeType": "REWORK",
@@ -1179,6 +1205,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent +30 Movement Speed replaced with +1.5% of Current Mana as Movement Speed",
+          "originalSource": "Level 15 Talent +30 Movement Speed replaced with +1.5% of Current Mana as Movement Speed",
           "indentLevel": 1,
           "metric": "Level 15 Talent +30 Movement Speed",
           "changeType": "REWORK",
@@ -1207,6 +1234,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Sanity's Eclipse Mana Difference Multiplier increased from +0.15 to +0.2",
+          "originalSource": "Level 20 Talent Sanity's Eclipse Mana Difference Multiplier increased from +0.15 to +0.2",
           "indentLevel": 1,
           "metric": "Level 20 Talent Sanity's Eclipse Mana Difference Multiplier",
           "changeType": "INCREASED",
@@ -1236,17 +1264,17 @@
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1.5,
+        "teamfight": 1,
         "laning": 1,
         "siege": 0,
         "utility": 1
       },
       "totalVector": {
-        "farming": -7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -0.5,
-        "laning": -7,
+        "teamfight": 1,
+        "laning": 0,
         "siege": 0,
         "utility": 1
       },
@@ -1261,12 +1289,13 @@
     },
     {
       "version": "7.36a",
-      "date": "2026-06-14T21:53:54.794Z",
+      "date": "2026-06-17T18:07:14.892Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Outworld Destroyer",
           "rawNote": "Base Armor decreased by 1",
+          "originalSource": "Base Armor decreased by 1",
           "indentLevel": 1,
           "metric": "Base Armor",
           "changeType": "DECREASED",
@@ -1293,11 +1322,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -0.5,
-        "laning": -7,
+        "teamfight": 1,
+        "laning": 0,
         "siege": 0,
         "utility": 1
       },
@@ -1312,15 +1341,15 @@
     },
     {
       "version": "7.36b",
-      "date": "2026-06-14T21:53:54.797Z",
+      "date": "2026-06-17T18:07:14.896Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -0.5,
-        "laning": -7,
+        "teamfight": 1,
+        "laning": 0,
         "siege": 0,
         "utility": 1
       },
@@ -1335,15 +1364,15 @@
     },
     {
       "version": "7.36c",
-      "date": "2026-06-14T21:53:54.800Z",
+      "date": "2026-06-17T18:07:14.898Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -0.5,
-        "laning": -7,
+        "teamfight": 1,
+        "laning": 0,
         "siege": 0,
         "utility": 1
       },
@@ -1358,13 +1387,14 @@
     },
     {
       "version": "7.37",
-      "date": "2026-06-14T21:53:54.804Z",
+      "date": "2026-06-17T18:07:14.902Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Outworld Destroyer",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Astral Imprisonment Cast Range increased from +100 to +125",
+          "originalSource": "Level 15 Talent Astral Imprisonment Cast Range increased from +100 to +125",
           "indentLevel": 1,
           "metric": "Level 15 Talent Astral Imprisonment Cast Range",
           "changeType": "INCREASED",
@@ -1394,6 +1424,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent Arcane Orb Damage decreased from +2% to +1.5%",
+          "originalSource": "Level 25 Talent Arcane Orb Damage decreased from +2% to +1.5%",
           "indentLevel": 1,
           "metric": "Level 25 Talent Arcane Orb Damage",
           "changeType": "DECREASED",
@@ -1421,11 +1452,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -0.5,
-        "laning": -7,
+        "teamfight": 1,
+        "laning": 0,
         "siege": 0,
         "utility": 1
       },
@@ -1440,13 +1471,14 @@
     },
     {
       "version": "7.37b",
-      "date": "2026-06-14T21:53:54.807Z",
+      "date": "2026-06-17T18:07:14.904Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Outworld Destroyer",
           "subEntityName": "Essence Flux",
           "rawNote": "Aghanim's Scepter damage barrier decreased from 70% to 65% of maximum mana",
+          "originalSource": "Aghanim's Scepter damage barrier decreased from 70% to 65% of maximum mana",
           "indentLevel": 1,
           "metric": "Aghanim's Scepter damage barrier",
           "changeType": "DECREASED",
@@ -1475,11 +1507,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -0.5,
-        "laning": -7,
+        "teamfight": 1,
+        "laning": 0,
         "siege": 0,
         "utility": 1
       },
@@ -1494,15 +1526,15 @@
     },
     {
       "version": "7.37c",
-      "date": "2026-06-14T21:53:54.810Z",
+      "date": "2026-06-17T18:07:14.906Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -0.5,
-        "laning": -7,
+        "teamfight": 1,
+        "laning": 0,
         "siege": 0,
         "utility": 1
       },
@@ -1517,15 +1549,15 @@
     },
     {
       "version": "7.37d",
-      "date": "2026-06-14T21:53:54.812Z",
+      "date": "2026-06-17T18:07:14.909Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -0.5,
-        "laning": -7,
+        "teamfight": 1,
+        "laning": 0,
         "siege": 0,
         "utility": 1
       },
@@ -1540,12 +1572,13 @@
     },
     {
       "version": "7.37e",
-      "date": "2026-06-14T21:53:54.815Z",
+      "date": "2026-06-17T18:07:14.912Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Outworld Destroyer",
           "rawNote": "Ominous Discernment: Bonus mana per Intelligence increased from 2 to 2.5",
+          "originalSource": "Ominous Discernment: Bonus mana per Intelligence increased from 2 to 2.5",
           "indentLevel": 1,
           "metric": "Ominous Discernment: Bonus mana per Intelligence",
           "changeType": "INCREASED",
@@ -1573,11 +1606,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -0.5,
-        "laning": -7,
+        "teamfight": 1,
+        "laning": 0,
         "siege": 0,
         "utility": 1
       },
@@ -1592,13 +1625,14 @@
     },
     {
       "version": "7.38",
-      "date": "2026-06-14T21:53:54.824Z",
+      "date": "2026-06-17T18:07:14.919Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Outworld Destroyer",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent +200 Health replaced with +100 Astral Imprisonment Cast Range",
+          "originalSource": "Level 10 Talent +200 Health replaced with +100 Astral Imprisonment Cast Range",
           "indentLevel": 1,
           "metric": "Level 10 Talent +200 Health",
           "changeType": "REWORK",
@@ -1627,6 +1661,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Current Mana as Movement Speed decreased from +1.5% to +1%",
+          "originalSource": "Level 15 Talent Current Mana as Movement Speed decreased from +1.5% to +1%",
           "indentLevel": 1,
           "metric": "Level 15 Talent Current Mana as Movement Speed",
           "changeType": "DECREASED",
@@ -1656,6 +1691,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent +125 Astral Imprisonment Cast Range replaced with +8% Astral Imprisonment Mana Capacity Steal",
+          "originalSource": "Level 15 Talent +125 Astral Imprisonment Cast Range replaced with +8% Astral Imprisonment Mana Capacity Steal",
           "indentLevel": 1,
           "metric": "Level 15 Talent +125 Astral Imprisonment Cast Range",
           "changeType": "REWORK",
@@ -1684,6 +1720,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +20% Spell Lifesteal replaced with +450 Health",
+          "originalSource": "Level 20 Talent +20% Spell Lifesteal replaced with +450 Health",
           "indentLevel": 1,
           "metric": "Level 20 Talent +20% Spell Lifesteal",
           "changeType": "REWORK",
@@ -1710,11 +1747,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -0.5,
-        "laning": -7,
+        "teamfight": 1,
+        "laning": 0,
         "siege": 0,
         "utility": 1
       },
@@ -1729,15 +1766,15 @@
     },
     {
       "version": "7.38b",
-      "date": "2026-06-14T21:53:54.826Z",
+      "date": "2026-06-17T18:07:14.921Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -0.5,
-        "laning": -7,
+        "teamfight": 1,
+        "laning": 0,
         "siege": 0,
         "utility": 1
       },
@@ -1752,15 +1789,15 @@
     },
     {
       "version": "7.38c",
-      "date": "2026-06-14T21:53:54.830Z",
+      "date": "2026-06-17T18:07:14.924Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -0.5,
-        "laning": -7,
+        "teamfight": 1,
+        "laning": 0,
         "siege": 0,
         "utility": 1
       },
@@ -1775,13 +1812,14 @@
     },
     {
       "version": "7.39",
-      "date": "2026-06-14T21:53:54.836Z",
+      "date": "2026-06-17T18:07:14.928Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Outworld Destroyer",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Mana decreased from +250 to +200",
+          "originalSource": "Level 10 Talent Mana decreased from +250 to +200",
           "indentLevel": 1,
           "metric": "Level 10 Talent Mana",
           "changeType": "DECREASED",
@@ -1811,6 +1849,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Current Mana as Movement Speed decreased from +1% to +0.8%",
+          "originalSource": "Level 15 Talent Current Mana as Movement Speed decreased from +1% to +0.8%",
           "indentLevel": 1,
           "metric": "Level 15 Talent Current Mana as Movement Speed",
           "changeType": "DECREASED",
@@ -1840,6 +1879,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Sanity's Eclipse Mana Difference Multiplier decreased from +0.2 to +0.15",
+          "originalSource": "Level 20 Talent Sanity's Eclipse Mana Difference Multiplier decreased from +0.2 to +0.15",
           "indentLevel": 1,
           "metric": "Level 20 Talent Sanity's Eclipse Mana Difference Multiplier",
           "changeType": "DECREASED",
@@ -1867,11 +1907,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -0.5,
-        "laning": -7,
+        "teamfight": 1,
+        "laning": 0,
         "siege": 0,
         "utility": 1
       },
@@ -1886,15 +1926,15 @@
     },
     {
       "version": "7.39b",
-      "date": "2026-06-14T21:53:54.839Z",
+      "date": "2026-06-17T18:07:14.930Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -0.5,
-        "laning": -7,
+        "teamfight": 1,
+        "laning": 0,
         "siege": 0,
         "utility": 1
       },
@@ -1909,15 +1949,15 @@
     },
     {
       "version": "7.39c",
-      "date": "2026-06-14T21:53:54.843Z",
+      "date": "2026-06-17T18:07:14.932Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -0.5,
-        "laning": -7,
+        "teamfight": 1,
+        "laning": 0,
         "siege": 0,
         "utility": 1
       },
@@ -1932,15 +1972,15 @@
     },
     {
       "version": "7.39d",
-      "date": "2026-06-14T21:53:54.848Z",
+      "date": "2026-06-17T18:07:14.937Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -0.5,
-        "laning": -7,
+        "teamfight": 1,
+        "laning": 0,
         "siege": 0,
         "utility": 1
       },
@@ -1955,13 +1995,14 @@
     },
     {
       "version": "7.39e",
-      "date": "2026-06-14T21:53:54.851Z",
+      "date": "2026-06-17T18:07:14.939Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Outworld Destroyer",
           "subEntityName": "Arcane Orb",
           "rawNote": "Cooldown decreased from 6/4/2/0s to 4.5/3/1.5/0s",
+          "originalSource": "Cooldown decreased from 6/4/2/0s to 4.5/3/1.5/0s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "DECREASED",
@@ -1992,17 +2033,17 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1.5,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
-        "laning": -7,
+        "teamfight": 2,
+        "laning": 0,
         "siege": 0,
         "utility": 1
       },
@@ -2013,19 +2054,19 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.40",
-      "date": "2026-06-14T21:53:54.859Z",
+      "date": "2026-06-17T18:07:14.945Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
-        "laning": -7,
+        "teamfight": 2,
+        "laning": 0,
         "siege": 0,
         "utility": 1
       },
@@ -2040,13 +2081,14 @@
     },
     {
       "version": "7.40b",
-      "date": "2026-06-14T21:53:54.866Z",
+      "date": "2026-06-17T18:07:14.948Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Outworld Destroyer",
           "subEntityName": "Sanity's Eclipse",
           "rawNote": "No longer deals bonus damage to illusions",
+          "originalSource": "No longer deals bonus damage to illusions",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -2074,6 +2116,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Essence Flux",
           "rawNote": "Aghanim's Scepter barrier duration decreased from 15s to 12s",
+          "originalSource": "Aghanim's Scepter barrier duration decreased from 15s to 12s",
           "indentLevel": 1,
           "metric": "Aghanim's Scepter barrier duration",
           "changeType": "DECREASED",
@@ -2102,11 +2145,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
-        "laning": -7,
+        "teamfight": 2,
+        "laning": 0,
         "siege": 0,
         "utility": 1
       },
@@ -2121,15 +2164,15 @@
     },
     {
       "version": "7.40c",
-      "date": "2026-06-14T21:53:54.872Z",
+      "date": "2026-06-17T18:07:14.950Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
-        "laning": -7,
+        "teamfight": 2,
+        "laning": 0,
         "siege": 0,
         "utility": 1
       },
@@ -2144,12 +2187,13 @@
     },
     {
       "version": "7.41",
-      "date": "2026-06-14T21:53:54.887Z",
+      "date": "2026-06-17T18:07:14.959Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Outworld Destroyer",
           "rawNote": "Base Agility decreased from 22 to 17",
+          "originalSource": "Base Agility decreased from 22 to 17",
           "indentLevel": 1,
           "metric": "Base Agility",
           "changeType": "DECREASED",
@@ -2178,6 +2222,7 @@
           "category": "hero",
           "entityName": "Outworld Destroyer",
           "rawNote": "Base Armor decreased by 1",
+          "originalSource": "Base Armor decreased by 1",
           "indentLevel": 1,
           "metric": "Base Armor",
           "changeType": "DECREASED",
@@ -2204,16 +2249,17 @@
         {
           "category": "hero",
           "entityName": "Outworld Destroyer",
-          "rawNote": "Removed OD innate ",
+          "rawNote": "Removed OD innate",
+          "originalSource": "Removed OD innate ",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
             "entityId": 76
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -2223,7 +2269,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2231,6 +2278,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Essence Flux",
           "rawNote": "Now an innate ability",
+          "originalSource": "Now an innate ability",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2258,6 +2306,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Essence Flux",
           "rawNote": "Max Mana Restore now depends on the ability it procced on",
+          "originalSource": "Max Mana Restore now depends on the ability it procced on",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2265,9 +2314,9 @@
             "subEntityId": 5684
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -2277,7 +2326,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2285,6 +2335,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Essence Flux",
           "rawNote": "For regular abilities Max Mana Restoration changed from 25/35/45/55% to 40% + 5% per 5 levels",
+          "originalSource": "For regular abilities Max Mana Restoration changed from 25/35/45/55% to 40% + 5% per 5 levels",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2292,9 +2343,9 @@
             "subEntityId": 5684
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -2304,7 +2355,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2312,6 +2364,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Essence Flux",
           "rawNote": "For attack modifiers that spend mana Max Mana Restoration changed from 25/35/45/55% to 25% + 5% per 5 levels",
+          "originalSource": "For attack modifiers that spend mana Max Mana Restoration changed from 25/35/45/55% to 25% + 5% per 5 levels",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2319,19 +2372,20 @@
             "subEntityId": 5684
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2339,6 +2393,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Objurgation",
           "rawNote": "New basic ability. Has both passive and active components",
+          "originalSource": "New basic ability. Has both passive and active components",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2366,6 +2421,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Objurgation",
           "rawNote": "Increases maximum mana by 80/160/240/320",
+          "originalSource": "Increases maximum mana by 80/160/240/320",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2393,6 +2449,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Objurgation",
           "rawNote": "Can be activated to create an all damage barrier equal to 120/180/240/300 + 12% of Outworld Destroyer's max mana. Duration: 10s. Mana Cost: 250. Cooldown: 36/34/32/30s",
+          "originalSource": "Can be activated to create an all damage barrier equal to 120/180/240/300 + 12% of Outworld Destroyer's max mana. Duration: 10s. Mana Cost: 250. Cooldown: 36/34/32/30s",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2400,19 +2457,20 @@
             "subEntityId": 1760
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "ROSHAN_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2420,6 +2478,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Objurgation",
           "rawNote": "Barrier can be dispelled",
+          "originalSource": "Barrier can be dispelled",
           "indentLevel": 3,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2440,7 +2499,7 @@
               "Divine": 8
             },
             "confidenceScore": 0.95,
-            "reasoning": "Matches semantic pattern: \"can be dispelled\""
+            "reasoning": "Matches exact semantic pattern: \"can be dispelled\""
           }
         },
         {
@@ -2448,6 +2507,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Objurgation",
           "rawNote": "Multiple instances of Objurgation barrier stack",
+          "originalSource": "Multiple instances of Objurgation barrier stack",
           "indentLevel": 3,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2475,6 +2535,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Objurgation",
           "rawNote": "Upgraded with Aghanim's Scepter",
+          "originalSource": "Upgraded with Aghanim's Scepter",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2502,6 +2563,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Objurgation",
           "rawNote": "Increases Max Mana to Barrier by 4%. Damage that would bring Outworld Destroyer below 20% is prevented, triggering a strong dispel and an automatic instance of undispellable Objurgation. This effect cannot trigger more than once every 80s, but refreshes on death",
+          "originalSource": "Increases Max Mana to Barrier by 4%. Damage that would bring Outworld Destroyer below 20% is prevented, triggering a strong dispel and an automatic instance of undispellable Objurgation. This effect cannot trigger more than once every 80s, but refreshes on death",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2509,19 +2571,20 @@
             "subEntityId": 1760
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DISPEL_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2529,6 +2592,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Sanity's Eclipse",
           "rawNote": "Cooldown decreased from 150/135/120s to 140/130/120s",
+          "originalSource": "Cooldown decreased from 150/135/120s to 140/130/120s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "DECREASED",
@@ -2559,6 +2623,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Sanity's Eclipse",
           "rawNote": "Radius decreased from 450/525/600 to 450/500/550",
+          "originalSource": "Radius decreased from 450/525/600 to 450/500/550",
           "indentLevel": 1,
           "metric": "Radius",
           "changeType": "DECREASED",
@@ -2589,6 +2654,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent +8% Astral Imprisonment Mana Capacity Steal replaced with +5% Essence Flux Mana Restored",
+          "originalSource": "Level 15 Talent +8% Astral Imprisonment Mana Capacity Steal replaced with +5% Essence Flux Mana Restored",
           "indentLevel": 1,
           "metric": "Level 15 Talent +8% Astral Imprisonment Mana Capacity Steal",
           "changeType": "REWORK",
@@ -2617,6 +2683,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +0.15 Sanity's Eclipse Mana Difference Multiplier replaced with +10% Astral Imprisonment Mana Capacity Steal",
+          "originalSource": "Level 20 Talent +0.15 Sanity's Eclipse Mana Difference Multiplier replaced with +10% Astral Imprisonment Mana Capacity Steal",
           "indentLevel": 1,
           "metric": "Level 20 Talent +0.15 Sanity's Eclipse Mana Difference Multiplier",
           "changeType": "REWORK",
@@ -2645,6 +2712,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +450 Health replaced with -10s Objurgation Cooldown",
+          "originalSource": "Level 20 Talent +450 Health replaced with -10s Objurgation Cooldown",
           "indentLevel": 1,
           "metric": "Level 20 Talent +450 Health",
           "changeType": "REWORK",
@@ -2669,21 +2737,13 @@
           }
         }
       ],
-      "vectorDelta": {
+      "vectorDelta": null,
+      "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -4.5,
+        "teamfight": 2,
         "laning": 0,
-        "siege": 0,
-        "utility": 0
-      },
-      "totalVector": {
-        "farming": -7,
-        "mobility": 0,
-        "survivability": 0,
-        "teamfight": -3.5,
-        "laning": -7,
         "siege": 0,
         "utility": 1
       },
@@ -2694,19 +2754,19 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.41a",
-      "date": "2026-06-14T21:53:54.892Z",
+      "date": "2026-06-17T18:07:14.961Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -3.5,
-        "laning": -7,
+        "teamfight": 2,
+        "laning": 0,
         "siege": 0,
         "utility": 1
       },
@@ -2721,15 +2781,15 @@
     },
     {
       "version": "7.41b",
-      "date": "2026-06-14T21:53:54.896Z",
+      "date": "2026-06-17T18:07:14.963Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -7,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -3.5,
-        "laning": -7,
+        "teamfight": 2,
+        "laning": 0,
         "siege": 0,
         "utility": 1
       },
@@ -2744,13 +2804,14 @@
     },
     {
       "version": "7.41c",
-      "date": "2026-06-14T21:53:54.902Z",
+      "date": "2026-06-17T18:07:14.966Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Outworld Destroyer",
           "subEntityName": "Objurgation",
           "rawNote": "Mana Cost decreased from 250 to 175",
+          "originalSource": "Mana Cost decreased from 250 to 175",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "DECREASED",
@@ -2781,6 +2842,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Sanity's Eclipse",
           "rawNote": "Radius increased from 450/500/550 to 500/525/550",
+          "originalSource": "Radius increased from 450/500/550 to 500/525/550",
           "indentLevel": 1,
           "metric": "Radius",
           "changeType": "INCREASED",
@@ -2811,6 +2873,7 @@
           "entityName": "Outworld Destroyer",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Astral Imprisonment Mana Capacity Steal increased from 10% to 12%",
+          "originalSource": "Level 20 Talent Astral Imprisonment Mana Capacity Steal increased from 10% to 12%",
           "indentLevel": 1,
           "metric": "Level 20 Talent Astral Imprisonment Mana Capacity Steal",
           "changeType": "INCREASED",
@@ -2840,17 +2903,17 @@
         "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 6,
+        "teamfight": 1,
         "laning": 1,
         "siege": 0,
         "utility": 1
       },
       "totalVector": {
-        "farming": -6,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 2.5,
-        "laning": -6,
+        "teamfight": 3,
+        "laning": 1,
         "siege": 0,
         "utility": 2
       },
@@ -2861,16 +2924,17 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.41d",
-      "date": "2026-06-14T21:53:54.908Z",
+      "date": "2026-06-17T18:07:14.969Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Outworld Destroyer",
           "rawNote": "Min Base damage increased by 4",
+          "originalSource": "Min Base damage increased by 4",
           "indentLevel": 1,
           "metric": "Min Base damage",
           "changeType": "INCREASED",
@@ -2898,6 +2962,7 @@
           "category": "hero",
           "entityName": "Outworld Destroyer",
           "rawNote": "Max Base damage increased by 1",
+          "originalSource": "Max Base damage increased by 1",
           "indentLevel": 1,
           "metric": "Max Base damage",
           "changeType": "INCREASED",
@@ -2924,7 +2989,8 @@
         {
           "category": "hero",
           "entityName": "Outworld Destroyer",
-          "rawNote": "Damage at level 1 increased from 49-61 to 53-62 ",
+          "rawNote": "Damage at level 1 increased from 49-61 to 53-62",
+          "originalSource": "Damage at level 1 increased from 49-61 to 53-62 ",
           "indentLevel": 2,
           "metric": "Damage at level 1",
           "changeType": "INCREASED",
@@ -2952,42 +3018,54 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -6,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 2.5,
-        "laning": -6,
+        "teamfight": 3,
+        "laning": 1,
         "siege": 0,
         "utility": 2
       },
       "winrates": {
         "HERALD": {
-          "winrate": 0.4726,
-          "matchCount": 11717
+          "winrate": 0.4694,
+          "matchCount": 10446
         },
         "GUARDIAN": {
-          "winrate": 0.4862,
-          "matchCount": 22870
+          "winrate": 0.4933,
+          "matchCount": 20930
         },
         "CRUSADER": {
-          "winrate": 0.5046,
-          "matchCount": 26232
+          "winrate": 0.5021,
+          "matchCount": 24330
         },
         "ARCHON": {
-          "winrate": 0.5039,
-          "matchCount": 24484
+          "winrate": 0.503,
+          "matchCount": 22440
         },
         "LEGEND": {
-          "winrate": 0.512,
-          "matchCount": 18515
+          "winrate": 0.5087,
+          "matchCount": 17312
         },
         "ANCIENT": {
-          "winrate": 0.5146,
-          "matchCount": 11673
+          "winrate": 0.508,
+          "matchCount": 10879
         },
         "DIVINE": {
-          "winrate": 0.5106,
-          "matchCount": 11268
+          "winrate": 0.5098,
+          "matchCount": 10745
+        },
+        "IMMORTAL": {
+          "winrate": 0,
+          "matchCount": 0
+        },
+        "PRO": {
+          "winrate": 0,
+          "matchCount": 0
+        },
+        "GLOBAL_BLEND": {
+          "winrate": 0.5098,
+          "matchCount": 10745
         }
       },
       "temporalAssessment": "Net Gain"

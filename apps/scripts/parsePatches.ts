@@ -13,7 +13,8 @@ interface StructuredChange {
     category: "hero" | "item" | "neutral" | "general";
     entityName: string;
     subEntityName?: string;
-    rawNote: string;
+    rawNote: string;      // The cleaned display note
+    originalSource: string; // The 100% raw Valve source (ISSUE-5)
     indentLevel: number;
     metric?: string;
     changeType?: "INCREASE" | "DECREASE" | "RESCALE" | "REWORK" | "ADDITION" | "REMOVAL" | "ADJUSTMENT";
@@ -117,11 +118,15 @@ function processNotes(notes: any[], category: any, entityName: string, entityId:
         })
         .map(n => {
             const decomposition = decomposeNote(n.note);
+            // Clean the display note: strip HTML and trailing dots
+            const cleanedDisplayNote = n.note.replace(/<[^>]*>/g, "").trim().replace(/\.$/, "");
+
             return {
                 category,
                 entityName,
                 subEntityName,
-                rawNote: n.note,
+                rawNote: cleanedDisplayNote,
+                originalSource: n.note, // Preservation (ISSUE-5)
                 indentLevel: n.indent_level || 0,
                 ...decomposition,
                 metadata: {

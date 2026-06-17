@@ -1,8 +1,8 @@
 {
   "metaShifts": [
     {
-      "theme": "Facet System Removal and Innate Standardization",
-      "description": "The complete removal of Facets and standardization of innate abilities represents a fundamental shift toward simplified hero identity. All heroes now have single, defined innate abilities that scale predictably with levels rather than offering choice-based customization. This reduces strategic complexity in drafting but creates more consistent power curves.",
+      "theme": "Hero Identity & Consistent Scaling",
+      "description": "A widespread rework of innate abilities, often replacing older ones with scaling bonuses. This emphasizes a hero's core identity and provides consistent scaling throughout the game, making them less reliant on specific item timings for certain aspects of their kit and freeing up talent choices. This shifts the meta towards heroes with strong, inherent scaling that can adapt their builds.",
       "impactedRoles": [
         "Carry",
         "Mid",
@@ -12,18 +12,8 @@
       ]
     },
     {
-      "theme": "Healing and Health Restoration Unification",
-      "description": "The mechanical overhaul of healing systems creates new synergistic opportunities. Items like Sange, Kaya and Sange, and Orb of Corrosion now modify incoming healing, while the unified Health Restoration system affects all forms of life gain. This significantly buffs sustain-based strategies and heroes who can stack multiple healing amplification sources.",
-      "impactedRoles": [
-        "Carry",
-        "Offlane",
-        "SoftSupport",
-        "HardSupport"
-      ]
-    },
-    {
-      "theme": "Neutral Item Enchantment Determinism",
-      "description": "The shift from randomized to attribute-based enchantment selection creates predictable power spikes for specific hero types. Strength heroes get guaranteed access to Crude/Tough, Agility heroes to Nimble/Alert, and Intelligence heroes to Mystical/Keen-eyed. This reduces RNG variance while creating more defined neutral item scaling paths.",
+      "theme": "Adaptive Itemization & Strategic Flexibility",
+      "description": "Numerous Aghanim's Scepter and Shard upgrades were reworked, often moving effects or introducing entirely new abilities. This provides more diverse and impactful build paths, allowing heroes to adapt their scaling and utility based on game state and enemy composition, rewarding flexible drafting and in-game decision-making.",
       "impactedRoles": [
         "Carry",
         "Mid",
@@ -33,8 +23,19 @@
       ]
     },
     {
-      "theme": "Area of Effect Itemization Revolution",
-      "description": "The introduction of Chasm Stone and its integration into Gleipnir and Shiva's Guard creates a new itemization axis. Heroes who can effectively utilize AoE bonuses gain significant power, while the Specialist's Array line provides ranged carries with new scaling options through secondary projectiles.",
+      "theme": "Map Control & Proactive Ganking",
+      "description": "Several heroes received buffs to their movement speed, mobility spells, or vision-granting abilities. This suggests a meta where map control, ganking, and escaping are highly valued, and heroes who can effectively navigate the map and deny enemy vision will have a significant advantage in dictating the game's tempo.",
+      "impactedRoles": [
+        "Carry",
+        "Mid",
+        "Offlane",
+        "SoftSupport",
+        "HardSupport"
+      ]
+    },
+    {
+      "theme": "Brawler Cores & Extended Teamfights",
+      "description": "Many core heroes received buffs that enhance their sustained damage output, lifesteal, or survivability. This indicates a shift towards longer, more drawn-out teamfights where consistent damage and the ability to stay alive are more important than pure burst, favoring durable, high-sustain brawlers.",
       "impactedRoles": [
         "Carry",
         "Mid",
@@ -42,10 +43,57 @@
       ]
     },
     {
-      "theme": "Mana Regeneration Amplification Nerfs",
-      "description": "Systematic nerfs to Kaya-based items, Meteor Hammer, and other mana regen amplification sources reduce the sustainability of spell-heavy strategies. This particularly impacts heroes who relied on infinite mana pools for farming or teamfighting, forcing more careful resource management.",
+      "theme": "Empowered Supports & Early Game Influence",
+      "description": "Supports received significant buffs to their utility, damage, or survivability. This empowers supports to be more proactive in the early and mid-game, contributing more to kills, vision, and teamfight control, rather than just being passive healers or disablers, shifting the early game tempo.",
+      "impactedRoles": [
+        "SoftSupport",
+        "HardSupport"
+      ]
+    },
+    {
+      "theme": "Anti-Sustain Dominance",
+      "description": "The 'Health Restoration' mechanic now applies to all forms of life gain (healing, lifesteal, spell lifesteal). This significantly buffs items and abilities that reduce health restoration, making sustain-heavy heroes and strategies much weaker and shifting the strategic focus towards burst damage or non-healing survivability.",
+      "impactedRoles": [
+        "Carry",
+        "Mid",
+        "Offlane",
+        "SoftSupport",
+        "HardSupport"
+      ]
+    },
+    {
+      "theme": "Spellcaster Power Spike",
+      "description": "A comprehensive rework of core spellcaster items, including Dagon, Veil of Discord, Bloodstone, and Shiva's Guard, significantly enhances their power. This signals a strong shift towards burst and sustained magical damage, making spell-heavy lineups incredibly potent.",
       "impactedRoles": [
         "Mid",
+        "SoftSupport",
+        "HardSupport",
+        "Carry"
+      ]
+    },
+    {
+      "theme": "Ranged Carry Evolution",
+      "description": "The introduction of Specialist's Array and Hydra's Breath provides ranged carries with new multi-shot attack mechanics and a max health damage over time effect (Miasma). This directly buffs ranged heroes capable of leveraging multiple projectiles and sustained damage, potentially shifting the carry meta towards these archetypes and their ability to control large areas.",
+      "impactedRoles": [
+        "Carry"
+      ]
+    },
+    {
+      "theme": "Frontline Resilience & Disruption",
+      "description": "Key defensive and control items like Blade Mail, Heaven's Halberd, and Shiva's Guard have been reworked to be stronger. New items further enhance tankiness and disruption, favoring durable initiators and frontline heroes who can absorb damage and control teamfights.",
+      "impactedRoles": [
+        "Offlane",
+        "Mid",
+        "SoftSupport"
+      ]
+    },
+    {
+      "theme": "Predictable Neutral Itemization",
+      "description": "The removal of Facets and the standardization of innate ability scaling, combined with a rework of the Enchantment system to be attribute-based and less randomized, makes neutral item choices more predictable and strategic. This allows teams to tailor their neutral item progression more effectively to their hero compositions, rewarding thoughtful drafting and adaptation.",
+      "impactedRoles": [
+        "Carry",
+        "Mid",
+        "Offlane",
         "SoftSupport",
         "HardSupport"
       ]
@@ -53,138 +101,283 @@
   ],
   "synergisticWinners": [
     {
-      "entity": "Healing Amplification + Sange Items",
-      "synergyExplanation": "The new unified healing system allows Sange, Kaya and Sange, and Abyssal Blade to modify incoming healing. Heroes who build these items while having natural healing abilities (like Pudge, Abaddon, or Dragon Knight) can now stack multiple sources of healing amplification for massive sustain."
+      "entity": "Zeus",
+      "synergyExplanation": "Thundergod's Wrath now applying True Sight before damage and striking untargetable/invisible units is a massive buff for vision control and finding elusive heroes, synergizing with the 'Map Control & Proactive Ganking' theme.",
+      "temporalAssessment": "Net Gain"
     },
     {
-      "entity": "AoE Bonus + Chasm Stone Builders",
-      "synergyExplanation": "Heroes who naturally build Gleipnir or Shiva's Guard (like Magnus, Enigma, or Tidehunter) now gain +40/75 AoE from Chasm Stone integration. Combined with the new deterministic Enchantments, these heroes can reliably access additional AoE bonuses, creating massive teamfight presence."
+      "entity": "Lifestealer",
+      "synergyExplanation": "Massive buffs to his base stats, Rage movement speed, Feast as a basic ability, and Infest now targeting Ancients by default, combined with a strong Shard rework, make him a premier sustained damage brawler, aligning with the 'Brawler Cores & Extended Teamfights' theme.",
+      "temporalAssessment": "Net Gain"
     },
     {
-      "entity": "Ranged Carries + Specialist's Array Line",
-      "synergyExplanation": "The new Specialist's Array → Hydra's Breath progression provides ranged carries with secondary projectiles and max health damage. Heroes like Drow Ranger, Luna, or Gyrocopter can now scale into late game with percentage-based damage while maintaining their farming efficiency."
+      "entity": "Legion Commander",
+      "synergyExplanation": "The ability to use abilities during Duel, combined with a reliable Moment of Courage trigger and an innate that grants stacking armor, makes her an incredibly potent and survivable initiator, fitting the 'Brawler Cores & Extended Teamfights' theme.",
+      "temporalAssessment": "Net Gain"
     },
     {
-      "entity": "Intelligence Heroes + Deterministic Mystical Enchantment",
-      "synergyExplanation": "Intelligence heroes now have guaranteed access to Mystical enchantments at all tiers, providing consistent mana cost reduction and spell amplification scaling. This creates predictable power spikes for heroes like Invoker, Storm Spirit, or Tinker."
+      "entity": "Io",
+      "synergyExplanation": "Overcharge now providing significant Attack Speed and Spell Amplification to Io and tethered allies, alongside a versatile new innate, makes Io a powerhouse for enabling aggressive core heroes, strongly supporting the 'Empowered Supports & Early Game Influence' theme.",
+      "temporalAssessment": "Net Gain"
     },
     {
-      "entity": "Strength Heroes + Crude Enchantment Access",
-      "synergyExplanation": "Strength heroes gain guaranteed access to Crude enchantments (Tiers 2-4), providing health restoration amplification and base attack time reduction. Combined with the new healing system, tanky heroes can become nearly unkillable while maintaining damage output."
+      "entity": "Doom",
+      "synergyExplanation": "Doom's Scepter now applying Break is a game-changing buff against many core heroes, while his Devour Shard allows for ancient farming and spell amplification, making him a versatile and impactful offlaner that thrives in sustained engagements.",
+      "temporalAssessment": "Net Gain"
+    },
+    {
+      "entity": "Crella's Crozier",
+      "synergyExplanation": "This new item provides ghost form, movement speed steal, and a potent 30% (75% active) healing reduction aura. It's a powerful tool for offlaners or utility mids to disrupt enemy sustain and control teamfights, directly countering the 'Anti-Sustain Dominance' theme.",
+      "temporalAssessment": "Net Gain"
+    },
+    {
+      "entity": "Essence Distiller",
+      "synergyExplanation": "A new upgrade from Urn of Shadows, offering vision, minor healing, and damage. Its ability to provide True Sight and share enemy vision, or act as a dormant ward, makes it an invaluable utility item for supports, enhancing 'Map Control & Proactive Ganking'.",
+      "temporalAssessment": "Net Gain"
+    },
+    {
+      "entity": "Hydra's Breath",
+      "synergyExplanation": "This high-tier item, building from Specialist's Array, grants ranged carries multi-shot attacks, increased attack range, and a max health damage over time effect (Miasma). It significantly boosts AoE damage and sustained output for ranged right-clickers, defining the 'Ranged Carry Evolution' theme.",
+      "temporalAssessment": "Net Gain"
+    },
+    {
+      "entity": "Bloodstone",
+      "synergyExplanation": "The reworked Bloodstone, now building from Veil of Discord, provides massive health, intelligence, spell lifesteal, and a passive Spell Weakness Aura (12% increased spell damage taken). This makes it a premier item for core spellcasters, amplifying team-wide magical damage and driving the 'Spellcaster Power Spike'.",
+      "temporalAssessment": "Net Gain"
+    },
+    {
+      "entity": "Shiva's Guard",
+      "synergyExplanation": "Cheaper, with increased armor and Arctic Blast damage, and now provides an Area of Effect bonus. Its overall offensive and defensive capabilities are significantly buffed for tanky spellcasters, making it a strong teamfight control item that fits 'Frontline Resilience & Disruption' and 'Spellcaster Power Spike'.",
+      "temporalAssessment": "Net Gain"
+    },
+    {
+      "entity": "Heaven's Halberd",
+      "synergyExplanation": "Reworked to provide armor, evasion, and a significantly buffed Disarm (lower cooldown, increased cast range, longer duration). This makes it a premier anti-right-click item for offlaners and initiators, offering potent control and enhancing 'Frontline Resilience & Disruption'.",
+      "temporalAssessment": "Net Gain"
+    },
+    {
+      "entity": "Refresher Orb",
+      "synergyExplanation": "Despite no longer refreshing items, its reduced cooldown and mana cost make it a more accessible and spammable tool for heroes with powerful ultimate combos, allowing for more frequent high-impact plays and fitting the 'Adaptive Itemization & Strategic Flexibility' theme.",
+      "temporalAssessment": "Net Gain"
+    },
+    {
+      "entity": "Orb of Corrosion",
+      "synergyExplanation": "Now modifies all forms of incoming healing, making its healing reduction universally effective against sustain-heavy heroes. This is a significant buff to its utility as an early-game debuff, directly supporting the 'Anti-Sustain Dominance' meta.",
+      "temporalAssessment": "Net Gain"
+    },
+    {
+      "entity": "Monkey King Bar",
+      "synergyExplanation": "Buffed with increased damage, attack speed, and a crucial +50 attack range for melee heroes. This makes it a much stronger offensive option for melee carries, improving their engagement and damage output in the 'Brawler Cores & Extended Teamfights' meta.",
+      "temporalAssessment": "Net Gain"
+    },
+    {
+      "entity": "Arcane Boots",
+      "synergyExplanation": "Cheaper, provides more mana, and now includes a Wizard Hat in its recipe, offering +125 Mana. This makes it a more efficient early-game mana solution for supports and mana-hungry cores, empowering 'Empowered Supports & Early Game Influence'.",
+      "temporalAssessment": "Net Gain"
     }
   ],
   "synergisticLosers": [
     {
-      "entity": "Spell Spam + Mana Regen Amplification",
-      "synergyExplanation": "The systematic nerfs to Kaya (-10%), Kaya and Sange (-10%), Yasha and Kaya (-10%), and Meteor Hammer (-5%) mana regen amplification destroy the infinite mana strategies. Heroes who relied on these items for sustained spell casting lose significant power."
+      "entity": "Heart of Tarrasque",
+      "synergyExplanation": "The 'Anti-Sustain Era' directly targets all forms of health restoration, making Heart's massive regeneration significantly less effective against common debuffs and reducing its value as a primary tank item."
     },
     {
-      "entity": "Illusion Heroes + On-Hit Effect Items",
-      "synergyExplanation": "Multiple illusion synergies have been removed: Broodmother's Incapacitating Bite, Abaddon's Curse of Avernus, and Terrorblade's Demon Zeal no longer work with illusions. This dismantles the core scaling mechanism for illusion-based carries."
+      "entity": "Satanic",
+      "synergyExplanation": "As a primary lifesteal item, its effectiveness is severely diminished by the widespread and potent health restoration reduction mechanics introduced in the patch, making it less reliable for burst healing and survivability."
     },
     {
-      "entity": "Randomized Neutral Builds + Flexible Enchantments",
-      "synergyExplanation": "The removal of randomized enchantments eliminates the ability to adapt neutral item builds based on available enchantments. Heroes who benefited from flexible enchantment access (like Universal heroes getting any enchantment) lose strategic depth."
+      "entity": "Vladmir's Offering",
+      "synergyExplanation": "The aura-based lifesteal and regeneration provided by Vladmir's Offering are now easily countered by the pervasive health restoration reduction, making it a less reliable sustain item for the team in a meta that punishes healing."
     },
     {
-      "entity": "Facet-Dependent Strategies + Hero Customization",
-      "synergyExplanation": "The complete removal of Facets eliminates all choice-based hero customization. Strategies that relied on specific facet combinations or situational facet selection are completely removed from the game."
+      "entity": "Wraith King",
+      "synergyExplanation": "His core survivability and farming patterns heavily rely on lifesteal and regeneration, which are now directly countered by the 'Anti-Sustain Era' mechanics, making him much easier to burst down and less resilient in teamfights."
     },
     {
-      "entity": "Item Cooldown Refresh + Refresher Effects",
-      "synergyExplanation": "Both Refresher Orb and Refresher Shard no longer refresh item cooldowns, only ability cooldowns. This eliminates powerful combinations like double BKB, double Satanic, or double Abyssal Blade usage."
+      "entity": "Alchemist",
+      "synergyExplanation": "Traditionally relies on high health regeneration and lifesteal builds for jungle efficiency and survivability in fights. Both aspects are severely hampered by the new universal health restoration reduction, making his scaling less dominant."
     }
   ],
   "roleSpecificWinners": {
     "Carry": [
       {
-        "hero": "Terrorblade",
-        "explanation": "Despite Demon Zeal illusion nerfs, TB gains +1 base armor and stronger Conjure Image illusions (25/30/35/40% damage). The new healing amplification system synergizes with his high HP pool, and he can access guaranteed Brawny enchantments for consistent scaling."
-      },
-      {
         "hero": "Lifestealer",
-        "explanation": "Massive buffs across the board: +10 base damage, +20 attack speed, +5 movement speed, plus Feast becomes a basic ability with scaling. The new Ghoul Frenzy innate provides +5 attack speed per level, and he can infest Ancients by default."
+        "explanation": "Massive buffs to base stats, Rage movement speed, Feast as a basic ability, and Infest now targeting Ancients by default, combined with a strong Shard rework, make him a premier sustained damage brawler, thriving in longer teamfights.",
+        "temporalAssessment": "Net Gain"
       },
       {
-        "hero": "Spectre",
-        "explanation": "Significant buffs to mobility and sustain: +5 movement speed, +0.5 base health regen, Shadow Step cooldown reduced and cast range increased. Illusion damage and survivability improved, while Haunt cooldown decreased."
+        "hero": "Sven",
+        "explanation": "Wrath of God innate provides significant damage scaling with Strength, and Warcry's reworked Shard offers immense physical barrier and movement speed, making him an incredibly tanky and hard-hitting carry who can sustain through fights.",
+        "temporalAssessment": "Net Gain"
       },
       {
-        "hero": "Anti-Mage",
-        "explanation": "Despite some nerfs, AM gains +1 base armor and Aghanim's Scepter upgrade for Mana Break (+1.5% max mana burned). Blink cooldown reduced at early levels, and the new healing system benefits his sustain in lane."
+        "hero": "Faceless Void",
+        "explanation": "Chronosphere as a default ultimate is a huge power spike. The Time Dilation Shard provides strong self-buffs and control, while Time Walk Scepter enhances mobility, making him a more versatile and impactful teamfight carry.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
+        "hero": "Sniper",
+        "explanation": "Take Aim passively granting significant attack range, combined with Keen Scope's damage scaling based on distance, transforms him into a true long-range threat capable of dishing out consistent damage from a safe distance.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
+        "hero": "Meepo",
+        "explanation": "The Divided We Stand rework allowing clones to copy items (with shared cooldowns and distributed bonuses) is a massive scaling buff, making him a late-game monster. Ransack piercing Debuff Immunity also enhances his kill potential.",
+        "temporalAssessment": "Net Gain"
       }
     ],
     "Mid": [
       {
         "hero": "Invoker",
-        "explanation": "Orb max levels increased to 8, and Aghanim's Scepter now provides choice-based upgrades with +1 level to selected orb. This creates more flexible scaling paths and stronger late-game potential with higher orb levels."
+        "explanation": "The ability to choose specific orb levels for Aghanim's Scepter and Shard upgrades provides unprecedented flexibility, allowing Invoker to specialize his build path for burst, control, or sustained damage based on the game's needs.",
+        "temporalAssessment": "Net Gain"
       },
       {
-        "hero": "Tinker",
-        "explanation": "New Deploy Turrets ability provides area control and farming, while Rearm cooldown decreased significantly (5.5/5/4.5s). March of the Machines gains healing for allies with Aghanim's Scepter, improving team utility."
+        "hero": "Outworld Destroyer",
+        "explanation": "Objurgation, a new basic ability, provides a passive max mana increase and an active all-damage barrier, significantly boosting his survivability and mana pool. The Scepter upgrade further enhances this, making him much harder to kill.",
+        "temporalAssessment": "Net Gain"
       },
       {
-        "hero": "Zeus",
-        "explanation": "Base damage and strength increased, while all abilities gain damage buffs. Arc Lightning base damage up, Lightning Bolt and Thundergod's Wrath provide better vision, and Static Field scales more consistently."
+        "hero": "Pangolier",
+        "explanation": "Buffs to Swashbuckle's slow, Shield Crash's damage, and Rolling Thunder's stun duration enhance his initiation and sustained damage output, making him a stronger brawler and teamfight presence in the mid lane.",
+        "temporalAssessment": "Net Gain"
       },
       {
-        "hero": "Lina",
-        "explanation": "New Slow Burn innate provides 64% additional damage as burn over 4s on all abilities. Despite base damage nerfs, this creates massive sustained damage potential and synergizes with spell amplification items."
+        "hero": "Ember Spirit",
+        "explanation": "Increased Strength gain and significant buffs to Sleight of Fist's bonus hero damage make Ember Spirit a more potent physical damage threat, allowing him to scale better into the mid and late game as a mobile damage dealer.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
+        "hero": "Void Spirit",
+        "explanation": "Intrinsic Edge's rework to increase attack damage and attack speed per attribute point, despite base damage nerfs, shifts him towards a more potent right-click mid, while Resonant Pulse's increased barrier improves his survivability in skirmishes.",
+        "temporalAssessment": "Net Gain"
       }
     ],
     "Offlane": [
       {
-        "hero": "Tidehunter",
-        "explanation": "New Leviathan's Catch innate provides permanent scaling through fish consumption (+3 max health, +2 attack range, +1 damage block per fish). Kraken Shell now provides strong dispel, and Anchor Smash scales with attack range."
-      },
-      {
-        "hero": "Magnus",
-        "explanation": "Empower now always affects Magnus with 30% increased values and can't be self-cast, providing consistent self-buff. Base agility increased, and Solid Core provides more consistent slow resistance scaling."
-      },
-      {
-        "hero": "Centaur Warrunner",
-        "explanation": "New Horsepower innate grants 30% of strength as movement speed (doesn't stack with boots), providing massive mobility scaling. Strength gain increased to 4.2, creating exponential movement speed growth."
+        "hero": "Doom",
+        "explanation": "Doom's Scepter now applying Break is a game-changer against many core heroes, while his Devour Shard allows for ancient farming and spell amplification, making him a versatile and impactful offlaner that thrives in sustained engagements.",
+        "temporalAssessment": "Net Gain"
       },
       {
         "hero": "Legion Commander",
-        "explanation": "Reworked Outfight Them! provides stacking armor bonuses for LC and nearby allies. Moment of Courage becomes more reliable (triggers after set number of attacks), and Duel allows ability usage during duels."
+        "explanation": "The ability to use abilities during Duel, combined with a reliable Moment of Courage trigger and an innate that grants stacking armor, makes her an incredibly potent and survivable initiator, fitting the 'Sustained Damage & Survivability for Cores' theme.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
+        "hero": "Tidehunter",
+        "explanation": "Leviathan's Catch innate provides permanent stat gains, and Kraken Shell now applying a strong dispel makes him incredibly difficult to burst down, solidifying his role as a frontline tank and initiator.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
+        "hero": "Tiny",
+        "explanation": "The Insurmountable innate provides significant Slow and Status Resistance based on Strength, making him incredibly tanky. Tree Grab buffs and the Grow Shard for AoE control and slows further enhance his brawling and initiation capabilities.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
+        "hero": "Axe",
+        "explanation": "One Man Army innate provides substantial Strength based on armor when solo, making him an incredibly tanky solo brawler. Culling Blade now granting permanent armor stacks further rewards his aggressive playstyle.",
+        "temporalAssessment": "Net Gain"
       }
     ],
     "SoftSupport": [
       {
+        "hero": "Earthshaker",
+        "explanation": "Buffs to Fissure stun duration, Aftershock radius, and Echo Slam projectile speed make his initiation and crowd control even more potent, allowing him to dictate teamfights and secure kills more reliably.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
+        "hero": "Shadow Shaman",
+        "explanation": "The new Urnaconda Shard provides a powerful Massive Serpent Ward for pushing and teamfighting, while Fowl Play buffs enhance his utility, making him a stronger presence in both lane and mid-game objectives.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
+        "hero": "Ancient Apparition",
+        "explanation": "The new Bone Chill innate provides a stacking movement slow and Strength reduction on magic damage, and all his core spells now deal damage over time, significantly increasing his overall damage output and debuff potential.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
         "hero": "Rubick",
-        "explanation": "New Curiosity innate provides scaling damage, buff/debuff duration, and AoE bonuses. Stolen spells have 10/20/30% reduced cooldown, and Fade Bolt reduces both spell and attack damage by default."
+        "explanation": "Curiosity innate provides scaling bonuses and permanent Intelligence steals, while Fade Bolt now reducing both spell and attack damage, and Spell Steal reducing stolen spell cooldowns, make him a more impactful and versatile counter-initiator.",
+        "temporalAssessment": "Net Gain"
       },
       {
         "hero": "Disruptor",
-        "explanation": "Thunder Strike damage increased, and new Kinetic Fence (Aghanim's Shard) provides better area control. Electromagnetic Repulsion now scales with Intelligence for damage, improving his scaling potential."
-      },
-      {
-        "hero": "Oracle",
-        "explanation": "New Aghanim's Scepter provides rotating Tarot Card buffs with powerful effects (+40% spell amp, +100% gold gain, +150% int, +40% heal amp, or damage barrier). Prognosticate now predicts Roshan timer."
-      },
-      {
-        "hero": "Winter Wyvern",
-        "explanation": "New Eldwurm's Edda innate allows upgrading a basic ability to level 5 after 10 minutes, plus 25% base intelligence bonus. This creates unique scaling potential and ability customization."
+        "explanation": "Electromagnetic Repulsion now dealing Intelligence-based damage and Thunder Strike's damage buff, combined with Kinetic Fence as a strong Shard upgrade, enhance his damage and control, making him a more aggressive and effective support.",
+        "temporalAssessment": "Net Gain"
       }
     ],
     "HardSupport": [
       {
         "hero": "Crystal Maiden",
-        "explanation": "New Glacial Guard innate converts 30% + 2% per level of mana spent into physical barriers. Arcane Aura now provides CM with 20/40/60/80% mana regen amplification, improving her sustainability."
-      },
-      {
-        "hero": "Lich",
-        "explanation": "New Sacrifice innate allows killing allied creeps for mana and experience, providing laning sustain and experience advantage. This creates strategic depth in lane management and resource generation."
+        "explanation": "Glacial Guard innate converts mana spent into a physical barrier, drastically increasing her survivability. Arcane Aura's mana regen amplification further supports her spell-spamming, making her a much more resilient and active hard support.",
+        "temporalAssessment": "Net Gain"
       },
       {
         "hero": "Lion",
-        "explanation": "Finger of Death gains empowered melee form by default (25% cleave, bonus damage, 30 movement speed for 20s). New To Hell and Back provides 20% debuff duration while enemies are dead and spell amp on respawn."
+        "explanation": "Finger of Death's new empowered melee attacks after cast, combined with a reworked innate that grants debuff duration and spell amplification, makes Lion a more hybrid damage dealer with strong comeback potential and sustained impact.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
+        "hero": "Witch Doctor",
+        "explanation": "Death Ward's increased attack range and a powerful Level 20 talent that makes Maledict bursts deal AoE damage significantly enhance his teamfight presence and damage output, making him a more threatening hard support.",
+        "temporalAssessment": "Net Gain"
+      },
+      {
+        "hero": "Keeper of the Light",
+        "explanation": "Bright Speed innate provides mobility and vision, while Chakra Magic's mana restore buff and Blinding Light's increased cast range enhance his lane presence and ability to save allies. Spirit Form now amplifies Bright Speed, further boosting his mobility.",
+        "temporalAssessment": "Net Gain"
       },
       {
         "hero": "Chen",
-        "explanation": "New Zealot innate spawns a scaling melee creep on respawn with Martyrdom ability and teleportation. Holy Persuasion can now unsummon creeps and increases all outgoing damage by 0/6/12/18%."
+        "explanation": "The Zealot innate provides a powerful new creep with a versatile Martyrdom ability, and Holy Persuasion now increases all outgoing damage of controlled units, making Chen a much stronger pusher and teamfight enabler.",
+        "temporalAssessment": "Net Gain"
       }
     ]
-  }
+  },
+  "roleSpecificLosers": {
+    "Carry": [
+      {
+        "hero": "Anti-Mage",
+        "explanation": "The significant nerf to Mana Break effectiveness on illusions (50% to 25%) directly impacts his traditional illusion-based farming and split-pushing strategy, making him less efficient at creating map pressure and accumulating net worth."
+      },
+      {
+        "hero": "Drow Ranger",
+        "explanation": "Base damage and Precision Aura nerfs reduce her early-game laning strength and overall damage output, making her less impactful in the early to mid-game compared to other carries."
+      }
+    ],
+    "Mid": [
+      {
+        "hero": "Lina",
+        "explanation": "Across-the-board damage nerfs to Dragon Slave, Light Strike Array, and Laguna Blade significantly reduce her burst potential, making her less effective at quickly eliminating targets and securing kills in the mid lane."
+      }
+    ],
+    "Offlane": [
+      {
+        "hero": "Slardar",
+        "explanation": "Nerfs to Seaborn Sentinel's HP regen, armor, and bonus damage, along with reduced Scepter bonuses, diminish his innate tankiness and damage scaling, making him less resilient in the offlane."
+      },
+      {
+        "hero": "Timbersaw",
+        "explanation": "The nerf to Exposure Therapy's mana gain per tree destroyed reduces his sustain in lane and jungle, making it harder for him to constantly spam spells and maintain pressure."
+      }
+    ],
+    "SoftSupport": [
+      {
+        "hero": "Treant Protector",
+        "explanation": "Significant nerfs to Living Armor's mana cost and damage block, coupled with increased cooldown and reduced charges for Eyes In The Forest, severely hamper his ability to provide global sustain and vision control."
+      },
+      {
+        "hero": "Dazzle",
+        "explanation": "Nothl Projection no longer providing a hard dispel on Dazzle when the projection ends significantly reduces his personal survivability and ability to escape dangerous situations."
+      }
+    ],
+    "HardSupport": [
+      {
+        "hero": "Lich",
+        "explanation": "Base Mana Regen and Intelligence gain nerfs, combined with the long cooldown on the new Sacrifice innate, make him more mana-starved and less able to spam spells, reducing his overall impact as a hard support."
+      }
+    ]
+  },
+  "validationState": "VALIDATED"
 }

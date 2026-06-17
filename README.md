@@ -106,11 +106,13 @@ graph TD
 
 ## 🗺️ Roadmap Status
 
-- **Phases 1-12**: [COMPLETE] Foundation, Ingestion, Parsing, Vectors, Winrates, UI/UX, Local DB & API.
-- **Phase 14**: [COMPLETE] Historical Backfill (Initial High-Fidelity Run).
-- **Phase 14.5**: [IN PROGRESS] Intuitive Meta Correction (Gemini Re-run).
-- **Phase 15**: [UP NEXT] Cross-Patch Trend Validation & Temporal Intelligence.
-- **Phase 16**: [FUTURE] Cloud Infrastructure & Dynamic Hosting Pivot.
+- **Phases 1-13**: [COMPLETE] Ingestion, Parsing, Vectors, Winrates, UI/UX, Local DB & Local API.
+- **Phase 14**: [COMPLETE] Historical Backfill (Gemini 2.5 Truth-Grounded Re-run).
+- **Phase 15**: [COMPLETE] Cross-Patch Trend Validation & Temporal Intelligence.
+- **Phase 16**: [COMPLETE] Stratz Exit & OpenDota Migration.
+- **Phase 18**: [COMPLETE] Mechanical Truth-Grounded Intelligence (Surgical Fact-Checking & Prompt Splitting).
+- **Phase 19**: [IN PROGRESS] Empirical Meta Validation & Algorithm Tuning.
+- **Phase 17**: [FUTURE] Advanced Resilience & Data Sourcing.
 
 ---
 

@@ -3,12 +3,13 @@
   "history": [
     {
       "version": "7.33",
-      "date": "2026-06-14T21:53:54.726Z",
+      "date": "2026-06-17T18:07:14.843Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Naga Siren",
           "rawNote": "Base Health Regen decreased from 1.5 to 1.25",
+          "originalSource": "Base Health Regen decreased from 1.5 to 1.25",
           "indentLevel": 1,
           "metric": "Base Health Regen",
           "changeType": "DECREASED",
@@ -38,6 +39,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Ensnare",
           "rawNote": "Can now target sleeping/invulnerable units even without Aghanim's Scepter (not Debuff Immune targets)",
+          "originalSource": "Can now target sleeping/invulnerable units even without Aghanim's Scepter (not Debuff Immune targets)",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -58,7 +60,7 @@
               "Divine": 6
             },
             "confidenceScore": 0.95,
-            "reasoning": "Matches semantic pattern: \"can now target\""
+            "reasoning": "Matches exact semantic pattern: \"can now target\""
           }
         },
         {
@@ -66,6 +68,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Rip Tide",
           "rawNote": "Damage decreased from 40/45/50/55 to 34/41/48/55",
+          "originalSource": "Damage decreased from 40/45/50/55 to 34/41/48/55",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "DECREASED",
@@ -96,6 +99,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Unknown Ability (1008)",
           "rawNote": "Channeling is now interrupted if the target dispels Ensnare or dies",
+          "originalSource": "Channeling is now interrupted if the target dispels Ensnare or dies",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -103,19 +107,20 @@
             "subEntityId": 1008
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "TARGETING_RULE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -123,6 +128,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +500 Song of the Siren Radius replaced with -20s Song of the Siren Cooldown",
+          "originalSource": "Level 20 Talent +500 Song of the Siren Radius replaced with -20s Song of the Siren Cooldown",
           "indentLevel": 1,
           "metric": "Level 20 Talent +500 Song of the Siren Radius",
           "changeType": "REWORK",
@@ -151,6 +157,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent -7 Rip Tide Armor replaced with -1 Attack to Trigger Rip Tide",
+          "originalSource": "Level 25 Talent -7 Rip Tide Armor replaced with -1 Attack to Trigger Rip Tide",
           "indentLevel": 1,
           "metric": "Level 25 Talent -7 Rip Tide Armor",
           "changeType": "REWORK",
@@ -175,13 +182,21 @@
           }
         }
       ],
-      "vectorDelta": null,
-      "totalVector": {
-        "farming": 0,
+      "vectorDelta": {
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": 0,
+        "teamfight": -1,
+        "laning": -1,
+        "siege": 0,
+        "utility": 0
+      },
+      "totalVector": {
+        "farming": -1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
@@ -190,15 +205,15 @@
     },
     {
       "version": "7.33b",
-      "date": "2026-06-14T21:53:54.731Z",
+      "date": "2026-06-17T18:07:14.846Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": 0,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
@@ -236,13 +251,14 @@
     },
     {
       "version": "7.33c",
-      "date": "2026-06-14T21:53:54.736Z",
+      "date": "2026-06-17T18:07:14.849Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Naga Siren",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Mirror Image Damage decreased from +13% to +10%",
+          "originalSource": "Level 15 Talent Mirror Image Damage decreased from +13% to +10%",
           "indentLevel": 1,
           "metric": "Level 15 Talent Mirror Image Damage",
           "changeType": "DECREASED",
@@ -270,11 +286,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": 0,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
@@ -312,15 +328,15 @@
     },
     {
       "version": "7.33d",
-      "date": "2026-06-14T21:53:54.740Z",
+      "date": "2026-06-17T18:07:14.851Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": 0,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
@@ -358,15 +374,15 @@
     },
     {
       "version": "7.33e",
-      "date": "2026-06-14T21:53:54.743Z",
+      "date": "2026-06-17T18:07:14.854Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": 0,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
@@ -404,12 +420,13 @@
     },
     {
       "version": "7.34",
-      "date": "2026-06-14T21:53:54.750Z",
+      "date": "2026-06-17T18:07:14.859Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Naga Siren",
           "rawNote": "Base Armor decreased by 1",
+          "originalSource": "Base Armor decreased by 1",
           "indentLevel": 1,
           "metric": "Base Armor",
           "changeType": "DECREASED",
@@ -436,11 +453,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": 0,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
@@ -449,15 +466,15 @@
     },
     {
       "version": "7.34b",
-      "date": "2026-06-14T21:53:54.755Z",
+      "date": "2026-06-17T18:07:14.863Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 0,
+        "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": 0,
+        "teamfight": -1,
+        "laning": -1,
         "siege": 0,
         "utility": 0
       },
@@ -495,12 +512,13 @@
     },
     {
       "version": "7.34c",
-      "date": "2026-06-14T21:53:54.759Z",
+      "date": "2026-06-17T18:07:14.868Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Naga Siren",
           "rawNote": "Base Health Regen decreased from 1.25 to 1.0",
+          "originalSource": "Base Health Regen decreased from 1.25 to 1.0",
           "indentLevel": 1,
           "metric": "Base Health Regen",
           "changeType": "DECREASED",
@@ -530,6 +548,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Mirror Image",
           "rawNote": "Mana Cost increased from 70/85/100/115 to 75/90/105/120",
+          "originalSource": "Mana Cost increased from 70/85/100/115 to 75/90/105/120",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "INCREASED",
@@ -566,11 +585,11 @@
         "utility": -1
       },
       "totalVector": {
-        "farming": -1,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": -1,
+        "teamfight": -1,
+        "laning": -2,
         "siege": 0,
         "utility": -1
       },
@@ -608,15 +627,15 @@
     },
     {
       "version": "7.34d",
-      "date": "2026-06-14T21:53:54.764Z",
+      "date": "2026-06-17T18:07:14.871Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -1,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": -1,
+        "teamfight": -1,
+        "laning": -2,
         "siege": 0,
         "utility": -1
       },
@@ -654,15 +673,15 @@
     },
     {
       "version": "7.34e",
-      "date": "2026-06-14T21:53:54.768Z",
+      "date": "2026-06-17T18:07:14.873Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -1,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": -1,
+        "teamfight": -1,
+        "laning": -2,
         "siege": 0,
         "utility": -1
       },
@@ -700,12 +719,13 @@
     },
     {
       "version": "7.35",
-      "date": "2026-06-14T21:53:54.772Z",
+      "date": "2026-06-17T18:07:14.877Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Naga Siren",
           "rawNote": "Strength gain decreased from 2.6 to 2.4",
+          "originalSource": "Strength gain decreased from 2.6 to 2.4",
           "indentLevel": 1,
           "metric": "Strength gain",
           "changeType": "DECREASED",
@@ -735,6 +755,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Rip Tide Damage decreased from +30 to +25",
+          "originalSource": "Level 10 Talent Rip Tide Damage decreased from +30 to +25",
           "indentLevel": 1,
           "metric": "Level 10 Talent Rip Tide Damage",
           "changeType": "DECREASED",
@@ -762,11 +783,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -1,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": -1,
+        "teamfight": -1,
+        "laning": -2,
         "siege": 0,
         "utility": -1
       },
@@ -781,15 +802,15 @@
     },
     {
       "version": "7.35b",
-      "date": "2026-06-14T21:53:54.775Z",
+      "date": "2026-06-17T18:07:14.879Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -1,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": -1,
+        "teamfight": -1,
+        "laning": -2,
         "siege": 0,
         "utility": -1
       },
@@ -804,15 +825,15 @@
     },
     {
       "version": "7.35c",
-      "date": "2026-06-14T21:53:54.782Z",
+      "date": "2026-06-17T18:07:14.881Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -1,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": -1,
+        "teamfight": -1,
+        "laning": -2,
         "siege": 0,
         "utility": -1
       },
@@ -827,13 +848,14 @@
     },
     {
       "version": "7.35d",
-      "date": "2026-06-14T21:53:54.785Z",
+      "date": "2026-06-17T18:07:14.883Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Naga Siren",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Rip Tide Damage decreased from +25 to +20",
+          "originalSource": "Level 10 Talent Rip Tide Damage decreased from +25 to +20",
           "indentLevel": 1,
           "metric": "Level 10 Talent Rip Tide Damage",
           "changeType": "DECREASED",
@@ -861,11 +883,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -1,
+        "farming": -2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": -1,
+        "teamfight": -1,
+        "laning": -2,
         "siege": 0,
         "utility": -1
       },
@@ -880,13 +902,14 @@
     },
     {
       "version": "7.36",
-      "date": "2026-06-14T21:53:54.791Z",
+      "date": "2026-06-17T18:07:14.890Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Naga Siren",
           "subEntityName": "Ensnare",
           "rawNote": "Aghanim's Scepter now allows Ensnare to affect Debuff Immune units",
+          "originalSource": "Aghanim's Scepter now allows Ensnare to affect Debuff Immune units",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -914,6 +937,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Unknown Ability (1008)",
           "rawNote": "No longer granted by Aghanim's Scepter. Now it is acquired on leveling Ensnare for the first time",
+          "originalSource": "No longer granted by Aghanim's Scepter. Now it is acquired on leveling Ensnare for the first time",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -940,7 +964,8 @@
           "category": "hero",
           "entityName": "Naga Siren",
           "subEntityName": "Unknown Ability (1008)",
-          "rawNote": "Now requires Aghanim's Scepter to affect Debuff Immune units ",
+          "rawNote": "Now requires Aghanim's Scepter to affect Debuff Immune units",
+          "originalSource": "Now requires Aghanim's Scepter to affect Debuff Immune units ",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -968,6 +993,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Unknown Ability (1008)",
           "rawNote": "Maximum range increased from 1400 to 1600",
+          "originalSource": "Maximum range increased from 1400 to 1600",
           "indentLevel": 1,
           "metric": "Maximum range",
           "changeType": "INCREASED",
@@ -998,6 +1024,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Unknown Ability (1008)",
           "rawNote": "Targets that are being Reeled In have phased and unobstructed movement",
+          "originalSource": "Targets that are being Reeled In have phased and unobstructed movement",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -1005,19 +1032,20 @@
             "subEntityId": 1008
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "TARGETING_RULE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -1025,6 +1053,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Unknown Ability (1008)",
           "rawNote": "Channel Duration changed from 5s to the length of the remaining Ensnare Debuff",
+          "originalSource": "Channel Duration changed from 5s to the length of the remaining Ensnare Debuff",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -1032,19 +1061,20 @@
             "subEntityId": 1008
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -1052,6 +1082,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Song of the Siren",
           "rawNote": "Now heals allies for 2/4/6% of Max Health per second even without Aghanim's Shard",
+          "originalSource": "Now heals allies for 2/4/6% of Max Health per second even without Aghanim's Shard",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -1079,6 +1110,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Song of the Siren",
           "rawNote": "Aghanim's Shard now increases Max Health Regen by 4%",
+          "originalSource": "Aghanim's Shard now increases Max Health Regen by 4%",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -1106,6 +1138,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Song of the Siren",
           "rawNote": "Aghanim's Shard no longer grants 1s extra duration",
+          "originalSource": "Aghanim's Shard no longer grants 1s extra duration",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -1133,6 +1166,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Song of the Siren",
           "rawNote": "Aghanim's Shard now also restores 4% of allied max mana per second",
+          "originalSource": "Aghanim's Shard now also restores 4% of allied max mana per second",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -1160,6 +1194,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Song of the Siren",
           "rawNote": "Mana Cost increased from 150/175/200 to 150/250/350",
+          "originalSource": "Mana Cost increased from 150/175/200 to 150/250/350",
           "indentLevel": 1,
           "metric": "Mana Cost",
           "changeType": "INCREASED",
@@ -1190,6 +1225,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Song of the Siren",
           "rawNote": "Cooldown increased from 180/130/80 to 180/140/100",
+          "originalSource": "Cooldown increased from 180/130/80 to 180/140/100",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "INCREASED",
@@ -1220,6 +1256,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent +25 Rip Tide Damage replaced with +30% Rip Tide Damage",
+          "originalSource": "Level 10 Talent +25 Rip Tide Damage replaced with +30% Rip Tide Damage",
           "indentLevel": 1,
           "metric": "Level 10 Talent +25 Rip Tide Damage",
           "changeType": "REWORK",
@@ -1248,6 +1285,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent +15 Strength replaced with -50% Mirror Image Illusion Damage Taken",
+          "originalSource": "Level 15 Talent +15 Strength replaced with -50% Mirror Image Illusion Damage Taken",
           "indentLevel": 1,
           "metric": "Level 15 Talent +15 Strength",
           "changeType": "REWORK",
@@ -1276,6 +1314,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent +25% Evasion replaced with Ensnare applies Break",
+          "originalSource": "Level 25 Talent +25% Evasion replaced with Ensnare applies Break",
           "indentLevel": 1,
           "metric": "Level 25 Talent +25% Evasion",
           "changeType": "REWORK",
@@ -1304,17 +1343,17 @@
         "farming": -1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
+        "teamfight": -1,
         "laning": -1,
         "siege": 0,
         "utility": -1
       },
       "totalVector": {
-        "farming": -2,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
-        "laning": -2,
+        "teamfight": -2,
+        "laning": -3,
         "siege": 0,
         "utility": -2
       },
@@ -1329,15 +1368,15 @@
     },
     {
       "version": "7.36a",
-      "date": "2026-06-14T21:53:54.794Z",
+      "date": "2026-06-17T18:07:14.892Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
-        "laning": -2,
+        "teamfight": -2,
+        "laning": -3,
         "siege": 0,
         "utility": -2
       },
@@ -1348,19 +1387,19 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.36b",
-      "date": "2026-06-14T21:53:54.797Z",
+      "date": "2026-06-17T18:07:14.896Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
-        "laning": -2,
+        "teamfight": -2,
+        "laning": -3,
         "siege": 0,
         "utility": -2
       },
@@ -1375,15 +1414,15 @@
     },
     {
       "version": "7.36c",
-      "date": "2026-06-14T21:53:54.800Z",
+      "date": "2026-06-17T18:07:14.898Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
-        "laning": -2,
+        "teamfight": -2,
+        "laning": -3,
         "siege": 0,
         "utility": -2
       },
@@ -1398,15 +1437,15 @@
     },
     {
       "version": "7.37",
-      "date": "2026-06-14T21:53:54.805Z",
+      "date": "2026-06-17T18:07:14.902Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
-        "laning": -2,
+        "teamfight": -2,
+        "laning": -3,
         "siege": 0,
         "utility": -2
       },
@@ -1421,15 +1460,15 @@
     },
     {
       "version": "7.37b",
-      "date": "2026-06-14T21:53:54.807Z",
+      "date": "2026-06-17T18:07:14.904Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
-        "laning": -2,
+        "teamfight": -2,
+        "laning": -3,
         "siege": 0,
         "utility": -2
       },
@@ -1444,15 +1483,15 @@
     },
     {
       "version": "7.37c",
-      "date": "2026-06-14T21:53:54.810Z",
+      "date": "2026-06-17T18:07:14.906Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
-        "laning": -2,
+        "teamfight": -2,
+        "laning": -3,
         "siege": 0,
         "utility": -2
       },
@@ -1467,13 +1506,14 @@
     },
     {
       "version": "7.37d",
-      "date": "2026-06-14T21:53:54.813Z",
+      "date": "2026-06-17T18:07:14.909Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Naga Siren",
           "subEntityName": "Song of the Siren",
           "rawNote": "Max HP Regen per second decreased from 2/4/6% to 2/3/4%",
+          "originalSource": "Max HP Regen per second decreased from 2/4/6% to 2/3/4%",
           "indentLevel": 1,
           "metric": "Max HP Regen per second",
           "changeType": "DECREASED",
@@ -1502,11 +1542,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
-        "laning": -2,
+        "teamfight": -2,
+        "laning": -3,
         "siege": 0,
         "utility": -2
       },
@@ -1521,13 +1561,14 @@
     },
     {
       "version": "7.37e",
-      "date": "2026-06-14T21:53:54.815Z",
+      "date": "2026-06-17T18:07:14.912Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Naga Siren",
           "subEntityName": "Song of the Siren",
           "rawNote": "Aghanim's Shard Max HP per second decreased from 6/7/8% to 5/6/7%",
+          "originalSource": "Aghanim's Shard Max HP per second decreased from 6/7/8% to 5/6/7%",
           "indentLevel": 1,
           "metric": "Aghanim's Shard Max HP per second",
           "changeType": "DECREASED",
@@ -1556,11 +1597,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
-        "laning": -2,
+        "teamfight": -2,
+        "laning": -3,
         "siege": 0,
         "utility": -2
       },
@@ -1575,13 +1616,14 @@
     },
     {
       "version": "7.38",
-      "date": "2026-06-14T21:53:54.824Z",
+      "date": "2026-06-17T18:07:14.919Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Naga Siren",
           "subEntityName": "Eelskin",
           "rawNote": "Bonus Evasion per other Naga increased from 6% to 8%",
+          "originalSource": "Bonus Evasion per other Naga increased from 6% to 8%",
           "indentLevel": 1,
           "metric": "Bonus Evasion per other Naga",
           "changeType": "INCREASED",
@@ -1612,6 +1654,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent -2s Ensnare Cooldown replaced with +100 Reel In Pull Speed",
+          "originalSource": "Level 10 Talent -2s Ensnare Cooldown replaced with +100 Reel In Pull Speed",
           "indentLevel": 1,
           "metric": "Level 10 Talent -2s Ensnare Cooldown",
           "changeType": "REWORK",
@@ -1638,11 +1681,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
-        "laning": -2,
+        "teamfight": -2,
+        "laning": -3,
         "siege": 0,
         "utility": -2
       },
@@ -1657,15 +1700,15 @@
     },
     {
       "version": "7.38b",
-      "date": "2026-06-14T21:53:54.827Z",
+      "date": "2026-06-17T18:07:14.921Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
-        "laning": -2,
+        "teamfight": -2,
+        "laning": -3,
         "siege": 0,
         "utility": -2
       },
@@ -1680,15 +1723,15 @@
     },
     {
       "version": "7.38c",
-      "date": "2026-06-14T21:53:54.830Z",
+      "date": "2026-06-17T18:07:14.924Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -1.5,
-        "laning": -2,
+        "teamfight": -2,
+        "laning": -3,
         "siege": 0,
         "utility": -2
       },
@@ -1703,12 +1746,13 @@
     },
     {
       "version": "7.39",
-      "date": "2026-06-14T21:53:54.836Z",
+      "date": "2026-06-17T18:07:14.928Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Naga Siren",
           "rawNote": "Base Agility increased from 21 to 22",
+          "originalSource": "Base Agility increased from 21 to 22",
           "indentLevel": 1,
           "metric": "Base Agility",
           "changeType": "INCREASED",
@@ -1737,6 +1781,7 @@
           "category": "hero",
           "entityName": "Naga Siren",
           "rawNote": "Damage at level 1 increased by 1 (from 44–46 to 45–47)",
+          "originalSource": "Damage at level 1 increased by 1 (from 44–46 to 45–47)",
           "indentLevel": 1,
           "metric": "Damage at level 1",
           "changeType": "INCREASED",
@@ -1766,6 +1811,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Ensnare",
           "rawNote": "Aghanim's Scepter now also applies Break to the target",
+          "originalSource": "Aghanim's Scepter now also applies Break to the target",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -1793,6 +1839,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Song of the Siren",
           "rawNote": "Cooldown decreased from 180/140/100s to 160/130/100s",
+          "originalSource": "Cooldown decreased from 180/140/100s to 160/130/100s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "DECREASED",
@@ -1823,6 +1870,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent Ensnare applies Break replaced with +25 Agility",
+          "originalSource": "Level 25 Talent Ensnare applies Break replaced with +25 Agility",
           "indentLevel": 1,
           "metric": "Level 25 Talent Ensnare applies Break",
           "changeType": "REWORK",
@@ -1851,17 +1899,17 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1.5,
+        "teamfight": 1,
         "laning": 0,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -2,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": -2,
+        "teamfight": -1,
+        "laning": -3,
         "siege": 0,
         "utility": -2
       },
@@ -1872,19 +1920,19 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.39b",
-      "date": "2026-06-14T21:53:54.839Z",
+      "date": "2026-06-17T18:07:14.931Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": -2,
+        "teamfight": -1,
+        "laning": -3,
         "siege": 0,
         "utility": -2
       },
@@ -1899,12 +1947,13 @@
     },
     {
       "version": "7.39c",
-      "date": "2026-06-14T21:53:54.843Z",
+      "date": "2026-06-17T18:07:14.932Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Naga Siren",
           "rawNote": "Base Intelligence decreased from 21 to 20",
+          "originalSource": "Base Intelligence decreased from 21 to 20",
           "indentLevel": 1,
           "metric": "Base Intelligence",
           "changeType": "DECREASED",
@@ -1932,11 +1981,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 0,
-        "laning": -2,
+        "teamfight": -1,
+        "laning": -3,
         "siege": 0,
         "utility": -2
       },
@@ -1951,13 +2000,14 @@
     },
     {
       "version": "7.39d",
-      "date": "2026-06-14T21:53:54.848Z",
+      "date": "2026-06-17T18:07:14.937Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Naga Siren",
           "subEntityName": "Song of the Siren",
           "rawNote": "Radius decreased from 1000/1200/1400 to 900/1150/1400",
+          "originalSource": "Radius decreased from 1000/1200/1400 to 900/1150/1400",
           "indentLevel": 1,
           "metric": "Radius",
           "changeType": "DECREASED",
@@ -1988,17 +2038,17 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6,
+        "teamfight": -1,
         "laning": 0,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": -2,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6,
-        "laning": -2,
+        "teamfight": -2,
+        "laning": -3,
         "siege": 0,
         "utility": -2
       },
@@ -2013,13 +2063,14 @@
     },
     {
       "version": "7.39e",
-      "date": "2026-06-14T21:53:54.851Z",
+      "date": "2026-06-17T18:07:14.939Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Naga Siren",
           "subEntityName": "Song of the Siren",
-          "rawNote": "Aghanim's Shard Max HP Regen per Second decreased from 5/6/7% to 4/5/6% ",
+          "rawNote": "Aghanim's Shard Max HP Regen per Second decreased from 5/6/7% to 4/5/6%",
+          "originalSource": "Aghanim's Shard Max HP Regen per Second decreased from 5/6/7% to 4/5/6% ",
           "indentLevel": 1,
           "metric": "Aghanim's Shard Max HP Regen per Second",
           "changeType": "DECREASED",
@@ -2048,11 +2099,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6,
-        "laning": -2,
+        "teamfight": -2,
+        "laning": -3,
         "siege": 0,
         "utility": -2
       },
@@ -2067,12 +2118,13 @@
     },
     {
       "version": "7.40",
-      "date": "2026-06-14T21:53:54.859Z",
+      "date": "2026-06-17T18:07:14.945Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Naga Siren",
           "rawNote": "Base Intelligence decreased from 20 to 19",
+          "originalSource": "Base Intelligence decreased from 20 to 19",
           "indentLevel": 1,
           "metric": "Base Intelligence",
           "changeType": "DECREASED",
@@ -2101,6 +2153,7 @@
           "category": "hero",
           "entityName": "Naga Siren",
           "rawNote": "Agility gain increased from 3.3 to 3.4",
+          "originalSource": "Agility gain increased from 3.3 to 3.4",
           "indentLevel": 1,
           "metric": "Agility gain",
           "changeType": "INCREASED",
@@ -2130,6 +2183,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Ensnare",
           "rawNote": "Can no longer target invulnerable units unless this invulnerability is provided by Song of the Siren",
+          "originalSource": "Can no longer target invulnerable units unless this invulnerability is provided by Song of the Siren",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -2157,6 +2211,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Song of the Siren",
           "rawNote": "Max HP Regen per second decreased from 2/3/4% to 1/2/3%",
+          "originalSource": "Max HP Regen per second decreased from 2/3/4% to 1/2/3%",
           "indentLevel": 1,
           "metric": "Max HP Regen per second",
           "changeType": "DECREASED",
@@ -2187,6 +2242,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Song of the Siren",
           "rawNote": "Aghanim's Shard Max HP Regen per second bonus decreased from 2% to 1%",
+          "originalSource": "Aghanim's Shard Max HP Regen per second bonus decreased from 2% to 1%",
           "indentLevel": 1,
           "metric": "Aghanim's Shard Max HP Regen per second bonus",
           "changeType": "DECREASED",
@@ -2217,6 +2273,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Song of the Siren",
           "rawNote": "Total Max HP Regen per second with Aghanim's Shard decreased from 4/5/6% to 2/3/4%",
+          "originalSource": "Total Max HP Regen per second with Aghanim's Shard decreased from 4/5/6% to 2/3/4%",
           "indentLevel": 2,
           "metric": "Total Max HP Regen per second with Aghanim's Shard",
           "changeType": "DECREASED",
@@ -2245,11 +2302,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6,
-        "laning": -2,
+        "teamfight": -2,
+        "laning": -3,
         "siege": 0,
         "utility": -2
       },
@@ -2264,15 +2321,15 @@
     },
     {
       "version": "7.40b",
-      "date": "2026-06-14T21:53:54.866Z",
+      "date": "2026-06-17T18:07:14.948Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6,
-        "laning": -2,
+        "teamfight": -2,
+        "laning": -3,
         "siege": 0,
         "utility": -2
       },
@@ -2287,15 +2344,15 @@
     },
     {
       "version": "7.40c",
-      "date": "2026-06-14T21:53:54.872Z",
+      "date": "2026-06-17T18:07:14.950Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6,
-        "laning": -2,
+        "teamfight": -2,
+        "laning": -3,
         "siege": 0,
         "utility": -2
       },
@@ -2310,13 +2367,14 @@
     },
     {
       "version": "7.41",
-      "date": "2026-06-14T21:53:54.887Z",
+      "date": "2026-06-17T18:07:14.959Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Naga Siren",
           "subEntityName": "Eelskin",
           "rawNote": "Now provides evasion for Naga Siren on her own",
+          "originalSource": "Now provides evasion for Naga Siren on her own",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2344,6 +2402,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Eelskin",
           "rawNote": "Evasion per Naga changed from 8% to 4.9% + 0.1% per level",
+          "originalSource": "Evasion per Naga changed from 8% to 4.9% + 0.1% per level",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2351,19 +2410,20 @@
             "subEntityId": 1370
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2371,6 +2431,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Rip Tide",
           "rawNote": "Now always a basic ability for Naga Siren",
+          "originalSource": "Now always a basic ability for Naga Siren",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2398,6 +2459,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Reel In Pull Speed increased from +100 to +125",
+          "originalSource": "Level 10 Talent Reel In Pull Speed increased from +100 to +125",
           "indentLevel": 1,
           "metric": "Level 10 Talent Reel In Pull Speed",
           "changeType": "INCREASED",
@@ -2427,6 +2489,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Mirror Image Illusion Damage Taken Reduction increased from 50% to 75%",
+          "originalSource": "Level 15 Talent Mirror Image Illusion Damage Taken Reduction increased from 50% to 75%",
           "indentLevel": 1,
           "metric": "Level 15 Talent Mirror Image Illusion Damage Taken Reduction",
           "changeType": "INCREASED",
@@ -2456,6 +2519,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Song of the Siren Cooldown Reduction increased from 20s to 25s",
+          "originalSource": "Level 20 Talent Song of the Siren Cooldown Reduction increased from 20s to 25s",
           "indentLevel": 1,
           "metric": "Level 20 Talent Song of the Siren Cooldown Reduction",
           "changeType": "INCREASED",
@@ -2483,11 +2547,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6,
-        "laning": -2,
+        "teamfight": -2,
+        "laning": -3,
         "siege": 0,
         "utility": -2
       },
@@ -2502,15 +2566,15 @@
     },
     {
       "version": "7.41a",
-      "date": "2026-06-14T21:53:54.892Z",
+      "date": "2026-06-17T18:07:14.961Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6,
-        "laning": -2,
+        "teamfight": -2,
+        "laning": -3,
         "siege": 0,
         "utility": -2
       },
@@ -2525,12 +2589,13 @@
     },
     {
       "version": "7.41b",
-      "date": "2026-06-14T21:53:54.896Z",
+      "date": "2026-06-17T18:07:14.964Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Naga Siren",
           "rawNote": "Base Attack Speed decreased from 110 to 100",
+          "originalSource": "Base Attack Speed decreased from 110 to 100",
           "indentLevel": 1,
           "metric": "Base Attack Speed",
           "changeType": "DECREASED",
@@ -2560,6 +2625,7 @@
           "entityName": "Naga Siren",
           "subEntityName": "Eelskin",
           "rawNote": "Evasion per Naga decreased from 4.9% + 0.1% per level to 4% + 0.1% per level",
+          "originalSource": "Evasion per Naga decreased from 4.9% + 0.1% per level to 4% + 0.1% per level",
           "indentLevel": 1,
           "metric": "Evasion per Naga",
           "changeType": "DECREASED",
@@ -2588,11 +2654,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6,
-        "laning": -2,
+        "teamfight": -2,
+        "laning": -3,
         "siege": 0,
         "utility": -2
       },
@@ -2607,15 +2673,15 @@
     },
     {
       "version": "7.41c",
-      "date": "2026-06-14T21:53:54.902Z",
+      "date": "2026-06-17T18:07:14.966Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6,
-        "laning": -2,
+        "teamfight": -2,
+        "laning": -3,
         "siege": 0,
         "utility": -2
       },
@@ -2630,46 +2696,58 @@
     },
     {
       "version": "7.41d",
-      "date": "2026-06-14T21:53:54.908Z",
+      "date": "2026-06-17T18:07:14.969Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": -3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": -6,
-        "laning": -2,
+        "teamfight": -2,
+        "laning": -3,
         "siege": 0,
         "utility": -2
       },
       "winrates": {
         "HERALD": {
-          "winrate": 0.5177,
-          "matchCount": 10932
+          "winrate": 0.5119,
+          "matchCount": 9433
         },
         "GUARDIAN": {
-          "winrate": 0.4951,
-          "matchCount": 14199
+          "winrate": 0.4988,
+          "matchCount": 12389
         },
         "CRUSADER": {
-          "winrate": 0.4945,
-          "matchCount": 10599
+          "winrate": 0.4967,
+          "matchCount": 9440
         },
         "ARCHON": {
-          "winrate": 0.4885,
-          "matchCount": 7306
+          "winrate": 0.4844,
+          "matchCount": 6596
         },
         "LEGEND": {
-          "winrate": 0.4919,
-          "matchCount": 4790
+          "winrate": 0.5051,
+          "matchCount": 4272
         },
         "ANCIENT": {
-          "winrate": 0.4744,
-          "matchCount": 2812
+          "winrate": 0.5046,
+          "matchCount": 2590
         },
         "DIVINE": {
-          "winrate": 0.5097,
-          "matchCount": 3316
+          "winrate": 0.5091,
+          "matchCount": 3072
+        },
+        "IMMORTAL": {
+          "winrate": 0,
+          "matchCount": 0
+        },
+        "PRO": {
+          "winrate": 0,
+          "matchCount": 1
+        },
+        "GLOBAL_BLEND": {
+          "winrate": 0.5083,
+          "matchCount": 3073
         }
       },
       "temporalAssessment": null

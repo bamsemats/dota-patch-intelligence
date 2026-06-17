@@ -46,12 +46,27 @@ async function seed() {
     // Create Patch
     const patch = await prisma.patch.upsert({
       where: { version: patchVersion },
-      update: patchData.timestamp ? { releaseDate: new Date(patchData.timestamp) } : {},
+      update: { 
+        releaseDate: patchData.timestamp ? new Date(patchData.timestamp) : undefined,
+        ontologyVersion: patchData.ontologyVersion || 0 // ISSUE-1
+      },
       create: {
         version: patchVersion,
         releaseDate: patchData.timestamp ? new Date(patchData.timestamp) : null,
+        ontologyVersion: patchData.ontologyVersion || 0 // ISSUE-1
       }
     });
+
+    // Load Scorer Version if exists
+    try {
+      const scoredPath = path.join(researchDir, "impact-scored-patches", `${patchVersion}-scored.json`);
+      const scoredRaw = await fs.readFile(scoredPath, "utf-8");
+      const scoredData = JSON.parse(scoredRaw);
+      await prisma.patch.update({
+        where: { id: patch.id },
+        data: { scorerVersion: scoredData.scorerVersion || 0 }
+      });
+    } catch (e) {}
 
     // CRITICAL: Delete existing changes for this patch before re-seeding to prevent duplicates
     await prisma.patchChange.deleteMany({ where: { patchId: patch.id } });
@@ -85,6 +100,7 @@ async function seed() {
             entityId: entity.id,
             subEntityName: change.subEntityName || null,
             rawNote: change.rawNote,
+            originalSource: change.originalSource || null, // Preservation (ISSUE-5)
             classificationType: getClassificationType(typeStr),
             netScoreDelta: weight * netScoreDelta,
             reasoning: change.classification?.reasoning || null,
@@ -148,7 +164,8 @@ async function seed() {
           synergisticWinners: meta.synergisticWinners || [],
           synergisticLosers: meta.synergisticLosers || [],
           roleSpecificWinners: meta.roleSpecificWinners || null,
-          roleSpecificLosers: meta.roleSpecificLosers || null
+          roleSpecificLosers: meta.roleSpecificLosers || null,
+          analysisVersion: meta.analysisVersion || 0 // ISSUE-1
         },
         create: {
           patchId: patch.id,
@@ -156,7 +173,8 @@ async function seed() {
           synergisticWinners: meta.synergisticWinners || [],
           synergisticLosers: meta.synergisticLosers || [],
           roleSpecificWinners: meta.roleSpecificWinners || null,
-          roleSpecificLosers: meta.roleSpecificLosers || null
+          roleSpecificLosers: meta.roleSpecificLosers || null,
+          analysisVersion: meta.analysisVersion || 0 // ISSUE-1
         }
       });
     } catch (e) {

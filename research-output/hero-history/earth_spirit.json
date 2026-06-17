@@ -3,13 +3,14 @@
   "history": [
     {
       "version": "7.33",
-      "date": "2026-06-14T21:53:54.726Z",
+      "date": "2026-06-17T18:07:14.843Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Earth Spirit",
           "subEntityName": "Stone Remnant",
           "rawNote": "Aghanim's Shard Upgrade removed",
+          "originalSource": "Aghanim's Shard Upgrade removed",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -37,6 +38,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Stone Remnant",
           "rawNote": "Now gains 1 extra Stone Remnant charge every 5th hero level (5, 10, 15, 20, 25, 30), from 7 up to 13 max",
+          "originalSource": "Now gains 1 extra Stone Remnant charge every 5th hero level (5, 10, 15, 20, 25, 30), from 7 up to 13 max",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -64,6 +66,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Boulder Smash",
           "rawNote": "Now deals 1.25x the damage against creeps",
+          "originalSource": "Now deals 1.25x the damage against creeps",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -90,7 +93,8 @@
           "category": "hero",
           "entityName": "Earth Spirit",
           "subEntityName": "Rolling Boulder",
-          "rawNote": "Stun Duration decreased from 0.4/0.6/0.8/1s to 0.3/0.5/0.7/0.9s ",
+          "rawNote": "Stun Duration decreased from 0.4/0.6/0.8/1s to 0.3/0.5/0.7/0.9s",
+          "originalSource": "Stun Duration decreased from 0.4/0.6/0.8/1s to 0.3/0.5/0.7/0.9s ",
           "indentLevel": 1,
           "metric": "Stun Duration",
           "changeType": "DECREASED",
@@ -120,7 +124,8 @@
           "category": "hero",
           "entityName": "Earth Spirit",
           "subEntityName": "Rolling Boulder",
-          "rawNote": "Rock Bonus Stun Duration decreased from 0.4/0.6/0.8/1s to 0.3/0.5/0.7/0.9s ",
+          "rawNote": "Rock Bonus Stun Duration decreased from 0.4/0.6/0.8/1s to 0.3/0.5/0.7/0.9s",
+          "originalSource": "Rock Bonus Stun Duration decreased from 0.4/0.6/0.8/1s to 0.3/0.5/0.7/0.9s ",
           "indentLevel": 1,
           "metric": "Rock Bonus Stun Duration",
           "changeType": "DECREASED",
@@ -151,6 +156,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Geomagnetic Grip",
           "rawNote": "Now upgradable by Aghanim's Shard. Can now target allies",
+          "originalSource": "Now upgradable by Aghanim's Shard. Can now target allies",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -178,6 +184,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Enchant Remnant",
           "rawNote": "Remnant Duration decreased from 3s to 2.4s",
+          "originalSource": "Remnant Duration decreased from 3s to 2.4s",
           "indentLevel": 1,
           "metric": "Remnant Duration",
           "changeType": "DECREASED",
@@ -208,6 +215,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent +3s Magnetize Duration replaced with +8% Spell Amplification",
+          "originalSource": "Level 10 Talent +3s Magnetize Duration replaced with +8% Spell Amplification",
           "indentLevel": 1,
           "metric": "Level 10 Talent +3s Magnetize Duration",
           "changeType": "REWORK",
@@ -236,25 +244,27 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent +20 Magnetize Damage Per Second changed to +25% Magnetize Damage & Duration",
+          "originalSource": "Level 15 Talent +20 Magnetize Damage Per Second changed to +25% Magnetize Damage & Duration",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
             "entityId": 107
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -262,6 +272,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +3s Geomagnetic Grip Silence replaced with -2s Geomagnetic Grip Cooldown",
+          "originalSource": "Level 20 Talent +3s Geomagnetic Grip Silence replaced with -2s Geomagnetic Grip Cooldown",
           "indentLevel": 1,
           "metric": "Level 20 Talent +3s Geomagnetic Grip Silence",
           "changeType": "REWORK",
@@ -290,6 +301,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Geomagnetic Grip Targets Allies replaced with +125 Boulder Smash Damage",
+          "originalSource": "Level 20 Talent Geomagnetic Grip Targets Allies replaced with +125 Boulder Smash Damage",
           "indentLevel": 1,
           "metric": "Level 20 Talent Geomagnetic Grip Targets Allies",
           "changeType": "REWORK",
@@ -318,6 +330,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent Rolling Boulder Stun Duration decreased from +0.6s to +0.5s",
+          "originalSource": "Level 25 Talent Rolling Boulder Stun Duration decreased from +0.6s to +0.5s",
           "indentLevel": 1,
           "metric": "Level 25 Talent Rolling Boulder Stun Duration",
           "changeType": "DECREASED",
@@ -347,6 +360,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent +25% Spell Amplification replaced with Magnetize Undispellable",
+          "originalSource": "Level 25 Talent +25% Spell Amplification replaced with Magnetize Undispellable",
           "indentLevel": 1,
           "metric": "Level 25 Talent +25% Spell Amplification",
           "changeType": "REWORK",
@@ -386,7 +400,7 @@
     },
     {
       "version": "7.33b",
-      "date": "2026-06-14T21:53:54.731Z",
+      "date": "2026-06-17T18:07:14.846Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -432,7 +446,7 @@
     },
     {
       "version": "7.33c",
-      "date": "2026-06-14T21:53:54.736Z",
+      "date": "2026-06-17T18:07:14.849Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -478,7 +492,7 @@
     },
     {
       "version": "7.33d",
-      "date": "2026-06-14T21:53:54.740Z",
+      "date": "2026-06-17T18:07:14.852Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -524,7 +538,7 @@
     },
     {
       "version": "7.33e",
-      "date": "2026-06-14T21:53:54.744Z",
+      "date": "2026-06-17T18:07:14.854Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -570,13 +584,14 @@
     },
     {
       "version": "7.34",
-      "date": "2026-06-14T21:53:54.750Z",
+      "date": "2026-06-17T18:07:14.859Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Earth Spirit",
           "subEntityName": "Boulder Smash",
           "rawNote": "Creep Damage Multiplier increased from 1.25 to 1.4",
+          "originalSource": "Creep Damage Multiplier increased from 1.25 to 1.4",
           "indentLevel": 1,
           "metric": "Creep Damage Multiplier",
           "changeType": "INCREASED",
@@ -607,6 +622,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Rolling Boulder",
           "rawNote": "Now makes Earth Spirit completely untargetable and invulnerable while rolling. The hero is still vulnerable during the delay after cast",
+          "originalSource": "Now makes Earth Spirit completely untargetable and invulnerable while rolling. The hero is still vulnerable during the delay after cast",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -634,6 +650,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Spell Amplification increased from +8% to +10%",
+          "originalSource": "Level 10 Talent Spell Amplification increased from +8% to +10%",
           "indentLevel": 1,
           "metric": "Level 10 Talent Spell Amplification",
           "changeType": "INCREASED",
@@ -663,6 +680,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Magnetize Damage & Duration increased from +25% to +30%",
+          "originalSource": "Level 15 Talent Magnetize Damage & Duration increased from +25% to +30%",
           "indentLevel": 1,
           "metric": "Level 15 Talent Magnetize Damage & Duration",
           "changeType": "INCREASED",
@@ -703,13 +721,14 @@
     },
     {
       "version": "7.34b",
-      "date": "2026-06-14T21:53:54.755Z",
+      "date": "2026-06-17T18:07:14.863Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Earth Spirit",
           "subEntityName": "Rolling Boulder",
           "rawNote": "Delay increased from 0.5s to 0.6s",
+          "originalSource": "Delay increased from 0.5s to 0.6s",
           "indentLevel": 1,
           "metric": "Delay",
           "changeType": "INCREASED",
@@ -780,12 +799,13 @@
     },
     {
       "version": "7.34c",
-      "date": "2026-06-14T21:53:54.759Z",
+      "date": "2026-06-17T18:07:14.868Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Earth Spirit",
           "rawNote": "Base Intelligence decreased from 20 to 18",
+          "originalSource": "Base Intelligence decreased from 20 to 18",
           "indentLevel": 1,
           "metric": "Base Intelligence",
           "changeType": "DECREASED",
@@ -815,6 +835,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Rolling Boulder Distance decreased from +325 to +200",
+          "originalSource": "Level 10 Talent Rolling Boulder Distance decreased from +325 to +200",
           "indentLevel": 1,
           "metric": "Level 10 Talent Rolling Boulder Distance",
           "changeType": "DECREASED",
@@ -844,6 +865,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Rolling Boulder Damage decreased from +120 to +110",
+          "originalSource": "Level 15 Talent Rolling Boulder Damage decreased from +120 to +110",
           "indentLevel": 1,
           "metric": "Level 15 Talent Rolling Boulder Damage",
           "changeType": "DECREASED",
@@ -913,13 +935,14 @@
     },
     {
       "version": "7.34d",
-      "date": "2026-06-14T21:53:54.764Z",
+      "date": "2026-06-17T18:07:14.871Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Boulder Smash Damage decreased from +125 to +100",
+          "originalSource": "Level 20 Talent Boulder Smash Damage decreased from +125 to +100",
           "indentLevel": 1,
           "metric": "Level 20 Talent Boulder Smash Damage",
           "changeType": "DECREASED",
@@ -989,13 +1012,14 @@
     },
     {
       "version": "7.34e",
-      "date": "2026-06-14T21:53:54.768Z",
+      "date": "2026-06-17T18:07:14.873Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Earth Spirit",
           "subEntityName": "Rolling Boulder",
           "rawNote": "Cooldown now begins when the current roll is completed",
+          "originalSource": "Cooldown now begins when the current roll is completed",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -1003,19 +1027,20 @@
             "subEntityId": 5609
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "COOLDOWN_RESET_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         }
       ],
@@ -1063,7 +1088,7 @@
     },
     {
       "version": "7.35",
-      "date": "2026-06-14T21:53:54.772Z",
+      "date": "2026-06-17T18:07:14.877Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1086,7 +1111,7 @@
     },
     {
       "version": "7.35b",
-      "date": "2026-06-14T21:53:54.775Z",
+      "date": "2026-06-17T18:07:14.879Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1109,7 +1134,7 @@
     },
     {
       "version": "7.35c",
-      "date": "2026-06-14T21:53:54.782Z",
+      "date": "2026-06-17T18:07:14.881Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
@@ -1132,13 +1157,14 @@
     },
     {
       "version": "7.35d",
-      "date": "2026-06-14T21:53:54.785Z",
+      "date": "2026-06-17T18:07:14.884Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Earth Spirit",
           "subEntityName": "Rolling Boulder",
           "rawNote": "Damage increased from 30 to 60",
+          "originalSource": "Damage increased from 30 to 60",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "INCREASED",
@@ -1166,20 +1192,20 @@
         }
       ],
       "vectorDelta": {
-        "farming": 8,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 8,
+        "teamfight": 1,
+        "laning": 1,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": 8,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 8,
+        "teamfight": 1,
+        "laning": 1,
         "siege": 0,
         "utility": 0
       },
@@ -1194,13 +1220,14 @@
     },
     {
       "version": "7.36",
-      "date": "2026-06-14T21:53:54.791Z",
+      "date": "2026-06-17T18:07:14.890Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Earth Spirit",
           "subEntityName": "Geomagnetic Grip",
           "rawNote": "Remnant Damage increased from 50/100/150/200 to 50/125/200/275",
+          "originalSource": "Remnant Damage increased from 50/100/150/200 to 50/125/200/275",
           "indentLevel": 1,
           "metric": "Remnant Damage",
           "changeType": "INCREASED",
@@ -1231,6 +1258,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Geomagnetic Grip",
           "rawNote": "Cast Range rescaled from 1100 to 1000/1100/1200/1300",
+          "originalSource": "Cast Range rescaled from 1100 to 1000/1100/1200/1300",
           "indentLevel": 1,
           "metric": "Cast Range",
           "changeType": "RESCALE",
@@ -1261,6 +1289,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Magnetize",
           "rawNote": "Remnant Refresh/Explosion Radius increased from 400 to 600",
+          "originalSource": "Remnant Refresh/Explosion Radius increased from 400 to 600",
           "indentLevel": 1,
           "metric": "Remnant Refresh/Explosion Radius",
           "changeType": "INCREASED",
@@ -1291,6 +1320,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Geomagnetic Grip Cooldown Reduction increased from 2s to 3s",
+          "originalSource": "Level 20 Talent Geomagnetic Grip Cooldown Reduction increased from 2s to 3s",
           "indentLevel": 1,
           "metric": "Level 20 Talent Geomagnetic Grip Cooldown Reduction",
           "changeType": "INCREASED",
@@ -1318,11 +1348,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 8,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 8,
+        "teamfight": 1,
+        "laning": 1,
         "siege": 0,
         "utility": 0
       },
@@ -1337,15 +1367,15 @@
     },
     {
       "version": "7.36a",
-      "date": "2026-06-14T21:53:54.794Z",
+      "date": "2026-06-17T18:07:14.892Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 8,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 8,
+        "teamfight": 1,
+        "laning": 1,
         "siege": 0,
         "utility": 0
       },
@@ -1360,15 +1390,15 @@
     },
     {
       "version": "7.36b",
-      "date": "2026-06-14T21:53:54.797Z",
+      "date": "2026-06-17T18:07:14.896Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 8,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 8,
+        "teamfight": 1,
+        "laning": 1,
         "siege": 0,
         "utility": 0
       },
@@ -1383,15 +1413,15 @@
     },
     {
       "version": "7.36c",
-      "date": "2026-06-14T21:53:54.800Z",
+      "date": "2026-06-17T18:07:14.898Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 8,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 8,
+        "teamfight": 1,
+        "laning": 1,
         "siege": 0,
         "utility": 0
       },
@@ -1406,13 +1436,14 @@
     },
     {
       "version": "7.37",
-      "date": "2026-06-14T21:53:54.805Z",
+      "date": "2026-06-17T18:07:14.902Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Earth Spirit",
           "subEntityName": "Rolling Boulder",
           "rawNote": "Damage increased from 60 to 60/70/80/90",
+          "originalSource": "Damage increased from 60 to 60/70/80/90",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "INCREASED",
@@ -1443,6 +1474,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Magnetize",
           "rawNote": "Damage per second increased from 40/80/120 to 45/85/125",
+          "originalSource": "Damage per second increased from 40/80/120 to 45/85/125",
           "indentLevel": 1,
           "metric": "Damage per second",
           "changeType": "INCREASED",
@@ -1470,20 +1502,20 @@
         }
       ],
       "vectorDelta": {
-        "farming": 8,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 8,
+        "teamfight": 1,
+        "laning": 1,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": 16,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 16,
-        "laning": 16,
+        "teamfight": 2,
+        "laning": 2,
         "siege": 0,
         "utility": 0
       },
@@ -1494,19 +1526,19 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": "Net Gain"
+      "temporalAssessment": null
     },
     {
       "version": "7.37b",
-      "date": "2026-06-14T21:53:54.807Z",
+      "date": "2026-06-17T18:07:14.904Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 16,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 16,
-        "laning": 16,
+        "teamfight": 2,
+        "laning": 2,
         "siege": 0,
         "utility": 0
       },
@@ -1521,15 +1553,15 @@
     },
     {
       "version": "7.37c",
-      "date": "2026-06-14T21:53:54.810Z",
+      "date": "2026-06-17T18:07:14.907Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 16,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 16,
-        "laning": 16,
+        "teamfight": 2,
+        "laning": 2,
         "siege": 0,
         "utility": 0
       },
@@ -1544,15 +1576,15 @@
     },
     {
       "version": "7.37d",
-      "date": "2026-06-14T21:53:54.813Z",
+      "date": "2026-06-17T18:07:14.909Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 16,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 16,
-        "laning": 16,
+        "teamfight": 2,
+        "laning": 2,
         "siege": 0,
         "utility": 0
       },
@@ -1567,13 +1599,14 @@
     },
     {
       "version": "7.37e",
-      "date": "2026-06-14T21:53:54.815Z",
+      "date": "2026-06-17T18:07:14.912Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Earth Spirit",
           "subEntityName": "Boulder Smash",
           "rawNote": "Bonus damage against creeps decreased from 1.4x to 1.25x",
+          "originalSource": "Bonus damage against creeps decreased from 1.4x to 1.25x",
           "indentLevel": 1,
           "metric": "Bonus damage against creeps",
           "changeType": "DECREASED",
@@ -1604,6 +1637,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Spell Amplification decreased from +10% to +8%",
+          "originalSource": "Level 10 Talent Spell Amplification decreased from +10% to +8%",
           "indentLevel": 1,
           "metric": "Level 10 Talent Spell Amplification",
           "changeType": "DECREASED",
@@ -1633,6 +1667,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent +200 Rolling Boulder Distance replaced with -2s Geomagnetic Grip Cooldown",
+          "originalSource": "Level 10 Talent +200 Rolling Boulder Distance replaced with -2s Geomagnetic Grip Cooldown",
           "indentLevel": 1,
           "metric": "Level 10 Talent +200 Rolling Boulder Distance",
           "changeType": "REWORK",
@@ -1661,6 +1696,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent Magnetize Damage & Duration decreased from +30% to +25%",
+          "originalSource": "Level 15 Talent Magnetize Damage & Duration decreased from +30% to +25%",
           "indentLevel": 1,
           "metric": "Level 15 Talent Magnetize Damage & Duration",
           "changeType": "DECREASED",
@@ -1690,6 +1726,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent -3s Geomagnetic Grip Cooldown replaced with +250 Rolling Boulder Distance",
+          "originalSource": "Level 20 Talent -3s Geomagnetic Grip Cooldown replaced with +250 Rolling Boulder Distance",
           "indentLevel": 1,
           "metric": "Level 20 Talent -3s Geomagnetic Grip Cooldown",
           "changeType": "REWORK",
@@ -1716,11 +1753,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 16,
+        "farming": 2,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 16,
-        "laning": 16,
+        "teamfight": 2,
+        "laning": 2,
         "siege": 0,
         "utility": 0
       },
@@ -1735,13 +1772,14 @@
     },
     {
       "version": "7.38",
-      "date": "2026-06-14T21:53:54.824Z",
+      "date": "2026-06-17T18:07:14.919Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Earth Spirit",
           "subEntityName": "Boulder Smash",
           "rawNote": "No longer deals bonus damage to creeps",
+          "originalSource": "No longer deals bonus damage to creeps",
           "indentLevel": 1,
           "changeType": "REMOVAL",
           "metadata": {
@@ -1769,6 +1807,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Geomagnetic Grip",
           "rawNote": "Damage increased from 50/125/200/275 to 70/140/210/280",
+          "originalSource": "Damage increased from 50/125/200/275 to 70/140/210/280",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "INCREASED",
@@ -1799,6 +1838,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent +8% Spell Amplification replaced with +150 Rolling Boulder Distance",
+          "originalSource": "Level 10 Talent +8% Spell Amplification replaced with +150 Rolling Boulder Distance",
           "indentLevel": 1,
           "metric": "Level 10 Talent +8% Spell Amplification",
           "changeType": "REWORK",
@@ -1827,6 +1867,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent +110 Rolling Boulder Damage replaced with +80 Boulder Smash Damage",
+          "originalSource": "Level 15 Talent +110 Rolling Boulder Damage replaced with +80 Boulder Smash Damage",
           "indentLevel": 1,
           "metric": "Level 15 Talent +110 Rolling Boulder Damage",
           "changeType": "REWORK",
@@ -1855,6 +1896,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 15 Talent +25% Magnetize Damage & Duration replaced with +0.3s Rolling Boulder Stun Duration",
+          "originalSource": "Level 15 Talent +25% Magnetize Damage & Duration replaced with +0.3s Rolling Boulder Stun Duration",
           "indentLevel": 1,
           "metric": "Level 15 Talent +25% Magnetize Damage & Duration",
           "changeType": "REWORK",
@@ -1883,6 +1925,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +250 Rolling Boulder Distance replaced with +160 Rolling Boulder Damage",
+          "originalSource": "Level 20 Talent +250 Rolling Boulder Distance replaced with +160 Rolling Boulder Damage",
           "indentLevel": 1,
           "metric": "Level 20 Talent +250 Rolling Boulder Distance",
           "changeType": "REWORK",
@@ -1911,6 +1954,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +100 Boulder Smash Damage replaced with +30% Magnetize Damage & Duration",
+          "originalSource": "Level 20 Talent +100 Boulder Smash Damage replaced with +30% Magnetize Damage & Duration",
           "indentLevel": 1,
           "metric": "Level 20 Talent +100 Boulder Smash Damage",
           "changeType": "REWORK",
@@ -1939,6 +1983,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent +0.5s Rolling Boulder Stun Duration replaced with -3s Boulder Smash Cooldown",
+          "originalSource": "Level 25 Talent +0.5s Rolling Boulder Stun Duration replaced with -3s Boulder Smash Cooldown",
           "indentLevel": 1,
           "metric": "Level 25 Talent +0.5s Rolling Boulder Stun Duration",
           "changeType": "REWORK",
@@ -1964,20 +2009,20 @@
         }
       ],
       "vectorDelta": {
-        "farming": 8,
+        "farming": 1,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 8,
-        "laning": 8,
+        "teamfight": 1,
+        "laning": 1,
         "siege": 0,
         "utility": 0
       },
       "totalVector": {
-        "farming": 24,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 24,
-        "laning": 24,
+        "teamfight": 3,
+        "laning": 3,
         "siege": 0,
         "utility": 0
       },
@@ -1992,15 +2037,15 @@
     },
     {
       "version": "7.38b",
-      "date": "2026-06-14T21:53:54.827Z",
+      "date": "2026-06-17T18:07:14.922Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 24,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 24,
-        "laning": 24,
+        "teamfight": 3,
+        "laning": 3,
         "siege": 0,
         "utility": 0
       },
@@ -2015,13 +2060,14 @@
     },
     {
       "version": "7.38c",
-      "date": "2026-06-14T21:53:54.830Z",
+      "date": "2026-06-17T18:07:14.924Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Earth Spirit",
           "subEntityName": "Boulder Smash",
           "rawNote": "Damage rescaled from 120/180/240/300 to 110/180/250/320",
+          "originalSource": "Damage rescaled from 120/180/240/300 to 110/180/250/320",
           "indentLevel": 1,
           "metric": "Damage",
           "changeType": "RESCALE",
@@ -2052,6 +2098,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent Geomagnetic Grip Cooldown Reduction increased from 2s to 3s",
+          "originalSource": "Level 10 Talent Geomagnetic Grip Cooldown Reduction increased from 2s to 3s",
           "indentLevel": 1,
           "metric": "Level 10 Talent Geomagnetic Grip Cooldown Reduction",
           "changeType": "INCREASED",
@@ -2081,6 +2128,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent Rolling Boulder Damage increased from +160 to +180",
+          "originalSource": "Level 20 Talent Rolling Boulder Damage increased from +160 to +180",
           "indentLevel": 1,
           "metric": "Level 20 Talent Rolling Boulder Damage",
           "changeType": "INCREASED",
@@ -2108,11 +2156,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 24,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 24,
-        "laning": 24,
+        "teamfight": 3,
+        "laning": 3,
         "siege": 0,
         "utility": 0
       },
@@ -2127,15 +2175,15 @@
     },
     {
       "version": "7.39",
-      "date": "2026-06-14T21:53:54.836Z",
+      "date": "2026-06-17T18:07:14.928Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 24,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 24,
-        "laning": 24,
+        "teamfight": 3,
+        "laning": 3,
         "siege": 0,
         "utility": 0
       },
@@ -2150,15 +2198,15 @@
     },
     {
       "version": "7.39b",
-      "date": "2026-06-14T21:53:54.839Z",
+      "date": "2026-06-17T18:07:14.931Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 24,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 24,
-        "laning": 24,
+        "teamfight": 3,
+        "laning": 3,
         "siege": 0,
         "utility": 0
       },
@@ -2173,13 +2221,14 @@
     },
     {
       "version": "7.39c",
-      "date": "2026-06-14T21:53:54.843Z",
+      "date": "2026-06-17T18:07:14.933Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Earth Spirit",
           "subEntityName": "Rolling Boulder",
           "rawNote": "Distance increased from 750 to 800",
+          "originalSource": "Distance increased from 750 to 800",
           "indentLevel": 1,
           "metric": "Distance",
           "changeType": "INCREASED",
@@ -2208,11 +2257,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 24,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 24,
-        "laning": 24,
+        "teamfight": 3,
+        "laning": 3,
         "siege": 0,
         "utility": 0
       },
@@ -2223,16 +2272,17 @@
           "isHistorical": true
         }
       },
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
     },
     {
       "version": "7.39d",
-      "date": "2026-06-14T21:53:54.848Z",
+      "date": "2026-06-17T18:07:14.937Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Earth Spirit",
-          "rawNote": "Min base damage increased by 6 ",
+          "rawNote": "Min base damage increased by 6",
+          "originalSource": "Min base damage increased by 6 ",
           "indentLevel": 1,
           "metric": "Min base damage",
           "changeType": "INCREASED",
@@ -2260,6 +2310,7 @@
           "category": "hero",
           "entityName": "Earth Spirit",
           "rawNote": "Damage at level 1 increased from 47–57 to 53–57",
+          "originalSource": "Damage at level 1 increased from 47–57 to 53–57",
           "indentLevel": 1,
           "metric": "Damage at level 1",
           "changeType": "INCREASED",
@@ -2287,11 +2338,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 24,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 24,
-        "laning": 24,
+        "teamfight": 3,
+        "laning": 3,
         "siege": 0,
         "utility": 0
       },
@@ -2306,13 +2357,14 @@
     },
     {
       "version": "7.39e",
-      "date": "2026-06-14T21:53:54.851Z",
+      "date": "2026-06-17T18:07:14.939Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Earth Spirit",
           "subEntityName": "Geomagnetic Grip",
           "rawNote": "Remnant Damage increased from 70/140/210/280 to 75/150/225/300",
+          "originalSource": "Remnant Damage increased from 70/140/210/280 to 75/150/225/300",
           "indentLevel": 1,
           "metric": "Remnant Damage",
           "changeType": "INCREASED",
@@ -2341,11 +2393,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 24,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 24,
-        "laning": 24,
+        "teamfight": 3,
+        "laning": 3,
         "siege": 0,
         "utility": 0
       },
@@ -2360,12 +2412,13 @@
     },
     {
       "version": "7.40",
-      "date": "2026-06-14T21:53:54.859Z",
+      "date": "2026-06-17T18:07:14.945Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Earth Spirit",
           "rawNote": "Base Damage decreased by 6",
+          "originalSource": "Base Damage decreased by 6",
           "indentLevel": 1,
           "metric": "Base Damage",
           "changeType": "DECREASED",
@@ -2393,6 +2446,7 @@
           "category": "hero",
           "entityName": "Earth Spirit",
           "rawNote": "Damage at level 1 decreased from 53–57 to 47–51",
+          "originalSource": "Damage at level 1 decreased from 53–57 to 47–51",
           "indentLevel": 1,
           "metric": "Damage at level 1",
           "changeType": "DECREASED",
@@ -2421,15 +2475,16 @@
           "category": "hero",
           "entityName": "Earth Spirit",
           "rawNote": "Removed Resonance, Stepping Stone, and Ready to Roll facets",
+          "originalSource": "Removed Resonance, Stepping Stone, and Ready to Roll facets",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
             "entityId": 107
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -2439,7 +2494,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2447,6 +2503,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Stone Remnant",
           "rawNote": "Now passively grants +2.5% bonus attack damage per currently unused charge",
+          "originalSource": "Now passively grants +2.5% bonus attack damage per currently unused charge",
           "indentLevel": 1,
           "changeType": "ADDITION",
           "metadata": {
@@ -2474,6 +2531,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Stone Remnant",
           "rawNote": "Whenever Earth Spirit uses another ability on Stone Remnant, he gains +7.5% bonus attack damage for 10s (effect doesn't stack)",
+          "originalSource": "Whenever Earth Spirit uses another ability on Stone Remnant, he gains +7.5% bonus attack damage for 10s (effect doesn't stack)",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2481,9 +2539,9 @@
             "subEntityId": 1395
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "FEATURE_INTRODUCTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -2493,14 +2551,16 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
           "category": "hero",
           "entityName": "Earth Spirit",
           "subEntityName": "Stone Remnant",
-          "rawNote": "Max Ability Charges increased from (7 + 1 additional charge at every 5th level) to (7 + 1 per 4 hero level ups) ",
+          "rawNote": "Max Ability Charges increased from (7 + 1 additional charge at every 5th level) to (7 + 1 per 4 hero level ups)",
+          "originalSource": "Max Ability Charges increased from (7 + 1 additional charge at every 5th level) to (7 + 1 per 4 hero level ups) ",
           "indentLevel": 1,
           "metric": "Max Ability Charges",
           "changeType": "INCREASED",
@@ -2531,6 +2591,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Boulder Smash",
           "rawNote": "Cooldown rescaled from 22/18/14/10s to 20/17/14/11s",
+          "originalSource": "Cooldown rescaled from 22/18/14/10s to 20/17/14/11s",
           "indentLevel": 1,
           "metric": "Cooldown",
           "changeType": "RESCALE",
@@ -2561,6 +2622,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Geomagnetic Grip",
           "rawNote": "Can now target allied units by default with 550/600/650/700 cast range",
+          "originalSource": "Can now target allied units by default with 550/600/650/700 cast range",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2581,7 +2643,7 @@
               "Divine": 6
             },
             "confidenceScore": 0.95,
-            "reasoning": "Matches semantic pattern: \"can now target\""
+            "reasoning": "Matches exact semantic pattern: \"can now target\""
           }
         },
         {
@@ -2589,6 +2651,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Geomagnetic Grip",
           "rawNote": "Can't pull allies that are affected by Leash, Root, Bind, Duel, Chronosphere or Black Hole",
+          "originalSource": "Can't pull allies that are affected by Leash, Root, Bind, Duel, Chronosphere or Black Hole",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2596,19 +2659,20 @@
             "subEntityId": 5610
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "LINKEN_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2616,6 +2680,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Geomagnetic Grip",
           "rawNote": "Aghanim's Shard Reworked",
+          "originalSource": "Aghanim's Shard Reworked",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2642,7 +2707,8 @@
           "category": "hero",
           "entityName": "Earth Spirit",
           "subEntityName": "Geomagnetic Grip",
-          "rawNote": "Decreases cooldown by 3s and increases allied unit cast range and speed by 50% ",
+          "rawNote": "Decreases cooldown by 3s and increases allied unit cast range and speed by 50%",
+          "originalSource": "Decreases cooldown by 3s and increases allied unit cast range and speed by 50% ",
           "indentLevel": 2,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2650,19 +2716,20 @@
             "subEntityId": 5610
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "COOLDOWN_RESET_INTERACTION",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2670,6 +2737,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 10 Talent -3s Geomagnetic Grip Cooldown replaced with -2s Boulder Smash Cooldown",
+          "originalSource": "Level 10 Talent -3s Geomagnetic Grip Cooldown replaced with -2s Boulder Smash Cooldown",
           "indentLevel": 1,
           "metric": "Level 10 Talent -3s Geomagnetic Grip Cooldown",
           "changeType": "REWORK",
@@ -2698,6 +2766,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 20 Talent +180 Rolling Boulder Damage replaced with +175% Rolling Boulder Damage from Strength",
+          "originalSource": "Level 20 Talent +180 Rolling Boulder Damage replaced with +175% Rolling Boulder Damage from Strength",
           "indentLevel": 1,
           "metric": "Level 20 Talent +180 Rolling Boulder Damage",
           "changeType": "REWORK",
@@ -2726,6 +2795,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent -3s Boulder Smash Cooldown replaced with +175 Geomagnetic Grip Remnant Damage",
+          "originalSource": "Level 25 Talent -3s Boulder Smash Cooldown replaced with +175 Geomagnetic Grip Remnant Damage",
           "indentLevel": 1,
           "metric": "Level 25 Talent -3s Boulder Smash Cooldown",
           "changeType": "REWORK",
@@ -2753,7 +2823,8 @@
           "category": "hero",
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
-          "rawNote": "Level 25 Talent Magnetize Undispellable replaced with Earth Spirit Magnetizes Himself ",
+          "rawNote": "Level 25 Talent Magnetize Undispellable replaced with Earth Spirit Magnetizes Himself",
+          "originalSource": "Level 25 Talent Magnetize Undispellable replaced with Earth Spirit Magnetizes Himself ",
           "indentLevel": 1,
           "metric": "Level 25 Talent Magnetize Undispellable",
           "changeType": "REWORK",
@@ -2780,11 +2851,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 24,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 24,
-        "laning": 24,
+        "teamfight": 3,
+        "laning": 3,
         "siege": 0,
         "utility": 0
       },
@@ -2799,15 +2870,15 @@
     },
     {
       "version": "7.40b",
-      "date": "2026-06-14T21:53:54.866Z",
+      "date": "2026-06-17T18:07:14.948Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 24,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 24,
-        "laning": 24,
+        "teamfight": 3,
+        "laning": 3,
         "siege": 0,
         "utility": 0
       },
@@ -2822,15 +2893,15 @@
     },
     {
       "version": "7.40c",
-      "date": "2026-06-14T21:53:54.872Z",
+      "date": "2026-06-17T18:07:14.950Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 24,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 24,
-        "laning": 24,
+        "teamfight": 3,
+        "laning": 3,
         "siege": 0,
         "utility": 0
       },
@@ -2845,13 +2916,14 @@
     },
     {
       "version": "7.41",
-      "date": "2026-06-14T21:53:54.887Z",
+      "date": "2026-06-17T18:07:14.959Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Earth Spirit",
           "subEntityName": "Stone Remnant",
-          "rawNote": "Max Charges changed from 7 + 1 per 4 level ups to 7 + 1 per 4 levels ",
+          "rawNote": "Max Charges changed from 7 + 1 per 4 level ups to 7 + 1 per 4 levels",
+          "originalSource": "Max Charges changed from 7 + 1 per 4 level ups to 7 + 1 per 4 levels ",
           "indentLevel": 1,
           "changeType": "ADJUSTMENT",
           "metadata": {
@@ -2859,19 +2931,20 @@
             "subEntityId": 1395
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         },
         {
@@ -2879,6 +2952,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Boulder Smash",
           "rawNote": "Slow Duration increased from 1.25/2.5/3.25/4s to 1.75/2.5/3.25/4s",
+          "originalSource": "Slow Duration increased from 1.25/2.5/3.25/4s to 1.75/2.5/3.25/4s",
           "indentLevel": 1,
           "metric": "Slow Duration",
           "changeType": "INCREASED",
@@ -2909,6 +2983,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Geomagnetic Grip",
           "rawNote": "Silence Duration increased from 2/2.5/3/3.5s to 2.3/2.7/3.1/3.5s",
+          "originalSource": "Silence Duration increased from 2/2.5/3/3.5s to 2.3/2.7/3.1/3.5s",
           "indentLevel": 1,
           "metric": "Silence Duration",
           "changeType": "INCREASED",
@@ -2939,6 +3014,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Magnetize",
           "rawNote": "Damage per second increased from 45/85/125 to 45/90/135",
+          "originalSource": "Damage per second increased from 45/85/125 to 45/90/135",
           "indentLevel": 1,
           "metric": "Damage per second",
           "changeType": "INCREASED",
@@ -2969,6 +3045,7 @@
           "entityName": "Earth Spirit",
           "subEntityName": "Talents",
           "rawNote": "Level 25 Talent Geomagnetic Grip Remnant Damage increased from +175 to +250",
+          "originalSource": "Level 25 Talent Geomagnetic Grip Remnant Damage increased from +175 to +250",
           "indentLevel": 1,
           "metric": "Level 25 Talent Geomagnetic Grip Remnant Damage",
           "changeType": "INCREASED",
@@ -2996,11 +3073,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 24,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 24,
-        "laning": 24,
+        "teamfight": 3,
+        "laning": 3,
         "siege": 0,
         "utility": 0
       },
@@ -3015,15 +3092,15 @@
     },
     {
       "version": "7.41a",
-      "date": "2026-06-14T21:53:54.892Z",
+      "date": "2026-06-17T18:07:14.961Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 24,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 24,
-        "laning": 24,
+        "teamfight": 3,
+        "laning": 3,
         "siege": 0,
         "utility": 0
       },
@@ -3038,15 +3115,15 @@
     },
     {
       "version": "7.41b",
-      "date": "2026-06-14T21:53:54.896Z",
+      "date": "2026-06-17T18:07:14.964Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 24,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 24,
-        "laning": 24,
+        "teamfight": 3,
+        "laning": 3,
         "siege": 0,
         "utility": 0
       },
@@ -3061,12 +3138,13 @@
     },
     {
       "version": "7.41c",
-      "date": "2026-06-14T21:53:54.902Z",
+      "date": "2026-06-17T18:07:14.966Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Earth Spirit",
           "rawNote": "Base Strength increased from 22 to 23",
+          "originalSource": "Base Strength increased from 22 to 23",
           "indentLevel": 1,
           "metric": "Base Strength",
           "changeType": "INCREASED",
@@ -3095,6 +3173,7 @@
           "category": "hero",
           "entityName": "Earth Spirit",
           "rawNote": "Damage at level 1 increased from 47-51 to 48-52",
+          "originalSource": "Damage at level 1 increased from 47-51 to 48-52",
           "indentLevel": 2,
           "metric": "Damage at level 1",
           "changeType": "INCREASED",
@@ -3122,11 +3201,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 24,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 24,
-        "laning": 24,
+        "teamfight": 3,
+        "laning": 3,
         "siege": 0,
         "utility": 0
       },
@@ -3141,13 +3220,14 @@
     },
     {
       "version": "7.41d",
-      "date": "2026-06-14T21:53:54.908Z",
+      "date": "2026-06-17T18:07:14.969Z",
       "changes": [
         {
           "category": "hero",
           "entityName": "Earth Spirit",
           "subEntityName": "Stone Remnant",
           "rawNote": "Passive bonus damage per unused charge increased from 2.5% to 3%",
+          "originalSource": "Passive bonus damage per unused charge increased from 2.5% to 3%",
           "indentLevel": 1,
           "metric": "Passive bonus damage per unused charge",
           "changeType": "INCREASED",
@@ -3176,45 +3256,57 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": 24,
+        "farming": 3,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 24,
-        "laning": 24,
+        "teamfight": 3,
+        "laning": 3,
         "siege": 0,
         "utility": 0
       },
       "winrates": {
         "HERALD": {
-          "winrate": 0.4729,
-          "matchCount": 6132
+          "winrate": 0.4699,
+          "matchCount": 5497
         },
         "GUARDIAN": {
-          "winrate": 0.4879,
-          "matchCount": 14353
+          "winrate": 0.4868,
+          "matchCount": 13609
         },
         "CRUSADER": {
-          "winrate": 0.4982,
-          "matchCount": 18565
+          "winrate": 0.4983,
+          "matchCount": 17827
         },
         "ARCHON": {
-          "winrate": 0.5123,
-          "matchCount": 19720
+          "winrate": 0.5143,
+          "matchCount": 18792
         },
         "LEGEND": {
-          "winrate": 0.5178,
-          "matchCount": 17944
+          "winrate": 0.5148,
+          "matchCount": 17455
         },
         "ANCIENT": {
-          "winrate": 0.5242,
-          "matchCount": 14039
+          "winrate": 0.5268,
+          "matchCount": 13323
         },
         "DIVINE": {
-          "winrate": 0.5341,
-          "matchCount": 18375
+          "winrate": 0.526,
+          "matchCount": 18156
+        },
+        "IMMORTAL": {
+          "winrate": 0,
+          "matchCount": 0
+        },
+        "PRO": {
+          "winrate": 0.6667,
+          "matchCount": 6
+        },
+        "GLOBAL_BLEND": {
+          "winrate": 0.5262,
+          "matchCount": 18162
         }
       },
-      "temporalAssessment": "Net Gain"
+      "temporalAssessment": null
     }
   ]
 }
