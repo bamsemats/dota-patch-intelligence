@@ -1,7 +1,8 @@
 {
   "schemaVersion": "1.0",
   "version": "7.34",
-  "ontologyVersion": 1,
+  "timestamp": "2023-08-08T22:45:22.000Z",
+  "ontologyVersion": 2,
   "changes": [
     {
       "category": "general",
@@ -6280,18 +6281,19 @@
       },
       "classification": {
         "state": "KNOWN_SEMANTIC",
-        "classificationType": "Buff",
-        "confidenceScore": 0.9,
+        "classificationType": "Adjustment",
+        "semanticTag": "DAMAGE_TYPE_CHANGE",
         "strategicWeight": {
-          "Herald": 7,
-          "Guardian": 7,
-          "Crusader": 7,
-          "Archon": 7,
-          "Legend": 7,
-          "Ancient": 7,
-          "Divine": 7
+          "Herald": 8,
+          "Guardian": 8,
+          "Crusader": 8,
+          "Archon": 8,
+          "Legend": 8,
+          "Ancient": 8,
+          "Divine": 8
         },
-        "reasoning": "Addition of a new mechanic or feature."
+        "confidenceScore": 0.95,
+        "reasoning": "Matches exact semantic pattern: \"now deals pure damage\""
       }
     },
     {
@@ -9517,18 +9519,19 @@
       },
       "classification": {
         "state": "KNOWN_SEMANTIC",
-        "classificationType": "Nerf",
-        "confidenceScore": 0.9,
+        "classificationType": "Adjustment",
+        "semanticTag": "DISPEL_INTERACTION",
         "strategicWeight": {
-          "Herald": 7,
-          "Guardian": 7,
-          "Crusader": 7,
-          "Archon": 7,
-          "Legend": 7,
-          "Ancient": 7,
-          "Divine": 7
+          "Herald": 8,
+          "Guardian": 8,
+          "Crusader": 8,
+          "Archon": 8,
+          "Legend": 8,
+          "Ancient": 8,
+          "Divine": 8
         },
-        "reasoning": "Removal of a mechanic or feature."
+        "confidenceScore": 0.95,
+        "reasoning": "Matches exact semantic pattern: \"applies a strong dispel\""
       }
     },
     {
@@ -12962,9 +12965,9 @@
         "subEntityId": 1342
       },
       "classification": {
-        "state": "UNKNOWN",
+        "state": "PARTIALLY_CLASSIFIED",
         "classificationType": "Unknown",
-        "confidenceScore": 0,
+        "semanticTag": "MAGIC_STICK_INTERACTION",
         "strategicWeight": {
           "Herald": 5,
           "Guardian": 5,
@@ -12974,7 +12977,8 @@
           "Ancient": 5,
           "Divine": 5
         },
-        "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+        "confidenceScore": 0.5,
+        "reasoning": "Partial semantic match based on keywords. Requires human review."
       }
     },
     {

@@ -29,6 +29,7 @@ interface StructuredChange {
 interface StructuredPatch {
     schemaVersion: string;
     version: string;
+    timestamp?: string;
     changes: StructuredChange[];
 }
 
@@ -139,8 +140,20 @@ function processNotes(notes: any[], category: any, entityName: string, entityId:
 
 async function parsePatch(version: string, mapping: Mapping): Promise<StructuredPatch | null> {
     const dataPath = path.join(PATCHES_DIR, version, "data.json");
+    const metaPath = path.join(PATCHES_DIR, version, "metadata.json");
     try {
         const rawData = JSON.parse(await readFile(dataPath, "utf8"));
+        
+        let timestamp: string | undefined;
+        try {
+            const rawMeta = JSON.parse(await readFile(metaPath, "utf8"));
+            if (rawMeta && rawMeta.discoveryDate) {
+                timestamp = rawMeta.discoveryDate;
+            }
+        } catch (e) {
+            // metadata.json is optional
+        }
+
         const changes: StructuredChange[] = [];
 
         // 1. General Notes
@@ -201,7 +214,7 @@ async function parsePatch(version: string, mapping: Mapping): Promise<Structured
             }
         }
 
-        return { schemaVersion: "1.0", version, changes };
+        return { schemaVersion: "1.0", version, timestamp, changes };
     } catch (error) {
         console.error(`[Parser] Error parsing version ${version}:`, error);
         return null;

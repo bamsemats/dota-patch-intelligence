@@ -91,8 +91,11 @@ export default function HeroList({ heroes }: HeroListProps) {
     if (slug === "shadow_fiend") slug = "nevermore";
     if (slug === "treant_protector") slug = "treant";
     if (slug === "underlord") slug = "abyssal_underlord";
+    if (slug === "wraith_king") slug = "wraith_king"; // wait, wraith king is skeleton_king
     if (slug === "wraith_king") slug = "skeleton_king";
     if (slug === "zeus") slug = "zuus";
+    if (slug === "windranger") slug = "windrunner";
+    if (slug === "timbersaw") slug = "shredder";
 
     return `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/${slug}.png`;
   };

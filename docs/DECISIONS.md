@@ -284,6 +284,19 @@ Alternatives Considered:
 
 ---
 
+# 2026-06-19 (Calibration Architecture)
+
+Status:
+Accepted
+
+Decision:
+Implement a hybrid Letter Patch Aggregation Strategy for winrate calibration where predictions remain granular per sub-patch, but empirical winrate data falls back to the major version.
+
+Reasoning:
+External winrate statistics (e.g., OpenDota matches table) are recorded and queried under the main major version number (e.g., `7.40`), meaning lettered sub-patches (`7.40a-d`) cannot be queried separately without causing severe timeouts or data gaps. Mapping predictions to the parent patch's winrate shifts maintains calibration coverage across the entire history.
+
+---
+
 # Open Decisions
 
 The following decisions remain unresolved:

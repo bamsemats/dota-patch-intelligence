@@ -1,7 +1,8 @@
 {
   "schemaVersion": "1.0",
   "version": "7.39",
-  "ontologyVersion": 1,
+  "timestamp": "2026-06-12T20:05:09.553Z",
+  "ontologyVersion": 2,
   "changes": [
     {
       "category": "general",
@@ -201,7 +202,7 @@
       "metadata": {},
       "classification": {
         "state": "NUMERIC",
-        "classificationType": "Buff",
+        "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
           "Herald": 1,
@@ -212,7 +213,7 @@
           "Ancient": 1,
           "Divine": 1
         },
-        "reasoning": "Increased a positive metric (roar of retribution: incoming damage buff duration)."
+        "reasoning": "Increased a negative metric (roar of retribution: incoming damage buff duration)."
       }
     },
     {
@@ -10035,18 +10036,19 @@
       },
       "classification": {
         "state": "KNOWN_SEMANTIC",
-        "classificationType": "Nerf",
-        "confidenceScore": 0.9,
+        "classificationType": "Adjustment",
+        "semanticTag": "DISPEL_INTERACTION",
         "strategicWeight": {
-          "Herald": 7,
-          "Guardian": 7,
-          "Crusader": 7,
-          "Archon": 7,
-          "Legend": 7,
-          "Ancient": 7,
-          "Divine": 7
+          "Herald": 8,
+          "Guardian": 8,
+          "Crusader": 8,
+          "Archon": 8,
+          "Legend": 8,
+          "Ancient": 8,
+          "Divine": 8
         },
-        "reasoning": "Removal of a mechanic or feature."
+        "confidenceScore": 0.95,
+        "reasoning": "Matches exact semantic pattern: \"no longer dispellable\""
       }
     },
     {
@@ -14347,18 +14349,19 @@
       },
       "classification": {
         "state": "KNOWN_SEMANTIC",
-        "classificationType": "Rework",
-        "confidenceScore": 1,
+        "classificationType": "Adjustment",
+        "semanticTag": "SPELL_IMMUNITY_INTERACTION",
         "strategicWeight": {
-          "Herald": 8,
-          "Guardian": 8,
-          "Crusader": 8,
-          "Archon": 8,
-          "Legend": 8,
-          "Ancient": 8,
-          "Divine": 8
+          "Herald": 9,
+          "Guardian": 9,
+          "Crusader": 9,
+          "Archon": 9,
+          "Legend": 9,
+          "Ancient": 9,
+          "Divine": 9
         },
-        "reasoning": "Explicitly designated as a replacement or rework."
+        "confidenceScore": 0.95,
+        "reasoning": "Matches exact semantic pattern: \"pierces spell immunity\""
       }
     },
     {

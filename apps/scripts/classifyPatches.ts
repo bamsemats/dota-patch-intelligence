@@ -88,7 +88,7 @@ function determineClassification(change: any): Classification {
         }
 
         // We use a heuristic if metric is not mapped explicitly with polarity.
-        const isNegativeMetric = ["cooldown", "mana cost", "cast point", "delay", "cost", "penalty"].some(m => metricStr.includes(m));
+        const isNegativeMetric = ["cooldown", "mana cost", "cast point", "delay", "cost", "penalty", "incoming damage", "damage taken", "damage received", "damage absorption"].some(m => metricStr.includes(m));
         const isPositiveMetric = ["damage", "health", "mana", "armor", "speed", "range", "duration", "strength", "agility", "intelligence", "radius", "regen"].some(m => metricStr.includes(m));
 
         if (changeType === "INCREASED") {
@@ -110,28 +110,34 @@ function determineClassification(change: any): Classification {
         };
     }
 
-    // Explicit Feature Handling (Rework/Add/Remove)
     const wrapWeight = (w: number) => ({ "Herald": w, "Guardian": w, "Crusader": w, "Archon": w, "Legend": w, "Ancient": w, "Divine": w });
 
-    if (changeType === "REWORK") return { state: "KNOWN_SEMANTIC", classificationType: "Rework", confidenceScore: 1.0, strategicWeight: wrapWeight(8), reasoning: "Explicitly designated as a replacement or rework." };
-    if (changeType === "ADDITION") return { state: "KNOWN_SEMANTIC", classificationType: "Buff", confidenceScore: 0.9, strategicWeight: wrapWeight(7), reasoning: "Addition of a new mechanic or feature." };
-    if (changeType === "REMOVAL") return { state: "KNOWN_SEMANTIC", classificationType: "Nerf", confidenceScore: 0.9, strategicWeight: wrapWeight(7), reasoning: "Removal of a mechanic or feature." };
-
     // 2. Check Semantic Ontology for KNOWN_SEMANTIC (Exact Matches)
+    // Run this BEFORE checking the explicit REWORK/ADDITION/REMOVAL to allow specific overrides.
     for (const entry of semanticOntology) {
         for (const pattern of entry.matchPatterns) {
-            if (rawNoteLower.includes(pattern.toLowerCase())) {
+            const isPatternObject = typeof pattern === "object" && pattern !== null && "pattern" in pattern;
+            const patternStr = isPatternObject ? pattern.pattern : pattern;
+            const classificationOverride = isPatternObject ? pattern.classificationType : null;
+
+            if (rawNoteLower.includes(patternStr.toLowerCase())) {
+                const finalClassificationType = classificationOverride || "Adjustment";
                 return {
                     state: "KNOWN_SEMANTIC",
-                    classificationType: "Adjustment", 
+                    classificationType: finalClassificationType as ClassificationType, 
                     semanticTag: entry.tag,
                     strategicWeight: wrapWeight(entry.defaultWeight || 5),
                     confidenceScore: 0.95,
-                    reasoning: `Matches exact semantic pattern: "${pattern}"`
+                    reasoning: `Matches exact semantic pattern: "${patternStr}"`
                 };
             }
         }
     }
+
+    // Explicit Feature Handling (Rework/Add/Remove)
+    if (changeType === "REWORK") return { state: "KNOWN_SEMANTIC", classificationType: "Rework", confidenceScore: 1.0, strategicWeight: wrapWeight(8), reasoning: "Explicitly designated as a replacement or rework." };
+    if (changeType === "ADDITION") return { state: "KNOWN_SEMANTIC", classificationType: "Buff", confidenceScore: 0.9, strategicWeight: wrapWeight(7), reasoning: "Addition of a new mechanic or feature." };
+    if (changeType === "REMOVAL") return { state: "KNOWN_SEMANTIC", classificationType: "Nerf", confidenceScore: 0.9, strategicWeight: wrapWeight(7), reasoning: "Removal of a mechanic or feature." };
 
     // 3. Check for Partial Confidence State (ISSUE-2)
     // Extract core keywords from the ontology patterns to find "best guesses"
@@ -141,8 +147,9 @@ function determineClassification(change: any): Classification {
     for (const entry of semanticOntology) {
         let keywordHits = 0;
         // Simple heuristic: break patterns into words > 4 chars and count hits
+        const patternsList = entry.matchPatterns.map((p: any) => typeof p === "object" && p !== null && "pattern" in p ? p.pattern : p);
         const keywords = new Set(
-            entry.matchPatterns
+            patternsList
                 .join(" ")
                 .toLowerCase()
                 .split(/[\s,]+/)
@@ -190,6 +197,7 @@ async function classifyPatch(filePath: string) {
     return {
         schemaVersion: data.schemaVersion,
         version: data.version,
+        timestamp: data.timestamp,
         ontologyVersion: ontologyVersions.semanticOntology, // Preservation (ISSUE-1)
         changes: classifiedChanges
     };

@@ -228,7 +228,9 @@ async function updateDatabase(patchId: number, analysis: any) {
         synergisticWinners: analysis.synergisticWinners || [],
         synergisticLosers: analysis.synergisticLosers || [],
         roleSpecificWinners: analysis.roleSpecificWinners || {},
-        roleSpecificLosers: analysis.roleSpecificLosers || {}
+        roleSpecificLosers: analysis.roleSpecificLosers || {},
+        truthScore: analysis.truthScore || null,
+        analysisVersion: analysis.analysisVersion || 0
     };
 
     await prisma.metaAnalysis.upsert({

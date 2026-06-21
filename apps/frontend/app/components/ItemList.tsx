@@ -30,9 +30,10 @@ interface ItemData {
 interface ItemListProps {
   title: string;
   items: ItemData[];
+  itemSlugs?: Record<string, string>;
 }
 
-export default function ItemList({ title, items }: ItemListProps) {
+export default function ItemList({ title, items, itemSlugs }: ItemListProps) {
   const [filter, setFilter] = useState<"All" | "Buffed" | "Nerfed">("All");
   const [search, setSearch] = useState("");
 
@@ -46,32 +47,34 @@ export default function ItemList({ title, items }: ItemListProps) {
   });
 
   const getItemImageUrl = (name: string) => {
-    let slug = name.replace(/ /g, '_').replace(/[^a-zA-Z0-9_]/g, '').toLowerCase();
+    let slug = itemSlugs ? itemSlugs[name] : null;
     
-    if (slug === "aghanims_scepter") slug = "ultimate_scepter";
-    if (slug === "aghanims_shard") slug = "aghanims_shard";
-    if (slug === "town_portal_scroll") slug = "tpscroll";
-    if (slug === "boots_of_speed") slug = "boots";
-    if (slug === "gem_of_true_sight") slug = "gem";
-    if (slug === "observer_ward") slug = "ward_observer";
-    if (slug === "sentry_ward") slug = "ward_sentry";
-    if (slug === "tango") slug = "tango";
-    if (slug === "clarity") slug = "clarity";
-    if (slug === "healing_salve") slug = "flask";
-    if (slug === "smoke_of_deceit") slug = "smoke_of_deceit";
-    if (slug === "dust_of_appearance") slug = "dust";
-    if (slug === "bottle") slug = "bottle";
-    if (slug === "animal_courier") slug = "courier";
-    if (slug === "flying_courier") slug = "flying_courier";
-    if (slug === "shadow_amulet") slug = "shadow_amulet";
-    if (slug === "magic_stick") slug = "magic_stick";
-    if (slug === "magic_wand") slug = "magic_wand";
-    if (slug === "gunpowder_gauntlet") slug = "gunpowder_gauntlets";
+    if (!slug) {
+        slug = name.replace(/ /g, '_').replace(/[^a-zA-Z0-9_]/g, '').toLowerCase();
+        if (slug === "aghanims_scepter") slug = "ultimate_scepter";
+        if (slug === "aghanims_shard") slug = "aghanims_shard";
+        if (slug === "town_portal_scroll") slug = "tpscroll";
+        if (slug === "boots_of_speed") slug = "boots";
+        if (slug === "gem_of_true_sight") slug = "gem";
+        if (slug === "observer_ward") slug = "ward_observer";
+        if (slug === "sentry_ward") slug = "ward_sentry";
+        if (slug === "tango") slug = "tango";
+        if (slug === "clarity") slug = "clarity";
+        if (slug === "healing_salve") slug = "flask";
+        if (slug === "smoke_of_deceit") slug = "smoke_of_deceit";
+        if (slug === "dust_of_appearance") slug = "dust";
+        if (slug === "bottle") slug = "bottle";
+        if (slug === "animal_courier") slug = "courier";
+        if (slug === "flying_courier") slug = "flying_courier";
+        if (slug === "shadow_amulet") slug = "shadow_amulet";
+        if (slug === "magic_stick") slug = "magic_stick";
+        if (slug === "magic_wand") slug = "magic_wand";
+        if (slug === "manta_style") slug = "manta";
+        if (slug === "gunpowder_gauntlet") slug = "gunpowder_gauntlets";
 
-    // Neutral Enhancements (Phase 20 Fix)
-    const enhancements = ["crude", "brawny", "quickened", "tough", "greedy", "mystical", "keen", "toxic", "stalwart", "swift", "alert", "timeless", "titanic", "vital", "audacious", "evolved", "feverish", "fleetfooted", "hulking", "manic", "vampiric", "keen_eyed", "boundless", "nimble", "vast", "wise"];
-    if (enhancements.includes(slug)) {
-      slug = `enhancement_${slug}`;
+        if (slug.endsWith("_enhancement")) {
+          slug = `enhancement_${slug.replace("_enhancement", "")}`;
+        }
     }
 
     return `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/${slug}.png`;

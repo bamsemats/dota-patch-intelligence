@@ -5,7 +5,8 @@ const researchDir = path.resolve(process.cwd(), "research-output");
 const patchesDir = path.join(researchDir, "classified-patches");
 const outputDir = path.join(researchDir, "item-history");
 const metaDir = path.join(researchDir, "meta-analysis");
-const mappingPath = path.join(researchDir, "mappings", "items.json");
+const mappingsDir = path.join(researchDir, "mappings");
+const mappingPath = path.join(mappingsDir, "items.json");
 const richItemDataPath = path.join(researchDir, "mappings", "itemdata.json");
 const categoryPath = path.join(researchDir, "mappings", "item_categories.json");
 
@@ -31,11 +32,16 @@ async function generate() {
   let richItemData: any = {};
   try {
      richItemData = JSON.parse(await fs.readFile(richItemDataPath, "utf-8"));
-  } catch(e) {}
+  } catch(e) {
+     console.warn("Could not load rich item data.");
+  }
 
+  // Build a fast lookup from item name -> rich data
   const richDataLookup: Record<string, any> = {};
   for (const [key, data] of Object.entries(richItemData)) {
-      if ((data as any).dname) richDataLookup[(data as any).dname] = data;
+      if ((data as any).dname) {
+          richDataLookup[(data as any).dname] = { ...data, internalName: key };
+      }
   }
 
   // 3. Initialize Item Data for Curated Names
@@ -51,10 +57,19 @@ async function generate() {
     valveToCuratedMap[valveName] = name;
 
     const richMeta = richDataLookup[valveName] || richDataLookup[name];
+    
+    // Extract Image Slug from OpenDota's "img" field: /apps/.../items/SLUG.png?t=...
+    let imageSlug = null;
+    if (richMeta?.img) {
+        const parts = richMeta.img.split('/');
+        const filename = parts[parts.length - 1].split('?')[0];
+        imageSlug = filename.replace('.png', '');
+    }
 
     itemData[name] = {
       name: name,
       valveName: valveName,
+      imageSlug: imageSlug, // Preservation (Corrects Travel Boots, Gauntlets, etc.)
       cost: richMeta?.cost || null,
       lore: richMeta?.lore || null,
       description: richMeta?.hint?.[0] || richMeta?.notes || null,
@@ -126,6 +141,19 @@ async function generate() {
   }
 
   console.log(`Generated curated item history for ${count} items.`);
+
+  // 4. Output a global slug mapping for the Frontend (ISSUE-20)
+  const slugMapping: Record<string, string> = {};
+  for (const name in itemData) {
+      if (itemData[name].imageSlug) {
+          slugMapping[name] = itemData[name].imageSlug;
+      }
+  }
+  await fs.writeFile(
+      path.join(mappingsDir, "item_slugs.json"),
+      JSON.stringify(slugMapping, null, 2)
+  );
+  console.log(`Generated item_slugs.json mapping for ${Object.keys(slugMapping).length} items.`);
 }
 
 generate().catch(console.error);

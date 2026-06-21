@@ -119,6 +119,7 @@ model MetaAnalysis {
   roleSpecificLosers  Json?    // JSON object categorized by Carry, Mid, etc.
   validationState     String   @default("UNVERIFIED") // e.g., "CLEAN", "PARTIAL", "HALLUCINATED" (ISSUE-3)
   analysisVersion     Int      @default(0) // Track prompt/engine version (ISSUE-1)
+  truthScore          Json?    // Array/object for Empirical Truth Score (predictions vs winrates)
   createdAt           DateTime @default(now())
 
   // Relations

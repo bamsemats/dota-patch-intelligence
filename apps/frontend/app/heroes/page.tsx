@@ -1,6 +1,6 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
-import Link from "next/link";
+import HeroGrid from "./HeroGrid";
 import styles from "../components/EntityList.module.css";
 
 const researchDir = path.resolve(process.cwd(), "../../research-output");
@@ -26,6 +26,21 @@ export default async function HeroesPage() {
 
   const heroNames = Object.values(heroMapping).sort();
 
+  // Load hero attributes
+  const heroAttributes: Record<string, number> = {};
+  try {
+    const rawHeroData = await fs.readFile(path.join(mappingsDir, "herodata.json"), "utf-8");
+    const herodata = JSON.parse(rawHeroData);
+    for (const [id, h] of Object.entries(herodata)) {
+      const hero = h as any;
+      if (hero.name_loc) {
+        heroAttributes[hero.name_loc] = hero.primary_attr;
+      }
+    }
+  } catch (e) {
+    console.error("Could not load herodata attributes.");
+  }
+
   // Load latest vector data to show cumulative trajectory
   const heroTraj: Record<string, any> = {};
   try {
@@ -42,87 +57,22 @@ export default async function HeroesPage() {
       }
   } catch(e) {}
 
-  const getSignificantVectors = (vector: any) => {
-    if (!vector) return [];
-    return Object.entries(vector)
-      .filter(([_, val]: any) => val !== 0)
-      .map(([dim, val]: any) => ({ dim: dim.charAt(0).toUpperCase() + dim.slice(1), val }));
-  };
-
-  const getHeroSlug = (name: string) => {
-    return name.replace(/[^a-z0-9]/gi, '_').toLowerCase();
-  };
-
-  const getImageUrl = (name: string) => {
-    let slug = name.replace(/ /g, '_').replace(/[^a-zA-Z0-9_]/g, '').toLowerCase();
-    if (slug === "natures_prophet") slug = "furion";
-    if (slug === "outworld_destroyer") slug = "obsidian_destroyer";
-    if (slug === "vengeful_spirit") slug = "vengefulspirit";
-    if (slug === "anti_mage" || slug === "antimage") slug = "antimage";
-    if (slug === "centaur_warrunner") slug = "centaur";
-    if (slug === "clockwerk") slug = "rattletrap";
-    if (slug === "doom") slug = "doom_bringer";
-    if (slug === "io") slug = "wisp";
-    if (slug === "lifestealer") slug = "life_stealer";
-    if (slug === "magnus") slug = "magnataur";
-    if (slug === "necrophos") slug = "necrolyte";
-    if (slug === "queen_of_pain") slug = "queenofpain";
-    if (slug === "shadow_fiend") slug = "nevermore";
-    if (slug === "treant_protector") slug = "treant";
-    if (slug === "underlord") slug = "abyssal_underlord";
-    if (slug === "wraith_king") slug = "skeleton_king";
-    if (slug === "zeus") slug = "zuus";
-    return `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/${slug}.png`;
-  };
-
   return (
     <div className="container">
-      <div style={{ marginBottom: '40px' }}>
-        <h1 style={{ color: "var(--color-artifact)", margin: 0, fontSize: "clamp(2rem, 5vw, 3rem)" }}>
+      <div className={styles.rosterHeader}>
+        <h1 className={styles.rosterTitle}>
           Heroes Roster
         </h1>
-        <p style={{ color: '#888', fontSize: '1.2rem' }}>Browse all heroes and view their complete balance history.</p>
+        <p className={styles.rosterSub}>Browse all heroes and view their complete balance history.</p>
       </div>
 
-      <div className={styles.grid}>
-        {heroNames.map((name) => {
-          const vectors = getSignificantVectors(heroTraj[name]);
-          const safeName = name.toLowerCase()
-            .replace(/[^a-z0-9]+/g, '_')
-            .replace(/^_+|_+$/g, '');
-
-          return (
-            <Link 
-              key={name} 
-              href={`/hero/${safeName}`}
-              className={`${styles.card} ${styles.clickable}`}
-              style={{ textDecoration: 'none', color: 'inherit', minHeight: '150px' }}
-            >
-              <div className={styles.heroImageWrapper}>
-                <img 
-                  src={getImageUrl(name)} 
-                  alt="" 
-                  className={styles.heroImage} 
-                />
-              </div>
-
-              <div className={styles.cardHeader} style={{ borderBottom: 'none' }}>
-                <h3 className={styles.heroName} style={{ fontSize: '1.5rem' }}>{name}</h3>
-              </div>
-
-              {vectors.length > 0 && (
-                <div className={styles.vectorContainer} style={{ borderTop: 'none', marginTop: 'auto' }}>
-                  {vectors.map((v, idx) => (
-                    <span key={idx} className={`${styles.vectorBadge} ${v.val > 0 ? styles.pos : styles.neg}`}>
-                      {v.dim} {v.val > 0 ? `+${parseFloat(v.val).toFixed(1)}` : parseFloat(v.val).toFixed(1)}
-                    </span>
-                  ))}
-                </div>
-              )}
-            </Link>
-          );
-        })}
-      </div>
+      <HeroGrid 
+        heroNames={heroNames} 
+        heroTraj={heroTraj} 
+        heroAttributes={heroAttributes} 
+      />
     </div>
   );
 }
+
+

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import PatchSelector from "../../../components/PatchSelector";
 import FullNotesTabs from "./FullNotesTabs";
-import { getLocalPatches, getLocalPatchData } from "../../../lib/localData";
+import { getLocalPatches, getLocalPatchData, getLocalItemSlugs } from "../../../lib/localData";
 
 interface PageProps {
   params: Promise<{ version: string }>;
@@ -51,6 +51,8 @@ export default async function PatchNotesPage({ params }: PageProps) {
   } catch (e) {
     patchData = await getLocalPatchData(patchVersion);
   }
+
+  const itemSlugs = await getLocalItemSlugs();
 
   if (!patchData) return <div>Patch not found.</div>;
 
@@ -156,9 +158,7 @@ export default async function PatchNotesPage({ params }: PageProps) {
 
   return (
     <div className="container">
-      <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginBottom: '10px' }}>
-         <Link href={`/patch/${patchVersion}`} style={{ color: 'var(--color-artifact)', textDecoration: 'none' }}>← Summary</Link>
-      </div>
+
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '20px' }}>
         <h1 style={{ color: "var(--color-artifact)", margin: 0, fontSize: "2.5rem" }}>
           Patch {patchVersion} Notes
@@ -176,6 +176,7 @@ export default async function PatchNotesPage({ params }: PageProps) {
         general={generalArray}
         winrateData={winrateData}
         heroMapping={heroMapping}
+        itemSlugs={itemSlugs}
       />
     </div>
   );

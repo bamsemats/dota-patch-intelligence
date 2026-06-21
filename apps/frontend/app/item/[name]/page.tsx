@@ -48,30 +48,33 @@ export default async function ItemPage({ params }: PageProps) {
 
   if (!itemData) return <div className="container">Item not found.</div>;
 
-  const getItemImageUrl = (name: string) => {
-    let slug = name.replace(/ /g, '_').replace(/[^a-zA-Z0-9_]/g, '').toLowerCase();
-    if (slug === "aghanims_scepter") slug = "ultimate_scepter";
-    if (slug === "aghanims_shard") slug = "aghanims_shard";
-    if (slug === "town_portal_scroll") slug = "tpscroll";
-    if (slug === "boots_of_speed") slug = "boots";
-    if (slug === "gem_of_true_sight") slug = "gem";
-    if (slug === "observer_ward") slug = "ward_observer";
-    if (slug === "sentry_ward") slug = "ward_sentry";
-    if (slug === "tango") slug = "tango";
-    if (slug === "clarity") slug = "clarity";
-    if (slug === "healing_salve") slug = "flask";
-    if (slug === "smoke_of_deceit") slug = "smoke_of_deceit";
-    if (slug === "dust_of_appearance") slug = "dust";
-    if (slug === "bottle") slug = "bottle";
-    if (slug === "animal_courier") slug = "courier";
-    if (slug === "flying_courier") slug = "flying_courier";
-    if (slug === "shadow_amulet") slug = "shadow_amulet";
-    if (slug === "magic_stick") slug = "magic_stick";
-    if (slug === "magic_wand") slug = "magic_wand";
+  const getItemImageUrl = (item: any) => {
+    let slug = item.imageSlug;
+    
+    if (!slug) {
+      slug = item.name.replace(/ /g, '_').replace(/[^a-zA-Z0-9_]/g, '').toLowerCase();
+      if (slug === "aghanims_scepter") slug = "ultimate_scepter";
+      if (slug === "aghanims_shard") slug = "aghanims_shard";
+      if (slug === "town_portal_scroll") slug = "tpscroll";
+      if (slug === "boots_of_speed") slug = "boots";
+      if (slug === "gem_of_true_sight") slug = "gem";
+      if (slug === "observer_ward") slug = "ward_observer";
+      if (slug === "sentry_ward") slug = "ward_sentry";
+      if (slug === "tango") slug = "tango";
+      if (slug === "clarity") slug = "clarity";
+      if (slug === "healing_salve") slug = "flask";
+      if (slug === "smoke_of_deceit") slug = "smoke_of_deceit";
+      if (slug === "dust_of_appearance") slug = "dust";
+      if (slug === "bottle") slug = "bottle";
+      if (slug === "animal_courier") slug = "courier";
+      if (slug === "flying_courier") slug = "flying_courier";
+      if (slug === "shadow_amulet") slug = "shadow_amulet";
+      if (slug === "magic_stick") slug = "magic_stick";
+      if (slug === "magic_wand") slug = "magic_wand";
 
-    // Neutral Enhancements (ISSUE-20 Fix)
-    if (slug.endsWith("_enhancement")) {
-      slug = `enhancement_${slug.replace("_enhancement", "")}`;
+      if (slug.endsWith("_enhancement")) {
+        slug = `enhancement_${slug.replace("_enhancement", "")}`;
+      }
     }
 
     return `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/${slug}.png`;
@@ -81,7 +84,7 @@ export default async function ItemPage({ params }: PageProps) {
     <div className="container" style={{ position: 'relative' }}>
       <div className={styles.heroImageWrapper} style={{ position: 'absolute', top: '-40px', left: '-20px', width: 'calc(100% + 40px)', height: '400px', zIndex: -1 }}>
         <img 
-          src={getItemImageUrl(itemData.name)} 
+          src={getItemImageUrl(itemData)} 
           alt="" 
           className={styles.heroImage} 
           style={{ objectFit: 'contain', padding: '40px', opacity: 0.4 }}

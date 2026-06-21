@@ -13,6 +13,8 @@ interface UnknownChange {
     entityName: string;
     subEntityName?: string;
     rawNote: string;
+    currentState: string;
+    currentClassification: string;
 }
 
 async function loadOntology() {
@@ -30,28 +32,42 @@ async function saveOntology(ontology: any[]) {
     console.log("✔️  Ontology successfully saved.\n");
 }
 
-async function gatherUnknowns(): Promise<UnknownChange[]> {
+async function gatherUnknowns(filterQuery?: string): Promise<UnknownChange[]> {
     const files = await readdir(INPUT_DIR);
     const unknowns: UnknownChange[] = [];
     const seenNotes = new Set<string>(); // Deduplicate exact same strings
+
+    // Sort files to process logically
+    files.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
 
     for (const file of files) {
         if (!file.endsWith(".json")) continue;
         const data = JSON.parse(await readFile(path.join(INPUT_DIR, file), "utf8"));
         
         for (const change of data.changes) {
-            if (change.classification.state === "UNKNOWN") {
-                const cleanNote = change.rawNote.trim().toLowerCase();
-                if (!seenNotes.has(cleanNote)) {
-                    seenNotes.add(cleanNote);
-                    unknowns.push({
-                        patch: data.version,
-                        category: change.category,
-                        entityName: change.entityName,
-                        subEntityName: change.subEntityName,
-                        rawNote: change.rawNote
-                    });
-                }
+            const state = change.classification.state;
+            const cleanNote = change.rawNote.trim().toLowerCase();
+            
+            let isMatch = false;
+            if (filterQuery) {
+                isMatch = cleanNote.includes(filterQuery.toLowerCase()) || 
+                          change.entityName.toLowerCase().includes(filterQuery.toLowerCase()) || 
+                          (change.subEntityName && change.subEntityName.toLowerCase().includes(filterQuery.toLowerCase()));
+            } else {
+                isMatch = state === "UNKNOWN" || state === "PARTIALLY_CLASSIFIED";
+            }
+
+            if (isMatch && !seenNotes.has(cleanNote)) {
+                seenNotes.add(cleanNote);
+                unknowns.push({
+                    patch: data.version,
+                    category: change.category,
+                    entityName: change.entityName,
+                    subEntityName: change.subEntityName,
+                    rawNote: change.rawNote,
+                    currentState: state,
+                    currentClassification: change.classification.classificationType
+                });
             }
         }
     }
@@ -59,19 +75,28 @@ async function gatherUnknowns(): Promise<UnknownChange[]> {
 }
 
 async function main() {
+    // Process filter query from command line arguments
+    const args = process.argv.slice(2);
+    const filterQuery = args.find(arg => !arg.startsWith("--"));
+
     console.log("=========================================");
     console.log("   Dota Patch Intelligence Review Tool   ");
+    if (filterQuery) {
+        console.log(`   Searching for: "${filterQuery}"`);
+    } else {
+        console.log("   Reviewing UNKNOWN & PARTIALLY_CLASSIFIED");
+    }
     console.log("=========================================\n");
 
     const ontology = await loadOntology();
-    const unknowns = await gatherUnknowns();
+    const unknowns = await gatherUnknowns(filterQuery);
 
     if (unknowns.length === 0) {
-        console.log("🎉 No UNKNOWN changes found! The ontology covers everything.");
+        console.log("🎉 No matching changes found to review!");
         return;
     }
 
-    console.log(`Found ${unknowns.length} unique UNKNOWN changes to review.\n`);
+    console.log(`Found ${unknowns.length} unique changes to review.\n`);
 
     const rl = readline.createInterface({
         input: process.stdin,
@@ -85,6 +110,7 @@ async function main() {
         console.log(`-----------------------------------------`);
         console.log(`[${i + 1}/${unknowns.length}] Patch: ${change.patch} | ${change.category.toUpperCase()}`);
         console.log(`Entity: ${change.entityName} ${change.subEntityName ? `> ${change.subEntityName}` : ''}`);
+        console.log(`Current: State: ${change.currentState} | Class: ${change.currentClassification}`);
         console.log(`Note:   \x1b[33m"${change.rawNote}"\x1b[0m`);
         console.log(`-----------------------------------------`);
 
@@ -112,7 +138,14 @@ async function main() {
             if (tagIdx >= 0 && tagIdx < ontology.length) {
                 const newPattern = await rl.question(`Enter the exact generic phrase to match (e.g., "now pierces spell immunity"): `);
                 if (newPattern.trim()) {
-                    ontology[tagIdx].matchPatterns.push(newPattern.trim());
+                    const typeOverride = await rl.question(`Classification Type (Buff, Nerf, Rework, Adjustment) or Enter for Adjustment: `);
+                    const cleanOverride = typeOverride.trim();
+
+                    const finalPattern = (cleanOverride && ["Buff", "Nerf", "Rework", "Adjustment"].includes(cleanOverride))
+                        ? { pattern: newPattern.trim(), classificationType: cleanOverride }
+                        : newPattern.trim();
+
+                    ontology[tagIdx].matchPatterns.push(finalPattern);
                     await saveOntology(ontology);
                     reviewedCount++;
                 }
@@ -128,9 +161,16 @@ async function main() {
             const weightStr = await rl.question(`Enter default strategic weight (1-10): `);
 
             if (newTagName && newPattern) {
+                const typeOverride = await rl.question(`Classification Type (Buff, Nerf, Rework, Adjustment) or Enter for Adjustment: `);
+                const cleanOverride = typeOverride.trim();
+
+                const finalPattern = (cleanOverride && ["Buff", "Nerf", "Rework", "Adjustment"].includes(cleanOverride))
+                    ? { pattern: newPattern.trim(), classificationType: cleanOverride }
+                    : newPattern.trim();
+
                 ontology.push({
                     tag: newTagName.trim().toUpperCase(),
-                    matchPatterns: [newPattern.trim()],
+                    matchPatterns: [finalPattern],
                     impactAreas: impactStr.split(',').map(s => s.trim()),
                     defaultWeight: parseInt(weightStr, 10) || 5
                 });

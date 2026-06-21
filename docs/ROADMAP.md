@@ -370,6 +370,22 @@ Goals:
 
 ---
 
+# Phase 21 — UX Maintenance & Calibration Planning
+
+Status: **Complete**
+
+Goals:
+*   **Production Style Fixes**: Converted camelCase inline styles to kebab-case (cast as `any` in TypeScript) in Server Components to ensure compatibility with Turbopack static HTML generation.
+*   **Inline Style Elimination**: Refactored frontend pages (e.g., Heroes Roster, HeroGrid filters, Role Insights tabs) to use modular, stylesheet-based classes in `EntityList.module.css` and `Tabs.module.css` rather than ad-hoc inline styling.
+*   **Remove Redundant Navigation**: Pruned superfluous `← Home` and `← Summary` buttons on the Strategic Summary and Full Patch Notes views.
+*   **Fidelity Calibration for Reduction Metrics**: Updated classification engine polarity logic in `classifyPatches.ts` to categorize reductions in incoming damage/damage taken/damage received as a **Buff**.
+*   **Release Date Alignment**: Extracted `discoveryDate` from `metadata.json` to seed dynamic patch timestamps instead of relying on build-time fallbacks.
+*   **Interactive Heroes Roster Filtering**: Implemented client-side grid search and filtering by attributes (Strength, Agility, Intelligence, Universal) and trends (Buffed, Nerfed, Neutral).
+*   **Letter Patch Calibration Plan**: Documented the "Letter Patch Aggregation Strategy" in `WINRATE_CALIBRATION.md` to map lettered sub-patches (e.g. `7.40a-d`) to their major versions (e.g. `7.40`) for data calibration.
+*   **Prediction Robustness & Stability Plan**: Analyzed prediction accuracy weaknesses, ex post facto validation constraints, and authored a long-term stabilization roadmap in `PREDICTION_ROBUSTNESS.md`.
+
+---
+
 # Definition of Success
 
-A user should be able to open a patch page and understand the major impacts of the patch within a few minutes without reading the full official patch notes.
+

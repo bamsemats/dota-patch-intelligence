@@ -1,7 +1,8 @@
 {
   "schemaVersion": "1.0",
   "version": "7.41",
-  "ontologyVersion": 1,
+  "timestamp": "2026-03-24T23:43:44.000Z",
+  "ontologyVersion": 2,
   "changes": [
     {
       "category": "general",
@@ -7702,18 +7703,19 @@
       },
       "classification": {
         "state": "KNOWN_SEMANTIC",
-        "classificationType": "Nerf",
-        "confidenceScore": 0.9,
+        "classificationType": "Adjustment",
+        "semanticTag": "DISPEL_INTERACTION",
         "strategicWeight": {
-          "Herald": 7,
-          "Guardian": 7,
-          "Crusader": 7,
-          "Archon": 7,
-          "Legend": 7,
-          "Ancient": 7,
-          "Divine": 7
+          "Herald": 8,
+          "Guardian": 8,
+          "Crusader": 8,
+          "Archon": 8,
+          "Legend": 8,
+          "Ancient": 8,
+          "Divine": 8
         },
-        "reasoning": "Removal of a mechanic or feature."
+        "confidenceScore": 0.95,
+        "reasoning": "Matches exact semantic pattern: \"applies a basic dispel\""
       }
     },
     {
@@ -9504,7 +9506,7 @@
       },
       "classification": {
         "state": "NUMERIC",
-        "classificationType": "Nerf",
+        "classificationType": "Buff",
         "confidenceScore": 1,
         "strategicWeight": {
           "Herald": 1,
@@ -9515,7 +9517,7 @@
           "Ancient": 1,
           "Divine": 1
         },
-        "reasoning": "Decreased a positive metric (refract incoming damage)."
+        "reasoning": "Decreased a negative metric (refract incoming damage)."
       }
     },
     {
@@ -16217,7 +16219,7 @@
       },
       "classification": {
         "state": "NUMERIC",
-        "classificationType": "Nerf",
+        "classificationType": "Buff",
         "confidenceScore": 1,
         "strategicWeight": {
           "Herald": 1,
@@ -16228,7 +16230,7 @@
           "Ancient": 1,
           "Divine": 1
         },
-        "reasoning": "Decreased a positive metric (aghanim's scepter illusion damage taken)."
+        "reasoning": "Decreased a negative metric (aghanim's scepter illusion damage taken)."
       }
     },
     {
@@ -18630,18 +18632,19 @@
       },
       "classification": {
         "state": "KNOWN_SEMANTIC",
-        "classificationType": "Buff",
-        "confidenceScore": 0.9,
+        "classificationType": "Adjustment",
+        "semanticTag": "DISPEL_INTERACTION",
         "strategicWeight": {
-          "Herald": 7,
-          "Guardian": 7,
-          "Crusader": 7,
-          "Archon": 7,
-          "Legend": 7,
-          "Ancient": 7,
-          "Divine": 7
+          "Herald": 8,
+          "Guardian": 8,
+          "Crusader": 8,
+          "Archon": 8,
+          "Legend": 8,
+          "Ancient": 8,
+          "Divine": 8
         },
-        "reasoning": "Addition of a new mechanic or feature."
+        "confidenceScore": 0.95,
+        "reasoning": "Matches exact semantic pattern: \"applies a strong dispel\""
       }
     },
     {
@@ -21591,18 +21594,19 @@
       },
       "classification": {
         "state": "KNOWN_SEMANTIC",
-        "classificationType": "Nerf",
-        "confidenceScore": 0.9,
+        "classificationType": "Adjustment",
+        "semanticTag": "TARGETING_RULE_CHANGE",
         "strategicWeight": {
-          "Herald": 7,
-          "Guardian": 7,
-          "Crusader": 7,
-          "Archon": 7,
-          "Legend": 7,
-          "Ancient": 7,
-          "Divine": 7
+          "Herald": 6,
+          "Guardian": 6,
+          "Crusader": 6,
+          "Archon": 6,
+          "Legend": 6,
+          "Ancient": 6,
+          "Divine": 6
         },
-        "reasoning": "Removal of a mechanic or feature."
+        "confidenceScore": 0.95,
+        "reasoning": "Matches exact semantic pattern: \"now affects\""
       }
     },
     {
@@ -23683,18 +23687,19 @@
       },
       "classification": {
         "state": "KNOWN_SEMANTIC",
-        "classificationType": "Rework",
-        "confidenceScore": 1,
+        "classificationType": "Adjustment",
+        "semanticTag": "CAST_WHILE_DISABLED",
         "strategicWeight": {
-          "Herald": 8,
-          "Guardian": 8,
-          "Crusader": 8,
-          "Archon": 8,
-          "Legend": 8,
-          "Ancient": 8,
-          "Divine": 8
+          "Herald": 9,
+          "Guardian": 9,
+          "Crusader": 9,
+          "Archon": 9,
+          "Legend": 9,
+          "Ancient": 9,
+          "Divine": 9
         },
-        "reasoning": "Explicitly designated as a replacement or rework."
+        "confidenceScore": 0.95,
+        "reasoning": "Matches exact semantic pattern: \"can be cast while disabled\""
       }
     },
     {
@@ -28159,18 +28164,19 @@
       },
       "classification": {
         "state": "KNOWN_SEMANTIC",
-        "classificationType": "Buff",
-        "confidenceScore": 0.9,
+        "classificationType": "Adjustment",
+        "semanticTag": "TARGETING_RULE_CHANGE",
         "strategicWeight": {
-          "Herald": 7,
-          "Guardian": 7,
-          "Crusader": 7,
-          "Archon": 7,
-          "Legend": 7,
-          "Ancient": 7,
-          "Divine": 7
+          "Herald": 6,
+          "Guardian": 6,
+          "Crusader": 6,
+          "Archon": 6,
+          "Legend": 6,
+          "Ancient": 6,
+          "Divine": 6
         },
-        "reasoning": "Addition of a new mechanic or feature."
+        "confidenceScore": 0.95,
+        "reasoning": "Matches exact semantic pattern: \"now affects\""
       }
     },
     {
@@ -30067,7 +30073,7 @@
       },
       "classification": {
         "state": "NUMERIC",
-        "classificationType": "Nerf",
+        "classificationType": "Buff",
         "confidenceScore": 1,
         "strategicWeight": {
           "Herald": 1,
@@ -30078,7 +30084,7 @@
           "Ancient": 1,
           "Divine": 1
         },
-        "reasoning": "Decreased a positive metric (illusion damage taken)."
+        "reasoning": "Decreased a negative metric (illusion damage taken)."
       }
     },
     {
@@ -30618,7 +30624,7 @@
       },
       "classification": {
         "state": "NUMERIC",
-        "classificationType": "Buff",
+        "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
           "Herald": 1,
@@ -30629,7 +30635,7 @@
           "Ancient": 1,
           "Divine": 1
         },
-        "reasoning": "Increased a positive metric (when doom attacks enemy heroes, he applies a curse upon them. after 2.5s, the cursed hero bursts with a pillar of fire, damaging itself and all enemy units in a 66 aoe for 15% of the damage taken from doom (the hero) over this duration, including damage from the attack that applied the curse. if the cursed hero's level is a multiple of 6, the curse damage and radius will be)."
+        "reasoning": "Increased a negative metric (when doom attacks enemy heroes, he applies a curse upon them. after 2.5s, the cursed hero bursts with a pillar of fire, damaging itself and all enemy units in a 66 aoe for 15% of the damage taken from doom (the hero) over this duration, including damage from the attack that applied the curse. if the cursed hero's level is a multiple of 6, the curse damage and radius will be)."
       }
     },
     {
@@ -36219,7 +36225,7 @@
       },
       "classification": {
         "state": "NUMERIC",
-        "classificationType": "Buff",
+        "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
           "Herald": 1,
@@ -36230,7 +36236,7 @@
           "Ancient": 1,
           "Divine": 1
         },
-        "reasoning": "Increased a positive metric (level 15 talent mirror image illusion damage taken reduction)."
+        "reasoning": "Increased a negative metric (level 15 talent mirror image illusion damage taken reduction)."
       }
     },
     {

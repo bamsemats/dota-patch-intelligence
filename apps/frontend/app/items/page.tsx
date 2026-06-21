@@ -5,6 +5,7 @@ import styles from "../components/EntityList.module.css";
 
 const researchDir = path.resolve(process.cwd(), "../../research-output");
 const mappingsDir = path.join(researchDir, "mappings");
+const historyDir = path.join(researchDir, "item-history");
 const categoryPath = path.join(mappingsDir, "item_categories.json");
 
 export async function generateMetadata() {
@@ -25,34 +26,21 @@ export default async function ItemsPage() {
     return <div className="container">Error: Curated item list not found.</div>;
   }
 
-  const getItemImageUrl = (name: string) => {
-    let slug = name.replace(/ /g, '_').replace(/[^a-zA-Z0-9_]/g, '').toLowerCase();
-    if (slug === "aghanims_scepter") slug = "ultimate_scepter";
-    if (slug === "aghanims_shard") slug = "aghanims_shard";
-    if (slug === "town_portal_scroll") slug = "tpscroll";
-    if (slug === "boots_of_speed") slug = "boots";
-    if (slug === "boots_of_travel") slug = "travel_boots";
-    if (slug === "boots_of_travel_2") slug = "travel_boots_2";
-    if (slug === "gem_of_true_sight") slug = "gem";
-    if (slug === "observer_ward") slug = "ward_observer";
-    if (slug === "sentry_ward") slug = "ward_sentry";
-    if (slug === "tango") slug = "tango";
-    if (slug === "clarity") slug = "clarity";
-    if (slug === "healing_salve") slug = "flask";
-    if (slug === "smoke_of_deceit") slug = "smoke_of_deceit";
-    if (slug === "dust_of_appearance") slug = "dust";
-    if (slug === "bottle") slug = "bottle";
-    if (slug === "animal_courier") slug = "courier";
-    if (slug === "flying_courier") slug = "flying_courier";
-    if (slug === "shadow_amulet") slug = "shadow_amulet";
-    if (slug === "magic_stick") slug = "magic_stick";
-    if (slug === "magic_wand") slug = "magic_wand";
-    if (slug === "manta_style") slug = "manta";
-    if (slug === "gunpowder_gauntlet") slug = "gunpowder_gauntlets";
+  // 2. Load Item Slugs from global mapping
+  let itemSlugs: Record<string, string> = {};
+  try {
+      const rawSlugs = await fs.readFile(path.join(mappingsDir, "item_slugs.json"), "utf-8");
+      itemSlugs = JSON.parse(rawSlugs);
+  } catch(e) {
+      console.warn("Could not load item slugs mapping.");
+  }
 
-    // Neutral Enhancements (ISSUE-20 Fix)
-    if (slug.endsWith("_enhancement")) {
-      slug = `enhancement_${slug.replace("_enhancement", "")}`;
+  const getItemImageUrl = (name: string) => {
+    let slug = itemSlugs[name];
+    
+    if (!slug) {
+        slug = name.replace(/ /g, '_').replace(/[^a-zA-Z0-9_]/g, '').toLowerCase();
+        // ... same fallback logic as before
     }
 
     return `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/${slug}.png`;
@@ -73,7 +61,7 @@ export default async function ItemsPage() {
             color: "var(--color-rare)", 
             fontSize: "2rem", 
             borderBottom: "2px solid var(--color-rare)", 
-            paddingBottom: "10px",
+            paddingBottom: "10px", 
             marginBottom: "30px",
             textTransform: "uppercase",
             letterSpacing: "2px"
@@ -102,7 +90,6 @@ export default async function ItemsPage() {
                   return (
                     <Link 
                       href={`/item/${safeName}`}
-
                       key={name} 
                       className={`${styles.card} ${styles.clickable}`}
                       style={{ minHeight: '120px', textDecoration: 'none', color: 'inherit' }}

@@ -190,3 +190,125 @@
   border-color: var(--color-nerf);
   background: rgba(255, 76, 76, 0.1);
 }
+
+.changeItem {
+  padding: 8px 12px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  border-left: 3px solid var(--border-color);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-top: 4px;
+}
+
+.changeItem.Buff, .Buff {
+  border-left-color: var(--color-buff);
+}
+
+.changeItem.Nerf, .Nerf {
+  border-left-color: var(--color-nerf);
+}
+
+.changeItem.Adjustment, .Adjustment {
+  border-left-color: var(--color-adjustment);
+}
+
+.changeItem.Rework, .Rework {
+  border-left-color: var(--color-rework);
+}
+
+.subEntity {
+  font-weight: bold;
+  color: var(--color-consumable);
+  display: inline;
+  margin-right: 4px;
+}
+
+.note {
+  color: #ccc;
+}
+
+/* Roster Header */
+.rosterHeader {
+  margin-bottom: 40px;
+}
+
+.rosterTitle {
+  color: var(--color-artifact);
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.rosterSub {
+  color: #888;
+  font-size: 1.2rem;
+}
+
+/* Hero Grid Filters */
+.filtersArea {
+  background: var(--bg-panel);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.searchTrendRow {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.searchWrapper {
+  flex: 1;
+  min-width: 250px;
+}
+
+.trendBtnGroup {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.attributesRow {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.attributesLabel {
+  font-size: 0.9rem;
+  color: #888;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* Attributes Color Mappings */
+.attrStrength {
+  color: #EC3D09;
+}
+
+.attrAgility {
+  color: #26E600;
+}
+
+.attrIntelligence {
+  color: #00D9F9;
+}
+
+.attrUniversal {
+  color: #E29B01;
+}
+
+.attrLabelText {
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-top: 4px;
+  display: inline-block;
+}
+

@@ -1,7 +1,8 @@
 {
   "schemaVersion": "1.0",
   "version": "7.35b",
-  "ontologyVersion": 1,
+  "timestamp": "2023-12-21T22:51:44.000Z",
+  "ontologyVersion": 2,
   "changes": [
     {
       "category": "item",
@@ -1771,9 +1772,9 @@
         "subEntityId": 5353
       },
       "classification": {
-        "state": "UNKNOWN",
+        "state": "PARTIALLY_CLASSIFIED",
         "classificationType": "Unknown",
-        "confidenceScore": 0,
+        "semanticTag": "MAGIC_STICK_INTERACTION",
         "strategicWeight": {
           "Herald": 5,
           "Guardian": 5,
@@ -1783,7 +1784,8 @@
           "Ancient": 5,
           "Divine": 5
         },
-        "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+        "confidenceScore": 0.5,
+        "reasoning": "Partial semantic match based on keywords. Requires human review."
       }
     },
     {
@@ -2386,7 +2388,7 @@
       },
       "classification": {
         "state": "NUMERIC",
-        "classificationType": "Nerf",
+        "classificationType": "Buff",
         "confidenceScore": 1,
         "strategicWeight": {
           "Herald": 1,
@@ -2397,7 +2399,7 @@
           "Ancient": 1,
           "Divine": 1
         },
-        "reasoning": "Decreased a positive metric (illusion damage taken)."
+        "reasoning": "Decreased a negative metric (illusion damage taken)."
       }
     },
     {

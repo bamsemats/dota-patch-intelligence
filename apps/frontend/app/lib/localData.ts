@@ -27,6 +27,16 @@ export async function getLocalMeta(version: string) {
   }
 }
 
+export async function getLocalItemSlugs() {
+  const slugPath = path.join(researchDir, "mappings", "item_slugs.json");
+  try {
+    const data = await fs.readFile(slugPath, "utf-8");
+    return JSON.parse(data);
+  } catch (e) {
+    return {};
+  }
+}
+
 export async function getLocalPatchData(version: string) {
   const patchPath = path.join(researchDir, "classified-patches", `${version}.json`);
   const vectorPath = path.join(researchDir, "feature-vectors", `vectors-${version}.json`);

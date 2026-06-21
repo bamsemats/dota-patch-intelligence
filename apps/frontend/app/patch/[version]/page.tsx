@@ -1,7 +1,7 @@
 import Link from "next/link";
 import PatchSelector from "../../components/PatchSelector";
 import SummaryTabs from "./SummaryTabs";
-import { getLocalPatches, getLocalMeta } from "../../lib/localData";
+import { getLocalPatches, getLocalMeta, getLocalItemSlugs } from "../../lib/localData";
 
 interface PageProps {
   params: Promise<{ version: string }>;
@@ -83,11 +83,11 @@ export default async function Page({ params }: PageProps) {
     metaData = await getLocalMeta(patchVersion);
   }
 
+  const itemSlugs = await getLocalItemSlugs();
+
   return (
     <div className="container">
-      <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginBottom: '10px' }}>
-         <Link href="/" style={{ color: 'var(--color-artifact)', textDecoration: 'none' }}>← Home</Link>
-      </div>
+
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '20px' }}>
         <h1 style={{ color: "var(--color-artifact)", margin: 0, fontSize: "2.5rem" }}>
           Patch {patchVersion} Intelligence
@@ -103,7 +103,7 @@ export default async function Page({ params }: PageProps) {
       </p>
 
       {metaData ? (
-        <SummaryTabs metaData={metaData} />
+        <SummaryTabs metaData={metaData} itemSlugs={itemSlugs} />
       ) : (
         <p>No strategic meta analysis available for this patch yet.</p>
       )}

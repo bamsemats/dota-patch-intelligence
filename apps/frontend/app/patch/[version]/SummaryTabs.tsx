@@ -6,15 +6,85 @@ import Link from "next/link";
 
 interface SummaryTabsProps {
   metaData: any;
+  itemSlugs?: Record<string, string>;
 }
 
-export default function SummaryTabs({ metaData }: SummaryTabsProps) {
+export default function SummaryTabs({ metaData, itemSlugs }: SummaryTabsProps) {
   const [activeTab, setActiveTab] = useState<"shifts" | "synergies" | "roles">("shifts");
+  const [expandedKeys, setExpandedKeys] = useState<Record<string, boolean>>({});
+
+  const toggleKey = (key: string) => {
+    setExpandedKeys(prev => ({ ...prev, [key]: !prev[key] }));
+  };
+
+  const RenderExplanation = ({ text, id }: { text: string; id: string }) => {
+    const isExpanded = !!expandedKeys[id];
+
+    return (
+      <div className={styles.roleExplanationContainer}>
+        {isExpanded && (
+          <p className={styles.roleExplanationText}>
+            {text}
+          </p>
+        )}
+        <button 
+          onClick={() => toggleKey(id)} 
+          className={styles.roleExplanationBtn}
+        >
+          {isExpanded ? "Collapse Analysis" : "Expand Analysis"}
+        </button>
+      </div>
+    );
+  };
 
   if (!metaData) return null;
 
+  const getImageUrl = (name: string) => {
+    // Check if it's an item in our slugs mapping
+    let slug = itemSlugs ? itemSlugs[name] : null;
+    let type = "items";
+
+    if (!slug) {
+        // Fallback to hero slugification logic
+        slug = name.replace(/ /g, '_').replace(/[^a-zA-Z0-9_]/g, '').toLowerCase();
+        
+        // Manual Hero Overrides
+        if (slug === "natures_prophet") slug = "furion";
+        if (slug === "outworld_destroyer") slug = "obsidian_destroyer";
+        if (slug === "vengeful_spirit") slug = "vengefulspirit";
+        if (slug === "anti_mage") slug = "antimage";
+        if (slug === "centaur_warrunner") slug = "centaur";
+        if (slug === "clockwerk") slug = "rattletrap";
+        if (slug === "doom") slug = "doom_bringer";
+        if (slug === "io") slug = "wisp";
+        if (slug === "lifestealer") slug = "life_stealer";
+        if (slug === "magnus") slug = "magnataur";
+        if (slug === "necrophos") slug = "necrolyte";
+        if (slug === "queen_of_pain") slug = "queenofpain";
+        if (slug === "shadow_fiend") slug = "nevermore";
+        if (slug === "treant_protector") slug = "treant";
+        if (slug === "underlord") slug = "abyssal_underlord";
+        if (slug === "wraith_king") slug = "skeleton_king";
+        if (slug === "zeus") slug = "zuus";
+
+        type = "heroes";
+    }
+
+    return `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/${type}/${slug}.png`;
+  };
+
   return (
     <div className={styles.tabContainer}>
+      {/* Truth Score Banner */}
+      {metaData.truthScore && (
+        <div className={styles.truthScoreBanner}>
+          <span className={styles.truthScoreTitle}>Empirical Truth Score</span>
+          <span className={styles.truthScoreValue}>
+            {metaData.truthScore.accuracy}% <span className={styles.truthScoreDetails}>({metaData.truthScore.correct}/{metaData.truthScore.total} predictions matched reality)</span>
+          </span>
+        </div>
+      )}
+
       <div className={styles.tabHeader}>
         <button 
           className={`${styles.tabButton} ${activeTab === "shifts" ? styles.active : ""}`}
@@ -40,14 +110,14 @@ export default function SummaryTabs({ metaData }: SummaryTabsProps) {
 
       <div className={styles.tabContent}>
         {activeTab === "shifts" && (
-          <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+          <div className={styles.shiftsList}>
             {metaData.metaShifts?.map((shift: any, idx: number) => (
-              <div key={idx} style={{ background: "var(--bg-panel)", padding: "20px", borderRadius: "10px", border: "1px solid var(--border-color)" }}>
-                <h3 style={{ margin: "0 0 10px 0", color: "var(--color-epic)" }}>{shift.theme}</h3>
-                <p style={{ margin: "0 0 10px 0", lineHeight: "1.5" }}>{shift.description}</p>
-                <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
+              <div key={idx} className={styles.shiftCard}>
+                <h3 className={styles.shiftTheme}>{shift.theme}</h3>
+                <p className={styles.shiftDescription}>{shift.description}</p>
+                <div className={styles.shiftRoles}>
                   {shift.impactedRoles?.map((role: string) => (
-                    <span key={role} style={{ background: "var(--border-color)", padding: "4px 10px", borderRadius: "20px", fontSize: "0.85rem" }}>{role}</span>
+                    <span key={role} className={styles.roleBadge}>{role}</span>
                   ))}
                 </div>
               </div>
@@ -56,71 +126,74 @@ export default function SummaryTabs({ metaData }: SummaryTabsProps) {
         )}
 
         {activeTab === "synergies" && (
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "20px" }}>
+          <div className={styles.synergiesGrid}>
             
-            {/* Truth Score Banner */}
-            {metaData.truthScore && (
-              <div style={{ gridColumn: "1 / -1", background: "rgba(26, 135, 249, 0.1)", border: "1px solid var(--color-rare)", padding: "15px", borderRadius: "8px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <span style={{ fontWeight: "bold", color: "var(--color-rare)" }}>Empirical Truth Score</span>
-                <span style={{ fontSize: "1.2rem", fontWeight: "bold", color: "var(--text-color)" }}>{metaData.truthScore.accuracy}% <span style={{fontSize: "0.8rem", color: "#888", fontWeight: "normal"}}>({metaData.truthScore.correct}/{metaData.truthScore.total} predictions matched reality)</span></span>
-              </div>
-            )}
-
-            <div style={{ background: "var(--bg-panel)", padding: "20px", borderRadius: "10px", border: "1px solid var(--border-color)" }}>
-              <h2 style={{ color: "var(--color-buff)", marginTop: 0, borderBottom: "1px solid var(--border-color)", paddingBottom: "10px" }}>
+            <div className={styles.synergyCard}>
+              <h2 className={styles.synergyCardTitleWinners}>
                 Overall Synergistic Winners
               </h2>
-              <div style={{ display: "flex", flexDirection: "column", gap: "16px", marginTop: "16px" }}>
+              <div className={styles.synergyList}>
                 {metaData.synergisticWinners?.map((winner: any, idx: number) => (
-                  <div key={idx}>
-                    <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "4px" }}>
-                      <h4 style={{ margin: 0, color: "var(--color-epic)" }}>
-                        {winner.entity}
-                        {winner.isCorrectPrediction !== undefined && (
-                           <span title={`Actual Winrate Delta: ${winner.actualDelta}`} style={{ marginLeft: '6px', fontSize: '1.1rem' }}>
-                             {winner.isCorrectPrediction ? '✅' : '❌'}
-                           </span>
-                        )}
-                      </h4>
-                      {winner.temporalAssessment && winner.temporalAssessment !== "N/A" && (
-                        <span style={{ 
-                          fontSize: "0.65rem", 
-                          padding: "2px 6px", 
-                          borderRadius: "4px", 
-                          background: winner.temporalAssessment === "Net Gain" ? "rgba(76, 175, 80, 0.2)" : "rgba(255, 152, 0, 0.2)",
-                          color: winner.temporalAssessment === "Net Gain" ? "#81c784" : "#ffb74d",
-                          border: `1px solid ${winner.temporalAssessment === "Net Gain" ? "#4caf50" : "#ff9800"}`,
-                          fontWeight: "bold",
-                          textTransform: "uppercase"
-                        }}>
-                          {winner.temporalAssessment}
-                        </span>
-                      )}
+                  <div key={idx} className={styles.entityItemCard}>
+                    <div className={styles.entityImageBg}>
+                         <img 
+                            src={getImageUrl(winner.entity)} 
+                            alt="" 
+                            className={styles.entityImage} 
+                            onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                         />
                     </div>
-                    <p style={{ margin: 0, fontSize: "0.9rem", color: "#ccc", lineHeight: "1.4" }}>{winner.synergyExplanation}</p>
+                    <div className={styles.entityInfo}>
+                        <div className={styles.entityTitleRow}>
+                          <h4 className={styles.entityName}>
+                              {winner.entity}
+                              {winner.isCorrectPrediction !== undefined && (
+                              <span title={`Actual Winrate Delta: ${winner.actualDelta}`} className={styles.actualDeltaIcon}>
+                                  {winner.isCorrectPrediction ? '✅' : '❌'}
+                              </span>
+                              )}
+                          </h4>
+                          {winner.temporalAssessment && winner.temporalAssessment !== "N/A" && (
+                              <span className={winner.temporalAssessment === "Net Gain" ? styles.gainBadge : styles.lossBadge}>
+                              {winner.temporalAssessment}
+                              </span>
+                          )}
+                        </div>
+                        <p className={styles.entityDescription}>{winner.synergyExplanation}</p>
+                    </div>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div style={{ background: "var(--bg-panel)", padding: "20px", borderRadius: "10px", border: "1px solid var(--border-color)" }}>
-              <h2 style={{ color: "var(--color-nerf)", marginTop: 0, borderBottom: "1px solid var(--border-color)", paddingBottom: "10px" }}>
+            <div className={styles.synergyCard}>
+              <h2 className={styles.synergyCardTitleLosers}>
                 Overall Synergistic Losers
               </h2>
-              <div style={{ display: "flex", flexDirection: "column", gap: "16px", marginTop: "16px" }}>
+              <div className={styles.synergyList}>
                 {metaData.synergisticLosers?.map((loser: any, idx: number) => (
-                  <div key={idx}>
-                    <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "4px" }}>
-                      <h4 style={{ margin: 0, color: "var(--color-epic)" }}>
-                        {loser.entity}
-                        {loser.isCorrectPrediction !== undefined && (
-                           <span title={`Actual Winrate Delta: ${loser.actualDelta}`} style={{ marginLeft: '6px', fontSize: '1.1rem' }}>
-                             {loser.isCorrectPrediction ? '✅' : '❌'}
-                           </span>
-                        )}
-                      </h4>
+                  <div key={idx} className={styles.entityItemCard}>
+                    <div className={styles.entityImageBg}>
+                         <img 
+                            src={getImageUrl(loser.entity)} 
+                            alt="" 
+                            className={styles.entityImage} 
+                            onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                         />
                     </div>
-                    <p style={{ margin: 0, fontSize: "0.9rem", color: "#ccc", lineHeight: "1.4" }}>{loser.synergyExplanation}</p>
+                    <div className={styles.entityInfo}>
+                        <div className={styles.entityTitleRow}>
+                          <h4 className={styles.entityName}>
+                              {loser.entity}
+                              {loser.isCorrectPrediction !== undefined && (
+                              <span title={`Actual Winrate Delta: ${loser.actualDelta}`} className={styles.actualDeltaIcon}>
+                                  {loser.isCorrectPrediction ? '✅' : '❌'}
+                              </span>
+                              )}
+                          </h4>
+                        </div>
+                        <p className={styles.entityDescription}>{loser.synergyExplanation}</p>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -129,71 +202,68 @@ export default function SummaryTabs({ metaData }: SummaryTabsProps) {
         )}
 
         {activeTab === "roles" && (metaData.roleSpecificWinners || metaData.roleSpecificLosers) && (
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "20px" }}>
+          <div className={styles.synergiesGrid}>
             {["Carry", "Mid", "Offlane", "SoftSupport", "HardSupport"].map(role => {
               const winners = metaData.roleSpecificWinners ? metaData.roleSpecificWinners[role] : [];
               const losers = metaData.roleSpecificLosers ? metaData.roleSpecificLosers[role] : [];
               
               if ((!winners || winners.length === 0) && (!losers || losers.length === 0)) return null;
               
-              const roleDisplay = role.replace(/([A-Z])/g, ' $1').trim(); // e.g. "SoftSupport" -> "Soft Support"
+              const roleDisplay = role.replace(/([A-Z])/g, ' $1').trim();
               
               return (
-                <div key={role} style={{ background: "var(--bg-panel)", padding: "20px", borderRadius: "10px", border: "1px solid var(--border-color)" }}>
-                  <h3 style={{ color: "var(--color-artifact)", marginTop: 0, marginBottom: "20px", fontSize: "1.4rem", borderBottom: "1px solid var(--border-color)", paddingBottom: "10px" }}>
+                <div key={role} className={styles.roleCard}>
+                  <h3 className={styles.roleTitle}>
                     {roleDisplay}
                   </h3>
                   
                   {winners && winners.length > 0 && (
                     <div style={{ marginBottom: "20px" }}>
-                      <h4 style={{ color: "var(--color-buff)", marginTop: 0, marginBottom: "15px", fontSize: "1.1rem", display: 'flex', alignItems: 'center', gap: '8px' }}>
-                        <span style={{ display: 'inline-block', width: '8px', height: '8px', borderRadius: '50%', background: 'var(--color-buff)' }}></span>
+                      <h4 className={styles.roleSectionWinnersTitle}>
+                        <span className={styles.roleSectionDotWinners}></span>
                         Top Winners
                       </h4>
                       <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-                        {winners.map((winner: any, idx: number) => (
-                          <div key={idx}>
-                            <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "4px" }}>
-                              <Link href={`/hero/${winner.hero.replace(/[^a-z0-9]/gi, '_').toLowerCase()}`} style={{ textDecoration: 'none' }}>
-                                 <h5 style={{ margin: 0, color: "var(--color-epic)", cursor: 'pointer', fontSize: "1rem" }}>{winner.hero}</h5>
-                              </Link>
-                              {winner.temporalAssessment && winner.temporalAssessment !== "N/A" && (
-                                <span style={{ 
-                                  fontSize: "0.6rem", 
-                                  padding: "1px 5px", 
-                                  borderRadius: "4px", 
-                                  background: winner.temporalAssessment === "Net Gain" ? "rgba(76, 175, 80, 0.2)" : "rgba(255, 152, 0, 0.2)",
-                                  color: winner.temporalAssessment === "Net Gain" ? "#81c784" : "#ffb74d",
-                                  border: `1px solid ${winner.temporalAssessment === "Net Gain" ? "#4caf50" : "#ff9800"}`,
-                                  fontWeight: "bold",
-                                  textTransform: "uppercase"
-                                }}>
-                                  {winner.temporalAssessment}
-                                </span>
-                              )}
+                        {winners.map((winner: any, idx: number) => {
+                          const key = `${role}-winner-${idx}`;
+                          return (
+                            <div key={idx}>
+                              <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "4px" }}>
+                                <Link href={`/hero/${winner.hero.replace(/[^a-z0-9]/gi, '_').toLowerCase()}`} style={{ textDecoration: 'none' }}>
+                                   <h5 className={styles.roleHeroName}>{winner.hero}</h5>
+                                </Link>
+                                {winner.temporalAssessment && winner.temporalAssessment !== "N/A" && (
+                                  <span className={winner.temporalAssessment === "Net Gain" ? styles.roleHeroBadgeGain : styles.roleHeroBadgeLoss}>
+                                    {winner.temporalAssessment}
+                                  </span>
+                                )}
+                              </div>
+                              <RenderExplanation text={winner.explanation} id={key} />
                             </div>
-                            <p style={{ margin: 0, fontSize: "0.85rem", color: "#ccc", lineHeight: "1.4" }}>{winner.explanation}</p>
-                          </div>
-                        ))}
+                          );
+                        })}
                       </div>
                     </div>
                   )}
 
                   {losers && losers.length > 0 && (
                     <div>
-                      <h4 style={{ color: "var(--color-nerf)", marginTop: 0, marginBottom: "15px", fontSize: "1.1rem", display: 'flex', alignItems: 'center', gap: '8px' }}>
-                        <span style={{ display: 'inline-block', width: '8px', height: '8px', borderRadius: '50%', background: 'var(--color-nerf)' }}></span>
+                      <h4 className={styles.roleSectionLosersTitle}>
+                        <span className={styles.roleSectionDotLosers}></span>
                         Top Losers
                       </h4>
                       <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-                        {losers.map((loser: any, idx: number) => (
-                          <div key={idx}>
-                            <Link href={`/hero/${loser.hero.replace(/[^a-z0-9]/gi, '_').toLowerCase()}`} style={{ textDecoration: 'none' }}>
-                               <h5 style={{ margin: "0 0 4px 0", color: "var(--color-epic)", cursor: 'pointer', fontSize: "1rem" }}>{loser.hero}</h5>
-                            </Link>
-                            <p style={{ margin: 0, fontSize: "0.85rem", color: "#ccc", lineHeight: "1.4" }}>{loser.explanation}</p>
-                          </div>
-                        ))}
+                        {losers.map((loser: any, idx: number) => {
+                          const key = `${role}-loser-${idx}`;
+                          return (
+                            <div key={idx}>
+                              <Link href={`/hero/${loser.hero.replace(/[^a-z0-9]/gi, '_').toLowerCase()}`} style={{ textDecoration: 'none' }}>
+                                 <h5 className={styles.roleHeroName}>{loser.hero}</h5>
+                              </Link>
+                              <RenderExplanation text={loser.explanation} id={key} />
+                            </div>
+                          );
+                        })}
                       </div>
                     </div>
                   )}
@@ -206,3 +276,4 @@ export default function SummaryTabs({ metaData }: SummaryTabsProps) {
     </div>
   );
 }
+

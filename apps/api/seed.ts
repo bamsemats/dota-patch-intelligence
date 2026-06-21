@@ -165,7 +165,8 @@ async function seed() {
           synergisticLosers: meta.synergisticLosers || [],
           roleSpecificWinners: meta.roleSpecificWinners || null,
           roleSpecificLosers: meta.roleSpecificLosers || null,
-          analysisVersion: meta.analysisVersion || 0 // ISSUE-1
+          analysisVersion: meta.analysisVersion || 0, // ISSUE-1
+          truthScore: meta.truthScore || null
         },
         create: {
           patchId: patch.id,
@@ -174,7 +175,8 @@ async function seed() {
           synergisticLosers: meta.synergisticLosers || [],
           roleSpecificWinners: meta.roleSpecificWinners || null,
           roleSpecificLosers: meta.roleSpecificLosers || null,
-          analysisVersion: meta.analysisVersion || 0 // ISSUE-1
+          analysisVersion: meta.analysisVersion || 0, // ISSUE-1
+          truthScore: meta.truthScore || null
         }
       });
     } catch (e) {

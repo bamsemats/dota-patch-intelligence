@@ -82,7 +82,7 @@ export default async function HeroPage({ params }: PageProps) {
   const getVectorColor = (val: number) => {
     if (val > 0) return "var(--color-buff)";
     if (val < 0) return "var(--color-nerf)";
-    return "var(--color-common)";
+    return "var(--border-color)";
   };
 
   const getImageUrl = (name: string) => {
@@ -104,6 +104,8 @@ export default async function HeroPage({ params }: PageProps) {
     if (slug === "underlord") slug = "abyssal_underlord";
     if (slug === "wraith_king") slug = "skeleton_king";
     if (slug === "zeus") slug = "zuus";
+    if (slug === "windranger") slug = "windrunner";
+    if (slug === "timbersaw") slug = "shredder";
     return `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/${slug}.png`;
   };
 
@@ -217,10 +219,10 @@ export default async function HeroPage({ params }: PageProps) {
                       className={styles.bar} 
                       style={{ 
                         width: `${Math.min(Math.abs(val) * 5, 100)}%`, 
-                        backgroundColor: getVectorColor(val),
-                        marginLeft: val < 0 ? 'auto' : '0',
-                        marginRight: val > 0 ? 'auto' : '0'
-                      }}
+                        'backgroundColor': getVectorColor(val),
+                        'marginLeft': val < 0 ? 'auto' : '0',
+                        'marginRight': val > 0 ? 'auto' : '0'
+                      } as any}
                     />
                   </div>
                   <span className={styles.dimVal} style={{ color: getVectorColor(val) }}>

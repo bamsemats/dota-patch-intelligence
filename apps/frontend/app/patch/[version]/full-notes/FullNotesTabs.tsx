@@ -13,9 +13,10 @@ interface FullNotesTabsProps {
   general: any[];
   winrateData?: any;
   heroMapping?: Record<string, string>;
+  itemSlugs?: Record<string, string>;
 }
 
-export default function FullNotesTabs({ heroes, items, neutrals, general, winrateData, heroMapping }: FullNotesTabsProps) {
+export default function FullNotesTabs({ heroes, items, neutrals, general, winrateData, heroMapping, itemSlugs }: FullNotesTabsProps) {
   const [activeTab, setActiveTab] = useState<"general" | "item" | "neutral" | "hero">("hero");
 
   return (
@@ -58,7 +59,7 @@ export default function FullNotesTabs({ heroes, items, neutrals, general, winrat
         
         {activeTab === "item" && (
           items.length > 0 ? (
-            <ItemList title="Item Changes" items={items} />
+            <ItemList title="Item Changes" items={items} itemSlugs={itemSlugs} />
           ) : (
             <p style={{ color: '#888' }}>No item changes in this patch.</p>
           )
@@ -66,7 +67,7 @@ export default function FullNotesTabs({ heroes, items, neutrals, general, winrat
 
         {activeTab === "neutral" && (
           neutrals.length > 0 ? (
-            <ItemList title="Neutral Item Changes" items={neutrals} />
+            <ItemList title="Neutral Item Changes" items={neutrals} itemSlugs={itemSlugs} />
           ) : (
             <p style={{ color: '#888' }}>No neutral item changes in this patch.</p>
           )
