@@ -427,20 +427,19 @@
             "subEntityId": 5223
           },
           "classification": {
-            "state": "PARTIALLY_CLASSIFIED",
+            "state": "UNKNOWN",
             "classificationType": "Unknown",
-            "semanticTag": "DAMAGE_TYPE_CHANGE",
+            "confidenceScore": 0,
             "strategicWeight": {
-              "Herald": 8,
-              "Guardian": 8,
-              "Crusader": 8,
-              "Archon": 8,
-              "Legend": 8,
-              "Ancient": 8,
-              "Divine": 8
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
-            "confidenceScore": 0.5,
-            "reasoning": "Partial semantic match based on keywords. Requires human review."
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
           }
         }
       ],
@@ -481,13 +480,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Increased a positive metric (aghanim's shard orbit radius)."
           }
@@ -512,13 +511,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Increased a positive metric (aghanim's shard collision radius)."
           }
@@ -543,32 +542,24 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Decreased a negative metric (cooldown)."
           }
         }
       ],
-      "vectorDelta": {
-        "farming": 0,
-        "mobility": 0,
-        "survivability": 0,
-        "teamfight": 1,
-        "laning": 0,
-        "siege": 0,
-        "utility": 0
-      },
+      "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -614,7 +605,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -675,13 +666,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Decreased a positive metric (damage reduction per bounce from)."
           }
@@ -706,13 +697,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Increased a positive metric (aghanim's shard self damage reduction)."
           }
@@ -737,13 +728,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Increased a positive metric (aghanim's shard buff duration)."
           }
@@ -767,13 +758,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Increased a negative metric (level 15 talent eclipse cooldown reduction)."
           }
@@ -784,7 +775,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -830,7 +821,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -876,7 +867,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -899,7 +890,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -922,7 +913,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -945,7 +936,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1014,13 +1005,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Decreased a positive metric (now can be activated without aghanim's shard. damage on collision is 20% of luna's attack. glaives count)."
           }
@@ -1038,20 +1029,19 @@
             "subEntityId": 5223
           },
           "classification": {
-            "state": "PARTIALLY_CLASSIFIED",
+            "state": "UNKNOWN",
             "classificationType": "Unknown",
-            "semanticTag": "ROSHAN_INTERACTION",
+            "confidenceScore": 0,
             "strategicWeight": {
-              "Herald": 7,
-              "Guardian": 7,
-              "Crusader": 7,
-              "Archon": 7,
-              "Legend": 7,
-              "Ancient": 7,
-              "Divine": 7
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
-            "confidenceScore": 0.5,
-            "reasoning": "Partial semantic match based on keywords. Requires human review."
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
           }
         },
         {
@@ -1134,13 +1124,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Increased a negative metric (level 15 talent eclipse cooldown reduction)."
           }
@@ -1238,7 +1228,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1261,7 +1251,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1284,7 +1274,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1307,7 +1297,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1392,9 +1382,9 @@
             "subEntityId": 5224
           },
           "classification": {
-            "state": "PARTIALLY_CLASSIFIED",
+            "state": "UNKNOWN",
             "classificationType": "Unknown",
-            "semanticTag": "VISION_INTERACTION",
+            "confidenceScore": 0,
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -1404,8 +1394,7 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "confidenceScore": 0.5,
-            "reasoning": "Partial semantic match based on keywords. Requires human review."
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
           }
         },
         {
@@ -1586,7 +1575,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1609,7 +1598,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1632,7 +1621,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1670,13 +1659,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Decreased a positive metric (beam damage)."
           }
@@ -1687,7 +1676,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1755,13 +1744,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Decreased a negative metric (level 10 talent moon glaives damage penalty reduction)."
           }
@@ -1830,7 +1819,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1868,13 +1857,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Increased a positive metric (collision damage)."
           }
@@ -1899,13 +1888,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Increased a positive metric (collision radius)."
           }
@@ -1958,13 +1947,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Increased a positive metric (aghanim's shard collision damage bonus)."
           }
@@ -1975,7 +1964,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -1998,7 +1987,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -2050,7 +2039,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -2073,7 +2062,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -2096,7 +2085,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -2119,7 +2108,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -2199,20 +2188,12 @@
           }
         }
       ],
-      "vectorDelta": {
-        "farming": 0,
-        "mobility": 0,
-        "survivability": 0,
-        "teamfight": 1,
-        "laning": 0,
-        "siege": 0,
-        "utility": 0
-      },
+      "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 2,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -2235,7 +2216,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 2,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -2273,13 +2254,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Increased a positive metric (collision damage)."
           }
@@ -2335,13 +2316,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Decreased a positive metric (rotation radius)."
           }
@@ -2366,13 +2347,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Increased a positive metric (collision radius)."
           }
@@ -2470,7 +2451,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 2,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -2498,7 +2479,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 2,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -2526,7 +2507,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 2,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -2562,20 +2543,19 @@
             "subEntityId": 5224
           },
           "classification": {
-            "state": "PARTIALLY_CLASSIFIED",
+            "state": "UNKNOWN",
             "classificationType": "Unknown",
-            "semanticTag": "DAMAGE_TYPE_CHANGE",
+            "confidenceScore": 0,
             "strategicWeight": {
-              "Herald": 8,
-              "Guardian": 8,
-              "Crusader": 8,
-              "Archon": 8,
-              "Legend": 8,
-              "Ancient": 8,
-              "Divine": 8
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
-            "confidenceScore": 0.5,
-            "reasoning": "Partial semantic match based on keywords. Requires human review."
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
           }
         },
         {
@@ -2591,9 +2571,9 @@
             "subEntityId": 5224
           },
           "classification": {
-            "state": "PARTIALLY_CLASSIFIED",
+            "state": "UNKNOWN",
             "classificationType": "Unknown",
-            "semanticTag": "VISION_INTERACTION",
+            "confidenceScore": 0,
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -2603,8 +2583,7 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "confidenceScore": 0.5,
-            "reasoning": "Partial semantic match based on keywords. Requires human review."
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
           }
         },
         {
@@ -2676,20 +2655,19 @@
             "subEntityId": 1462
           },
           "classification": {
-            "state": "PARTIALLY_CLASSIFIED",
+            "state": "UNKNOWN",
             "classificationType": "Unknown",
-            "semanticTag": "AURA_INTERACTION",
+            "confidenceScore": 0,
             "strategicWeight": {
-              "Herald": 7,
-              "Guardian": 7,
-              "Crusader": 7,
-              "Archon": 7,
-              "Legend": 7,
-              "Ancient": 7,
-              "Divine": 7
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
-            "confidenceScore": 0.5,
-            "reasoning": "Partial semantic match based on keywords. Requires human review."
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
           }
         },
         {
@@ -2740,13 +2718,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Decreased a positive metric (level 25 talent lunar blessing allied/self damage)."
           }
@@ -2757,7 +2735,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 2,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -2785,7 +2763,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 2,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -2813,7 +2791,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 2,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -2841,7 +2819,7 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 2,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0
@@ -2862,14 +2840,14 @@
     },
     {
       "version": "7.41d",
-      "date": "2026-06-05T00:45:14.000Z",
+      "date": "2026-06-22T03:30:01.436Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 2,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
         "utility": 0

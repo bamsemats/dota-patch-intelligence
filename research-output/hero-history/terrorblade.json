@@ -426,9 +426,9 @@
             "subEntityId": 699
           },
           "classification": {
-            "state": "PARTIALLY_CLASSIFIED",
+            "state": "UNKNOWN",
             "classificationType": "Unknown",
-            "semanticTag": "FEATURE_INTRODUCTION",
+            "confidenceScore": 0,
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -438,8 +438,7 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "confidenceScore": 0.5,
-            "reasoning": "Partial semantic match based on keywords. Requires human review."
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
           }
         },
         {
@@ -490,13 +489,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 6,
-              "Guardian": 6,
-              "Crusader": 7,
-              "Archon": 7,
-              "Legend": 8,
-              "Ancient": 9,
-              "Divine": 9
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Increased a positive metric (bonus attack speed and movement speed)."
           }
@@ -577,13 +576,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Increased a positive metric (duration)."
           }
@@ -617,23 +616,15 @@
           }
         }
       ],
-      "vectorDelta": {
-        "farming": 0,
-        "mobility": 0,
-        "survivability": 0,
-        "teamfight": 1,
-        "laning": 0,
-        "siege": 0,
-        "utility": 2
-      },
+      "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 2
+        "utility": 0
       },
       "winrates": {},
       "temporalAssessment": null
@@ -647,10 +638,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 2
+        "utility": 0
       },
       "winrates": {
         "HERALD": {
@@ -705,13 +696,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Decreased a positive metric (base damage)."
           }
@@ -735,13 +726,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 8,
-              "Guardian": 8,
-              "Crusader": 7,
-              "Archon": 7,
-              "Legend": 7,
-              "Ancient": 7,
-              "Divine": 7
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Decreased a positive metric (level 15 talent health)."
           }
@@ -752,10 +743,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 2
+        "utility": 0
       },
       "winrates": {
         "HERALD": {
@@ -798,10 +789,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 2
+        "utility": 0
       },
       "winrates": {
         "HERALD": {
@@ -844,10 +835,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 2
+        "utility": 0
       },
       "winrates": {
         "HERALD": {
@@ -1007,10 +998,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 2
+        "utility": 0
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1045,13 +1036,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Decreased a negative metric (illusion damage taken)."
           }
@@ -1062,10 +1053,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 2
+        "utility": 0
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1098,13 +1089,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 8,
-              "Guardian": 8,
-              "Crusader": 8,
-              "Archon": 8,
-              "Legend": 8,
-              "Ancient": 8,
-              "Divine": 8
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Increased a positive metric (base strength)."
           }
@@ -1129,35 +1120,27 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Decreased a negative metric (cooldown)."
           }
         }
       ],
-      "vectorDelta": {
-        "farming": 0,
-        "mobility": 0,
-        "survivability": 0,
-        "teamfight": 1,
-        "laning": 0,
-        "siege": 0,
-        "utility": 0
-      },
+      "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 2,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 2
+        "utility": 0
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1192,13 +1175,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Decreased a positive metric (reflection damage)."
           }
@@ -1223,35 +1206,27 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Decreased a positive metric (radius)."
           }
         }
       ],
-      "vectorDelta": {
-        "farming": 0,
-        "mobility": 0,
-        "survivability": 0,
-        "teamfight": -1,
-        "laning": 0,
-        "siege": 0,
-        "utility": 0
-      },
+      "vectorDelta": null,
       "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 2
+        "utility": 0
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1317,13 +1292,13 @@
             "classificationType": "Adjustment",
             "confidenceScore": 0.8,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
           }
@@ -1390,10 +1365,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 2
+        "utility": 0
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1413,10 +1388,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 2
+        "utility": 0
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1450,13 +1425,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Increased a positive metric (level 25 talent metamorphosis duration)."
           }
@@ -1467,10 +1442,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 2
+        "utility": 0
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1490,10 +1465,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 2
+        "utility": 0
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1545,10 +1520,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 2
+        "utility": 0
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1582,13 +1557,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Increased a negative metric (level 10 talent reflection cooldown reduction)."
           }
@@ -1599,10 +1574,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 2
+        "utility": 0
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1622,10 +1597,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 2
+        "utility": 0
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1645,10 +1620,10 @@
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": 2
+        "utility": 0
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1683,13 +1658,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Increased a negative metric (mana cost)."
           }
@@ -1713,35 +1688,27 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Decreased a negative metric (level 10 talent reflection cooldown reduction)."
           }
         }
       ],
-      "vectorDelta": {
-        "farming": -1,
+      "vectorDelta": null,
+      "totalVector": {
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
         "teamfight": 0,
-        "laning": -1,
+        "laning": 0,
         "siege": 0,
-        "utility": -1
-      },
-      "totalVector": {
-        "farming": -1,
-        "mobility": 0,
-        "survivability": 0,
-        "teamfight": 1,
-        "laning": -1,
-        "siege": 0,
-        "utility": 1
+        "utility": 0
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1776,13 +1743,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Increased a positive metric (metamorphosis duration)."
           }
@@ -1848,13 +1815,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -1,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
-        "laning": -1,
+        "teamfight": 0,
+        "laning": 0,
         "siege": 0,
-        "utility": 1
+        "utility": 0
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1871,13 +1838,13 @@
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -1,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
-        "laning": -1,
+        "teamfight": 0,
+        "laning": 0,
         "siege": 0,
-        "utility": 1
+        "utility": 0
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -1912,13 +1879,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Decreased a negative metric (illusion damage taken)."
           }
@@ -1926,13 +1893,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -1,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
-        "laning": -1,
+        "teamfight": 0,
+        "laning": 0,
         "siege": 0,
-        "utility": 1
+        "utility": 0
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2070,21 +2037,13 @@
           }
         }
       ],
-      "vectorDelta": {
-        "farming": -1,
+      "vectorDelta": null,
+      "totalVector": {
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
         "teamfight": 0,
-        "laning": -1,
-        "siege": 0,
-        "utility": -1
-      },
-      "totalVector": {
-        "farming": -2,
-        "mobility": 0,
-        "survivability": 0,
-        "teamfight": 1,
-        "laning": -2,
+        "laning": 0,
         "siege": 0,
         "utility": 0
       },
@@ -2121,13 +2080,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Increased a negative metric (damage penalty)."
           }
@@ -2135,11 +2094,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
-        "laning": -2,
+        "teamfight": 0,
+        "laning": 0,
         "siege": 0,
         "utility": 0
       },
@@ -2173,13 +2132,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Decreased a positive metric (base damage)."
           }
@@ -2202,13 +2161,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Decreased a positive metric (damage at level 1)."
           }
@@ -2216,11 +2175,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
-        "laning": -2,
+        "teamfight": 0,
+        "laning": 0,
         "siege": 0,
         "utility": 0
       },
@@ -2239,11 +2198,11 @@
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
-        "laning": -2,
+        "teamfight": 0,
+        "laning": 0,
         "siege": 0,
         "utility": 0
       },
@@ -2262,11 +2221,11 @@
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
-        "laning": -2,
+        "teamfight": 0,
+        "laning": 0,
         "siege": 0,
         "utility": 0
       },
@@ -2331,13 +2290,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Increased a positive metric (damage increase for illusions within 1200 radius)."
           }
@@ -2362,13 +2321,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Decreased a positive metric (reflection damage)."
           }
@@ -2393,13 +2352,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Decreased a positive metric (illusion damage)."
           }
@@ -2407,11 +2366,11 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -2,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
-        "laning": -2,
+        "teamfight": 0,
+        "laning": 0,
         "siege": 0,
         "utility": 0
       },
@@ -2451,13 +2410,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 8,
-              "Guardian": 8,
-              "Crusader": 8,
-              "Archon": 8,
-              "Legend": 8,
-              "Ancient": 8,
-              "Divine": 8
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Increased a positive metric (base agility)."
           }
@@ -2480,13 +2439,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Increased a positive metric (damage at level 1)."
           }
@@ -2511,13 +2470,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Decreased a negative metric (cooldown)."
           }
@@ -2541,33 +2500,25 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Decreased a negative metric (level 15 talent metamorphosis cooldown reduction)."
           }
         }
       ],
-      "vectorDelta": {
+      "vectorDelta": null,
+      "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 1,
+        "teamfight": 0,
         "laning": 0,
-        "siege": 0,
-        "utility": 0
-      },
-      "totalVector": {
-        "farming": -2,
-        "mobility": 0,
-        "survivability": 0,
-        "teamfight": 2,
-        "laning": -2,
         "siege": 0,
         "utility": 0
       },
@@ -2609,13 +2560,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Decreased a negative metric (mana cost)."
           }
@@ -2640,13 +2591,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Decreased a negative metric (cooldown)."
           }
@@ -2698,35 +2649,27 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Increased a positive metric (level 15 talent reflection slow/damage)."
           }
         }
       ],
-      "vectorDelta": {
-        "farming": 1,
-        "mobility": 0,
-        "survivability": 0,
-        "teamfight": 1,
-        "laning": 1,
-        "siege": 0,
-        "utility": 1
-      },
+      "vectorDelta": null,
       "totalVector": {
-        "farming": -1,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 3,
-        "laning": -1,
+        "teamfight": 0,
+        "laning": 0,
         "siege": 0,
-        "utility": 1
+        "utility": 0
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2763,13 +2706,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 7,
-              "Guardian": 7,
-              "Crusader": 7,
-              "Archon": 7,
-              "Legend": 7,
-              "Ancient": 8,
-              "Divine": 8
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Increased a positive metric (base armor)."
           }
@@ -2794,13 +2737,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Increased a positive metric (illusion damage)."
           }
@@ -2825,13 +2768,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Decreased a negative metric (cooldown)."
           }
@@ -2856,13 +2799,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Decreased a positive metric (duration)."
           }
@@ -2897,23 +2840,15 @@
           }
         }
       ],
-      "vectorDelta": {
+      "vectorDelta": null,
+      "totalVector": {
         "farming": 0,
         "mobility": 0,
         "survivability": 0,
         "teamfight": 0,
         "laning": 0,
         "siege": 0,
-        "utility": -2
-      },
-      "totalVector": {
-        "farming": -1,
-        "mobility": 0,
-        "survivability": 0,
-        "teamfight": 3,
-        "laning": -1,
-        "siege": 0,
-        "utility": -1
+        "utility": 0
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2935,13 +2870,13 @@
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -1,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 3,
-        "laning": -1,
+        "teamfight": 0,
+        "laning": 0,
         "siege": 0,
-        "utility": -1
+        "utility": 0
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -2980,13 +2915,13 @@
             "classificationType": "Nerf",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 1,
-              "Guardian": 1,
-              "Crusader": 1,
-              "Archon": 1,
-              "Legend": 1,
-              "Ancient": 1,
-              "Divine": 1
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
             },
             "reasoning": "Decreased a positive metric (level 20 talent conjure image duration)."
           }
@@ -2994,13 +2929,13 @@
       ],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -1,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 3,
-        "laning": -1,
+        "teamfight": 0,
+        "laning": 0,
         "siege": 0,
-        "utility": -1
+        "utility": 0
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3022,13 +2957,13 @@
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -1,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 3,
-        "laning": -1,
+        "teamfight": 0,
+        "laning": 0,
         "siege": 0,
-        "utility": -1
+        "utility": 0
       },
       "winrates": {
         "PROFESSIONAL": {
@@ -3046,17 +2981,17 @@
     },
     {
       "version": "7.41d",
-      "date": "2026-06-05T00:45:14.000Z",
+      "date": "2026-06-22T03:30:01.436Z",
       "changes": [],
       "vectorDelta": null,
       "totalVector": {
-        "farming": -1,
+        "farming": 0,
         "mobility": 0,
         "survivability": 0,
-        "teamfight": 3,
-        "laning": -1,
+        "teamfight": 0,
+        "laning": 0,
         "siege": 0,
-        "utility": -1
+        "utility": 0
       },
       "winrates": {
         "HERALD": {
