@@ -71,3 +71,16 @@ Run the auto-tuner to compare the observed winrate shifts against our calculated
 ```bash
 npm run patch:calibrate
 ```
+
+### 3. Safe Calibration (Regression Gate)
+Execute the safe calibration regression gate. This script runs the auto-tuner, regenerates all patch classifications and feature vectors, audits the candidate system's new global accuracy, and automatically reverts the ontology weights if it degrades the system's global prediction truth score:
+```bash
+npm run patch:calibrate-safe
+```
+
+### 4. Automated Weekly Autopilot
+A scheduled GitHub Actions workflow (`.github/workflows/weekly-calibration.yml`) runs every Sunday at midnight UTC. It:
+1. Fetches the latest OpenDota winrates.
+2. Runs the safe regression calibration gate (`npm run patch:calibrate-safe`).
+3. If approved, automatically commits the updated `balance_metrics.json` file and opens a Pull Request against `main` for review.
+

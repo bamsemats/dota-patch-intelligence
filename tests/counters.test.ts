@@ -56,7 +56,7 @@ test("Counters and Synergy Ripple Propagation", async () => {
     };
 
     try {
-        const result = await processPatch(tempPath, balanceOntology, heroesList, countersMap);
+        const result = await processPatch(tempPath, balanceOntology, heroesList, countersMap, {});
         
         // Find Anti-Mage's delta in result
         const amDelta = result.vectorDeltas.find(d => d.heroName === "Anti-Mage");
@@ -72,6 +72,65 @@ test("Counters and Synergy Ripple Propagation", async () => {
         assert.ok(amDelta, "Anti-Mage should have a delta due to ripple effect");
         assert.strictEqual(amDelta!.vectorDelta.survivability, -0.8);
         assert.strictEqual(amDelta!.vectorDelta.laning, -0.8);
+
+    } finally {
+        await fs.unlink(tempPath).catch(() => {});
+    }
+});
+
+test("Item Hero Affinity Ripple Propagation", async () => {
+    const balanceOntology = {
+        metrics: {
+            "armor": {
+                affects: ["physical_survivability"],
+                weights: { Divine: 8 }
+            }
+        }
+    };
+
+    // Magic Stick receives a major armor buff (Buff, weight 8)
+    const mockPatchFile = {
+        version: "TestPatch",
+        changes: [
+            {
+                category: "item",
+                entityName: "Magic Stick",
+                changeType: "MODIFICATION",
+                metric: "armor",
+                classification: {
+                    state: "NUMERIC",
+                    classificationType: "Buff",
+                    strategicWeight: { Divine: 8 }
+                }
+            }
+        ]
+    };
+
+    const fs = require("node:fs/promises");
+    const path = require("node:path");
+    const tempDir = path.resolve("scratch");
+    await fs.mkdir(tempDir, { recursive: true });
+    const tempPath = path.join(tempDir, "test_patch_affinity.json");
+    await fs.writeFile(tempPath, JSON.stringify(mockPatchFile), "utf8");
+
+    const heroesList = ["Anti-Mage", "Bloodseeker"];
+    const countersMap = {};
+    const affinityMap = {
+        "Magic Stick": ["Bloodseeker"]
+    };
+
+    try {
+        const result = await processPatch(tempPath, balanceOntology, heroesList, countersMap, affinityMap);
+        
+        const bsDelta = result.vectorDeltas.find(d => d.heroName === "Bloodseeker");
+        const amDelta = result.vectorDeltas.find(d => d.heroName === "Anti-Mage");
+
+        // Anti-Mage does not buy Magic Stick, so should have no delta
+        assert.ok(!amDelta, "Anti-Mage should have no delta");
+
+        // Bloodseeker buys Magic Stick, so should receive 20% of its delta (8 * 0.2 = 1.6)
+        assert.ok(bsDelta, "Bloodseeker should have a delta due to item affinity ripple");
+        assert.strictEqual(bsDelta!.vectorDelta.survivability, 1.6);
 
     } finally {
         await fs.unlink(tempPath).catch(() => {});

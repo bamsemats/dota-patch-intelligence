@@ -60,6 +60,7 @@ async function generate() {
         if (currentVectors[v.heroName]) {
           for (const dim in v.vectorDelta) {
             currentVectors[v.heroName][dim] += v.vectorDelta[dim];
+            currentVectors[v.heroName][dim] = parseFloat(currentVectors[v.heroName][dim].toFixed(2));
           }
         }
       }

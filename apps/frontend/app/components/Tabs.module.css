@@ -223,9 +223,43 @@
   color: var(--color-epic);
 }
 
-.actualDeltaIcon {
-  margin-left: 6px;
-  font-size: 1.1rem;
+.heroLink {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.heroLink:hover {
+  color: var(--color-rare);
+  text-decoration: underline;
+}
+
+.predictionVerifiedBadge {
+  font-size: 0.7rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: rgba(76, 175, 80, 0.2);
+  color: #81c784;
+  border: 1px solid #4caf50;
+  font-weight: bold;
+  margin-left: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.predictionMismatchBadge {
+  font-size: 0.7rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: rgba(244, 67, 54, 0.15);
+  color: #e57373;
+  border: 1px solid #f44336;
+  font-weight: bold;
+  margin-left: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .gainBadge {

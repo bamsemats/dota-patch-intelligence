@@ -114,7 +114,7 @@ async function main() {
         console.log(`Note:   \x1b[33m"${change.rawNote}"\x1b[0m`);
         console.log(`-----------------------------------------`);
 
-        const action = await rl.question(`Action: [m]ap to existing tag, [c]reate new tag, [s]kip, [q]uit: `);
+        const action = await rl.question(`Action: [m]ap to existing tag, [c]reate new tag, [o]verride manually, [s]kip, [q]uit: `);
         const choice = action.trim().toLowerCase();
 
         if (choice === 'q') {
@@ -124,6 +124,37 @@ async function main() {
 
         if (choice === 's') {
             console.log("Skipping...\n");
+            continue;
+        }
+
+        if (choice === 'o') {
+            console.log("\n--- Creating manual override ---");
+            const typeOverride = await rl.question(`Classification Type (Buff, Nerf, Rework, Adjustment) or Enter to cancel: `);
+            const cleanOverride = typeOverride.trim();
+            if (cleanOverride && ["Buff", "Nerf", "Rework", "Adjustment"].includes(cleanOverride)) {
+                const reason = await rl.question(`Enter reason for override: `);
+                
+                const OVERRIDES_PATH = path.resolve("research-output", "ontology", "manual_overrides.json");
+                let overrides: any[] = [];
+                try {
+                    overrides = JSON.parse(await readFile(OVERRIDES_PATH, "utf8"));
+                } catch (e) {
+                    overrides = [];
+                }
+                
+                overrides.push({
+                    entityName: change.entityName,
+                    rawNote: change.rawNote,
+                    classificationType: cleanOverride,
+                    reason: reason.trim() || "Manual override"
+                });
+                
+                await writeFile(OVERRIDES_PATH, JSON.stringify(overrides, null, 2), "utf8");
+                console.log("✔️  Manual override successfully saved to manual_overrides.json.\n");
+                reviewedCount++;
+            } else {
+                console.log("Canceled override.\n");
+            }
             continue;
         }
 

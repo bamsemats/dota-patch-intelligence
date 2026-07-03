@@ -14,10 +14,48 @@ async function loadJSON(filePath: string) {
     }
 }
 
+function getWinrateData(winrates: any, targetBracket: string | null) {
+    if (!winrates) return null;
+    
+    if (targetBracket && winrates[targetBracket]) {
+        return winrates[targetBracket];
+    }
+    
+    if (winrates.GLOBAL_BLEND) return winrates.GLOBAL_BLEND;
+    if (winrates.PROFESSIONAL) return winrates.PROFESSIONAL;
+    
+    const keys = Object.keys(winrates);
+    if (keys.length > 0) return winrates[keys[0]];
+    
+    return null;
+}
+
+function areWinratesIdentical(wr1: any, wr2: any): boolean {
+    if (!wr1 || !wr2) return false;
+    const keys1 = Object.keys(wr1);
+    const keys2 = Object.keys(wr2);
+    if (keys1.length !== keys2.length) return false;
+    
+    for (const key of keys1) {
+        if (!wr2[key] || wr1[key].winrate !== wr2[key].winrate) {
+            return false;
+        }
+    }
+    return true;
+}
+
 async function main() {
     console.log("=========================================");
-    console.log("   Empirical Truth Score Auditor (v1)   ");
+    console.log("   Empirical Truth Score Auditor (v2)   ");
     console.log("=========================================\n");
+
+    const args = process.argv.slice(2);
+    const bracketArg = args.find(a => a.startsWith("--bracket="));
+    const targetBracket = bracketArg ? bracketArg.split("=")[1].toUpperCase() : null;
+
+    if (targetBracket) {
+        console.log(`[Audit] Targeting Bracket: ${targetBracket}`);
+    }
 
     const winrateFiles = await readdir(path.join(RESEARCH_DIR, "calibration-data"));
     const versions = winrateFiles
@@ -40,14 +78,34 @@ async function main() {
 
     for (let i = 1; i < versions.length; i++) {
         const currentVersion = versions[i];
-        const prevVersion = versions[i - 1];
 
         const meta = await loadJSON(path.join(RESEARCH_DIR, "meta-analysis", `meta-${currentVersion}.json`));
-        const currentWinrates = await loadJSON(path.join(RESEARCH_DIR, "calibration-data", `winrates-${currentVersion}.json`));
-        const prevWinrates = await loadJSON(path.join(RESEARCH_DIR, "calibration-data", `winrates-${prevVersion}.json`));
+        const currentWinratesRaw = await loadJSON(path.join(RESEARCH_DIR, "calibration-data", `winrates-${currentVersion}.json`));
+        const currentWR = getWinrateData(currentWinratesRaw, targetBracket);
 
-        if (!meta || !currentWinrates?.GLOBAL_BLEND || !prevWinrates?.GLOBAL_BLEND) {
+        if (!meta || !currentWR) {
             console.log(`[Audit] Skipping ${currentVersion} (Missing data).`);
+            continue;
+        }
+
+        // Find the closest preceding patch with different winrate data
+        let prevWR: any = null;
+        let prevVersion = "";
+        
+        for (let j = i - 1; j >= 0; j--) {
+            const checkVersion = versions[j];
+            const prevWinratesRaw = await loadJSON(path.join(RESEARCH_DIR, "calibration-data", `winrates-${checkVersion}.json`));
+            const checkWR = getWinrateData(prevWinratesRaw, targetBracket);
+            
+            if (checkWR && !areWinratesIdentical(currentWR, checkWR)) {
+                prevWR = checkWR;
+                prevVersion = checkVersion;
+                break;
+            }
+        }
+
+        if (!prevWR) {
+            console.log(`[Audit] Skipping ${currentVersion} (No preceding patch with different winrate data found).`);
             continue;
         }
 
@@ -57,7 +115,7 @@ async function main() {
 
         const forecastStatus = priorAccuracy >= 80.0 ? "SYSTEM_FORECAST" : "SPECULATIVE_ESTIMATE";
 
-        console.log(`[Audit] Evaluating predictions for ${currentVersion} (Prior Accuracy: ${priorAccuracy}%, Status: ${forecastStatus})...`);
+        console.log(`[Audit] Evaluating ${currentVersion} against ${prevVersion} (Prior Accuracy: ${priorAccuracy}%, Status: ${forecastStatus})...`);
 
         let patchPredictions = 0;
         let patchCorrect = 0;
@@ -67,11 +125,11 @@ async function main() {
             const heroId = nameToIdMap[heroName];
             if (!heroId) return;
 
-            const currentWR = currentWinrates.GLOBAL_BLEND[heroId]?.winrate;
-            const prevWR = prevWinrates.GLOBAL_BLEND[heroId]?.winrate;
+            const currentHeroWR = currentWR[heroId]?.winrate;
+            const prevHeroWR = prevWR[heroId]?.winrate;
 
-            if (currentWR !== undefined && prevWR !== undefined) {
-                const delta = currentWR - prevWR;
+            if (currentHeroWR !== undefined && prevHeroWR !== undefined) {
+                const delta = currentHeroWR - prevHeroWR;
                 // Threshold: Needs to be a meaningful shift, e.g., > 0.5% (0.005)
                 const THRESHOLD = 0.005; 
                 let actualDirection = "STABLE";
@@ -95,6 +153,7 @@ async function main() {
                 });
             }
         };
+
 
         // 1. Synergistic Winners
         (meta.synergisticWinners || []).forEach((w: any) => {

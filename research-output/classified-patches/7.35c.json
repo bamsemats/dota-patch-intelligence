@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "version": "7.35c",
   "timestamp": "2024-02-22T00:06:21.000Z",
-  "ontologyVersion": 0,
+  "ontologyVersion": 2,
   "changes": [
     {
       "category": "item",
@@ -22,13 +22,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 7,
+          "Guardian": 7,
+          "Crusader": 7,
+          "Archon": 7,
+          "Legend": 7,
+          "Ancient": 8,
+          "Divine": 8
         },
         "reasoning": "Decreased a positive metric (armor bonus)."
       }
@@ -160,19 +160,20 @@
         "entityId": 121
       },
       "classification": {
-        "state": "UNKNOWN",
+        "state": "PARTIALLY_CLASSIFIED",
         "classificationType": "Unknown",
-        "confidenceScore": 0,
+        "semanticTag": "DAMAGE_TYPE_CHANGE",
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 8,
+          "Guardian": 8,
+          "Crusader": 8,
+          "Archon": 8,
+          "Legend": 8,
+          "Ancient": 8,
+          "Divine": 8
         },
-        "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+        "confidenceScore": 0.5,
+        "reasoning": "Partial semantic match based on keywords. Requires human review."
       }
     },
     {
@@ -248,13 +249,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1.5
         },
         "reasoning": "Decreased a positive metric (soul rend extra damage on hit)."
       }
@@ -306,13 +307,13 @@
         "classificationType": "Buff",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 3.5
         },
         "reasoning": "Decreased a negative metric (energy burst cooldown)."
       }
@@ -409,19 +410,20 @@
         "entityId": 1097
       },
       "classification": {
-        "state": "UNKNOWN",
+        "state": "PARTIALLY_CLASSIFIED",
         "classificationType": "Unknown",
-        "confidenceScore": 0,
+        "semanticTag": "TARGETING_RULE_CHANGE",
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 6,
+          "Guardian": 6,
+          "Crusader": 6,
+          "Archon": 6,
+          "Legend": 6,
+          "Ancient": 6,
+          "Divine": 6
         },
-        "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+        "confidenceScore": 0.5,
+        "reasoning": "Partial semantic match based on keywords. Requires human review."
       }
     },
     {
@@ -442,13 +444,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 8,
+          "Guardian": 8,
+          "Crusader": 7,
+          "Archon": 7,
+          "Legend": 7,
+          "Ancient": 7,
+          "Divine": 7
         },
         "reasoning": "Decreased a positive metric (health bonus)."
       }
@@ -500,13 +502,13 @@
         "classificationType": "Buff",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 8,
+          "Guardian": 8,
+          "Crusader": 8,
+          "Archon": 8,
+          "Legend": 8,
+          "Ancient": 8,
+          "Divine": 8
         },
         "reasoning": "Increased a positive metric (strength bonus)."
       }
@@ -587,13 +589,13 @@
         "classificationType": "Buff",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 6.5,
+          "Guardian": 6.5,
+          "Crusader": 5.5,
+          "Archon": 5.5,
+          "Legend": 5.5,
+          "Ancient": 5.5,
+          "Divine": 5.5
         },
         "reasoning": "Increased a positive metric (health regen and lifesteal amp bonus)."
       }
@@ -819,13 +821,13 @@
         "classificationType": "Buff",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 6.5,
+          "Guardian": 6.5,
+          "Crusader": 5.5,
+          "Archon": 5.5,
+          "Legend": 5.5,
+          "Ancient": 5.5,
+          "Divine": 5.5
         },
         "reasoning": "Increased a positive metric (health regen and lifesteal amp bonus)."
       }
@@ -848,13 +850,13 @@
         "classificationType": "Buff",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1.5
         },
         "reasoning": "Increased a positive metric (empower spell base damage)."
       }
@@ -935,13 +937,13 @@
         "classificationType": "Buff",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1.5
         },
         "reasoning": "Increased a positive metric (mage slayer debuff damage per second)."
       }
@@ -964,13 +966,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 3.5
         },
         "reasoning": "Decreased a positive metric (mage slayer debuff duration)."
       }
@@ -1196,13 +1198,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 8,
+          "Guardian": 8,
+          "Crusader": 8,
+          "Archon": 8,
+          "Legend": 8,
+          "Ancient": 8,
+          "Divine": 8
         },
         "reasoning": "Decreased a positive metric (intelligence bonus)."
       }
@@ -1254,13 +1256,13 @@
         "classificationType": "Buff",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1
         },
         "reasoning": "Decreased a negative metric (phantom province mana cost)."
       }
@@ -1425,13 +1427,13 @@
         "classificationType": "Buff",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 6.5,
+          "Guardian": 6.5,
+          "Crusader": 5.5,
+          "Archon": 5.5,
+          "Legend": 5.5,
+          "Ancient": 5.5,
+          "Divine": 5.5
         },
         "reasoning": "Increased a positive metric (health regen and lifesteal amp bonus)."
       }
@@ -1483,13 +1485,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 7,
+          "Guardian": 7,
+          "Crusader": 7,
+          "Archon": 7,
+          "Legend": 7,
+          "Ancient": 8,
+          "Divine": 8
         },
         "reasoning": "Decreased a positive metric (armor bonus)."
       }
@@ -1512,13 +1514,13 @@
         "classificationType": "Adjustment",
         "confidenceScore": 0.5,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 9,
+          "Guardian": 9,
+          "Crusader": 9,
+          "Archon": 9,
+          "Legend": 9,
+          "Ancient": 9,
+          "Divine": 9
         },
         "reasoning": "Numeric change, but polarity could not be deterministically resolved."
       }
@@ -1541,13 +1543,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 6.5,
+          "Guardian": 6.5,
+          "Crusader": 5.5,
+          "Archon": 5.5,
+          "Legend": 5.5,
+          "Ancient": 5.5,
+          "Divine": 5.5
         },
         "reasoning": "Decreased a positive metric (health regen bonus)."
       }
@@ -1570,13 +1572,13 @@
         "classificationType": "Adjustment",
         "confidenceScore": 0.5,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 9,
+          "Guardian": 9,
+          "Crusader": 9,
+          "Archon": 9,
+          "Legend": 9,
+          "Ancient": 9,
+          "Divine": 9
         },
         "reasoning": "Numeric change, but polarity could not be deterministically resolved."
       }
@@ -1599,13 +1601,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 7,
+          "Guardian": 7,
+          "Crusader": 7,
+          "Archon": 7,
+          "Legend": 7,
+          "Ancient": 8,
+          "Divine": 8
         },
         "reasoning": "Decreased a positive metric (armor bonus)."
       }
@@ -1628,13 +1630,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 6.5,
+          "Guardian": 6.5,
+          "Crusader": 5.5,
+          "Archon": 5.5,
+          "Legend": 5.5,
+          "Ancient": 5.5,
+          "Divine": 5.5
         },
         "reasoning": "Decreased a positive metric (health regen bonus)."
       }
@@ -1738,13 +1740,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 7,
+          "Guardian": 7,
+          "Crusader": 7,
+          "Archon": 7,
+          "Legend": 7,
+          "Ancient": 8,
+          "Divine": 8
         },
         "reasoning": "Decreased a positive metric (vladmir's aura bonus armor)."
       }
@@ -1767,13 +1769,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 7,
+          "Guardian": 7,
+          "Crusader": 7,
+          "Archon": 7,
+          "Legend": 7,
+          "Ancient": 8,
+          "Divine": 8
         },
         "reasoning": "Decreased a positive metric (armor bonus)."
       }
@@ -1883,13 +1885,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 8,
+          "Guardian": 8,
+          "Crusader": 8,
+          "Archon": 8,
+          "Legend": 8,
+          "Ancient": 8,
+          "Divine": 8
         },
         "reasoning": "Decreased a positive metric (intelligence bonus)."
       }
@@ -1912,13 +1914,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 8,
+          "Guardian": 8,
+          "Crusader": 7,
+          "Archon": 7,
+          "Legend": 7,
+          "Ancient": 7,
+          "Divine": 7
         },
         "reasoning": "Decreased a positive metric (health bonus)."
       }
@@ -1941,13 +1943,13 @@
         "classificationType": "Adjustment",
         "confidenceScore": 0.5,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 9,
+          "Guardian": 9,
+          "Crusader": 9,
+          "Archon": 9,
+          "Legend": 9,
+          "Ancient": 9,
+          "Divine": 9
         },
         "reasoning": "Numeric change, but polarity could not be deterministically resolved."
       }
@@ -1970,13 +1972,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 6.5,
+          "Guardian": 6.5,
+          "Crusader": 5.5,
+          "Archon": 5.5,
+          "Legend": 5.5,
+          "Ancient": 5.5,
+          "Divine": 5.5
         },
         "reasoning": "Decreased a positive metric (health regen bonus)."
       }
@@ -1999,13 +2001,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 3.5
         },
         "reasoning": "Increased a negative metric (bubbled up cooldown)."
       }
@@ -2028,13 +2030,13 @@
         "classificationType": "Buff",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 8,
+          "Guardian": 8,
+          "Crusader": 7,
+          "Archon": 7,
+          "Legend": 7,
+          "Ancient": 7,
+          "Divine": 7
         },
         "reasoning": "Increased a positive metric (health bonus)."
       }
@@ -2057,13 +2059,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 6.5,
+          "Guardian": 6.5,
+          "Crusader": 5.5,
+          "Archon": 5.5,
+          "Legend": 5.5,
+          "Ancient": 5.5,
+          "Divine": 5.5
         },
         "reasoning": "Decreased a positive metric (health regen bonus)."
       }
@@ -2141,13 +2143,13 @@
         "classificationType": "Adjustment",
         "confidenceScore": 0.5,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 9,
+          "Guardian": 9,
+          "Crusader": 9,
+          "Archon": 9,
+          "Legend": 9,
+          "Ancient": 9,
+          "Divine": 9
         },
         "reasoning": "Numeric change, but polarity could not be deterministically resolved."
       }
@@ -2170,13 +2172,13 @@
         "classificationType": "Buff",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 7,
+          "Guardian": 7,
+          "Crusader": 7,
+          "Archon": 7,
+          "Legend": 7,
+          "Ancient": 8,
+          "Divine": 8
         },
         "reasoning": "Increased a positive metric (armor bonus)."
       }
@@ -2199,13 +2201,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 8,
+          "Guardian": 8,
+          "Crusader": 8,
+          "Archon": 8,
+          "Legend": 8,
+          "Ancient": 8,
+          "Divine": 8
         },
         "reasoning": "Decreased a positive metric (strength bonus)."
       }
@@ -2228,13 +2230,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 6,
+          "Guardian": 6,
+          "Crusader": 7,
+          "Archon": 7,
+          "Legend": 8,
+          "Ancient": 9,
+          "Divine": 9
         },
         "reasoning": "Decreased a positive metric (movement speed bonus)."
       }
@@ -2257,13 +2259,13 @@
         "classificationType": "Buff",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 8,
+          "Guardian": 8,
+          "Crusader": 7,
+          "Archon": 7,
+          "Legend": 7,
+          "Ancient": 7,
+          "Divine": 7
         },
         "reasoning": "Increased a positive metric (health bonus)."
       }
@@ -2315,13 +2317,13 @@
         "classificationType": "Buff",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 8,
+          "Guardian": 8,
+          "Crusader": 7,
+          "Archon": 7,
+          "Legend": 7,
+          "Ancient": 7,
+          "Divine": 7
         },
         "reasoning": "Increased a positive metric (unwavering max health)."
       }
@@ -2346,13 +2348,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 3.5
         },
         "reasoning": "Increased a negative metric (cooldown)."
       }
@@ -2377,13 +2379,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1.5
         },
         "reasoning": "Decreased a positive metric (damage)."
       }
@@ -2408,13 +2410,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 3.5
         },
         "reasoning": "Increased a negative metric (cooldown)."
       }
@@ -2525,19 +2527,20 @@
         "subEntityId": 5046
       },
       "classification": {
-        "state": "UNKNOWN",
+        "state": "PARTIALLY_CLASSIFIED",
         "classificationType": "Unknown",
-        "confidenceScore": 0,
+        "semanticTag": "TARGETING_RULE_CHANGE",
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 6,
+          "Guardian": 6,
+          "Crusader": 6,
+          "Archon": 6,
+          "Legend": 6,
+          "Ancient": 6,
+          "Divine": 6
         },
-        "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+        "confidenceScore": 0.5,
+        "reasoning": "Partial semantic match based on keywords. Requires human review."
       }
     },
     {
@@ -2588,13 +2591,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1
         },
         "reasoning": "Decreased a positive metric (cast range)."
       }
@@ -2616,13 +2619,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 7,
+          "Guardian": 7,
+          "Crusader": 7,
+          "Archon": 7,
+          "Legend": 7,
+          "Ancient": 8,
+          "Divine": 8
         },
         "reasoning": "Decreased a positive metric (base armor)."
       }
@@ -2647,13 +2650,13 @@
         "classificationType": "Buff",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 3.5
         },
         "reasoning": "Decreased a negative metric (cooldown progression slow)."
       }
@@ -2705,13 +2708,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1.5
         },
         "reasoning": "Decreased a positive metric (level 15 talent time lock damage)."
       }
@@ -2735,13 +2738,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 6,
+          "Guardian": 6,
+          "Crusader": 6.5,
+          "Archon": 6.5,
+          "Legend": 6.5,
+          "Ancient": 6.5,
+          "Divine": 6.5
         },
         "reasoning": "Decreased a positive metric (level 20 talent attack speed during chronosphere)."
       }
@@ -2795,13 +2798,13 @@
         "classificationType": "Buff",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 8,
+          "Guardian": 8,
+          "Crusader": 8,
+          "Archon": 8,
+          "Legend": 8,
+          "Ancient": 8,
+          "Divine": 8
         },
         "reasoning": "Increased a positive metric (agility gain)."
       }
@@ -2826,13 +2829,13 @@
         "classificationType": "Buff",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1
         },
         "reasoning": "Increased a positive metric (cast range)."
       }
@@ -2888,13 +2891,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1
         },
         "reasoning": "Decreased a positive metric (max range radius)."
       }
@@ -3012,13 +3015,13 @@
         "classificationType": "Buff",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1.5
         },
         "reasoning": "Increased a positive metric (damage per explosion)."
       }
@@ -3043,13 +3046,13 @@
         "classificationType": "Buff",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1
         },
         "reasoning": "Decreased a negative metric (activation mana cost)."
       }
@@ -3071,13 +3074,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1.5
         },
         "reasoning": "Decreased a positive metric (base damage)."
       }
@@ -3102,13 +3105,13 @@
         "classificationType": "Adjustment",
         "confidenceScore": 0.8,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1.5
         },
         "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
       }
@@ -3161,13 +3164,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 3.5
         },
         "reasoning": "Increased a negative metric (cooldown)."
       }
@@ -3220,13 +3223,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1
         },
         "reasoning": "Decreased a positive metric (radius)."
       }
@@ -3278,13 +3281,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1.5
         },
         "reasoning": "Decreased a positive metric (level 10 talent penitence damage)."
       }
@@ -3340,13 +3343,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 3.5
         },
         "reasoning": "Decreased a positive metric (duration)."
       }
@@ -3370,13 +3373,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1.5
         },
         "reasoning": "Decreased a positive metric (level 10 talent scorched earth damage)."
       }
@@ -3401,13 +3404,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1.5
         },
         "reasoning": "Decreased a positive metric (aghanim's scepter max mana as damage barrier)."
       }
@@ -3463,13 +3466,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 3.5
         },
         "reasoning": "Increased a negative metric (cooldown)."
       }
@@ -3553,13 +3556,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 8,
+          "Guardian": 8,
+          "Crusader": 7,
+          "Archon": 7,
+          "Legend": 7,
+          "Ancient": 7,
+          "Divine": 7
         },
         "reasoning": "Decreased a positive metric (max health restore)."
       }
@@ -3615,13 +3618,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 3.5
         },
         "reasoning": "Increased a negative metric (cooldown)."
       }
@@ -3639,9 +3642,9 @@
         "subEntityId": 5520
       },
       "classification": {
-        "state": "UNKNOWN",
+        "state": "PARTIALLY_CLASSIFIED",
         "classificationType": "Unknown",
-        "confidenceScore": 0,
+        "semanticTag": "FEATURE_INTRODUCTION",
         "strategicWeight": {
           "Herald": 5,
           "Guardian": 5,
@@ -3651,7 +3654,8 @@
           "Ancient": 5,
           "Divine": 5
         },
-        "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+        "confidenceScore": 0.5,
+        "reasoning": "Partial semantic match based on keywords. Requires human review."
       }
     },
     {
@@ -3673,13 +3677,13 @@
         "classificationType": "Buff",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 3.5
         },
         "reasoning": "Decreased a negative metric (level 15 talent skewer cooldown reduction)."
       }
@@ -3734,13 +3738,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1.5
         },
         "reasoning": "Decreased a positive metric (damage per second)."
       }
@@ -3795,13 +3799,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 3.5
         },
         "reasoning": "Increased a negative metric (cooldown)."
       }
@@ -3826,13 +3830,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 1
         },
         "reasoning": "Increased a negative metric (mana cost)."
       }
@@ -3855,13 +3859,13 @@
         "classificationType": "Buff",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 8,
+          "Guardian": 8,
+          "Crusader": 8,
+          "Archon": 8,
+          "Legend": 8,
+          "Ancient": 8,
+          "Divine": 8
         },
         "reasoning": "Increased a positive metric (base strength)."
       }
@@ -3886,13 +3890,13 @@
         "classificationType": "Buff",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 3.5
         },
         "reasoning": "Decreased a negative metric (cooldown)."
       }
@@ -3915,13 +3919,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 8,
+          "Guardian": 8,
+          "Crusader": 8,
+          "Archon": 8,
+          "Legend": 8,
+          "Ancient": 8,
+          "Divine": 8
         },
         "reasoning": "Decreased a positive metric (base strength)."
       }
@@ -3944,13 +3948,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 8,
+          "Guardian": 8,
+          "Crusader": 8,
+          "Archon": 8,
+          "Legend": 8,
+          "Ancient": 8,
+          "Divine": 8
         },
         "reasoning": "Decreased a positive metric (strength gain)."
       }
@@ -3975,13 +3979,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 3.5
         },
         "reasoning": "Decreased a positive metric (duration)."
       }
@@ -4006,13 +4010,13 @@
         "classificationType": "Nerf",
         "confidenceScore": 1,
         "strategicWeight": {
-          "Herald": 5,
-          "Guardian": 5,
-          "Crusader": 5,
-          "Archon": 5,
-          "Legend": 5,
-          "Ancient": 5,
-          "Divine": 5
+          "Herald": 1,
+          "Guardian": 1,
+          "Crusader": 1,
+          "Archon": 1,
+          "Legend": 1,
+          "Ancient": 1,
+          "Divine": 3.5
         },
         "reasoning": "Decreased a positive metric (slow duration)."
       }

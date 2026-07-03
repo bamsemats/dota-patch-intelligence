@@ -21,6 +21,7 @@ interface Classification {
 
 export let semanticOntology: any[] = [];
 export let balanceOntology: any = {};
+export let manualOverrides: any[] = [];
 let ontologyVersions: { semanticOntology: number, balanceOntology: number } = { semanticOntology: 0, balanceOntology: 0 };
 
 export async function loadOntologies() {
@@ -32,11 +33,17 @@ export async function loadOntologies() {
         } catch (e) {
             console.warn("[Classifier] version.json not found, using default version 0.");
         }
-        console.log(`[Classifier] Ontologies loaded (Semantic v${ontologyVersions.semanticOntology}, Balance v${ontologyVersions.balanceOntology}).`);
+        try {
+            manualOverrides = JSON.parse(await readFile(path.join(ONTOLOGY_DIR, "manual_overrides.json"), "utf8"));
+        } catch (e) {
+            manualOverrides = [];
+        }
+        console.log(`[Classifier] Ontologies loaded (Semantic v${ontologyVersions.semanticOntology}, Balance v${ontologyVersions.balanceOntology}, Overrides count: ${manualOverrides.length}).`);
     } catch (e) {
         console.warn("[Classifier] Could not load ontologies, falling back to defaults.");
         semanticOntology = [];
         balanceOntology = { metrics: {} };
+        manualOverrides = [];
     }
 }
 
@@ -44,6 +51,23 @@ export function determineClassification(change: any): Classification {
     const changeType = change.changeType;
     const metricStr = (change.metric || "").toLowerCase();
     const rawNoteLower = change.rawNote.toLowerCase();
+
+    // 0. Check Human/Manual Overrides first
+    const overrideMatch = manualOverrides.find(o => 
+        o.entityName === change.entityName && 
+        change.rawNote.toLowerCase().includes(o.rawNote.toLowerCase())
+    );
+    if (overrideMatch) {
+        const wrapWeight = (w: number) => ({ "Herald": w, "Guardian": w, "Crusader": w, "Archon": w, "Legend": w, "Ancient": w, "Divine": w });
+        return {
+            state: "KNOWN_SEMANTIC",
+            classificationType: overrideMatch.classificationType,
+            confidenceScore: 1.0,
+            reasoning: `Manual override: ${overrideMatch.reason || "Human reviewed polarity override."}`,
+            semanticTag: "MANUAL_OVERRIDE",
+            strategicWeight: wrapWeight(8)
+        };
+    }
 
     // Helper to find the best matching metric key from ontology
     const findMetricData = (mStr: string) => {

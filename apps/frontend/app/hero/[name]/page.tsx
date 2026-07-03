@@ -109,6 +109,35 @@ export default async function HeroPage({ params }: PageProps) {
     return `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/${slug}.png`;
   };
 
+  // Load weekly winrates history snapshots
+  const weeklyDir = path.join(researchDir, "weekly-winrates");
+  const weeklyHistory: { date: string; winrates: Record<string, number> }[] = [];
+  try {
+    const files = await fs.readdir(weeklyDir);
+    const jsonFiles = files.filter(f => f.startsWith("winrates-") && f.endsWith(".json")).sort();
+    const recentFiles = jsonFiles.slice(-8); // past 8 weeks
+
+    const heroesMapPath = path.join(researchDir, "mappings", "heroes.json");
+    const heroesMap = JSON.parse(await fs.readFile(heroesMapPath, "utf8"));
+    const heroId = Object.keys(heroesMap).find(key => heroesMap[key] === heroData.name);
+
+    if (heroId) {
+      for (const file of recentFiles) {
+        const dateStr = file.replace("winrates-", "").replace(".json", "");
+        const raw = await fs.readFile(path.join(weeklyDir, file), "utf8");
+        const data = JSON.parse(raw);
+        
+        const winrates: Record<string, number> = {};
+        for (const rank of Object.keys(data)) {
+          winrates[rank] = data[rank][heroId] || 0;
+        }
+        weeklyHistory.push({ date: dateStr, winrates });
+      }
+    }
+  } catch (e) {
+    console.warn("[Warning] Could not load weekly winrate tracking history:", e);
+  }
+
   return (
     <div className="container" style={{ position: 'relative' }}>
       <div className={styles.heroImageWrapper} style={{ position: 'absolute', top: '-40px', left: '-20px', width: 'calc(100% + 40px)', height: '400px', zIndex: -1 }}>
@@ -190,7 +219,7 @@ export default async function HeroPage({ params }: PageProps) {
                           color: getVectorColor(val),
                           border: `1px solid ${getVectorColor(val)}`
                         }}>
-                          {dim.toUpperCase()} {val > 0 ? `+${val}` : val}
+                          {dim.toUpperCase()} {val > 0 ? `+${parseFloat(val.toFixed(2))}` : parseFloat(val.toFixed(2))}
                         </span>
                      ))}
                    </div>
@@ -226,14 +255,14 @@ export default async function HeroPage({ params }: PageProps) {
                     />
                   </div>
                   <span className={styles.dimVal} style={{ color: getVectorColor(val) }}>
-                    {val > 0 ? `+${val}` : val}
+                    {val > 0 ? `+${parseFloat(val.toFixed(2))}` : parseFloat(val.toFixed(2))}
                   </span>
                 </div>
               ))}
             </div>
           </div>
 
-          <WinrateHistorySelector history={heroData.history} />
+          <WinrateHistorySelector history={heroData.history} weeklyHistory={weeklyHistory} />
         </div>
       </div>
     </div>

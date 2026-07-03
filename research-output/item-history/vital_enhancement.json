@@ -258,9 +258,9 @@
             "entityId": 1865
           },
           "classification": {
-            "state": "UNKNOWN",
+            "state": "PARTIALLY_CLASSIFIED",
             "classificationType": "Unknown",
-            "confidenceScore": 0,
+            "semanticTag": "VISION_INTERACTION",
             "strategicWeight": {
               "Herald": 5,
               "Guardian": 5,
@@ -270,7 +270,8 @@
               "Ancient": 5,
               "Divine": 5
             },
-            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
           }
         }
       ],
@@ -296,7 +297,7 @@
     },
     {
       "version": "7.41d",
-      "date": "2026-07-03T19:08:26.985Z",
+      "date": "2026-06-05T00:45:14.000Z",
       "changes": [
         {
           "category": "neutral",
@@ -316,13 +317,13 @@
             "classificationType": "Buff",
             "confidenceScore": 1,
             "strategicWeight": {
-              "Herald": 5,
-              "Guardian": 5,
-              "Crusader": 5,
-              "Archon": 5,
-              "Legend": 5,
-              "Ancient": 5,
-              "Divine": 5
+              "Herald": 6.5,
+              "Guardian": 6.5,
+              "Crusader": 5.5,
+              "Archon": 5.5,
+              "Legend": 5.5,
+              "Ancient": 5.5,
+              "Divine": 5.5
             },
             "reasoning": "Increased a positive metric (health regen bonus)."
           }

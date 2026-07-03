@@ -166,12 +166,14 @@ export default function SummaryTabs({ metaData, itemSlugs }: SummaryTabsProps) {
                     <div className={styles.entityInfo}>
                         <div className={styles.entityTitleRow}>
                           <h4 className={styles.entityName}>
+                            <Link href={`/hero/${winner.entity.replace(/[^a-z0-9]/gi, '_').toLowerCase()}`} className={styles.heroLink}>
                               {winner.entity}
-                              {winner.isCorrectPrediction !== undefined && (
-                              <span title={`Actual Winrate Delta: ${winner.actualDelta}`} className={styles.actualDeltaIcon}>
-                                  {winner.isCorrectPrediction ? '✅' : '❌'}
+                            </Link>
+                            {winner.isCorrectPrediction !== undefined && (
+                              <span className={winner.isCorrectPrediction ? styles.predictionVerifiedBadge : styles.predictionMismatchBadge}>
+                                {winner.isCorrectPrediction ? `Verified Forecast (${winner.actualDelta})` : `Mismatch (${winner.actualDelta})`}
                               </span>
-                              )}
+                            )}
                           </h4>
                           {winner.temporalAssessment && winner.temporalAssessment !== "N/A" && (
                               <span className={winner.temporalAssessment === "Net Gain" ? styles.gainBadge : styles.lossBadge}>
@@ -209,12 +211,14 @@ export default function SummaryTabs({ metaData, itemSlugs }: SummaryTabsProps) {
                     <div className={styles.entityInfo}>
                         <div className={styles.entityTitleRow}>
                           <h4 className={styles.entityName}>
+                            <Link href={`/hero/${loser.entity.replace(/[^a-z0-9]/gi, '_').toLowerCase()}`} className={styles.heroLink}>
                               {loser.entity}
-                              {loser.isCorrectPrediction !== undefined && (
-                              <span title={`Actual Winrate Delta: ${loser.actualDelta}`} className={styles.actualDeltaIcon}>
-                                  {loser.isCorrectPrediction ? '✅' : '❌'}
+                            </Link>
+                            {loser.isCorrectPrediction !== undefined && (
+                              <span className={loser.isCorrectPrediction ? styles.predictionVerifiedBadge : styles.predictionMismatchBadge}>
+                                {loser.isCorrectPrediction ? `Verified Forecast (${loser.actualDelta})` : `Mismatch (${loser.actualDelta})`}
                               </span>
-                              )}
+                            )}
                           </h4>
                         </div>
                         <p className={styles.entityDescription}>{loser.synergyExplanation}</p>

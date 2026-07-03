@@ -26,6 +26,8 @@
     "patch:validate": "tsx apps/scripts/validateEngine.ts",
     "patch:fetch-winrates": "tsx apps/scripts/fetchOpenDotaWinrates.ts",
     "patch:calibrate": "tsx apps/scripts/calibrateWeights.ts",
+    "patch:calibrate-safe": "tsx apps/scripts/regressionGate.ts",
+    "patch:fetch-weekly": "tsx apps/scripts/fetchWeeklyWinrate.ts",
     "patch:generate-history": "tsx apps/scripts/generateHeroHistory.ts && tsx apps/scripts/generateItemHistory.ts",
     "db:seed": "tsx apps/api/seed.ts",
     "db:backup": "tsx apps/scripts/backupDb.ts",

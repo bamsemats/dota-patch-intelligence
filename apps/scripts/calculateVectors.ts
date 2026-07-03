@@ -133,6 +133,17 @@ export function calculateHeroDelta(heroName: string, changes: any[], balanceOnto
 
 const HEROES_PATH = path.resolve("research-output", "mappings", "heroes.json");
 const COUNTERS_PATH = path.resolve("research-output", "mappings", "hero_counters.json");
+const AFFINITY_PATH = path.resolve("research-output", "mappings", "item_hero_affinity.json");
+
+async function loadAffinityMap() {
+    try {
+        const raw = await readFile(AFFINITY_PATH, "utf8");
+        return JSON.parse(raw);
+    } catch (e) {
+        console.warn("[Warning] Could not load item affinity map. Using empty map.");
+        return {};
+    }
+}
 
 async function loadCountersMap() {
     try {
@@ -158,7 +169,8 @@ export async function processPatch(
     filePath: string,
     balanceOntology: any,
     heroesList: string[],
-    countersMap: any
+    countersMap: any,
+    affinityMap: any
 ) {
     const data = JSON.parse(await readFile(filePath, "utf8"));
     const version = data.version;
@@ -169,6 +181,22 @@ export async function processPatch(
             if (!heroChanges.has(change.entityName)) heroChanges.set(change.entityName, []);
             heroChanges.get(change.entityName)!.push(change);
         }
+    }
+
+    // Calculate direct vector deltas for items in the patch
+    const itemChanges = new Map<string, any[]>();
+    for (const change of data.changes) {
+        if (change.category === "item") {
+            if (!itemChanges.has(change.entityName)) itemChanges.set(change.entityName, []);
+            itemChanges.get(change.entityName)!.push(change);
+        }
+    }
+
+    const itemDeltas = new Map<string, FeatureVector>();
+    for (const itemName of Object.keys(affinityMap)) {
+        const changes = itemChanges.get(itemName) || [];
+        const delta = calculateHeroDelta(itemName, changes, balanceOntology);
+        itemDeltas.set(itemName, delta.vectorDelta);
     }
 
     // 1. Calculate direct vector deltas for all heroes in the roster
@@ -201,6 +229,20 @@ export async function processPatch(
     for (const heroName of heroesList) {
         const directVector = directDeltas.get(heroName)!;
         const combinedVector = { ...directVector };
+
+        // Apply item affinity ripple effects
+        for (const [itemName, heroes] of Object.entries(affinityMap)) {
+            if (Array.isArray(heroes) && heroes.includes(heroName)) {
+                const itemDelta = itemDeltas.get(itemName);
+                if (itemDelta) {
+                    const ITEM_RIPPLE_FACTOR = 0.20;
+                    for (const dim in combinedVector) {
+                        const d = dim as keyof FeatureVector;
+                        combinedVector[d] += itemDelta[d] * ITEM_RIPPLE_FACTOR;
+                    }
+                }
+            }
+        }
 
         const relationship = countersMap[heroName];
         if (relationship) {
@@ -270,6 +312,7 @@ async function main() {
     const balanceOntology = await loadBalanceOntology();
     const heroesList = await loadHeroesList();
     const countersMap = await loadCountersMap();
+    const affinityMap = await loadAffinityMap();
     
     const files = await readdir(INPUT_DIR);
     console.log(`[Vector Calc] Found ${files.length} patches to process.`);
@@ -282,7 +325,8 @@ async function main() {
             path.join(INPUT_DIR, file),
             balanceOntology,
             heroesList,
-            countersMap
+            countersMap,
+            affinityMap
         );
         
         await writeFile(
