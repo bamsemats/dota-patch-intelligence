@@ -33,6 +33,9 @@ async function main() {
     let globalTotalPredictions = 0;
     let globalCorrectPredictions = 0;
 
+    let cumulativePredictionsSoFar = 0;
+    let cumulativeCorrectSoFar = 0;
+
     const auditResults: Record<string, any> = {};
 
     for (let i = 1; i < versions.length; i++) {
@@ -48,7 +51,13 @@ async function main() {
             continue;
         }
 
-        console.log(`[Audit] Evaluating predictions for ${currentVersion}...`);
+        const priorAccuracy = cumulativePredictionsSoFar > 0
+            ? parseFloat(((cumulativeCorrectSoFar / cumulativePredictionsSoFar) * 100).toFixed(1))
+            : 85.0; // Default to 85% baseline prior accuracy if no prior patches are processed
+
+        const forecastStatus = priorAccuracy >= 80.0 ? "SYSTEM_FORECAST" : "SPECULATIVE_ESTIMATE";
+
+        console.log(`[Audit] Evaluating predictions for ${currentVersion} (Prior Accuracy: ${priorAccuracy}%, Status: ${forecastStatus})...`);
 
         let patchPredictions = 0;
         let patchCorrect = 0;
@@ -144,8 +153,14 @@ async function main() {
         meta.truthScore = {
             accuracy: parseFloat((patchAccuracy * 100).toFixed(1)),
             total: patchPredictions,
-            correct: patchCorrect
+            correct: patchCorrect,
+            forecastStatus,
+            historicalAccuracy: priorAccuracy
         };
+
+        // Accumulate for prior accuracy calculation in the next patch iteration
+        cumulativePredictionsSoFar += patchPredictions;
+        cumulativeCorrectSoFar += patchCorrect;
 
         // Save updated meta analysis
         await writeFile(path.join(RESEARCH_DIR, "meta-analysis", `meta-${currentVersion}.json`), JSON.stringify(meta, null, 2), "utf8");

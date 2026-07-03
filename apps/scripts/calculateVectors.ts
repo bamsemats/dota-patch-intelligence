@@ -63,7 +63,7 @@ const DIMENSION_MAP: Record<string, keyof FeatureVector> = {
     "mana_pool": "utility"
 };
 
-async function loadBalanceOntology() {
+export async function loadBalanceOntology() {
     try {
         const data = await readFile(ONTOLOGY_PATH, "utf8");
         return JSON.parse(data);
@@ -73,7 +73,7 @@ async function loadBalanceOntology() {
     }
 }
 
-function calculateHeroDelta(heroName: string, changes: any[], balanceOntology: any): HeroVectorDelta {
+export function calculateHeroDelta(heroName: string, changes: any[], balanceOntology: any): HeroVectorDelta {
     const vectorDelta: FeatureVector = {
         farming: 0, mobility: 0, survivability: 0, teamfight: 0, laning: 0, siege: 0, utility: 0
     };
@@ -131,7 +131,35 @@ function calculateHeroDelta(heroName: string, changes: any[], balanceOntology: a
     };
 }
 
-async function processPatch(filePath: string, balanceOntology: any) {
+const HEROES_PATH = path.resolve("research-output", "mappings", "heroes.json");
+const COUNTERS_PATH = path.resolve("research-output", "mappings", "hero_counters.json");
+
+async function loadCountersMap() {
+    try {
+        const raw = await readFile(COUNTERS_PATH, "utf8");
+        return JSON.parse(raw);
+    } catch (e) {
+        console.warn("[Warning] Could not load hero counters map. Using empty map.");
+        return {};
+    }
+}
+
+async function loadHeroesList() {
+    try {
+        const raw = await readFile(HEROES_PATH, "utf8");
+        return Object.values(JSON.parse(raw)) as string[];
+    } catch (e) {
+        console.error("Could not load heroes list.");
+        return [];
+    }
+}
+
+export async function processPatch(
+    filePath: string,
+    balanceOntology: any,
+    heroesList: string[],
+    countersMap: any
+) {
     const data = JSON.parse(await readFile(filePath, "utf8"));
     const version = data.version;
 
@@ -143,14 +171,91 @@ async function processPatch(filePath: string, balanceOntology: any) {
         }
     }
 
-    const vectorDeltas: HeroVectorDelta[] = [];
-    for (const [heroName, changes] of heroChanges.entries()) {
+    // 1. Calculate direct vector deltas for all heroes in the roster
+    const directDeltas = new Map<string, FeatureVector>();
+    const directScores = new Map<string, number>();
+
+    for (const heroName of heroesList) {
+        const changes = heroChanges.get(heroName) || [];
         const delta = calculateHeroDelta(heroName, changes, balanceOntology);
-        delta.patch = version;
-        
-        // Only keep heroes that actually had a non-zero vector shift
-        if (Object.values(delta.vectorDelta).some(v => v !== 0)) {
-            vectorDeltas.push(delta);
+        directDeltas.set(heroName, delta.vectorDelta);
+
+        // Sum the dimensions to get the overall direct score
+        const score = delta.vectorDelta.farming +
+                      delta.vectorDelta.mobility +
+                      delta.vectorDelta.survivability +
+                      delta.vectorDelta.teamfight +
+                      delta.vectorDelta.laning +
+                      delta.vectorDelta.siege +
+                      delta.vectorDelta.utility;
+        directScores.set(heroName, score);
+    }
+
+    // Load coefficients from ontology if present, else default
+    const C = balanceOntology.rippleCoefficients?.counter ?? -0.15;
+    const S = balanceOntology.rippleCoefficients?.partner ?? 0.15;
+
+    const vectorDeltas: HeroVectorDelta[] = [];
+
+    // 2. Calculate ripple effects and combine
+    for (const heroName of heroesList) {
+        const directVector = directDeltas.get(heroName)!;
+        const combinedVector = { ...directVector };
+
+        const relationship = countersMap[heroName];
+        if (relationship) {
+            // Apply counter ripple effects: buffing a counter reduces our laning and survivability
+            if (Array.isArray(relationship.counters)) {
+                for (const counterHero of relationship.counters) {
+                    const counterScore = directScores.get(counterHero) || 0;
+                    if (counterScore !== 0) {
+                        const ripple = counterScore * C;
+                        combinedVector.survivability += 0.5 * ripple;
+                        combinedVector.laning += 0.5 * ripple;
+                    }
+                }
+            }
+
+            // Apply partner ripple effects: buffing a partner improves our teamfight and utility
+            if (Array.isArray(relationship.partners)) {
+                for (const partnerHero of relationship.partners) {
+                    const partnerScore = directScores.get(partnerHero) || 0;
+                    if (partnerScore !== 0) {
+                        const ripple = partnerScore * S;
+                        combinedVector.teamfight += 0.5 * ripple;
+                        combinedVector.utility += 0.5 * ripple;
+                    }
+                }
+            }
+        }
+
+        // Only keep heroes that actually had a non-zero vector shift (direct or rippled)
+        const hasNonZero = Object.values(combinedVector).some(v => Math.abs(v) >= 0.01);
+        if (hasNonZero) {
+            // We need to re-identify significant shifts on the combined vector
+            const significantShifts: string[] = [];
+            for (const [dim, val] of Object.entries(combinedVector)) {
+                if (val >= 10) significantShifts.push(`Major Buff to ${dim} (+${val.toFixed(1)})`);
+                if (val <= -10) significantShifts.push(`Major Nerf to ${dim} (${val.toFixed(1)})`);
+            }
+
+            // Round values to 2 decimal places for clean JSON
+            const roundedVector: FeatureVector = {
+                farming: parseFloat(combinedVector.farming.toFixed(2)),
+                mobility: parseFloat(combinedVector.mobility.toFixed(2)),
+                survivability: parseFloat(combinedVector.survivability.toFixed(2)),
+                teamfight: parseFloat(combinedVector.teamfight.toFixed(2)),
+                laning: parseFloat(combinedVector.laning.toFixed(2)),
+                siege: parseFloat(combinedVector.siege.toFixed(2)),
+                utility: parseFloat(combinedVector.utility.toFixed(2))
+            };
+
+            vectorDeltas.push({
+                heroName,
+                patch: version,
+                vectorDelta: roundedVector,
+                significantShifts
+            });
         }
     }
 
@@ -163,6 +268,8 @@ async function processPatch(filePath: string, balanceOntology: any) {
 async function main() {
     await mkdir(OUTPUT_DIR, { recursive: true });
     const balanceOntology = await loadBalanceOntology();
+    const heroesList = await loadHeroesList();
+    const countersMap = await loadCountersMap();
     
     const files = await readdir(INPUT_DIR);
     console.log(`[Vector Calc] Found ${files.length} patches to process.`);
@@ -171,7 +278,12 @@ async function main() {
         if (!file.endsWith(".json")) continue;
         console.log(`[Vector Calc] Processing ${file}...`);
         
-        const result = await processPatch(path.join(INPUT_DIR, file), balanceOntology);
+        const result = await processPatch(
+            path.join(INPUT_DIR, file),
+            balanceOntology,
+            heroesList,
+            countersMap
+        );
         
         await writeFile(
             path.join(OUTPUT_DIR, `vectors-${result.version}.json`),
@@ -182,4 +294,6 @@ async function main() {
     console.log(`\n[Summary] Successfully calculated Feature Vector Deltas.`);
 }
 
-main().catch(console.error);
+if (require.main === module) {
+    main().catch(console.error);
+}

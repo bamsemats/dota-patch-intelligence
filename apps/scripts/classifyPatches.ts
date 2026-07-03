@@ -19,11 +19,11 @@ interface Classification {
     strategicWeight?: number;
 }
 
-let semanticOntology: any[] = [];
-let balanceOntology: any = {};
+export let semanticOntology: any[] = [];
+export let balanceOntology: any = {};
 let ontologyVersions: { semanticOntology: number, balanceOntology: number } = { semanticOntology: 0, balanceOntology: 0 };
 
-async function loadOntologies() {
+export async function loadOntologies() {
     try {
         semanticOntology = JSON.parse(await readFile(path.join(ONTOLOGY_DIR, "semantic_tags.json"), "utf8"));
         balanceOntology = JSON.parse(await readFile(path.join(ONTOLOGY_DIR, "balance_metrics.json"), "utf8"));
@@ -40,7 +40,7 @@ async function loadOntologies() {
     }
 }
 
-function determineClassification(change: any): Classification {
+export function determineClassification(change: any): Classification {
     const changeType = change.changeType;
     const metricStr = (change.metric || "").toLowerCase();
     const rawNoteLower = change.rawNote.toLowerCase();
@@ -240,7 +240,9 @@ async function main() {
     }
 }
 
-main().catch(error => {
-    console.error("[Error] Fatal error in classifier:", error);
-    process.exit(1);
-});
+if (require.main === module) {
+    main().catch(error => {
+        console.error("[Error] Fatal error in classifier:", error);
+        process.exit(1);
+    });
+}

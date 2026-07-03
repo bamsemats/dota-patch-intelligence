@@ -1,6 +1,6 @@
 // apps/scripts/fetchSpecificPatch.ts
 
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, writeFile, readFile } from "node:fs/promises";
 import * as path from "node:path";
 
 const OUTPUT_DIR = path.resolve("research-output", "patches");
@@ -39,9 +39,40 @@ async function main() {
             );
 
             // Create a minimal metadata.json
+            let discoveryDate = new Date().toISOString();
+            try {
+                const rawMeta = await readFile(path.join(patchDir, "metadata.json"), "utf8");
+                const existing = JSON.parse(rawMeta);
+                if (existing && existing.discoveryDate) {
+                    discoveryDate = existing.discoveryDate;
+                }
+            } catch (e) {
+                // Fall back to reading from the git-tracked classified patch JSON
+                try {
+                    const classifiedPath = path.resolve("research-output", "classified-patches", `${version}.json`);
+                    const existing = JSON.parse(await readFile(classifiedPath, "utf8"));
+                    if (existing && existing.timestamp) {
+                        discoveryDate = existing.timestamp;
+                    }
+                } catch (err) {
+                    // Fall back to meta-analysis
+                    try {
+                        const metaPath = path.resolve("research-output", "meta-analysis", `meta-${version}.json`);
+                        const existing = JSON.parse(await readFile(metaPath, "utf8"));
+                        if (existing && existing.truthScore && existing.truthScore.discoveryDate) {
+                            discoveryDate = existing.truthScore.discoveryDate;
+                        } else if (existing && existing.discoveryDate) {
+                            discoveryDate = existing.discoveryDate;
+                        }
+                    } catch (err2) {
+                        // Keep current date
+                    }
+                }
+            }
+
             const metadata = {
                 version,
-                discoveryDate: new Date().toISOString(),
+                discoveryDate,
                 source: "manual-fetch"
             };
             await writeFile(

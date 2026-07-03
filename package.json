@@ -9,7 +9,7 @@
     "packages/*"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --import tsx --test tests/**/*.test.ts",
     "inspect:steam-news": "tsx apps/scripts/inspectSteamNews.ts",
     "patch:discovery": "tsx apps/scripts/patchDiscovery.ts",
     "patch:mappings": "tsx apps/scripts/fetchMappings.ts",

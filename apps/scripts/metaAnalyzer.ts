@@ -43,6 +43,7 @@ CRITICAL MECHANICAL ACCURACY RULES:
     - **Net Gain:** A hero or strategy is stronger than its long-term average due to these changes.
     - **Recovery:** A hero is being buffed, but it is primarily a partial restoration after a massive nerf in a recent patch. It may not be "back" yet.
     - You MUST explicitly label winners as either "Net Gain" or "Recovery".
+7. **CRITICALLY IMPORTANT GROUNDING RULE:** You MUST choose your winners (synergisticWinners, roleSpecificWinners) ONLY from the provided \`groundedWinnerCandidates\` list, and your losers (synergisticLosers, roleSpecificLosers) ONLY from the provided \`groundedLoserCandidates\` list. Do not predict any hero as a winner or loser unless they are present in the respective candidate pool. Your primary role is to write the strategic rationale explaining *why* these candidates are rising or falling based on their changes, vector deltas, and the systemic/item shifts of the patch.
 
 STRATEGIC INTUITION & ARCHETYPAL THEMES:
 - Prioritize identifying "Archetypal Themes" (e.g., "The Return of the Deathball", "The Greedy Support Meta", "Vision Control Domination", "The Death of the Hard Carry").
@@ -142,6 +143,56 @@ async function generateMetaAnalysis(patchData: any, herodata: any, previousAnaly
         }
     });
 
+    // 1. Calculate candidates mathematically
+    const heroScores: Record<string, number> = {};
+    const heroDeltas: Record<string, any> = {};
+
+    patchData.changes.forEach((c: any) => {
+        if (c.category === "hero") {
+            const name = c.entityName;
+            if (!heroScores[name]) heroScores[name] = 0;
+            
+            const typeStr = c.classification?.classificationType || "Unknown";
+            let multiplier = 0;
+            if (typeStr === "Buff") multiplier = 1;
+            if (typeStr === "Nerf") multiplier = -1;
+            
+            const weightObj = c.classification?.strategicWeight;
+            const weight = typeof weightObj === 'object' ? (weightObj['Divine'] || 5) : (weightObj || 5);
+            
+            heroScores[name] += (multiplier * weight);
+        }
+    });
+
+    // Load vectors
+    const vectorPath = path.join(process.cwd(), "research-output", "feature-vectors", `vectors-${patchData.version}.json`);
+    try {
+        const vectorData = JSON.parse(await readFile(vectorPath, "utf8"));
+        if (vectorData && vectorData.vectorDeltas) {
+            vectorData.vectorDeltas.forEach((v: any) => {
+                heroDeltas[v.heroName] = v.vectorDelta;
+            });
+        }
+    } catch (e) {
+        // Ignore vector failures for bootstrapping/historical mocks
+    }
+
+    const sortedHeroes = Object.entries(heroScores).map(([name, score]) => ({
+        hero: name,
+        score,
+        vectorDelta: heroDeltas[name] || null
+    }));
+
+    const groundedWinners = sortedHeroes
+        .filter(h => h.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 15);
+
+    const groundedLosers = sortedHeroes
+        .filter(h => h.score < 0)
+        .sort((a, b) => a.score - b.score)
+        .slice(0, 15);
+
     const simplifiedData = {
         version: patchData.version,
         changes: patchData.changes.map((c: any) => ({
@@ -150,7 +201,9 @@ async function generateMetaAnalysis(patchData: any, herodata: any, previousAnaly
             subEntityName: c.subEntityName,
             note: c.rawNote,
             polarity: c.classification?.classificationType || "Unknown"
-        }))
+        })),
+        groundedWinnerCandidates: groundedWinners,
+        groundedLoserCandidates: groundedLosers
     };
 
     const payloadString = JSON.stringify(simplifiedData);

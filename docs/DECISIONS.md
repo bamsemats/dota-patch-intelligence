@@ -297,6 +297,19 @@ External winrate statistics (e.g., OpenDota matches table) are recorded and quer
 
 ---
 
+# 2026-07-03 (Pipeline Discovery Grounding)
+
+Status:
+Accepted
+
+Decision:
+Modify the automated discovery script (`patchDiscovery.ts`) to check for the presence of the corresponding JSON in `research-output/classified-patches/` instead of `research-output/patches/` to verify if a patch has already been processed.
+
+Reasoning:
+The raw patch download folder `/research-output/patches/` is ignored by Git, meaning a fresh checkout on GitHub Actions will not contain it. Because of this, the discovery script previously treated the latest processed patch as a "new patch" on every run, triggering the automation pipeline, making LLM API calls, and generating redundant commits/PRs on every scheduled cron execution. The classified patches folder `/research-output/classified-patches/` is not ignored and is checked in, making it a reliable source of truth for processed patches.
+
+---
+
 # Open Decisions
 
 The following decisions remain unresolved:

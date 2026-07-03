@@ -17,15 +17,22 @@ export default function SummaryTabs({ metaData, itemSlugs }: SummaryTabsProps) {
     setExpandedKeys(prev => ({ ...prev, [key]: !prev[key] }));
   };
 
-  const RenderExplanation = ({ text, id }: { text: string; id: string }) => {
+  const RenderExplanation = ({ text, id, postMortem }: { text: string; id: string; postMortem?: string }) => {
     const isExpanded = !!expandedKeys[id];
 
     return (
       <div className={styles.roleExplanationContainer}>
         {isExpanded && (
-          <p className={styles.roleExplanationText}>
-            {text}
-          </p>
+          <>
+            <p className={styles.roleExplanationText}>
+              {text}
+            </p>
+            {postMortem && (
+              <div className={styles.postMortemBlock} style={{ marginBottom: "8px" }}>
+                <strong style={{ color: "var(--color-rare)" }}>Post-Mortem Retrospective:</strong> {postMortem}
+              </div>
+            )}
+          </>
         )}
         <button 
           onClick={() => toggleKey(id)} 
@@ -77,10 +84,23 @@ export default function SummaryTabs({ metaData, itemSlugs }: SummaryTabsProps) {
     <div className={styles.tabContainer}>
       {/* Truth Score Banner */}
       {metaData.truthScore && (
-        <div className={styles.truthScoreBanner}>
-          <span className={styles.truthScoreTitle}>Empirical Truth Score</span>
+        <div className={`${styles.truthScoreBanner} ${metaData.truthScore.forecastStatus === "SPECULATIVE_ESTIMATE" ? styles.speculativeBanner : ""}`}>
+          <span className={styles.truthScoreTitle}>
+            {metaData.truthScore.forecastStatus === "SPECULATIVE_ESTIMATE" 
+              ? "⚠️ Speculative Estimate" 
+              : metaData.truthScore.forecastStatus === "SYSTEM_FORECAST" 
+                ? "🛡️ Verified System Forecast" 
+                : "Empirical Truth Score"
+            }
+          </span>
           <span className={styles.truthScoreValue}>
-            {metaData.truthScore.accuracy}% <span className={styles.truthScoreDetails}>({metaData.truthScore.correct}/{metaData.truthScore.total} predictions matched reality)</span>
+            {metaData.truthScore.accuracy}%{" "}
+            <span className={styles.truthScoreDetails}>
+              {metaData.truthScore.forecastStatus
+                ? `(Historical CV: ${metaData.truthScore.historicalAccuracy}%. ${metaData.truthScore.correct}/${metaData.truthScore.total} predictions correct)`
+                : `(${metaData.truthScore.correct}/${metaData.truthScore.total} predictions matched reality)`
+              }
+            </span>
           </span>
         </div>
       )}
@@ -160,6 +180,11 @@ export default function SummaryTabs({ metaData, itemSlugs }: SummaryTabsProps) {
                           )}
                         </div>
                         <p className={styles.entityDescription}>{winner.synergyExplanation}</p>
+                        {winner.postMortem && (
+                          <div className={styles.postMortemBlock}>
+                            <strong style={{ color: "var(--color-rare)" }}>Post-Mortem Retrospective:</strong> {winner.postMortem}
+                          </div>
+                        )}
                     </div>
                   </div>
                 ))}
@@ -193,6 +218,11 @@ export default function SummaryTabs({ metaData, itemSlugs }: SummaryTabsProps) {
                           </h4>
                         </div>
                         <p className={styles.entityDescription}>{loser.synergyExplanation}</p>
+                        {loser.postMortem && (
+                          <div className={styles.postMortemBlock}>
+                            <strong style={{ color: "var(--color-rare)" }}>Post-Mortem Retrospective:</strong> {loser.postMortem}
+                          </div>
+                        )}
                     </div>
                   </div>
                 ))}
@@ -238,7 +268,7 @@ export default function SummaryTabs({ metaData, itemSlugs }: SummaryTabsProps) {
                                   </span>
                                 )}
                               </div>
-                              <RenderExplanation text={winner.explanation} id={key} />
+                              <RenderExplanation text={winner.explanation} id={key} postMortem={winner.postMortem} />
                             </div>
                           );
                         })}
@@ -260,7 +290,7 @@ export default function SummaryTabs({ metaData, itemSlugs }: SummaryTabsProps) {
                               <Link href={`/hero/${loser.hero.replace(/[^a-z0-9]/gi, '_').toLowerCase()}`} style={{ textDecoration: 'none' }}>
                                  <h5 className={styles.roleHeroName}>{loser.hero}</h5>
                               </Link>
-                              <RenderExplanation text={loser.explanation} id={key} />
+                              <RenderExplanation text={loser.explanation} id={key} postMortem={loser.postMortem} />
                             </div>
                           );
                         })}

@@ -198,10 +198,9 @@ async function main() {
             const { confidence, version } = calculateConfidence(item);
 
             if (version && confidence > 40) {
-                const patchDir = path.join(OUTPUT_DIR, version);
-                const dataJsonPath = path.join(patchDir, "data.json");
+                const classifiedPath = path.resolve("research-output", "classified-patches", `${version}.json`);
 
-                if (await fileExists(dataJsonPath)) {
+                if (await fileExists(classifiedPath)) {
                     // Update currentEndDate even if skipping
                     if (!currentEndDate || item.date < currentEndDate) {
                         currentEndDate = item.date - 1;

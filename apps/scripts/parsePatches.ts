@@ -151,7 +151,16 @@ async function parsePatch(version: string, mapping: Mapping): Promise<Structured
                 timestamp = rawMeta.discoveryDate;
             }
         } catch (e) {
-            // metadata.json is optional
+            // Fall back to reading from existing classified patch JSON to preserve timestamp
+            try {
+                const classifiedPath = path.resolve("research-output", "classified-patches", `${version}.json`);
+                const existing = JSON.parse(await readFile(classifiedPath, "utf8"));
+                if (existing && existing.timestamp) {
+                    timestamp = existing.timestamp;
+                }
+            } catch (err) {
+                // metadata.json is optional
+            }
         }
 
         const changes: StructuredChange[] = [];
