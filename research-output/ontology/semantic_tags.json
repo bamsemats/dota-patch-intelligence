@@ -1,0 +1,260 @@
+[
+  {
+    "tag": "SPELL_IMMUNITY_INTERACTION",
+    "matchPatterns": [
+      "now pierces spell immunity",
+      "no longer pierces spell immunity",
+      "pierces magic immunity",
+      "pierces spell immunity"
+    ],
+    "impactAreas": [
+      "teamfight",
+      "late_game",
+      "carry_matchups"
+    ],
+    "defaultWeight": 9
+  },
+  {
+    "tag": "TARGETING_RULE_CHANGE",
+    "matchPatterns": [
+      "can now target",
+      "no longer targets",
+      "now affects",
+      "now only targets"
+    ],
+    "impactAreas": [
+      "laning",
+      "teamfight"
+    ],
+    "defaultWeight": 6
+  },
+  {
+    "tag": "ROSHAN_INTERACTION",
+    "matchPatterns": [
+      "now affects Roshan",
+      "damage increased against Roshan",
+      "no longer affects Roshan"
+    ],
+    "impactAreas": [
+      "objectives",
+      "late_game"
+    ],
+    "defaultWeight": 7
+  },
+  {
+    "tag": "VISION_INTERACTION",
+    "matchPatterns": [
+      "now grants vision",
+      "vision radius increased",
+      "reveals invisible",
+      "grants night vision",
+      "provides vision"
+    ],
+    "impactAreas": [
+      "ganking",
+      "map_control"
+    ],
+    "defaultWeight": 5
+  },
+  {
+    "tag": "ILLUSION_INTERACTION",
+    "matchPatterns": [
+      "illusions now",
+      "outgoing damage increased for illusions",
+      "now applies to illusions"
+    ],
+    "impactAreas": [
+      "farming",
+      "pushing"
+    ],
+    "defaultWeight": 7
+  },
+  {
+    "tag": "DISPEL_INTERACTION",
+    "matchPatterns": [
+      "can be dispelled",
+      "no longer dispellable",
+      "applies a basic dispel",
+      "applies a strong dispel",
+      "removes buffs"
+    ],
+    "impactAreas": [
+      "survivability",
+      "debuff_management"
+    ],
+    "defaultWeight": 8
+  },
+  {
+    "tag": "LINKEN_INTERACTION",
+    "matchPatterns": [
+      "now blocked by Linken's Sphere",
+      "now pops Linken's",
+      "no longer blocked by Linken's"
+    ],
+    "impactAreas": [
+      "ganking",
+      "single_target_impact"
+    ],
+    "defaultWeight": 6
+  },
+  {
+    "tag": "COOLDOWN_RESET_INTERACTION",
+    "matchPatterns": [
+      "cooldown is reset by",
+      "no longer reset by"
+    ],
+    "impactAreas": [
+      "spell_frequency",
+      "power_spikes"
+    ],
+    "defaultWeight": 8
+  },
+  {
+    "tag": "SUMMON_INTERACTION",
+    "matchPatterns": [
+      "summons now",
+      "damage to summons increased",
+      "creep damage"
+    ],
+    "impactAreas": [
+      "pushing",
+      "farming"
+    ],
+    "defaultWeight": 6
+  },
+  {
+    "tag": "AURA_INTERACTION",
+    "matchPatterns": [
+      "now provides an aura",
+      "aura radius increased",
+      "aura bonus"
+    ],
+    "impactAreas": [
+      "teamfight",
+      "deathball"
+    ],
+    "defaultWeight": 7
+  },
+  {
+    "tag": "DAMAGE_TYPE_CHANGE",
+    "matchPatterns": [
+      "damage type changed to",
+      "now deals pure damage",
+      "now deals magical damage"
+    ],
+    "impactAreas": [
+      "scaling",
+      "counter_play"
+    ],
+    "defaultWeight": 8
+  },
+  {
+    "tag": "CAST_WHILE_DISABLED",
+    "matchPatterns": [
+      "can be cast while stunned",
+      "can be cast while disabled",
+      "castable while disabled"
+    ],
+    "impactAreas": [
+      "survivability",
+      "initiation_recovery"
+    ],
+    "defaultWeight": 9
+  },
+  {
+    "tag": "FEATURE_INTRODUCTION",
+    "matchPatterns": [
+      "introduces two new mechanics",
+      "innates are abilities that are present",
+      "the innate for each hero can be viewed",
+      "there are two types of innates",
+      "some innates grant a hero a unique effect",
+      "some innates change a hero ability",
+      "facets are a hero customization choice",
+      "hero facets can be viewed",
+      "facets are set for all players",
+      "facets can have a variety of effects",
+      "can choose between",
+      "Strategy time is extended",
+      "mana bars are always visible",
+      "if courier has no items",
+      "spell's cast range is now always listed",
+      "holding alt displays",
+      "experience gain from abilities and wisdom rune",
+      "Added a \"levels with:\" parameter",
+      "ability tooltips now show icons next to ability values",
+      "updated spectator view controls",
+      "using radiant/dire fog will now correctly hide",
+      "in demo mode -createhero command",
+      "added the ability to type in a hero name",
+      "innates have the following rules",
+      "innate abilities that do not appear",
+      "innate abilities that can be leveled with skill points",
+      "all other innate abilities",
+      "facets have the following rules",
+      "you can choose any hero facet",
+      "facets that grant new abilities are disabled",
+      "facets that replace abilities will work",
+      "if a facet has no effect on your hero"
+    ],
+    "impactAreas": [
+      "game_mechanics"
+    ],
+    "defaultWeight": 5
+  },
+  {
+    "tag": "OBJECTIVES_DEFENSE",
+    "matchPatterns": [
+      "Glyph of Fortification",
+      "creeps lose banner",
+      "damage to roshan's banner"
+    ],
+    "impactAreas": [
+      "pushing"
+    ],
+    "defaultWeight": 3
+  },
+  {
+    "tag": "DAMAGE_INTERACTION",
+    "matchPatterns": [
+      "AoE bonuses",
+      "status resistance sometimes eliminating soul burn",
+      "status resistance sometimes eliminating soul rend"
+    ],
+    "impactAreas": [
+      "teamfight",
+      "farming",
+      "laning",
+      "late_game"
+    ],
+    "defaultWeight": 5
+  },
+  {
+    "tag": "EXPERIENCE_GAIN",
+    "matchPatterns": [
+      "hero denies now grant experience"
+    ],
+    "impactAreas": [
+      "laning",
+      "ganking"
+    ],
+    "defaultWeight": 5
+  },
+  {
+    "tag": "MAGIC_STICK_INTERACTION",
+    "matchPatterns": [
+      {
+        "pattern": "no longer procs magic stick",
+        "classificationType": "Buff"
+      },
+      {
+        "pattern": "no longer procs magic stick or its upgrades",
+        "classificationType": "Buff"
+      }
+    ],
+    "impactAreas": [
+      "laning"
+    ],
+    "defaultWeight": 5
+  }
+]
