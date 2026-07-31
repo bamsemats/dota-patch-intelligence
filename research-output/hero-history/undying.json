@@ -2792,6 +2792,92 @@
         }
       },
       "temporalAssessment": null
+    },
+    {
+      "version": "7.41e",
+      "date": "2026-07-30T23:58:15.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "rawNote": "Base Movement Speed decreased from 300 to 295",
+          "originalSource": "Base Movement Speed decreased from 300 to 295",
+          "indentLevel": 1,
+          "metric": "Base Movement Speed",
+          "changeType": "DECREASED",
+          "oldValue": "300",
+          "newValue": "295",
+          "metadata": {
+            "entityId": 85
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 8,
+              "Ancient": 9,
+              "Divine": 9
+            },
+            "reasoning": "Decreased a positive metric (base movement speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Flesh Golem",
+          "rawNote": "Bonus Movement Speed increased from 20 to 25",
+          "originalSource": "Bonus Movement Speed increased from 20 to 25",
+          "indentLevel": 1,
+          "metric": "Bonus Movement Speed",
+          "changeType": "INCREASED",
+          "oldValue": "20",
+          "newValue": "25",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 5447
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 8,
+              "Ancient": 9,
+              "Divine": 9
+            },
+            "reasoning": "Increased a positive metric (bonus movement speed)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0.02,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0.02
+      },
+      "totalVector": {
+        "farming": 2.5,
+        "mobility": 0,
+        "survivability": 2.65,
+        "teamfight": -2.26,
+        "laning": 5.16,
+        "siege": 0,
+        "utility": 0.74
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

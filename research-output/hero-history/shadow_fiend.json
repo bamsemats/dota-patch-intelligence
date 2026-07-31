@@ -3516,6 +3516,119 @@
         }
       },
       "temporalAssessment": null
+    },
+    {
+      "version": "7.41e",
+      "date": "2026-07-30T23:58:15.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Shadow Fiend",
+          "rawNote": "Base Intelligence decreased from 18 to 16",
+          "originalSource": "Base Intelligence decreased from 18 to 16",
+          "indentLevel": 1,
+          "metric": "Base Intelligence",
+          "changeType": "DECREASED",
+          "oldValue": "18",
+          "newValue": "16",
+          "metadata": {
+            "entityId": 11
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (base intelligence)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Shadow Fiend",
+          "subEntityName": "Shadowraze",
+          "rawNote": "Stack duration decreased from 7s to 6s",
+          "originalSource": "Stack duration decreased from 7s to 6s",
+          "indentLevel": 1,
+          "metric": "Stack duration",
+          "changeType": "DECREASED",
+          "oldValue": "7s",
+          "newValue": "6s",
+          "metadata": {
+            "entityId": 11,
+            "subEntityId": 5059
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a positive metric (stack duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Shadow Fiend",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Shadowraze Applies Attack Damage no longer applies attack modifiers or procs",
+          "originalSource": "Level 25 Talent Shadowraze Applies Attack Damage no longer applies attack modifiers or procs",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 11
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -0.16,
+        "teamfight": 0.02,
+        "laning": -0.16,
+        "siege": 0,
+        "utility": 0.02
+      },
+      "totalVector": {
+        "farming": -0.5,
+        "mobility": 0,
+        "survivability": 1.4,
+        "teamfight": -1.46,
+        "laning": 0.9,
+        "siege": 0,
+        "utility": 1.04
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

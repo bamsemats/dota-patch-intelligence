@@ -6737,6 +6737,91 @@
         }
       },
       "temporalAssessment": null
+    },
+    {
+      "version": "7.41e",
+      "date": "2026-07-30T23:58:15.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Invoker",
+          "subEntityName": "Ghost Walk",
+          "rawNote": "Duration decreased from 60s to 50s",
+          "originalSource": "Duration decreased from 60s to 50s",
+          "indentLevel": 1,
+          "metric": "Duration",
+          "changeType": "DECREASED",
+          "oldValue": "60s",
+          "newValue": "50s",
+          "metadata": {
+            "entityId": 74,
+            "subEntityId": 5381
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a positive metric (duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Invoker",
+          "subEntityName": "Ghost Walk",
+          "rawNote": "Aghanim's Shard no longer increases radius",
+          "originalSource": "Aghanim's Shard no longer increases radius",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 74,
+            "subEntityId": 5381
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0.18,
+        "teamfight": -3.48,
+        "laning": 0.18,
+        "siege": 0,
+        "utility": -6.98
+      },
+      "totalVector": {
+        "farming": 7,
+        "mobility": 0,
+        "survivability": 2.13,
+        "teamfight": 27.31,
+        "laning": 9.13,
+        "siege": 0,
+        "utility": -7.19
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

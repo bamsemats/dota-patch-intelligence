@@ -3631,6 +3631,122 @@
         }
       },
       "temporalAssessment": null
+    },
+    {
+      "version": "7.41e",
+      "date": "2026-07-30T23:58:15.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Zeus",
+          "subEntityName": "Thundergod's Wrath",
+          "rawNote": "Damage decreased from 300/475/650 to 275/425/575",
+          "originalSource": "Damage decreased from 300/475/650 to 275/425/575",
+          "indentLevel": 1,
+          "metric": "Damage",
+          "changeType": "DECREASED",
+          "oldValue": "300/475/650",
+          "newValue": "275/425/575",
+          "metadata": {
+            "entityId": 22,
+            "subEntityId": 5113
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Zeus",
+          "subEntityName": "Lightning Hands",
+          "rawNote": "Toggling on/off no longer breaks invisibility and can be done while silenced",
+          "originalSource": "Toggling on/off no longer breaks invisibility and can be done while silenced",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 22,
+            "subEntityId": 1110
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Zeus",
+          "subEntityName": "Lightning Hands",
+          "rawNote": "Bonus Attack Speed decreased from 30 to 20",
+          "originalSource": "Bonus Attack Speed decreased from 30 to 20",
+          "indentLevel": 1,
+          "metric": "Bonus Attack Speed",
+          "changeType": "DECREASED",
+          "oldValue": "30",
+          "newValue": "20",
+          "metadata": {
+            "entityId": 22,
+            "subEntityId": 1110
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6.5,
+              "Archon": 6.5,
+              "Legend": 6.5,
+              "Ancient": 6.5,
+              "Divine": 6.5
+            },
+            "reasoning": "Decreased a positive metric (bonus attack speed)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": -1.5,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -1.51,
+        "laning": -1.5,
+        "siege": 0,
+        "utility": -0.01
+      },
+      "totalVector": {
+        "farming": 6.5,
+        "mobility": 0,
+        "survivability": 0.29,
+        "teamfight": 4.19,
+        "laning": 6.8,
+        "siege": 0,
+        "utility": -1.33
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

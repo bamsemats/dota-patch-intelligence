@@ -3072,6 +3072,184 @@
         }
       },
       "temporalAssessment": null
+    },
+    {
+      "version": "7.41e",
+      "date": "2026-07-30T23:58:15.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "subEntityName": "Ichor of Nyctasha",
+          "rawNote": "Max Terrors per hero increased from 5 to 6",
+          "originalSource": "Max Terrors per hero increased from 5 to 6",
+          "indentLevel": 1,
+          "metric": "Max Terrors per hero",
+          "changeType": "INCREASED",
+          "oldValue": "5",
+          "newValue": "6",
+          "metadata": {
+            "entityId": 3,
+            "subEntityId": 1202
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "subEntityName": "Ichor of Nyctasha",
+          "rawNote": "Status Resistance per Terror decreased from 5% to 4%",
+          "originalSource": "Status Resistance per Terror decreased from 5% to 4%",
+          "indentLevel": 1,
+          "metric": "Status Resistance per Terror",
+          "changeType": "DECREASED",
+          "oldValue": "5%",
+          "newValue": "4%",
+          "metadata": {
+            "entityId": 3,
+            "subEntityId": 1202
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "subEntityName": "Nightmare",
+          "rawNote": "Duration decreased from 3.5/4.5/5.5/6.5s to 3/4/5/6s",
+          "originalSource": "Duration decreased from 3.5/4.5/5.5/6.5s to 3/4/5/6s",
+          "indentLevel": 1,
+          "metric": "Duration",
+          "changeType": "DECREASED",
+          "oldValue": "3.5/4.5/5.5/6.5s",
+          "newValue": "3/4/5/6s",
+          "metadata": {
+            "entityId": 3,
+            "subEntityId": 5014
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a positive metric (duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "subEntityName": "Nightmare",
+          "rawNote": "Now completely disables the target's sight, instead of overriding the vision range value",
+          "originalSource": "Now completely disables the target's sight, instead of overriding the vision range value",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 3,
+            "subEntityId": 5014
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Bane",
+          "subEntityName": "Fiend's Grip",
+          "rawNote": "Aghanim's Scepter cooldown reduction decreased from 45s to 40s",
+          "originalSource": "Aghanim's Scepter cooldown reduction decreased from 45s to 40s",
+          "indentLevel": 1,
+          "metric": "Aghanim's Scepter cooldown reduction",
+          "changeType": "DECREASED",
+          "oldValue": "45s",
+          "newValue": "40s",
+          "metadata": {
+            "entityId": 3,
+            "subEntityId": 5013
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a negative metric (aghanim's scepter cooldown reduction)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0.03,
+        "teamfight": -3.55,
+        "laning": 0.03,
+        "siege": 0,
+        "utility": -7.05
+      },
+      "totalVector": {
+        "farming": 2,
+        "mobility": 0,
+        "survivability": 5.12,
+        "teamfight": -10.28,
+        "laning": 7.12,
+        "siege": 0,
+        "utility": -15.79
+      },
+      "winrates": {},
+      "temporalAssessment": "Net Gain"
     }
   ]
 }

@@ -3546,6 +3546,91 @@
         }
       },
       "temporalAssessment": "Net Gain"
+    },
+    {
+      "version": "7.41e",
+      "date": "2026-07-30T23:58:15.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Morphling",
+          "subEntityName": "Morph",
+          "rawNote": "Cooldown decreased from 140/100/60s to 125/90/55s",
+          "originalSource": "Cooldown decreased from 140/100/60s to 125/90/55s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "140/100/60s",
+          "newValue": "125/90/55s",
+          "metadata": {
+            "entityId": 10,
+            "subEntityId": 5057
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Morphling",
+          "subEntityName": "Morph",
+          "rawNote": "Aghanim's Scepter illusion no longer has illusion vision penalty",
+          "originalSource": "Aghanim's Scepter illusion no longer has illusion vision penalty",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 10,
+            "subEntityId": 5057
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -0.18,
+        "teamfight": 3.52,
+        "laning": -0.18,
+        "siege": 0,
+        "utility": 0.02
+      },
+      "totalVector": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": 2.43,
+        "teamfight": 10.71,
+        "laning": 3.43,
+        "siege": 0,
+        "utility": 2.21
+      },
+      "winrates": {},
+      "temporalAssessment": "Net Gain"
     }
   ]
 }

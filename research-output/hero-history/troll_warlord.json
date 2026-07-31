@@ -2725,6 +2725,146 @@
         }
       },
       "temporalAssessment": null
+    },
+    {
+      "version": "7.41e",
+      "date": "2026-07-30T23:58:15.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Troll Warlord",
+          "rawNote": "Base Agility increased from 23 to 24",
+          "originalSource": "Base Agility increased from 23 to 24",
+          "indentLevel": 1,
+          "metric": "Base Agility",
+          "changeType": "INCREASED",
+          "oldValue": "23",
+          "newValue": "24",
+          "metadata": {
+            "entityId": 95
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base agility)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Troll Warlord",
+          "rawNote": "Damage on level 1 increased from 50-58 to 51-59",
+          "originalSource": "Damage on level 1 increased from 50-58 to 51-59",
+          "indentLevel": 2,
+          "metric": "Damage on level 1",
+          "changeType": "INCREASED",
+          "oldValue": "50-58",
+          "newValue": "51-59",
+          "metadata": {
+            "entityId": 95
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (damage on level 1)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Troll Warlord",
+          "subEntityName": "Battle Stance",
+          "rawNote": "Toggling between stances no longer breaks invisibility",
+          "originalSource": "Toggling between stances no longer breaks invisibility",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 95,
+            "subEntityId": 1478
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Troll Warlord",
+          "subEntityName": "Battle Trance",
+          "rawNote": "Now also grants 35% Slow Resistance",
+          "originalSource": "Now also grants 35% Slow Resistance",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 95,
+            "subEntityId": 5512
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0.04,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0.04
+      },
+      "totalVector": {
+        "farming": 2.5,
+        "mobility": 27,
+        "survivability": 2.08,
+        "teamfight": 1.76,
+        "laning": 4.58,
+        "siege": 0,
+        "utility": 1.25
+      },
+      "winrates": {},
+      "temporalAssessment": "Net Gain"
     }
   ]
 }

@@ -4889,6 +4889,93 @@
         }
       },
       "temporalAssessment": null
+    },
+    {
+      "version": "7.41e",
+      "date": "2026-07-30T23:58:15.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Spectre",
+          "subEntityName": "Haunt",
+          "rawNote": "Illusion Damage rescaled from 30/50/70% to 35/50/65%",
+          "originalSource": "Illusion Damage rescaled from 30/50/70% to 35/50/65%",
+          "indentLevel": 1,
+          "metric": "Illusion Damage",
+          "changeType": "RESCALE",
+          "oldValue": "30/50/70%",
+          "newValue": "35/50/65%",
+          "metadata": {
+            "entityId": 67,
+            "subEntityId": 5337
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Spectre",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent All Spectre Illusion Damage decreased from +15% to +12%",
+          "originalSource": "Level 25 Talent All Spectre Illusion Damage decreased from +15% to +12%",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent All Spectre Illusion Damage",
+          "changeType": "DECREASED",
+          "oldValue": "+15%",
+          "newValue": "+12%",
+          "metadata": {
+            "entityId": 67
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (level 25 talent all spectre illusion damage)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -0.18,
+        "teamfight": -0.01,
+        "laning": -0.18,
+        "siege": 0,
+        "utility": -0.01
+      },
+      "totalVector": {
+        "farming": 2,
+        "mobility": 0,
+        "survivability": 2.56,
+        "teamfight": 13.19,
+        "laning": 4.56,
+        "siege": 0,
+        "utility": 1.19
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

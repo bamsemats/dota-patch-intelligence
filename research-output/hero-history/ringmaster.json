@@ -2391,6 +2391,63 @@
         }
       },
       "temporalAssessment": "Net Gain"
+    },
+    {
+      "version": "7.41e",
+      "date": "2026-07-30T23:58:15.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Ringmaster",
+          "subEntityName": "Impalement Arts",
+          "rawNote": "Damage per Second (Creeps) rescaled from 85/90/95/100 to 60/75/90/105",
+          "originalSource": "Damage per Second (Creeps) rescaled from 85/90/95/100 to 60/75/90/105",
+          "indentLevel": 1,
+          "metric": "Damage per Second (Creeps)",
+          "changeType": "RESCALE",
+          "oldValue": "85/90/95/100",
+          "newValue": "60/75/90/105",
+          "metadata": {
+            "entityId": 131,
+            "subEntityId": 386
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0.03,
+        "teamfight": 0.02,
+        "laning": 0.03,
+        "siege": 0,
+        "utility": 0.02
+      },
+      "totalVector": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": 5.66,
+        "teamfight": -1.38,
+        "laning": 6.66,
+        "siege": 0,
+        "utility": -2.38
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }
