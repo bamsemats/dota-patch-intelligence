@@ -4011,6 +4011,123 @@
         }
       },
       "temporalAssessment": null
+    },
+    {
+      "version": "7.41e",
+      "date": "2026-07-30T23:58:15.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Treant Protector",
+          "rawNote": "Base Attack Speed decreased from 100 to 90",
+          "originalSource": "Base Attack Speed decreased from 100 to 90",
+          "indentLevel": 1,
+          "metric": "Base Attack Speed",
+          "changeType": "DECREASED",
+          "oldValue": "100",
+          "newValue": "90",
+          "metadata": {
+            "entityId": 83
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6.5,
+              "Archon": 6.5,
+              "Legend": 6.5,
+              "Ancient": 6.5,
+              "Divine": 6.5
+            },
+            "reasoning": "Decreased a positive metric (base attack speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Treant Protector",
+          "subEntityName": "Leech Seed",
+          "rawNote": "Root duration decreased from 0.9/1.1/1.3/1.5s to 0.75/1.0/1.25/1.5s",
+          "originalSource": "Root duration decreased from 0.9/1.1/1.3/1.5s to 0.75/1.0/1.25/1.5s",
+          "indentLevel": 1,
+          "metric": "Root duration",
+          "changeType": "DECREASED",
+          "oldValue": "0.9/1.1/1.3/1.5s",
+          "newValue": "0.75/1.0/1.25/1.5s",
+          "metadata": {
+            "entityId": 83,
+            "subEntityId": 5435
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a positive metric (root duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Treant Protector",
+          "subEntityName": "Living Armor",
+          "rawNote": "Mana Cost increased from 65/70/75/80 to 80",
+          "originalSource": "Mana Cost increased from 65/70/75/80 to 80",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "INCREASED",
+          "oldValue": "65/70/75/80",
+          "newValue": "80",
+          "metadata": {
+            "entityId": 83,
+            "subEntityId": 5436
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Increased a negative metric (mana cost)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": -1,
+        "mobility": 0,
+        "survivability": -0.18,
+        "teamfight": 0.01,
+        "laning": -1.18,
+        "siege": 0,
+        "utility": -0.99
+      },
+      "totalVector": {
+        "farming": -2,
+        "mobility": 0,
+        "survivability": 1.58,
+        "teamfight": 3.33,
+        "laning": -0.42,
+        "siege": 0,
+        "utility": 7.84
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

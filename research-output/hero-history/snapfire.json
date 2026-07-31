@@ -3746,6 +3746,245 @@
         }
       },
       "temporalAssessment": null
+    },
+    {
+      "version": "7.41e",
+      "date": "2026-07-30T23:58:15.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Snapfire",
+          "subEntityName": "Scatterblast",
+          "rawNote": "Initial Blast Width is no longer increased by bonuses to AoE",
+          "originalSource": "Initial Blast Width is no longer increased by bonuses to AoE",
+          "indentLevel": 1,
+          "metric": "Initial Blast Width is no longer",
+          "changeType": "INCREASED",
+          "oldValue": "by bonuses",
+          "newValue": "AoE",
+          "metadata": {
+            "entityId": 128,
+            "subEntityId": 6480
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Snapfire",
+          "subEntityName": "Scatterblast",
+          "rawNote": "Point Blank Damage Bonus decreased from 30% to 25%",
+          "originalSource": "Point Blank Damage Bonus decreased from 30% to 25%",
+          "indentLevel": 1,
+          "metric": "Point Blank Damage Bonus",
+          "changeType": "DECREASED",
+          "oldValue": "30%",
+          "newValue": "25%",
+          "metadata": {
+            "entityId": 128,
+            "subEntityId": 6480
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (point blank damage bonus)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Snapfire",
+          "subEntityName": "Firesnap Cookie",
+          "rawNote": "Impact Damage decreased from 75/150/225/300 to 60/130/200/270",
+          "originalSource": "Impact Damage decreased from 75/150/225/300 to 60/130/200/270",
+          "indentLevel": 1,
+          "metric": "Impact Damage",
+          "changeType": "DECREASED",
+          "oldValue": "75/150/225/300",
+          "newValue": "60/130/200/270",
+          "metadata": {
+            "entityId": 128,
+            "subEntityId": 6483
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (impact damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Snapfire",
+          "subEntityName": "Mortimer Kisses",
+          "rawNote": "Damage per glob decreased from 180/270/360 to 170/250/330",
+          "originalSource": "Damage per glob decreased from 180/270/360 to 170/250/330",
+          "indentLevel": 1,
+          "metric": "Damage per glob",
+          "changeType": "DECREASED",
+          "oldValue": "180/270/360",
+          "newValue": "170/250/330",
+          "metadata": {
+            "entityId": 128,
+            "subEntityId": 6482
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (damage per glob)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Snapfire",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent Mortimer Kisses Burn DPS decreased from +35 to +30",
+          "originalSource": "Level 10 Talent Mortimer Kisses Burn DPS decreased from +35 to +30",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent Mortimer Kisses Burn DPS",
+          "changeType": "DECREASED",
+          "oldValue": "+35",
+          "newValue": "+30",
+          "metadata": {
+            "entityId": 128
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Snapfire",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent -3s Firesnap Cookie Cooldown replaced with +125 Cast Range",
+          "originalSource": "Level 15 Talent -3s Firesnap Cookie Cooldown replaced with +125 Cast Range",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent -3s Firesnap Cookie Cooldown",
+          "changeType": "REWORK",
+          "newValue": "+125 Cast Range",
+          "metadata": {
+            "entityId": 128
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Snapfire",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Mortimer Kisses Launched decreased from +8 to +6",
+          "originalSource": "Level 25 Talent Mortimer Kisses Launched decreased from +8 to +6",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Mortimer Kisses Launched",
+          "changeType": "DECREASED",
+          "oldValue": "+8",
+          "newValue": "+6",
+          "metadata": {
+            "entityId": 128
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0.02,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0.02
+      },
+      "totalVector": {
+        "farming": 0.5,
+        "mobility": 0,
+        "survivability": 0.38,
+        "teamfight": 8.12,
+        "laning": 0.89,
+        "siege": 0,
+        "utility": -4.39
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

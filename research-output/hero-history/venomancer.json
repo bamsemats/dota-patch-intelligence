@@ -4108,6 +4108,63 @@
         }
       },
       "temporalAssessment": null
+    },
+    {
+      "version": "7.41e",
+      "date": "2026-07-30T23:58:15.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Venomancer",
+          "subEntityName": "Snakebite",
+          "rawNote": "Initial Damage increased from 40/60/80/100 to 40/70/100/130",
+          "originalSource": "Initial Damage increased from 40/60/80/100 to 40/70/100/130",
+          "indentLevel": 1,
+          "metric": "Initial Damage",
+          "changeType": "INCREASED",
+          "oldValue": "40/60/80/100",
+          "newValue": "40/70/100/130",
+          "metadata": {
+            "entityId": 40,
+            "subEntityId": 1749
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (initial damage)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -0.16,
+        "teamfight": 0.02,
+        "laning": -0.16,
+        "siege": 0,
+        "utility": 0.02
+      },
+      "totalVector": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 2.09,
+        "teamfight": -0.43,
+        "laning": 2.09,
+        "siege": 0,
+        "utility": -7.43
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

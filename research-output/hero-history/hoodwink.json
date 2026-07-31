@@ -3590,6 +3590,125 @@
         }
       },
       "temporalAssessment": null
+    },
+    {
+      "version": "7.41e",
+      "date": "2026-07-30T23:58:15.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Hoodwink",
+          "subEntityName": "Mistwoods Wayfarer",
+          "rawNote": "Redirect Chance decreased from 14% + 1% per level to 14.25% + 0.75% per level",
+          "originalSource": "Redirect Chance decreased from 14% + 1% per level to 14.25% + 0.75% per level",
+          "indentLevel": 1,
+          "metric": "Redirect Chance",
+          "changeType": "DECREASED",
+          "oldValue": "14% + 1% per level",
+          "newValue": "14.25% + 0.75% per level",
+          "metadata": {
+            "entityId": 123,
+            "subEntityId": 1423
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Hoodwink",
+          "subEntityName": "Sharpshooter",
+          "rawNote": "Mana Cost increased from 100/150/200 to 150/200/250",
+          "originalSource": "Mana Cost increased from 100/150/200 to 150/200/250",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "INCREASED",
+          "oldValue": "100/150/200",
+          "newValue": "150/200/250",
+          "metadata": {
+            "entityId": 123,
+            "subEntityId": 8106
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Increased a negative metric (mana cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Hoodwink",
+          "subEntityName": "Hunter's Boomerang",
+          "rawNote": "Cooldown increased from 18s to 20s",
+          "originalSource": "Cooldown increased from 18s to 20s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "INCREASED",
+          "oldValue": "18s",
+          "newValue": "20s",
+          "metadata": {
+            "entityId": 123,
+            "subEntityId": 1422
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Increased a negative metric (cooldown)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": -1,
+        "mobility": 0,
+        "survivability": 0.24,
+        "teamfight": -3.48,
+        "laning": -0.76,
+        "siege": 0,
+        "utility": -0.98
+      },
+      "totalVector": {
+        "farming": 2.5,
+        "mobility": 0,
+        "survivability": 0.86,
+        "teamfight": -8.76,
+        "laning": 3.35,
+        "siege": 0,
+        "utility": 0.22
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

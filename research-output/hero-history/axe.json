@@ -3624,6 +3624,92 @@
         }
       },
       "temporalAssessment": null
+    },
+    {
+      "version": "7.41e",
+      "date": "2026-07-30T23:58:15.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Axe",
+          "rawNote": "Base Agility decreased from 20 to 18",
+          "originalSource": "Base Agility decreased from 20 to 18",
+          "indentLevel": 1,
+          "metric": "Base Agility",
+          "changeType": "DECREASED",
+          "oldValue": "20",
+          "newValue": "18",
+          "metadata": {
+            "entityId": 2
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (base agility)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Axe",
+          "subEntityName": "Battle Hunger",
+          "rawNote": "Damage per second decreased from 12/18/24/30 to 12/16/20/24",
+          "originalSource": "Damage per second decreased from 12/18/24/30 to 12/16/20/24",
+          "indentLevel": 1,
+          "metric": "Damage per second",
+          "changeType": "DECREASED",
+          "oldValue": "12/18/24/30",
+          "newValue": "12/16/20/24",
+          "metadata": {
+            "entityId": 2,
+            "subEntityId": 5008
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (damage per second)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -0.03,
+        "teamfight": 0.04,
+        "laning": -0.03,
+        "siege": 0,
+        "utility": 0.04
+      },
+      "totalVector": {
+        "farming": 2,
+        "mobility": 0,
+        "survivability": -1.16,
+        "teamfight": 3.78,
+        "laning": 0.84,
+        "siege": 0,
+        "utility": -4.22
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }
