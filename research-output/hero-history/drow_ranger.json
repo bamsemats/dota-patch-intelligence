@@ -3241,6 +3241,125 @@
         }
       },
       "temporalAssessment": null
+    },
+    {
+      "version": "7.41e",
+      "date": "2026-07-30T23:58:15.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Drow Ranger",
+          "subEntityName": "Multishot",
+          "rawNote": "Mana Cost increased from 50/70/90/110 to 70/85/100/115",
+          "originalSource": "Mana Cost increased from 50/70/90/110 to 70/85/100/115",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "INCREASED",
+          "oldValue": "50/70/90/110",
+          "newValue": "70/85/100/115",
+          "metadata": {
+            "entityId": 6,
+            "subEntityId": 343
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Increased a negative metric (mana cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Drow Ranger",
+          "subEntityName": "Multishot",
+          "rawNote": "Arrow Range rescaled from 1.75x Drow Ranger's Attack Range to 475 + 1x Drow Ranger's Attack Range",
+          "originalSource": "Arrow Range rescaled from 1.75x Drow Ranger's Attack Range to 475 + 1x Drow Ranger's Attack Range",
+          "indentLevel": 1,
+          "metric": "Arrow Range",
+          "changeType": "RESCALE",
+          "oldValue": "1.75x Drow Ranger's Attack Range",
+          "newValue": "475 + 1x Drow Ranger's Attack Range",
+          "metadata": {
+            "entityId": 6,
+            "subEntityId": 343
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Drow Ranger",
+          "subEntityName": "Multishot",
+          "rawNote": "Arrow Base Damage Bonus decreased from 100/120/140/160% to 80/100/120/140%",
+          "originalSource": "Arrow Base Damage Bonus decreased from 100/120/140/160% to 80/100/120/140%",
+          "indentLevel": 1,
+          "metric": "Arrow Base Damage Bonus",
+          "changeType": "DECREASED",
+          "oldValue": "100/120/140/160%",
+          "newValue": "80/100/120/140%",
+          "metadata": {
+            "entityId": 6,
+            "subEntityId": 343
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (arrow base damage bonus)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": -1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0.02,
+        "laning": -1,
+        "siege": 0,
+        "utility": -0.98
+      },
+      "totalVector": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0.49,
+        "teamfight": 3.7,
+        "laning": 0.49,
+        "siege": 0,
+        "utility": 0.2
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

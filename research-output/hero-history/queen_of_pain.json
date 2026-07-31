@@ -2757,6 +2757,92 @@
         }
       },
       "temporalAssessment": null
+    },
+    {
+      "version": "7.41e",
+      "date": "2026-07-30T23:58:15.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Queen of Pain",
+          "subEntityName": "Shadow Strike",
+          "rawNote": "Mana Cost decreased from 100/110/120/130 to 100/105/110/115",
+          "originalSource": "Mana Cost decreased from 100/110/120/130 to 100/105/110/115",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "DECREASED",
+          "oldValue": "100/110/120/130",
+          "newValue": "100/105/110/115",
+          "metadata": {
+            "entityId": 39,
+            "subEntityId": 5173
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a negative metric (mana cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Queen of Pain",
+          "subEntityName": "Sonic Wave",
+          "rawNote": "Damage from two Sonic Waves cast in quick succession now stack",
+          "originalSource": "Damage from two Sonic Waves cast in quick succession now stack",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 39,
+            "subEntityId": 5176
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "ROSHAN_INTERACTION",
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0.04,
+        "laning": 1,
+        "siege": 0,
+        "utility": 1.04
+      },
+      "totalVector": {
+        "farming": 3.5,
+        "mobility": 0,
+        "survivability": 2.82,
+        "teamfight": 12.99,
+        "laning": 6.32,
+        "siege": 0,
+        "utility": -1.99
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

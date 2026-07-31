@@ -2663,6 +2663,91 @@
         }
       },
       "temporalAssessment": "Net Gain"
+    },
+    {
+      "version": "7.41e",
+      "date": "2026-07-30T23:58:15.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Elder Titan",
+          "subEntityName": "Momentum",
+          "rawNote": "Bonus Speed to Armor increased from 5% + 0.5% per level to 7% + 0.5% per level",
+          "originalSource": "Bonus Speed to Armor increased from 5% + 0.5% per level to 7% + 0.5% per level",
+          "indentLevel": 1,
+          "metric": "Bonus Speed to Armor",
+          "changeType": "INCREASED",
+          "oldValue": "5% + 0.5% per level",
+          "newValue": "7% + 0.5% per level",
+          "metadata": {
+            "entityId": 103,
+            "subEntityId": 1393
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (bonus speed to armor)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Elder Titan",
+          "subEntityName": "Astral Spirit",
+          "rawNote": "Return Astral Spirit and Move Astral Spirit sub-abilities no longer break Elder Titan's invisibility when used",
+          "originalSource": "Return Astral Spirit and Move Astral Spirit sub-abilities no longer break Elder Titan's invisibility when used",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 103,
+            "subEntityId": 1392
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0.18,
+        "teamfight": -0.03,
+        "laning": 0.18,
+        "siege": 0,
+        "utility": -0.03
+      },
+      "totalVector": {
+        "farming": 1.5,
+        "mobility": 0,
+        "survivability": 0.17,
+        "teamfight": 4.62,
+        "laning": 1.67,
+        "siege": 0,
+        "utility": -0.38
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

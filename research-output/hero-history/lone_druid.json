@@ -4588,6 +4588,92 @@
         }
       },
       "temporalAssessment": null
+    },
+    {
+      "version": "7.41e",
+      "date": "2026-07-30T23:58:15.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent Savage Roar Cooldown Reduction decreased from 5s to 4s",
+          "originalSource": "Level 15 Talent Savage Roar Cooldown Reduction decreased from 5s to 4s",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent Savage Roar Cooldown Reduction",
+          "changeType": "DECREASED",
+          "oldValue": "5s",
+          "newValue": "4s",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a negative metric (level 15 talent savage roar cooldown reduction)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Savage Roar Radius decreased from +150 to +125",
+          "originalSource": "Level 20 Talent Savage Roar Radius decreased from +150 to +125",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Savage Roar Radius",
+          "changeType": "DECREASED",
+          "oldValue": "+150",
+          "newValue": "+125",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a positive metric (level 20 talent savage roar radius)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0.02,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0.02
+      },
+      "totalVector": {
+        "farming": 6.5,
+        "mobility": 0,
+        "survivability": 1.12,
+        "teamfight": 12.78,
+        "laning": 1.12,
+        "siege": 6.5,
+        "utility": -6.72
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

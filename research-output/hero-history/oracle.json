@@ -2822,6 +2822,92 @@
         }
       },
       "temporalAssessment": null
+    },
+    {
+      "version": "7.41e",
+      "date": "2026-07-30T23:58:15.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Oracle",
+          "subEntityName": "Fate's Edict",
+          "rawNote": "Fate's Edict that was cast on Oracle or his ally is now dispellable by enemies",
+          "originalSource": "Fate's Edict that was cast on Oracle or his ally is now dispellable by enemies",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 111,
+            "subEntityId": 5638
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "DISPEL_INTERACTION",
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Oracle",
+          "subEntityName": "False Promise",
+          "rawNote": "Cast Range increased from 700/800/900 to 800/850/900",
+          "originalSource": "Cast Range increased from 700/800/900 to 800/850/900",
+          "indentLevel": 1,
+          "metric": "Cast Range",
+          "changeType": "INCREASED",
+          "oldValue": "700/800/900",
+          "newValue": "800/850/900",
+          "metadata": {
+            "entityId": 111,
+            "subEntityId": 5640
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Increased a positive metric (cast range)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -0.18,
+        "teamfight": 0,
+        "laning": -0.18,
+        "siege": 0,
+        "utility": 3
+      },
+      "totalVector": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 2.54,
+        "teamfight": -0.26,
+        "laning": 2.54,
+        "siege": 0,
+        "utility": -4.26
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

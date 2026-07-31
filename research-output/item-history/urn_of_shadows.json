@@ -771,6 +771,68 @@
       "date": "2026-06-05T00:45:14.000Z",
       "changes": [],
       "temporalAssessment": null
+    },
+    {
+      "version": "7.41e",
+      "date": "2026-07-30T23:58:15.000Z",
+      "changes": [
+        {
+          "category": "item",
+          "entityName": "Urn of Shadows",
+          "rawNote": "Mana Regen bonus decreased from +1.25 to +1",
+          "originalSource": "Mana Regen bonus decreased from +1.25 to +1",
+          "indentLevel": 1,
+          "metric": "Mana Regen bonus",
+          "changeType": "DECREASED",
+          "oldValue": "+1.25",
+          "newValue": "+1",
+          "metadata": {
+            "entityId": 92
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (mana regen bonus)."
+          }
+        },
+        {
+          "category": "item",
+          "entityName": "Urn of Shadows",
+          "rawNote": "When in Stash, no longer grants charges from nearby hero deaths",
+          "originalSource": "When in Stash, no longer grants charges from nearby hero deaths",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 92
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        }
+      ],
+      "temporalAssessment": null
     }
   ]
 }

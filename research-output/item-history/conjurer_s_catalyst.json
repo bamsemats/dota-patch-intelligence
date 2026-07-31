@@ -404,6 +404,69 @@
       "date": "2026-06-05T00:45:14.000Z",
       "changes": [],
       "temporalAssessment": null
+    },
+    {
+      "version": "7.41e",
+      "date": "2026-07-30T23:58:15.000Z",
+      "changes": [
+        {
+          "category": "neutral",
+          "entityName": "Conjurer's Catalyst",
+          "rawNote": "Spellover non-hero explosion damage decreased from 30 to 20",
+          "originalSource": "Spellover non-hero explosion damage decreased from 30 to 20 ",
+          "indentLevel": 1,
+          "metric": "Spellover non-hero explosion damage",
+          "changeType": "DECREASED",
+          "oldValue": "30",
+          "newValue": "20",
+          "metadata": {
+            "entityId": 1864
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (spellover non-hero explosion damage)."
+          }
+        },
+        {
+          "category": "neutral",
+          "entityName": "Conjurer's Catalyst",
+          "rawNote": "Spellover damage threshold on illusions now only considers pre-amplification damage",
+          "originalSource": "Spellover damage threshold on illusions now only considers pre-amplification damage",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 1864
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Adjustment",
+            "semanticTag": "ILLUSION_INTERACTION",
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "confidenceScore": 0.95,
+            "reasoning": "Matches exact semantic pattern: \"illusions now\""
+          }
+        }
+      ],
+      "temporalAssessment": null
     }
   ]
 }

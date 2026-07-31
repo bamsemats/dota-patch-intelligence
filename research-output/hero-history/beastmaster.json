@@ -4760,6 +4760,92 @@
         }
       },
       "temporalAssessment": null
+    },
+    {
+      "version": "7.41e",
+      "date": "2026-07-30T23:58:15.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Beastmaster",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Damage to Beastmaster and his summons decreased from +30 to +25",
+          "originalSource": "Level 20 Talent Damage to Beastmaster and his summons decreased from +30 to +25",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Damage to Beastmaster and his summons",
+          "changeType": "DECREASED",
+          "oldValue": "+30",
+          "newValue": "+25",
+          "metadata": {
+            "entityId": 38
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (level 20 talent damage to beastmaster and his summons)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Beastmaster",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Primal Roar Cooldown Reduction decreased from 25s to 20s",
+          "originalSource": "Level 25 Talent Primal Roar Cooldown Reduction decreased from 25s to 20s",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Primal Roar Cooldown Reduction",
+          "changeType": "DECREASED",
+          "oldValue": "25s",
+          "newValue": "20s",
+          "metadata": {
+            "entityId": 38
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a negative metric (level 25 talent primal roar cooldown reduction)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -0.05,
+        "laning": 0,
+        "siege": 0,
+        "utility": -0.05
+      },
+      "totalVector": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 2.02,
+        "teamfight": 7.13,
+        "laning": 2.02,
+        "siege": 0,
+        "utility": 0.12
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }
