@@ -3629,6 +3629,114 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.41f",
+      "date": "2026-09-15T18:44:25.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Shadow Fiend",
+          "subEntityName": "Necromastery",
+          "rawNote": "Damage per soul changed from 1.35 + 0.15 damage per level to 1 + 0.8 damage per 6 levels",
+          "originalSource": "Damage per soul changed from 1.35 + 0.15 damage per level to 1 + 0.8 damage per 6 levels ",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 11,
+            "subEntityId": 5062
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Shadow Fiend",
+          "subEntityName": "Shadowraze",
+          "rawNote": "Bonus Damage Per Soul decreased from 3 to 2",
+          "originalSource": "Bonus Damage Per Soul decreased from 3 to 2",
+          "indentLevel": 1,
+          "metric": "Bonus Damage Per Soul",
+          "changeType": "DECREASED",
+          "oldValue": "3",
+          "newValue": "2",
+          "metadata": {
+            "entityId": 11,
+            "subEntityId": 5059
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (bonus damage per soul)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Shadow Fiend",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent Presence Armor Reduction decreased from +2 to +1.5",
+          "originalSource": "Level 15 Talent Presence Armor Reduction decreased from +2 to +1.5",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent Presence Armor Reduction",
+          "changeType": "DECREASED",
+          "oldValue": "+2",
+          "newValue": "+1.5",
+          "metadata": {
+            "entityId": 11
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (level 15 talent presence armor reduction)."
+          }
+        }
+      ],
+      "vectorDelta": null,
+      "totalVector": {
+        "farming": -0.5,
+        "mobility": 0,
+        "survivability": 1.4,
+        "teamfight": -1.46,
+        "laning": 0.9,
+        "siege": 0,
+        "utility": 1.04
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

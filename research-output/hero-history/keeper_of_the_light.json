@@ -3569,6 +3569,152 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.41f",
+      "date": "2026-09-15T18:44:25.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Keeper of the Light",
+          "rawNote": "Base Attack Speed decreased from 100 to 90",
+          "originalSource": "Base Attack Speed decreased from 100 to 90",
+          "indentLevel": 1,
+          "metric": "Base Attack Speed",
+          "changeType": "DECREASED",
+          "oldValue": "100",
+          "newValue": "90",
+          "metadata": {
+            "entityId": 90
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6.5,
+              "Archon": 6.5,
+              "Legend": 6.5,
+              "Ancient": 6.5,
+              "Divine": 6.5
+            },
+            "reasoning": "Decreased a positive metric (base attack speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Keeper of the Light",
+          "subEntityName": "Chakra Magic",
+          "rawNote": "Cooldown Reduction decreased from 3/4/5/6s to 2.5/3.5/4.5/5.5s",
+          "originalSource": "Cooldown Reduction decreased from 3/4/5/6s to 2.5/3.5/4.5/5.5s",
+          "indentLevel": 1,
+          "metric": "Cooldown Reduction",
+          "changeType": "DECREASED",
+          "oldValue": "3/4/5/6s",
+          "newValue": "2.5/3.5/4.5/5.5s",
+          "metadata": {
+            "entityId": 90,
+            "subEntityId": 5473
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown reduction)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Keeper of the Light",
+          "subEntityName": "Spirit Form",
+          "rawNote": "Illuminate Heal decreased from 70% to 60%",
+          "originalSource": "Illuminate Heal decreased from 70% to 60%",
+          "indentLevel": 1,
+          "metric": "Illuminate Heal",
+          "changeType": "DECREASED",
+          "oldValue": "70%",
+          "newValue": "60%",
+          "metadata": {
+            "entityId": 90,
+            "subEntityId": 5474
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Keeper of the Light",
+          "subEntityName": "Spirit Form",
+          "rawNote": "Illuminate Heal with Aghanim's Shard unchanged at 100%",
+          "originalSource": "Illuminate Heal with Aghanim's Shard unchanged at 100%",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 90,
+            "subEntityId": 5474
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -0.02,
+        "laning": 0,
+        "siege": 0,
+        "utility": -0.02
+      },
+      "totalVector": {
+        "farming": 4,
+        "mobility": 0,
+        "survivability": 0.9,
+        "teamfight": 4.55,
+        "laning": 4.91,
+        "siege": 0,
+        "utility": 4.05
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

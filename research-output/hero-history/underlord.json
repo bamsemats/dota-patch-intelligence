@@ -3308,6 +3308,91 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.41f",
+      "date": "2026-09-15T18:44:25.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Pit of Malice",
+          "rawNote": "No longer upgraded with Aghanim's Scepter",
+          "originalSource": "No longer upgraded with Aghanim's Scepter",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 5614
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Fiend's Gate",
+          "rawNote": "Aghanim's Scepter Cooldown decreased from 100/95/90s to 90/85/80s",
+          "originalSource": "Aghanim's Scepter Cooldown decreased from 100/95/90s to 90/85/80s",
+          "indentLevel": 1,
+          "metric": "Aghanim's Scepter Cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "100/95/90s",
+          "newValue": "90/85/80s",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 865
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a negative metric (aghanim's scepter cooldown)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0.18,
+        "teamfight": 0,
+        "laning": 0.18,
+        "siege": 0,
+        "utility": 0
+      },
+      "totalVector": {
+        "farming": -2,
+        "mobility": 0,
+        "survivability": -1.05,
+        "teamfight": -10.77,
+        "laning": -3.05,
+        "siege": 0,
+        "utility": -28.25
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }
