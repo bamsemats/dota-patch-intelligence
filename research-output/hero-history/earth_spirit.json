@@ -3684,6 +3684,208 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.41f",
+      "date": "2026-09-15T18:44:25.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Earth Spirit",
+          "rawNote": "Base Attack Speed decreased from 100 to 95",
+          "originalSource": "Base Attack Speed decreased from 100 to 95",
+          "indentLevel": 1,
+          "metric": "Base Attack Speed",
+          "changeType": "DECREASED",
+          "oldValue": "100",
+          "newValue": "95",
+          "metadata": {
+            "entityId": 107
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6.5,
+              "Archon": 6.5,
+              "Legend": 6.5,
+              "Ancient": 6.5,
+              "Divine": 6.5
+            },
+            "reasoning": "Decreased a positive metric (base attack speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Earth Spirit",
+          "subEntityName": "Stone Remnant",
+          "rawNote": "Charges changed from (7 + 1 per 4 levels) to (7 + 1 per 5 levels)",
+          "originalSource": "Charges changed from (7 + 1 per 4 levels) to (7 + 1 per 5 levels)",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 107,
+            "subEntityId": 1395
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Earth Spirit",
+          "subEntityName": "Stone Remnant",
+          "rawNote": "Max charges decreased from 14 at level 28 to 13 at level 30",
+          "originalSource": "Max charges decreased from 14 at level 28 to 13 at level 30",
+          "indentLevel": 2,
+          "metric": "Max charges",
+          "changeType": "DECREASED",
+          "oldValue": "14 at level 28",
+          "newValue": "13 at level 30",
+          "metadata": {
+            "entityId": 107,
+            "subEntityId": 1395
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Earth Spirit",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent +25% Magnetize Damage & Duration replaced with +35 Magnetize Damage Per Second",
+          "originalSource": "Level 20 Talent +25% Magnetize Damage & Duration replaced with +35 Magnetize Damage Per Second",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent +25% Magnetize Damage & Duration",
+          "changeType": "REWORK",
+          "newValue": "+35 Magnetize Damage Per Second",
+          "metadata": {
+            "entityId": 107
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Earth Spirit",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent +175% Rolling Boulder Damage from Strength replaced with +200 Geomagnetic Grip Remnant Damage",
+          "originalSource": "Level 20 Talent +175% Rolling Boulder Damage from Strength replaced with +200 Geomagnetic Grip Remnant Damage",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent +175% Rolling Boulder Damage from Strength",
+          "changeType": "REWORK",
+          "newValue": "+200 Geomagnetic Grip Remnant Damage",
+          "metadata": {
+            "entityId": 107
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Earth Spirit",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent +250 Geomagnetic Grip Remnant Damage replaced with +250% Rolling Boulder Damage from Strength",
+          "originalSource": "Level 25 Talent +250 Geomagnetic Grip Remnant Damage replaced with +250% Rolling Boulder Damage from Strength",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent +250 Geomagnetic Grip Remnant Damage",
+          "changeType": "REWORK",
+          "newValue": "+250% Rolling Boulder Damage from Strength",
+          "metadata": {
+            "entityId": 107
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -0.07,
+        "laning": 0,
+        "siege": 0,
+        "utility": -0.07
+      },
+      "totalVector": {
+        "farming": 4.5,
+        "mobility": 0,
+        "survivability": 1.91,
+        "teamfight": 4.28,
+        "laning": 6.41,
+        "siege": 0,
+        "utility": -0.22
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }
