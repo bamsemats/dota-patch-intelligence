@@ -315,6 +315,7 @@ async function main() {
         });
     } else {
         console.error("[Error] Could not generate meta analysis.");
+        process.exit(1);
     }
 }
 
