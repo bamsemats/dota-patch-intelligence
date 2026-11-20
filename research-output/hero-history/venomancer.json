@@ -4190,6 +4190,293 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Venomancer",
+          "subEntityName": "Snakebite",
+          "rawNote": "Cast Range increased from 600 to 600/650/700/750",
+          "originalSource": "Cast Range increased from 600 to 600/650/700/750",
+          "indentLevel": 1,
+          "metric": "Cast Range",
+          "changeType": "INCREASED",
+          "oldValue": "600",
+          "newValue": "600/650/700/750",
+          "metadata": {
+            "entityId": 40,
+            "subEntityId": 1749
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Increased a positive metric (cast range)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Venomancer",
+          "subEntityName": "Plague Ward",
+          "rawNote": "Now apply Poison Sting that has 50% damage/slow, but fully stacks with Poison Sting from Venomancer",
+          "originalSource": "Now apply Poison Sting that has 50% damage/slow, but fully stacks with Poison Sting from Venomancer",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 40,
+            "subEntityId": 5180
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Venomancer",
+          "subEntityName": "Plague Ward",
+          "rawNote": "Now wards automatically attack the nearest hero in range when spawned",
+          "originalSource": "Now wards automatically attack the nearest hero in range when spawned",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 40,
+            "subEntityId": 5180
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Venomancer",
+          "subEntityName": "Noxious Plague",
+          "rawNote": "Damage and movement slow now cannot be dispelled",
+          "originalSource": "Damage and movement slow now cannot be dispelled",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 40,
+            "subEntityId": 1105
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "DISPEL_INTERACTION",
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Venomancer",
+          "subEntityName": "Noxious Plague",
+          "rawNote": "The effect on the initial target is now split into two separate debuffs for clarity",
+          "originalSource": "The effect on the initial target is now split into two separate debuffs for clarity",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 40,
+            "subEntityId": 1105
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "TARGETING_RULE_CHANGE",
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Venomancer",
+          "subEntityName": "Noxious Plague",
+          "rawNote": "One debuff is for the undispellable damage over time and slow",
+          "originalSource": "One debuff is for the undispellable damage over time and slow",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 40,
+            "subEntityId": 1105
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "DISPEL_INTERACTION",
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Venomancer",
+          "subEntityName": "Noxious Plague",
+          "rawNote": "The second one is for the spread behavior, which is still dispellable",
+          "originalSource": "The second one is for the spread behavior, which is still dispellable",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 40,
+            "subEntityId": 1105
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "DISPEL_INTERACTION",
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Venomancer",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent +100 Snakebite Initial Damage replaced with Snakebite Undispellable",
+          "originalSource": "Level 20 Talent +100 Snakebite Initial Damage replaced with Snakebite Undispellable",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent +100 Snakebite Initial Damage",
+          "changeType": "REWORK",
+          "newValue": "Snakebite Undispellable",
+          "metadata": {
+            "entityId": 40
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Venomancer",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Snakebite Undispellable replaced with +2% Noxious Plague Max Health Damage",
+          "originalSource": "Level 25 Talent Snakebite Undispellable replaced with +2% Noxious Plague Max Health Damage",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Snakebite Undispellable",
+          "changeType": "REWORK",
+          "newValue": "+2% Noxious Plague Max Health Damage",
+          "metadata": {
+            "entityId": 40
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -0.55,
+        "teamfight": -0.01,
+        "laning": -0.55,
+        "siege": 0,
+        "utility": 2.98
+      },
+      "totalVector": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 1.57,
+        "teamfight": -0.44,
+        "laning": 1.57,
+        "siege": 0,
+        "utility": -4.45
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

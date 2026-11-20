@@ -4019,6 +4019,214 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Spirit Breaker",
+          "subEntityName": "Empowering Haste",
+          "rawNote": "Now partially disabled by Break: disables the gaining of new stacks, but does not remove the effect from existing ones",
+          "originalSource": "Now partially disabled by Break: disables the gaining of new stacks, but does not remove the effect from existing ones",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 71,
+            "subEntityId": 1757
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Spirit Breaker",
+          "subEntityName": "Charge of Darkness",
+          "rawNote": "Bash Radius decreased from 300 to 275",
+          "originalSource": "Bash Radius decreased from 300 to 275",
+          "indentLevel": 1,
+          "metric": "Bash Radius",
+          "changeType": "DECREASED",
+          "oldValue": "300",
+          "newValue": "275",
+          "metadata": {
+            "entityId": 71,
+            "subEntityId": 5353
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a positive metric (bash radius)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Spirit Breaker",
+          "subEntityName": "Bulldoze",
+          "rawNote": "Duration decreased from 8s to 7s",
+          "originalSource": "Duration decreased from 8s to 7s",
+          "indentLevel": 1,
+          "metric": "Duration",
+          "changeType": "DECREASED",
+          "oldValue": "8s",
+          "newValue": "7s",
+          "metadata": {
+            "entityId": 71,
+            "subEntityId": 7301
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a positive metric (duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Spirit Breaker",
+          "subEntityName": "Greater Bash",
+          "rawNote": "Movement Speed As Damage decreased from 25/30/35/40% to 24/28/32/36%",
+          "originalSource": "Movement Speed As Damage decreased from 25/30/35/40% to 24/28/32/36%",
+          "indentLevel": 1,
+          "metric": "Movement Speed As Damage",
+          "changeType": "DECREASED",
+          "oldValue": "25/30/35/40%",
+          "newValue": "24/28/32/36%",
+          "metadata": {
+            "entityId": 71,
+            "subEntityId": 5355
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 8,
+              "Ancient": 9,
+              "Divine": 9
+            },
+            "reasoning": "Decreased a positive metric (movement speed as damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Spirit Breaker",
+          "subEntityName": "Planar Pocket",
+          "rawNote": "Self Magic Resistance increased from 40% to 50%",
+          "originalSource": "Self Magic Resistance increased from 40% to 50%",
+          "indentLevel": 1,
+          "metric": "Self Magic Resistance",
+          "changeType": "INCREASED",
+          "oldValue": "40%",
+          "newValue": "50%",
+          "metadata": {
+            "entityId": 71,
+            "subEntityId": 987
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Spirit Breaker",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent Charge of Darkness Bonus Speed decreased from +60 to +50",
+          "originalSource": "Level 15 Talent Charge of Darkness Bonus Speed decreased from +60 to +50",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent Charge of Darkness Bonus Speed",
+          "changeType": "DECREASED",
+          "oldValue": "+60",
+          "newValue": "+50",
+          "metadata": {
+            "entityId": 71
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (level 15 talent charge of darkness bonus speed)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0.47,
+        "teamfight": -3.58,
+        "laning": 0.47,
+        "siege": 0,
+        "utility": -7.08
+      },
+      "totalVector": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": 1.73,
+        "teamfight": -14.12,
+        "laning": 2.74,
+        "siege": 0,
+        "utility": -6.12
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

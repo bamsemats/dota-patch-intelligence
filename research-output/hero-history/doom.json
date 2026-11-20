@@ -4119,6 +4119,149 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Doom",
+          "subEntityName": "Lvl ? Pain",
+          "rawNote": "Can no longer be applied to friendly targets",
+          "originalSource": "Can no longer be applied to friendly targets",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 69,
+            "subEntityId": 1324
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Doom",
+          "subEntityName": "Devour",
+          "rawNote": "Mana Cost rescaled from 40/50/60/70 to 66",
+          "originalSource": "Mana Cost rescaled from 40/50/60/70 to 66",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "RESCALE",
+          "oldValue": "40/50/60/70",
+          "newValue": "66",
+          "metadata": {
+            "entityId": 69,
+            "subEntityId": 5339
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Doom",
+          "subEntityName": "Scorched Earth",
+          "rawNote": "Cooldown increased from 41/39/37/35s to 45/42/39/36s",
+          "originalSource": "Cooldown increased from 41/39/37/35s to 45/42/39/36s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "INCREASED",
+          "oldValue": "41/39/37/35s",
+          "newValue": "45/42/39/36s",
+          "metadata": {
+            "entityId": 69,
+            "subEntityId": 5340
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Increased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Doom",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Permanent Scorched Earth now also increases damage to 66",
+          "originalSource": "Level 25 Talent Permanent Scorched Earth now also increases damage to 66",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 69
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -0.37,
+        "teamfight": -3.52,
+        "laning": -0.37,
+        "siege": 0,
+        "utility": -0.02
+      },
+      "totalVector": {
+        "farming": 0.5,
+        "mobility": 0,
+        "survivability": 1.2,
+        "teamfight": -4.21,
+        "laning": 1.7,
+        "siege": 0,
+        "utility": -8.2
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

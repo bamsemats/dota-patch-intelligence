@@ -2629,6 +2629,179 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Razor",
+          "rawNote": "Min Base Damage decreased by 3",
+          "originalSource": "Min Base Damage decreased by 3",
+          "indentLevel": 1,
+          "metric": "Min Base Damage",
+          "changeType": "DECREASED",
+          "newValue": "3",
+          "metadata": {
+            "entityId": 15
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (min base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Razor",
+          "rawNote": "Max Base Damage increased by 7",
+          "originalSource": "Max Base Damage increased by 7",
+          "indentLevel": 1,
+          "metric": "Max Base Damage",
+          "changeType": "INCREASED",
+          "newValue": "7",
+          "metadata": {
+            "entityId": 15
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (max base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Razor",
+          "rawNote": "Damage at level 1 rescaled from 47-49 to 44-56",
+          "originalSource": "Damage at level 1 rescaled from 47-49 to 44-56",
+          "indentLevel": 2,
+          "metric": "Damage at level 1",
+          "changeType": "RESCALE",
+          "oldValue": "47-49",
+          "newValue": "44-56",
+          "metadata": {
+            "entityId": 15
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Razor",
+          "subEntityName": "Static Link",
+          "rawNote": "Mana Cost decreased from 65 to 45/50/55/60",
+          "originalSource": "Mana Cost decreased from 65 to 45/50/55/60",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "DECREASED",
+          "oldValue": "65",
+          "newValue": "45/50/55/60",
+          "metadata": {
+            "entityId": 15,
+            "subEntityId": 5083
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a negative metric (mana cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Razor",
+          "subEntityName": "Storm Surge",
+          "rawNote": "Damage increased from 50/90/130/170 to 65/100/135/170",
+          "originalSource": "Damage increased from 50/90/130/170 to 65/100/135/170",
+          "indentLevel": 1,
+          "metric": "Damage",
+          "changeType": "INCREASED",
+          "oldValue": "50/90/130/170",
+          "newValue": "65/100/135/170",
+          "metadata": {
+            "entityId": 15,
+            "subEntityId": 1224
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (damage)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 2.5,
+        "mobility": 0,
+        "survivability": -0.16,
+        "teamfight": 1.55,
+        "laning": 2.34,
+        "siege": 0,
+        "utility": 1.05
+      },
+      "totalVector": {
+        "farming": 4,
+        "mobility": 0,
+        "survivability": -1.36,
+        "teamfight": 6.58,
+        "laning": 2.64,
+        "siege": 0,
+        "utility": 1.08
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

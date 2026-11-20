@@ -3156,6 +3156,153 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Puck",
+          "rawNote": "Base Agility increased from 14 to 16",
+          "originalSource": "Base Agility increased from 14 to 16",
+          "indentLevel": 1,
+          "metric": "Base Agility",
+          "changeType": "INCREASED",
+          "oldValue": "14",
+          "newValue": "16",
+          "metadata": {
+            "entityId": 13
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base agility)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Puck",
+          "subEntityName": "Waning Rift",
+          "rawNote": "Cooldown decreased from 16/15/14/13s to 15/14/13/12s",
+          "originalSource": "Cooldown decreased from 16/15/14/13s to 15/14/13/12s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "16/15/14/13s",
+          "newValue": "15/14/13/12s",
+          "metadata": {
+            "entityId": 13,
+            "subEntityId": 5071
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Puck",
+          "subEntityName": "Dream Coil",
+          "rawNote": "Cooldown rescaled from 75s to 80/75/70s",
+          "originalSource": "Cooldown rescaled from 75s to 80/75/70s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "RESCALE",
+          "oldValue": "75s",
+          "newValue": "80/75/70s",
+          "metadata": {
+            "entityId": 13,
+            "subEntityId": 5073
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Puck",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Waning Rift Cooldown Reduction decreased from 2.5s to 2s",
+          "originalSource": "Level 20 Talent Waning Rift Cooldown Reduction decreased from 2.5s to 2s",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Waning Rift Cooldown Reduction",
+          "changeType": "DECREASED",
+          "oldValue": "2.5s",
+          "newValue": "2s",
+          "metadata": {
+            "entityId": 13
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a negative metric (level 20 talent waning rift cooldown reduction)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0.89,
+        "teamfight": 3.54,
+        "laning": 0.89,
+        "siege": 0,
+        "utility": 0.04
+      },
+      "totalVector": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": 1.85,
+        "teamfight": 0.02,
+        "laning": 2.85,
+        "siege": 0,
+        "utility": -16.98
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

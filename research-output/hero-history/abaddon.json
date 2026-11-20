@@ -4689,6 +4689,701 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Abaddon",
+          "subEntityName": "Withering Mist",
+          "rawNote": "No longer has a separate health threshold at which it takes effect",
+          "originalSource": "No longer has a separate health threshold at which it takes effect",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 102,
+            "subEntityId": 1481
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Abaddon",
+          "subEntityName": "Withering Mist",
+          "rawNote": "Now always reduces the enemy's health restoration, scaling linearly with enemy's current health, with 10% at full health and max effect at no health",
+          "originalSource": "Now always reduces the enemy's health restoration, scaling linearly with enemy's current health, with 10% at full health and max effect at no health",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 102,
+            "subEntityId": 1481
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Abaddon",
+          "subEntityName": "Withering Mist",
+          "rawNote": "Now applies only from attack and ability damage",
+          "originalSource": "Now applies only from attack and ability damage",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 102,
+            "subEntityId": 1481
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Abaddon",
+          "subEntityName": "Withering Mist",
+          "rawNote": "Max Health Restoration Reduction increased from 29.5% + 0.5% per hero level to 40% + 1% per hero level",
+          "originalSource": "Max Health Restoration Reduction increased from 29.5% + 0.5% per hero level to 40% + 1% per hero level",
+          "indentLevel": 1,
+          "metric": "Max Health Restoration Reduction",
+          "changeType": "INCREASED",
+          "oldValue": "29.5% + 0.5% per hero level",
+          "newValue": "40% + 1% per hero level",
+          "metadata": {
+            "entityId": 102,
+            "subEntityId": 1481
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Increased a positive metric (max health restoration reduction)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Abaddon",
+          "subEntityName": "Mist Coil",
+          "rawNote": "The Self Damage portion of the ability has been replaced with a Health Cost. The value is unchanged",
+          "originalSource": "The Self Damage portion of the ability has been replaced with a Health Cost. The value is unchanged",
+          "indentLevel": 1,
+          "metric": "The Self Damage portion of the ability has been",
+          "changeType": "REWORK",
+          "newValue": "a Health Cost. The value is unchanged",
+          "metadata": {
+            "entityId": 102,
+            "subEntityId": 5585
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Abaddon",
+          "subEntityName": "Mist Coil",
+          "rawNote": "As a result, the current cost is shown on the ability icon and in the tooltip",
+          "originalSource": "As a result, the current cost is shown on the ability icon and in the tooltip",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 102,
+            "subEntityId": 5585
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "FEATURE_INTRODUCTION",
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Abaddon",
+          "subEntityName": "Mist Coil",
+          "rawNote": "Still damages the Aphotic Shield barrier on cast",
+          "originalSource": "Still damages the Aphotic Shield barrier on cast",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 102,
+            "subEntityId": 5585
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "ROSHAN_INTERACTION",
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Abaddon",
+          "subEntityName": "Mist Coil",
+          "rawNote": "Now also slows/increases movement speed of enemies/allies by 60% for 0.7/0.8/0.9/1s",
+          "originalSource": "Now also slows/increases movement speed of enemies/allies by 60% for 0.7/0.8/0.9/1s",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 102,
+            "subEntityId": 5585
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Abaddon",
+          "subEntityName": "Mist Coil",
+          "rawNote": "Now upgraded with Aghanim's Scepter",
+          "originalSource": "Now upgraded with Aghanim's Scepter",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 102,
+            "subEntityId": 5585
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Abaddon",
+          "subEntityName": "Mist Coil",
+          "rawNote": "Affects all units in a 400 radius around the target. Each affected enemy is attacked by Abaddon with 100% damage and 80% item potency",
+          "originalSource": "Affects all units in a 400 radius around the target. Each affected enemy is attacked by Abaddon with 100% damage and 80% item potency",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 102,
+            "subEntityId": 5585
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "TARGETING_RULE_CHANGE",
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Abaddon",
+          "subEntityName": "Mist Coil",
+          "rawNote": "Can't apply Cleave",
+          "originalSource": "Can't apply Cleave",
+          "indentLevel": 3,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 102,
+            "subEntityId": 5585
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Abaddon",
+          "subEntityName": "Curse of Avernus",
+          "rawNote": "Duration increased from 2s to 3s",
+          "originalSource": "Duration increased from 2s to 3s",
+          "indentLevel": 1,
+          "metric": "Duration",
+          "changeType": "INCREASED",
+          "oldValue": "2s",
+          "newValue": "3s",
+          "metadata": {
+            "entityId": 102,
+            "subEntityId": 5587
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Increased a positive metric (duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Abaddon",
+          "subEntityName": "Curse of Avernus",
+          "rawNote": "Damage per second decreased from 15/25/35/45 to 12/20/28/36",
+          "originalSource": "Damage per second decreased from 15/25/35/45 to 12/20/28/36",
+          "indentLevel": 1,
+          "metric": "Damage per second",
+          "changeType": "DECREASED",
+          "oldValue": "15/25/35/45",
+          "newValue": "12/20/28/36",
+          "metadata": {
+            "entityId": 102,
+            "subEntityId": 5587
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (damage per second)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Abaddon",
+          "subEntityName": "Curse of Avernus",
+          "rawNote": "Bonus Attack Speed rescaled from 10/20/30/40 to 15/20/25/30",
+          "originalSource": "Bonus Attack Speed rescaled from 10/20/30/40 to 15/20/25/30",
+          "indentLevel": 1,
+          "metric": "Bonus Attack Speed",
+          "changeType": "RESCALE",
+          "oldValue": "10/20/30/40",
+          "newValue": "15/20/25/30",
+          "metadata": {
+            "entityId": 102,
+            "subEntityId": 5587
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6.5,
+              "Archon": 6.5,
+              "Legend": 6.5,
+              "Ancient": 6.5,
+              "Divine": 6.5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Abaddon",
+          "subEntityName": "Curse of Avernus",
+          "rawNote": "Now provides 50% more attack speed to Abaddon",
+          "originalSource": "Now provides 50% more attack speed to Abaddon",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 102,
+            "subEntityId": 5587
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Abaddon",
+          "subEntityName": "Curse of Avernus",
+          "rawNote": "Bonus Attack Speed for Abaddon increased from 10/20/30/40 to 22.5/30/37.5/45",
+          "originalSource": "Bonus Attack Speed for Abaddon increased from 10/20/30/40 to 22.5/30/37.5/45",
+          "indentLevel": 2,
+          "metric": "Bonus Attack Speed for Abaddon",
+          "changeType": "INCREASED",
+          "oldValue": "10/20/30/40",
+          "newValue": "22.5/30/37.5/45",
+          "metadata": {
+            "entityId": 102,
+            "subEntityId": 5587
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6.5,
+              "Archon": 6.5,
+              "Legend": 6.5,
+              "Ancient": 6.5,
+              "Divine": 6.5
+            },
+            "reasoning": "Increased a positive metric (bonus attack speed for abaddon)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Abaddon",
+          "subEntityName": "Borrowed Time",
+          "rawNote": "No longer upgraded with Aghanim's Scepter",
+          "originalSource": "No longer upgraded with Aghanim's Scepter",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 102,
+            "subEntityId": 5588
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Abaddon",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent Aphotic Shield provides +8 HP Regen replaced with +125 Mist Coil Cast Range",
+          "originalSource": "Level 10 Talent Aphotic Shield provides +8 HP Regen replaced with +125 Mist Coil Cast Range",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent Aphotic Shield provides +8 HP Regen",
+          "changeType": "REWORK",
+          "newValue": "+125 Mist Coil Cast Range",
+          "metadata": {
+            "entityId": 102
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Abaddon",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talents swapped sides",
+          "originalSource": "Level 15 Talents swapped sides",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 102
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Abaddon",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent +35 Mist Coil Damage/Heal replaced with +10% Withering Mist Health Restoration Reduction",
+          "originalSource": "Level 15 Talent +35 Mist Coil Damage/Heal replaced with +10% Withering Mist Health Restoration Reduction",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent +35 Mist Coil Damage/Heal",
+          "changeType": "REWORK",
+          "newValue": "+10% Withering Mist Health Restoration Reduction",
+          "metadata": {
+            "entityId": 102
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Abaddon",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent 100 Borrowed Time Immolation DPS replaced with +2s Borrowed Time Duration",
+          "originalSource": "Level 20 Talent 100 Borrowed Time Immolation DPS replaced with +2s Borrowed Time Duration",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent 100 Borrowed Time Immolation DPS",
+          "changeType": "REWORK",
+          "newValue": "+2s Borrowed Time Duration",
+          "metadata": {
+            "entityId": 102
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Abaddon",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent 350 AoE Mist Coil replaced with 2 Aphotic Shield Charges",
+          "originalSource": "Level 25 Talent 350 AoE Mist Coil replaced with 2 Aphotic Shield Charges",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent 350 AoE Mist Coil",
+          "changeType": "REWORK",
+          "newValue": "2 Aphotic Shield Charges",
+          "metadata": {
+            "entityId": 102
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Abaddon",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Curse of Avernus Attack Speed Bonus decreased from +65 to +50",
+          "originalSource": "Level 25 Talent Curse of Avernus Attack Speed Bonus decreased from +65 to +50",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Curse of Avernus Attack Speed Bonus",
+          "changeType": "DECREASED",
+          "oldValue": "+65",
+          "newValue": "+50",
+          "metadata": {
+            "entityId": 102
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6.5,
+              "Archon": 6.5,
+              "Legend": 6.5,
+              "Ancient": 6.5,
+              "Divine": 6.5
+            },
+            "reasoning": "Decreased a positive metric (level 25 talent curse of avernus attack speed bonus)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -0.97,
+        "teamfight": 3.5,
+        "laning": -0.97,
+        "siege": 0,
+        "utility": 7
+      },
+      "totalVector": {
+        "farming": -9.5,
+        "mobility": 0,
+        "survivability": 2.25,
+        "teamfight": -24.41,
+        "laning": -0.75,
+        "siege": -6.5,
+        "utility": -4.4
+      },
+      "winrates": {},
+      "temporalAssessment": "Net Gain"
     }
   ]
 }

@@ -5041,6 +5041,489 @@
         "utility": -10.89
       },
       "winrates": {},
+      "temporalAssessment": "Net Gain"
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Batrider",
+          "rawNote": "Base Intelligence increased from 22 to 23",
+          "originalSource": "Base Intelligence increased from 22 to 23",
+          "indentLevel": 1,
+          "metric": "Base Intelligence",
+          "changeType": "INCREASED",
+          "oldValue": "22",
+          "newValue": "23",
+          "metadata": {
+            "entityId": 65
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base intelligence)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Batrider",
+          "rawNote": "Damage at level 1 unchanged at 38-42",
+          "originalSource": "Damage at level 1 unchanged at 38-42",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 65
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Batrider",
+          "subEntityName": "Sticky Napalm",
+          "rawNote": "Mana Cost increased from 22 to 25",
+          "originalSource": "Mana Cost increased from 22 to 25",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "INCREASED",
+          "oldValue": "22",
+          "newValue": "25",
+          "metadata": {
+            "entityId": 65,
+            "subEntityId": 5320
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Increased a negative metric (mana cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Batrider",
+          "subEntityName": "Sticky Napalm",
+          "rawNote": "Cooldown increased from 3s to 4s",
+          "originalSource": "Cooldown increased from 3s to 4s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "INCREASED",
+          "oldValue": "3s",
+          "newValue": "4s",
+          "metadata": {
+            "entityId": 65,
+            "subEntityId": 5320
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Increased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Batrider",
+          "subEntityName": "Sticky Napalm",
+          "rawNote": "Duration increased from 6s to 7s",
+          "originalSource": "Duration increased from 6s to 7s",
+          "indentLevel": 1,
+          "metric": "Duration",
+          "changeType": "INCREASED",
+          "oldValue": "6s",
+          "newValue": "7s",
+          "metadata": {
+            "entityId": 65,
+            "subEntityId": 5320
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Increased a positive metric (duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Batrider",
+          "subEntityName": "Sticky Napalm",
+          "rawNote": "Stacks applied per cast decreased from 2 to 1",
+          "originalSource": "Stacks applied per cast decreased from 2 to 1",
+          "indentLevel": 1,
+          "metric": "Stacks applied per cast",
+          "changeType": "DECREASED",
+          "oldValue": "2",
+          "newValue": "1",
+          "metadata": {
+            "entityId": 65,
+            "subEntityId": 5320
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Batrider",
+          "subEntityName": "Sticky Napalm",
+          "rawNote": "Max stacks decreased from 20 to 10",
+          "originalSource": "Max stacks decreased from 20 to 10",
+          "indentLevel": 1,
+          "metric": "Max stacks",
+          "changeType": "DECREASED",
+          "oldValue": "20",
+          "newValue": "10",
+          "metadata": {
+            "entityId": 65,
+            "subEntityId": 5320
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Batrider",
+          "subEntityName": "Sticky Napalm",
+          "rawNote": "Damage per stack increased from 2.5/5/7.5/10 to 6/12/18/24",
+          "originalSource": "Damage per stack increased from 2.5/5/7.5/10 to 6/12/18/24",
+          "indentLevel": 1,
+          "metric": "Damage per stack",
+          "changeType": "INCREASED",
+          "oldValue": "2.5/5/7.5/10",
+          "newValue": "6/12/18/24",
+          "metadata": {
+            "entityId": 65,
+            "subEntityId": 5320
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (damage per stack)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Batrider",
+          "subEntityName": "Sticky Napalm",
+          "rawNote": "Movement Slow per stack increased from 0.75/1.5/2.25/3% to 2/4/6/8%",
+          "originalSource": "Movement Slow per stack increased from 0.75/1.5/2.25/3% to 2/4/6/8%",
+          "indentLevel": 1,
+          "metric": "Movement Slow per stack",
+          "changeType": "INCREASED",
+          "oldValue": "0.75/1.5/2.25/3%",
+          "newValue": "2/4/6/8%",
+          "metadata": {
+            "entityId": 65,
+            "subEntityId": 5320
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Batrider",
+          "subEntityName": "Sticky Napalm",
+          "rawNote": "Turn Rate Slow decreased from 10/30/50/70% to 10/25/40/55%",
+          "originalSource": "Turn Rate Slow decreased from 10/30/50/70% to 10/25/40/55%",
+          "indentLevel": 1,
+          "metric": "Turn Rate Slow",
+          "changeType": "DECREASED",
+          "oldValue": "10/30/50/70%",
+          "newValue": "10/25/40/55%",
+          "metadata": {
+            "entityId": 65,
+            "subEntityId": 5320
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Batrider",
+          "subEntityName": "Sticky Napalm",
+          "rawNote": "Damage On Application increased from 5/10/15/20 to 7/14/21/28",
+          "originalSource": "Damage On Application increased from 5/10/15/20 to 7/14/21/28",
+          "indentLevel": 1,
+          "metric": "Damage On Application",
+          "changeType": "INCREASED",
+          "oldValue": "5/10/15/20",
+          "newValue": "7/14/21/28",
+          "metadata": {
+            "entityId": 65,
+            "subEntityId": 5320
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (damage on application)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Batrider",
+          "subEntityName": "Sticky Napalm",
+          "rawNote": "Creep Damage Percentage increased from 20% to 25%",
+          "originalSource": "Creep Damage Percentage increased from 20% to 25%",
+          "indentLevel": 1,
+          "metric": "Creep Damage Percentage",
+          "changeType": "INCREASED",
+          "oldValue": "20%",
+          "newValue": "25%",
+          "metadata": {
+            "entityId": 65,
+            "subEntityId": 5320
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (creep damage percentage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Batrider",
+          "subEntityName": "Flamebreak",
+          "rawNote": "Impact Damage increased from 25/50/75/100 to 30/60/90/120",
+          "originalSource": "Impact Damage increased from 25/50/75/100 to 30/60/90/120",
+          "indentLevel": 1,
+          "metric": "Impact Damage",
+          "changeType": "INCREASED",
+          "oldValue": "25/50/75/100",
+          "newValue": "30/60/90/120",
+          "metadata": {
+            "entityId": 65,
+            "subEntityId": 5321
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (impact damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Batrider",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent Sticky Napalm Movement Slow Per Stack increased from +0.75% to +2%",
+          "originalSource": "Level 15 Talent Sticky Napalm Movement Slow Per Stack increased from +0.75% to +2%",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent Sticky Napalm Movement Slow Per Stack",
+          "changeType": "INCREASED",
+          "oldValue": "+0.75%",
+          "newValue": "+2%",
+          "metadata": {
+            "entityId": 65
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Batrider",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Sticky Napalm stacks on Flamebreak decreased from 4 to 3",
+          "originalSource": "Level 25 Talent Sticky Napalm stacks on Flamebreak decreased from 4 to 3",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Sticky Napalm stacks on Flamebreak",
+          "changeType": "DECREASED",
+          "oldValue": "4",
+          "newValue": "3",
+          "metadata": {
+            "entityId": 65
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": -1,
+        "mobility": 0,
+        "survivability": -0.21,
+        "teamfight": 0.09,
+        "laning": -1.21,
+        "siege": 0,
+        "utility": 6.08
+      },
+      "totalVector": {
+        "farming": 6,
+        "mobility": 0,
+        "survivability": 3.68,
+        "teamfight": 2.19,
+        "laning": 9.68,
+        "siege": 0,
+        "utility": -4.81
+      },
+      "winrates": {},
       "temporalAssessment": null
     }
   ]

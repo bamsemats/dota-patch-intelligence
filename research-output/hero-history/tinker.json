@@ -4455,6 +4455,384 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Tinker",
+          "rawNote": "Base Strength increased from 19 to 20",
+          "originalSource": "Base Strength increased from 19 to 20",
+          "indentLevel": 1,
+          "metric": "Base Strength",
+          "changeType": "INCREASED",
+          "oldValue": "19",
+          "newValue": "20",
+          "metadata": {
+            "entityId": 34
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base strength)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Tinker",
+          "subEntityName": "Laser",
+          "rawNote": "Aghanim's Scepter Current and Max Health reduction decreased from 13% to 9%",
+          "originalSource": "Aghanim's Scepter Current and Max Health reduction decreased from 13% to 9%",
+          "indentLevel": 1,
+          "metric": "Aghanim's Scepter Current and Max Health reduction",
+          "changeType": "DECREASED",
+          "oldValue": "13%",
+          "newValue": "9%",
+          "metadata": {
+            "entityId": 34,
+            "subEntityId": 5150
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Decreased a positive metric (aghanim's scepter current and max health reduction)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Tinker",
+          "subEntityName": "March of the Machines",
+          "rawNote": "Aghanim's Scepter Heal per second increased from 35 to 45",
+          "originalSource": "Aghanim's Scepter Heal per second increased from 35 to 45",
+          "indentLevel": 1,
+          "metric": "Aghanim's Scepter Heal per second",
+          "changeType": "INCREASED",
+          "oldValue": "35",
+          "newValue": "45",
+          "metadata": {
+            "entityId": 34,
+            "subEntityId": 5152
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Tinker",
+          "subEntityName": "Deploy Turrets",
+          "rawNote": "Aghanim's Scepter now also increases missile speed and range by 20%",
+          "originalSource": "Aghanim's Scepter now also increases missile speed and range by 20%",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 34,
+            "subEntityId": 1744
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Tinker",
+          "subEntityName": "Deploy Turrets",
+          "rawNote": "Missile Speed: from 1350 to 1620",
+          "originalSource": "Missile Speed: from 1350 to 1620",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 34,
+            "subEntityId": 1744
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Tinker",
+          "subEntityName": "Deploy Turrets",
+          "rawNote": "Target Acquisition Range: from 650/700/750/800 to 780/840/900/960",
+          "originalSource": "Target Acquisition Range: from 650/700/750/800 to 780/840/900/960",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 34,
+            "subEntityId": 1744
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "TARGETING_RULE_CHANGE",
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Tinker",
+          "subEntityName": "Deploy Turrets",
+          "rawNote": "Missile Flight Range: from 750/800/850/900 to 900/960/1020/1080",
+          "originalSource": "Missile Flight Range: from 750/800/850/900 to 900/960/1020/1080",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 34,
+            "subEntityId": 1744
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "FEATURE_INTRODUCTION",
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Tinker",
+          "subEntityName": "Warp Flare",
+          "rawNote": "No longer roots enemies",
+          "originalSource": "No longer roots enemies",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 34,
+            "subEntityId": 909
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Tinker",
+          "subEntityName": "Warp Flare",
+          "rawNote": "Now slows enemy movement speed by 100%",
+          "originalSource": "Now slows enemy movement speed by 100%",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 34,
+            "subEntityId": 909
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Tinker",
+          "subEntityName": "Warp Flare",
+          "rawNote": "Debuff Duration increased from 2s to 3s",
+          "originalSource": "Debuff Duration increased from 2s to 3s",
+          "indentLevel": 1,
+          "metric": "Debuff Duration",
+          "changeType": "INCREASED",
+          "oldValue": "2s",
+          "newValue": "3s",
+          "metadata": {
+            "entityId": 34,
+            "subEntityId": 909
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Increased a positive metric (debuff duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Tinker",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Deploy Turrets Missile Damage decreased from +60 to +45",
+          "originalSource": "Level 20 Talent Deploy Turrets Missile Damage decreased from +60 to +45",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Deploy Turrets Missile Damage",
+          "changeType": "DECREASED",
+          "oldValue": "+60",
+          "newValue": "+45",
+          "metadata": {
+            "entityId": 34
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (level 20 talent deploy turrets missile damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Tinker",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent AoE Laser increased from 250 to 300",
+          "originalSource": "Level 25 Talent AoE Laser increased from 250 to 300",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent AoE Laser",
+          "changeType": "INCREASED",
+          "oldValue": "250",
+          "newValue": "300",
+          "metadata": {
+            "entityId": 34
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -0.73,
+        "teamfight": 0.06,
+        "laning": -0.73,
+        "siege": 0,
+        "utility": 0.06
+      },
+      "totalVector": {
+        "farming": 4.5,
+        "mobility": 0,
+        "survivability": -1.44,
+        "teamfight": 12.01,
+        "laning": 3.07,
+        "siege": 0,
+        "utility": -4
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

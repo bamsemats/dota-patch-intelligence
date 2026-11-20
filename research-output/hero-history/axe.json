@@ -3735,6 +3735,212 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Axe",
+          "rawNote": "Agility gain decreased from 1.7 to 1.5",
+          "originalSource": "Agility gain decreased from 1.7 to 1.5",
+          "indentLevel": 1,
+          "metric": "Agility gain",
+          "changeType": "DECREASED",
+          "oldValue": "1.7",
+          "newValue": "1.5",
+          "metadata": {
+            "entityId": 2
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (agility gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Axe",
+          "subEntityName": "Battle Hunger",
+          "rawNote": "Movement Slow decreased from 18/22/26/30% to 16/19/22/25%",
+          "originalSource": "Movement Slow decreased from 18/22/26/30% to 16/19/22/25%",
+          "indentLevel": 1,
+          "metric": "Movement Slow",
+          "changeType": "DECREASED",
+          "oldValue": "18/22/26/30%",
+          "newValue": "16/19/22/25%",
+          "metadata": {
+            "entityId": 2,
+            "subEntityId": 5008
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Axe",
+          "subEntityName": "Counter Helix",
+          "rawNote": "Attacks that miss Axe (due to evasion, blindness, or uphill disadvantage) now count towards the Counter Helix counter",
+          "originalSource": "Attacks that miss Axe (due to evasion, blindness, or uphill disadvantage) now count towards the Counter Helix counter",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 2,
+            "subEntityId": 5009
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Axe",
+          "subEntityName": "Counter Helix",
+          "rawNote": "Aghanim's Scepter Debuff Duration increased from 6s to 7s",
+          "originalSource": "Aghanim's Scepter Debuff Duration increased from 6s to 7s",
+          "indentLevel": 1,
+          "metric": "Aghanim's Scepter Debuff Duration",
+          "changeType": "INCREASED",
+          "oldValue": "6s",
+          "newValue": "7s",
+          "metadata": {
+            "entityId": 2,
+            "subEntityId": 5009
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Increased a positive metric (aghanim's scepter debuff duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Axe",
+          "subEntityName": "Culling Blade",
+          "rawNote": "Kill Move Speed Bonus rescaled from 20/25/30% to 25%",
+          "originalSource": "Kill Move Speed Bonus rescaled from 20/25/30% to 25%",
+          "indentLevel": 1,
+          "metric": "Kill Move Speed Bonus",
+          "changeType": "RESCALE",
+          "oldValue": "20/25/30%",
+          "newValue": "25%",
+          "metadata": {
+            "entityId": 2,
+            "subEntityId": 5010
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Axe",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Berserker's Call AoE decreased from +85 to +70",
+          "originalSource": "Level 25 Talent Berserker's Call AoE decreased from +85 to +70",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Berserker's Call AoE",
+          "changeType": "DECREASED",
+          "oldValue": "+85",
+          "newValue": "+70",
+          "metadata": {
+            "entityId": 2
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -0.6,
+        "teamfight": 0.01,
+        "laning": -0.6,
+        "siege": 0,
+        "utility": 0.01
+      },
+      "totalVector": {
+        "farming": 2,
+        "mobility": 0,
+        "survivability": -1.58,
+        "teamfight": 3.79,
+        "laning": 0.42,
+        "siege": 0,
+        "utility": -4.21
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

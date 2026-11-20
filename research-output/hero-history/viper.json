@@ -3262,6 +3262,93 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Predator",
+          "rawNote": "Damage increased from 0.25 + 0.05 per level to 0.24 + 0.06 per level",
+          "originalSource": "Damage increased from 0.25 + 0.05 per level to 0.24 + 0.06 per level",
+          "indentLevel": 1,
+          "metric": "Damage",
+          "changeType": "INCREASED",
+          "oldValue": "0.25 + 0.05 per level",
+          "newValue": "0.24 + 0.06 per level",
+          "metadata": {
+            "entityId": 47,
+            "subEntityId": 1461
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Viper",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent Nethertoxin Min/Max Damage increased from +20/40 to +20/50",
+          "originalSource": "Level 15 Talent Nethertoxin Min/Max Damage increased from +20/40 to +20/50",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent Nethertoxin Min/Max Damage",
+          "changeType": "INCREASED",
+          "oldValue": "+20/40",
+          "newValue": "+20/50",
+          "metadata": {
+            "entityId": 47
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (level 15 talent nethertoxin min/max damage)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 1.5,
+        "mobility": 0,
+        "survivability": 0.81,
+        "teamfight": 1.5,
+        "laning": 2.31,
+        "siege": 0,
+        "utility": 0
+      },
+      "totalVector": {
+        "farming": 3.5,
+        "mobility": 0,
+        "survivability": -2.66,
+        "teamfight": 1.56,
+        "laning": 0.84,
+        "siege": 0,
+        "utility": 4.06
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

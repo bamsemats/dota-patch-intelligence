@@ -5689,6 +5689,505 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Brewmaster",
+          "subEntityName": "Liquid Courage",
+          "rawNote": "No longer has a scaling effect based on health",
+          "originalSource": "No longer has a scaling effect based on health",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 78,
+            "subEntityId": 1681
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Brewmaster",
+          "subEntityName": "Liquid Courage",
+          "rawNote": "Now activates at full power for 5s if you receive 400 damage from player-controlled units or Roshan over the last 7s",
+          "originalSource": "Now activates at full power for 5s if you receive 400 damage from player-controlled units or Roshan over the last 7s",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 78,
+            "subEntityId": 1681
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Brewmaster",
+          "subEntityName": "Liquid Courage",
+          "rawNote": "Now has an internal 15s cooldown",
+          "originalSource": "Now has an internal 15s cooldown",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 78,
+            "subEntityId": 1681
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Brewmaster",
+          "subEntityName": "Liquid Courage",
+          "rawNote": "Ability is added to the HUD to denote cooldown. When Aghanim's Shard is purchased, the debuff is used for the passive cooldown instead",
+          "originalSource": "Ability is added to the HUD to denote cooldown. When Aghanim's Shard is purchased, the debuff is used for the passive cooldown instead",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 78,
+            "subEntityId": 1681
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "FEATURE_INTRODUCTION",
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Brewmaster",
+          "subEntityName": "Liquid Courage",
+          "rawNote": "Aghanim's Shard cooldown decreased from 20s to 15s",
+          "originalSource": "Aghanim's Shard cooldown decreased from 20s to 15s",
+          "indentLevel": 1,
+          "metric": "Aghanim's Shard cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "20s",
+          "newValue": "15s",
+          "metadata": {
+            "entityId": 78,
+            "subEntityId": 1681
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a negative metric (aghanim's shard cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Brewmaster",
+          "subEntityName": "Liquid Courage",
+          "rawNote": "The passive and active cooldowns are independent",
+          "originalSource": "The passive and active cooldowns are independent",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 78,
+            "subEntityId": 1681
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "COOLDOWN_RESET_INTERACTION",
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Brewmaster",
+          "subEntityName": "Liquid Courage",
+          "rawNote": "Aghanim's Shard now also increases speed increase by 20%",
+          "originalSource": "Aghanim's Shard now also increases speed increase by 20%",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 78,
+            "subEntityId": 1681
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Brewmaster",
+          "subEntityName": "Thunder Clap",
+          "rawNote": "Duration decreased from 4/4.25/4.5/4.75s to 3.5/3.75/4/4.25s",
+          "originalSource": "Duration decreased from 4/4.25/4.5/4.75s to 3.5/3.75/4/4.25s",
+          "indentLevel": 1,
+          "metric": "Duration",
+          "changeType": "DECREASED",
+          "oldValue": "4/4.25/4.5/4.75s",
+          "newValue": "3.5/3.75/4/4.25s",
+          "metadata": {
+            "entityId": 78,
+            "subEntityId": 5400
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a positive metric (duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Brewmaster",
+          "subEntityName": "Cinder Brew",
+          "rawNote": "Ignite Total Damage decreased from 80/160/240/320 to 75/150/225/300",
+          "originalSource": "Ignite Total Damage decreased from 80/160/240/320 to 75/150/225/300",
+          "indentLevel": 1,
+          "metric": "Ignite Total Damage",
+          "changeType": "DECREASED",
+          "oldValue": "80/160/240/320",
+          "newValue": "75/150/225/300",
+          "metadata": {
+            "entityId": 78,
+            "subEntityId": 7310
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (ignite total damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Brewmaster",
+          "subEntityName": "Primal Split",
+          "rawNote": "Earth's Health decreased from 1400/2300/3200/4100 to 1400/2200/3000/3800",
+          "originalSource": "Earth's Health decreased from 1400/2300/3200/4100 to 1400/2200/3000/3800",
+          "indentLevel": 1,
+          "metric": "Earth's Health",
+          "changeType": "DECREASED",
+          "oldValue": "1400/2300/3200/4100",
+          "newValue": "1400/2200/3000/3800",
+          "metadata": {
+            "entityId": 78,
+            "subEntityId": 5403
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Decreased a positive metric (earth's health)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Brewmaster",
+          "subEntityName": "Primal Split",
+          "rawNote": "Earth's Demolish damage decreased from 40/80/120/160 to 30/60/90/120",
+          "originalSource": "Earth's Demolish damage decreased from 40/80/120/160 to 30/60/90/120",
+          "indentLevel": 1,
+          "metric": "Earth's Demolish damage",
+          "changeType": "DECREASED",
+          "oldValue": "40/80/120/160",
+          "newValue": "30/60/90/120",
+          "metadata": {
+            "entityId": 78,
+            "subEntityId": 5403
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (earth's demolish damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Brewmaster",
+          "subEntityName": "Primal Split",
+          "rawNote": "Fire's Damage decreased from 70/120/170/220 to 70/115/160/205",
+          "originalSource": "Fire's Damage decreased from 70/120/170/220 to 70/115/160/205",
+          "indentLevel": 1,
+          "metric": "Fire's Damage",
+          "changeType": "DECREASED",
+          "oldValue": "70/120/170/220",
+          "newValue": "70/115/160/205",
+          "metadata": {
+            "entityId": 78,
+            "subEntityId": 5403
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (fire's damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Brewmaster",
+          "subEntityName": "Primal Split",
+          "rawNote": "Fire now has Cinder Dash ability",
+          "originalSource": "Fire now has Cinder Dash ability",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 78,
+            "subEntityId": 5403
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "FEATURE_INTRODUCTION",
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Brewmaster",
+          "subEntityName": "Primal Split",
+          "rawNote": "Active. Vector-targeted. Can target both allies and enemies",
+          "originalSource": "Active. Vector-targeted. Can target both allies and enemies",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 78,
+            "subEntityId": 5403
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "TARGETING_RULE_CHANGE",
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Brewmaster",
+          "subEntityName": "Primal Split",
+          "rawNote": "Fire Brewling grabs the target and runs with it for 400/500/600/700 units in the selected direction, while dealing 50/100/150/200 damage to it if it's an enemy. Pull Duration: 0.5s. Cast Range: 150. Mana Cost: 50. Cooldown: 8s",
+          "originalSource": "Fire Brewling grabs the target and runs with it for 400/500/600/700 units in the selected direction, while dealing 50/100/150/200 damage to it if it's an enemy. Pull Duration: 0.5s. Cast Range: 150. Mana Cost: 50. Cooldown: 8s",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 78,
+            "subEntityId": 5403
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "TARGETING_RULE_CHANGE",
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Brewmaster",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent Brewlings Base Damage decreased from +13 to +10",
+          "originalSource": "Level 10 Talent Brewlings Base Damage decreased from +13 to +10",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent Brewlings Base Damage",
+          "changeType": "DECREASED",
+          "oldValue": "+13",
+          "newValue": "+10",
+          "metadata": {
+            "entityId": 78
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (level 10 talent brewlings base damage)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": -3.44,
+        "laning": 0,
+        "siege": 0,
+        "utility": -6.94
+      },
+      "totalVector": {
+        "farming": -1,
+        "mobility": 0,
+        "survivability": 2.84,
+        "teamfight": -3.58,
+        "laning": 1.84,
+        "siege": 0,
+        "utility": -23.08
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

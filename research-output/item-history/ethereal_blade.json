@@ -712,6 +712,71 @@
       "date": "2026-09-15T18:44:25.000Z",
       "changes": [],
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "item",
+          "entityName": "Ethereal Blade",
+          "rawNote": "All Attributes bonus increased from +24 to +25",
+          "originalSource": "All Attributes bonus increased from +24 to +25",
+          "indentLevel": 1,
+          "metric": "All Attributes bonus",
+          "changeType": "INCREASED",
+          "oldValue": "+24",
+          "newValue": "+25",
+          "metadata": {
+            "entityId": 176
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 9,
+              "Guardian": 9,
+              "Crusader": 9,
+              "Archon": 9,
+              "Legend": 9,
+              "Ancient": 9,
+              "Divine": 9
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "item",
+          "entityName": "Ethereal Blade",
+          "rawNote": "Ether Blast cooldown decreased from 22s to 20s",
+          "originalSource": "Ether Blast cooldown decreased from 22s to 20s",
+          "indentLevel": 1,
+          "metric": "Ether Blast cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "22s",
+          "newValue": "20s",
+          "metadata": {
+            "entityId": 176
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a negative metric (ether blast cooldown)."
+          }
+        }
+      ],
+      "temporalAssessment": null
     }
   ]
 }

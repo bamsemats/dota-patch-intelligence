@@ -4340,6 +4340,120 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Templar Assassin",
+          "rawNote": "Intelligence gain increased from 2.0 to 2.2",
+          "originalSource": "Intelligence gain increased from 2.0 to 2.2",
+          "indentLevel": 1,
+          "metric": "Intelligence gain",
+          "changeType": "INCREASED",
+          "oldValue": "2.0",
+          "newValue": "2.2",
+          "metadata": {
+            "entityId": 46
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (intelligence gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Templar Assassin",
+          "subEntityName": "Psionic Trap",
+          "rawNote": "Cast Range rescaled from 1800 to 1600/1800/2000",
+          "originalSource": "Cast Range rescaled from 1800 to 1600/1800/2000",
+          "indentLevel": 1,
+          "metric": "Cast Range",
+          "changeType": "RESCALE",
+          "oldValue": "1800",
+          "newValue": "1600/1800/2000",
+          "metadata": {
+            "entityId": 46,
+            "subEntityId": 5197
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Templar Assassin",
+          "subEntityName": "Psionic Trap",
+          "rawNote": "Now traps have fragile pip health",
+          "originalSource": "Now traps have fragile pip health",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 46,
+            "subEntityId": 5197
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -0.81,
+        "teamfight": -0.04,
+        "laning": -0.81,
+        "siege": 0,
+        "utility": -0.04
+      },
+      "totalVector": {
+        "farming": 1.5,
+        "mobility": 0,
+        "survivability": 1.72,
+        "teamfight": 8.68,
+        "laning": 3.22,
+        "siege": 0,
+        "utility": 0.18
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

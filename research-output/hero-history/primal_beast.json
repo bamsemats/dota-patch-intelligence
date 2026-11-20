@@ -3346,6 +3346,178 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Primal Beast",
+          "rawNote": "Max Base Damage increased by 10",
+          "originalSource": "Max Base Damage increased by 10",
+          "indentLevel": 1,
+          "metric": "Max Base Damage",
+          "changeType": "INCREASED",
+          "newValue": "10",
+          "metadata": {
+            "entityId": 137
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (max base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Primal Beast",
+          "rawNote": "Damage at level 1 increased from 62-64 to 62-74",
+          "originalSource": "Damage at level 1 increased from 62-64 to 62-74",
+          "indentLevel": 2,
+          "metric": "Damage at level 1",
+          "changeType": "INCREASED",
+          "oldValue": "62-64",
+          "newValue": "62-74",
+          "metadata": {
+            "entityId": 137
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (damage at level 1)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Primal Beast",
+          "rawNote": "Base attack time worsened from 1.8 to 1.9",
+          "originalSource": "Base attack time worsened from 1.8 to 1.9",
+          "indentLevel": 1,
+          "metric": "Base attack time",
+          "changeType": "DECREASED",
+          "oldValue": "1.8",
+          "newValue": "1.9",
+          "metadata": {
+            "entityId": 137
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Primal Beast",
+          "subEntityName": "Onslaught",
+          "rawNote": "The movement buff now cannot be dispelled",
+          "originalSource": "The movement buff now cannot be dispelled",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 137,
+            "subEntityId": 992
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "DISPEL_INTERACTION",
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Primal Beast",
+          "subEntityName": "Rock Throw",
+          "rawNote": "Damage rescaled from 325 to 300 + 1x Primal Beast's Strength",
+          "originalSource": "Damage rescaled from 325 to 300 + 1x Primal Beast's Strength",
+          "indentLevel": 1,
+          "metric": "Damage",
+          "changeType": "RESCALE",
+          "oldValue": "325",
+          "newValue": "300 + 1x Primal Beast's Strength",
+          "metadata": {
+            "entityId": 137,
+            "subEntityId": 7739
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -0.89,
+        "teamfight": -0.02,
+        "laning": -0.89,
+        "siege": 0,
+        "utility": -0.02
+      },
+      "totalVector": {
+        "farming": -5,
+        "mobility": 0,
+        "survivability": -0.85,
+        "teamfight": -6.55,
+        "laning": -5.85,
+        "siege": 0,
+        "utility": 19.97
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

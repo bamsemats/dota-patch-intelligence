@@ -2564,6 +2564,125 @@
         "utility": -0.79
       },
       "winrates": {},
+      "temporalAssessment": "Net Gain"
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Ursa",
+          "subEntityName": "Earthshock",
+          "rawNote": "Damage increased from 75/125/175/225 to 80/140/200/260",
+          "originalSource": "Damage increased from 75/125/175/225 to 80/140/200/260",
+          "indentLevel": 1,
+          "metric": "Damage",
+          "changeType": "INCREASED",
+          "oldValue": "75/125/175/225",
+          "newValue": "80/140/200/260",
+          "metadata": {
+            "entityId": 70,
+            "subEntityId": 5357
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Ursa",
+          "subEntityName": "Earthshock",
+          "rawNote": "Slow duration decreased from 4s to 3.5s",
+          "originalSource": "Slow duration decreased from 4s to 3.5s",
+          "indentLevel": 1,
+          "metric": "Slow duration",
+          "changeType": "DECREASED",
+          "oldValue": "4s",
+          "newValue": "3.5s",
+          "metadata": {
+            "entityId": 70,
+            "subEntityId": 5357
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a positive metric (slow duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Ursa",
+          "subEntityName": "Earthshock",
+          "rawNote": "Movement Slow decreased from 22/28/34/40% to 16/24/32/40%",
+          "originalSource": "Movement Slow decreased from 22/28/34/40% to 16/24/32/40%",
+          "indentLevel": 1,
+          "metric": "Movement Slow",
+          "changeType": "DECREASED",
+          "oldValue": "22/28/34/40%",
+          "newValue": "16/24/32/40%",
+          "metadata": {
+            "entityId": 70,
+            "subEntityId": 5357
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 1.5,
+        "mobility": 0,
+        "survivability": -0.24,
+        "teamfight": 1.36,
+        "laning": 1.26,
+        "siege": 0,
+        "utility": -0.14
+      },
+      "totalVector": {
+        "farming": 0.5,
+        "mobility": 0,
+        "survivability": -0.43,
+        "teamfight": 1.57,
+        "laning": 0.07,
+        "siege": 0,
+        "utility": -0.93
+      },
+      "winrates": {},
       "temporalAssessment": null
     }
   ]

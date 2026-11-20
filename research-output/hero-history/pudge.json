@@ -2609,6 +2609,120 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Pudge",
+          "subEntityName": "Meat Hook",
+          "rawNote": "Aghanim's Shard no longer refunds 50% of cooldown when hitting an ally",
+          "originalSource": "Aghanim's Shard no longer refunds 50% of cooldown when hitting an ally",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 14,
+            "subEntityId": 5075
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Pudge",
+          "subEntityName": "Meat Hook",
+          "rawNote": "Aghanim's Shard now increases cast range by 100",
+          "originalSource": "Aghanim's Shard now increases cast range by 100",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 14,
+            "subEntityId": 5075
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "FEATURE_INTRODUCTION",
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Pudge",
+          "subEntityName": "Dismember",
+          "rawNote": "Strength Multiplier decreased from 0.3/0.6/0.9 to 0.3/0.5/0.7",
+          "originalSource": "Strength Multiplier decreased from 0.3/0.6/0.9 to 0.3/0.5/0.7",
+          "indentLevel": 1,
+          "metric": "Strength Multiplier",
+          "changeType": "DECREASED",
+          "oldValue": "0.3/0.6/0.9",
+          "newValue": "0.3/0.5/0.7",
+          "metadata": {
+            "entityId": 14,
+            "subEntityId": 5077
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (strength multiplier)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -0.42,
+        "teamfight": 0.06,
+        "laning": -0.42,
+        "siege": 0,
+        "utility": 0.06
+      },
+      "totalVector": {
+        "farming": -3,
+        "mobility": 0,
+        "survivability": -0.4,
+        "teamfight": -6.99,
+        "laning": -3.4,
+        "siege": 0,
+        "utility": -14
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

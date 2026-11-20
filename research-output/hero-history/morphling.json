@@ -3648,6 +3648,204 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Morphling",
+          "rawNote": "Strength gain increased from 2.6 to 2.8",
+          "originalSource": "Strength gain increased from 2.6 to 2.8",
+          "indentLevel": 1,
+          "metric": "Strength gain",
+          "changeType": "INCREASED",
+          "oldValue": "2.6",
+          "newValue": "2.8",
+          "metadata": {
+            "entityId": 10
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (strength gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Morphling",
+          "rawNote": "Intelligence gain increased from 1.8 to 2.0",
+          "originalSource": "Intelligence gain increased from 1.8 to 2.0",
+          "indentLevel": 1,
+          "metric": "Intelligence gain",
+          "changeType": "INCREASED",
+          "oldValue": "1.8",
+          "newValue": "2.0",
+          "metadata": {
+            "entityId": 10
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (intelligence gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Morphling",
+          "subEntityName": "Ebb and Flow",
+          "rawNote": "Now fully disabled by Break",
+          "originalSource": "Now fully disabled by Break",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 10,
+            "subEntityId": 1741
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Morphling",
+          "subEntityName": "Morph",
+          "rawNote": "Aghanim's Scepter reworked",
+          "originalSource": "Aghanim's Scepter reworked",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 10,
+            "subEntityId": 5057
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Morphling",
+          "subEntityName": "Morph",
+          "rawNote": "While Morph is active, every time Morphling casts a unit-targeted spell, 2 lesser replicants appear one after another 0.2 seconds apart, and cast it again at the random enemy within 450 radius from the target. Every echo is weaker, dealing less damage, healing less health and applying shorter buffs/debuffs than the previous one: the first one is 50% weaker, and the second one is also 50% weaker than the previous one (so its 25% of the initial values)",
+          "originalSource": "While Morph is active, every time Morphling casts a unit-targeted spell, 2 lesser replicants appear one after another 0.2 seconds apart, and cast it again at the random enemy within 450 radius from the target. Every echo is weaker, dealing less damage, healing less health and applying shorter buffs/debuffs than the previous one: the first one is 50% weaker, and the second one is also 50% weaker than the previous one (so its 25% of the initial values)",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 10,
+            "subEntityId": 5057
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "FEATURE_INTRODUCTION",
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Morphling",
+          "subEntityName": "Morph",
+          "rawNote": "If no other enemies are found, replicants will cast the spell at the target as well",
+          "originalSource": "If no other enemies are found, replicants will cast the spell at the target as well",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 10,
+            "subEntityId": 5057
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "SPELL_IMMUNITY_INTERACTION",
+            "strategicWeight": {
+              "Herald": 9,
+              "Guardian": 9,
+              "Crusader": 9,
+              "Archon": 9,
+              "Legend": 9,
+              "Ancient": 9,
+              "Divine": 9
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0.63,
+        "teamfight": -0.02,
+        "laning": 0.63,
+        "siege": 0,
+        "utility": -0.02
+      },
+      "totalVector": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": 3.06,
+        "teamfight": 10.69,
+        "laning": 4.06,
+        "siege": 0,
+        "utility": 2.19
+      },
+      "winrates": {},
+      "temporalAssessment": "Net Gain"
     }
   ]
 }

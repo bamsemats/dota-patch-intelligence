@@ -3894,6 +3894,304 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Monkey King",
+          "subEntityName": "Boundless Strike",
+          "rawNote": "Cooldown decreased from 24/21/18/15s to 24/20/16/12s",
+          "originalSource": "Cooldown decreased from 24/21/18/15s to 24/20/16/12s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "24/21/18/15s",
+          "newValue": "24/20/16/12s",
+          "metadata": {
+            "entityId": 114,
+            "subEntityId": 5716
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Monkey King",
+          "subEntityName": "Boundless Strike",
+          "rawNote": "Critical Strike decreased from 120/140/160/180% to 120/130/140/150%",
+          "originalSource": "Critical Strike decreased from 120/140/160/180% to 120/130/140/150%",
+          "indentLevel": 1,
+          "metric": "Critical Strike",
+          "changeType": "DECREASED",
+          "oldValue": "120/140/160/180%",
+          "newValue": "120/130/140/150%",
+          "metadata": {
+            "entityId": 114,
+            "subEntityId": 5716
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Monkey King",
+          "subEntityName": "Boundless Strike",
+          "rawNote": "Bonus Damage increased from 20/40/60/80 to 25/50/75/100",
+          "originalSource": "Bonus Damage increased from 20/40/60/80 to 25/50/75/100",
+          "indentLevel": 1,
+          "metric": "Bonus Damage",
+          "changeType": "INCREASED",
+          "oldValue": "20/40/60/80",
+          "newValue": "25/50/75/100",
+          "metadata": {
+            "entityId": 114,
+            "subEntityId": 5716
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (bonus damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Monkey King",
+          "subEntityName": "Boundless Strike",
+          "rawNote": "Stun Duration rescaled from 0.7/0.9/1.1/1.3s to 0.75/1/1.25/1.5s",
+          "originalSource": "Stun Duration rescaled from 0.7/0.9/1.1/1.3s to 0.75/1/1.25/1.5s",
+          "indentLevel": 1,
+          "metric": "Stun Duration",
+          "changeType": "RESCALE",
+          "oldValue": "0.7/0.9/1.1/1.3s",
+          "newValue": "0.75/1/1.25/1.5s",
+          "metadata": {
+            "entityId": 114,
+            "subEntityId": 5716
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Monkey King",
+          "subEntityName": "Boundless Strike",
+          "rawNote": "Aghanim's Shard now makes Monkey King jump to the target position, instead of full distance all the time",
+          "originalSource": "Aghanim's Shard now makes Monkey King jump to the target position, instead of full distance all the time",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 114,
+            "subEntityId": 5716
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "TARGETING_RULE_CHANGE",
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Monkey King",
+          "subEntityName": "Tree Dance",
+          "rawNote": "Non-player controlled creeps no longer cause the ability to go on cooldown",
+          "originalSource": "Non-player controlled creeps no longer cause the ability to go on cooldown",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 114,
+            "subEntityId": 5721
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Monkey King",
+          "subEntityName": "Tree Dance",
+          "rawNote": "Cast Range and jump distance increased from 900 to 1000",
+          "originalSource": "Cast Range and jump distance increased from 900 to 1000",
+          "indentLevel": 1,
+          "metric": "Cast Range and jump distance",
+          "changeType": "INCREASED",
+          "oldValue": "900",
+          "newValue": "1000",
+          "metadata": {
+            "entityId": 114,
+            "subEntityId": 5721
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Increased a positive metric (cast range and jump distance)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Monkey King",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent Boundless Strike Stun Duration increased from +0.2s to +0.25s",
+          "originalSource": "Level 10 Talent Boundless Strike Stun Duration increased from +0.2s to +0.25s",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent Boundless Strike Stun Duration",
+          "changeType": "INCREASED",
+          "oldValue": "+0.2s",
+          "newValue": "+0.25s",
+          "metadata": {
+            "entityId": 114
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Increased a positive metric (level 10 talent boundless strike stun duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Monkey King",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent Tree Dance Cast Range decreased from +300 to +200",
+          "originalSource": "Level 10 Talent Tree Dance Cast Range decreased from +300 to +200",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent Tree Dance Cast Range",
+          "changeType": "DECREASED",
+          "oldValue": "+300",
+          "newValue": "+200",
+          "metadata": {
+            "entityId": 114
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a positive metric (level 10 talent tree dance cast range)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0.53,
+        "teamfight": 3.45,
+        "laning": 0.53,
+        "siege": 0,
+        "utility": -0.04
+      },
+      "totalVector": {
+        "farming": -0.5,
+        "mobility": 0,
+        "survivability": 2.18,
+        "teamfight": 22.78,
+        "laning": 1.69,
+        "siege": 0,
+        "utility": -3.21
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

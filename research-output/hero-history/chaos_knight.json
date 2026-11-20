@@ -3496,6 +3496,602 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Chaos Knight",
+          "rawNote": "Min Base Damage increased by 5",
+          "originalSource": "Min Base Damage increased by 5",
+          "indentLevel": 1,
+          "metric": "Min Base Damage",
+          "changeType": "INCREASED",
+          "newValue": "5",
+          "metadata": {
+            "entityId": 81
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (min base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Chaos Knight",
+          "rawNote": "Max Base Damage decreased by 5",
+          "originalSource": "Max Base Damage decreased by 5",
+          "indentLevel": 1,
+          "metric": "Max Base Damage",
+          "changeType": "DECREASED",
+          "newValue": "5",
+          "metadata": {
+            "entityId": 81
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (max base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Chaos Knight",
+          "rawNote": "Damage at level 1 rescaled from 56-76 to 61-71",
+          "originalSource": "Damage at level 1 rescaled from 56-76 to 61-71",
+          "indentLevel": 2,
+          "metric": "Damage at level 1",
+          "changeType": "RESCALE",
+          "oldValue": "56-76",
+          "newValue": "61-71",
+          "metadata": {
+            "entityId": 81
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Chaos Knight",
+          "rawNote": "Removed Fundamental Forging Innate Ability",
+          "originalSource": "Removed Fundamental Forging Innate Ability",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 81
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "FEATURE_INTRODUCTION",
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Chaos Knight",
+          "subEntityName": "Unknown Ability (1910)",
+          "rawNote": "New innate ability",
+          "originalSource": "New innate ability",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 81,
+            "subEntityId": 1910
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Chaos Knight",
+          "subEntityName": "Unknown Ability (1910)",
+          "rawNote": "Has Passive and Active components",
+          "originalSource": "Has Passive and Active components",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 81,
+            "subEntityId": 1910
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Chaos Knight",
+          "subEntityName": "Unknown Ability (1910)",
+          "rawNote": "Passive. Can be Broken",
+          "originalSource": "Passive. Can be Broken",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 81,
+            "subEntityId": 1910
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Chaos Knight",
+          "subEntityName": "Unknown Ability (1910)",
+          "rawNote": "Chaos Knight gains 5 move speed for each subsequent second he's been moving without stopping, up to a maximum bonus of 20 + 2 per hero level. Stopping makes Chaos Knight lose speed 4x faster (20 speed per second). Attacking removes the entire bonus",
+          "originalSource": "Chaos Knight gains 5 move speed for each subsequent second he's been moving without stopping, up to a maximum bonus of 20 + 2 per hero level. Stopping makes Chaos Knight lose speed 4x faster (20 speed per second). Attacking removes the entire bonus",
+          "indentLevel": 3,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 81,
+            "subEntityId": 1910
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "VISION_INTERACTION",
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Chaos Knight",
+          "subEntityName": "Unknown Ability (1910)",
+          "rawNote": "Active. Point-targeted. Available only when at least 1 Chaos Knight's illusion created with active cast of Phantasm is alive",
+          "originalSource": "Active. Point-targeted. Available only when at least 1 Chaos Knight's illusion created with active cast of Phantasm is alive",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 81,
+            "subEntityId": 1910
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "TARGETING_RULE_CHANGE",
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Chaos Knight",
+          "subEntityName": "Unknown Ability (1910)",
+          "rawNote": "Global Cast Range. Mana Cost: 50. Cooldown: 30s. Cast Point: 0.4s",
+          "originalSource": "Global Cast Range. Mana Cost: 50. Cooldown: 30s. Cast Point: 0.4s",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 81,
+            "subEntityId": 1910
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "COOLDOWN_RESET_INTERACTION",
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Chaos Knight",
+          "subEntityName": "Unknown Ability (1910)",
+          "rawNote": "Chaos Knight prepares for up to 1s to charge towards a pointed location. The longer the preparation is, the bigger movement speed bonus is. After the preparation all Chaos Knight illusions within 1300 range are teleported to him and the charge begins. Chaos Knight and his illusions run at high speed towards the targeted point, going over terrain, destroying trees and hitting enemies on their way. Chaos Knight can slightly turn during the run, and his illusions will follow. Despite being able to turn, the charge will last as long as you'd need to reach the targeted location. The charge will stop if max duration is reached, if Chaos Knight manually cancels it, or casts any other ability. Chaos Knight keeps gained speed for 0.5s after ending the charge",
+          "originalSource": "Chaos Knight prepares for up to 1s to charge towards a pointed location. The longer the preparation is, the bigger movement speed bonus is. After the preparation all Chaos Knight illusions within 1300 range are teleported to him and the charge begins. Chaos Knight and his illusions run at high speed towards the targeted point, going over terrain, destroying trees and hitting enemies on their way. Chaos Knight can slightly turn during the run, and his illusions will follow. Despite being able to turn, the charge will last as long as you'd need to reach the targeted location. The charge will stop if max duration is reached, if Chaos Knight manually cancels it, or casts any other ability. Chaos Knight keeps gained speed for 0.5s after ending the charge",
+          "indentLevel": 3,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 81,
+            "subEntityId": 1910
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "FEATURE_INTRODUCTION",
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Chaos Knight",
+          "subEntityName": "Unknown Ability (1910)",
+          "rawNote": "Max Charge Speed is 2x (Chaos Knight's Movespeed with Max Bonus Speed). Reached after a full 1s preparation",
+          "originalSource": "Max Charge Speed is 2x (Chaos Knight's Movespeed with Max Bonus Speed). Reached after a full 1s preparation",
+          "indentLevel": 3,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 81,
+            "subEntityId": 1910
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "VISION_INTERACTION",
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Chaos Knight",
+          "subEntityName": "Unknown Ability (1910)",
+          "rawNote": "The preparation can be stopped earlier with Stop/Hold commands to start the charge with a smaller bonus",
+          "originalSource": "The preparation can be stopped earlier with Stop/Hold commands to start the charge with a smaller bonus",
+          "indentLevel": 4,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 81,
+            "subEntityId": 1910
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "AURA_INTERACTION",
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Chaos Knight",
+          "subEntityName": "Unknown Ability (1910)",
+          "rawNote": "Hit radius: 150 (affected by AoE bonuses). Cannot attack buildings",
+          "originalSource": "Hit radius: 150 (affected by AoE bonuses). Cannot attack buildings",
+          "indentLevel": 3,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 81,
+            "subEntityId": 1910
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Adjustment",
+            "semanticTag": "DAMAGE_INTERACTION",
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "confidenceScore": 0.95,
+            "reasoning": "Matches exact semantic pattern: \"AoE bonuses\""
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Chaos Knight",
+          "subEntityName": "Unknown Ability (1910)",
+          "rawNote": "Chaos Knight gains/loses the max speed over 0.5s as the charge starts/ends",
+          "originalSource": "Chaos Knight gains/loses the max speed over 0.5s as the charge starts/ends",
+          "indentLevel": 3,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 81,
+            "subEntityId": 1910
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "VISION_INTERACTION",
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Chaos Knight",
+          "subEntityName": "Unknown Ability (1910)",
+          "rawNote": "Only illusions under Chaos Knight's control are charging. This includes Phantasms of teammates (created with Aghanim's Scepter), Illusion Rune, and Manta Style ones",
+          "originalSource": "Only illusions under Chaos Knight's control are charging. This includes Phantasms of teammates (created with Aghanim's Scepter), Illusion Rune, and Manta Style ones",
+          "indentLevel": 3,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 81,
+            "subEntityId": 1910
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "VISION_INTERACTION",
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Chaos Knight",
+          "subEntityName": "Unknown Ability (1910)",
+          "rawNote": "Cannot be cast while rooted. The charge is cancelled if Chaos Knight is rooted, stunned, hexed, feared or taunted during the preparation or mid-run. Illusions will also stop the charge if the real Chaos Knight is stopped",
+          "originalSource": "Cannot be cast while rooted. The charge is cancelled if Chaos Knight is rooted, stunned, hexed, feared or taunted during the preparation or mid-run. Illusions will also stop the charge if the real Chaos Knight is stopped",
+          "indentLevel": 3,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 81,
+            "subEntityId": 1910
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "CAST_WHILE_DISABLED",
+            "strategicWeight": {
+              "Herald": 9,
+              "Guardian": 9,
+              "Crusader": 9,
+              "Archon": 9,
+              "Legend": 9,
+              "Ancient": 9,
+              "Divine": 9
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Chaos Knight",
+          "subEntityName": "Chaos Bolt",
+          "rawNote": "Aghanim's Shard illusion has 25% item potency",
+          "originalSource": "Aghanim's Shard illusion has 25% item potency",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 81,
+            "subEntityId": 5426
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Chaos Knight",
+          "subEntityName": "Chaos Bolt",
+          "rawNote": "Aghanim's Shard illusion no longer has 15% damage penalty and deals full damage",
+          "originalSource": "Aghanim's Shard illusion no longer has 15% damage penalty and deals full damage",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 81,
+            "subEntityId": 5426
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Chaos Knight",
+          "subEntityName": "Phantasm",
+          "rawNote": "Phantasms have 100% item potency",
+          "originalSource": "Phantasms have 100% item potency",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 81,
+            "subEntityId": 5429
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -0.39,
+        "teamfight": -0.07,
+        "laning": -0.39,
+        "siege": 0,
+        "utility": -0.07
+      },
+      "totalVector": {
+        "farming": -1,
+        "mobility": 0,
+        "survivability": -0.89,
+        "teamfight": 0.13,
+        "laning": -1.89,
+        "siege": 0,
+        "utility": -5.88
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

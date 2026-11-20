@@ -3029,6 +3029,153 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Phoenix",
+          "subEntityName": "Sun Ray",
+          "rawNote": "Mana Cost rescaled from 100/110/120/130 to 90/105/120/135",
+          "originalSource": "Mana Cost rescaled from 100/110/120/130 to 90/105/120/135",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "RESCALE",
+          "oldValue": "100/110/120/130",
+          "newValue": "90/105/120/135",
+          "metadata": {
+            "entityId": 110,
+            "subEntityId": 5626
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Phoenix",
+          "subEntityName": "Sun Ray",
+          "rawNote": "Base Damage per second increased from 15/20/25/30 to 20/25/30/35",
+          "originalSource": "Base Damage per second increased from 15/20/25/30 to 20/25/30/35",
+          "indentLevel": 1,
+          "metric": "Base Damage per second",
+          "changeType": "INCREASED",
+          "oldValue": "15/20/25/30",
+          "newValue": "20/25/30/35",
+          "metadata": {
+            "entityId": 110,
+            "subEntityId": 5626
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (base damage per second)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Phoenix",
+          "subEntityName": "Supernova",
+          "rawNote": "Stun Duration increased from 1.6/2/2.4s to 1.8/2.1/2.4s",
+          "originalSource": "Stun Duration increased from 1.6/2/2.4s to 1.8/2.1/2.4s",
+          "indentLevel": 1,
+          "metric": "Stun Duration",
+          "changeType": "INCREASED",
+          "oldValue": "1.6/2/2.4s",
+          "newValue": "1.8/2.1/2.4s",
+          "metadata": {
+            "entityId": 110,
+            "subEntityId": 5630
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Increased a positive metric (stun duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Phoenix",
+          "subEntityName": "Supernova",
+          "rawNote": "The sun is no longer immune to damage from certain types of units",
+          "originalSource": "The sun is no longer immune to damage from certain types of units",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 110,
+            "subEntityId": 5630
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0.08,
+        "teamfight": 0.01,
+        "laning": 0.08,
+        "siege": 0,
+        "utility": 0.01
+      },
+      "totalVector": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0.28,
+        "teamfight": -1.35,
+        "laning": 0.28,
+        "siege": 0,
+        "utility": -0.35
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

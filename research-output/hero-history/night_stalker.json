@@ -3172,6 +3172,124 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Night Stalker",
+          "subEntityName": "Hunter in the Night",
+          "rawNote": "Aghanim's Scepter Bonus Attack Speed increased from 50 to 70",
+          "originalSource": "Aghanim's Scepter Bonus Attack Speed increased from 50 to 70",
+          "indentLevel": 1,
+          "metric": "Aghanim's Scepter Bonus Attack Speed",
+          "changeType": "INCREASED",
+          "oldValue": "50",
+          "newValue": "70",
+          "metadata": {
+            "entityId": 60,
+            "subEntityId": 5277
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6.5,
+              "Archon": 6.5,
+              "Legend": 6.5,
+              "Ancient": 6.5,
+              "Divine": 6.5
+            },
+            "reasoning": "Increased a positive metric (aghanim's scepter bonus attack speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Night Stalker",
+          "subEntityName": "Midnight Feast",
+          "rawNote": "Max Health Restore rescaled from 10/15/20/25% to 12/16/20/24%",
+          "originalSource": "Max Health Restore rescaled from 10/15/20/25% to 12/16/20/24%",
+          "indentLevel": 1,
+          "metric": "Max Health Restore",
+          "changeType": "RESCALE",
+          "oldValue": "10/15/20/25%",
+          "newValue": "12/16/20/24%",
+          "metadata": {
+            "entityId": 60,
+            "subEntityId": 1753
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Night Stalker",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent Crippling Fear DPS increased from +10 to +15",
+          "originalSource": "Level 10 Talent Crippling Fear DPS increased from +10 to +15",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent Crippling Fear DPS",
+          "changeType": "INCREASED",
+          "oldValue": "+10",
+          "newValue": "+15",
+          "metadata": {
+            "entityId": 60
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -0.6,
+        "teamfight": -0.1,
+        "laning": -0.6,
+        "siege": 0,
+        "utility": -0.1
+      },
+      "totalVector": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": -0.26,
+        "teamfight": -1.36,
+        "laning": 0.74,
+        "siege": 0,
+        "utility": 0.64
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

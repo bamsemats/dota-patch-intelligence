@@ -3172,6 +3172,152 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Io",
+          "subEntityName": "Equilibrium",
+          "rawNote": "Max Damage/Heal Amp decreased from 4% + 0.4% per level to 4% + 0.3% per level",
+          "originalSource": "Max Damage/Heal Amp decreased from 4% + 0.4% per level to 4% + 0.3% per level",
+          "indentLevel": 1,
+          "metric": "Max Damage/Heal Amp",
+          "changeType": "DECREASED",
+          "oldValue": "4% + 0.4% per level",
+          "newValue": "4% + 0.3% per level",
+          "metadata": {
+            "entityId": 91,
+            "subEntityId": 1770
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (max damage/heal amp)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Io",
+          "subEntityName": "Equilibrium",
+          "rawNote": "Now fully disabled by Break",
+          "originalSource": "Now fully disabled by Break",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 91,
+            "subEntityId": 1770
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Io",
+          "subEntityName": "Overcharge",
+          "rawNote": "Duration decreased from 8s to 7s",
+          "originalSource": "Duration decreased from 8s to 7s",
+          "indentLevel": 1,
+          "metric": "Duration",
+          "changeType": "DECREASED",
+          "oldValue": "8s",
+          "newValue": "7s",
+          "metadata": {
+            "entityId": 91,
+            "subEntityId": 5487
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a positive metric (duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Io",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent Overcharge Duration decreased from +1.5s to +1s",
+          "originalSource": "Level 10 Talent Overcharge Duration decreased from +1.5s to +1s",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent Overcharge Duration",
+          "changeType": "DECREASED",
+          "oldValue": "+1.5s",
+          "newValue": "+1s",
+          "metadata": {
+            "entityId": 91
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a positive metric (level 10 talent overcharge duration)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0.24,
+        "teamfight": -3.48,
+        "laning": 0.24,
+        "siege": 0,
+        "utility": -6.98
+      },
+      "totalVector": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": 0.39,
+        "teamfight": 3.29,
+        "laning": 1.39,
+        "siege": 0,
+        "utility": -13.21
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

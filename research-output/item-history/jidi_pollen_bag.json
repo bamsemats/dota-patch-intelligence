@@ -587,6 +587,69 @@
       "date": "2026-09-15T18:44:25.000Z",
       "changes": [],
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "neutral",
+          "entityName": "Jidi Pollen Bag",
+          "rawNote": "Tier changed from 3 to 2",
+          "originalSource": "Tier changed from 3 to 2",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 1640
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "neutral",
+          "entityName": "Jidi Pollen Bag",
+          "rawNote": "Pollinate health restoration reduction increased from 50% to 65%",
+          "originalSource": "Pollinate health restoration reduction increased from 50% to 65%",
+          "indentLevel": 1,
+          "metric": "Pollinate health restoration reduction",
+          "changeType": "INCREASED",
+          "oldValue": "50%",
+          "newValue": "65%",
+          "metadata": {
+            "entityId": 1640
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Increased a positive metric (pollinate health restoration reduction)."
+          }
+        }
+      ],
+      "temporalAssessment": null
     }
   ]
 }

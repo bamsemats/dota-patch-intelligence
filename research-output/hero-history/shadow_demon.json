@@ -2948,6 +2948,154 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Shadow Demon",
+          "subEntityName": "Disruption",
+          "rawNote": "Created illusions now apply stacks of Menace with their attacks",
+          "originalSource": "Created illusions now apply stacks of Menace with their attacks",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 79,
+            "subEntityId": 5421
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Adjustment",
+            "semanticTag": "ILLUSION_INTERACTION",
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "confidenceScore": 0.95,
+            "reasoning": "Matches exact semantic pattern: \"illusions now\""
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Shadow Demon",
+          "subEntityName": "Demonic Purge",
+          "rawNote": "Purge Damage decreased from 300/450/600 to 300/425/550",
+          "originalSource": "Purge Damage decreased from 300/450/600 to 300/425/550",
+          "indentLevel": 1,
+          "metric": "Purge Damage",
+          "changeType": "DECREASED",
+          "oldValue": "300/450/600",
+          "newValue": "300/425/550",
+          "metadata": {
+            "entityId": 79,
+            "subEntityId": 5425
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (purge damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Shadow Demon",
+          "subEntityName": "Demonic Cleanse",
+          "rawNote": "Cooldown decreased from 60s to 40s",
+          "originalSource": "Cooldown decreased from 60s to 40s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "60s",
+          "newValue": "40s",
+          "metadata": {
+            "entityId": 79,
+            "subEntityId": 916
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Shadow Demon",
+          "subEntityName": "Demonic Cleanse",
+          "rawNote": "Cleanse Heal decreased from 450 to 425",
+          "originalSource": "Cleanse Heal decreased from 450 to 425",
+          "indentLevel": 1,
+          "metric": "Cleanse Heal",
+          "changeType": "DECREASED",
+          "oldValue": "450",
+          "newValue": "425",
+          "metadata": {
+            "entityId": 79,
+            "subEntityId": 916
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 1.13,
+        "teamfight": 3.48,
+        "laning": 1.13,
+        "siege": 0,
+        "utility": -0.02
+      },
+      "totalVector": {
+        "farming": 2,
+        "mobility": 0,
+        "survivability": 0.93,
+        "teamfight": -7.28,
+        "laning": 2.94,
+        "siege": 0,
+        "utility": -26.27
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

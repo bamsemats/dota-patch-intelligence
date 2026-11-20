@@ -1152,6 +1152,97 @@
       "date": "2026-09-15T18:44:25.000Z",
       "changes": [],
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "item",
+          "entityName": "Solar Crest",
+          "rawNote": "Recipe cost increased from 500g to 600g.Total cost unchanged at 2575g (due to Pavise cost decrease)",
+          "originalSource": "Recipe cost increased from 500g to 600g.Total cost unchanged at 2575g (due to Pavise cost decrease)",
+          "indentLevel": 1,
+          "metric": "Recipe cost",
+          "changeType": "INCREASED",
+          "oldValue": "500g",
+          "newValue": "600g.Total cost unchanged at 2575g (due to Pavise cost decrease)",
+          "metadata": {
+            "entityId": 229
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a negative metric (recipe cost)."
+          }
+        },
+        {
+          "category": "item",
+          "entityName": "Solar Crest",
+          "rawNote": "Shine now provides all bonuses on self-cast, but they will be reduced by 50%",
+          "originalSource": "Shine now provides all bonuses on self-cast, but they will be reduced by 50%",
+          "indentLevel": 1,
+          "metric": "Shine now provides all bonuses on self-cast, but they will be",
+          "changeType": "DECREASED",
+          "newValue": "50%",
+          "metadata": {
+            "entityId": 229
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "item",
+          "entityName": "Solar Crest",
+          "rawNote": "Still provides a full barrier (350). Other bonuses on self-cast are +2.5 Armor, +30 Attack Speed, and +7.5% Movement Speed",
+          "originalSource": "Still provides a full barrier (350). Other bonuses on self-cast are +2.5 Armor, +30 Attack Speed, and +7.5% Movement Speed",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 229
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "AURA_INTERACTION",
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        }
+      ],
+      "temporalAssessment": null
     }
   ]
 }

@@ -3393,6 +3393,237 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Invading Force",
+          "rawNote": "No longer provides 3.7% + 0.3% per level damage resistance",
+          "originalSource": "No longer provides 3.7% + 0.3% per level damage resistance",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 1486
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Invading Force",
+          "rawNote": "Now provides physical damage barrier equal to a portion of teleporting hero's max health",
+          "originalSource": "Now provides physical damage barrier equal to a portion of teleporting hero's max health",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 1486
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Invading Force",
+          "rawNote": "Max Health to Barrier: 8.5% + 0.25% per Underlord's level",
+          "originalSource": "Max Health to Barrier: 8.5% + 0.25% per Underlord's level",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 1486
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Invading Force",
+          "rawNote": "Buff Duration increased from 5s to 6s",
+          "originalSource": "Buff Duration increased from 5s to 6s",
+          "indentLevel": 1,
+          "metric": "Buff Duration",
+          "changeType": "INCREASED",
+          "oldValue": "5s",
+          "newValue": "6s",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 1486
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Increased a positive metric (buff duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Fiend's Gate",
+          "rawNote": "Cooldown rescaled from 110/105/100s to 115/105/95s",
+          "originalSource": "Cooldown rescaled from 110/105/100s to 115/105/95s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "RESCALE",
+          "oldValue": "110/105/100s",
+          "newValue": "115/105/95s",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 865
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Fiend's Gate",
+          "rawNote": "Channel duration decreased from 3.5s to 3.5/3.25/3s",
+          "originalSource": "Channel duration decreased from 3.5s to 3.5/3.25/3s",
+          "indentLevel": 1,
+          "metric": "Channel duration",
+          "changeType": "DECREASED",
+          "oldValue": "3.5s",
+          "newValue": "3.5/3.25/3s",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 865
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a positive metric (channel duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Underlord",
+          "subEntityName": "Fiend's Gate",
+          "rawNote": "Aghanim Scepter upgrade now creates a Pit of Malice only at the end portal",
+          "originalSource": "Aghanim Scepter upgrade now creates a Pit of Malice only at the end portal",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 108,
+            "subEntityId": 865
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -0.58,
+        "teamfight": 0.04,
+        "laning": -0.58,
+        "siege": 0,
+        "utility": 0.04
+      },
+      "totalVector": {
+        "farming": -2,
+        "mobility": 0,
+        "survivability": -1.63,
+        "teamfight": -10.73,
+        "laning": -3.63,
+        "siege": 0,
+        "utility": -28.21
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

@@ -3351,6 +3351,298 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Enigma",
+          "rawNote": "Base Intelligence increased from 19 to 20",
+          "originalSource": "Base Intelligence increased from 19 to 20",
+          "indentLevel": 1,
+          "metric": "Base Intelligence",
+          "changeType": "INCREASED",
+          "oldValue": "19",
+          "newValue": "20",
+          "metadata": {
+            "entityId": 33
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base intelligence)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Enigma",
+          "rawNote": "Damage at level 1 unchanged at 43-49",
+          "originalSource": "Damage at level 1 unchanged at 43-49",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 33
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Enigma",
+          "rawNote": "Intelligence gain decreased from 3.6 to 3.5",
+          "originalSource": "Intelligence gain decreased from 3.6 to 3.5",
+          "indentLevel": 1,
+          "metric": "Intelligence gain",
+          "changeType": "DECREASED",
+          "oldValue": "3.6",
+          "newValue": "3.5",
+          "metadata": {
+            "entityId": 33
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (intelligence gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Enigma",
+          "rawNote": "Damage gain per level decreased from +3.2 to +3.1",
+          "originalSource": "Damage gain per level decreased from +3.2 to +3.1",
+          "indentLevel": 2,
+          "metric": "Damage gain per level",
+          "changeType": "DECREASED",
+          "oldValue": "+3.2",
+          "newValue": "+3.1",
+          "metadata": {
+            "entityId": 33
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (damage gain per level)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Enigma",
+          "subEntityName": "Malefice",
+          "rawNote": "Aghanim's Shard no longer spawns Eidolons when triggering on non-heroes",
+          "originalSource": "Aghanim's Shard no longer spawns Eidolons when triggering on non-heroes",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 33,
+            "subEntityId": 5146
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Enigma",
+          "subEntityName": "Demonic Summoning",
+          "rawNote": "Eidolon health regeneration decreased from 4 to 1/2/3/4",
+          "originalSource": "Eidolon health regeneration decreased from 4 to 1/2/3/4",
+          "indentLevel": 1,
+          "metric": "Eidolon health regeneration",
+          "changeType": "DECREASED",
+          "oldValue": "4",
+          "newValue": "1/2/3/4",
+          "metadata": {
+            "entityId": 33,
+            "subEntityId": 5147
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6.5,
+              "Guardian": 6.5,
+              "Crusader": 5.5,
+              "Archon": 5.5,
+              "Legend": 5.5,
+              "Ancient": 5.5,
+              "Divine": 5.5
+            },
+            "reasoning": "Decreased a positive metric (eidolon health regeneration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Enigma",
+          "subEntityName": "Demonic Summoning",
+          "rawNote": "Eidolon damage decreased from 12-20/24-32/36-44/48-56 to 12-18/24-30/36-42/48-54",
+          "originalSource": "Eidolon damage decreased from 12-20/24-32/36-44/48-56 to 12-18/24-30/36-42/48-54",
+          "indentLevel": 1,
+          "metric": "Eidolon damage",
+          "changeType": "DECREASED",
+          "oldValue": "12-20/24-32/36-44/48-56",
+          "newValue": "12-18/24-30/36-42/48-54",
+          "metadata": {
+            "entityId": 33,
+            "subEntityId": 5147
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (eidolon damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Enigma",
+          "subEntityName": "Black Hole",
+          "rawNote": "Damage per second decreased from 100/150/200 to 90/135/180",
+          "originalSource": "Damage per second decreased from 100/150/200 to 90/135/180",
+          "indentLevel": 1,
+          "metric": "Damage per second",
+          "changeType": "DECREASED",
+          "oldValue": "100/150/200",
+          "newValue": "90/135/180",
+          "metadata": {
+            "entityId": 33,
+            "subEntityId": 5149
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (damage per second)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Enigma",
+          "subEntityName": "Black Hole",
+          "rawNote": "Level 10 Talent Black Hole Damage Per Second decreased from +50 to +40",
+          "originalSource": "Level 10 Talent Black Hole Damage Per Second decreased from +50 to +40",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent Black Hole Damage Per Second",
+          "changeType": "DECREASED",
+          "oldValue": "+50",
+          "newValue": "+40",
+          "metadata": {
+            "entityId": 33,
+            "subEntityId": 5149
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (level 10 talent black hole damage per second)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0.24,
+        "teamfight": 0.02,
+        "laning": 0.24,
+        "siege": 0,
+        "utility": 0.02
+      },
+      "totalVector": {
+        "farming": 2,
+        "mobility": 0,
+        "survivability": -1.42,
+        "teamfight": 10.6,
+        "laning": 0.58,
+        "siege": 0,
+        "utility": -0.9
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

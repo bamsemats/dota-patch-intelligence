@@ -3302,6 +3302,124 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Enchantress",
+          "subEntityName": "Enchant",
+          "rawNote": "Creep control duration increased from 30/60/90/120s to 45/70/95/120s",
+          "originalSource": "Creep control duration increased from 30/60/90/120s to 45/70/95/120s",
+          "indentLevel": 1,
+          "metric": "Creep control duration",
+          "changeType": "INCREASED",
+          "oldValue": "30/60/90/120s",
+          "newValue": "45/70/95/120s",
+          "metadata": {
+            "entityId": 58,
+            "subEntityId": 5268
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Increased a positive metric (creep control duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Enchantress",
+          "subEntityName": "Enchant",
+          "rawNote": "Creep Max Health Bonus rescaled from 150/250/350/450 to 175/250/325/400",
+          "originalSource": "Creep Max Health Bonus rescaled from 150/250/350/450 to 175/250/325/400",
+          "indentLevel": 1,
+          "metric": "Creep Max Health Bonus",
+          "changeType": "RESCALE",
+          "oldValue": "150/250/350/450",
+          "newValue": "175/250/325/400",
+          "metadata": {
+            "entityId": 58,
+            "subEntityId": 5268
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Enchantress",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Health/Damage to Enchantress and her units increased from +150/25 to +200/30",
+          "originalSource": "Level 20 Talent Health/Damage to Enchantress and her units increased from +150/25 to +200/30",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Health/Damage to Enchantress and her units",
+          "changeType": "INCREASED",
+          "oldValue": "+150/25",
+          "newValue": "+200/30",
+          "metadata": {
+            "entityId": 58
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Increased a positive metric (level 20 talent health/damage to enchantress and her units)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 1.05,
+        "teamfight": -0.03,
+        "laning": 1.05,
+        "siege": 0,
+        "utility": -0.03
+      },
+      "totalVector": {
+        "farming": -2,
+        "mobility": 0,
+        "survivability": 0.29,
+        "teamfight": -6.81,
+        "laning": -1.71,
+        "siege": 0,
+        "utility": 1.19
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

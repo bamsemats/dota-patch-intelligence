@@ -2963,6 +2963,293 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Ceaseless Dirge",
+          "rawNote": "Is no longer affected by cooldown reduction",
+          "originalSource": "Is no longer affected by cooldown reduction",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 1360
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Tombstone",
+          "rawNote": "No longer upgraded with Aghanim's Shard",
+          "originalSource": "No longer upgraded with Aghanim's Shard",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 5444
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Flesh Golem",
+          "rawNote": "Damage Amplification decreased from 25/30/35% to 20/25/30%",
+          "originalSource": "Damage Amplification decreased from 25/30/35% to 20/25/30%",
+          "indentLevel": 1,
+          "metric": "Damage Amplification",
+          "changeType": "DECREASED",
+          "oldValue": "25/30/35%",
+          "newValue": "20/25/30%",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 5447
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (damage amplification)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Unknown Ability (1913)",
+          "rawNote": "New Ability granted by Aghanim's Shard",
+          "originalSource": "New Ability granted by Aghanim's Shard",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 1913
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Unknown Ability (1913)",
+          "rawNote": "Active. Physical damage. Doesn't pierce Debuff Immunity. Dispellable with Strong Dispel only",
+          "originalSource": "Active. Physical damage. Doesn't pierce Debuff Immunity. Dispellable with Strong Dispel only.",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 1913
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "DISPEL_INTERACTION",
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Unknown Ability (1913)",
+          "rawNote": "Cast Range: Attack Range + 250 (400 total). Mana Cost: 70. Cooldown: 18s",
+          "originalSource": "Cast Range: Attack Range + 250 (400 total). Mana Cost: 70. Cooldown: 18s",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 1913
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "COOLDOWN_RESET_INTERACTION",
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Unknown Ability (1913)",
+          "rawNote": "Undying lunges at the target and sinks his teeth in it, landing an attack with damage increased by 250 and healing Undying for the damage dealt. Biting a hero will turn them into a silenced melee zombie that is slowed by 25% and deals 40% less damage for 3s. Biting a non-ancient creep will instantly kill them, summoning a fully controllable zombie in their wake for 20s",
+          "originalSource": "Undying lunges at the target and sinks his teeth in it, landing an attack with damage increased by 250 and healing Undying for the damage dealt. Biting a hero will turn them into a silenced melee zombie that is slowed by 25% and deals 40% less damage for 3s. Biting a non-ancient creep will instantly kill them, summoning a fully controllable zombie in their wake for 20s",
+          "indentLevel": 2,
+          "metric": "Undying lunges at the target and sinks his teeth in it, landing an attack with damage",
+          "changeType": "INCREASED",
+          "newValue": "250 and healing Undying for the damage dealt. Biting a hero will turn them into a silenced melee zombie that is slowed by 25% and deals 40% less damage for 3s. Biting a non-ancient creep will instantly kill them, summoning a fully controllable zombie in their wake for 20s",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 1913
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (undying lunges at the target and sinks his teeth in it, landing an attack with damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Unknown Ability (1913)",
+          "rawNote": "The ability goes on cooldown and spends mana the moment the lunge begins",
+          "originalSource": "The ability goes on cooldown and spends mana the moment the lunge begins",
+          "indentLevel": 3,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 1913
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "COOLDOWN_RESET_INTERACTION",
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Undying",
+          "subEntityName": "Unknown Ability (1913)",
+          "rawNote": "The controllable zombie has 3 pips of health. Other stats are shared with Tombstone zombies, including Deathlust ability and damage upgrade from level 15 talent",
+          "originalSource": "The controllable zombie has 3 pips of health. Other stats are shared with Tombstone zombies, including Deathlust ability and damage upgrade from level 15 talent",
+          "indentLevel": 3,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 85,
+            "subEntityId": 1913
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "FEATURE_INTRODUCTION",
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0.16,
+        "teamfight": 0.04,
+        "laning": 0.16,
+        "siege": 0,
+        "utility": 0.04
+      },
+      "totalVector": {
+        "farming": 1.5,
+        "mobility": 0,
+        "survivability": 2.99,
+        "teamfight": -2.24,
+        "laning": 4.5,
+        "siege": 0,
+        "utility": -0.24
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

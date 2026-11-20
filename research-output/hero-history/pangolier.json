@@ -5378,6 +5378,122 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Pangolier",
+          "subEntityName": "Swashbuckle",
+          "rawNote": "Number of Slashes increased from 3 to 4",
+          "originalSource": "Number of Slashes increased from 3 to 4",
+          "indentLevel": 1,
+          "metric": "Number of Slashes",
+          "changeType": "INCREASED",
+          "oldValue": "3",
+          "newValue": "4",
+          "metadata": {
+            "entityId": 120,
+            "subEntityId": 6344
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Pangolier",
+          "subEntityName": "Swashbuckle",
+          "rawNote": "Damage per slash decreased from 35/65/95/125 to 25/50/75/100",
+          "originalSource": "Damage per slash decreased from 35/65/95/125 to 25/50/75/100",
+          "indentLevel": 1,
+          "metric": "Damage per slash",
+          "changeType": "DECREASED",
+          "oldValue": "35/65/95/125",
+          "newValue": "25/50/75/100",
+          "metadata": {
+            "entityId": 120,
+            "subEntityId": 6344
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (damage per slash)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Pangolier",
+          "subEntityName": "Swashbuckle",
+          "rawNote": "Slashes now have 60% item potency",
+          "originalSource": "Slashes now have 60% item potency",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 120,
+            "subEntityId": 6344
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0,
+        "teamfight": 0.04,
+        "laning": 0,
+        "siege": 0,
+        "utility": 0.04
+      },
+      "totalVector": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 1.11,
+        "teamfight": -0.16,
+        "laning": 1.12,
+        "siege": 0,
+        "utility": -14.16
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }
