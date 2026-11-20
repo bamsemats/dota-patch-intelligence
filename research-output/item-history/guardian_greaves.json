@@ -780,6 +780,97 @@
       "date": "2026-09-15T18:44:25.000Z",
       "changes": [],
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "item",
+          "entityName": "Guardian Greaves",
+          "rawNote": "Recipe cost decreased from 1175 to 1075. Total cost decreased from 4450g to 4350g",
+          "originalSource": "Recipe cost decreased from 1175 to 1075. Total cost decreased from 4450g to 4350g",
+          "indentLevel": 1,
+          "metric": "Recipe cost",
+          "changeType": "DECREASED",
+          "oldValue": "1175",
+          "newValue": "1075. Total cost decreased from 4450g to 4350g",
+          "metadata": {
+            "entityId": 231
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a negative metric (recipe cost)."
+          }
+        },
+        {
+          "category": "item",
+          "entityName": "Guardian Greaves",
+          "rawNote": "Movement Speed bonus increased from +50 to +55",
+          "originalSource": "Movement Speed bonus increased from +50 to +55",
+          "indentLevel": 1,
+          "metric": "Movement Speed bonus",
+          "changeType": "INCREASED",
+          "oldValue": "+50",
+          "newValue": "+55",
+          "metadata": {
+            "entityId": 231
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 8,
+              "Ancient": 9,
+              "Divine": 9
+            },
+            "reasoning": "Increased a positive metric (movement speed bonus)."
+          }
+        },
+        {
+          "category": "item",
+          "entityName": "Guardian Greaves",
+          "rawNote": "Guardian Aura no longer provides 14.5 bonus health regeneration to the wearer when below 25% health",
+          "originalSource": "Guardian Aura no longer provides 14.5 bonus health regeneration to the wearer when below 25% health",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 231
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        }
+      ],
+      "temporalAssessment": null
     }
   ]
 }

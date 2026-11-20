@@ -3207,6 +3207,175 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "rawNote": "Agility gain decreased from 3.4 to 3.2",
+          "originalSource": "Agility gain decreased from 3.4 to 3.2",
+          "indentLevel": 1,
+          "metric": "Agility gain",
+          "changeType": "DECREASED",
+          "oldValue": "3.4",
+          "newValue": "3.2",
+          "metadata": {
+            "entityId": 48
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (agility gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Lunar Orbit",
+          "rawNote": "Collision Radius is no longer affected by AoE changes",
+          "originalSource": "Collision Radius is no longer affected by AoE changes",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 1462
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Moon Glaives",
+          "rawNote": "Bounces are now full attacks with reduced damage. Lifesteal and Critical Strikes disabled on bounces",
+          "originalSource": "Bounces are now full attacks with reduced damage. Lifesteal and Critical Strikes disabled on bounces",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 5223
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "ROSHAN_INTERACTION",
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Moon Glaives",
+          "rawNote": "Now attacks have their item potency reduced with each bounce by 40%",
+          "originalSource": "Now attacks have their item potency reduced with each bounce by 40%",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 48,
+            "subEntityId": 5223
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Luna",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Lucent Beam Hits An Additional Target replaced with Lucent Beam Hits 2 Additional Targets",
+          "originalSource": "Level 25 Talent Lucent Beam Hits An Additional Target replaced with Lucent Beam Hits 2 Additional Targets",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Lucent Beam Hits An Additional Target",
+          "changeType": "REWORK",
+          "newValue": "Lucent Beam Hits 2 Additional Targets",
+          "metadata": {
+            "entityId": 48
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0.95,
+        "teamfight": -0.04,
+        "laning": 0.95,
+        "siege": 0,
+        "utility": -0.04
+      },
+      "totalVector": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -0.58,
+        "teamfight": 7.03,
+        "laning": -0.58,
+        "siege": 0,
+        "utility": 0.03
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

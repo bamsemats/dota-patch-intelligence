@@ -567,6 +567,95 @@
       "date": "2026-09-15T18:44:25.000Z",
       "changes": [],
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "neutral",
+          "entityName": "Rattlecage",
+          "rawNote": "Tier changed from 4 to 3",
+          "originalSource": "Tier changed from 4 to 3",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 1168
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "neutral",
+          "entityName": "Rattlecage",
+          "rawNote": "Reverberate projectile damage increased from 90 to 110",
+          "originalSource": "Reverberate projectile damage increased from 90 to 110",
+          "indentLevel": 1,
+          "metric": "Reverberate projectile damage",
+          "changeType": "INCREASED",
+          "oldValue": "90",
+          "newValue": "110",
+          "metadata": {
+            "entityId": 1168
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (reverberate projectile damage)."
+          }
+        },
+        {
+          "category": "neutral",
+          "entityName": "Rattlecage",
+          "rawNote": "From 117 to 143 with Dormant Curio",
+          "originalSource": "From 117 to 143 with Dormant Curio",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 1168
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        }
+      ],
+      "temporalAssessment": null
     }
   ]
 }

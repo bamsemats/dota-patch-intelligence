@@ -4731,6 +4731,92 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "rawNote": "Strength gain increased from 2.5 to 2.7",
+          "originalSource": "Strength gain increased from 2.5 to 2.7",
+          "indentLevel": 1,
+          "metric": "Strength gain",
+          "changeType": "INCREASED",
+          "oldValue": "2.5",
+          "newValue": "2.7",
+          "metadata": {
+            "entityId": 80
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (strength gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Lone Druid",
+          "subEntityName": "Spirit Link",
+          "rawNote": "Bonus movement speed for the druid increased from 10/20/30/40 to 15/30/45/60",
+          "originalSource": "Bonus movement speed for the druid increased from 10/20/30/40 to 15/30/45/60",
+          "indentLevel": 1,
+          "metric": "Bonus movement speed for the druid",
+          "changeType": "INCREASED",
+          "oldValue": "10/20/30/40",
+          "newValue": "15/30/45/60",
+          "metadata": {
+            "entityId": 80,
+            "subEntityId": 7309
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 8,
+              "Ancient": 9,
+              "Divine": 9
+            },
+            "reasoning": "Increased a positive metric (bonus movement speed for the druid)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -0.03,
+        "teamfight": -0.04,
+        "laning": -0.03,
+        "siege": 0,
+        "utility": -0.04
+      },
+      "totalVector": {
+        "farming": 6.5,
+        "mobility": 0,
+        "survivability": 1.27,
+        "teamfight": 12.74,
+        "laning": 1.27,
+        "siege": 6.5,
+        "utility": -6.76
+      },
+      "winrates": {},
+      "temporalAssessment": "Net Gain"
     }
   ]
 }

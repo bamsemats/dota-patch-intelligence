@@ -573,6 +573,69 @@
       "date": "2026-09-15T18:44:25.000Z",
       "changes": [],
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "neutral",
+          "entityName": "Book of the Dead",
+          "rawNote": "Tier changed from 5 to 4",
+          "originalSource": "Tier changed from 5 to 4",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 370
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "neutral",
+          "entityName": "Book of the Dead",
+          "rawNote": "Greater Demonic Summoning cooldown decreased from 80s to 75s",
+          "originalSource": "Greater Demonic Summoning cooldown decreased from 80s to 75s",
+          "indentLevel": 1,
+          "metric": "Greater Demonic Summoning cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "80s",
+          "newValue": "75s",
+          "metadata": {
+            "entityId": 370
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a negative metric (greater demonic summoning cooldown)."
+          }
+        }
+      ],
+      "temporalAssessment": null
     }
   ]
 }

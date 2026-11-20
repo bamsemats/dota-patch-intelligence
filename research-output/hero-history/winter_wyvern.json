@@ -4421,6 +4421,124 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Winter Wyvern",
+          "subEntityName": "Arctic Burn",
+          "rawNote": "Mana Cost increased from 100 to 100/105/110/115",
+          "originalSource": "Mana Cost increased from 100 to 100/105/110/115",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "INCREASED",
+          "oldValue": "100",
+          "newValue": "100/105/110/115",
+          "metadata": {
+            "entityId": 112,
+            "subEntityId": 5651
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Increased a negative metric (mana cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Winter Wyvern",
+          "subEntityName": "Cold Embrace",
+          "rawNote": "Base Heal per second rescaled from 40/45/50/55 to 32/40/48/56",
+          "originalSource": "Base Heal per second rescaled from 40/45/50/55 to 32/40/48/56",
+          "indentLevel": 1,
+          "metric": "Base Heal per second",
+          "changeType": "RESCALE",
+          "oldValue": "40/45/50/55",
+          "newValue": "32/40/48/56",
+          "metadata": {
+            "entityId": 112,
+            "subEntityId": 5653
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Winter Wyvern",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Splinter Blast Damage decreased from +100 to +90",
+          "originalSource": "Level 20 Talent Splinter Blast Damage decreased from +100 to +90",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Splinter Blast Damage",
+          "changeType": "DECREASED",
+          "oldValue": "+100",
+          "newValue": "+90",
+          "metadata": {
+            "entityId": 112
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (level 20 talent splinter blast damage)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": -1,
+        "mobility": 0,
+        "survivability": -0.71,
+        "teamfight": -0.01,
+        "laning": -1.71,
+        "siege": 0,
+        "utility": -1.01
+      },
+      "totalVector": {
+        "farming": 0.5,
+        "mobility": 0,
+        "survivability": -0.46,
+        "teamfight": 1.7,
+        "laning": 0.04,
+        "siege": 0,
+        "utility": 1.71
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

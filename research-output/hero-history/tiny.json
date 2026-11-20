@@ -4162,6 +4162,181 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Tiny",
+          "rawNote": "Base Intelligence increased from 17 to 19",
+          "originalSource": "Base Intelligence increased from 17 to 19",
+          "indentLevel": 1,
+          "metric": "Base Intelligence",
+          "changeType": "INCREASED",
+          "oldValue": "17",
+          "newValue": "19",
+          "metadata": {
+            "entityId": 19
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base intelligence)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Tiny",
+          "subEntityName": "Avalanche",
+          "rawNote": "Projectile speed increased from 1200 to 1500",
+          "originalSource": "Projectile speed increased from 1200 to 1500",
+          "indentLevel": 1,
+          "metric": "Projectile speed",
+          "changeType": "INCREASED",
+          "oldValue": "1200",
+          "newValue": "1500",
+          "metadata": {
+            "entityId": 19,
+            "subEntityId": 5106
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Increased a positive metric (projectile speed)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Tiny",
+          "subEntityName": "Tree Grab",
+          "rawNote": "Cast Range increased from 200 to 275",
+          "originalSource": "Cast Range increased from 200 to 275",
+          "indentLevel": 1,
+          "metric": "Cast Range",
+          "changeType": "INCREASED",
+          "oldValue": "200",
+          "newValue": "275",
+          "metadata": {
+            "entityId": 19,
+            "subEntityId": 5108
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Increased a positive metric (cast range)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Tiny",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent Tree Grab Attacks increased from +2 to +3",
+          "originalSource": "Level 10 Talent Tree Grab Attacks increased from +2 to +3",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent Tree Grab Attacks",
+          "changeType": "INCREASED",
+          "oldValue": "+2",
+          "newValue": "+3",
+          "metadata": {
+            "entityId": 19
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Tiny",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent +150 Avalanche Cast Range also increases the Avalanche projectile speed by 250",
+          "originalSource": "Level 10 Talent +150 Avalanche Cast Range also increases the Avalanche projectile speed by 250",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 19
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "FEATURE_INTRODUCTION",
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -0.24,
+        "teamfight": -0.02,
+        "laning": -0.24,
+        "siege": 0,
+        "utility": 2.97
+      },
+      "totalVector": {
+        "farming": 1.5,
+        "mobility": 0,
+        "survivability": 0.33,
+        "teamfight": 1.54,
+        "laning": 1.82,
+        "siege": 0,
+        "utility": 3.03
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

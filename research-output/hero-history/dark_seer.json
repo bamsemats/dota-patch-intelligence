@@ -3143,6 +3143,177 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Dark Seer",
+          "subEntityName": "Vacuum",
+          "rawNote": "Cooldown decreased from 60/50/40/30s to 50/42/34/26s",
+          "originalSource": "Cooldown decreased from 60/50/40/30s to 50/42/34/26s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "60/50/40/30s",
+          "newValue": "50/42/34/26s",
+          "metadata": {
+            "entityId": 55,
+            "subEntityId": 5255
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dark Seer",
+          "subEntityName": "Wall of Replica",
+          "rawNote": "Replicas have 60% item potency",
+          "originalSource": "Replicas have 60% item potency",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 55,
+            "subEntityId": 5258
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dark Seer",
+          "subEntityName": "Normal Punch",
+          "rawNote": "Replica has 60% item potency",
+          "originalSource": "Replica has 60% item potency",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 55,
+            "subEntityId": 687
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dark Seer",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent +65 Ion Shell Radius replaced with +4 Armor",
+          "originalSource": "Level 10 Talent +65 Ion Shell Radius replaced with +4 Armor",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent +65 Ion Shell Radius",
+          "changeType": "REWORK",
+          "newValue": "+4 Armor",
+          "metadata": {
+            "entityId": 55
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Dark Seer",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent +75 Vacuum AoE replaced with -4s Vacuum Cooldown",
+          "originalSource": "Level 15 Talent +75 Vacuum AoE replaced with -4s Vacuum Cooldown",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent +75 Vacuum AoE",
+          "changeType": "REWORK",
+          "newValue": "-4s Vacuum Cooldown",
+          "metadata": {
+            "entityId": 55
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0.03,
+        "teamfight": 3.52,
+        "laning": 0.03,
+        "siege": 0,
+        "utility": 0.02
+      },
+      "totalVector": {
+        "farming": -1.5,
+        "mobility": 0,
+        "survivability": 0.29,
+        "teamfight": -12.92,
+        "laning": -1.21,
+        "siege": 0,
+        "utility": -20.92
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

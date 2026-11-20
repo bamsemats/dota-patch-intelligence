@@ -461,6 +461,150 @@
       "date": "2026-09-15T18:44:25.000Z",
       "changes": [],
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "neutral",
+          "entityName": "Serrated Shiv",
+          "rawNote": "Gut 'Em proc chance increased from 20% to 30%",
+          "originalSource": "Gut 'Em proc chance increased from 20% to 30%",
+          "indentLevel": 1,
+          "metric": "Gut 'Em proc chance",
+          "changeType": "INCREASED",
+          "oldValue": "20%",
+          "newValue": "30%",
+          "metadata": {
+            "entityId": 1605
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "neutral",
+          "entityName": "Serrated Shiv",
+          "rawNote": "Gut 'Em current health damage increased from 8% to 10%",
+          "originalSource": "Gut 'Em current health damage increased from 8% to 10%",
+          "indentLevel": 1,
+          "metric": "Gut 'Em current health damage",
+          "changeType": "INCREASED",
+          "oldValue": "8%",
+          "newValue": "10%",
+          "metadata": {
+            "entityId": 1605
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Increased a positive metric (gut 'em current health damage)."
+          }
+        },
+        {
+          "category": "neutral",
+          "entityName": "Serrated Shiv",
+          "rawNote": "From 10.4% to 13% with Dormant Curio",
+          "originalSource": "From 10.4% to 13% with Dormant Curio",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 1605
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "neutral",
+          "entityName": "Serrated Shiv",
+          "rawNote": "Gut 'Em now works with illusions",
+          "originalSource": "Gut 'Em now works with illusions",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 1605
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "ILLUSION_INTERACTION",
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "neutral",
+          "entityName": "Serrated Shiv",
+          "rawNote": "Gut 'Em chance is now affected by item potency",
+          "originalSource": "Gut 'Em chance is now affected by item potency",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 1605
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        }
+      ],
+      "temporalAssessment": null
     }
   ]
 }

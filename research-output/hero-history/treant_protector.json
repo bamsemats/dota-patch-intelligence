@@ -4333,6 +4333,121 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Treant Protector",
+          "subEntityName": "Nature's Grasp",
+          "rawNote": "No longer has a 35% damage penalty against creeps",
+          "originalSource": "No longer has a 35% damage penalty against creeps",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 83,
+            "subEntityId": 338
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Treant Protector",
+          "subEntityName": "Leech Seed",
+          "rawNote": "Mana Cost decreased from 35 to 20",
+          "originalSource": "Mana Cost decreased from 35 to 20",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "DECREASED",
+          "oldValue": "35",
+          "newValue": "20",
+          "metadata": {
+            "entityId": 83,
+            "subEntityId": 5435
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a negative metric (mana cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Treant Protector",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Leech Seed Cooldown Reduction increased from 3s to 5s",
+          "originalSource": "Level 25 Talent Leech Seed Cooldown Reduction increased from 3s to 5s",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Leech Seed Cooldown Reduction",
+          "changeType": "INCREASED",
+          "oldValue": "3s",
+          "newValue": "5s",
+          "metadata": {
+            "entityId": 83
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Increased a negative metric (level 25 talent leech seed cooldown reduction)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": -0.29,
+        "teamfight": -0.01,
+        "laning": 0.71,
+        "siege": 0,
+        "utility": 0.99
+      },
+      "totalVector": {
+        "farming": -1,
+        "mobility": 0,
+        "survivability": 1.32,
+        "teamfight": 3.32,
+        "laning": 0.32,
+        "siege": 0,
+        "utility": 8.83
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

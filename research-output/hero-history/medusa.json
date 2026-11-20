@@ -3969,6 +3969,364 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Medusa",
+          "rawNote": "Base Intelligence increased from 25 to 26",
+          "originalSource": "Base Intelligence increased from 25 to 26",
+          "indentLevel": 1,
+          "metric": "Base Intelligence",
+          "changeType": "INCREASED",
+          "oldValue": "25",
+          "newValue": "26",
+          "metadata": {
+            "entityId": 94
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base intelligence)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Medusa",
+          "subEntityName": "Mystic Snake",
+          "rawNote": "Mana Cost decreased from 80/100/120/140 to 80/95/110/125",
+          "originalSource": "Mana Cost decreased from 80/100/120/140 to 80/95/110/125",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "DECREASED",
+          "oldValue": "80/100/120/140",
+          "newValue": "80/95/110/125",
+          "metadata": {
+            "entityId": 94,
+            "subEntityId": 5505
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a negative metric (mana cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Medusa",
+          "subEntityName": "Gorgon's Grasp",
+          "rawNote": "Damage type changed from Physical to Magical",
+          "originalSource": "Damage type changed from Physical to Magical",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 94,
+            "subEntityId": 1475
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Medusa",
+          "subEntityName": "Gorgon's Grasp",
+          "rawNote": "Cast Point decreased from 0.4s to 0.2s",
+          "originalSource": "Cast Point decreased from 0.4s to 0.2s",
+          "indentLevel": 1,
+          "metric": "Cast Point",
+          "changeType": "DECREASED",
+          "oldValue": "0.4s",
+          "newValue": "0.2s",
+          "metadata": {
+            "entityId": 94,
+            "subEntityId": 1475
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 2,
+              "Ancient": 4,
+              "Divine": 5.5
+            },
+            "reasoning": "Decreased a negative metric (cast point)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Medusa",
+          "subEntityName": "Gorgon's Grasp",
+          "rawNote": "Cooldown decreased from 30/26/22/18s to 30/25/20/15s",
+          "originalSource": "Cooldown decreased from 30/26/22/18s to 30/25/20/15s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "30/26/22/18s",
+          "newValue": "30/25/20/15s",
+          "metadata": {
+            "entityId": 94,
+            "subEntityId": 1475
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Medusa",
+          "subEntityName": "Gorgon's Grasp",
+          "rawNote": "Impact Damage rescaled from 30/70/110/150 to 60/120/180/240",
+          "originalSource": "Impact Damage rescaled from 30/70/110/150 to 60/120/180/240",
+          "indentLevel": 1,
+          "metric": "Impact Damage",
+          "changeType": "RESCALE",
+          "oldValue": "30/70/110/150",
+          "newValue": "60/120/180/240",
+          "metadata": {
+            "entityId": 94,
+            "subEntityId": 1475
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Medusa",
+          "subEntityName": "Gorgon's Grasp",
+          "rawNote": "Damage Over Time decreased from 100 to 12/24/36/48",
+          "originalSource": "Damage Over Time decreased from 100 to 12/24/36/48",
+          "indentLevel": 1,
+          "metric": "Damage Over Time",
+          "changeType": "DECREASED",
+          "oldValue": "100",
+          "newValue": "12/24/36/48",
+          "metadata": {
+            "entityId": 94,
+            "subEntityId": 1475
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (damage over time)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Medusa",
+          "subEntityName": "Gorgon's Grasp",
+          "rawNote": "Initial delay decreased from 1s to 0.8s",
+          "originalSource": "Initial delay decreased from 1s to 0.8s",
+          "indentLevel": 1,
+          "metric": "Initial delay",
+          "changeType": "DECREASED",
+          "oldValue": "1s",
+          "newValue": "0.8s",
+          "metadata": {
+            "entityId": 94,
+            "subEntityId": 1475
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a negative metric (initial delay)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Medusa",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent +20% Gorgon's Grasp Radius replaced with +0.4s Gorgon's Grasp Duration",
+          "originalSource": "Level 10 Talent +20% Gorgon's Grasp Radius replaced with +0.4s Gorgon's Grasp Duration",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent +20% Gorgon's Grasp Radius",
+          "changeType": "REWORK",
+          "newValue": "+0.4s Gorgon's Grasp Duration",
+          "metadata": {
+            "entityId": 94
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Medusa",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent +1 Gorgon's Grasp Volley replaced with +50 Gorgon's Grasp Initial Radius",
+          "originalSource": "Level 15 Talent +1 Gorgon's Grasp Volley replaced with +50 Gorgon's Grasp Initial Radius",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent +1 Gorgon's Grasp Volley",
+          "changeType": "REWORK",
+          "newValue": "+50 Gorgon's Grasp Initial Radius",
+          "metadata": {
+            "entityId": 94
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Medusa",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Stone Gaze Duration increased from +2.5s to +3s",
+          "originalSource": "Level 25 Talent Stone Gaze Duration increased from +2.5s to +3s",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Stone Gaze Duration",
+          "changeType": "INCREASED",
+          "oldValue": "+2.5s",
+          "newValue": "+3s",
+          "metadata": {
+            "entityId": 94
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Increased a positive metric (level 25 talent stone gaze duration)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": -0.58,
+        "teamfight": 3.5,
+        "laning": 0.42,
+        "siege": 0,
+        "utility": 12.01
+      },
+      "totalVector": {
+        "farming": 0.5,
+        "mobility": 0,
+        "survivability": -2.73,
+        "teamfight": 1.51,
+        "laning": -2.23,
+        "siege": 0,
+        "utility": 10.03
+      },
+      "winrates": {},
+      "temporalAssessment": "Net Gain"
     }
   ]
 }

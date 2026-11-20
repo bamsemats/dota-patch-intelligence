@@ -2707,6 +2707,208 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Tusk",
+          "rawNote": "Base Damage increased by 2",
+          "originalSource": "Base Damage increased by 2",
+          "indentLevel": 1,
+          "metric": "Base Damage",
+          "changeType": "INCREASED",
+          "newValue": "2",
+          "metadata": {
+            "entityId": 100
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Tusk",
+          "rawNote": "Damage at level 1 increased from 50-54 to 52-56",
+          "originalSource": "Damage at level 1 increased from 50-54 to 52-56",
+          "indentLevel": 2,
+          "metric": "Damage at level 1",
+          "changeType": "INCREASED",
+          "oldValue": "50-54",
+          "newValue": "52-56",
+          "metadata": {
+            "entityId": 100
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (damage at level 1)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Tusk",
+          "rawNote": "Intelligence gain increased from 1.7 to 1.8",
+          "originalSource": "Intelligence gain increased from 1.7 to 1.8",
+          "indentLevel": 1,
+          "metric": "Intelligence gain",
+          "changeType": "INCREASED",
+          "oldValue": "1.7",
+          "newValue": "1.8",
+          "metadata": {
+            "entityId": 100
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (intelligence gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Tusk",
+          "subEntityName": "Bitter Chill",
+          "rawNote": "Now fully disabled by Break",
+          "originalSource": "Now fully disabled by Break",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 100,
+            "subEntityId": 1386
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Tusk",
+          "subEntityName": "Drinking Buddies",
+          "rawNote": "Buff Duration increased from 6 to 7s",
+          "originalSource": "Buff Duration increased from 6 to 7s",
+          "indentLevel": 1,
+          "metric": "Buff Duration",
+          "changeType": "INCREASED",
+          "oldValue": "6",
+          "newValue": "7s",
+          "metadata": {
+            "entityId": 100,
+            "subEntityId": 1385
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Increased a positive metric (buff duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Tusk",
+          "subEntityName": "Drinking Buddies",
+          "rawNote": "Bonus Movement Speed increased from 25% to 30%",
+          "originalSource": "Bonus Movement Speed increased from 25% to 30%",
+          "indentLevel": 1,
+          "metric": "Bonus Movement Speed",
+          "changeType": "INCREASED",
+          "oldValue": "25%",
+          "newValue": "30%",
+          "metadata": {
+            "entityId": 100,
+            "subEntityId": 1385
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 8,
+              "Ancient": 9,
+              "Divine": 9
+            },
+            "reasoning": "Increased a positive metric (bonus movement speed)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -0.08,
+        "teamfight": -0.02,
+        "laning": -0.08,
+        "siege": 0,
+        "utility": -0.02
+      },
+      "totalVector": {
+        "farming": 1.5,
+        "mobility": 0,
+        "survivability": 4.02,
+        "teamfight": 4.8,
+        "laning": 5.52,
+        "siege": 0,
+        "utility": -0.2
+      },
+      "winrates": {},
+      "temporalAssessment": "Net Gain"
     }
   ]
 }

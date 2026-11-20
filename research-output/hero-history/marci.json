@@ -4365,6 +4365,212 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Marci",
+          "rawNote": "Base Agility increased from 20 to 22",
+          "originalSource": "Base Agility increased from 20 to 22",
+          "indentLevel": 1,
+          "metric": "Base Agility",
+          "changeType": "INCREASED",
+          "oldValue": "20",
+          "newValue": "22",
+          "metadata": {
+            "entityId": 136
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base agility)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Marci",
+          "rawNote": "Damage at level 1 increased from 56-60 to 57-61",
+          "originalSource": "Damage at level 1 increased from 56-60 to 57-61",
+          "indentLevel": 2,
+          "metric": "Damage at level 1",
+          "changeType": "INCREASED",
+          "oldValue": "56-60",
+          "newValue": "57-61",
+          "metadata": {
+            "entityId": 136
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (damage at level 1)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Marci",
+          "subEntityName": "Special Delivery",
+          "rawNote": "Cooldown decreased from 215s - 5s per level to 200s - 5s per level",
+          "originalSource": "Cooldown decreased from 215s - 5s per level to 200s - 5s per level",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "215s - 5s per level",
+          "newValue": "200s - 5s per level",
+          "metadata": {
+            "entityId": 136,
+            "subEntityId": 1428
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Marci",
+          "subEntityName": "Special Delivery",
+          "rawNote": "1 bonus health translated to 1 bonus pip of health",
+          "originalSource": "1 bonus health translated to 1 bonus pip of health",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 136,
+            "subEntityId": 1428
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "AURA_INTERACTION",
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Marci",
+          "subEntityName": "Bodyguard",
+          "rawNote": "Cooldown rescaled from 20s to 21/20/19/18s",
+          "originalSource": "Cooldown rescaled from 20s to 21/20/19/18s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "RESCALE",
+          "oldValue": "20s",
+          "newValue": "21/20/19/18s",
+          "metadata": {
+            "entityId": 136,
+            "subEntityId": 1427
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Marci",
+          "subEntityName": "Bodyguard",
+          "rawNote": "Shared Barrier Amount increased from 90/160/230/300 to 120/180/240/300",
+          "originalSource": "Shared Barrier Amount increased from 90/160/230/300 to 120/180/240/300",
+          "indentLevel": 1,
+          "metric": "Shared Barrier Amount",
+          "changeType": "INCREASED",
+          "oldValue": "90/160/230/300",
+          "newValue": "120/180/240/300",
+          "metadata": {
+            "entityId": 136,
+            "subEntityId": 1427
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -0.79,
+        "teamfight": 3.5,
+        "laning": -0.79,
+        "siege": 0,
+        "utility": 0
+      },
+      "totalVector": {
+        "farming": 2,
+        "mobility": 0,
+        "survivability": -0.25,
+        "teamfight": 14.96,
+        "laning": 1.76,
+        "siege": 0,
+        "utility": 4.96
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

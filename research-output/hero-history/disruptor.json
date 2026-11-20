@@ -3172,7 +3172,380 @@
         "utility": 10.65
       },
       "winrates": {},
-      "temporalAssessment": null
+      "temporalAssessment": "Net Gain"
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "rawNote": "Min Base Damage decreased by 1",
+          "originalSource": "Min Base Damage decreased by 1",
+          "indentLevel": 1,
+          "metric": "Min Base Damage",
+          "changeType": "DECREASED",
+          "newValue": "1",
+          "metadata": {
+            "entityId": 87
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (min base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "rawNote": "Max Base Damage increased by 5",
+          "originalSource": "Max Base Damage increased by 5",
+          "indentLevel": 1,
+          "metric": "Max Base Damage",
+          "changeType": "INCREASED",
+          "newValue": "5",
+          "metadata": {
+            "entityId": 87
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (max base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "rawNote": "Damage at level 1 rescaled from 48-52 to 47-57",
+          "originalSource": "Damage at level 1 rescaled from 48-52 to 47-57",
+          "indentLevel": 2,
+          "metric": "Damage at level 1",
+          "changeType": "RESCALE",
+          "oldValue": "48-52",
+          "newValue": "47-57",
+          "metadata": {
+            "entityId": 87
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Kinetic Field",
+          "rawNote": "Now upgraded with Aghanim's Shard",
+          "originalSource": "Now upgraded with Aghanim's Shard",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 5460
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Kinetic Field",
+          "rawNote": "Causes enemies that touch the Field to be struck by Electromagnetic Repulsion with 50% reduced knockback",
+          "originalSource": "Causes enemies that touch the Field to be struck by Electromagnetic Repulsion with 50% reduced knockback",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 5460
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Kinetic Field",
+          "rawNote": "The same target cannot be hit more often than once per 3s",
+          "originalSource": "The same target cannot be hit more often than once per 3s",
+          "indentLevel": 3,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 5460
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "TARGETING_RULE_CHANGE",
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Kinetic Field",
+          "rawNote": "Disruptor's own Electromagnetic Repulsion doesn't count and ignores this interval",
+          "originalSource": "Disruptor's own Electromagnetic Repulsion doesn't count and ignores this interval",
+          "indentLevel": 4,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 5460
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Kinetic Fence",
+          "rawNote": "Mana Cost decreased from 70 to 50",
+          "originalSource": "Mana Cost decreased from 70 to 50",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "DECREASED",
+          "oldValue": "70",
+          "newValue": "50",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 1362
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a negative metric (mana cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Kinetic Fence",
+          "rawNote": "Cooldown decreased from 14s to 12s",
+          "originalSource": "Cooldown decreased from 14s to 12s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "14s",
+          "newValue": "12s",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 1362
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Kinetic Fence",
+          "rawNote": "Formation time decreased from 1s to 0.5s",
+          "originalSource": "Formation time decreased from 1s to 0.5s",
+          "indentLevel": 1,
+          "metric": "Formation time",
+          "changeType": "DECREASED",
+          "oldValue": "1s",
+          "newValue": "0.5s",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 1362
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Kinetic Fence",
+          "rawNote": "Now causes enemies that touch the Fence to be struck by Electromagnetic Repulsion with 50% reduced knockback",
+          "originalSource": "Now causes enemies that touch the Fence to be struck by Electromagnetic Repulsion with 50% reduced knockback",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 1362
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Disruptor",
+          "subEntityName": "Kinetic Fence",
+          "rawNote": "Shares strikes restriction with Kinetic Field and also ignored by Disruptor's own Electromagnetic Repulsion",
+          "originalSource": "Shares strikes restriction with Kinetic Field and also ignored by Disruptor's own Electromagnetic Repulsion",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 87,
+            "subEntityId": 1362
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": -0.37,
+        "teamfight": 3.5,
+        "laning": 0.63,
+        "siege": 0,
+        "utility": 1.01
+      },
+      "totalVector": {
+        "farming": 2,
+        "mobility": 0,
+        "survivability": 1.86,
+        "teamfight": -1.86,
+        "laning": 3.86,
+        "siege": 0,
+        "utility": 11.66
+      },
+      "winrates": {},
+      "temporalAssessment": "Net Gain"
     }
   ]
 }

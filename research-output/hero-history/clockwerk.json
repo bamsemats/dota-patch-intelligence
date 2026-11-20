@@ -3623,6 +3623,182 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Clockwerk",
+          "subEntityName": "Armor Power",
+          "rawNote": "Damage per armor increased from 0.25% to 0.55845%",
+          "originalSource": "Damage per armor increased from 0.25% to 0.55845%",
+          "indentLevel": 1,
+          "metric": "Damage per armor",
+          "changeType": "INCREASED",
+          "oldValue": "0.25%",
+          "newValue": "0.55845%",
+          "metadata": {
+            "entityId": 51,
+            "subEntityId": 1295
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (damage per armor)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Clockwerk",
+          "subEntityName": "Battery Assault",
+          "rawNote": "Mana Cost decreased from 75/80/85/90 to 70/75/80/85",
+          "originalSource": "Mana Cost decreased from 75/80/85/90 to 70/75/80/85",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "DECREASED",
+          "oldValue": "75/80/85/90",
+          "newValue": "70/75/80/85",
+          "metadata": {
+            "entityId": 51,
+            "subEntityId": 5237
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a negative metric (mana cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Clockwerk",
+          "subEntityName": "Overclocking",
+          "rawNote": "No longer costs 90 mana to cast",
+          "originalSource": "No longer costs 90 mana to cast",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 51,
+            "subEntityId": 321
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Clockwerk",
+          "subEntityName": "Overclocking",
+          "rawNote": "Cooldown decreased from 50s to 45s",
+          "originalSource": "Cooldown decreased from 50s to 45s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "50s",
+          "newValue": "45s",
+          "metadata": {
+            "entityId": 51,
+            "subEntityId": 321
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Clockwerk",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent +1.5 Mana Regen replaced with +2.5s Battery Assault Duration",
+          "originalSource": "Level 10 Talent +1.5 Mana Regen replaced with +2.5s Battery Assault Duration",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent +1.5 Mana Regen",
+          "changeType": "REWORK",
+          "newValue": "+2.5s Battery Assault Duration",
+          "metadata": {
+            "entityId": 51
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": -0.55,
+        "teamfight": 3.42,
+        "laning": 0.45,
+        "siege": 0,
+        "utility": 0.92
+      },
+      "totalVector": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": 0.28,
+        "teamfight": 3.7,
+        "laning": 1.29,
+        "siege": 0,
+        "utility": 8.2
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

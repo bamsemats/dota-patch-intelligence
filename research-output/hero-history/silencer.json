@@ -3639,6 +3639,205 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Silencer",
+          "rawNote": "Min Base damage increased by 5",
+          "originalSource": "Min Base damage increased by 5",
+          "indentLevel": 1,
+          "metric": "Min Base damage",
+          "changeType": "INCREASED",
+          "newValue": "5",
+          "metadata": {
+            "entityId": 75
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (min base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Silencer",
+          "rawNote": "Max Base damage decreased by 2",
+          "originalSource": "Max Base damage decreased by 2",
+          "indentLevel": 1,
+          "metric": "Max Base damage",
+          "changeType": "DECREASED",
+          "newValue": "2",
+          "metadata": {
+            "entityId": 75
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (max base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Silencer",
+          "rawNote": "Damage at level 1 rescaled from 43-57 to 48-55",
+          "originalSource": "Damage at level 1 rescaled from 43-57 to 48-55",
+          "indentLevel": 2,
+          "metric": "Damage at level 1",
+          "changeType": "RESCALE",
+          "oldValue": "43-57",
+          "newValue": "48-55",
+          "metadata": {
+            "entityId": 75
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Silencer",
+          "rawNote": "Base Strength increased from 18 to 19",
+          "originalSource": "Base Strength increased from 18 to 19",
+          "indentLevel": 1,
+          "metric": "Base Strength",
+          "changeType": "INCREASED",
+          "oldValue": "18",
+          "newValue": "19",
+          "metadata": {
+            "entityId": 75
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Increased a positive metric (base strength)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Silencer",
+          "subEntityName": "Suffer In Silence",
+          "rawNote": "Now partially disabled by Break: disables the damage amp from/to silenced targets, but not the Intelligence steal",
+          "originalSource": "Now partially disabled by Break: disables the damage amp from/to silenced targets, but not the Intelligence steal",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 75,
+            "subEntityId": 1335
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Silencer",
+          "subEntityName": "Glaives of Wisdom",
+          "rawNote": "Aghanim's Shard bonus Int Steal increased from +1 to +2",
+          "originalSource": "Aghanim's Shard bonus Int Steal increased from +1 to +2",
+          "indentLevel": 1,
+          "metric": "Aghanim's Shard bonus Int Steal",
+          "changeType": "INCREASED",
+          "oldValue": "+1",
+          "newValue": "+2",
+          "metadata": {
+            "entityId": 75,
+            "subEntityId": 5378
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0.21,
+        "teamfight": -0.01,
+        "laning": 0.21,
+        "siege": 0,
+        "utility": -0.01
+      },
+      "totalVector": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": 1.52,
+        "teamfight": -0.06,
+        "laning": 2.52,
+        "siege": 0,
+        "utility": -2.07
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

@@ -2949,6 +2949,212 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Earthshaker",
+          "rawNote": "Base Damage increased by 2",
+          "originalSource": "Base Damage increased by 2",
+          "indentLevel": 1,
+          "metric": "Base Damage",
+          "changeType": "INCREASED",
+          "newValue": "2",
+          "metadata": {
+            "entityId": 7
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Earthshaker",
+          "rawNote": "Damage at level 1 increased from 49-59 to 51-61",
+          "originalSource": "Damage at level 1 increased from 49-59 to 51-61",
+          "indentLevel": 2,
+          "metric": "Damage at level 1",
+          "changeType": "INCREASED",
+          "oldValue": "49-59",
+          "newValue": "51-61",
+          "metadata": {
+            "entityId": 7
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (damage at level 1)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Earthshaker",
+          "subEntityName": "Enchant Totem",
+          "rawNote": "Aghanim's Scepter Cleave increased from 40% to 50%",
+          "originalSource": "Aghanim's Scepter Cleave increased from 40% to 50%",
+          "indentLevel": 1,
+          "metric": "Aghanim's Scepter Cleave",
+          "changeType": "INCREASED",
+          "oldValue": "40%",
+          "newValue": "50%",
+          "metadata": {
+            "entityId": 7,
+            "subEntityId": 5024
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Earthshaker",
+          "subEntityName": "Echo Slam",
+          "rawNote": "Cooldown decreased from 130/120/110s to 125/115/105s",
+          "originalSource": "Cooldown decreased from 130/120/110s to 125/115/105s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "130/120/110s",
+          "newValue": "125/115/105s",
+          "metadata": {
+            "entityId": 7,
+            "subEntityId": 5026
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Earthshaker",
+          "subEntityName": "Echo Slam",
+          "rawNote": "Echo Damage decreased from 70/90/110 to 60/80/100",
+          "originalSource": "Echo Damage decreased from 70/90/110 to 60/80/100",
+          "indentLevel": 1,
+          "metric": "Echo Damage",
+          "changeType": "DECREASED",
+          "oldValue": "70/90/110",
+          "newValue": "60/80/100",
+          "metadata": {
+            "entityId": 7,
+            "subEntityId": 5026
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (echo damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Earthshaker",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Echo Damage decreased from +50 to +45",
+          "originalSource": "Level 20 Talent Echo Damage decreased from +50 to +45",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Echo Damage",
+          "changeType": "DECREASED",
+          "oldValue": "+50",
+          "newValue": "+45",
+          "metadata": {
+            "entityId": 7
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (level 20 talent echo damage)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -0.21,
+        "teamfight": 3.47,
+        "laning": -0.21,
+        "siege": 0,
+        "utility": -0.03
+      },
+      "totalVector": {
+        "farming": -1.5,
+        "mobility": 0,
+        "survivability": -0.1,
+        "teamfight": 7.1,
+        "laning": -1.6,
+        "siege": 0,
+        "utility": -11.4
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

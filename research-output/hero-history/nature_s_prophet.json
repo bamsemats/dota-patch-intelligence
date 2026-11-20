@@ -4521,6 +4521,473 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Nature's Prophet",
+          "subEntityName": "Spirit of the Forest",
+          "rawNote": "Bonus damage is now granted based on trees near the target instead of trees near Nature's Prophet",
+          "originalSource": "Bonus damage is now granted based on trees near the target instead of trees near Nature's Prophet",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 53,
+            "subEntityId": 1298
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "TARGETING_RULE_CHANGE",
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 6,
+              "Archon": 6,
+              "Legend": 6,
+              "Ancient": 6,
+              "Divine": 6
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Nature's Prophet",
+          "subEntityName": "Spirit of the Forest",
+          "rawNote": "Bonus damage is calculated when the attack projectile is created, not when it hits",
+          "originalSource": "Bonus damage is calculated when the attack projectile is created, not when it hits",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 53,
+            "subEntityId": 1298
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "ROSHAN_INTERACTION",
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Nature's Prophet",
+          "subEntityName": "Sprout",
+          "rawNote": "Damage increased from 70/130/190/250 to 70/140/210/280",
+          "originalSource": "Damage increased from 70/130/190/250 to 70/140/210/280",
+          "indentLevel": 1,
+          "metric": "Damage",
+          "changeType": "INCREASED",
+          "oldValue": "70/130/190/250",
+          "newValue": "70/140/210/280",
+          "metadata": {
+            "entityId": 53,
+            "subEntityId": 5245
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Nature's Prophet",
+          "subEntityName": "Teleportation",
+          "rawNote": "Cooldown increased from 65/50/35/20s to 80/60/40/20s",
+          "originalSource": "Cooldown increased from 65/50/35/20s to 80/60/40/20s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "INCREASED",
+          "oldValue": "65/50/35/20s",
+          "newValue": "80/60/40/20s",
+          "metadata": {
+            "entityId": 53,
+            "subEntityId": 5246
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Increased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Nature's Prophet",
+          "subEntityName": "Teleportation",
+          "rawNote": "No longer grants a 70/130/190/250 health barrier",
+          "originalSource": "No longer grants a 70/130/190/250 health barrier",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 53,
+            "subEntityId": 5246
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Nature's Prophet",
+          "subEntityName": "Nature's Call",
+          "rawNote": "Treant Health rescaled from 450 to 425/450/475/500",
+          "originalSource": "Treant Health rescaled from 450 to 425/450/475/500",
+          "indentLevel": 1,
+          "metric": "Treant Health",
+          "changeType": "RESCALE",
+          "oldValue": "450",
+          "newValue": "425/450/475/500",
+          "metadata": {
+            "entityId": 53,
+            "subEntityId": 5247
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Nature's Prophet",
+          "subEntityName": "Nature's Call",
+          "rawNote": "Treants now have 1/2/3/4 armor",
+          "originalSource": "Treants now have 1/2/3/4 armor",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 53,
+            "subEntityId": 5247
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Nature's Prophet",
+          "subEntityName": "Nature's Call",
+          "rawNote": "Treant Damage rescaled from 16/25/34/43 to 15/25/35/45",
+          "originalSource": "Treant Damage rescaled from 16/25/34/43 to 15/25/35/45",
+          "indentLevel": 1,
+          "metric": "Treant Damage",
+          "changeType": "RESCALE",
+          "oldValue": "16/25/34/43",
+          "newValue": "15/25/35/45",
+          "metadata": {
+            "entityId": 53,
+            "subEntityId": 5247
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Nature's Prophet",
+          "subEntityName": "Nature's Call",
+          "rawNote": "Treant Bonus Hero Damage rescaled from 6/10/14/18 to 5/10/15/20",
+          "originalSource": "Treant Bonus Hero Damage rescaled from 6/10/14/18 to 5/10/15/20",
+          "indentLevel": 1,
+          "metric": "Treant Bonus Hero Damage",
+          "changeType": "RESCALE",
+          "oldValue": "6/10/14/18",
+          "newValue": "5/10/15/20",
+          "metadata": {
+            "entityId": 53,
+            "subEntityId": 5247
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Nature's Prophet",
+          "subEntityName": "Curse of the Oldgrowth",
+          "rawNote": "Ability Reworked",
+          "originalSource": "Ability Reworked",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 53,
+            "subEntityId": 997
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "FEATURE_INTRODUCTION",
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Nature's Prophet",
+          "subEntityName": "Curse of the Oldgrowth",
+          "rawNote": "Passive. Breakable",
+          "originalSource": "Passive. Breakable",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 53,
+            "subEntityId": 997
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Nature's Prophet",
+          "subEntityName": "Curse of the Oldgrowth",
+          "rawNote": "Attacks of Nature's Prophet apply a stacking debuff that deals 24 magic damage per second and slows the target's move speed by 12%. Treants apply a weaker effect with 12 damage per second and 6% slow. Duration: 5s. Each enemy can have only 1 stack per attacker at a time",
+          "originalSource": "Attacks of Nature's Prophet apply a stacking debuff that deals 24 magic damage per second and slows the target's move speed by 12%. Treants apply a weaker effect with 12 damage per second and 6% slow. Duration: 5s. Each enemy can have only 1 stack per attacker at a time",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 53,
+            "subEntityId": 997
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "DAMAGE_TYPE_CHANGE",
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Nature's Prophet",
+          "subEntityName": "Curse of the Oldgrowth",
+          "rawNote": "Each stack has independent duration",
+          "originalSource": "Each stack has independent duration",
+          "indentLevel": 3,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 53,
+            "subEntityId": 997
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Nature's Prophet",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent +100 Teleportation Barrier replaced with +300 Health",
+          "originalSource": "Level 15 Talent +100 Teleportation Barrier replaced with +300 Health",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent +100 Teleportation Barrier",
+          "changeType": "REWORK",
+          "newValue": "+300 Health",
+          "metadata": {
+            "entityId": 53
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Nature's Prophet",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent +240 Sprout Damage replaced with +2 Nature's Call Treants (also increases radius by 50)",
+          "originalSource": "Level 20 Talent +240 Sprout Damage replaced with +2 Nature's Call Treants (also increases radius by 50)",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent +240 Sprout Damage",
+          "changeType": "REWORK",
+          "newValue": "+2 Nature's Call Treants (also increases radius by 50)",
+          "metadata": {
+            "entityId": 53
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 1.5,
+        "mobility": 0,
+        "survivability": 0.55,
+        "teamfight": -2.04,
+        "laning": 2.05,
+        "siege": 0,
+        "utility": -0.03
+      },
+      "totalVector": {
+        "farming": 4.5,
+        "mobility": 0,
+        "survivability": 2.98,
+        "teamfight": -4.79,
+        "laning": 7.48,
+        "siege": 0,
+        "utility": -4.29
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

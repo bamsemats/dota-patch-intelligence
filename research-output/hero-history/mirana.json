@@ -3821,6 +3821,122 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Mirana",
+          "subEntityName": "Celestial Quiver",
+          "rawNote": "Attack now has +20% bonus Item Potency",
+          "originalSource": "Attack now has +20% bonus Item Potency",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 9,
+            "subEntityId": 1739
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "AURA_INTERACTION",
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Mirana",
+          "subEntityName": "Sacred Arrow",
+          "rawNote": "Aghanim's Scepter Primary Hit Starstorm Damage decreased from 80% to 75%",
+          "originalSource": "Aghanim's Scepter Primary Hit Starstorm Damage decreased from 80% to 75%",
+          "indentLevel": 1,
+          "metric": "Aghanim's Scepter Primary Hit Starstorm Damage",
+          "changeType": "DECREASED",
+          "oldValue": "80%",
+          "newValue": "75%",
+          "metadata": {
+            "entityId": 9,
+            "subEntityId": 5048
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (aghanim's scepter primary hit starstorm damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Mirana",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Starstorm Damage decreased from +200 to +150",
+          "originalSource": "Level 20 Talent Starstorm Damage decreased from +200 to +150",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Starstorm Damage",
+          "changeType": "DECREASED",
+          "oldValue": "+200",
+          "newValue": "+150",
+          "metadata": {
+            "entityId": 9
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (level 20 talent starstorm damage)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0.16,
+        "teamfight": -0.01,
+        "laning": 0.16,
+        "siege": 0,
+        "utility": -0.01
+      },
+      "totalVector": {
+        "farming": 2.5,
+        "mobility": 0,
+        "survivability": 2.21,
+        "teamfight": 6.15,
+        "laning": 4.71,
+        "siege": 0,
+        "utility": 1.16
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

@@ -3117,6 +3117,209 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Grimstroke",
+          "rawNote": "Base Damage increased by 2",
+          "originalSource": "Base Damage increased by 2",
+          "indentLevel": 1,
+          "metric": "Base Damage",
+          "changeType": "INCREASED",
+          "newValue": "2",
+          "metadata": {
+            "entityId": 121
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Grimstroke",
+          "rawNote": "Damage at level 1 increased from 47-51 to 49-53",
+          "originalSource": "Damage at level 1 increased from 47-51 to 49-53",
+          "indentLevel": 2,
+          "metric": "Damage at level 1",
+          "changeType": "INCREASED",
+          "oldValue": "47-51",
+          "newValue": "49-53",
+          "metadata": {
+            "entityId": 121
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (damage at level 1)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Grimstroke",
+          "subEntityName": "Ink Swell",
+          "rawNote": "Max Damage increased from 90/180/270/360 to 120/200/280/360",
+          "originalSource": "Max Damage increased from 90/180/270/360 to 120/200/280/360",
+          "indentLevel": 1,
+          "metric": "Max Damage",
+          "changeType": "INCREASED",
+          "oldValue": "90/180/270/360",
+          "newValue": "120/200/280/360",
+          "metadata": {
+            "entityId": 121,
+            "subEntityId": 8007
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (max damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Grimstroke",
+          "subEntityName": "Dark Portrait",
+          "rawNote": "Cooldown increased from 35s to 40s",
+          "originalSource": "Cooldown increased from 35s to 40s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "INCREASED",
+          "oldValue": "35s",
+          "newValue": "40s",
+          "metadata": {
+            "entityId": 121,
+            "subEntityId": 7852
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Increased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Grimstroke",
+          "subEntityName": "Dark Portrait",
+          "rawNote": "Illusion has 50% item potency",
+          "originalSource": "Illusion has 50% item potency",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 121,
+            "subEntityId": 7852
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Grimstroke",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Stroke of Fate Damage decreased from +80% to +70%",
+          "originalSource": "Level 20 Talent Stroke of Fate Damage decreased from +80% to +70%",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Stroke of Fate Damage",
+          "changeType": "DECREASED",
+          "oldValue": "+80%",
+          "newValue": "+70%",
+          "metadata": {
+            "entityId": 121
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (level 20 talent stroke of fate damage)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -0.73,
+        "teamfight": -3.63,
+        "laning": -0.73,
+        "siege": 0,
+        "utility": -0.13
+      },
+      "totalVector": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 4.73,
+        "teamfight": -0.29,
+        "laning": 4.73,
+        "siege": 0,
+        "utility": 5.71
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

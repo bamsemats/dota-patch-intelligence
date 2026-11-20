@@ -2968,6 +2968,123 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Shrapnel",
+          "rawNote": "Movement Slow decreased from 12/18/24/30% to 10/15/20/25%",
+          "originalSource": "Movement Slow decreased from 12/18/24/30% to 10/15/20/25%",
+          "indentLevel": 1,
+          "metric": "Movement Slow",
+          "changeType": "DECREASED",
+          "oldValue": "12/18/24/30%",
+          "newValue": "10/15/20/25%",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 5154
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Take Aim",
+          "rawNote": "Cooldown increased from 20/18/16/14s to 22/20/18/16s",
+          "originalSource": "Cooldown increased from 20/18/16/14s to 22/20/18/16s",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "INCREASED",
+          "oldValue": "20/18/16/14s",
+          "newValue": "22/20/18/16s",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 5156
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Increased a negative metric (cooldown)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sniper",
+          "subEntityName": "Assassinate",
+          "rawNote": "Attack now has +20/35/50% bonus Item Potency",
+          "originalSource": "Attack now has +20/35/50% bonus Item Potency",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 35,
+            "subEntityId": 5157
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "AURA_INTERACTION",
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0.6,
+        "teamfight": -3.49,
+        "laning": 0.6,
+        "siege": 0,
+        "utility": 0
+      },
+      "totalVector": {
+        "farming": 4,
+        "mobility": 0,
+        "survivability": 1.32,
+        "teamfight": 0.62,
+        "laning": 5.32,
+        "siege": 0,
+        "utility": 1.11
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

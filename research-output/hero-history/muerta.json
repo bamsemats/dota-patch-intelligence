@@ -3736,6 +3736,357 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Muerta",
+          "rawNote": "Min Base Damage increased by 4",
+          "originalSource": "Min Base Damage increased by 4",
+          "indentLevel": 1,
+          "metric": "Min Base Damage",
+          "changeType": "INCREASED",
+          "newValue": "4",
+          "metadata": {
+            "entityId": 138
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (min base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Muerta",
+          "rawNote": "Max Base Damage decreased by 1",
+          "originalSource": "Max Base Damage decreased by 1",
+          "indentLevel": 1,
+          "metric": "Max Base Damage",
+          "changeType": "DECREASED",
+          "newValue": "1",
+          "metadata": {
+            "entityId": 138
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (max base damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Muerta",
+          "rawNote": "Damage at level 1 rescaled from 47-55 to 51-54",
+          "originalSource": "Damage at level 1 rescaled from 47-55 to 51-54",
+          "indentLevel": 2,
+          "metric": "Damage at level 1",
+          "changeType": "RESCALE",
+          "oldValue": "47-55",
+          "newValue": "51-54",
+          "metadata": {
+            "entityId": 138
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Muerta",
+          "subEntityName": "Gunslinger",
+          "rawNote": "Chance increased from 18/27/36/45% to 20/30/40/50%",
+          "originalSource": "Chance increased from 18/27/36/45% to 20/30/40/50%",
+          "indentLevel": 1,
+          "metric": "Chance",
+          "changeType": "INCREASED",
+          "oldValue": "18/27/36/45%",
+          "newValue": "20/30/40/50%",
+          "metadata": {
+            "entityId": 138,
+            "subEntityId": 5753
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Muerta",
+          "subEntityName": "Spectral Slug",
+          "rawNote": "Now has 2 ability charges with 12s restore time",
+          "originalSource": "Now has 2 ability charges with 12s restore time",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 138,
+            "subEntityId": 1785
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Muerta",
+          "subEntityName": "Spectral Slug",
+          "rawNote": "Cast Range increased from 500 to 575",
+          "originalSource": "Cast Range increased from 500 to 575",
+          "indentLevel": 1,
+          "metric": "Cast Range",
+          "changeType": "INCREASED",
+          "oldValue": "500",
+          "newValue": "575",
+          "metadata": {
+            "entityId": 138,
+            "subEntityId": 1785
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Increased a positive metric (cast range)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Muerta",
+          "subEntityName": "Spectral Slug",
+          "rawNote": "Debuff Duration decreased from 3s to 2.25s",
+          "originalSource": "Debuff Duration decreased from 3s to 2.25s",
+          "indentLevel": 1,
+          "metric": "Debuff Duration",
+          "changeType": "DECREASED",
+          "oldValue": "3s",
+          "newValue": "2.25s",
+          "metadata": {
+            "entityId": 138,
+            "subEntityId": 1785
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a positive metric (debuff duration)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Muerta",
+          "subEntityName": "Spectral Slug",
+          "rawNote": "Damage decreased from 225 to 125",
+          "originalSource": "Damage decreased from 225 to 125",
+          "indentLevel": 1,
+          "metric": "Damage",
+          "changeType": "DECREASED",
+          "oldValue": "225",
+          "newValue": "125",
+          "metadata": {
+            "entityId": 138,
+            "subEntityId": 1785
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Muerta",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent +3% Max HP Regen while inside The Calling replaced with The Calling summons 2 additional revenants",
+          "originalSource": "Level 15 Talent +3% Max HP Regen while inside The Calling replaced with The Calling summons 2 additional revenants",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent +3% Max HP Regen while inside The Calling",
+          "changeType": "REWORK",
+          "newValue": "The Calling summons 2 additional revenants",
+          "metadata": {
+            "entityId": 138
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Muerta",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent The Calling summons 2 additional revenants replaced with +20% The Calling Movement Slow",
+          "originalSource": "Level 20 Talent The Calling summons 2 additional revenants replaced with +20% The Calling Movement Slow",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent The Calling summons 2 additional revenants",
+          "changeType": "REWORK",
+          "newValue": "+20% The Calling Movement Slow",
+          "metadata": {
+            "entityId": 138
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Muerta",
+          "subEntityName": "Talents",
+          "rawNote": "Level 25 Talent Gunslinger Chance decreased from +20% to +15%",
+          "originalSource": "Level 25 Talent Gunslinger Chance decreased from +20% to +15%",
+          "indentLevel": 1,
+          "metric": "Level 25 Talent Gunslinger Chance",
+          "changeType": "DECREASED",
+          "oldValue": "+20%",
+          "newValue": "+15%",
+          "metadata": {
+            "entityId": 138
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.5,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Numeric change, but polarity could not be deterministically resolved."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": -1.5,
+        "mobility": 0,
+        "survivability": 1.44,
+        "teamfight": -1.47,
+        "laning": -0.06,
+        "siege": 0,
+        "utility": 3.03
+      },
+      "totalVector": {
+        "farming": 3,
+        "mobility": 0,
+        "survivability": 1.91,
+        "teamfight": 0.19,
+        "laning": 4.91,
+        "siege": 0,
+        "utility": 2.2
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

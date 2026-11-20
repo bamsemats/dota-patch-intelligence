@@ -4922,6 +4922,265 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Sand King",
+          "subEntityName": "Burrowstrike",
+          "rawNote": "Now upgraded with Aghanim's Scepter",
+          "originalSource": "Now upgraded with Aghanim's Scepter",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 16,
+            "subEntityId": 5102
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sand King",
+          "subEntityName": "Burrowstrike",
+          "rawNote": "Increases Cast Range by 425 (to 975/1050/1125/1200). Sand King leaves behind a trail of spines, that, after a 0.8s delay, create Stinger attack areas along the path, that apply 75% of Stinger damage to enemies hit",
+          "originalSource": "Increases Cast Range by 425 (to 975/1050/1125/1200). Sand King leaves behind a trail of spines, that, after a 0.8s delay, create Stinger attack areas along the path, that apply 75% of Stinger damage to enemies hit",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 16,
+            "subEntityId": 5102
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "ROSHAN_INTERACTION",
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sand King",
+          "subEntityName": "Burrowstrike",
+          "rawNote": "Each Stinger attack has the same bonus as the innermost area",
+          "originalSource": "Each Stinger attack has the same bonus as the innermost area",
+          "indentLevel": 2,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 16,
+            "subEntityId": 5102
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "AURA_INTERACTION",
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sand King",
+          "subEntityName": "Stinger",
+          "rawNote": "Now has 60% Item Potency",
+          "originalSource": "Now has 60% Item Potency",
+          "indentLevel": 1,
+          "changeType": "ADDITION",
+          "metadata": {
+            "entityId": 16,
+            "subEntityId": 1229
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Buff",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Addition of a new mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sand King",
+          "subEntityName": "Stinger",
+          "rawNote": "Bonus Damage increased from 50/75/100/125 to 50/80/110/140",
+          "originalSource": "Bonus Damage increased from 50/75/100/125 to 50/80/110/140",
+          "indentLevel": 1,
+          "metric": "Bonus Damage",
+          "changeType": "INCREASED",
+          "oldValue": "50/75/100/125",
+          "newValue": "50/80/110/140",
+          "metadata": {
+            "entityId": 16,
+            "subEntityId": 1229
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (bonus damage)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sand King",
+          "subEntityName": "Stinger",
+          "rawNote": "Inner radius rescaled from 125 to 120/140/160/180",
+          "originalSource": "Inner radius rescaled from 125 to 120/140/160/180",
+          "indentLevel": 1,
+          "metric": "Inner radius",
+          "changeType": "RESCALE",
+          "oldValue": "125",
+          "newValue": "120/140/160/180",
+          "metadata": {
+            "entityId": 16,
+            "subEntityId": 1229
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sand King",
+          "subEntityName": "Epicenter",
+          "rawNote": "No longer upgraded with Aghanim's Scepter",
+          "originalSource": "No longer upgraded with Aghanim's Scepter",
+          "indentLevel": 1,
+          "changeType": "REMOVAL",
+          "metadata": {
+            "entityId": 16,
+            "subEntityId": 5105
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 0.9,
+            "strategicWeight": {
+              "Herald": 7,
+              "Guardian": 7,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 7,
+              "Ancient": 7,
+              "Divine": 7
+            },
+            "reasoning": "Removal of a mechanic or feature."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Sand King",
+          "subEntityName": "Talents",
+          "rawNote": "Level 15 Talent +200 Burrowstrike Cast Range replaced with -15s Epicenter Cooldown",
+          "originalSource": "Level 15 Talent +200 Burrowstrike Cast Range replaced with -15s Epicenter Cooldown",
+          "indentLevel": 1,
+          "metric": "Level 15 Talent +200 Burrowstrike Cast Range",
+          "changeType": "REWORK",
+          "newValue": "-15s Epicenter Cooldown",
+          "metadata": {
+            "entityId": 16
+          },
+          "classification": {
+            "state": "KNOWN_SEMANTIC",
+            "classificationType": "Rework",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Explicitly designated as a replacement or rework."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0.18,
+        "teamfight": 0.04,
+        "laning": 0.18,
+        "siege": 0,
+        "utility": 0.04
+      },
+      "totalVector": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 1.15,
+        "teamfight": -1.8,
+        "laning": 1.15,
+        "siege": 0,
+        "utility": -1.3
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

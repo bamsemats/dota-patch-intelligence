@@ -872,6 +872,69 @@
       "date": "2026-09-15T18:44:25.000Z",
       "changes": [],
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "item",
+          "entityName": "Pipe of Insight",
+          "rawNote": "Barrier cooldown decreased from 60s to 50s",
+          "originalSource": "Barrier cooldown decreased from 60s to 50s",
+          "indentLevel": 1,
+          "metric": "Barrier cooldown",
+          "changeType": "DECREASED",
+          "oldValue": "60s",
+          "newValue": "50s",
+          "metadata": {
+            "entityId": 90
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Decreased a negative metric (barrier cooldown)."
+          }
+        },
+        {
+          "category": "item",
+          "entityName": "Pipe of Insight",
+          "rawNote": "Barrier is now dispellable",
+          "originalSource": "Barrier is now dispellable",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 90
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "DISPEL_INTERACTION",
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        }
+      ],
+      "temporalAssessment": null
     }
   ]
 }

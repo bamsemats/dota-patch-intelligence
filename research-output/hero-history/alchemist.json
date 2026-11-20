@@ -3631,6 +3631,123 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Alchemist",
+          "subEntityName": "Greevil's Greed",
+          "rawNote": "Bonus Damage per Scepter increased from +15 to +20",
+          "originalSource": "Bonus Damage per Scepter increased from +15 to +20",
+          "indentLevel": 1,
+          "metric": "Bonus Damage per Scepter",
+          "changeType": "INCREASED",
+          "oldValue": "+15",
+          "newValue": "+20",
+          "metadata": {
+            "entityId": 73,
+            "subEntityId": 1333
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Increased a positive metric (bonus damage per scepter)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Alchemist",
+          "subEntityName": "Berserk Potion",
+          "rawNote": "Mana Cost decreased from 100 to 75",
+          "originalSource": "Mana Cost decreased from 100 to 75",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "DECREASED",
+          "oldValue": "100",
+          "newValue": "75",
+          "metadata": {
+            "entityId": 73,
+            "subEntityId": 642
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Decreased a negative metric (mana cost)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Alchemist",
+          "subEntityName": "Berserk Potion",
+          "rawNote": "Buff is now undispellable",
+          "originalSource": "Buff is now undispellable",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 73,
+            "subEntityId": 642
+          },
+          "classification": {
+            "state": "PARTIALLY_CLASSIFIED",
+            "classificationType": "Unknown",
+            "semanticTag": "DISPEL_INTERACTION",
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "confidenceScore": 0.5,
+            "reasoning": "Partial semantic match based on keywords. Requires human review."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 1,
+        "mobility": 0,
+        "survivability": -0.5,
+        "teamfight": -0.04,
+        "laning": 0.5,
+        "siege": 0,
+        "utility": 0.96
+      },
+      "totalVector": {
+        "farming": 2,
+        "mobility": 0,
+        "survivability": 1.93,
+        "teamfight": -5.47,
+        "laning": 3.93,
+        "siege": 0,
+        "utility": -8.97
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

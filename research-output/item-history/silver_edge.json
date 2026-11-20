@@ -798,6 +798,68 @@
         }
       ],
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42",
+      "date": "2026-11-18T20:00:46.000Z",
+      "changes": [
+        {
+          "category": "item",
+          "entityName": "Silver Edge",
+          "rawNote": "Shadow Walk bonus movement speed decreased from 20% to 18%",
+          "originalSource": "Shadow Walk bonus movement speed decreased from 20% to 18%",
+          "indentLevel": 1,
+          "metric": "Shadow Walk bonus movement speed",
+          "changeType": "DECREASED",
+          "oldValue": "20%",
+          "newValue": "18%",
+          "metadata": {
+            "entityId": 249
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6,
+              "Guardian": 6,
+              "Crusader": 7,
+              "Archon": 7,
+              "Legend": 8,
+              "Ancient": 9,
+              "Divine": 9
+            },
+            "reasoning": "Decreased a positive metric (shadow walk bonus movement speed)."
+          }
+        },
+        {
+          "category": "item",
+          "entityName": "Silver Edge",
+          "rawNote": "Shadow Walk debuff duration is now modified by Item Potency",
+          "originalSource": "Shadow Walk debuff duration is now modified by Item Potency",
+          "indentLevel": 1,
+          "changeType": "ADJUSTMENT",
+          "metadata": {
+            "entityId": 249
+          },
+          "classification": {
+            "state": "UNKNOWN",
+            "classificationType": "Unknown",
+            "confidenceScore": 0,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Change did not match any numeric metrics or semantic ontology patterns. Requires human review."
+          }
+        }
+      ],
+      "temporalAssessment": null
     }
   ]
 }
