@@ -4170,6 +4170,92 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42a",
+      "date": "2026-11-24T23:39:04.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Wraith King",
+          "rawNote": "Agility gain decreased from 1.7 to 1.5",
+          "originalSource": "Agility gain decreased from 1.7 to 1.5",
+          "indentLevel": 1,
+          "metric": "Agility gain",
+          "changeType": "DECREASED",
+          "oldValue": "1.7",
+          "newValue": "1.5",
+          "metadata": {
+            "entityId": 42
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (agility gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Wraith King",
+          "subEntityName": "Bone Guard",
+          "rawNote": "Mana Cost increased from 70/80/90/100 to 70/85/100/115",
+          "originalSource": "Mana Cost increased from 70/80/90/100 to 70/85/100/115",
+          "indentLevel": 1,
+          "metric": "Mana Cost",
+          "changeType": "INCREASED",
+          "oldValue": "70/80/90/100",
+          "newValue": "70/85/100/115",
+          "metadata": {
+            "entityId": 42,
+            "subEntityId": 5087
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Increased a negative metric (mana cost)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": -1,
+        "mobility": 0,
+        "survivability": 0.24,
+        "teamfight": 0,
+        "laning": -0.76,
+        "siege": 0,
+        "utility": -1
+      },
+      "totalVector": {
+        "farming": -2,
+        "mobility": 0,
+        "survivability": -0.1,
+        "teamfight": -7.03,
+        "laning": -2.1,
+        "siege": 0,
+        "utility": -2.04
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

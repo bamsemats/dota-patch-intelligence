@@ -3320,6 +3320,125 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42a",
+      "date": "2026-11-24T23:39:04.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Grimstroke",
+          "subEntityName": "Stroke of Fate",
+          "rawNote": "Base Damage rescaled from 100/160/220/280 to 110/160/210/260",
+          "originalSource": "Base Damage rescaled from 100/160/220/280 to 110/160/210/260",
+          "indentLevel": 1,
+          "metric": "Base Damage",
+          "changeType": "RESCALE",
+          "oldValue": "100/160/220/280",
+          "newValue": "110/160/210/260",
+          "metadata": {
+            "entityId": 121,
+            "subEntityId": 8000
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Grimstroke",
+          "subEntityName": "Soulbind",
+          "rawNote": "Cast Range rescaled from 700/800/900 to 800",
+          "originalSource": "Cast Range rescaled from 700/800/900 to 800",
+          "indentLevel": 1,
+          "metric": "Cast Range",
+          "changeType": "RESCALE",
+          "oldValue": "700/800/900",
+          "newValue": "800",
+          "metadata": {
+            "entityId": 121,
+            "subEntityId": 6491
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Adjustment",
+            "confidenceScore": 0.8,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1
+            },
+            "reasoning": "Rescaling redistributes power across levels and requires contextual analysis."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Grimstroke",
+          "subEntityName": "Dark Portrait",
+          "rawNote": "Illusion Bonus Movespeed decreased from 30% to 25%",
+          "originalSource": "Illusion Bonus Movespeed decreased from 30% to 25%",
+          "indentLevel": 1,
+          "metric": "Illusion Bonus Movespeed",
+          "changeType": "DECREASED",
+          "oldValue": "30%",
+          "newValue": "25%",
+          "metadata": {
+            "entityId": 121,
+            "subEntityId": 7852
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 5,
+              "Guardian": 5,
+              "Crusader": 5,
+              "Archon": 5,
+              "Legend": 5,
+              "Ancient": 5,
+              "Divine": 5
+            },
+            "reasoning": "Decreased a positive metric (illusion bonus movespeed)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 0.18,
+        "teamfight": 0.05,
+        "laning": 0.18,
+        "siege": 0,
+        "utility": 0.05
+      },
+      "totalVector": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": 4.91,
+        "teamfight": -0.24,
+        "laning": 4.91,
+        "siege": 0,
+        "utility": 5.76
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

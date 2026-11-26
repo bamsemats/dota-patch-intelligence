@@ -3642,6 +3642,121 @@
       },
       "winrates": {},
       "temporalAssessment": "Net Gain"
+    },
+    {
+      "version": "7.42a",
+      "date": "2026-11-24T23:39:04.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Visage",
+          "rawNote": "Intelligence gain decreased from 2.9 to 2.6",
+          "originalSource": "Intelligence gain decreased from 2.9 to 2.6",
+          "indentLevel": 1,
+          "metric": "Intelligence gain",
+          "changeType": "DECREASED",
+          "oldValue": "2.9",
+          "newValue": "2.6",
+          "metadata": {
+            "entityId": 92
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 8,
+              "Guardian": 8,
+              "Crusader": 8,
+              "Archon": 8,
+              "Legend": 8,
+              "Ancient": 8,
+              "Divine": 8
+            },
+            "reasoning": "Decreased a positive metric (intelligence gain)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Visage",
+          "rawNote": "Damage gain per level decreased from 3.1 to 3.0",
+          "originalSource": "Damage gain per level decreased from 3.1 to 3.0",
+          "indentLevel": 2,
+          "metric": "Damage gain per level",
+          "changeType": "DECREASED",
+          "oldValue": "3.1",
+          "newValue": "3.0",
+          "metadata": {
+            "entityId": 92
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 1.5
+            },
+            "reasoning": "Decreased a positive metric (damage gain per level)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Visage",
+          "subEntityName": "Silent as the Grave",
+          "rawNote": "Cooldown increased from 45.75s - 0.75s per level to 45.5s - 0.5s per level",
+          "originalSource": "Cooldown increased from 45.75s - 0.75s per level to 45.5s - 0.5s per level",
+          "indentLevel": 1,
+          "metric": "Cooldown",
+          "changeType": "INCREASED",
+          "oldValue": "45.75s - 0.75s per level",
+          "newValue": "45.5s - 0.5s per level",
+          "metadata": {
+            "entityId": 92,
+            "subEntityId": 683
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Increased a negative metric (cooldown)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -0.55,
+        "teamfight": -3.5,
+        "laning": -0.55,
+        "siege": 0,
+        "utility": 0
+      },
+      "totalVector": {
+        "farming": 4,
+        "mobility": 0,
+        "survivability": -0.85,
+        "teamfight": -6.83,
+        "laning": 3.15,
+        "siege": 0,
+        "utility": -9.83
+      },
+      "winrates": {},
+      "temporalAssessment": null
     }
   ]
 }

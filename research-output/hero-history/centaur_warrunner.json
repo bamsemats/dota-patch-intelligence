@@ -3338,6 +3338,92 @@
       },
       "winrates": {},
       "temporalAssessment": null
+    },
+    {
+      "version": "7.42a",
+      "date": "2026-11-24T23:39:04.000Z",
+      "changes": [
+        {
+          "category": "hero",
+          "entityName": "Centaur Warrunner",
+          "subEntityName": "Talents",
+          "rawNote": "Level 10 Talent Health Regen increased from +4 to +4.5",
+          "originalSource": "Level 10 Talent Health Regen increased from +4 to +4.5",
+          "indentLevel": 1,
+          "metric": "Level 10 Talent Health Regen",
+          "changeType": "INCREASED",
+          "oldValue": "+4",
+          "newValue": "+4.5",
+          "metadata": {
+            "entityId": 96
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Buff",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 6.5,
+              "Guardian": 6.5,
+              "Crusader": 5.5,
+              "Archon": 5.5,
+              "Legend": 5.5,
+              "Ancient": 5.5,
+              "Divine": 5.5
+            },
+            "reasoning": "Increased a positive metric (level 10 talent health regen)."
+          }
+        },
+        {
+          "category": "hero",
+          "entityName": "Centaur Warrunner",
+          "subEntityName": "Talents",
+          "rawNote": "Level 20 Talent Stampede Cooldown Reduction increased from 25s to 30s",
+          "originalSource": "Level 20 Talent Stampede Cooldown Reduction increased from 25s to 30s",
+          "indentLevel": 1,
+          "metric": "Level 20 Talent Stampede Cooldown Reduction",
+          "changeType": "INCREASED",
+          "oldValue": "25s",
+          "newValue": "30s",
+          "metadata": {
+            "entityId": 96
+          },
+          "classification": {
+            "state": "NUMERIC",
+            "classificationType": "Nerf",
+            "confidenceScore": 1,
+            "strategicWeight": {
+              "Herald": 1,
+              "Guardian": 1,
+              "Crusader": 1,
+              "Archon": 1,
+              "Legend": 1,
+              "Ancient": 1,
+              "Divine": 3.5
+            },
+            "reasoning": "Increased a negative metric (level 20 talent stampede cooldown reduction)."
+          }
+        }
+      ],
+      "vectorDelta": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -0.18,
+        "teamfight": 0.03,
+        "laning": -0.18,
+        "siege": 0,
+        "utility": 0.03
+      },
+      "totalVector": {
+        "farming": 0,
+        "mobility": 0,
+        "survivability": -1.72,
+        "teamfight": -0.65,
+        "laning": -1.72,
+        "siege": 0,
+        "utility": -28.64
+      },
+      "winrates": {},
+      "temporalAssessment": "Net Gain"
     }
   ]
 }
